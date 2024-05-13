@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  backend:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./docker/local/express/Dockerfile
+    volumes:
+      - /app/node_modules
+      - .:/app
+
+networks:
+  mern-project_villa:
+    driver: bridge

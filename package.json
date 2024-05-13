@@ -1,0 +1,16 @@
+{
+  "name": "mern-project-typescript",
+  "version": "1.0.0",
+  "description": "MERN project about",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
