@@ -5,6 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "start": "node backend/server.js",
     "server": "nodemon backend/server.js"
   },
   "keywords": [],
@@ -13,7 +14,6 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.2.0",
-    "env": "^0.0.2",
     "express": "^4.19.2",
     "express-async-handler": "^1.2.0",
     "express-mongo-sanitize": "^2.2.0",
@@ -31,6 +31,7 @@
     "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
+    "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.29.1",
