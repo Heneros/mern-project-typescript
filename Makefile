@@ -4,7 +4,7 @@ build:
 up:
 	docker compose -f local.yml up -d 
 
-show-logs-api:
+show-logs-backend:
 	docker compose -f local.yml logs backend
 
 down:

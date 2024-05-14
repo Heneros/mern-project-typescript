@@ -9,6 +9,8 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+    networks:
+      - mern-project_villa
 
 networks:
   mern-project_villa:
