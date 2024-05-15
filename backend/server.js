@@ -1,24 +1,22 @@
-
-import path from "path";
+import path from 'path';
 
 import 'dotenv/config';
-import express from "express";
+import express from 'express';
 
 const app = express();
 
-
-app.get("/", (req, res) => {
-    res.send("<h1>Hello World</h1>")
+app.get('/', (req, res) => {
+    res.send('<h1>Hello World</h1>');
 });
-console.log(`123`)
+console.log('6661');
 
 const port = process.env.PORT || 4000;
 
 const start = async () => {
     try {
-        app.listen(port, console.log(`Working on ${port} port`))
+        app.listen(port, console.log(`Working on ${port} port`));
     } catch (error) {
-        console.log(error + 'error');
+        console.log(`${error}error`);
     }
-}
-start()
+};
+start();
