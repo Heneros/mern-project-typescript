@@ -8,7 +8,7 @@ const app = express();
 app.get('/', (req, res) => {
     res.send('<h1>Hello World</h1>');
 });
-console.log('6661');
+console.log('hello world');
 
 const port = process.env.PORT || 4000;
 
