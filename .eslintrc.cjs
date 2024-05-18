@@ -26,5 +26,9 @@ module.exports = {
         'no-shadow': 'off',
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
+        'consistent-return': 'warn',
+        'no-underscore-dangle': 'off',
+        camelcase: 'off',
+        'prefer-destructuring': 'off',
     },
 };
