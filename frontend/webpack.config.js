@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
     entry: './src/index.jsx',
-
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js',
@@ -24,6 +23,6 @@ module.exports = {
             directory: path.join(__dirname, 'public'),
         },
         compress: true,
-        port: 1997,
+        port: 3000,
     },
 };

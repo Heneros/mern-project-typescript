@@ -7,5 +7,8 @@ up:
 show-logs-backend:
 	docker compose -f local.yml logs backend
 
+show-logs-frontend:
+	docker compose -f local.yml logs frontend
+
 down:
 	docker compose -f local.yml down

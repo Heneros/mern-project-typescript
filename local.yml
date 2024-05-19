@@ -19,11 +19,10 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: ./docker/local/frontend/Dockerfile
+      dockerfile: ./frontend/docker/Dockerfile
     restart: on-failure
     volumes:
       - ./frontend:/app
-      - /app/node_modules
     environment:
        - WATCHPACK_POLLING=true
        - CHOKIDAR_USEPOLLING=true
@@ -75,7 +74,7 @@ services:
       - "8080:80"
     restart: always
     depends_on:
-      - backend
+      - frontend
     volumes:
       - static_volume:/app/staticfiles
     networks:
