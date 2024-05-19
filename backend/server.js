@@ -4,7 +4,7 @@ import 'dotenv/config';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import connectDB from './config/connectDB.js';
-import authRoutes from './routes/auth.js';
+import authRoutes from '.';
 
 const app = express();
 
@@ -21,6 +21,7 @@ app.use(cookieParser());
 app.get('/api/v1/test', (req, res) => {
     res.json({ message: 'Hello World' });
 });
+app.get('/api/v1', authRoutes);
 
 console.log('hello world');
 
