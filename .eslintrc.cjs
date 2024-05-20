@@ -36,10 +36,12 @@ module.exports = {
         'no-shadow': 'off',
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
+        'import/no-import-module-exports': 'off',
         'consistent-return': 'warn',
         'no-underscore-dangle': 'off',
         camelcase: 'off',
         'prefer-destructuring': 'off',
         'react/jsx-indent': ['error', 4],
+        'import/prefer-default-export': 'off',
     },
 };
