@@ -30,6 +30,7 @@ module.exports = {
         // 'react/jsx-props-no-spreading': 'warn',
         // 'jsx-a11y/no-static-element-interactions': 'off',
         // 'jsx-a11y/click-events-have-key-events': 'off',
+        'react/function-component-definition': 'off',
         indent: ['error', 4],
         'linebreak-style': 'off',
         'import/no-unresolved': 'off',
@@ -42,6 +43,6 @@ module.exports = {
         camelcase: 'off',
         'prefer-destructuring': 'off',
         'react/jsx-indent': ['error', 4],
-        'import/prefer-default-export': 'off',
+        // 'import/prefer-default-export': 'off',
     },
 };

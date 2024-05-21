@@ -4,6 +4,7 @@ import 'dotenv/config';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import connectDB from './config/connectDB.js';
+import authRoutes from './routes/auth.js';
 
 const app = express();
 
@@ -20,9 +21,9 @@ app.use(cookieParser());
 app.get('/api/v1/test', (req, res) => {
     res.json({ message: 'Hello World' });
 });
-// app.get('/api/v1', authRoutes);
+app.use('/api/v1/auth', authRoutes);
 
-console.log('hello world');
+console.log('hello world123');
 
 const port = process.env.PORT || 4000;
 const MONGO_URI = `mongodb://${process.env.MONGO_ROOT_USERNAME}:${process.env.MONGO_ROOT_PASSWORD}@mongodb/mernvilla`;

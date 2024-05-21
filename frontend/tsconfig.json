@@ -1,19 +1,14 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",
-        "baseUrl": ".",
-        "noImplicitAny": true,
-        "module": "es6",
         "target": "es5",
-        "jsx": "react",
         "allowJs": true,
+        "jsx": "react",
         "moduleResolution": "node",
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true
     },
-    "ts-node": {
-        "compilerOptions": {
-            "module": "CommonJS"
-        }
-    }
+    "include": [
+        "src/**/*"
+    ]
 }
