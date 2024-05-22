@@ -43,6 +43,7 @@ module.exports = {
         camelcase: 'off',
         'prefer-destructuring': 'off',
         'react/jsx-indent': ['error', 4],
-        // 'import/prefer-default-export': 'off',
+        'import/prefer-default-export': 'off',
+
     },
 };

@@ -2,6 +2,7 @@ import asyncHandler from 'express-async-handler';
 //
 import User from '../../models/UserModel.js';
 import VerificationToken from '../../models/verifyResetTokenModel.js';
+import sendEmail from '../../utils/sendEmail.js';
 
 const { randomBytes } = await import('crypto');
 
@@ -75,12 +76,12 @@ const registerUser = asyncHandler(async (req, res) => {
             link: emailLink,
         };
 
-        //     await sendEmail(
-        //   registeredUser.email,
-        //   "Account Verification",
-        //   payload,
-        //   "./emails/template/accountVerification.handlebars"
-        // );
+        await sendEmail(
+            registeredUser.email,
+            'Account Verification',
+            payload,
+            './emails/template/accountVerification.handlebars',
+        );
 
         res.json({
             success: true,
