@@ -1,0 +1,2510 @@
+{
+  error: ReferenceError: ver is not defined
+      at file:///app/backend/routes/auth.js:12:43,
+  level: 'error',
+  message: 'uncaughtException: ver is not defined\n' +
+    'ReferenceError: ver is not defined\n' +
+    '    at file:///app/backend/routes/auth.js:12:43',
+  stack: 'ReferenceError: ver is not defined\n' +
+    '    at file:///app/backend/routes/auth.js:12:43',
+  exception: true,
+  date: 'Thu May 23 2024 12:20:50 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 958,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 91983872,
+      heapTotal: 41529344,
+      heapUsed: 32392784,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 9.95, 6.44, 4.5 ], uptime: 1317.48 },
+  trace: [
+    {
+      column: 43,
+      file: 'file:///app/backend/routes/auth.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 12:20:50.544 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:11:13 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2037,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 97476608,
+      heapTotal: 42053632,
+      heapUsed: 31629360,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 3.29, 2.74, 3.64 ], uptime: 4340.97 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:11:13.922 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:11:26 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2094,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 95338496,
+      heapTotal: 42053632,
+      heapUsed: 31612944,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 2.85, 2.67, 3.6 ], uptime: 4353.99 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:11:26.943 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:11:28 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2109,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 94740480,
+      heapTotal: 42315776,
+      heapUsed: 31486328,
+      external: 20921526,
+      arrayBuffers: 18262465
+    }
+  },
+  os: { loadavg: [ 2.85, 2.67, 3.6 ], uptime: 4355.63 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:11:28.580 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:11:30 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2128,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 97636352,
+      heapTotal: 42053632,
+      heapUsed: 31623760,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 2.85, 2.67, 3.6 ], uptime: 4357.31 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:11:30.264 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:11:45 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2148,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 94609408,
+      heapTotal: 41791488,
+      heapUsed: 32059728,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 3.1, 2.72, 3.6 ], uptime: 4372.75 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:11:45.708 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:12:40 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2168,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 92983296,
+      heapTotal: 42315776,
+      heapUsed: 31624296,
+      external: 20921526,
+      arrayBuffers: 18262465
+    }
+  },
+  os: { loadavg: [ 7.7, 3.95, 3.96 ], uptime: 4427.39 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:12:40.341 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:12:44 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2187,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 92733440,
+      heapTotal: 42315776,
+      heapUsed: 31346864,
+      external: 20921526,
+      arrayBuffers: 18262465
+    }
+  },
+  os: { loadavg: [ 8.77, 4.24, 4.05 ], uptime: 4431.25 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:12:44.200 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:12:45 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2244,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 94142464,
+      heapTotal: 41529344,
+      heapUsed: 32278984,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 8.77, 4.24, 4.05 ], uptime: 4432.4 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:12:45.351 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:13:36 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2260,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 94412800,
+      heapTotal: 41791488,
+      heapUsed: 32256872,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 10.76, 5.47, 4.48 ], uptime: 4483.66 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:13:36.614 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:13:37 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2294,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 95453184,
+      heapTotal: 42053632,
+      heapUsed: 31760408,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 13.02, 6.03, 4.67 ], uptime: 4484.63 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:13:37.581 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:13:47 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2425,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 93007872,
+      heapTotal: 42053632,
+      heapUsed: 31612472,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 16.85, 7.08, 5.03 ], uptime: 4494.59 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:13:47.537 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:13:57 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2479,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 93450240,
+      heapTotal: 42053632,
+      heapUsed: 31744104,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 19.34, 7.93, 5.33 ], uptime: 4504.77 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:13:57.717 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:14:09 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2520,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 95416320,
+      heapTotal: 42053632,
+      heapUsed: 31585744,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 21.32, 8.73, 5.61 ], uptime: 4516.22 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:14:09.175 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:14:15 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2580,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 95559680,
+      heapTotal: 42577920,
+      heapUsed: 31294840,
+      external: 20921526,
+      arrayBuffers: 18262465
+    }
+  },
+  os: { loadavg: [ 19.61, 8.58, 5.58 ], uptime: 4522.72 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:14:15.670 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:15:44 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2598,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 93827072,
+      heapTotal: 42053632,
+      heapUsed: 31751256,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 8.39, 8.09, 5.72 ], uptime: 4611.43 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:15:44.376 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:15:47 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2616,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 92770304,
+      heapTotal: 42053632,
+      heapUsed: 31772640,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 7.8, 7.97, 5.69 ], uptime: 4614.82 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:15:47.772 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:15:50 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2635,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 95293440,
+      heapTotal: 42053632,
+      heapUsed: 31630248,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 7.8, 7.97, 5.69 ], uptime: 4618.03 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:15:50.982 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:15:55 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2652,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 93028352,
+      heapTotal: 42053632,
+      heapUsed: 31743920,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 7.17, 7.84, 5.66 ], uptime: 4622.63 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:15:55.578 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:16:05 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2721,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 99491840,
+      heapTotal: 42053632,
+      heapUsed: 31505592,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 6.84, 7.75, 5.65 ], uptime: 4632.8 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:16:05.746 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:16:11 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2742,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 98099200,
+      heapTotal: 61714432,
+      heapUsed: 29280936,
+      external: 20921534,
+      arrayBuffers: 18262465
+    }
+  },
+  os: { loadavg: [ 6.29, 7.62, 5.62 ], uptime: 4638.89 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:16:11.838 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:16:13 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2761,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 92164096,
+      heapTotal: 41529344,
+      heapUsed: 32255072,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 5.79, 7.49, 5.59 ], uptime: 4640.32 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:16:13.268 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:16:43 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2797,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 92708864,
+      heapTotal: 42053632,
+      heapUsed: 31599240,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 5.27, 7.17, 5.54 ], uptime: 4670.69 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:16:43.638 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:16:47 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2817,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 92958720,
+      heapTotal: 42053632,
+      heapUsed: 31589248,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 5.27, 7.17, 5.54 ], uptime: 4674.47 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:16:47.421 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:18:07 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2839,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 92798976,
+      heapTotal: 42053632,
+      heapUsed: 31734848,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 2.01, 5.66, 5.14 ], uptime: 4754.59 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:18:07.535 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:18:32 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2873,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 94253056,
+      heapTotal: 43368448,
+      heapUsed: 30766248,
+      external: 20921526,
+      arrayBuffers: 18262465
+    }
+  },
+  os: { loadavg: [ 1.44, 5.24, 5.01 ], uptime: 4779.32 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:18:32.266 PM'
+}
+{
+  error: OverwriteModelError: Cannot overwrite `User` model once compiled.
+      at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)
+      at file:///app/backend/models/UserModel.js:124:23
+      at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+      at async loadESM (node:internal/process/esm_loader:34:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot overwrite `User` model once compiled.\n' +
+    'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'OverwriteModelError: Cannot overwrite `User` model once compiled.\n' +
+    '    at Mongoose.model (/app/node_modules/mongoose/lib/mongoose.js:575:13)\n' +
+    '    at file:///app/backend/models/UserModel.js:124:23\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:34:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Thu May 23 2024 13:18:36 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 2925,
+    uid: 0,
+    gid: 0,
+    cwd: '/app',
+    execPath: '/usr/local/bin/node',
+    version: 'v20.10.0',
+    argv: [ '/usr/local/bin/node', '/app/backend/server.js' ],
+    memoryUsage: {
+      rss: 95002624,
+      heapTotal: 42053632,
+      heapUsed: 31607424,
+      external: 20921534,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 1.32, 5.15, 4.99 ], uptime: 4783.58 },
+  trace: [
+    {
+      column: 13,
+      file: '/app/node_modules/mongoose/lib/mongoose.js',
+      function: 'Mongoose.model',
+      line: 575,
+      method: 'model',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'file:///app/backend/models/UserModel.js',
+      function: null,
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 218,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 329,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-05-23 01:18:36.523 PM'
+}

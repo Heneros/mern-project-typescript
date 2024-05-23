@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { nodemailer } from 'nodemailer';
+import nodemailer from 'nodemailer';
 import mg from 'nodemailer-mailgun-transport';
 
 let transporter;
@@ -9,6 +9,7 @@ if (process.env.NODE_ENV === 'development') {
         host: 'mailhog',
         port: 1025,
     });
+    console.log('dev mail', 21);
 } else if (process.env.NODE_ENV === 'production') {
     const mailgunAuth = {
         auth: {
@@ -16,6 +17,7 @@ if (process.env.NODE_ENV === 'development') {
             domain: process.env.MAILGUN_DOMAIN,
         },
     };
+    console.log('prod mail', 21);
     transporter = nodemailer.createTransport(mg(mailgunAuth));
 }
 

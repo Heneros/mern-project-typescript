@@ -2,7 +2,6 @@ import 'dotenv/config';
 import handlebars from 'handlebars';
 import fs from 'fs';
 import path from 'path';
-
 import { fileURLToPath } from 'url';
 import transporter from '../helpers/emailTransport.js';
 import { systemLogs } from './Logger.js';
@@ -24,7 +23,7 @@ const sendEmail = async (email, subject, payload, template) => {
             subject,
             html: compiledTemplate(payload),
         };
-        await transporter.sendEmail(emailOptions);
+        await transporter.sendMail(emailOptions);
     } catch (error) {
         systemLogs.error(`email not sent: ${error}`);
     }

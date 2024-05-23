@@ -44,6 +44,9 @@ module.exports = {
         'prefer-destructuring': 'off',
         'react/jsx-indent': ['error', 4],
         'import/prefer-default-export': 'off',
-
+        'no-mixed-spaces-and-tabs': 'off',
+        'no-tabs': 'off',
+        'prefer-const': 'off',
+        'import/no-mutable-exports': 'off',
     },
 };

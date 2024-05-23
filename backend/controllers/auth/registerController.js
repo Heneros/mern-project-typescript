@@ -1,17 +1,20 @@
 import asyncHandler from 'express-async-handler';
-//
-import User from '../../models/UserModel.js';
+import User from '../../models/userModel.js';
 import VerificationToken from '../../models/verifyResetTokenModel.js';
 import sendEmail from '../../utils/sendEmail.js';
 
+const domainURL = process.env.DOMAIN;
+
 const { randomBytes } = await import('crypto');
 
-const domainURL = process.env.DOMAIN;
+// $-title   Register User and send email verification link
+// $-path    POST /api/v1/auth/register
+// $-auth    Public
 
 const registerUser = asyncHandler(async (req, res) => {
     const {
         email, username, firstName, lastName, password, passwordConfirm,
-    } = req.body;
+    } =		req.body;
 
     if (!email) {
         res.status(400);
@@ -24,7 +27,9 @@ const registerUser = asyncHandler(async (req, res) => {
     }
     if (!firstName || !lastName) {
         res.status(400);
-        throw new Error('You must enter a full name with a first and last name');
+        throw new Error(
+            'You must enter a full name with a first and last name',
+        );
     }
 
     if (!password) {
@@ -64,7 +69,7 @@ const registerUser = asyncHandler(async (req, res) => {
     if (registeredUser) {
         const verificationToken = randomBytes(32).toString('hex');
 
-        const emailVerificationToken = await new VerificationToken({
+        let emailVerificationToken = await new VerificationToken({
             _userId: registeredUser._id,
             token: verificationToken,
         }).save();
