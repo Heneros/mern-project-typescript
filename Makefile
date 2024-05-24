@@ -2,7 +2,7 @@ build:
 	docker compose -f local.yml up -d --build --remove-orphans
 
 up:
-	docker compose -f local.yml up -d  --watch
+	docker compose -f local.yml up -d 
 
 show-logs-backend:
 	docker compose -f local.yml logs backend
