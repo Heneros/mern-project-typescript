@@ -9,7 +9,6 @@ if (process.env.NODE_ENV === 'development') {
         host: 'mailhog',
         port: 1025,
     });
-    console.log('dev mail', 21);
 } else if (process.env.NODE_ENV === 'production') {
     const mailgunAuth = {
         auth: {
