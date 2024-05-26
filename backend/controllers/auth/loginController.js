@@ -14,68 +14,50 @@ const loginUser = asyncHandler(async (req, res) => {
         res.status(400);
         throw new Error('Please provide an email and password');
     }
+
     const existingUser = await User.findOne({ email }).select('+password');
 
     if (!existingUser || !(await existingUser.comparePassword(password))) {
         res.status(400);
-        systemLogs.error('incorrect email or password');
-        throw new Error(
-            'You are not verified. Check your email, a verification email link was sent when you registered',
-        );
+        systemLogs.error('Incorrect email or password');
+        throw new Error('Invalid credentials provided');
     }
 
     if (!existingUser.active) {
         res.status(400);
-        throw new Error(
-            'You have been deactivated by the admin and login is impossible. Contact us for enquiries',
-        );
+        throw new Error('Your account has been deactivated. Please contact support for assistance.');
     }
 
-    if (existingUser && (await existingUser.comparePassword(password))) {
-        const accessToken = jwt.sign(
-            {
-  		        id: existingUser._id,
-                roles: existingUser.roles,
-            },
-            process.env.JWT_ACCESS_SECRET_KEY,
-            { expiresIn: '10m' },
-        );
+    const accessToken = jwt.sign(
+        {
+            id: existingUser._id,
+            roles: existingUser.roles,
+        },
+        process.env.JWT_ACCESS_SECRET_KEY,
+        { expiresIn: '30d' },
+    );
 
-        const newRefreshToken = jwt.sign(
-            {
-            		id: existingUser._id,
-            },
-    		process.env.JWT_REFRESH_SECRET_KEY,
-            { expiresIn: '1d' },
-        );
+    const newRefreshToken = jwt.sign(
+        {
+            id: existingUser._id,
+        },
+        process.env.JWT_REFRESH_SECRET_KEY,
+        { expiresIn: '1d' },
+    );
 
-        const cookies = req.cookies;
+    const cookies = req.cookies;
 
-        let newRefreshTokenArray = !cookies?.jwt
-            ? existingUser.refreshToken
-            : existingUser.refreshToken.filter((refT) => refT !== cookies.jwt);
+    let newRefreshTokenArray = !cookies?.jwtVilla
+        ? existingUser.refreshToken
+        : existingUser.refreshToken.filter((refT) => refT !== cookies.jwtVilla);
 
-        if (cookies?.jwt) {
-            const refreshToken = cookies.jwt;
-            const existingRefreshToken = await User.findOne({
-                refreshToken,
-            }).exec();
+    if (cookies?.jwtVilla) {
+        const refreshToken = cookies.jwtVilla;
+        const existingRefreshToken = await User.findOne({ refreshToken }).exec();
 
-            if (!existingRefreshToken) {
-                newRefreshTokenArray = [];
-            }
-
-            const options = {
-                httpOnly: true,
-                maxAge: 24 * 60 * 60 * 1000,
-                secure: true,
-                sameSite: 'None',
-            };
-
-            res.clearCookie('jwtVilla', options);
+        if (!existingRefreshToken) {
+            newRefreshTokenArray = [];
         }
-        existingUser.refreshToken = [...newRefreshTokenArray, newRefreshToken];
-        await existingUser.save();
 
         const options = {
             httpOnly: true,
@@ -84,21 +66,28 @@ const loginUser = asyncHandler(async (req, res) => {
             sameSite: 'None',
         };
 
-        res.cookie('jwtVilla', newRefreshToken, options);
-
-        res.json({
-            success: true,
-            firstName: existingUser.firstName,
-            lastName: existingUser.lastName,
-            username: existingUser.username,
-            provider: existingUser.provider,
-            avatar: existingUser.avatar,
-            accessToken,
-        });
-    } else {
-        res.status(401);
-        throw new Error('Invalid credentials provided');
+        res.clearCookie('jwtVilla', options);
     }
+
+    existingUser.refreshToken = [...newRefreshTokenArray, newRefreshToken];
+    await existingUser.save();
+
+    res.cookie('jwtVilla', newRefreshToken, {
+        httpOnly: true,
+        secure: true,
+        sameSite: 'None',
+        maxAge: 24 * 60 * 60 * 1000,
+    });
+
+    res.json({
+        success: true,
+        firstName: existingUser.firstName,
+        lastName: existingUser.lastName,
+        username: existingUser.username,
+        provider: existingUser.provider,
+        avatar: existingUser.avatar,
+        accessToken,
+    });
 });
 
 export default loginUser;

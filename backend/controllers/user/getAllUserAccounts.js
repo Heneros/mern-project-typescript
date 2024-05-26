@@ -8,7 +8,7 @@ const getAllUserAccounts = asyncHandler(async (req, res) => {
 
     const count = await User.countDocuments({});
 
-    const users = await User.find
+    const users = await User.find()
         .sort({ createdAt: -1 })
         .select('-refreshToken')
         .limit(pageSize)
