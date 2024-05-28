@@ -9,6 +9,7 @@ import { morganMiddleware, systemLogs } from './utils/Logger.js';
 import connectDB from './config/connectDB.js';
 import authRoutes from './routes/auth.js';
 import userRoutes from './routes/user.js';
+import uploadRoutes from './routes/uploadRoutes.js';
 
 const app = express();
 
@@ -17,19 +18,22 @@ app.get('/', (req, res) => {
 });
 
 const __dirname = path.resolve();
-///
+
+app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(cors());
-app.use(mongoSanitize());
-app.use(morganMiddleware);
+// app.use(mongoSanitize());
+// app.use(morganMiddleware);
 
 app.get('/api/v1/test', (req, res) => {
     res.json({ message: 'Hello World' });
 });
+
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/user', userRoutes);
+app.use('/api/v1/upload', uploadRoutes);
 
 // console.log('hello world123');
 

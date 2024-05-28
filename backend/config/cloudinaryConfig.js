@@ -14,7 +14,7 @@ const cloudinaryUploader = async function uploadToCloudinary(localFilePath) {
     const filePathOnCloudinary = `${mainFolderName}/${localFilePath}`;
 
     return cloudinary.uploader
-    		.upload(localFilePath, { public_id: filePathOnCloudinary })
+    	.upload(localFilePath, { public_id: filePathOnCloudinary })
         .then((result) => {
             fs.unlinkSync(localFilePath);
 

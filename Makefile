@@ -10,5 +10,8 @@ show-logs-backend:
 show-logs-frontend:
 	docker compose -f local.yml logs frontend
 
+show-logs-nginx:
+	docker compose -f local.yml logs nginx
+
 down:
 	docker compose -f local.yml down
