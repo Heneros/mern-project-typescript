@@ -12,6 +12,8 @@ services:
     environment:
       - WATCHPACK_POLLING=true
       - CHOKIDAR_USEPOLLING=true
+    ports:
+      - "1997:1997"
     depends_on:
       - mongodb
     networks:
@@ -76,7 +78,6 @@ services:
       - "8080:80"
     restart: always
     depends_on:
-      - frontend
       - backend
     volumes:
       - static_volume:/app/staticfiles
