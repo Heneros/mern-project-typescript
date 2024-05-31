@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: ./docker/local/express/Dockerfile
     volumes:
-      - .:/app
+      - ./backend:/app
       - /app/node_modules
     environment:
       - WATCHPACK_POLLING=true
@@ -21,12 +21,12 @@ services:
 
   frontend:
     build:
-      context: .
-      dockerfile: ./frontend/docker/Dockerfile
+      context: ./frontend
+      dockerfile: ./docker/Dockerfile
     restart: on-failure
     volumes:
       - ./frontend:/app
-    command: ["npm", "start"]
+      - /app/node_modules
     environment:
        - WATCHPACK_POLLING=true
        - CHOKIDAR_USEPOLLING=true
@@ -78,6 +78,7 @@ services:
       - "8080:80"
     restart: always
     depends_on:
+      - frontend
       - backend
     volumes:
       - static_volume:/app/staticfiles
