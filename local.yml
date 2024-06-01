@@ -9,9 +9,6 @@ services:
     volumes:
       - ./backend:/app
       - /app/node_modules
-    environment:
-      - WATCHPACK_POLLING=true
-      - CHOKIDAR_USEPOLLING=true
     ports:
       - "1997:1997"
     depends_on:
@@ -27,9 +24,6 @@ services:
     volumes:
       - ./frontend:/app
       - /app/node_modules
-    environment:
-       - WATCHPACK_POLLING=true
-       - CHOKIDAR_USEPOLLING=true
     networks:
        - mern-project_villa
 

@@ -1,0 +1,10 @@
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '464',
+  response_time: 10014.18,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-01 11:47:03.355 AM'
+}

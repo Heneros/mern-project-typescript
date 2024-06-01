@@ -1,0 +1,2808 @@
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 11:59:55 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 14608,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91668480,
+      heapTotal: 62832640,
+      heapUsed: 33948992,
+      external: 21006608,
+      arrayBuffers: 18262786
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66772.968 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 11:59:55.247 AM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:00:21 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 14900,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 92459008,
+      heapTotal: 61411328,
+      heapUsed: 36332000,
+      external: 21036080,
+      arrayBuffers: 18262867
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66798.796 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:00:21.078 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:00:24 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 26312,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 93028352,
+      heapTotal: 61411328,
+      heapUsed: 36716776,
+      external: 21036080,
+      arrayBuffers: 18262867
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66802.015 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:00:24.291 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:00:25 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 17060,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91959296,
+      heapTotal: 61149184,
+      heapUsed: 36272912,
+      external: 21036080,
+      arrayBuffers: 18262867
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66802.937 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:00:25.223 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:01:51 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 5736,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 92135424,
+      heapTotal: 61411328,
+      heapUsed: 36423136,
+      external: 21036080,
+      arrayBuffers: 18262867
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66889.187 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:01:51.464 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:01:58 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 27176,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 92086272,
+      heapTotal: 62726144,
+      heapUsed: 34177752,
+      external: 21036080,
+      arrayBuffers: 18262867
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66896.39 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:01:58.666 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:02:11 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 12712,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91303936,
+      heapTotal: 60993536,
+      heapUsed: 35831808,
+      external: 21006608,
+      arrayBuffers: 18262786
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66908.937 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:02:11.222 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:02:22 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 13448,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 87658496,
+      heapTotal: 60993536,
+      heapUsed: 40354936,
+      external: 20995947,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66920.234 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:02:22.510 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:02:27 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 8840,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 90353664,
+      heapTotal: 60993536,
+      heapUsed: 35304264,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66925.39 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:02:27.677 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:02:34 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 14560,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91127808,
+      heapTotal: 60993536,
+      heapUsed: 35528024,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66932.093 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:02:34.382 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:02:40 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 17052,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91160576,
+      heapTotal: 60993536,
+      heapUsed: 35452232,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66938.093 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:02:40.372 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:02:46 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 26052,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91545600,
+      heapTotal: 62308352,
+      heapUsed: 33558848,
+      external: 20995947,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66943.921 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:02:46.212 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:02:57 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 8696,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91496448,
+      heapTotal: 62570496,
+      heapUsed: 33697472,
+      external: 20995947,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66954.953 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:02:57.229 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:03:09 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 28376,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 89235456,
+      heapTotal: 62570496,
+      heapUsed: 33316232,
+      external: 20995947,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 66967.562 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:03:09.845 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:04:08 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 25948,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 90750976,
+      heapTotal: 60993536,
+      heapUsed: 35558664,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67026.062 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:04:08.338 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:04:21 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 26204,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91549696,
+      heapTotal: 61255680,
+      heapUsed: 35865280,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67038.859 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:04:21.133 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:04:24 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 20488,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91308032,
+      heapTotal: 62570496,
+      heapUsed: 33239608,
+      external: 20995947,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67042.593 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:04:24.881 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:04:40 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 15856,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 90431488,
+      heapTotal: 61255680,
+      heapUsed: 35392432,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67058.093 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:04:40.384 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:04:42 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 24776,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 90951680,
+      heapTotal: 60993536,
+      heapUsed: 35777648,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67060.375 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:04:42.664 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:04:43 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 22264,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 90730496,
+      heapTotal: 60993536,
+      heapUsed: 35694240,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67061.312 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:04:43.593 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:04:46 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 23440,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 89358336,
+      heapTotal: 60207104,
+      heapUsed: 42430472,
+      external: 20995947,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67064.218 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:04:46.500 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:04:53 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 17244,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 87191552,
+      heapTotal: 60993536,
+      heapUsed: 40560280,
+      external: 20995947,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67071.328 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:04:53.614 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:07:11 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 19328,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 90636288,
+      heapTotal: 60993536,
+      heapUsed: 35656776,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67209.171 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:07:11.447 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:07:15 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 25644,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 90849280,
+      heapTotal: 60993536,
+      heapUsed: 35615864,
+      external: 20995937,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67212.734 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:07:15.019 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:07:22 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 8908,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91451392,
+      heapTotal: 61255680,
+      heapUsed: 35710640,
+      external: 21006608,
+      arrayBuffers: 18262786
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67219.828 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:07:22.106 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:07:34 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 14096,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91332608,
+      heapTotal: 61255680,
+      heapUsed: 35706840,
+      external: 21006608,
+      arrayBuffers: 18262786
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67231.828 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:07:34.107 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+      at listenInCluster (node:net:1945:12)
+      at Server.listen (node:net:2037:7)
+      at Function.listen (D:\Projects\mern-project-typescript\node_modules\express\lib\application.js:635:24)
+      at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)
+      at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1 {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1897:16)\n' +
+    '    at listenInCluster (node:net:1945:12)\n' +
+    '    at Server.listen (node:net:2037:7)\n' +
+    '    at Function.listen (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at start (file:///D:/Projects/mern-project-typescript/backend/server.js:50:13)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/server.js:56:1',
+  exception: true,
+  date: 'Sat Jun 01 2024 12:07:40 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 26428,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 91574272,
+      heapTotal: 61255680,
+      heapUsed: 35987280,
+      external: 21006608,
+      arrayBuffers: 18262786
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 67238.468 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1897,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1945,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2037,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: 'start',
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/server.js',
+      function: null,
+      line: 56,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-01 12:07:40.745 PM'
+}
