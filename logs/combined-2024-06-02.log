@@ -1,0 +1,10 @@
+{
+  method: 'GET',
+  url: '/api/v1/test',
+  status: 200,
+  content_length: '30',
+  response_time: 1.739,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-02 12:05:14.809 PM'
+}
