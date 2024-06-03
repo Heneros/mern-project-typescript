@@ -1,10 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import clsx from 'clsx';
+
 import Header from '../../components/Header';
 // import Header from './Header';
 
-export default function Layout() {
+export function Layout() {
     return (
         <>
             <Header />
