@@ -1,0 +1,192 @@
+-------------------
+Code брать.
+mern invoice
+react project ulbi typescript
+-------------------
+Technology:
+typescript 
+passport register google 
+сontact us
+jest тест блоков
+webpack react project ulbi typescript для react запускалось приложение
+Feature-Sliced Design (FSD).
+-------------------
+Pages:
+register
+login
+homepage
+verification page
+user profile 
+contact us
+shop
+reset password
+users list - admin page
+products list - admin page
+edit product - admin page
+single product add  Schedule a visit
+user profile можно download pdf 
+-------------------
+Дата сдача
+28 мая
+-------------------
+today
+
+redux добавить
+fsd архитектуру изучить
+
+https://habr.com/ru/companies/avito/articles/752536/
+https://feature-sliced.design/examples
+
+
+fontawesome библиотеку добавить
+Слайдер добавить блок сделать
+
+
+-------------------
+Tomorrow/Future:
+
+react-helmet-async
+разобраться с портами если один занят а другой нет
+попробовать webpack config
+написать скрипт который будет ликвидировать не правильеые пробелы/точки с запятой/двойные скобки. 
+.stylelintrc 
+
+-------------------
+remember
+npm cache clean --force
+npm init @eslint/config
+rm -rf node_modules
+
+
+
+Проксирование - это механизм, который позволяет передавать запросы от клиента к одному серверу (называемому прокси-сервером), который затем передает запросы другому серверу, выполняет необходимую обработку и возвращает результат клиенту.
+
+
+
+Заголовок Host - это часть HTTP-запроса, в которой клиент указывает имя хоста, к которому он хочет обратиться. Это необходимо, поскольку серверы могут хостить несколько сайтов на одном IP-адресе, и заголовок Host позволяет серверу определить, какой сайт он должен обслужить.
+
+
+  location / {
+    proxy_pass http://client;
+
+    proxy_redirect off;
+
+    proxy_set_header Host $host;
+
+
+Эта строка добавляет заголовок X-Real-IP в исходящий запрос. В него записывается значение $remote_addr, которое представляет собой IP-адрес клиента, сделавшего запрос. Это может быть полезно для сервера http://client для идентификации реального клиента, особенно если трафик проходит через несколько прокси-серверов.
+    proxy_set_header X-Real-IP $remote_addr;
+
+Эта строка добавляет заголовок X-Forwarded-For в исходящий запрос. В него записывается значение $proxy_add_x_forwarded_for, которое накапливает информацию обо всех IP-адресах прокси-серверов, через которые прошел запрос. Это может быть полезно для отслеживания пути запроса
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+    proxy_set_header X-Forwarded-Host $server_name;
+
+  }
+
+-------------------------------
+docker compose -f local.yml down --volumes --remove-orphans
+
+
+
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: [
+    'react',
+  ],
+  rules: {
+    'no-unused-vars': 'off',
+    'react/jsx-filename-extension': [
+      2,
+      {
+        extensions: ['.js', '.jsx', '.tsx'],
+      },
+    ],
+    // 'react/react-in-jsx-scope': 'off',
+    // 'react/jsx-props-no-spreading': 'warn',
+    // 'jsx-a11y/no-static-element-interactions': 'off',
+    // 'jsx-a11y/click-events-have-key-events': 'off',
+    'react/function-component-definition': 'off',
+    indent: ['error', 4],
+    'linebreak-style': 'off',
+    'import/no-unresolved': 'off',
+    'no-shadow': 'off',
+    'import/extensions': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'import/no-import-module-exports': 'off',
+    'consistent-return': 'warn',
+    'no-underscore-dangle': 'off',
+    camelcase: 'off',
+    'prefer-destructuring': 'off',
+    'react/jsx-indent': ['error', 4],
+    'import/prefer-default-export': 'off',
+    'no-mixed-spaces-and-tabs': 'off',
+    'no-tabs': 'off',
+    'prefer-const': 'off',
+    'import/no-mutable-exports': 'off',
+  },
+};
+
+
+
+
+
+{
+  "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "vscode-icons",
+  "explorer.confirmDelete": false,
+  "editor.wordWrap": "on",
+  "RainbowBrackets.depreciation-notice": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.nodePath": "/",
+  "eslint.run": "onSave",
+  "eslint.debug": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  },
+  "eslint.format.enable": true,
+  "editor.formatOnPaste": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },i
+  "editor.defaultFormatter": "dbaeumer.vscode-eslnt",
+  "files.autoSave": "afterDelay",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "explorer.confirmDragAndDrop": false,
+}
