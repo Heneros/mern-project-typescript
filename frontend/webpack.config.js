@@ -21,6 +21,10 @@ module.exports = {
                 exclude: /node_modules/,
                 use: 'babel-loader',
             },
+            {
+                test: /\.css$/, 
+                use: ['css-loader'], 
+            },
         ],
     },
     resolve: {

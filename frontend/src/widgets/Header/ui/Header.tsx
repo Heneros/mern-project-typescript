@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { FaEnvelope } from 'react-icons/fa';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Header = () => {
@@ -13,7 +13,7 @@ export const Header = () => {
                             <ul className="info">
                                 <li>
                                     {/* <i className="fa fa-envelope"></i>{' '} */}
-                                    <FontAwesomeIcon icon={FaEnvelope} />
+                                    <FontAwesomeIcon icon={faEnvelope} />
                                     info@company.com
                                 </li>
                                 <li>
