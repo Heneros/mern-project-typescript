@@ -5,6 +5,7 @@ import clsx from 'clsx';
 
 // import Header from './Header';
 import { Header } from 'widgets/header';
+import { Footer } from 'widgets/footer';
 
 export function Layout() {
     return (
@@ -13,6 +14,7 @@ export function Layout() {
             <Container>
                 <Outlet />
             </Container>
+            <Footer />
         </>
     );
 }

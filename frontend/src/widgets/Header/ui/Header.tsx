@@ -1,7 +1,19 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+    faCalendar,
+    faEnvelope,
+    faMap,
+} from '@fortawesome/free-solid-svg-icons';
+import {
+    faFacebookF,
+    faInstagram,
+    faLinkedinIn,
+    faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return (
@@ -12,86 +24,83 @@ export const Header = () => {
                         <div className="col-lg-8 col-md-8">
                             <ul className="info">
                                 <li>
-                                    {/* <i className="fa fa-envelope"></i>{' '} */}
                                     <FontAwesomeIcon icon={faEnvelope} />
                                     info@company.com
                                 </li>
                                 <li>
-                                    <i className="fa fa-map"></i> Sunny Isles
-                                    Beach, FL 33160
+                                    <FontAwesomeIcon icon={faMap} />
+                                    Sunny Isles Beach, FL 33160
                                 </li>
                             </ul>
                         </div>
                         <div className="col-lg-4 col-md-4">
                             <ul className="social-links">
                                 <li>
-                                    <a href="#">
-                                        <i className="fab fa-facebook"></i>
-                                    </a>
+                                    <Link to="#!">
+                                        <FontAwesomeIcon icon={faFacebookF} />
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="https://x.com/minthu"
+                                    <Link
+                                        to="https://x.com/minthu"
                                         target="_blank"
                                     >
-                                        <i className="fab fa-twitter"></i>
-                                    </a>
+                                        <FontAwesomeIcon icon={faTwitter} />
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i className="fab fa-linkedin"></i>
-                                    </a>
+                                    <Link to="#!">
+                                        <FontAwesomeIcon icon={faLinkedinIn} />
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i className="fab fa-instagram"></i>
-                                    </a>
+                                    <Link to="#!">
+                                        <FontAwesomeIcon icon={faInstagram} />
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </Container>
             </div>
-            {/* 
-  <!-- ***** Header Area Start ***** --> */}
+            {/* <!-- ***** Header Area Start ***** --> */}
             <header className="header-area header-sticky">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <nav className="main-nav">
                                 {/* <!-- ***** Logo Start ***** --> */}
-                                <a href="index.html" className="logo">
+                                <Link to="/" className="logo">
                                     <h1>Villa</h1>
-                                </a>
+                                </Link>
                                 {/* <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** --> */}
                                 <ul className="nav">
                                     <li>
-                                        <a href="index.html" className="active">
+                                        <Link to="/" className="active">
                                             Home
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="properties.html">Properties</a>
+                                        <Link to="/properties">Properties</Link>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/contact-us">Contact Us</Link>
                                     </li>
                                     <li>
-                                        <a href="property-details.html">
-                                            Property Details
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i className="fa fa-calendar"></i>{' '}
+                                        <Link to="#!">
+                                            {/* <i className="fa fa-calendar"></i>{' '} */}
+                                            <FontAwesomeIcon
+                                                icon={faCalendar}
+                                            />
                                             Schedule a visit
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
-                                <a className="menu-trigger">
+                                <span className="menu-trigger">
                                     <span>Menu</span>
-                                </a>
+                                </span>
                                 {/* <!-- ***** Menu End ***** --> */}
                             </nav>
                         </div>
