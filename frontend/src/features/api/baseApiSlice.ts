@@ -1,61 +1,44 @@
-import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
+import {
+    createApi,
+    fetchBaseQuery,
+    BaseQueryFn,
+    FetchArgs,
+    FetchBaseQueryError
+} from '@reduxjs/toolkit/query/react';
 import type { RootState } from 'shared/lib/reducer';
-Object is of type 'unknown'.ts(2571)
-
-import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
-
-import type { RootState } from 'shared/lib/reducer';
-
-
-
-const baseQuery = fetchBaseQuery({
-
-    baseUrl: "/api/v1",
-
-    credentials: 'include',
-
-    prepareHeaders:(headers, {getState}) =>{
-
-       const token = getState<RootState>().auth.user?.accessToken;
-
-    }
-
-}) import { createSlice } from '@reduxjs/toolkit';
-
-
-
-
-
-
-
-export interface RootState {
-
-  auth: {
-
-    user?: {
-
-      accessToken: string;
-
-    };
-
-  };
-
-} 
-const baseQuery = fetchBaseQuery({
-    baseUrl: "/api/v1",
-    credentials: 'include',
-    prepareHeaders:(headers, {getState}) =>{
-       const token = (getState() as RootState).auth.user?.accessToken;
-    }
-})import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import type { RootState } from 'shared/lib/reducer';
-import { createSlice } from '@reduxjs/toolkit';
 
 const baseQuery = fetchBaseQuery({
     baseUrl: '/api/v1',
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
-        const token = getState<RootState>().auth.user?.accessToken;
+        const state = getState() as RootState;
+        const token = state.auth.user?.accessToken;
+        const googleToken = state.auth?.googleToken;
+
+        if (token) {
+            headers.set('Authorization', `Bearer ${token}`);
+        } else if (googleToken) {
+            headers.set('Authorization', `Bearer ${googleToken}`);
+        }
+        return headers;
     },
 });
 
+const baseQueryWithRefreshToken: BaseQueryFn<
+    string | FetchArgs,
+    // unknown: This indicates that the second argument (api) to the function can have any type
+    unknown,
+    FetchBaseQueryError
+> = async (args, api, extraOptions) => {
+    let response = await baseQuery(args, api, extraOptions);
+    return response;
+};
+
+const baseApiSlice = createApi({
+    reducerPath: 'api',
+    baseQuery: baseQueryWithRefreshToken,
+    tagTypes: ["User" ],
+    endpoints: (builder) => ({}),
+});
+
+export default baseApiSlice;
