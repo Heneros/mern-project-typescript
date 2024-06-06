@@ -1,6 +1,6 @@
-export interface User{
-    email: String,
-    username: String,
+export interface User {
+    email: String;
+    username: String;
     firstName: string;
     lastName: string;
     isEmailVerified: boolean;
@@ -11,4 +11,7 @@ export interface User{
     roles?: string[];
     active?: boolean;
     refreshToken?: string[];
+
+    accessToken?: string[];
+    googleToken?: string[];
 }

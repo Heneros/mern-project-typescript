@@ -1,1 +1,1 @@
-import { Properties } from './ui/Properties';
+export { Properties } from './ui/Properties';

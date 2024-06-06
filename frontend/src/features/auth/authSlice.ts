@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { decodeToken } from "react-jwt";
 import { User } from 'shared/types/User';
 
@@ -28,5 +28,29 @@ const initialState: AuthSlice = {
   googleToken: googleToken ? googleToken : null,
 };
 
-export default initialState;
+const authSlice = createSlice({
+  name: "auth",
+	initialState,
+  reducers:{
+    logIn: (state, action:PayloadAction<User>) =>{
+      state.user = action.payload;
+      localStorage.setItem("user", JSON.stringify(action.payload))
+    },
+    logOut:(state) =>{
+      	state.user = null;
+			state.googleToken = null;
+			localStorage.removeItem("user");
+			localStorage.removeItem("googleToken");
+    }
+  }
+})
+
+export const {logIn, logOut} = authSlice.actions;
+export default authSlice.reducer;
+
+
+export const selectCurrentUserToken = (state: {auth: AuthSlice}) => state.auth.user?.accessToken;
+export const selectCurrentUserGoogleToken = (state:  {auth: AuthSlice}) => state.auth.user?.googleToken;
+
+
 

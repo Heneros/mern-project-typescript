@@ -7,17 +7,14 @@ import { Layout } from './Layout/Layout';
 
 import { HomePage } from 'pages/homePage/ui/HomePage';
 import { Properties } from 'pages/properties/ui/Properties';
+import { Providers } from './Providers/providers';
+import { AppRouter } from './routers';
 
 const App = () => {
     return (
-        <>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<HomePage />} />
-                    <Route path="properties" element={<Properties />} />
-                </Route>
-            </Routes>
-        </>
+        <Providers>
+            <AppRouter />
+        </Providers>
     );
 };
 
