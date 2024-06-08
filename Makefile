@@ -13,5 +13,8 @@ show-logs-frontend:
 show-logs-nginx:
 	docker compose -f local.yml logs nginx
 
+show-logs-mongo-express:
+	docker compose -f local.yml logs  mongo-express
+
 down:
 	docker compose -f local.yml down

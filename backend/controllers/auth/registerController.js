@@ -14,7 +14,7 @@ const { randomBytes } = await import('crypto');
 const registerUser = asyncHandler(async (req, res) => {
     const {
         email, username, firstName, lastName, password, passwordConfirm,
-    } =		req.body;
+    } = req.body;
 
     if (!email) {
         res.status(400);
