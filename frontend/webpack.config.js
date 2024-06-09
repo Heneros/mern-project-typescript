@@ -20,7 +20,7 @@ module.exports = {
                 test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
                 use: 'babel-loader',
-            }, 
+            },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
@@ -37,5 +37,12 @@ module.exports = {
             shared: path.resolve(__dirname, 'src/shared'),
             widgets: path.resolve(__dirname, 'src/widgets'),
         }
+    },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'public'),
+        },
+        compress: true,
+        port: 3000,
     },
 };

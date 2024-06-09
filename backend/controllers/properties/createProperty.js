@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler';
-import Property from '../../models/propertiesModel';
+import Property from '../../models/propertiesModel.js';
 
 // $-title   Create property
 // $-path    POST /api/v1/property/create

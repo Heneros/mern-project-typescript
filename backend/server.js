@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(cors());
 app.use(mongoSanitize());
-app.use(morganMiddleware);
+// app.use(morganMiddleware);
 
 app.get('/api/v1/test', (req, res) => {
     res.json({ message: 'Hello World 3123' });
@@ -39,7 +39,7 @@ app.use('/api/v1/property', propertyRoutes);
 
 console.log('hello world6666 123');
 
-const port = 4000;
+const port = 1997;
 // local
 // const MONGO_URI = `mongodb://${process.env.MONGO_ROOT_USERNAME}:${process.env.MONGO_ROOT_PASSWORD}@mongodb/mernvilla`;
 const MONGO_URI = process.env.MONGO_URI;

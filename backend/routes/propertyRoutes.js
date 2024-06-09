@@ -1,9 +1,9 @@
 import express from 'express';
-import checkAuth from '../middleware/checkAuthMiddleware';
-import role from '../middleware/roleMiddleware';
+import checkAuth from '../middleware/checkAuthMiddleware.js';
+import role from '../middleware/roleMiddleware.js';
 
-import getProperty from '../controllers/properties/getProperty';
-import createProperty from '../controllers/properties/createProperty';
+import getProperty from '../controllers/properties/getProperty.js';
+import createProperty from '../controllers/properties/createProperty.js';
 
 const router = express.Router();
 

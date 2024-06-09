@@ -7,18 +7,12 @@ services:
       context: .
       dockerfile: ./docker/local/express/Dockerfile
     volumes:
-      - ./backend:/app
       - /app/node_modules
       - .:/app
     # ports:
     #   - "1997:1997"
     depends_on:
       - mongodb
-    environment:
-      NODE_ENV: ${NODE_ENV}
-      MONGO_ROOT_USERNAME: 033136d6d2fe94034ee2
-      MONGO_ROOT_PASSWORD: 46fe88eeada4fdb8ea9c9e227cc3db28f9d1df4f21666539602678afa46a3955
-      MONGO_URI: mongodb://${MONGO_ROOT_USERNAME}:${MONGO_ROOT_PASSWORD}@mongodb/mernproject
     networks:
       - mern-project_villa
 
@@ -57,18 +51,17 @@ services:
       - mern-project_villa
 
   mongodb:
-    container_name: mongo-db
-    environment:
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
-    image: mongo:5.0.6-focal
-    networks:
-      - mern-project_villa
-    ports:
-      - "27017:27017"
-    restart: always
-    volumes:
-      - mongodb-data:/data/db
+      image: mongo:5.0.6-focal
+      restart: always
+      ports:
+          - "27017:27017"
+      environment:
+          MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
+          MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+      volumes:
+          - mongodb-data:/data/db
+      networks:
+        - mern-project_villa
 
   nginx:
     build:

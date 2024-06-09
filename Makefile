@@ -16,5 +16,12 @@ show-logs-nginx:
 show-logs-mongo-express:
 	docker compose -f local.yml logs  mongo-express
 
+
+show-logs-mailhog:
+	docker compose -f local.yml logs  mailhog
+
+	
+
 down:
 	docker compose -f local.yml down
+
