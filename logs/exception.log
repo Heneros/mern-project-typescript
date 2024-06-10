@@ -2806,3 +2806,2624 @@
   ],
   timestamp: '2024-06-01 12:07:40.745 PM'
 }
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:13:14 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 21552,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85532672,
+      heapTotal: 61255680,
+      heapUsed: 40507824,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164256.812 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:13:14.775 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:13:19 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 17684,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85532672,
+      heapTotal: 60993536,
+      heapUsed: 40507704,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164261.734 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:13:19.696 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:13:52 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 11924,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85676032,
+      heapTotal: 60997632,
+      heapUsed: 40963400,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164294.546 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:13:52.506 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:13:59 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 14028,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 84996096,
+      heapTotal: 60993536,
+      heapUsed: 40194024,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164301.125 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:13:59.080 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:14:08 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 22272,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 84930560,
+      heapTotal: 60731392,
+      heapUsed: 40338224,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164310.296 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:14:08.255 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:14:13 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 21992,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 84774912,
+      heapTotal: 60993536,
+      heapUsed: 40564352,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164315.375 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:14:13.339 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:14:18 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 20392,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85053440,
+      heapTotal: 60993536,
+      heapUsed: 40065088,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164320.203 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:14:18.159 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:14:22 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 12296,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85606400,
+      heapTotal: 60997632,
+      heapUsed: 40680592,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164324.953 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:14:22.902 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:14:25 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 22828,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 87490560,
+      heapTotal: 60731392,
+      heapUsed: 42215264,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164327.796 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:14:25.749 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:16:08 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 21444,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85471232,
+      heapTotal: 60997632,
+      heapUsed: 40831528,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164430.578 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:16:08.535 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:16:26 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 25352,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 88596480,
+      heapTotal: 61255680,
+      heapUsed: 35340992,
+      external: 20976760,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164448.093 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:16:26.046 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:18:00 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 28280,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85348352,
+      heapTotal: 61255680,
+      heapUsed: 40515144,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164542.765 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:18:00.726 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:29:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:18:23 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 6692,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 87019520,
+      heapTotal: 60469248,
+      heapUsed: 42566336,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164565.859 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 29,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:18:23.823 PM'
+}
+{
+  error: TypeError: router.route(...).create is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:12:25
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).create is not a function\n' +
+    'TypeError: router.route(...).create is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:12:25\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).create is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:12:25\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:19:20 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 8932,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 87728128,
+      heapTotal: 60469248,
+      heapUsed: 42468080,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164622.187 },
+  trace: [
+    {
+      column: 25,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 12,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:19:20.147 PM'
+}
+{
+  error: Error: Route.post() requires a callback function but got a [object String]
+      at Route.<computed> [as post] (D:\Projects\mern-project-typescript\node_modules\express\lib\router\route.js:216:15)
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:17:25
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: Route.post() requires a callback function but got a [object String]\n' +
+    'Error: Route.post() requires a callback function but got a [object String]\n' +
+    '    at Route.<computed> [as post] (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js:216:15)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:17:25\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'Error: Route.post() requires a callback function but got a [object String]\n' +
+    '    at Route.<computed> [as post] (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js:216:15)\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:17:25\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:19:53 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 27376,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85524480,
+      heapTotal: 60993536,
+      heapUsed: 40518168,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164655.281 },
+  trace: [
+    {
+      column: 15,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js',
+      function: 'Route.<computed> [as post]',
+      line: 216,
+      method: '<computed> [as post]',
+      native: false
+    },
+    {
+      column: 25,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:19:53.241 PM'
+}
+{
+  error: TypeError: router.update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:25:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.update is not a function\n' +
+    'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:25:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:25:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:20:26 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 30428,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 88076288,
+      heapTotal: 60469248,
+      heapUsed: 42509960,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164688.5 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:20:26.455 PM'
+}
+{
+  error: TypeError: router.r is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:25:8
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.r is not a function\n' +
+    'TypeError: router.r is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:25:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.r is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:25:8\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:20:29 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 27300,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85868544,
+      heapTotal: 61259776,
+      heapUsed: 40886656,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164691.218 },
+  trace: [
+    {
+      column: 8,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 25,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:20:29.169 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:02 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 26488,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85598208,
+      heapTotal: 61255680,
+      heapUsed: 40573976,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164724.89 },
+  trace: [
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 26,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:02.858 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:04 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 21500,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 86237184,
+      heapTotal: 61521920,
+      heapUsed: 40969736,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164726.64 },
+  trace: [
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 26,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:04.599 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:13 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 27520,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 88023040,
+      heapTotal: 60731392,
+      heapUsed: 42574344,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164735.234 },
+  trace: [
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 26,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:13.186 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:26:13\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:15 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 13516,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85716992,
+      heapTotal: 60993536,
+      heapUsed: 40379416,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164737.5 },
+  trace: [
+    {
+      column: 13,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 26,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:15.462 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:21:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:21:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:21:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:20 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 27040,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85774336,
+      heapTotal: 61255680,
+      heapUsed: 40665344,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164742.375 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 21,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:20.337 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:22:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:22:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:22:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:24 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 29132,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 86130688,
+      heapTotal: 60997632,
+      heapUsed: 40877960,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164746.375 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 22,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:24.328 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:23:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:23:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:23:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:25 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 24088,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 88014848,
+      heapTotal: 60993536,
+      heapUsed: 42429544,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164747.562 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 23,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:25.525 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:23:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:23:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:23:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:29 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 5824,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 86478848,
+      heapTotal: 61521920,
+      heapUsed: 40966488,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164751.125 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 23,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:29.077 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:31 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 24756,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 88932352,
+      heapTotal: 61255680,
+      heapUsed: 35462704,
+      external: 20976760,
+      arrayBuffers: 18262473
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164753.046 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:31.010 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:36 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 10900,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 87707648,
+      heapTotal: 60469248,
+      heapUsed: 42252112,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164758.796 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:36.751 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:44 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 28644,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 84983808,
+      heapTotal: 60993536,
+      heapUsed: 40622720,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164766.109 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:44.064 PM'
+}
+{
+  error: TypeError: router.route(...).update is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).update is not a function\n' +
+    'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).update is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:21:59 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 30608,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 86020096,
+      heapTotal: 61521920,
+      heapUsed: 41117648,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164781.109 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:21:59.076 PM'
+}
+{
+  error: TypeError: router.route(...).зфе is not a function
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: router.route(...).зфе is not a function\n' +
+    'TypeError: router.route(...).зфе is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'TypeError: router.route(...).зфе is not a function\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:24:6\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 19:22:56 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 21120,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85938176,
+      heapTotal: 60997632,
+      heapUsed: 40845072,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 164838.093 },
+  trace: [
+    {
+      column: 6,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 07:22:56.056 PM'
+}
