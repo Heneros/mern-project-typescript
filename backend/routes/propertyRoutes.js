@@ -7,13 +7,13 @@ import createProperty from '../controllers/properties/createProperty.js';
 
 const router = express.Router();
 
-router.route(
+router.post(
     '/create',
     checkAuth,
     role.checkRole(role.ROLES.Admin),
     createProperty,
 );
-router.route(
+router.get(
     '/:id',
     getProperty,
 );
