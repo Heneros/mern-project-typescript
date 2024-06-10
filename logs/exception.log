@@ -5427,3 +5427,177 @@
   ],
   timestamp: '2024-06-10 07:22:56.056 PM'
 }
+{
+  error: ReferenceError: get is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:57
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: get is not defined\n' +
+    'ReferenceError: get is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:57\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: get is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:57\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 20:41:31 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 10148,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 87199744,
+      heapTotal: 60731392,
+      heapUsed: 42598704,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 169553.906 },
+  trace: [
+    {
+      column: 57,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 08:41:31.872 PM'
+}
+{
+  error: ReferenceError: get is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:57
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: get is not defined\n' +
+    'ReferenceError: get is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:57\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: get is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js:28:57\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Mon Jun 10 2024 20:41:40 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 21760,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 85987328,
+      heapTotal: 61259776,
+      heapUsed: 41131576,
+      external: 20976770,
+      arrayBuffers: 18262483
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 169562.203 },
+  trace: [
+    {
+      column: 57,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/routes/propertyRoutes.js',
+      function: null,
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-06-10 08:41:40.158 PM'
+}

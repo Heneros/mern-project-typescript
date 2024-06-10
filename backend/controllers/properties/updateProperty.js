@@ -1,12 +1,12 @@
 import asyncHandler from 'express-async-handler';
 import Property from '../../models/propertiesModel.js';
 
-// $-title   UPDATE property
+// $-title   PUT property
 // $-path    PUT /api/v1/property/:id
 // $-auth    Private
 
 const updateProperty = asyncHandler(async (req, res) => {
-    const propertyId = req.params.id; 
+    const propertyId = req.params.id;
 
     const property = await Property.findById(propertyId);
 
@@ -19,11 +19,13 @@ const updateProperty = asyncHandler(async (req, res) => {
     const updatedProperty = await Property.findByIdAndUpdate(
         propertyId,
         { ...fieldsToUpdate },
-        { new: true, runValidators: true }
+        { new: true, runValidators: true },
     );
 
     if (!updatedProperty) {
-        return res.status(400).json({ message: 'Property could not be updated' });
+        return res
+            .status(400)
+            .json({ message: 'Property could not be updated' });
     }
 
     res.json({
