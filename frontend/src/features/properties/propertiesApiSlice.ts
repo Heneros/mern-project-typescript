@@ -36,3 +36,11 @@ endpoints:(builder) =>({
     })
 })
 })
+
+export const {
+    useGetAllPropertiesQuery,
+    useGetSinglePropertyQuery,
+    useCreatePropertyMutation,
+    useDeletePropertyMutation,
+    useUpdatePropertyMutation
+} = propertiesApiSlice
