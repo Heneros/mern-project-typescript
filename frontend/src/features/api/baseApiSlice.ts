@@ -37,7 +37,7 @@ const baseQueryWithRefreshToken: BaseQueryFn<
 const baseApiSlice = createApi({
     reducerPath: 'api',
     baseQuery: baseQueryWithRefreshToken,
-    tagTypes: ["User" ],
+    tagTypes: ["User", "Property"],
     endpoints: (builder) => ({}),
 });
 
