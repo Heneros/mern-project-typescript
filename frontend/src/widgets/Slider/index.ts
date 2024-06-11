@@ -1,1 +1,1 @@
-export {Slider} from './ui/Slider'
+export {SliderBanner} from './ui/Slider'
