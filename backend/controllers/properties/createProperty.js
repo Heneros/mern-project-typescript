@@ -41,7 +41,9 @@ const createProperty = asyncHandler(async (req, res) => {
             title,
             price,
             category,
-            preview: preview || 'https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg',
+            preview:
+                preview
+                || 'https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg',
             description,
             bedrooms,
             bathrooms,
@@ -57,10 +59,14 @@ const createProperty = asyncHandler(async (req, res) => {
         }
 
         if (createdProperty) {
-            res.status(201).json({ success: true, message: 'Property created successfully!' });
+            res.status(201).json({
+                success: true,
+                message: 'Property created successfully!',
+            });
         }
     } catch (error) {
         res.status(400).json({ message: 'error create post of property' });
+        console.log(error);
     }
 });
 

@@ -6,9 +6,9 @@ const propertySchema = new Schema(
     {
         title: {
             type: String,
-            unique: true,
+            //  unique: true,
             required: true,
-            maxLength: 17,
+            maxLength: 25,
         },
         preview: {
             type: String,
@@ -17,7 +17,7 @@ const propertySchema = new Schema(
         category: {
             type: String,
             required: true,
-            default: ['unknown'],
+            default: 'unknown',
         },
         description: {
             type: String,
@@ -39,6 +39,16 @@ const propertySchema = new Schema(
         },
         parking: {
             type: Number,
+        },
+        city: {
+            type: String,
+            // required: true,
+            default: 'New York',
+        },
+        country: {
+            type: String,
+            // required: true,
+            default: 'USA',
         },
     },
     { timestamps: true },

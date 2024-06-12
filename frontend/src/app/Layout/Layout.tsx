@@ -11,9 +11,9 @@ export function Layout() {
     return (
         <>
             <Header />
-            <Container>
+     
                 <Outlet />
-            </Container>
+      
             <Footer />
         </>
     );

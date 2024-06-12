@@ -8,7 +8,7 @@ import {
 import type { RootState } from 'shared/lib/reducer';
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: '/api/v1',
+    baseUrl: 'http://localhost:1997/api/v1',
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const state = getState() as RootState;
@@ -26,6 +26,7 @@ const baseQuery = fetchBaseQuery({
 
 const baseQueryWithRefreshToken: BaseQueryFn<
     string | FetchArgs,
+
     // unknown: This indicates that the second argument (api) to the function can have any type
     unknown,
     FetchBaseQueryError
