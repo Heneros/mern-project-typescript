@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Preloader() {
+export function Preloader() {
     const [visible, setVisible] = useState<boolean>(true);
 
     useEffect(() => {
@@ -13,7 +13,7 @@ export default function Preloader() {
     return (
         <div
             id="js-preloader"
-            className={`js-preloader ${visible ? '' : 'hidden'}`}
+            className={`js-preloader ${visible ? '' : 'loaded'}`}
             aria-hidden={!visible}
         >
             <div className="preloader-inner">

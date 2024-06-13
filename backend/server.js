@@ -30,8 +30,9 @@ app.use(cors({
     methods: 'GET,POST,PUT,DELETE',
     credentials: true,
 }));
-// app.use(mongoSanitize());
-// app.use(morganMiddleware);
+
+app.use(mongoSanitize());
+app.use(morganMiddleware);
 
 app.get('/api/v1/test', (req, res) => {
     res.json({ message: 'Hello World 3123' });

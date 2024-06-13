@@ -37,11 +37,8 @@ export const SliderBanner = () => {
                     </span>
                     <h2>
                         {item.description
-                            ? item.description.substring(0, 12)
+                            ? item.description.substring(0, 15)
                             : ''}
-                        {/* Hurry!
-                        <br />
-                        Get the Best Villa for you */}
                     </h2>
                 </div>
             </div>

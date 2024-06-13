@@ -89,6 +89,11 @@ export const Header = () => {
                                         <Link to="/contact-us">Contact Us</Link>
                                     </li>
                                     <li>
+                                        <Link to="/registration">
+                                            Registration
+                                        </Link>
+                                    </li>
+                                    <li>
                                         <Link to="#!">
                                             {/* <i className="fa fa-calendar"></i>{' '} */}
                                             <FontAwesomeIcon

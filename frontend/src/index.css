@@ -57,6 +57,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
 html[xmlns] .clearfix {
   display: block;
 }
+.hidden{
+  
+}
 
 * html .clearfix {
   height: 1%;
