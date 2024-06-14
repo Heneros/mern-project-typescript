@@ -4,6 +4,7 @@ import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import mongoSanitize from 'express-mongo-sanitize';
+import passport from 'passport';
 import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 import { morganMiddleware, systemLogs } from './utils/Logger.js';
 
@@ -12,6 +13,8 @@ import authRoutes from './routes/auth.js';
 import userRoutes from './routes/user.js';
 import uploadRoutes from './routes/uploadRoutes.js';
 import propertyRoutes from './routes/propertyRoutes.js';
+
+import googleAuth from './config/passportSetup.js';
 
 const app = express();
 
@@ -24,12 +27,18 @@ const __dirname = path.resolve();
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use(passport.initialize());
+googleAuth();
+
 app.use(cookieParser());
-app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: 'GET,POST,PUT,DELETE',
-    credentials: true,
-}));
+app.use(
+    cors({
+        origin: 'http://localhost:3000',
+        methods: 'GET,POST,PUT,DELETE',
+        credentials: true,
+    }),
+);
 
 app.use(mongoSanitize());
 app.use(morganMiddleware);
@@ -45,7 +54,7 @@ app.use('/api/v1/property', propertyRoutes);
 
 console.log('hello world6666 123');
 
-const port = 1997;
+const port = process.env.PORT;
 // local
 // const MONGO_URI = `mongodb://${process.env.MONGO_ROOT_USERNAME}:${process.env.MONGO_ROOT_PASSWORD}@mongodb/mernvilla`;
 const MONGO_URI = process.env.MONGO_URI;
