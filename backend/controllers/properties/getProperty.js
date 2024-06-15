@@ -11,7 +11,7 @@ const getProperty = asyncHandler(async (req, res) => {
     if (propertyPage) {
         res.status(200).json({ success: true, propertyPage });
     } else {
-        res.status(404).json({ message: `not found ${propertyId}` });
+        res.status(404).json({ message: `Not found ${propertyId}` });
     }
 });
 

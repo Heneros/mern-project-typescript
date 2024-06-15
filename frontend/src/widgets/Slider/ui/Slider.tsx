@@ -23,7 +23,6 @@ export const SliderBanner = () => {
     const [page, setPage] = useState(0);
     const { data, isLoading, error } = useGetAllPropertiesQuery(page);
 
-    console.log(data);
 
     const slidesItem = data?.properties.map((item: ISlides) => (
         <SwiperSlide>
