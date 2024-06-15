@@ -1,9 +1,12 @@
 import { useGetSinglePropertyQuery } from 'features/properties/propertiesApiSlice';
 import React, { FC } from 'react';
+import { postIdProperty } from 'shared/consts';
 import { ISlides } from 'shared/types';
 
-export const Featured: React.FC.ISlides = () => {
-    const { data } = useGetSinglePropertyQuery('666720f01ed8af0105a0d444');
+// export const Featured: React.FC<{ slides: ISlides[] }> = ({ slides }) => {
+
+export const Featured: React.FC<{ items: ISlides[] }> = () => {
+    const { data } = useGetSinglePropertyQuery(postIdProperty.id);
 
     console.log(data);
     return (
