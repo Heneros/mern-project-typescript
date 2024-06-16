@@ -17,10 +17,8 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "allowImportingTsExtensions": true,
     "noEmit": true,
     "allowImportingTsExtensions": true,
-
     "jsx": "react-jsx",
     "baseUrl": "src",
     "paths": {
@@ -45,6 +43,7 @@
     },
   },
   "include": [
-    "src"
+    "src",
+    "declarations.d.ts"
   ]
 }
