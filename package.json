@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "maildev": "maildev",
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm run webpack --prefix frontend",
-    "dev": "concurrently \"npm run server\"  \"npm run client\" "
+    "dev": "concurrently \"npm run server\"  \"npm run client\"   \"npm run maildev\" "
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,7 @@
     "express-async-handler": "^1.2.0",
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^7.2.0",
+    "formik": "^2.4.6",
     "handlebars": "^4.7.8",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.4",
