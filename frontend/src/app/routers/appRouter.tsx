@@ -12,21 +12,21 @@ import { Layout } from 'app/layout';
 import { HomePage } from 'pages/homePage';
 import { Properties } from 'pages/properties';
 import { Registration } from 'pages/registration';
+import { NotFound } from 'pages/notfound';
 
 export const AppRouter = () => {
-    const routes = createRoutesFromElements(
-        <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route path="/properties" element={<Properties />} />
-            <Route path="/registration" element={<Registration />} />
-        </Route>,
-    );
+    const router = createHashRouter([
+        {
+            path: '/',
+            element: <Layout />,
+            children: [
+                { index: true, element: <HomePage /> },
+                { path: 'properties', element: <Properties /> },
+                { path: 'registration', element: <Registration /> },
+                { path: '*', element: <NotFound /> },
+            ],
+        },
+    ]);
 
-    const router = createHashRouter(routes, {});
-
-    return (
-        <>
-            <RouterProvider router={router} />
-        </>
-    );
+    return <RouterProvider router={router} />;
 };

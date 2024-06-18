@@ -1,7 +1,7 @@
 import { useRegisterUserMutation } from 'features/auth/authApiSlice';
 import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Col, Row } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FormContainer } from 'shared/ui/FormContainer';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
@@ -88,8 +88,9 @@ export const Registration = () => {
                         setStatus({ success: true });
                         setSubmitting(true);
                     } catch (err) {
-                        // const message = err?.data?.message;
+                        //  const message = err?.data?.message;
                         // toast.error(message);
+                        //     console.log(message);
                         setStatus({ success: false });
                         setSubmitting(false);
                     }
@@ -108,15 +109,15 @@ export const Registration = () => {
                         <h1>Register</h1>
                         <Row>
                             <Col md={6} className="mb-3">
-                                <Form.Group controlId="firstName-signup">
-                                    <Form.Label>First Name*</Form.Label>
+                                <Form.Group controlId="firstName">
+                                    <Form.Label>FirstName</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="firstName"
                                         value={values.firstName}
                                         onBlur={handleBlur}
                                         onChange={handleChange}
-                                        placeholder="John"
+                                        placeholder="Enter First Name"
                                         isInvalid={
                                             !!errors.firstName &&
                                             touched.firstName
@@ -136,7 +137,7 @@ export const Registration = () => {
                                         value={values.lastName}
                                         onBlur={handleBlur}
                                         onChange={handleChange}
-                                        placeholder="Doe"
+                                        placeholder="Last Name"
                                         isInvalid={
                                             !!errors.lastName &&
                                             touched.lastName
@@ -200,7 +201,7 @@ export const Registration = () => {
                                             handleChange(e);
                                             changePassword(e.target.value);
                                         }}
-                                        placeholder="******"
+                                        placeholder="Enter Password"
                                         isInvalid={
                                             !!errors.password &&
                                             touched.password
@@ -247,37 +248,13 @@ export const Registration = () => {
                                     </Button>
                                 </Form.Group>
                             </Col>
-                            <Col md={12} className="mb-3">
-                                <p className="text-muted">
-                                    By signing up, you agree to our{' '}
-                                    <a
-                                        href="#"
-                                        className="text-decoration-none"
-                                    >
-                                        Terms of Service
-                                    </a>{' '}
-                                    and{' '}
-                                    <a
-                                        href="#"
-                                        className="text-decoration-none"
-                                    >
-                                        Privacy Policy
-                                    </a>
-                                    .
-                                </p>
-                            </Col>
                             {errors.submit && (
-                                <Col md={12} className="mb-3">
-                                    <div className="alert alert-danger">
-                                        {errors.submit}
-                                    </div>
-                                </Col>
+                                <Col md={12}>{errors.submit}</Col>
                             )}
                             <Col md={12}>
                                 <Button
                                     type="submit"
                                     variant="primary"
-                                    block
                                     disabled={isSubmitting}
                                 >
                                     Create Account
