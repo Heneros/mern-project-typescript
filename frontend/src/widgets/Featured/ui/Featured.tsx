@@ -2,7 +2,7 @@ import { useGetSinglePropertyQuery } from 'features/properties/propertiesApiSlic
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { postIdProperty } from 'shared/consts';
-import { ISlides } from 'shared/types';
+import { PostInfo } from 'shared/types';
 import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
 import { getErrorMessage } from 'shared/utils/getErrorMessage';
@@ -13,7 +13,7 @@ import InfoIconTwo from 'shared/assets/icons/info-icon-02.png';
 import InfoIconThree from 'shared/assets/icons/info-icon-03.png';
 import InfoIconFour from 'shared/assets/icons/info-icon-04.png';
 
-export const Featured: React.FC<{ items: ISlides[] }> = () => {
+export const Featured: React.FC<{ items: PostInfo[] }> = () => {
     const { data, isLoading, error } = useGetSinglePropertyQuery(
         postIdProperty.id,
     );

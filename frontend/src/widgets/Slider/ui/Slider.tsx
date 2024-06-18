@@ -15,7 +15,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import { ISlides } from 'shared/types';
+import { PostInfo } from 'shared/types';
 import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
 
 export const SliderBanner = () => {
@@ -23,8 +23,7 @@ export const SliderBanner = () => {
     const [page, setPage] = useState(0);
     const { data, isLoading, error } = useGetAllPropertiesQuery(page);
 
-
-    const slidesItem = data?.properties.map((item: ISlides) => (
+    const slidesItem = data?.properties.map((item: PostInfo) => (
         <SwiperSlide>
             <div
                 className="item item-1"

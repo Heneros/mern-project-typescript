@@ -1,4 +1,4 @@
-export interface ISlides {
+export interface PostInfo {
     readonly title: string;
     readonly city: string;
     readonly country: string;
