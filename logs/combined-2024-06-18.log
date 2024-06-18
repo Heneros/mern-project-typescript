@@ -2101,3 +2101,23 @@
   message: 'incoming-request',
   timestamp: '2024-06-18 10:59:59.912 PM'
 }
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '457',
+  response_time: 59.015,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-18 11:01:24.600 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 200,
+  content_length: '917',
+  response_time: 110.034,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-18 11:01:24.643 PM'
+}
