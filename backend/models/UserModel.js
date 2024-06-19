@@ -38,7 +38,8 @@ const userSchema = new Schema(
         },
         lastName: {
             type: String,
-            required: true,
+            //   required: true,
+            default: 'Empty',
             trim: true,
             validate: [
                 validator.isAlphanumeric,

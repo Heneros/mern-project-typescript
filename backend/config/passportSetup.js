@@ -20,7 +20,7 @@ const googleAuth = () => {
                     if (!user) {
                         const fullName = profile.displayName.trim().split(' ');
                         const firstName = fullName.shift();
-                        const lastName = fullName.length > 0 ? fullName.join(' ') : '';
+                        const lastName = fullName.length > 0 ? fullName.join(' ') : 'Noname ';
 
                         User.create({
                             username: profile._json.given_name,

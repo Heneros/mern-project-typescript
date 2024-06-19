@@ -5,10 +5,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FormContainer } from 'shared/ui/FormContainer';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import { toast } from 'react-toastify';
 import {
     strengthColor,
     strengthIndicator,
 } from 'shared/utils/password-strength';
+import { SignUpType } from 'shared/types';
+import { GoogleAuth } from 'shared/ui/GoogleAuth';
 
 interface PasswordStrength {
     label: string;
@@ -18,6 +21,15 @@ interface PasswordStrength {
 const USERNAME_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 
 export const Registration = () => {
+    const initialValues: SignUpType = {
+        username: '',
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        passwordConfirm: '',
+        submit: null,
+    };
     const navigate = useNavigate();
     const [level, setLevel] = useState<PasswordStrength>();
     const [showPassword, setShowPassword] = useState(false);
@@ -39,25 +51,29 @@ export const Registration = () => {
         const temp = strengthIndicator(value);
         setLevel(strengthColor(temp));
     };
-
+    const notify = () => {
+        toast('Wow so easy!');
+    };
     useEffect(() => {
         changePassword('');
     }, []);
 
-    const [registerUser, { data, isLoading }] = useRegisterUserMutation();
+    const [registerUser, { data, isLoading, isSuccess }] =
+        useRegisterUserMutation();
+
+    useEffect(() => {
+        if (isSuccess) {
+            // navigate('/');
+
+            const message = data?.message;
+            toast.success(message);
+        }
+    }, [data, isSuccess, navigate]);
 
     return (
         <FormContainer>
             <Formik
-                initialValues={{
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    username: '',
-                    password: '',
-                    passwordConfirm: '',
-                    submit: null,
-                }}
+                initialValues={initialValues}
                 validationSchema={Yup.object().shape({
                     firstName: Yup.string()
                         .max(255)
@@ -82,15 +98,20 @@ export const Registration = () => {
                         .oneOf([Yup.ref('password')], 'Passwords Must Match')
                         .required('Please confirm your password'),
                 })}
-                onSubmit={async (values, { setStatus, setSubmitting }) => {
+                onSubmit={async (
+                    values: SignUpType,
+                    { setStatus, setSubmitting, resetForm },
+                ) => {
                     try {
                         await registerUser(values).unwrap();
                         setStatus({ success: true });
+                        resetForm();
+                        toast.success('Check your email');
                         setSubmitting(true);
                     } catch (err) {
-                        //  const message = err?.data?.message;
-                        // toast.error(message);
-                        //     console.log(message);
+                        // const message = err?.data?.message;
+                        toast.error('Error');
+                        //  console.log(message);
                         setStatus({ success: false });
                         setSubmitting(false);
                     }
@@ -107,10 +128,10 @@ export const Registration = () => {
                 }) => (
                     <Form noValidate autoComplete="off" onSubmit={handleSubmit}>
                         <h1>Register</h1>
-                        <Row>
+                        <Row className="mt-3">
                             <Col md={6} className="mb-3">
                                 <Form.Group controlId="firstName">
-                                    <Form.Label>FirstName</Form.Label>
+                                    <Form.Label>First Name*</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="firstName"
@@ -259,6 +280,10 @@ export const Registration = () => {
                                 >
                                     Create Account
                                 </Button>
+                            </Col>
+                            <Col md={12}>
+                                Sign up with Google
+                                <GoogleAuth />
                             </Col>
                         </Row>
                     </Form>

@@ -1,2 +1,3 @@
 export { type User } from './User';
-export { type PostInfo } from './slidesTypes';
+export { type PostInfo } from './PostInfo';
+export { type SignUpType } from './registerTypes';

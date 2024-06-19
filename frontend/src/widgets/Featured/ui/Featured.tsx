@@ -22,6 +22,10 @@ export const Featured: React.FC<{ items: PostInfo[] }> = () => {
     const toggleAccordion = (index: number) => {
         setActiveIndex(index === activeIndex ? null : index);
     };
+
+    // const selectedPost = data?.propertyPage;
+    // console.log(selectedPost);
+
     const postSingle = data?.propertyPage ? (
         <div key={data.propertyPage.id}>
             <div className="row">
