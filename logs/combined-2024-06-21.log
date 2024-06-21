@@ -18,3 +18,365 @@
   message: 'incoming-request',
   timestamp: '2024-06-21 11:31:30.375 AM'
 }
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 50.617,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 12:40:39.417 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 103.932,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 12:40:39.469 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 200,
+  content_length: '150',
+  response_time: 399.272,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 12:42:08.582 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/verify/09992a5674ac56b78d90dc9148987ddb73054c8e7cbf477ba2b13f261611cdef/66754af0ce52caab0b0c2d4e',
+  status: 302,
+  content_length: '68',
+  response_time: 276.479,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 12:42:39.514 PM'
+}
+{
+  method: 'GET',
+  url: '/auth/verify',
+  status: 404,
+  content_length: '1936',
+  response_time: 0.517,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 12:42:39.519 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 404,
+  content_length: '1936',
+  response_time: 0.252,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 12:42:39.761 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password',
+  status: 400,
+  content_length: '1945',
+  response_time: 1.328,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 01:27:11.470 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password',
+  status: 400,
+  content_length: '1945',
+  response_time: 0.698,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 01:27:13.157 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password',
+  status: 400,
+  content_length: '1945',
+  response_time: 0.407,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 01:27:41.998 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password_request',
+  status: 200,
+  content_length: '106',
+  response_time: 318.228,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:49:21.446 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password_request',
+  status: 200,
+  content_length: '106',
+  response_time: 350.143,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:49:25.737 PM'
+}
+{
+  method: 'GET',
+  url: '/auth/reset_password?emailToken=231ccba87265f16599fdb63b57360cb05b43d1fca271d8cf3fdb81f5f15b1957&userId=664cb475f6648c153a16b4e1',
+  status: 404,
+  content_length: '2168',
+  response_time: 0.475,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:49:34.333 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 404,
+  content_length: '1936',
+  response_time: 0.428,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:49:34.572 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password_request',
+  status: 200,
+  content_length: '106',
+  response_time: 339.396,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:50:05.846 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password_request',
+  status: 400,
+  content_length: '348',
+  response_time: 50.09,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:50:08.611 PM'
+}
+{
+  method: 'GET',
+  url: '/auth/reset_password?emailToken=2e0de4d2ff99dacb3904793de215439d23032b446ef61ecc1b89b8eb424aefab&userId=664cb475f6648c153a16b4e1',
+  status: 404,
+  content_length: '2168',
+  response_time: 0.267,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:50:12.460 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password_request',
+  status: 400,
+  content_length: '348',
+  response_time: 49.414,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:50:32.584 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password_request',
+  status: 400,
+  content_length: '348',
+  response_time: 58.348,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:52:10.957 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password_request',
+  status: 200,
+  content_length: '106',
+  response_time: 355.109,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 06:52:14.840 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 65.263,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:11:56.031 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 108.177,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:11:56.071 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.45,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:11:56.093 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 104.575,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:11:56.176 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 53.159,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:12:18.165 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 121.18,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:12:18.232 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.221,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:12:19.855 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 104.358,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:12:19.906 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 56.576,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:13:10.697 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 105.02,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:13:10.738 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password_request',
+  status: 200,
+  content_length: '106',
+  response_time: 313.369,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:16:59.012 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/reset_password',
+  status: 200,
+  content_length: '116',
+  response_time: 349.759,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:17:19.440 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 54.506,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:39:37.522 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 105.016,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:39:37.552 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.207,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:39:40.314 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 102.889,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:39:40.364 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.91,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:39:43.783 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 304,
+  response_time: 103.001,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 07:39:43.832 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 1.159,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 08:01:20.332 PM'
+}

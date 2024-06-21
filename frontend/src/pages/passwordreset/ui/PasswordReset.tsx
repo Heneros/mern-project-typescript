@@ -1,6 +1,5 @@
 import { useResetPasswordMutation } from 'features/auth/authApiSlice';
 import { Formik } from 'formik';
-import { GrPowerReset } from 'react-icons/gr';
 import {
     Container,
     Form,
@@ -25,7 +24,6 @@ import {
     faEye,
     faEyeSlash,
     faRotateRight,
-    fas,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const PasswordReset = () => {

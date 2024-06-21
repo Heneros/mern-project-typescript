@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+    createBrowserRouter,
     createHashRouter,
     createRoutesFromElements,
     Link,
@@ -14,9 +15,11 @@ import { Properties } from 'pages/properties';
 import { Registration } from 'pages/registration';
 import { NotFound } from 'pages/notfound';
 import { PasswordReset } from 'pages/passwordreset';
+import { PasswordRequestPage } from 'pages/passwordrequestpage';
+import { Login } from 'pages/login';
 
 export const AppRouter = () => {
-    const router = createHashRouter([
+    const router = createBrowserRouter([
         {
             path: '/',
             element: <Layout />,
@@ -24,7 +27,12 @@ export const AppRouter = () => {
                 { index: true, element: <HomePage /> },
                 { path: 'properties', element: <Properties /> },
                 { path: 'registration', element: <Registration /> },
+                { path: 'login', element: <Login /> },
                 { path: 'auth/reset_password', element: <PasswordReset /> },
+                {
+                    path: 'reset_password_request',
+                    element: <PasswordRequestPage />,
+                },
                 { path: '*', element: <NotFound /> },
             ],
         },
