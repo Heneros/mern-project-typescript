@@ -1,0 +1,20 @@
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '457',
+  response_time: 55.783,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 11:31:30.332 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=0',
+  status: 200,
+  content_length: '917',
+  response_time: 107.515,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-21 11:31:30.375 AM'
+}

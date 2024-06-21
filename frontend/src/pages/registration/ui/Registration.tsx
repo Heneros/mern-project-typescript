@@ -10,13 +10,8 @@ import {
     strengthColor,
     strengthIndicator,
 } from 'shared/utils/password-strength';
-import { SignUpType } from 'shared/types';
+import { PasswordStrength, SignUpType } from 'shared/types';
 import { GoogleAuth } from 'shared/ui/GoogleAuth';
-
-interface PasswordStrength {
-    label: string;
-    color: string;
-}
 
 const USERNAME_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 
@@ -51,9 +46,7 @@ export const Registration = () => {
         const temp = strengthIndicator(value);
         setLevel(strengthColor(temp));
     };
-    const notify = () => {
-        toast('Wow so easy!');
-    };
+
     useEffect(() => {
         changePassword('');
     }, []);
