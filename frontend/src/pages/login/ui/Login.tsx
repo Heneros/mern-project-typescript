@@ -60,12 +60,12 @@ export const Login = () => {
                 </Col>
             </Row>
 
-            <Row className="justify-content-center">
+            <Row className="justify-content-center mt-3">
                 <Col xs={12} className="text-center">
                     <h6>
                         Didn't get the verification email?{' '}
                         <Link to="/resend" className="text-decoration-none">
-                            Sign Up Here
+                            Resend
                         </Link>
                     </h6>
                 </Col>
