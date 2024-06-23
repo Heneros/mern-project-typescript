@@ -5,13 +5,13 @@ import { toast } from 'react-toastify';
 import * as Yup from 'yup';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Container, Form, Button, Col, Row, InputGroup } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 import { useAppDispatch } from 'shared/lib/store';
 import { LoginTypes } from 'shared/types';
 import { logIn } from 'features/auth/authSlice';
 import { Loader } from 'shared/ui/Loader';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { AuthButtonAnimation } from 'shared/ui/AuthButtonAnimation';
 
 export const FormLogin = () => {
@@ -40,7 +40,7 @@ export const FormLogin = () => {
 
     useEffect(() => {
         if (isSuccess) {
-            navigate(from, {replace: true})
+            navigate(from, { replace: true });
         }
     }, [data, isSuccess, navigate, from]);
 
@@ -76,6 +76,8 @@ export const FormLogin = () => {
                 isSubmitting,
                 touched,
                 values,
+                isValid,
+                dirty,
             }) => (
                 <Form noValidate autoComplete="off" onSubmit={handleSubmit}>
                     {isLoading ? (
@@ -99,9 +101,11 @@ export const FormLogin = () => {
                                             !!errors.email && touched.email
                                         }
                                     />
-                                    <Form.Control.Feedback type="invalid">
-                                        {errors.email}
-                                    </Form.Control.Feedback>
+                                    {touched.email && errors.email && (
+                                        <Form.Control.Feedback type="invalid">
+                                            {errors.email}
+                                        </Form.Control.Feedback>
+                                    )}
                                 </Form.Group>
                             </Col>
                             <Col xs={12} className="mb-3">
@@ -129,6 +133,7 @@ export const FormLogin = () => {
                                                 touched.password
                                             }
                                         />
+
                                         <Button
                                             variant="outline-secondary"
                                             onClick={handleShowHidePassword}
@@ -144,16 +149,21 @@ export const FormLogin = () => {
                                                 />
                                             )}
                                         </Button>
-                                        <Form.Control.Feedback type="invalid">
-                                            {errors.password}
-                                        </Form.Control.Feedback>
+                                        {touched.password &&
+                                            errors.password && (
+                                                <Form.Control.Feedback type="invalid">
+                                                    {errors.password}
+                                                </Form.Control.Feedback>
+                                            )}
                                     </InputGroup>
                                 </Form.Group>
                             </Col>
                             <Col xs={12}>
                                 <AuthButtonAnimation>
                                     <Button
-                                        disabled={isSubmitting}
+                                        disabled={
+                                            isSubmitting || !(isValid && dirty)
+                                        }
                                         className="w-100"
                                         size="lg"
                                         type="submit"
