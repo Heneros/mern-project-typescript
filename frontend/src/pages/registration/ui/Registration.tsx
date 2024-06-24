@@ -274,7 +274,12 @@ export const Registration = () => {
                                     Create Account
                                 </Button>
                             </Col>
-                            <Col md={12}>
+                            <Col md={12} className="my-2">
+                                <Link to={'/login'}>
+                                    Already have an account?
+                                </Link>
+                            </Col>
+                            <Col md={12} className="my-2">
                                 Sign up with Google
                                 <GoogleAuth />
                             </Col>

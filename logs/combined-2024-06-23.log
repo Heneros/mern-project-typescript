@@ -116,3 +116,13 @@
   message: 'incoming-request',
   timestamp: '2024-06-23 03:59:18.071 PM'
 }
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '305',
+  response_time: 207.485,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-06-23 04:49:33.876 PM'
+}

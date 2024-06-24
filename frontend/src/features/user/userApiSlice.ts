@@ -1,9 +1,15 @@
 import baseApiSlice from "features/api/baseApiSlice";
+import { User } from "shared/types";
+
+
+interface GetAllUsersResult {
+    users: User[]
+}
 
 
 export const usersApiSlice = baseApiSlice.injectEndpoints({
   endpoints: (builder) =>({
-    getAllUsers: builder.query({
+    getAllUsers: builder.query<GetAllUsersResult, void>({
         query: ()=>({
             url: "/user/all",
             validateStatus: (response, result) =>{
@@ -11,19 +17,20 @@ export const usersApiSlice = baseApiSlice.injectEndpoints({
             }
         }),
         // Этот код динамически генерирует теги для кэширования. Если результат запроса существует (result не null или undefined), он создает тег для каждого отдельного пользователя плюс общий тег для списка. Если результата нет, он возвращает только общий тег списка.
-        providesTags: (result) => result ? [
-            ...result.users.map(({id})  =>({
-                type: "User",
-                id
-        })),
-        {type: "User", id: "LIST"},
-    ]
-    		: [{ type: "User", id: "LIST" }],
+     providesTags: (result) => 
+                result 
+                    ? [
+                        ...result.users.map(({ id }) => ({
+                            type: "User" as const,
+                            id: id as string | number,
+                        })),
+                        { type: "User", id: "LIST" }
+                    ]
+                    : [{ type: "User", id: "LIST" }]
     }),
-    
     getUserProfile: builder.query({
-        	query: () => "/user/profile",
-    providesTags: [{type: "User", id: "SINGLE_USER"}
+ 	query: () => "/user/profile",
+    providesTags: [{type: "User", id: "SINGLE_USER"}]
     }),
     updateUserProfile: builder.mutation({
         query: (profileData) => ({
@@ -56,4 +63,4 @@ export const usersApiSlice = baseApiSlice.injectEndpoints({
   })
 });
 
-export const {useDeactivateUserMutation, useDeleteMyAccountMutation, useDeleteUserMutation, useGetAllUsersQuery, useGetUserProfileQuery, } = usersApiSlice;
+export const {useDeactivateUserMutation, useDeleteMyAccountMutation, useDeleteUserMutation, useGetAllUsersQuery, useGetUserProfileQuery } = usersApiSlice;

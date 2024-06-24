@@ -20,7 +20,7 @@ router.post('/register', registerUser);
 router.get('/verify/:emailToken/:userId', verifyUserEmail);
 router.post('/login', loginUser);
 router.get('/new_access_token', newAccessToken);
-router.get('/resend_email_token', resendEmailVerificationToken);
+router.post('/resend_email_token', resendEmailVerificationToken);
 router.post('/reset_password_request', resetPasswordRequest);
 router.post('/reset_password', resetPassword);
 router.get('/logout', logoutUser);

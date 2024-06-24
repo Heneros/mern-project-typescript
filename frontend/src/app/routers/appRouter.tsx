@@ -17,6 +17,7 @@ import { NotFound } from 'pages/notfound';
 import { PasswordReset } from 'pages/passwordreset';
 import { PasswordRequestPage } from 'pages/passwordrequestpage';
 import { Login } from 'pages/login';
+import { ResendEmailTokenPage } from 'pages/resendEmailTokenPage';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -32,6 +33,10 @@ export const AppRouter = () => {
                 {
                     path: 'reset_password_request',
                     element: <PasswordRequestPage />,
+                },
+                {
+                    path: 'resend',
+                    element: <ResendEmailTokenPage />,
                 },
                 { path: '*', element: <NotFound /> },
             ],

@@ -1,4 +1,5 @@
 export interface User {
+    id?: number;
     email: String;
     username: String;
     firstName: string;
@@ -10,8 +11,8 @@ export interface User {
     phoneNumber?: string;
     roles?: string[];
     active?: boolean;
-    refreshToken?: string[];
 
+    refreshToken?: string[];
     accessToken?: string[];
     googleToken?: string[];
 }
