@@ -18,6 +18,7 @@ import { PasswordReset } from 'pages/passwordreset';
 import { PasswordRequestPage } from 'pages/passwordrequestpage';
 import { Login } from 'pages/login';
 import { ResendEmailTokenPage } from 'pages/resendEmailTokenPage';
+import { VerifiedPage } from 'pages/verifiedPage';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -30,6 +31,7 @@ export const AppRouter = () => {
                 { path: 'registration', element: <Registration /> },
                 { path: 'login', element: <Login /> },
                 { path: 'auth/reset_password', element: <PasswordReset /> },
+                { path: 'auth/verify', element: <VerifiedPage /> },
                 {
                     path: 'reset_password_request',
                     element: <PasswordRequestPage />,

@@ -1,0 +1,1 @@
+export {VerifiedPage} from './ui/VerifiedPage'

@@ -13,9 +13,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const Header = () => {
+    const location = useLocation();
+
+    const isCurrentPath = (path: string) => location.pathname === path;
     return (
         <>
             <div className="sub-header">
@@ -24,11 +27,30 @@ export const Header = () => {
                         <div className="col-lg-8 col-md-8">
                             <ul className="info">
                                 <li>
-                                    <FontAwesomeIcon icon={faEnvelope} />
-                                    info@company.com
+                                    <FontAwesomeIcon
+                                        size="lg"
+                                        style={{
+                                            color: '#f35525',
+                                            margin: '0 8px',
+                                        }}
+                                        icon={faEnvelope}
+                                    />
+                                    <Link
+                                        style={{ color: '#7a7a7a' }}
+                                        to={'mailto:info@company.com'}
+                                    >
+                                        info@company.com
+                                    </Link>
                                 </li>
                                 <li>
-                                    <FontAwesomeIcon icon={faMap} />
+                                    <FontAwesomeIcon
+                                        size="lg"
+                                        style={{
+                                            color: '#f35525',
+                                            margin: '0 8px',
+                                        }}
+                                        icon={faMap}
+                                    />
                                     Sunny Isles Beach, FL 33160
                                 </li>
                             </ul>
@@ -77,28 +99,61 @@ export const Header = () => {
                     <!-- ***** Menu Start ***** --> */}
                                 <ul className="nav">
                                     <li>
-                                        <Link to="/" className="active">
+                                        <Link
+                                            to="/"
+                                            className={
+                                                isCurrentPath('/')
+                                                    ? 'active'
+                                                    : ''
+                                            }
+                                        >
                                             Home
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/properties">Properties</Link>
+                                        <Link
+                                            to="/properties"
+                                            className={
+                                                isCurrentPath('/properties')
+                                                    ? 'active'
+                                                    : ''
+                                            }
+                                        >
+                                            Properties
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <Link to="/contact-us">Contact Us</Link>
+                                        <Link
+                                            to="/contact-us"
+                                            className={
+                                                isCurrentPath('/contact-us')
+                                                    ? 'active'
+                                                    : ''
+                                            }
+                                        >
+                                            Contact Us
+                                        </Link>
                                     </li>
                                     <li>
-                                        <Link to="/registration">
+                                        <Link
+                                            to="/registration"
+                                            className={
+                                                isCurrentPath('/registration')
+                                                    ? 'active'
+                                                    : ''
+                                            }
+                                        >
                                             Registration
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="#!">
-                                            {/* <i className="fa fa-calendar"></i>{' '} */}
-                                            <FontAwesomeIcon
-                                                icon={faCalendar}
-                                            />
+                                            <i>
+                                                <FontAwesomeIcon
+                                                    icon={faCalendar}
+                                                />
+                                            </i>
                                             Schedule a visit
                                         </Link>
                                     </li>
