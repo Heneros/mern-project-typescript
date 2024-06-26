@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FC } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import clsx from 'clsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
     Navigation,
@@ -14,6 +13,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import './Slider.css';
 
 import { PostInfo } from 'shared/types';
 import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
@@ -44,11 +44,12 @@ export const SliderBanner = () => {
     ));
     return (
         <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={25}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
+            scrollbar={{ el: '.swiper-scrollbar', draggable: true }}
             // onSwiper={(swiper) => console.log(swiper)}
             // onSlideChange={() => console.log('slide change')}
         >

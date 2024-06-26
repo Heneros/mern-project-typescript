@@ -21,6 +21,7 @@ import { ResendEmailTokenPage } from 'pages/resendEmailTokenPage';
 import { VerifiedPage } from 'pages/verifiedPage';
 
 export const AppRouter = () => {
+
     const router = createBrowserRouter([
         {
             path: '/',
