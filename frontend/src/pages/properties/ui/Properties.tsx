@@ -1,9 +1,11 @@
 import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Spinner } from 'react-bootstrap';
 import { Message } from 'shared/ui/Message';
 import { PropertyItem } from 'widgets/PropertyItem';
+import { PostInfo } from 'shared/types';
+import { FilterPropety } from 'widgets/FilterPropety';
 
 export function Properties() {
     const [page, setPage] = useState(0);
@@ -15,33 +17,15 @@ export function Properties() {
         setPage(newPage);
     };
 
+  
+    // console.log(categories);
+
     return (
         <>
             <Breadcrumbs />
             <div className="section properties">
                 <div className="container">
-                    <ul className="properties-filter">
-                        <li>
-                            <a className="is_active" href="#!" data-filter="*">
-                                Show All
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!" data-filter=".adv">
-                                Apartment
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!" data-filter=".str">
-                                Villa House
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!" data-filter=".rac">
-                                Penthouse
-                            </a>
-                        </li>
-                    </ul>
+                    <FilterPropety />
                     <div className="row properties-box">
                         {isLoading ? (
                             <Spinner />
@@ -51,7 +35,7 @@ export function Properties() {
                             </Message>
                         ) : (
                             <>
-                                {data.properties.map((item) => (
+                                {data.properties.map((item: PostInfo) => (
                                     <PropertyItem {...item} />
                                 ))}
                             </>

@@ -1,29 +1,44 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { PostInfo } from 'shared/types';
 
-export const PropertyItem = ({ title }) => {
+export const PropertyItem: React.FC<PostInfo> = ({
+    _id,
+    title,
+    price,
+    preview,
+    category,
+    bedrooms,
+    bathrooms,
+    area,
+    floor,
+}) => {
     return (
-        <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
+        <div
+            key={_id}
+            className={`col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 ${category.slice(0, 3).toLocaleLowerCase()} `}
+        >
             <div className="item">
-                <a href="property-details.html">
-                    <img src="assets/images/property-01.jpg" alt="" />
-                </a>
-                <span className="category">Luxury Villa</span>
-                <h6>$2.264.000</h6>
+                <Link to={`/properties/${_id}`}>
+                    <img src={preview} alt="preview image of villa" />
+                </Link>
+                <span className="category">{category}</span>
+                <h6>{price} </h6>
                 <h4>
-                    <a href="property-details.html">{title}</a>
+                    <Link to={`/properties/${_id}`}>{title}</Link>
                 </h4>
                 <ul>
                     <li>
-                        Bedrooms: <span>8</span>
+                        Bedrooms: <span>{bedrooms}</span>
                     </li>
                     <li>
-                        Bathrooms: <span>8</span>
+                        Bathrooms: <span>{bathrooms}</span>
                     </li>
                     <li>
-                        Area: <span>545m2</span>
+                        Area: <span>{area} m2</span>
                     </li>
                     <li>
-                        Floor: <span>3</span>
+                        Floor: <span>{floor} </span>
                     </li>
                     <li>
                         Parking: <span>6 spots</span>
