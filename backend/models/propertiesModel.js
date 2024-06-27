@@ -8,7 +8,7 @@ const propertySchema = new Schema(
             type: String,
             //  unique: true,
             required: true,
-            maxLength: 25,
+            maxLength: 50,
         },
         preview: {
             type: String,

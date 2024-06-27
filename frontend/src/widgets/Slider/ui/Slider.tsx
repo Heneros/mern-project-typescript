@@ -19,7 +19,7 @@ import { PostInfo } from 'shared/types';
 import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
 
 export const SliderBanner = () => {
-    const navigate = useNavigate();
+ ///   const navigate = useNavigate();
     const [page, setPage] = useState(0);
     const { data, isLoading, error } = useGetAllPropertiesQuery(page);
 

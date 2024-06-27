@@ -2,7 +2,7 @@ import asyncHandler from 'express-async-handler';
 import Property from '../../models/propertiesModel.js';
 
 const getAllProperties = asyncHandler(async (req, res) => {
-    const pageSize = 10;
+    const pageSize = 6;
     const page = Number(req.query.pageNumber) || 1;
 
     const count = await Property.countDocuments({});
