@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const FilterPropety = () => {
+export const FilterProperty = () => {
     return (
-        <div>
+        <>
             <ul className="properties-filter">
                 <li>
                     <a className="is_active" href="#!" data-filter="*">
@@ -25,6 +25,6 @@ export const FilterPropety = () => {
                     </a>
                 </li>
             </ul>
-        </div>
+        </>
     );
 };
