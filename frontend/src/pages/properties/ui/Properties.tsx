@@ -61,8 +61,8 @@ export function Properties() {
                             </Message>
                         ) : (
                             <>
-                                {data.properties.map((item: PostInfo) => (
-                                    <PropertyItem {...item} />
+                                {filteredProperties.map((item: PostInfo) => (
+                                    <PropertyItem key={item._id} {...item} />
                                 ))}
                             </>
                         )}
