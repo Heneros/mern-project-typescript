@@ -6,6 +6,7 @@ import { Message } from 'shared/ui/Message';
 import { PropertyItem } from 'widgets/PropertyItem';
 import { PostInfo } from 'shared/types';
 import { FilterProperty } from 'widgets/FilterProperty';
+import { Link } from 'react-router-dom';
 
 export function Properties() {
     const [page, setPage] = useState(0);
@@ -25,32 +26,52 @@ export function Properties() {
         return 'Loading...';
     }
 
-    const categories = Array.from(new Set(data?.properties));
+    const categories: string[] = Array.from(
+        new Set(data?.properties.map((item: PostInfo) => item.category)),
+    );
+
     const filteredProperties =
         activeFilter === 'all'
-            ? data?.properties
-            : data.properties.filter((item: PostInfo) =>
-                  item.category.slice(0, 3),
+            ? data.properties
+            : data?.properties.filter(
+                  (item: PostInfo) => item.category === activeFilter,
               );
-    console.log(categories);
+
+    console.log(filteredProperties);
 
     return (
         <>
             <Breadcrumbs />
             <div className="section properties">
                 <div className="container">
-                    {/* <FilterProperty {...data} /> */}
                     <ul className="properties-filter">
                         <li>
-                            <a className="is_active" href="#!" data-filter="*">
+                            <Link
+                                className={
+                                    activeFilter === 'all' ? 'is_active' : ''
+                                }
+                                to={'#!'}
+                                onClick={() => handleFilterClick('all')}
+                                data-filter="*"
+                            >
                                 Show All
-                            </a>
+                            </Link>
                         </li>
-                        <li>
-                            <a href="#!" data-filter=".adv">
-                                Apartment
-                            </a>
-                        </li>
+                        {categories?.map((category, index) => (
+                            <li key={index}>
+                                <Link
+                                    className={
+                                        activeFilter === category
+                                            ? 'is_active'
+                                            : ''
+                                    }
+                                    onClick={() => handleFilterClick(category)}
+                                    to={''}
+                                >
+                                    {category}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                     <div className="row properties-box">
                         {isLoading ? (
