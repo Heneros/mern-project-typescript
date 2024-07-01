@@ -1,29 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export const FilterProperty = () => {
+interface FilterPropertyProps {
+    categories: string[];
+    activeFilter: string;
+    onFilterChange: (filter: string) => void;
+}
+
+export const FilterProperty: React.FC<FilterPropertyProps> = ({
+    categories,
+    activeFilter,
+    onFilterChange,
+}) => {
+    const handleFilterClick = (filter: string) => {
+        onFilterChange(filter);
+    };
     return (
         <>
             <ul className="properties-filter">
                 <li>
-                    <a className="is_active" href="#!" data-filter="*">
+                    <Link
+                        className={activeFilter === 'all' ? 'is_active' : ''}
+                        to={'#!'}
+                        onClick={() => handleFilterClick('all')}
+                        data-filter="*"
+                    >
                         Show All
-                    </a>
+                    </Link>
                 </li>
-                <li>
-                    <a href="#!" data-filter=".adv">
-                        Apartment
-                    </a>
-                </li>
-                <li>
-                    <a href="#!" data-filter=".str">
-                        Villa House
-                    </a>
-                </li>
-                <li>
-                    <a href="#!" data-filter=".rac">
-                        Penthouse
-                    </a>
-                </li>
+                {categories?.map((category, index) => (
+                    <li key={index}>
+                        <Link
+                            className={
+                                activeFilter === category ? 'is_active' : ''
+                            }
+                            onClick={() => handleFilterClick(category)}
+                            to={''}
+                        >
+                            {category}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </>
     );
