@@ -1,0 +1,1544 @@
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 123.265,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:11:18.642 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.788,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:18:57.964 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 108.135,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:19:07.483 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all',
+  status: 200,
+  content_length: '2719',
+  response_time: 109.182,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:29:43.882 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.433,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:41:03.789 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.59,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:41:07.614 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 110.593,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:41:23.734 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.922,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:41:56.575 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 200,
+  content_length: '2719',
+  response_time: 105.685,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:42:10.514 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.951,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:42:11.568 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.986,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:42:15.988 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.311,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:42:18.339 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.914,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:45:30.727 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 107.526,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:56:11.387 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.534,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:56:32.800 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.8,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:56:41.913 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.82,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 01:56:56.496 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 105.064,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:00:12.563 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 105.516,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:00:17.787 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.788,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:00:19.347 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.093,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:00:22.992 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.428,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:00:47.645 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 109.919,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:03:29.778 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.131,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:03:33.760 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.421,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:03:39.617 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.986,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:03:40.658 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 105.572,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:03:44.167 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.27,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:03:52.602 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.955,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:03:53.085 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.646,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:03:54.923 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.954,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:11:14.866 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.111,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:11:46.501 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.217,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:12:42.698 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.356,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:12:48.220 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.41,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:12:50.478 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.757,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:12:55.862 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.345,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:12:58.891 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.469,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:13:04.309 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 111.95,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:18:10.832 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.796,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:18:11.786 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.295,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:18:18.319 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.137,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:20:03.047 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.515,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:20:05.618 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.377,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:20:06.960 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 105.218,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:20:34.338 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.593,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:20:36.494 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.16,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:20:57.837 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 107.715,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:21:07.022 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.418,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:21:08.369 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 107.094,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:21:13.779 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 111.033,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:21:19.227 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.872,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:21:20.866 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 103.807,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:21:26.844 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.35,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:24:49.083 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.063,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:24:55.814 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.74,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:24:58.144 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 116.036,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:24:59.879 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.233,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:25:04.223 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.177,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:25:42.648 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.786,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:26:35.746 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.605,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:28:04.947 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.276,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:28:47.288 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.277,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:29:19.549 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.903,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:29:26.410 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.816,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:29:27.150 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.43,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:29:31.281 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.537,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:29:47.355 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.7,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:29:58.466 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 106.691,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:30:00.797 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.517,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:30:05.992 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.449,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:30:07.989 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 115.079,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:30:30.426 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.265,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:01.343 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 103.777,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:03.225 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 106.292,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:08.395 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 105.726,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:15.906 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.614,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:16.975 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.388,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:21.951 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.209,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:29.632 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.546,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:31.946 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.262,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:33.854 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.947,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:35.400 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.853,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:31:36.203 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.079,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:46:50.585 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.456,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:48:27.788 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 103.978,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:48:30.851 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.767,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:48:31.674 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 103.774,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:48:33.669 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.253,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:48:34.255 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.253,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 02:54:07.170 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 105.822,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:23:32.889 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.921,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:23:35.885 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.985,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:31:23.272 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.362,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:34:02.163 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.863,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:34:32.215 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.953,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:34:43.316 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 124.494,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:36:24.244 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.783,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:36:31.156 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.512,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:36:34.684 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.842,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:36:41.725 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.126,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:36:45.007 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.707,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:36:57.940 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.647,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:37:00.338 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.75,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:37:23.397 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.607,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:37:24.208 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.077,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:37:26.078 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 107.978,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:37:27.125 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.841,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:43:35.412 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.074,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:44:08.079 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.659,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:44:21.522 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 108.588,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:44:32.158 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.619,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:44:47.879 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.498,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:44:53.389 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 107.491,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:53:25.541 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.702,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:53:31.486 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.719,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:53:32.747 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.814,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:53:35.499 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.223,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:53:38.080 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.818,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:54:12.832 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.208,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:55:37.304 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.919,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:55:37.933 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.152,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:55:38.707 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.704,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:55:43.882 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.981,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:56:02.503 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.418,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:56:06.325 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.258,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:56:08.307 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.803,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:56:16.479 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 109.217,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:56:27.406 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.084,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:56:53.217 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 107.416,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:56:54.064 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 105.171,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:57:13.339 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.073,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:57:19.027 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.055,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:57:29.985 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.586,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:57:33.611 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.281,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:57:40.570 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.902,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:57:43.558 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.038,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:57:45.377 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.934,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:57:55.904 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.246,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 03:58:01.555 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 114.944,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 05:51:28.716 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.799,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 05:53:09.894 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.171,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 05:53:10.443 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 107.106,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:03:47.154 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 105.815,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:10:56.603 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.734,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:10:59.038 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 103.99,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:11:04.657 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.756,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:11:07.627 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all',
+  status: 200,
+  content_length: '2719',
+  response_time: 106.798,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:11:42.651 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 112.603,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:12:50.652 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 103.961,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:12:55.435 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.075,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:12:56.133 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 103.957,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:18:41.422 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.174,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:18:44.519 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 104.445,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:18:57.665 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 115.492,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:21:26.202 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 106.127,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:21:47.091 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 104.302,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:03.997 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=667d3343e9317340ae958b3c',
+  status: 200,
+  content_length: '2719',
+  response_time: 103.433,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:14.385 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=667d3343e9317340ae958b3c',
+  status: 304,
+  response_time: 103.326,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:17.298 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=667d3343e9317340ae958b3c',
+  status: 304,
+  response_time: 104.071,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:35.453 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 108.182,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:35.528 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=667d3343e9317340ae958b3c',
+  status: 304,
+  response_time: 108.296,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:40.776 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 108.08,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:40.965 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=667d3343e9317340ae958b3c',
+  status: 304,
+  response_time: 107.661,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:44.693 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.586,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:44.776 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=2',
+  status: 304,
+  response_time: 106.995,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:23:48.826 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 111.39,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:28:31.077 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.617,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:28:54.602 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 116.17,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:29:32.301 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 109.205,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:31:45.076 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/all?page=1',
+  status: 304,
+  response_time: 103.355,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-02 06:31:46.223 PM'
+}

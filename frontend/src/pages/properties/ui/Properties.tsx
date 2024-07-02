@@ -12,10 +12,10 @@ import { PaginationProperties } from 'widgets/PaginationProperties';
 export function Properties() {
     const { pageNumber } = useParams();
 
-    const { data, isLoading, isError, error } = useGetAllPropertiesQuery(pageNumber);
+    const { data, isLoading, isError, error } =
+        useGetAllPropertiesQuery(pageNumber);
 
     const [activeFilter, setActiveFilter] = useState<string>('all');
-
 
     const handleFilterChange = (filter: string) => {
         setActiveFilter(filter);
@@ -35,8 +35,6 @@ export function Properties() {
             : data?.properties.filter(
                   (item: PostInfo) => item.category === activeFilter,
               );
-
-    // console.log(data);
 
     return (
         <>

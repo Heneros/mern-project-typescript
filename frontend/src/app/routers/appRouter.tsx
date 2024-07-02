@@ -28,7 +28,7 @@ export const AppRouter = () => {
             children: [
                 { index: true, element: <HomePage /> },
                 { path: 'properties', element: <Properties /> },
-                { path: 'properties/:pageNumber', element: <Properties /> },
+                { path: '/properties/:pageNumber', element: <Properties /> },
                 { path: 'registration', element: <Registration /> },
                 { path: 'login', element: <Login /> },
                 { path: 'auth/reset_password', element: <PasswordReset /> },

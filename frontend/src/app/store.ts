@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import baseApiSlice from 'features/api/baseApiSlice';
 import authReducer from 'features/auth/authSlice';
+import propertyReducer from 'features/properties/propertySlice';
 
 // const rootReducer = combineReducer({
 
@@ -9,7 +10,8 @@ import authReducer from 'features/auth/authSlice';
 const store = configureStore({
     reducer: {
 [     baseApiSlice.reducerPath]: baseApiSlice.reducer,
-      auth: authReducer
+      auth: authReducer,
+      properties: propertyReducer
     },
     middleware:(getDefaultMiddleware) =>
         getDefaultMiddleware().concat(baseApiSlice.middleware),
