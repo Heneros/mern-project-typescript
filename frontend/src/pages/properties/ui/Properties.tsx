@@ -8,18 +8,24 @@ import { PostInfo } from 'shared/types';
 import { FilterProperty } from 'widgets/FilterProperty';
 import { Link, useParams } from 'react-router-dom';
 import { PaginationProperties } from 'widgets/PaginationProperties';
+import { useAppSelector } from 'shared/lib/store';
 
 export function Properties() {
-    const { pageNumber } = useParams();
+    const { pageNumber = '1' } = useParams();
 
+    console.log('pageNumber', pageNumber);
+    const currentPage = Number(pageNumber);
     const { data, isLoading, isError, error } =
-        useGetAllPropertiesQuery(pageNumber);
+        useGetAllPropertiesQuery(currentPage);
 
-    const [activeFilter, setActiveFilter] = useState<string>('all');
+    const properties = data && data.properties ? data.properties : [];
+    const { selectedCategory } = useAppSelector((state) => state.properties);
 
-    const handleFilterChange = (filter: string) => {
-        setActiveFilter(filter);
-    };
+    // const [activeFilter, setActiveFilter] = useState<string>('all');
+
+    // const handleFilterChange = (filter: string) => {
+    //     setActiveFilter(filter);
+    // };
 
     if (isLoading) {
         return 'Loading...';
@@ -29,23 +35,32 @@ export function Properties() {
         new Set(data?.properties.map((item: PostInfo) => item.category)),
     );
 
-    const filteredProperties =
-        activeFilter === 'all'
-            ? data.properties
-            : data?.properties.filter(
-                  (item: PostInfo) => item.category === activeFilter,
-              );
+    const filteredProperties = properties.filter((property: PostInfo) => {
+        const categoryMatch =
+            selectedCategory === null || property.category === selectedCategory;
+        return categoryMatch;
+    });
+
+    // const filteredProperties =
+    //     activeFilter === 'all'
+    //         ? data.properties
+    //         : data?.properties.filter(
+    //               (item: PostInfo) => item.category === activeFilter,
+    //           );
+
+    console.log(filteredProperties);
 
     return (
         <>
             <Breadcrumbs />
             <div className="section properties">
                 <div className="container">
-                    <FilterProperty
+                    {/* <FilterProperty
                         categories={categories}
                         activeFilter={activeFilter}
                         onFilterChange={handleFilterChange}
-                    />
+                    /> */}
+                    <FilterProperty categories={categories} />
                     <div className="row properties-box">
                         {isLoading ? (
                             <Spinner />

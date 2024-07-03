@@ -14,7 +14,7 @@ router
     .route('/create')
     .post(checkAuth, role.checkRole(role.ROLES.Admin), createProperty);
 
-router.route('/all').get(getAllProperties);
+router.route('/').get(getAllProperties);
 
 router.route('/:id').get(getProperty);
 

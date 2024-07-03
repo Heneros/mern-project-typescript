@@ -4,7 +4,7 @@ import  baseApiSlice  from 'features/api/baseApiSlice';
 export const propertiesApiSlice = baseApiSlice.injectEndpoints({
 endpoints:(builder) =>({
     getAllProperties: builder.query({
-        query: (page = 1) => `/property/all?page=${page}`,
+        query: (pageNumber = 1) => `/property/?page=${pageNumber}`,
         providesTags: ["Property"]
     }),
     createProperty: builder.mutation({
