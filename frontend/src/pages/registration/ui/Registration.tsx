@@ -125,7 +125,10 @@ export const Registration = () => {
                             toast.success('Check your email');
                             setSubmitting(true);
                         } catch (err) {
-                            const message = err?.data?.message;
+                            const message = (
+                                err as { data: { message: string } }
+                            )?.data.message;
+
                             toast.error(message);
                             //  console.log(message);
                             setStatus({ success: false });

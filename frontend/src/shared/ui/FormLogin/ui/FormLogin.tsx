@@ -13,6 +13,7 @@ import { LoginTypes } from 'shared/types';
 import { logIn } from 'features/auth/authSlice';
 import { Loader } from 'shared/ui/Loader';
 import { AuthButtonAnimation } from 'shared/ui/AuthButtonAnimation';
+import { useAuthUser } from 'shared/hooks/useAuthUser';
 
 export const FormLogin = () => {
     const initialValues: LoginTypes = {
@@ -20,6 +21,7 @@ export const FormLogin = () => {
         password: '',
         submit: null,
     };
+
     const navigate = useNavigate();
     const dispatch = useAppDispatch();
     const location = useLocation();
@@ -63,7 +65,8 @@ export const FormLogin = () => {
                     setStatus({ success: true });
                     setSubmitting(false);
                 } catch (err) {
-                    const message = err?.data?.message;
+                    const message = (err as { data: { message: string } })?.data
+                        .message;
                     toast.error(message);
                     setStatus({ success: false });
                     setSubmitting(false);

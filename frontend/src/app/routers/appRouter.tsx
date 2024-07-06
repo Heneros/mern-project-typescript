@@ -19,6 +19,9 @@ import { PasswordRequestPage } from 'pages/passwordrequestpage';
 import { Login } from 'pages/login';
 import { ResendEmailTokenPage } from 'pages/resendEmailTokenPage';
 import { VerifiedPage } from 'pages/verifiedPage';
+import { AuthRequired } from 'shared/hooks/AuthRequired';
+import { ROLES } from 'shared/consts';
+import { PersonalAccount } from 'pages/PersonalAccount';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -43,6 +46,15 @@ export const AppRouter = () => {
                 {
                     path: 'resend',
                     element: <ResendEmailTokenPage />,
+                },
+                {
+                    element: <AuthRequired allowedRoles={[ROLES.User]} />,
+                    children: [
+                        {
+                            path: 'personal-account',
+                            element: <PersonalAccount />,
+                        },
+                    ],
                 },
                 { path: '*', element: <NotFound /> },
             ],

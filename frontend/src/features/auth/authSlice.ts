@@ -2,7 +2,6 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { decodeToken } from 'react-jwt';
 import { User } from 'shared/types/User';
 
-// userString должен быть строкой, так как localStorage.getItem возвращает строку или null. Если localStorage не содержит значения для "user", вы предоставляете пустой массив [] в качестве значения по умолчанию. Это приведет к ошибке, потому что массив не может быть назначен строковой переменной.
 const userString = localStorage.getItem('user') || '';
 const googleToken = localStorage.getItem('googleToken');
 let user: User | null = null;
@@ -51,7 +50,13 @@ const authSlice = createSlice({
 export const { logIn, logOut } = authSlice.actions;
 export default authSlice.reducer;
 
-export const selectCurrentUserToken = (state: { auth: AuthSlice }) =>
-    state.auth.user?.accessToken;
-export const selectCurrentUserGoogleToken = (state: { auth: AuthSlice }) =>
-    state.auth.user?.googleToken;
+export const selectCurrentUserToken = (state: { auth: AuthSlice }): string | undefined => {
+    const token = state.auth.user?.accessToken;
+    return Array.isArray(token) ? token[0] : token;
+};
+export const selectCurrentUserGoogleToken = (state: { auth: AuthSlice }): string | undefined =>{
+   const googleToken  = state.auth.user?.googleToken;
+   return Array.isArray(googleToken) ? googleToken[0] : googleToken;
+}
+  
+ 

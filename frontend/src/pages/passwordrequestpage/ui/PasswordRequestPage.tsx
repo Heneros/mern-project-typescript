@@ -46,7 +46,8 @@ export const PasswordRequestPage = () => {
                     setStatus({ success: true });
                     setSubmitting(false);
                 } catch (err) {
-                    const message = err?.data?.message;
+                 const message = (err as { data: { message: string } })?.data
+                     .message;
                     toast.error(message);
                     setStatus({ success: false });
                 }

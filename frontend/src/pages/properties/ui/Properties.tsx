@@ -1,15 +1,15 @@
-import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
 import React from 'react';
-import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
+
+import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
 import { Message } from 'shared/ui/Message';
 import { PropertyItem } from 'widgets/PropertyItem';
 import { PostInfo } from 'shared/types';
 import { FilterProperty } from 'widgets/FilterProperty';
-import { useParams } from 'react-router-dom';
 import { PaginationProperties } from 'widgets/PaginationProperties';
 import { useAppSelector } from 'shared/lib/store';
-
 import { renderError } from 'shared/utils/renderError';
 
 export function Properties() {

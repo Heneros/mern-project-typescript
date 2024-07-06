@@ -14,10 +14,12 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useLocation } from 'react-router-dom';
+import { useGetUserProfileQuery } from 'features/user/userApiSlice';
 
 export const Header = () => {
     const location = useLocation();
-
+    const { data, isLoading, error } = useGetUserProfileQuery(undefined);
+    // console.log(prof);
     const isCurrentPath = (path: string) => location.pathname === path;
     return (
         <>
@@ -135,18 +137,45 @@ export const Header = () => {
                                             Contact Us
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link
-                                            to="/registration"
-                                            className={
-                                                isCurrentPath('/registration')
-                                                    ? 'active'
-                                                    : ''
-                                            }
-                                        >
-                                            Registration
-                                        </Link>
-                                    </li>
+                                    {!data ? (
+                                        <>
+                                            <li>
+                                                <Link
+                                                    to="/registration"
+                                                    className={
+                                                        isCurrentPath(
+                                                            '/registration',
+                                                        )
+                                                            ? 'active'
+                                                            : ''
+                                                    }
+                                                >
+                                                    Registration
+                                                </Link>
+                                            </li>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <li>
+                                                <Link
+                                                    to="/personal-account"
+                                                    className={
+                                                        isCurrentPath(
+                                                            '/personal-account',
+                                                        )
+                                                            ? 'active'
+                                                            : ''
+                                                    }
+                                                >
+                                                    Personal Account
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="">Log Out</Link>
+                                            </li>
+                                        </>
+                                    )}
+
                                     <li>
                                         <Link to="#!">
                                             <i>

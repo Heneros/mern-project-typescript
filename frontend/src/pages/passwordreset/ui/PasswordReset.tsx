@@ -110,7 +110,6 @@ export const PasswordReset = () => {
                     <Form noValidate autoComplete="off" onSubmit={handleSubmit}>
                         <Row className="mb-3">
                             <Col className="text-center">
-                                {/* <GrPowerReset className="auth-svg" size="2em" /> */}
                                 <FontAwesomeIcon
                                     icon={faRotateRight}
                                     size="3x"
