@@ -2987,3 +2987,486 @@
   message: 'incoming-request',
   timestamp: '2024-07-07 02:23:09.212 PM'
 }
+{
+  error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+      at Timeout.<anonymous> (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+      at listOnTimeout (node:internal/timers:573:17)
+      at process.processTimers (node:internal/timers:514:7),
+  level: 'error',
+  message: 'unhandledRejection: Operation `users.findOne()` buffering timed out after 10000ms\n' +
+    'MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n' +
+    '    at Timeout.<anonymous> (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n' +
+    '    at listOnTimeout (node:internal/timers:573:17)\n' +
+    '    at process.processTimers (node:internal/timers:514:7)',
+  stack: 'MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n' +
+    '    at Timeout.<anonymous> (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n' +
+    '    at listOnTimeout (node:internal/timers:573:17)\n' +
+    '    at process.processTimers (node:internal/timers:514:7)',
+  rejection: true,
+  date: 'Sun Jul 07 2024 18:52:42 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 18788,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 69107712,
+      heapTotal: 31526912,
+      heapUsed: 30102328,
+      external: 21043606,
+      arrayBuffers: 18262718
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 65563.062 },
+  trace: [
+    {
+      column: 23,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js',
+      function: null,
+      line: 185,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 573,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'process.processTimers',
+      line: 514,
+      method: 'processTimers',
+      native: false
+    }
+  ],
+  timestamp: '2024-07-07 06:52:42.343 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '479',
+  response_time: 10015.871,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:52:42.348 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 120.561,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:54:27.436 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 118.501,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:54:27.442 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 112.398,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:54:59.742 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 117.668,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:54:59.744 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.742,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:55:05.534 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 107.347,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:55:05.537 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.842,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:55:07.553 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 106.183,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:55:07.555 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 120.093,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:55:10.450 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 123.421,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:55:10.451 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.131,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:55:15.772 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 106.581,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:55:15.774 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '291',
+  response_time: 107.29,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:57:01.242 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 108.009,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:57:01.246 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 109.395,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:57:10.352 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 109.533,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:57:10.354 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.396,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:57:19.075 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 105.4,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 06:57:19.078 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.084,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:03:21.792 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 108.954,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:03:21.797 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.263,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:03:32.143 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 104.899,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:03:32.146 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.192,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:03:34.043 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 105.133,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:03:34.044 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.462,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:24:23.182 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 111.163,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:24:27.217 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.035,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:24:39.101 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 111.916,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:26:10.517 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.766,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:42:51.108 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.755,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:50:46.383 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 104.881,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:50:52.150 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.224,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:50:59.019 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.652,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:52:04.695 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.665,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:52:22.014 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.364,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:55:06.534 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.108,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:58:48.577 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.09,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:58:51.352 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 104.679,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:58:52.872 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 104.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 07:58:55.117 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 113.279,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 08:00:26.311 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.564,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 08:03:38.762 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.594,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 08:03:47.822 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.695,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 08:03:50.198 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.783,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 08:04:08.378 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.002,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-07-07 08:05:43.549 PM'
+}

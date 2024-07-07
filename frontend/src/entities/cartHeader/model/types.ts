@@ -1,12 +1,15 @@
 export interface ICartItem{
+    readonly _id: string;
     readonly title: string;
     readonly image: string;
     readonly price: number;
     readonly url: string;
-    readonly quantity: string;
+    quantity: string;
 }
 
 export interface ICartState {
-  cartItems: Array<ICartItem>;
+    cartItems: Array<ICartItem>;
+    itemsPrice: string;
+    totalPrice: string;
 }
 

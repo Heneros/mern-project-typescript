@@ -88,3 +88,68 @@
   level: 'error',
   timestamp: '2024-07-06 01:05:30.735 PM'
 }
+{
+  error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+      at Timeout.<anonymous> (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+      at listOnTimeout (node:internal/timers:573:17)
+      at process.processTimers (node:internal/timers:514:7),
+  level: 'error',
+  message: 'unhandledRejection: Operation `users.findOne()` buffering timed out after 10000ms\n' +
+    'MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n' +
+    '    at Timeout.<anonymous> (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n' +
+    '    at listOnTimeout (node:internal/timers:573:17)\n' +
+    '    at process.processTimers (node:internal/timers:514:7)',
+  stack: 'MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n' +
+    '    at Timeout.<anonymous> (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n' +
+    '    at listOnTimeout (node:internal/timers:573:17)\n' +
+    '    at process.processTimers (node:internal/timers:514:7)',
+  rejection: true,
+  date: 'Sun Jul 07 2024 18:52:42 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 18788,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 69107712,
+      heapTotal: 31526912,
+      heapUsed: 30102328,
+      external: 21043606,
+      arrayBuffers: 18262718
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 65563.062 },
+  trace: [
+    {
+      column: 23,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js',
+      function: null,
+      line: 185,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: 'node:internal/timers',
+      function: 'listOnTimeout',
+      line: 573,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/timers',
+      function: 'process.processTimers',
+      line: 514,
+      method: 'processTimers',
+      native: false
+    }
+  ],
+  timestamp: '2024-07-07 06:52:42.343 PM'
+}

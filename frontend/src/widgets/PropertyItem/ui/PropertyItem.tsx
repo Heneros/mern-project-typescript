@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAppDispatch } from 'shared/lib/store';
 import { PostInfo } from 'shared/types';
+import { addToCart } from 'entities/cartHeader';
 
 export const PropertyItem: React.FC<PostInfo> = ({
     _id,
@@ -13,6 +15,12 @@ export const PropertyItem: React.FC<PostInfo> = ({
     area,
     floor,
 }) => {
+    const dispatch = useAppDispatch();
+
+    const addToCartHandler = () => {
+        dispatch(addToCart({}));
+    };
+
     return (
         <div
             key={_id}
@@ -45,7 +53,7 @@ export const PropertyItem: React.FC<PostInfo> = ({
                     </li>
                 </ul>
                 <div className="main-button">
-                    <a href="property-details.html">Schedule a visit</a>
+                    <Link to="#">Schedule a visit</Link>
                 </div>
             </div>
         </div>
