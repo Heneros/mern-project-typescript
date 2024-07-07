@@ -3,5 +3,10 @@ export interface ICartItem{
     readonly image: string;
     readonly price: number;
     readonly url: string;
+    readonly quantity: string;
+}
+
+export interface ICartState {
+  cartItems: Array<ICartItem>;
 }
 
