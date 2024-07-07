@@ -15,6 +15,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useLocation } from 'react-router-dom';
 import { useGetUserProfileQuery } from 'features/user/userApiSlice';
+import { DropdownCart } from 'entities/cartHeader';
 
 export const Header = () => {
     const location = useLocation();
@@ -124,7 +125,6 @@ export const Header = () => {
                                             Properties
                                         </Link>
                                     </li>
-
                                     <li>
                                         <Link
                                             to="/contact-us"
@@ -175,17 +175,26 @@ export const Header = () => {
                                             </li>
                                         </>
                                     )}
-
-                                    <li>
-                                        <Link to="#!">
-                                            <i>
-                                                <FontAwesomeIcon
-                                                    icon={faCalendar}
-                                                />
-                                            </i>
-                                            Schedule a visit
-                                        </Link>
-                                    </li>
+                                    <DropdownCart />
+                                    {/* <div className="dropdown">
+                                        <button
+                                            className="  dropdown-toggle"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            <Link to="#!">
+                                                <i>
+                                                    <FontAwesomeIcon
+                                                        icon={faCalendar}
+                                                    />
+                                                </i>
+                                                Schedule a visit
+                                            </Link>
+                                          
+                                        </button>
+                                    </div> */}
                                 </ul>
                                 <span className="menu-trigger">
                                     <span>Menu</span>
