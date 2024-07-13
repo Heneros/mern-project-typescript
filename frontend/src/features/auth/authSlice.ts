@@ -36,6 +36,7 @@ const authSlice = createSlice({
     reducers: {
         logIn: (state, action: PayloadAction<User>) => {
             state.user = action.payload;
+            localStorage.setItem("googleToken", JSON.stringify(action.payload));
             localStorage.setItem('user', JSON.stringify(action.payload));
         },
         logOut: (state) => {

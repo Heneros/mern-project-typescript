@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import {
     faCalendar,
     faEnvelope,
@@ -16,17 +16,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useLocation } from 'react-router-dom';
 import { useGetUserProfileQuery } from 'features/user/userApiSlice';
 import { DropdownCart } from 'entities/cartHeader';
+import { useLogoutUserMutation } from 'features/auth/authApiSlice';
+import { useAppSelector } from 'shared/lib/store';
 
 export const Header = () => {
     const location = useLocation();
     const { data, isLoading, error } = useGetUserProfileQuery(undefined);
+    const [logoutAction] = useLogoutUserMutation();
     // console.log(prof);
+
+    const { user: userInfo } = useAppSelector((state) => state.auth);
+
+    ///  console.log('userInfo', userInfo);
+
+    const logoutHandler = async () => {
+        try {
+            await logoutAction(undefined).unwrap();
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     const isCurrentPath = (path: string) => location.pathname === path;
     return (
         <>
             <div className="sub-header">
                 <Container>
-                    <div className="row">
+                    <Row>
                         <div className="col-lg-8 col-md-8">
                             <ul className="info">
                                 <li>
@@ -85,21 +101,18 @@ export const Header = () => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </Row>
                 </Container>
             </div>
             {/* <!-- ***** Header Area Start ***** --> */}
             <header className="header-area header-sticky">
-                <div className="container">
+                <Container>
                     <div className="row">
                         <div className="col-12">
                             <nav className="main-nav">
-                                {/* <!-- ***** Logo Start ***** --> */}
                                 <Link to="/" className="logo">
                                     <h1>Villa</h1>
                                 </Link>
-                                {/* <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** --> */}
                                 <ul className="nav">
                                     <li>
                                         <Link
@@ -137,7 +150,7 @@ export const Header = () => {
                                             Contact Us
                                         </Link>
                                     </li>
-                                    {!data ? (
+                                    {!userInfo ? (
                                         <>
                                             <li>
                                                 <Link
@@ -171,30 +184,16 @@ export const Header = () => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link to="">Log Out</Link>
+                                                <Link
+                                                    to=""
+                                                    onClick={logoutHandler}
+                                                >
+                                                    Log Out
+                                                </Link>
                                             </li>
                                         </>
                                     )}
                                     <DropdownCart />
-                                    {/* <div className="dropdown">
-                                        <button
-                                            className="  dropdown-toggle"
-                                            id="dropdownMenuButton"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false"
-                                        >
-                                            <Link to="#!">
-                                                <i>
-                                                    <FontAwesomeIcon
-                                                        icon={faCalendar}
-                                                    />
-                                                </i>
-                                                Schedule a visit
-                                            </Link>
-                                          
-                                        </button>
-                                    </div> */}
                                 </ul>
                                 <span className="menu-trigger">
                                     <span>Menu</span>
@@ -203,7 +202,7 @@ export const Header = () => {
                             </nav>
                         </div>
                     </div>
-                </div>
+                </Container>
             </header>
             {/* <!-- ***** Header Area End ***** --> */}
         </>

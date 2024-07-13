@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch } from 'shared/lib/store';
 import { PostInfo } from 'shared/types';
-import { addToCart } from 'entities/cartHeader';
+import { addToCart, ICartItem } from 'entities/cartHeader';
+import { useGetSinglePropertyQuery } from 'features/properties/propertiesApiSlice';
+import { formatPrice } from 'shared/utils/cartFunctions';
 
 export const PropertyItem: React.FC<PostInfo> = ({
     _id,
@@ -16,9 +18,23 @@ export const PropertyItem: React.FC<PostInfo> = ({
     floor,
 }) => {
     const dispatch = useAppDispatch();
-
+    const { data, isLoading, error } = useGetSinglePropertyQuery(_id);
+    // console.log(data);
+    // const { _id, title, image } = data.propertyPage;
+    // console.log(_id);
     const addToCartHandler = () => {
-        dispatch(addToCart({}));
+        // if (propertyPage) {
+        const cartItem: ICartItem = {
+            _id: _id,
+            title: title,
+            preview: preview,
+            price: price,
+        };
+        ///  console.log(cartItem);
+        dispatch(addToCart(cartItem));
+        // } else {
+        //     console.log('123');
+        // }
     };
 
     return (
@@ -31,7 +47,7 @@ export const PropertyItem: React.FC<PostInfo> = ({
                     <img src={preview} alt="preview image of villa" />
                 </Link>
                 <span className="category">{category}</span>
-                <h6>{price} </h6>
+                <h6>{formatPrice(price)} </h6>
                 <h4>
                     <Link to={`/post/${_id}`}>{title}</Link>
                 </h4>
@@ -53,7 +69,9 @@ export const PropertyItem: React.FC<PostInfo> = ({
                     </li>
                 </ul>
                 <div className="main-button">
-                    <Link to="#">Schedule a visit</Link>
+                    <Link to="#" onClick={addToCartHandler}>
+                        Schedule a visit
+                    </Link>
                 </div>
             </div>
         </div>

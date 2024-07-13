@@ -1,18 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useAppSelector } from 'shared/lib/store';
+import './DropdownCart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { CartItemBook } from '../cartItemBook/CartItemBook';
+import { Link } from 'react-router-dom';
+import { ICartItem } from '../model/types';
 
 export const DropdownCart = () => {
-    return (
-        <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Dropdown Button
-            </Dropdown.Toggle>
+    const itemsCart = useAppSelector((state) => state.cart);
 
-            <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-        </Dropdown>
+    //console.log(itemsCart);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
+    return (
+        <li className="dropdown">
+            <Link to="#" onClick={toggleDropdown}>
+                <FontAwesomeIcon icon={faCalendar} />
+                Schedule a visit
+            </Link>
+            {isOpen && (
+                <div className="dropdown-menu">
+                    {itemsCart.cartItems.length > 0 ? (
+                        itemsCart.cartItems.map((item: ICartItem) => (
+                            <>
+                                <CartItemBook key={item._id} {...item} />
+                            </>
+                        ))
+                    ) : (
+                        <>Empty cart</>
+                    )}
+                </div>
+            )}
+        </li>
     );
 };

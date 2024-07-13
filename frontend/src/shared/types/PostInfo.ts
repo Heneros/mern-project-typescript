@@ -1,5 +1,5 @@
 export interface PostInfo {
-    readonly _id: number;
+    readonly _id: string;
     readonly title: string;
     readonly city: string;
     readonly country: string;

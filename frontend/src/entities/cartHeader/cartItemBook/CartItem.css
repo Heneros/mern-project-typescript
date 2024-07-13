@@ -1,0 +1,27 @@
+.cart-component{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-component > *{
+    font-size: 15px;
+}
+
+.header-area .main-nav .nav li:last-child .title{
+   font-size: 15px; 
+   background-color: unset;
+    color: unset;
+    font-weight: 400;
+    text-transform: none;
+    border-radius: unset;
+    padding-left: unset;
+}
+
+.cart-component .title{
+    font-size: 15px;    
+}
+
+.header-area .main-nav .nav .cart-component{
+    line-height: 14px;
+}
+
