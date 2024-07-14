@@ -7,11 +7,12 @@ import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import { CartItemBook } from '../cartItemBook/CartItemBook';
 import { Link } from 'react-router-dom';
 import { ICartItem } from '../model/types';
+import { formatPrice } from './../../../../../../shop-app/frontend/src/utils/helpers';
 
 export const DropdownCart = () => {
     const itemsCart = useAppSelector((state) => state.cart);
 
-    //console.log(itemsCart);
+    ///   console.log(itemsCart);
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -20,7 +21,9 @@ export const DropdownCart = () => {
     return (
         <li className="dropdown">
             <Link to="#" onClick={toggleDropdown}>
-                <FontAwesomeIcon icon={faCalendar} />
+                <i>
+                    <FontAwesomeIcon icon={faCalendar} />
+                </i>
                 Schedule a visit
             </Link>
             {isOpen && (
@@ -34,6 +37,13 @@ export const DropdownCart = () => {
                     ) : (
                         <>Empty cart</>
                     )}
+                    <span className="total-price">
+                        Total Price: <b>{formatPrice(itemsCart.totalPrice)}</b>
+                    </span>
+
+                    <Link className="cart-link" to={'/cart'}>
+                        Visit Cart
+                    </Link>
                 </div>
             )}
         </li>

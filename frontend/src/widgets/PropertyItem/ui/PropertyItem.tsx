@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAppDispatch } from 'shared/lib/store';
+import { toast } from 'react-toastify';
+import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import { PostInfo } from 'shared/types';
 import { addToCart, ICartItem } from 'entities/cartHeader';
 import { useGetSinglePropertyQuery } from 'features/properties/propertiesApiSlice';
@@ -19,22 +20,26 @@ export const PropertyItem: React.FC<PostInfo> = ({
 }) => {
     const dispatch = useAppDispatch();
     const { data, isLoading, error } = useGetSinglePropertyQuery(_id);
-    // console.log(data);
-    // const { _id, title, image } = data.propertyPage;
-    // console.log(_id);
+
+    const cartItems = useAppSelector((state) => state.cart.cartItems);
+
     const addToCartHandler = () => {
-        // if (propertyPage) {
-        const cartItem: ICartItem = {
-            _id: _id,
-            title: title,
-            preview: preview,
-            price: price,
-        };
-        ///  console.log(cartItem);
-        dispatch(addToCart(cartItem));
-        // } else {
-        //     console.log('123');
-        // }
+        const isItemInCart = cartItems.some(
+            (item: ICartItem) => item._id === _id,
+        );
+
+        if (!isItemInCart) {
+            const cartItem: ICartItem = {
+                _id: _id,
+                title: title,
+                preview: preview,
+                price: price,
+            };
+            dispatch(addToCart(cartItem));
+            toast.success(`Product ${title} added to cart!`);
+        } else {
+            toast.error('Product in cart');
+        }
     };
 
     return (

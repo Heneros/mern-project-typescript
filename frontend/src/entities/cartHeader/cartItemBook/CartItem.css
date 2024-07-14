@@ -1,6 +1,14 @@
 .cart-component{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+      align-items: center;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #000;
+}
+
+.cart-component:last-child {
+  margin-top: 0;
 }
 
 .cart-component > *{
@@ -24,4 +32,25 @@
 .header-area .main-nav .nav .cart-component{
     line-height: 14px;
 }
+
+.cart-component > img{
+    min-width: 50px;
+    width: 66px;
+}
+
+.bottom b {
+    font-size: 12px;
+}
+
+.header-area .main-nav .dropdown .title .link {
+  background-color: unset;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: none;
+  border-radius: unset;
+  padding-left: 0;
+}
+
 

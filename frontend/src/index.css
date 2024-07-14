@@ -487,14 +487,14 @@ Header Style
   border-radius: 50%;
   margin-left: -1px;
 }
-
+/* 
 .header-area .main-nav .nav li:last-child:hover a {
   background-color: #1e1e1e;
 }
 
 .header-area .main-nav .nav li:last-child:hover a i {
   color: #fff;
-}
+} */
 
 .header-area .main-nav .nav li:hover a {
   color: #f35525;
