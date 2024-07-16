@@ -19,7 +19,7 @@ export const PropertyItem: React.FC<PostInfo> = ({
     floor,
 }) => {
     const dispatch = useAppDispatch();
-    const { data, isLoading, error } = useGetSinglePropertyQuery(_id);
+    /// const { data, isLoading, error } = useGetSinglePropertyQuery(_id);
 
     const cartItems = useAppSelector((state) => state.cart.cartItems);
 
