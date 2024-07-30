@@ -19,12 +19,12 @@ import { PostInfo } from 'shared/types';
 import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
 
 export const SliderBanner = () => {
- ///   const navigate = useNavigate();
+    ///   const navigate = useNavigate();
     const [page, setPage] = useState(0);
     const { data, isLoading, error } = useGetAllPropertiesQuery(page);
 
-    const slidesItem = data?.properties.map((item: PostInfo) => (
-        <SwiperSlide>
+    const slidesItem = data?.properties.map((item: PostInfo, index: number) => (
+        <SwiperSlide key={index}>
             <div
                 className="item item-1"
                 style={{ backgroundImage: `url(${item.preview})` }}

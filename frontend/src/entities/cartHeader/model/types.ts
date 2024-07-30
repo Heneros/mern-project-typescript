@@ -1,4 +1,5 @@
 export interface ICartItem{
+    index: string;
     _id: string;
     title: string;
     preview: string;

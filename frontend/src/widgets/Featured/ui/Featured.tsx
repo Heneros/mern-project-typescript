@@ -23,9 +23,6 @@ export const Featured: React.FC<{ items: PostInfo[] }> = () => {
         setActiveIndex(index === activeIndex ? null : index);
     };
 
-    // const selectedPost = data?.propertyPage;
-    // console.log(selectedPost);
-
     const postSingle = data?.propertyPage ? (
         <div key={data.propertyPage.id}>
             <div className="row">
@@ -46,11 +43,9 @@ export const Featured: React.FC<{ items: PostInfo[] }> = () => {
                 </div>
                 <div className="col-lg-5">
                     <div className="section-heading">
-                        <h6> {data.propertyPage.title}</h6>
+                        <h6>{data.propertyPage.title}</h6>
                         <h2>
-                            <h6>
-                                {data.propertyPage.description.substring(0, 25)}
-                            </h6>
+                            {data.propertyPage.description.substring(0, 25)}
                         </h2>
                     </div>
 

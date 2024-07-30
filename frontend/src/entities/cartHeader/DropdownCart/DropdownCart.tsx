@@ -30,9 +30,9 @@ export const DropdownCart = () => {
                 <div className="dropdown-menu">
                     {itemsCart.cartItems.length > 0 ? (
                         itemsCart.cartItems.map((item: ICartItem) => (
-                            <>
-                                <CartItemBook key={item._id} {...item} />
-                            </>
+                            <React.Fragment key={item._id || item.index}>
+                                <CartItemBook {...item} />
+                            </React.Fragment>
                         ))
                     ) : (
                         <>Empty cart</>

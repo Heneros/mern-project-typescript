@@ -11,16 +11,11 @@ export const FunFacts = () => {
                                 <div className="row">
                                     <div className="col-lg-4">
                                         <div className="counter">
-                                            <h2
-                                                className="timer count-title count-number"
-                                                data-to="34"
-                                                data-speed="1000"
-                                            >
-                                                <Counter
-                                                    target={100}
-                                                    speed={1000}
-                                                />
-                                            </h2>
+                                            <Counter
+                                                target={100}
+                                                speed={1000}
+                                            />
+
                                             <p className="count-text ">
                                                 Buildings
                                                 <br />
@@ -30,16 +25,8 @@ export const FunFacts = () => {
                                     </div>
                                     <div className="col-lg-4">
                                         <div className="counter">
-                                            <h2
-                                                className="timer count-title count-number"
-                                                data-to="12"
-                                                data-speed="1000"
-                                            >
-                                                <Counter
-                                                    target={12}
-                                                    speed={1000}
-                                                />
-                                            </h2>
+                                            <Counter target={12} speed={1000} />
+
                                             <p className="count-text ">
                                                 Years
                                                 <br />
@@ -49,16 +36,8 @@ export const FunFacts = () => {
                                     </div>
                                     <div className="col-lg-4">
                                         <div className="counter">
-                                            <h2
-                                                className="timer count-title count-number"
-                                                data-to="24"
-                                                data-speed="1000"
-                                            >
-                                                <Counter
-                                                    target={24}
-                                                    speed={1000}
-                                                />
-                                            </h2>
+                                            <Counter target={24} speed={1000} />
+
                                             <p className="count-text ">
                                                 Awwards
                                                 <br />

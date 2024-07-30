@@ -27,12 +27,23 @@
 
 .main-banner .swiper-pagination{
   position: absolute;
+  left: 25%;
+  bottom: 5%;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
 }
+
+/* 
+.main-banner .swiper-pagination .swiper-pagination-bullet{
+  background-color: #fff;
+} */
 
 .main-banner .swiper-pagination .swiper-pagination-bullet{
   width: 10px;
   height: 10px;
   background-color: #fff;
+  opacity: 1;
   border-radius: 50%;
   margin-right: 10px;
   transition: all .5s;
@@ -41,3 +52,5 @@
 .main-banner .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #f35525;
 }
+
+

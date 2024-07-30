@@ -1,0 +1,1 @@
+export {BestDeal} from  './ui/BestDeal'

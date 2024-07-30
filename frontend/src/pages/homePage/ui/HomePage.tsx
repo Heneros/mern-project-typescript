@@ -1,4 +1,5 @@
 import React from 'react';
+import { BestDeal } from 'shared/ui/BestDeal';
 import { Featured } from 'widgets/Featured';
 import { FunFacts } from 'widgets/FunFacts';
 import { SliderBanner } from 'widgets/Slider';
@@ -20,6 +21,10 @@ export function HomePage() {
             {/* FunFacts section*/}
             <FunFacts />
             {/* FunFacts section*/}
+
+            {/* BestDeal section*/}
+            <BestDeal />
+            {/* BestDeal section*/}
         </>
     );
 }

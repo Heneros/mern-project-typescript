@@ -5,8 +5,6 @@ import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 
 interface FilterPropertyProps {
     categories: string[];
-    // activeFilter: string;
-    // onFilterChange: (filter: string) => void;
 }
 
 export const FilterProperty: React.FC<FilterPropertyProps> = ({
@@ -17,7 +15,6 @@ export const FilterProperty: React.FC<FilterPropertyProps> = ({
 
     const handleCategoryClick = (category: string) => {
         dispatch(updateCategoryFilter(category));
-        // console.log(category);
     };
 
     const viewAll = () => {
