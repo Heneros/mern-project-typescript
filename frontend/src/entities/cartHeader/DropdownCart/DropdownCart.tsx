@@ -7,7 +7,9 @@ import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import { CartItemBook } from '../cartItemBook/CartItemBook';
 import { Link } from 'react-router-dom';
 import { ICartItem } from '../model/types';
-import { formatPrice } from './../../../../../../shop-app/frontend/src/utils/helpers';
+
+import { formatPrice } from 'shared/utils/cartFunctions';
+import { ScheduleBtn } from 'shared/ui/ScheduleBtn';
 
 export const DropdownCart = () => {
     const itemsCart = useAppSelector((state) => state.cart);
@@ -20,12 +22,8 @@ export const DropdownCart = () => {
     };
     return (
         <li className="dropdown">
-            <Link to="#" onClick={toggleDropdown}>
-                <i>
-                    <FontAwesomeIcon icon={faCalendar} />
-                </i>
-                Schedule a visit
-            </Link>
+            <ScheduleBtn isInCart={true} onClick={toggleDropdown} />
+
             {isOpen && (
                 <div className="dropdown-menu">
                     {itemsCart.cartItems.length > 0 ? (

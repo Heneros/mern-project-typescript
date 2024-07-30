@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import { PostInfo } from 'shared/types';
 import { addToCart, ICartItem } from 'entities/cartHeader';
-import { useGetSinglePropertyQuery } from 'features/properties/propertiesApiSlice';
 import { formatPrice } from 'shared/utils/cartFunctions';
 
 export const PropertyItem: React.FC<PostInfo> = ({
