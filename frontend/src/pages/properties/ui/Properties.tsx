@@ -5,7 +5,7 @@ import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 
 import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
 import { Message } from 'shared/ui/Message';
-import { PropertyItem } from 'widgets/PropertyItem';
+import { PropertyItem } from 'shared/ui/PropertyItem';
 import { PostInfo } from 'shared/types';
 import { FilterProperty } from 'widgets/FilterProperty';
 import { PaginationProperties } from 'widgets/PaginationProperties';

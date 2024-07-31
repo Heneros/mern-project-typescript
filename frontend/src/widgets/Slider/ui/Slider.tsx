@@ -16,14 +16,16 @@ import 'swiper/css/scrollbar';
 import './Slider.css';
 
 import { PostInfo } from 'shared/types';
-import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
+import { PropItems } from 'shared/types/PostInfo';
+// import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
 
-export const SliderBanner = () => {
+export const SliderBanner: React.FC<PropItems> = ({ propItems }) => {
     ///   const navigate = useNavigate();
-    const [page, setPage] = useState(0);
-    const { data, isLoading, error } = useGetAllPropertiesQuery(page);
+    // const [page, setPage] = useState(0);
+    // const page = 0;
+    // const { data, isLoading, error } = useGetAllPropertiesQuery(page);
 
-    const slidesItem = data?.properties.map((item: PostInfo, index: number) => (
+    const slidesItem = propItems.map((item: PostInfo, index: number) => (
         <SwiperSlide key={index}>
             <div
                 className="item item-1"

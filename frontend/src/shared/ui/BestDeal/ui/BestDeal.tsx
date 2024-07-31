@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
-import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
+// import { useGetAllPropertiesQuery } from 'features/propItems/propertiesApiSlice';
 import { PostInfo } from 'shared/types';
-import { Message } from 'shared/ui/Message';
-import { Spinner } from 'react-bootstrap';
-import { renderError } from 'shared/utils/renderError';
+// import { Message } from 'shared/ui/Message';
+// import { Spinner } from 'react-bootstrap';
+// import { renderError } from 'shared/utils/renderError';
 import { ScheduleBtn } from 'shared/ui/ScheduleBtn';
 import { addToCart, ICartItem } from 'entities/cartHeader';
 import { toast } from 'react-toastify';
+import { PropItems } from 'shared/types/PostInfo';
 
-export const BestDeal = () => {
-    const { data, isLoading, error } = useGetAllPropertiesQuery('1');
-    const properties = data && data.properties ? data.properties : [];
+export const BestDeal: React.FC<PropItems> = ({ propItems }) => {
+    // const { data, isLoading, error } = useGetAllPropertiesQuery('1');
+    // const propItems = data && data.propItems ? data.propItems : [];
 
     const [selectedCategory, setSelectedCategory] = useState<string | null>(
         null,
@@ -23,38 +24,38 @@ export const BestDeal = () => {
     const dispatch = useAppDispatch();
     const categories: string[] = Array.from(
         new Set(
-            data?.properties.map(
+            propItems?.map(
                 (currentProperty: PostInfo) => currentProperty.category,
             ),
         ),
     );
 
     useEffect(() => {
-        if (properties.length > 0) {
-            setCurrentProperty(properties[0]);
+        if (propItems.length > 0) {
+            setCurrentProperty(propItems[0]);
             if (!selectedCategory) {
-                setSelectedCategory(properties[0].category);
+                setSelectedCategory(propItems[0].category);
             }
         }
-    }, [properties, selectedCategory]);
+    }, [propItems, selectedCategory]);
 
     useEffect(() => {
         if (selectedCategory) {
-            const filteredProperties = properties.filter(
+            const filteredProperties = propItems.filter(
                 (property: PostInfo) => property.category === selectedCategory,
             );
             if (filteredProperties.length > 0) {
                 setCurrentProperty(filteredProperties[0]);
             }
         }
-    }, [selectedCategory, properties]);
+    }, [selectedCategory, propItems]);
 
     const handleCategoryChange = (category: string) => {
         setSelectedCategory(category);
     };
 
     const cartItems = useAppSelector((state) => state.cart.cartItems);
-    console.log('cartItems', cartItems);
+    // console.log('cartItems', cartItems);
 
     const addToCartHandler = () => {
         if (currentProperty) {
@@ -131,13 +132,7 @@ export const BestDeal = () => {
                                         className="tab-content"
                                         id="myTabContent"
                                     >
-                                        {isLoading ? (
-                                            <Spinner />
-                                        ) : error ? (
-                                            <Message variant="danger">
-                                                {renderError(error)}
-                                            </Message>
-                                        ) : currentProperty ? (
+                                        {currentProperty ? (
                                             <>
                                                 <div
                                                     className="tab-pane fade show active"

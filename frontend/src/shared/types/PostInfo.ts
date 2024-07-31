@@ -13,3 +13,8 @@ export interface PostInfo {
     readonly price: number; 
     readonly category: string; 
 }
+
+
+export interface PropItems {
+    propItems: PostInfo[];
+}
