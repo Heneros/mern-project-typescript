@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import {
     faCalendar,
@@ -21,10 +21,9 @@ import { useAppSelector } from 'shared/lib/store';
 
 export const Header = () => {
     const location = useLocation();
-    const { data, isLoading, error } = useGetUserProfileQuery(undefined);
     const [logoutAction] = useLogoutUserMutation();
-    // console.log(prof);
-
+    const headerRef = useRef<HTMLDivElement | null>(null);
+    const [isSticky, setIsSticky] = useState(false);
     const { user: userInfo } = useAppSelector((state) => state.auth);
 
     ///  console.log('userInfo', userInfo);
@@ -38,6 +37,26 @@ export const Header = () => {
     };
 
     const isCurrentPath = (path: string) => location.pathname === path;
+
+    useLayoutEffect(() => {
+        const header = headerRef.current;
+        const sticky = header?.offsetTop;
+
+        const handleScroll = () => {
+            if (sticky) {
+                if (window.scrollY > sticky) {
+                    setIsSticky(true);
+                } else {
+                    setIsSticky(false);
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <>
             <div className="sub-header">
@@ -105,7 +124,10 @@ export const Header = () => {
                 </Container>
             </div>
             {/* <!-- ***** Header Area Start ***** --> */}
-            <header className="header-area header-sticky">
+            <header
+                ref={headerRef}
+                className={`header-area header-sticky ${isSticky ? 'background-header' : ''}`}
+            >
                 <Container>
                     <div className="row">
                         <div className="col-12">

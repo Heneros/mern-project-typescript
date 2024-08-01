@@ -17,6 +17,10 @@ export const Footer = ({ className }: { className?: string }) => {
                             target="_blank"
                         >
                             TemplateMo
+                        </Link>{' '}
+                        Code:
+                        <Link to="https://github.com/heneros" target="_blank">
+                            Heneros
                         </Link>
                     </p>
                 </div>
