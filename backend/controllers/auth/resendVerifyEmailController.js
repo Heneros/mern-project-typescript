@@ -1,7 +1,7 @@
 import asyncHandler from 'express-async-handler';
 import User from '../../models/userModel.js';
 import VerificationToken from '../../models/verifyResetTokenModel.js';
-import sendEmail from '../../utils/sendEmail.js';
+import { sendEmail } from '../../utils/sendEmail.js';
 
 const domainURL = process.env.DOMAINVERIFY;
 const { randomBytes } = await import('crypto');
@@ -58,7 +58,6 @@ const resendEmailVerificationToken = asyncHandler(async (req, res) => {
         success: true,
         message: `${user.firstName}, an email has been sent to your account, please verify within 15 minutes`,
     });
-  
 });
 
 export default resendEmailVerificationToken;

@@ -10,20 +10,23 @@ import {
     resetPassword,
     resetPasswordRequest,
 } from '../controllers/auth/passwordResetController.js';
-// import User from '../models/userModel.js';
 import logoutUser from '../controllers/auth/logoutController.js';
 import User from '../models/userModel.js';
+import feedbackFormController from '../controllers/auth/feedbackFormController.js';
+import { apiLimiter, loginLimiter } from '../middleware/apiLimiter.js';
 
 const router = express.Router();
 
-router.post('/register', registerUser);
+router.post('/register', apiLimiter, registerUser);
 router.get('/verify/:emailToken/:userId', verifyUserEmail);
-router.post('/login', loginUser);
+router.post('/login', loginLimiter, loginUser);
 router.get('/new_access_token', newAccessToken);
 router.post('/resend_email_token', resendEmailVerificationToken);
 router.post('/reset_password_request', resetPasswordRequest);
 router.post('/reset_password', resetPassword);
 router.get('/logout', logoutUser);
+
+router.post('/feedback', apiLimiter, feedbackFormController);
 
 router.get(
     '/google',

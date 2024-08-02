@@ -5601,3 +5601,612 @@
   ],
   timestamp: '2024-06-10 08:41:40.158 PM'
 }
+{
+  error: ReferenceError: async is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: async is not defined\n' +
+    'ReferenceError: async is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: async is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Fri Aug 02 2024 14:23:35 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 6112,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 80691200,
+      heapTotal: 59396096,
+      heapUsed: 31909136,
+      external: 20976768,
+      arrayBuffers: 18262481
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 50892.562 },
+  trace: [
+    {
+      column: 31,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-08-02 02:23:35.839 PM'
+}
+{
+  error: ReferenceError: async is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: async is not defined\n' +
+    'ReferenceError: async is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: async is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Fri Aug 02 2024 14:23:43 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 24052,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 79110144,
+      heapTotal: 59133952,
+      heapUsed: 32229400,
+      external: 20976768,
+      arrayBuffers: 18262481
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 50900.718 },
+  trace: [
+    {
+      column: 31,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-08-02 02:23:44.000 PM'
+}
+{
+  error: ReferenceError: async is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: async is not defined\n' +
+    'ReferenceError: async is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: async is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:32:31\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Fri Aug 02 2024 14:23:46 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 5316,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 79310848,
+      heapTotal: 59400192,
+      heapUsed: 32673736,
+      external: 20976768,
+      arrayBuffers: 18262481
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 50903.468 },
+  trace: [
+    {
+      column: 31,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js',
+      function: null,
+      line: 32,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-08-02 02:23:46.744 PM'
+}
+{
+  error: ReferenceError: re is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: re is not defined\n' +
+    'ReferenceError: re is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: re is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Fri Aug 02 2024 14:24:21 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 14916,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 79622144,
+      heapTotal: 59396096,
+      heapUsed: 32476344,
+      external: 20976768,
+      arrayBuffers: 18262481
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 50938.343 },
+  trace: [
+    {
+      column: 29,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js',
+      function: null,
+      line: 52,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-08-02 02:24:21.633 PM'
+}
+{
+  error: ReferenceError: re is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: re is not defined\n' +
+    'ReferenceError: re is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: re is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Fri Aug 02 2024 14:24:30 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 24488,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 78954496,
+      heapTotal: 59133952,
+      heapUsed: 31729176,
+      external: 20976768,
+      arrayBuffers: 18262481
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 50947.218 },
+  trace: [
+    {
+      column: 29,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js',
+      function: null,
+      line: 52,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-08-02 02:24:30.498 PM'
+}
+{
+  error: ReferenceError: receiverEmail is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: receiverEmail is not defined\n' +
+    'ReferenceError: receiverEmail is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: receiverEmail is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Fri Aug 02 2024 14:24:33 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 23116,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 79323136,
+      heapTotal: 59396096,
+      heapUsed: 32478936,
+      external: 20976768,
+      arrayBuffers: 18262481
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 50950.281 },
+  trace: [
+    {
+      column: 29,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js',
+      function: null,
+      line: 52,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-08-02 02:24:33.566 PM'
+}
+{
+  error: ReferenceError: receiverEmailunction is not defined
+      at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29
+      at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+      at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+      at async loadESM (node:internal/process/esm_loader:28:7)
+      at async handleMainPromise (node:internal/modules/run_main:113:12),
+  level: 'error',
+  message: 'uncaughtException: receiverEmailunction is not defined\n' +
+    'ReferenceError: receiverEmailunction is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  stack: 'ReferenceError: receiverEmailunction is not defined\n' +
+    '    at file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js:52:29\n' +
+    '    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)\n' +
+    '    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)\n' +
+    '    at async loadESM (node:internal/process/esm_loader:28:7)\n' +
+    '    at async handleMainPromise (node:internal/modules/run_main:113:12)',
+  exception: true,
+  date: 'Fri Aug 02 2024 14:24:46 GMT+0300 (Восточная Европа, летнее время)',
+  process: {
+    pid: 24320,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.js'
+    ],
+    memoryUsage: {
+      rss: 78897152,
+      heapTotal: 59133952,
+      heapUsed: 32135440,
+      external: 20976768,
+      arrayBuffers: 18262481
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 50962.921 },
+  trace: [
+    {
+      column: 29,
+      file: 'file:///D:/Projects/mern-project-typescript/backend/utils/sendEmail.js',
+      function: null,
+      line: 52,
+      method: null,
+      native: false
+    },
+    {
+      column: 25,
+      file: 'node:internal/modules/esm/module_job',
+      function: 'ModuleJob.run',
+      line: 222,
+      method: 'run',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/esm/loader',
+      function: 'async ModuleLoader.import',
+      line: 323,
+      method: 'import',
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:internal/process/esm_loader',
+      function: 'async loadESM',
+      line: 28,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'async handleMainPromise',
+      line: 113,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-08-02 02:24:46.198 PM'
+}

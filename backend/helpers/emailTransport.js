@@ -7,7 +7,7 @@ let transporter;
 if (process.env.NODE_ENV === 'development') {
     transporter = nodemailer.createTransport({
         //  host: 'mailhog',
-        host: "127.0.0.1",
+        host: '127.0.0.1',
         port: 1025,
     });
 } else if (process.env.NODE_ENV === 'production') {
@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'development') {
             domain: process.env.MAILGUN_DOMAIN,
         },
     };
-    console.log('prod mail', 21);
+    // console.log('prod mail', 21);
     transporter = nodemailer.createTransport(mg(mailgunAuth));
 }
 
