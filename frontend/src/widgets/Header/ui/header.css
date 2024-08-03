@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .nav {
+        display: block; 
+    }
+
+    .menu-trigger {
+        display: block; 
+    }
+}

@@ -3,7 +3,7 @@ import { systemLogs } from '../utils/Logger.js';
 
 export const apiLimiter = rateLimit({
     windowMs: 17 * 600 * 1000,
-    max: 7,
+    max: 2,
     message: {
         message: 'Too many requests from this IP address',
     },

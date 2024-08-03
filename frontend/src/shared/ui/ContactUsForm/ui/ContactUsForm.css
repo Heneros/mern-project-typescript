@@ -1,0 +1,8 @@
+.contact-content #contact-form textarea, 
+.contact-content #contact-form input{
+    margin: 16px 0  !important;
+}
+
+.invalid-feedback{
+    margin-bottom: 15px;
+}

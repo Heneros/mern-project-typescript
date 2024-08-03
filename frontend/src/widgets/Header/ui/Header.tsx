@@ -1,10 +1,6 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import {
-    faCalendar,
-    faEnvelope,
-    faMap,
-} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
 import {
     faFacebookF,
     faInstagram,
@@ -14,19 +10,43 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useLocation } from 'react-router-dom';
-import { useGetUserProfileQuery } from 'features/user/userApiSlice';
 import { DropdownCart } from 'entities/cartHeader';
 import { useLogoutUserMutation } from 'features/auth/authApiSlice';
 import { useAppSelector } from 'shared/lib/store';
 
+import './header.css';
+
 export const Header = () => {
+    const menuRef = useRef<HTMLUListElement>(null);
+    const [open, setOpen] = useState(false);
+
     const location = useLocation();
     const [logoutAction] = useLogoutUserMutation();
     const headerRef = useRef<HTMLDivElement | null>(null);
     const [isSticky, setIsSticky] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
     const { user: userInfo } = useAppSelector((state) => state.auth);
 
     ///  console.log('userInfo', userInfo);
+
+    const handleOpenMenu = (e: React.MouseEvent) => {
+        e.preventDefault();
+        if (isMobile) {
+            setOpen((prevOpen) => !prevOpen);
+        }
+    };
+
+    const handleClickOutside = (e: MouseEvent) => {
+        if (
+            menuRef.current &&
+            !menuRef.current.contains(e.target as Node) &&
+            headerRef.current &&
+            !headerRef.current.contains(e.target as Node)
+        ) {
+            setOpen(false);
+        }
+    };
 
     const logoutHandler = async () => {
         try {
@@ -39,24 +59,50 @@ export const Header = () => {
     const isCurrentPath = (path: string) => location.pathname === path;
 
     useLayoutEffect(() => {
-        const header = headerRef.current;
-        const sticky = header?.offsetTop;
+        // const header = headerRef.current;
+        // const sticky = header?.offsetTop;
 
         const handleScroll = () => {
-            if (sticky) {
-                if (window.scrollY > sticky) {
-                    setIsSticky(true);
-                } else {
-                    setIsSticky(false);
-                }
+            const header = headerRef.current;
+            if (header) {
+                setIsSticky(window.scrollY > header.offsetTop);
             }
+
+            // if (sticky) {
+            //     if (window.scrollY > sticky) {
+            //         // console.log(header?.offsetTop);
+            //         setIsSticky(true);
+            //     } else {
+            //         setIsSticky(false);
+            //     }
+            // }
         };
 
         window.addEventListener('scroll', handleScroll);
+        handleScroll();
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 767);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
         <>
             <div className="sub-header">
@@ -135,7 +181,17 @@ export const Header = () => {
                                 <Link to="/" className="logo">
                                     <h1>Villa</h1>
                                 </Link>
-                                <ul className="nav">
+                                <ul
+                                    ref={menuRef}
+                                    className={`nav ${open ? 'show' : ''}`}
+                                    style={{
+                                        display: isMobile
+                                            ? open
+                                                ? 'block'
+                                                : 'none'
+                                            : '',
+                                    }}
+                                >
                                     <li>
                                         <Link
                                             to="/"
@@ -217,7 +273,16 @@ export const Header = () => {
                                     )}
                                     <DropdownCart />
                                 </ul>
-                                <span className="menu-trigger">
+                                <span
+                                    onClick={handleOpenMenu}
+                                    className={
+                                        isMobile
+                                            ? open
+                                                ? 'menu-trigger active'
+                                                : 'menu-trigger'
+                                            : 'menu-trigger'
+                                    }
+                                >
                                     <span>Menu</span>
                                 </span>
                                 {/* <!-- ***** Menu End ***** --> */}
