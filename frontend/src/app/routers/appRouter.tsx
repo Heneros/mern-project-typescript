@@ -22,6 +22,8 @@ import { VerifiedPage } from 'pages/verifiedPage';
 import { AuthRequired } from 'shared/hooks/AuthRequired';
 import { ROLES } from 'shared/consts';
 import { PersonalAccount } from 'pages/PersonalAccount';
+import { ContactUs } from 'pages/ContactUs';
+import { SingleProperty } from 'pages/SingleProperty';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -46,6 +48,14 @@ export const AppRouter = () => {
                 {
                     path: 'resend',
                     element: <ResendEmailTokenPage />,
+                },
+                {
+                    path: 'contact-us',
+                    element: <ContactUs />,
+                },
+                {
+                    path: 'post/:id',
+                    element: <SingleProperty />,
                 },
                 {
                     element: <AuthRequired allowedRoles={[ROLES.User]} />,

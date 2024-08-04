@@ -15,14 +15,16 @@ export const Breadcrumbs: React.FC<BreadType> = ({
 }) => {
     const location = useLocation();
     const pathname = location.pathname;
-    const parts = pathname.split('/');
+    const parts = pathname.split('/').filter(Boolean);
     // console.log(parts);
 
     const lastPart = parts[parts.length - 1];
+    console.log(lastParent);
 
     const isLastPartNumber = !isNaN(Number(lastPart));
-    const lastParentName =
-        isLastPartNumber && lastParent ? lastParent : lastPart;
+
+    const lastParentName = lastParent ? lastParent : nameParent || lastPart;
+
     return (
         <>
             <div

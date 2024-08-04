@@ -1,0 +1,1 @@
+export { SingleProperty } from "./ui/SingleProperty";
