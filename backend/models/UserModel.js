@@ -24,7 +24,8 @@ const userSchema = new Schema(
                 validator(value) {
                     return /^[A-z][A-z0-9-_]{3,23}$/.test(value);
                 },
-                message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+                message:
+                    'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
             },
         },
         firstName: {
