@@ -36,7 +36,7 @@ const authSlice = createSlice({
     reducers: {
         logIn: (state, action: PayloadAction<User>) => {
             state.user = action.payload;
-            localStorage.setItem("googleToken", JSON.stringify(action.payload));
+            localStorage.setItem('googleToken', JSON.stringify(action.payload));
             localStorage.setItem('user', JSON.stringify(action.payload));
         },
         logOut: (state) => {
@@ -51,13 +51,15 @@ const authSlice = createSlice({
 export const { logIn, logOut } = authSlice.actions;
 export default authSlice.reducer;
 
-export const selectCurrentUserToken = (state: { auth: AuthSlice }): string | undefined => {
+export const selectCurrentUserToken = (state: {
+    auth: AuthSlice;
+}): string | undefined => {
     const token = state.auth.user?.accessToken;
     return Array.isArray(token) ? token[0] : token;
 };
-export const selectCurrentUserGoogleToken = (state: { auth: AuthSlice }): string | undefined =>{
-   const googleToken  = state.auth.user?.googleToken;
-   return Array.isArray(googleToken) ? googleToken[0] : googleToken;
-}
-  
- 
+export const selectCurrentUserGoogleToken = (state: {
+    auth: AuthSlice;
+}): string | undefined => {
+    const googleToken = state.auth.user?.googleToken;
+    return Array.isArray(googleToken) ? googleToken[0] : googleToken;
+};

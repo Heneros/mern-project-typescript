@@ -52,7 +52,7 @@ export const authApiSlice = baseApiSlice.injectEndpoints({
                 body: formData,
             }),
         }),
-     feedbackForm: builder.mutation({
+        feedbackForm: builder.mutation({
             query: (formData) => ({
                 url: '/auth/feedback',
                 method: 'POST',
@@ -69,5 +69,5 @@ export const {
     usePasswordResetRequestMutation,
     useResendVerifyEmailMutation,
     useResetPasswordMutation,
-    useFeedbackFormMutation
+    useFeedbackFormMutation,
 } = authApiSlice;

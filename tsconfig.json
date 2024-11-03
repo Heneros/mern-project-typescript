@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2022",
+    "module": "CommonJS",
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "allowJs": false,
+    "baseUrl": "./",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "noEmit": false
+  },
+  "ts-node": {},
+  "references": [
+    {
+      "path": "./frontend/tsconfig.json"
+    }
+  ],
+
+  "include": [
+    "frontend/src/**/*.tsx",
+    "frontend/src/**/*.ts",
+    "frontend/src/declarations.d.ts",
+    "frontend/webpack.config.js",
+    "backend/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules/",
+    ".eslintrc.cjs",
+    "./frontend/node_modules/"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "noEmit": false
+    },
+    "include": [
+        "backend/**/*.ts",
+        "frontend/src/**/*.ts",
+        "frontend/src/**/*.tsx",
+        "test/**/*.ts",
+        "frontend/webpack.config.js",
+    ]
+}

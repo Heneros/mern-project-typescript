@@ -1,12 +1,12 @@
 import { useGetSinglePropertyQuery } from 'features/properties/propertiesApiSlice';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import { postIdProperty } from 'shared/consts';
 import { PostInfo } from 'shared/types';
 import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
 import { getErrorMessage } from 'shared/utils/getErrorMessage';
-
 import FeaturedIcon from 'shared/assets/icons/featured-icon.png';
 import InfoIcon from 'shared/assets/icons/info-icon-01.png';
 import InfoIconTwo from 'shared/assets/icons/info-icon-02.png';
