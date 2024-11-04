@@ -22,7 +22,6 @@
       "path": "./frontend/tsconfig.json"
     }
   ],
-
   "include": [
     "frontend/src/**/*.tsx",
     "frontend/src/**/*.ts",
@@ -32,7 +31,7 @@
   ],
   "exclude": [
     "node_modules/",
-    ".eslintrc.cjs",
+    ".eslintrc.js",
     "./frontend/node_modules/"
   ]
 }

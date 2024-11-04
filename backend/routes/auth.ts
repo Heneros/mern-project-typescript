@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import passport from 'passport';
 import jwt from 'jsonwebtoken';
 import registerUser from '../controllers/auth/registerController';
@@ -37,7 +37,6 @@ router.route('/google').get(
     } as any),
 );
 
-
 // $-title   Redirect route to the passport google strategy
 // $-path    GET /api/v1/auth/google/redirect
 router.get(
@@ -47,29 +46,31 @@ router.get(
         session: false,
     }),
 
-    async (req, res) => {
-        const existingUser = await User.findById(req.user.id);
+    async (req: Request, res: Response) => {
+        try {
+            const userReq = req as RequestWithUser;
+            const existingUser = await User.findById(req.user.id);
 
-        const payload = {
-            id: req.user.id,
-            roles: existingUser.roles,
-            firstName: existingUser.firstName,
-            lastName: existingUser.lastName || 'Name',
-            username: existingUser.username,
-            provider: existingUser.provider,
-            avatar: existingUser.avatar,
-        };
+            const payload = {
+                id: req.user.id,
+                roles: existingUser.roles,
+                firstName: existingUser.firstName,
+                lastName: existingUser.lastName || 'Name',
+                username: existingUser.username,
+                provider: existingUser.provider,
+                avatar: existingUser.avatar,
+            };
 
-        ///   console.log(payload);
+            ///   console.log(payload);
 
-        jwt.sign(
-            payload,
-            process.env.JWT_ACCESS_SECRET_KEY!,
-            { expiresIn: '20m' },
-            (err, token) => {
-                const jwt = `${token}`;
+            jwt.sign(
+                payload,
+                process.env.JWT_ACCESS_SECRET_KEY!,
+                { expiresIn: '20m' },
+                (err, token) => {
+                    const jwt = `${token}`;
 
-                const embedJWT = `
+                    const embedJWT = `
     <html>
     <script>
     window.localStorage.setItem("googleToken",'${jwt}')
@@ -79,9 +80,12 @@ router.get(
     </html>
     
     `;
-                res.send(embedJWT);
-            },
-        );
+                    res.send(embedJWT);
+                },
+            );
+        } catch (error) {
+            console.log(error);
+        }
     },
 );
 

@@ -1,81 +1,39 @@
 {
-  error: backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.
+  error: backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
+  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
+  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
+  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
+  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
   backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
   backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.
-    Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'null'.
-        Type 'undefined' is not assignable to type 'null'.
-    Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-        Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
+  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -88,30 +46,16 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -124,9 +68,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Sun Nov 03 2024 17:25:16 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Mon Nov 04 2024 09:27:38 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 58916,
+    pid: 69196,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -137,938 +81,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 384352256,
-      heapTotal: 335310848,
-      heapUsed: 311242536,
-      external: 24809643,
-      arrayBuffers: 21825195
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 181721.64 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-03 05:25:16.895 PM'
-}
-{
-  error: backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.
-    Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'null'.
-        Type 'undefined' is not assignable to type 'null'.
-    Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-        Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Sun Nov 03 2024 17:25:33 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 61432,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 380424192,
-      heapTotal: 331902976,
-      heapUsed: 300661720,
-      external: 24809627,
-      arrayBuffers: 21825179
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 181737.937 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-03 05:25:33.190 PM'
-}
-{
-  error: backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.
-    Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'null'.
-        Type 'undefined' is not assignable to type 'null'.
-    Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-        Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(33,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(52,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(52,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(55,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(68,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Sun Nov 03 2024 17:25:39 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 66520,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 383791104,
-      heapTotal: 335310848,
-      heapUsed: 311410160,
-      external: 24809635,
-      arrayBuffers: 21825187
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 181744.546 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-03 05:25:39.803 PM'
-}
-{
-  error: backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.
-    Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'null'.
-        Type 'undefined' is not assignable to type 'null'.
-    Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-        Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Sun Nov 03 2024 17:30:58 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 28804,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 383688704,
-      heapTotal: 335572992,
-      heapUsed: 311949904,
-      external: 24809627,
-      arrayBuffers: 21825179
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 182063.359 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-03 05:30:58.622 PM'
-}
-{
-  error: backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.
-    Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'null'.
-        Type 'undefined' is not assignable to type 'null'.
-    Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-        Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Sun Nov 03 2024 17:31:12 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 74456,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 378093568,
-      heapTotal: 330067968,
-      heapUsed: 296911616,
-      external: 24810510,
+      rss: 377888768,
+      heapTotal: 329805824,
+      heapUsed: 298449112,
+      external: 24809619,
       arrayBuffers: 21825171
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 182077.625 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 239462.765 },
   trace: [
     {
       column: 12,
@@ -1151,847 +171,7 @@
       native: false
     }
   ],
-  timestamp: '2024-11-03 05:31:12.885 PM'
-}
-{
-  error: backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.
-    Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'null'.
-        Type 'undefined' is not assignable to type 'null'.
-    Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.
-      Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-        Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    'backend/routes/auth.ts(69,13): error TS2769: No overload matches this call.\r\n' +
-    `  Overload 1 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: null, options: SignOptions & { algorithm: "none"; }, callback: SignCallback): void', gave the following error.\r\n` +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'null'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'null'.\r\n" +
-    "  Overload 2 of 5, '(payload: string | object | Buffer, secretOrPrivateKey: Secret | PrivateKeyInput | JsonWebKeyInput, options: SignOptions, callback: SignCallback): void', gave the following error.\r\n" +
-    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    "      Type 'undefined' is not assignable to type 'Secret | PrivateKeyInput | JsonWebKeyInput'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Sun Nov 03 2024 17:32:04 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 80596,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 383750144,
-      heapTotal: 335572992,
-      heapUsed: 312030976,
-      external: 24809691,
-      arrayBuffers: 21825243
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 182128.906 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-03 05:32:04.164 PM'
-}
-{
-  error: backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(34,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(53,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(53,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(56,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(56,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(57,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(61,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(62,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Sun Nov 03 2024 17:32:32 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 78744,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 383549440,
-      heapTotal: 335572992,
-      heapUsed: 310833024,
-      external: 24809747,
-      arrayBuffers: 21825299
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 182157.734 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-03 05:32:32.997 PM'
-}
-{
-  error: backend/routes/auth.ts(32,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(32,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(32,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(32,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Sun Nov 03 2024 17:33:22 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 25388,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 380522496,
-      heapTotal: 329805824,
-      heapUsed: 304582184,
-      external: 24809635,
-      arrayBuffers: 21825187
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 182207.687 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-03 05:33:22.938 PM'
-}
-{
-  error: backend/routes/auth.ts(32,5): error TS2769: No overload matches this call.
-    Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.
-        Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.
-    Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.
-      Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.
-        Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.
-  backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(32,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(32,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(32,5): error TS2769: No overload matches this call.\r\n' +
-    "  Overload 1 of 2, '(strategy: string | string[] | Strategy, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: boolean; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateCallback | ((...args: any[]) => any) | undefined'.\r\n" +
-    "      Object literal may only specify known properties, and 'session' does not exist in type 'AuthenticateCallback | ((...args: any[]) => any)'.\r\n" +
-    "  Overload 2 of 2, '(strategy: string | string[] | Strategy, options: AuthenticateOptions, callback?: AuthenticateCallback | ((...args: any[]) => any) | undefined): any', gave the following error.\r\n" +
-    "    Argument of type '{ session: false; scope: string[]; accessType: string; prompt: string; }' is not assignable to parameter of type 'AuthenticateOptions'.\r\n" +
-    "      Object literal may only specify known properties, and 'accessType' does not exist in type 'AuthenticateOptions'.\r\n" +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Sun Nov 03 2024 17:33:41 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 34680,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 384319488,
-      heapTotal: 335572992,
-      heapUsed: 310941728,
-      external: 24809691,
-      arrayBuffers: 21825243
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 182226 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-03 05:33:41.250 PM'
+  timestamp: '2024-11-04 09:27:38.021 AM'
 }
 {
   error: backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
@@ -2063,9 +243,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Sun Nov 03 2024 17:34:05 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Mon Nov 04 2024 09:31:43 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 23880,
+    pid: 14004,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -2076,14 +256,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 376836096,
-      heapTotal: 329019392,
-      heapUsed: 303698944,
-      external: 24809715,
-      arrayBuffers: 21825267
+      rss: 384655360,
+      heapTotal: 335572992,
+      heapUsed: 309702488,
+      external: 24809635,
+      arrayBuffers: 21825187
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 182250.453 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 239708.015 },
   trace: [
     {
       column: 12,
@@ -2166,5 +346,355 @@
       native: false
     }
   ],
-  timestamp: '2024-11-03 05:34:05.711 PM'
+  timestamp: '2024-11-04 09:31:43.272 AM'
+}
+{
+  error: backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
+  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
+  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
+  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
+  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Mon Nov 04 2024 09:31:50 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16092,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 384991232,
+      heapTotal: 335572992,
+      heapUsed: 309882888,
+      external: 24809675,
+      arrayBuffers: 21825227
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 239715.109 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-04 09:31:50.364 AM'
+}
+{
+  error: backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
+  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
+  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
+  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
+  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
+  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
+    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
+    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Mon Nov 04 2024 09:32:02 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 8104,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 377282560,
+      heapTotal: 329543680,
+      heapUsed: 303134648,
+      external: 24809635,
+      arrayBuffers: 21825187
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 239727 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-04 09:32:02.262 AM'
 }

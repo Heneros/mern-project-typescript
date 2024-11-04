@@ -1,4 +1,3 @@
-
 import 'dotenv/config';
 
 import path from 'path';
@@ -7,6 +6,9 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import mongoSanitize from 'express-mongo-sanitize';
 import passport from 'passport';
+import morgan from 'morgan';
+import session from 'express-session';
+
 import { errorHandler, notFound } from './middleware/errorMiddleware';
 import { morganMiddleware, systemLogs } from './utils/Logger';
 
@@ -17,12 +19,8 @@ import uploadRoutes from './routes/uploadRoutes';
 import propertyRoutes from './routes/propertyRoutes';
 
 import googleAuth from './config/passportSetup';
-import morgan from 'morgan';
-import session from 'express-session';
 
 const app = express();
-
-
 
 // const __dirname = path.resolve();
 
@@ -52,7 +50,6 @@ app.use(
     }),
 );
 
-
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('tiny'));
 }
@@ -68,22 +65,19 @@ app.use('/api/v1/property', propertyRoutes);
 const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
 
-
-
-if(process.env.NODE_ENV ==="production"){
- const frontendPath = path.join(__dirname, '..', '..', 'dist', 'frontend');
- app.use(express.static(frontendPath))
-     app.get('*', (req, res) => {
-         res.sendFile(path.join(frontendPath, 'index.html'));
-     });
-}else{
-app.get('/', (req, res) => {
-    res.send('<h1>Dev version running!</h1>');
-});
+if (process.env.NODE_ENV === 'production') {
+    const frontendPath = path.join(__dirname, '..', '..', 'dist', 'frontend');
+    app.use(express.static(frontendPath));
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(frontendPath, 'index.html'));
+    });
+} else {
+    app.get('/', (req, res) => {
+        res.send('<h1>Dev version running!</h1>');
+    });
 }
 app.use(notFound);
 app.use(errorHandler);
-
 
 const startServer = async () => {
     try {
@@ -92,11 +86,11 @@ const startServer = async () => {
             await connectDB(MONGO_URI);
         }
         systemLogs.info(
-             `Server on ${port} running. NodeENV: ${process.env.NODE_ENV}  `,
+            `Server on ${port} running. NodeENV: ${process.env.NODE_ENV}  `,
         );
     } catch (error) {
         console.log(`error ${error}`);
-                systemLogs.error(`Error happened ${error}  `);
+        systemLogs.error(`Error happened ${error}  `);
     }
 };
 startServer();

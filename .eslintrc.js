@@ -8,21 +8,22 @@ module.exports = {
     },
     extends: [
         'plugin:react/recommended',
+        'airbnb',
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended',
         'prettier',
-        'airbnb',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
+        project: './tsconfig.eslint.json',
+        tsconfigRootDir: __dirname,
+        sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
         },
         ecmaVersion: 'latest',
-        sourceType: 'module',
-        project: './tsconfig.eslint.json',
-        tsconfigRootDir: __dirname,
     },
+
     plugins: ['react', '@typescript-eslint'],
     rules: {
         'no-unused-vars': 'warn',
