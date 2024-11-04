@@ -3,7 +3,7 @@ import handlebars from 'handlebars';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import transporter from '../helpers/emailTransport';
+import transporter from '@/helpers/emailTransport';
 import { systemLogs } from './Logger';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -29,7 +29,13 @@ export const sendEmail = async (email, subject, payload, template) => {
     }
 };
 
-export const receiverEmailFunction = async (from, to, subject, payload, template) => {
+export const receiverEmailFunction = async (
+    from,
+    to,
+    subject,
+    payload,
+    template,
+) => {
     try {
         const sourceDirectory = fs.readFileSync(
             path.join(__dirname, template),

@@ -1,39 +1,12 @@
 {
-  error: backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
+  error: backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -46,16 +19,7 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -68,9 +32,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Mon Nov 04 2024 09:27:38 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Mon Nov 04 2024 17:43:36 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 69196,
+    pid: 18680,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -81,14 +45,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 377888768,
-      heapTotal: 329805824,
-      heapUsed: 298449112,
-      external: 24809619,
-      arrayBuffers: 21825171
+      rss: 408236032,
+      heapTotal: 352923648,
+      heapUsed: 321551936,
+      external: 25242205,
+      arrayBuffers: 22251147
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 239462.765 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 269221.265 },
   trace: [
     {
       column: 12,
@@ -171,44 +135,17 @@
       native: false
     }
   ],
-  timestamp: '2024-11-04 09:27:38.021 AM'
+  timestamp: '2024-11-04 05:43:36.516 PM'
 }
 {
-  error: backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
+  error: backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -221,16 +158,7 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -243,9 +171,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Mon Nov 04 2024 09:31:43 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Mon Nov 04 2024 17:43:43 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 14004,
+    pid: 57828,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -256,14 +184,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 384655360,
-      heapTotal: 335572992,
-      heapUsed: 309702488,
-      external: 24809635,
-      arrayBuffers: 21825187
+      rss: 403103744,
+      heapTotal: 352399360,
+      heapUsed: 318563584,
+      external: 24816221,
+      arrayBuffers: 21825163
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 239708.015 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 269228.609 },
   trace: [
     {
       column: 12,
@@ -346,44 +274,38 @@
       native: false
     }
   ],
-  timestamp: '2024-11-04 09:31:43.272 AM'
+  timestamp: '2024-11-04 05:43:43.857 PM'
 }
 {
-  error: backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
+  error: backend/routes/auth.ts(30,44): error TS2769: No overload matches this call.
+    The last overload gave the following error.
+      Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+        Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+            Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+              Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+                Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    'backend/routes/auth.ts(30,44): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    'backend/routes/auth.ts(30,44): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -396,16 +318,14 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
+    'backend/routes/auth.ts(30,44): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -418,9 +338,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Mon Nov 04 2024 09:31:50 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Mon Nov 04 2024 17:43:52 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 16092,
+    pid: 34304,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -431,14 +351,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 384991232,
-      heapTotal: 335572992,
-      heapUsed: 309882888,
-      external: 24809675,
-      arrayBuffers: 21825227
+      rss: 390393856,
+      heapTotal: 344821760,
+      heapUsed: 320137064,
+      external: 24816253,
+      arrayBuffers: 21825195
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 239715.109 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 269236.828 },
   trace: [
     {
       column: 12,
@@ -521,180 +441,5 @@
       native: false
     }
   ],
-  timestamp: '2024-11-04 09:31:50.364 AM'
-}
-{
-  error: backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.
-  backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.
-  backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.
-  backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/routes/auth.ts(51,50): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(51,59): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(54,17): error TS18048: 'req.user' is possibly 'undefined'.\r\n" +
-    "backend/routes/auth.ts(54,26): error TS2339: Property 'id' does not exist on type 'User'.\r\n" +
-    "backend/routes/auth.ts(55,20): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(56,24): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(57,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(58,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(59,23): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    "backend/routes/auth.ts(60,21): error TS18047: 'existingUser' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Mon Nov 04 2024 09:32:02 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 8104,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 377282560,
-      heapTotal: 329543680,
-      heapUsed: 303134648,
-      external: 24809635,
-      arrayBuffers: 21825187
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 239727 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-04 09:32:02.262 AM'
+  timestamp: '2024-11-04 05:43:52.091 PM'
 }

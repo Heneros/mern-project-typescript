@@ -14,6 +14,7 @@ import logoutUser from '../controllers/auth/logoutController';
 import User from '../models/userModel';
 import feedbackFormController from '../controllers/auth/feedbackFormController';
 import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
+import { RequestWithUser } from '../types/RequestWithUser';
 
 const router = express.Router();
 
@@ -26,7 +27,7 @@ router.post('/reset_password_request', resetPasswordRequest);
 router.post('/reset_password', resetPassword);
 router.get('/logout', logoutUser);
 
-router.post('/feedback', apiLimiter, feedbackFormController);
+router.route('/feedback').post(apiLimiter, feedbackFormController);
 
 router.route('/google').get(
     passport.authenticate('google', {
@@ -39,46 +40,54 @@ router.route('/google').get(
 
 // $-title   Redirect route to the passport google strategy
 // $-path    GET /api/v1/auth/google/redirect
-router.get(
-    '/google/redirect',
+router.route('/google/redirect').get(
     passport.authenticate('google', {
         failureRedirect: '/login',
         session: false,
     }),
-
-    async (req: Request, res: Response) => {
+    async (req: Request, res: Response): Promise<void> => {
         try {
             const userReq = req as RequestWithUser;
-            const existingUser = await User.findById(req.user.id);
+
+            if (!userReq.user) {
+                res.status(404).json({ message: 'Not found Request' });
+                return;
+            }
+            const existingUser = await User.findById(userReq.user.id);
+
+            if (!existingUser) {
+                res.status(404).json({ message: 'Not found User' });
+                return;
+            }
 
             const payload = {
-                id: req.user.id,
-                roles: existingUser.roles,
-                firstName: existingUser.firstName,
-                lastName: existingUser.lastName || 'Name',
-                username: existingUser.username,
-                provider: existingUser.provider,
-                avatar: existingUser.avatar,
+                id: userReq.user.id,
+                roles: userReq.user.roles,
+                firstName: userReq.user.firstName,
+                lastName: userReq.user.lastName || 'No Name',
+                username: userReq.user.username,
+                provider: userReq.user.provider,
+                avatar: userReq.user.avatar,
             };
-
-            ///   console.log(payload);
-
             jwt.sign(
                 payload,
                 process.env.JWT_ACCESS_SECRET_KEY!,
-                { expiresIn: '20m' },
+                { expiresIn: '7d' },
                 (err, token) => {
+                    if (err) {
+                        console.log(err);
+                        return res
+                            .status(500)
+                            .send(`Error generating token '  ${err}`);
+                    }
                     const jwt = `${token}`;
-
                     const embedJWT = `
     <html>
     <script>
     window.localStorage.setItem("googleToken",'${jwt}')
     window.location.href='/dashboard'
     </script>
-
     </html>
-    
     `;
                     res.send(embedJWT);
                 },

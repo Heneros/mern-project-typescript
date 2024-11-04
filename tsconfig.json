@@ -14,7 +14,42 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "noEmit": false
+    "noEmit": false,
+    "paths": {
+      "@/*": [
+        "backend/*"
+      ],
+      "config/*": [
+        "backend/config/*"
+      ],
+      "constants/*": [
+        "backend/constants/*"
+      ],
+      "controllers/*": [
+        "backend/controllers/*"
+      ],
+      "helpers/*": [
+        "backend/helpers/*"
+      ],
+      "middleware/*": [
+        "backend/middleware/*"
+      ],
+      "models/*": [
+        "backend/models/*"
+      ],
+      "routes/*": [
+        "backend/routes/*"
+      ],
+      "types/*": [
+        "backend/types/*"
+      ],
+      "utils/*": [
+        "backend/utils/*"
+      ],
+      "server": [
+        "backend/server.ts"
+      ]
+    }
   },
   "ts-node": {},
   "references": [

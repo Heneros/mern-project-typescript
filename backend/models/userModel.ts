@@ -3,10 +3,11 @@ import 'dotenv/config';
 import mongoose from 'mongoose';
 import validator from 'validator';
 import { USER } from '../constants/index';
+import { IUser } from '@/types/IUser';
 
 const { Schema } = mongoose;
 
-const userSchema = new Schema(
+const userSchema = new Schema<IUser>(
     {
         email: {
             type: String,
@@ -63,7 +64,7 @@ const userSchema = new Schema(
         isEmailVerified: { type: Boolean, required: true, default: false },
         googleID: String,
         avatar: String,
-        businessName: String,
+
         phoneNumber: {
             type: String,
             default: '+254123456789',
@@ -91,14 +92,14 @@ const userSchema = new Schema(
     { timestamps: true },
 );
 
-userSchema.pre('save', async function (next) {
+userSchema.pre('save', async function (this: IUser, next) {
     if (this.roles.length === 0) {
         this.roles.push(USER);
         next();
     }
 });
 
-userSchema.pre('save', async function (next) {
+userSchema.pre('save', async function (this: IUser, next) {
     if (!this.isModified('password')) {
         return next();
     }
@@ -111,16 +112,16 @@ userSchema.pre('save', async function (next) {
     next();
 });
 
-userSchema.pre('save', async function (next) {
+userSchema.pre('save', async function (this: IUser, next) {
     if (!this.isModified('password') || this.isNew) {
         return next();
     }
 
-    this.passwordChangedAt = Date.now();
+    this.passwordChangedAt = new Date();
     next();
 });
 
-userSchema.methods.comparePassword = async function (givenPassword) {
+userSchema.methods.matchPassword = async function (givenPassword: string) {
     return bcrypt.compare(givenPassword, this.password);
 };
 const User = mongoose.model('User', userSchema);
