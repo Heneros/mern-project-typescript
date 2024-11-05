@@ -5,17 +5,15 @@ import { sendEmail } from '../../utils/sendEmail';
 
 const domainURL = process.env.DOMAIN;
 
-const { randomBytes } = await import('crypto');
-
 // $-title   Register User and send email verification link
 // $-path    POST /api/v1/auth/register
 // $-auth    Public
 
 const registerUser = asyncHandler(async (req, res) => {
-    const {
-        email, username, firstName, lastName, password, passwordConfirm,
-    } = req.body;
+    const { email, username, firstName, lastName, password, passwordConfirm } =
+        req.body;
 
+    const { randomBytes } = await import('crypto');
     if (!email) {
         res.status(400);
         throw new Error('An email address is required');

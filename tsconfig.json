@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "composite": true,
-    "target": "ES2022",
+    "target": "es2022",
     "module": "CommonJS",
     "jsx": "preserve",
     "experimentalDecorators": true,
     "allowJs": false,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,

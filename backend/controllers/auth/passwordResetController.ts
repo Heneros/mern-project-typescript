@@ -1,29 +1,29 @@
 import asyncHandler from 'express-async-handler';
-import User from '../../models/userModel';
-import VerificationToken from '../../models/verifyResetTokenModel';
-import { sendEmail } from '../../utils/sendEmail';
+import User from '@/models/userModel';
+import { sendEmail } from '@/utils/sendEmail';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
 
 const domainURL = process.env.DOMAIN;
-
-const { randomBytes } = await import('crypto');
 
 const resetPasswordRequest = asyncHandler(async (req, res) => {
     // console.log(123);
     const { email } = req.body;
-
+    const { randomBytes } = await import('crypto');
     if (!email) {
         res.status(400);
         throw new Error('You must enter your email address');
     }
 
-    const existingUser = await User.findOne({ email }).select('-passwordConfirm');
+    const existingUser = await User.findOne({ email }).select(
+        '-passwordConfirm',
+    );
 
     if (!existingUser) {
         res.status(400);
         throw new Error('That email is not associated with any account');
     }
 
-    let verificationToken = await VerificationToken.findOne({
+    let verificationToken = await VerifyResetToken.findOne({
         _userId: existingUser._id,
     });
 
@@ -33,7 +33,7 @@ const resetPasswordRequest = asyncHandler(async (req, res) => {
 
     const resetToken = randomBytes(32).toString('hex');
 
-    let newVerificationToken = await new VerificationToken({
+    let newVerificationToken = await new VerifyResetToken({
         _userId: existingUser._id,
         token: resetToken,
         createdAt: Date.now(),
@@ -62,9 +62,7 @@ const resetPasswordRequest = asyncHandler(async (req, res) => {
 });
 
 const resetPassword = asyncHandler(async (req, res) => {
-    const {
-        password, passwordConfirm, userId, emailToken,
-    } = req.body;
+    const { password, passwordConfirm, userId, emailToken } = req.body;
 
     if (!password) {
         res.status(400);
@@ -85,7 +83,7 @@ const resetPassword = asyncHandler(async (req, res) => {
         throw new Error('Passwords must be at least 8 characters long');
     }
 
-    const passwordResetToken = await VerificationToken.findOne({ userId });
+    const passwordResetToken = await VerifyResetToken.findOne({ userId });
 
     if (!passwordResetToken) {
         res.status(400);

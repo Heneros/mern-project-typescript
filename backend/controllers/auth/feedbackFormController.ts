@@ -34,16 +34,19 @@ const feedbackFormController = async (req: Request, res: Response) => {
             subject,
         };
 
-        const receiverEmail = process.env.AUTHOR_APP;
+        const receiverEmail: string | undefined = process.env.AUTHOR_APP;
 
-        await receiverEmailFunction(
-            email,
-            receiverEmail,
-            'Email from user',
-            payload,
-            './emails/template/messageFromUser.handlebars',
-        );
+        if (receiverEmail) {
+            res.status(404);
 
+            await receiverEmailFunction(
+                email,
+                receiverEmail,
+                'Email from user',
+                payload,
+                './emails/template/messageFromUser.handlebars',
+            );
+        }
         res.status(201).json({ success: true, message: 'Message was sent!' });
     } catch (error) {
         console.error(error);

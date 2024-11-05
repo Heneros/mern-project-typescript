@@ -4,11 +4,12 @@ import { Strategy as GoogleStrategy, Profile } from 'passport-google-oauth20';
 import { Strategy as GitHubStrategy } from 'passport-github2';
 // import GoogleStrategy from 'passport-google-oauth20';
 import User from '../models/userModel';
+import { systemLogs } from '@/utils/Logger';
 
 const domainURL = process.env.DOMAIN;
 const googleCallbackURL = process.env.GOOGLE_CALLBACK_URL;
 
-const googleAuth = () => {
+const oauthPassport = () => {
     passport.serializeUser((user: any, done) => {
         done(null, user.id);
     });
@@ -66,11 +67,59 @@ const googleAuth = () => {
                         }
                     });
                 } catch (err) {
+                    done(err);
+                    systemLogs.error(`error google ${err}`);
                     console.log(err);
+                }
+            },
+        ),
+    );
+
+    passport.use(
+        new GitHubStrategy(
+            {
+                clientID: process.env.GITHUB_CLIENT_ID!,
+                clientSecret: process.env.GITHUB_CLIENT_SECRET!,
+                callbackURL: process.env.GITHUB_CALLBACK_URL!,
+            },
+            async (
+                accessToken: string,
+                refreshToken: string,
+                profile: Profile,
+                done: (error: any, user?: any) => void,
+            ) => {
+                try {
+                    const existingUser = await User.findOne({
+                        githubId: profile.id,
+                    });
+                    if (existingUser) {
+                        return done(null, existingUser);
+                    }
+                    const fullName = profile.displayName.trim().split(' ');
+                    const firstName = fullName.shift();
+                    const lastName =
+                        fullName.length > 0 ? fullName.join(' ') : ' No Name';
+
+                    const newUser = new User({
+                        githubId: profile.id,
+                        username: profile.username,
+                        firstName,
+                        lastName,
+                        avatar: profile._json.picture,
+                        email: profile._json.email
+                            ? profile._json.email
+                            : `${profile.username}email@${profile.id}temp.com`,
+                        provider: 'github',
+                    });
+                    await newUser.save();
+                    done(null, newUser);
+                } catch (error) {
+                    done(error);
+                    systemLogs.error(`error github ${error}`);
                 }
             },
         ),
     );
 };
 
-export default googleAuth;
+export default oauthPassport;

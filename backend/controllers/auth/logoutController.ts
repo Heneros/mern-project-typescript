@@ -16,26 +16,29 @@ const logoutUser = asyncHandler(async (req, res) => {
     if (!existingUser) {
         res.clearCookie('jwtVilla', {
             httpOnly: true,
-            secure: true,
-            sameSite: 'None',
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
         });
         res.sendStatus(204);
     }
+    if (existingUser) {
+        existingUser.refreshToken = existingUser.refreshToken.filter(
+            (refT) => refT !== refreshToken,
+        );
 
-    existingUser.refreshToken = existingUser.refreshToken.filter((refT) => refT !== refreshToken);
+        await existingUser.save();
 
-    await existingUser.save();
+        res.clearCookie('jwtVilla', {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+        });
 
-    res.clearCookie('jwtVilla', {
-        httpOnly: true,
-        secure: true,
-        sameSite: 'None',
-    });
-
-    res.status(200).json({
-        success: true,
-        message: `${existingUser.firstName},you have been logged out successfully`,
-    });
+        res.status(200).json({
+            success: true,
+            message: `${existingUser.firstName},you have been logged out successfully`,
+        });
+    }
 });
 
 export default logoutUser;

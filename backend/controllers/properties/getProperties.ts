@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler';
-import Property from '../../models/propertiesModel';
+import Property from '@/models/propertiesModel';
 
 const getAllProperties = asyncHandler(async (req, res) => {
     const pageSize = 6;

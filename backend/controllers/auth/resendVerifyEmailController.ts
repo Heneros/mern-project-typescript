@@ -4,10 +4,10 @@ import VerificationToken from '../../models/verifyResetTokenModel';
 import { sendEmail } from '../../utils/sendEmail';
 
 const domainURL = process.env.DOMAINVERIFY;
-const { randomBytes } = await import('crypto');
+
 const resendEmailVerificationToken = asyncHandler(async (req, res) => {
     const { email } = req.body;
-
+    const { randomBytes } = await import('crypto');
     const user = await User.findOne({ email });
 
     if (!email) {
@@ -17,7 +17,9 @@ const resendEmailVerificationToken = asyncHandler(async (req, res) => {
 
     if (!user) {
         res.status(400);
-        throw new Error('We were unable to find a user with that email address');
+        throw new Error(
+            'We were unable to find a user with that email address',
+        );
     }
 
     if (user.isEmailVerified) {

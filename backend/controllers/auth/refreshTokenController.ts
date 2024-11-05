@@ -1,56 +1,68 @@
-import asyncHandler from 'express-async-handler';
-import jwt from 'jsonwebtoken';
-import User from '../../models/userModel';
+import jwt, { JwtPayload, VerifyErrors } from 'jsonwebtoken';
+import { CookieOptions, Request, Response } from 'express';
+import User from '@/models/userModel';
+import { systemLogs } from '@/utils/Logger';
 
-const newAccessToken = asyncHandler(async (req, res) => {
-    const cookies = req.cookies;
+interface DecodedToken extends JwtPayload {
+    id: string;
+}
 
-    if (!cookies?.jwtVilla) {
-        return res.sendStatus(401);
-    }
+const newAccessToken = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const cookies = req.cookies;
 
-    const refreshToken = cookies.jwtVilla;
+        if (!cookies?.jwtVilla) {
+            res.sendStatus(401);
+            return;
+        }
 
-    const options = {
-        httpOnly: true,
-        maxAge: 24 * 60 * 60 * 1000,
-        secure: true,
-        sameSite: 'None',
-    };
-    res.clearCookie('jwtVilla', options);
+        const refreshToken = cookies.jwtVilla;
 
-    const existingUser = await User.findOne({ refreshToken }).exec();
+        const options: CookieOptions = {
+            httpOnly: true,
+            maxAge: 24 * 60 * 60 * 1000,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+        };
+        res.clearCookie('jwtVilla', options);
 
-    if (!existingUser) {
-        jwt.verify(
-            refreshToken,
-            process.env.JWT_REFRESH_SECRET_KEY,
-            async (err, decoded) => {
-                if (err) {
-                    return res.sendStatus(403);
-                }
+        const existingUser = await User.findOne({ refreshToken }).exec();
+
+        if (!existingUser) {
+            try {
+                const decoded = jwt.verify(
+                    refreshToken,
+                    process.env.JWT_REFRESH_SECRET_KEY!,
+                ) as DecodedToken;
 
                 const hackedUser = await User.findOne({
                     _id: decoded.id,
                 }).exec();
-                hackedUser.refreshToken = [];
-                await hackedUser.save();
-            },
-        );
-        return res.sendStatus(403);
-    }
-    const newRefreshTokenArray = existingUser.refreshToken.filter((refT) => refT !== refreshToken);
 
-    jwt.verify(
-        refreshToken,
-        process.env.JWT_REFRESH_SECRET_KEY,
-        async (err, decoded) => {
-            if (err) {
-                existingUser.refreshToken = [...newRefreshTokenArray];
-                await existingUser.save();
+                if (hackedUser) {
+                    hackedUser.refreshToken = [];
+                    await hackedUser.save();
+                }
+            } catch (error) {
+                console.log(error);
             }
-            if (err || existingUser._id.toString() !== decoded.id) {
-                return res.sendStatus(403);
+            res.sendStatus(403);
+            return;
+        }
+
+        const newRefreshTokenArray = existingUser.refreshToken.filter(
+            (refT) => refT !== refreshToken,
+        );
+
+        try {
+            const decoded = jwt.verify(
+                refreshToken,
+                process.env.JWT_REFRESH_SECRET_KEY!,
+            ) as DecodedToken;
+
+            if (existingUser._id.toString() !== decoded.id) {
+                res.sendStatus(403);
+                return;
             }
 
             const accessToken = jwt.sign(
@@ -58,25 +70,21 @@ const newAccessToken = asyncHandler(async (req, res) => {
                     id: existingUser._id,
                     roles: existingUser.roles,
                 },
-                process.env.JWT_ACCESS_SECRET_KEY,
+                process.env.JWT_ACCESS_SECRET_KEY!,
                 { expiresIn: '10m' },
             );
 
             const newRefreshToken = jwt.sign(
                 { id: existingUser._id },
-                process.env.JWT_REFRESH_SECRET_KEY,
+                process.env.JWT_REFRESH_SECRET_KEY!,
                 { expiresIn: '1d' },
             );
 
-            existingUser.refreshToken = [...newRefreshTokenArray, newRefreshToken];
-
+            existingUser.refreshToken = [
+                ...newRefreshTokenArray,
+                newRefreshToken,
+            ];
             await existingUser.save();
-            const options = {
-                httpOnly: true,
-                maxAge: 24 * 60 * 60 * 1000,
-                secure: true,
-                sameSite: 'None',
-            };
 
             res.cookie('jwtVilla', newRefreshToken, options);
             res.json({
@@ -88,7 +96,17 @@ const newAccessToken = asyncHandler(async (req, res) => {
                 avatar: existingUser.avatar,
                 accessToken,
             });
-        },
-    );
-});
+        } catch (error) {
+            existingUser.refreshToken = [...newRefreshTokenArray];
+            await existingUser.save();
+            res.sendStatus(403);
+            //      return;
+        }
+    } catch (error) {
+        res.sendStatus(500);
+        systemLogs.error(`newAccessToken, ${error}`);
+        //   return;
+    }
+};
+
 export default newAccessToken;

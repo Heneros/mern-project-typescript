@@ -1,6 +1,5 @@
 import asyncHandler from 'express-async-handler';
-import Property from '../../models/propertiesModel';
-
+import Property from '@/models/propertiesModel';
 // $-title   Create property
 // $-path    POST /api/v1/property/create
 // $-auth    Private
@@ -42,8 +41,8 @@ const createProperty = asyncHandler(async (req, res) => {
             price,
             category,
             preview:
-                preview
-                || 'https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg',
+                preview ||
+                'https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg',
             description,
             bedrooms,
             bathrooms,

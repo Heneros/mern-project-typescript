@@ -21,7 +21,7 @@ const router = express.Router();
 router.post('/register', apiLimiter, registerUser);
 router.get('/verify/:emailToken/:userId', verifyUserEmail);
 router.post('/login', loginLimiter, loginUser);
-router.get('/new_access_token', newAccessToken);
+router.route('/new_access_token').get(newAccessToken);
 router.post('/resend_email_token', resendEmailVerificationToken);
 router.post('/reset_password_request', resetPasswordRequest);
 router.post('/reset_password', resetPassword);

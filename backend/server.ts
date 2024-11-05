@@ -1,5 +1,5 @@
 import 'dotenv/config';
-
+import 'module-alias/register';
 import path from 'path';
 import express from 'express';
 import cors from 'cors';
@@ -8,6 +8,7 @@ import mongoSanitize from 'express-mongo-sanitize';
 import passport from 'passport';
 import morgan from 'morgan';
 import session from 'express-session';
+
 
 import { errorHandler, notFound } from './middleware/errorMiddleware';
 import { morganMiddleware, systemLogs } from './utils/Logger';
@@ -18,7 +19,7 @@ import userRoutes from './routes/user';
 import uploadRoutes from './routes/uploadRoutes';
 import propertyRoutes from './routes/propertyRoutes';
 
-import googleAuth from './config/passportSetup';
+import oauthPassport from './config/passportSetup';
 
 const app = express();
 
@@ -38,7 +39,7 @@ app.use(
 );
 
 app.use(passport.initialize());
-googleAuth();
+oauthPassport();
 
 app.use(cookieParser());
 app.use(

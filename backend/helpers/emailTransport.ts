@@ -1,8 +1,8 @@
 import 'dotenv/config';
-import nodemailer from 'nodemailer';
+import nodemailer, { Transporter } from 'nodemailer';
 import mg from 'nodemailer-mailgun-transport';
 
-let transporter;
+let transporter: Transporter | null = null;
 
 if (process.env.NODE_ENV === 'development') {
     transporter = nodemailer.createTransport({
@@ -13,8 +13,8 @@ if (process.env.NODE_ENV === 'development') {
 } else if (process.env.NODE_ENV === 'production') {
     const mailgunAuth = {
         auth: {
-            api_key: process.env.MAILGUN_API_KEY,
-            domain: process.env.MAILGUN_DOMAIN,
+            api_key: process.env.MAILGUN_API_KEY!,
+            domain: process.env.MAILGUN_DOMAIN!,
         },
     };
     // console.log('prod mail', 21);

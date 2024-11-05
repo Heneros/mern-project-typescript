@@ -64,7 +64,6 @@ const userSchema = new Schema<IUser>(
         isEmailVerified: { type: Boolean, required: true, default: false },
         googleID: String,
         avatar: String,
-
         phoneNumber: {
             type: String,
             default: '+254123456789',
@@ -83,6 +82,7 @@ const userSchema = new Schema<IUser>(
             type: [String],
             default: [USER],
         },
+        githubId: String,
         active: {
             type: Boolean,
             default: true,

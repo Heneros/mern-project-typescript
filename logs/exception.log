@@ -1,311 +1,81 @@
 {
-  error: backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Mon Nov 04 2024 17:43:36 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 18680,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 408236032,
-      heapTotal: 352923648,
-      heapUsed: 321551936,
-      external: 25242205,
-      arrayBuffers: 22251147
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 269221.265 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-04 05:43:36.516 PM'
-}
-{
-  error: backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/auth/registerController.ts(8,25): error TS1378: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', or 'nodenext', and the 'target' option is set to 'es2017' or higher.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Mon Nov 04 2024 17:43:43 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 57828,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 403103744,
-      heapTotal: 352399360,
-      heapUsed: 318563584,
-      external: 24816221,
-      arrayBuffers: 21825163
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 269228.609 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-11-04 05:43:43.857 PM'
-}
-{
-  error: backend/routes/auth.ts(30,44): error TS2769: No overload matches this call.
+  error: backend/middleware/checkAuthMiddleware.ts(5,32): error TS2345: Argument of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => Promise<...>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+    Type 'Promise<Response<any, Record<string, any>, number> | undefined>' is not assignable to type 'void | Promise<void>'.
+      Type 'Promise<Response<any, Record<string, any>, number> | undefined>' is not assignable to type 'Promise<void>'.
+        Type 'Response<any, Record<string, any>, number> | undefined' is not assignable to type 'void'.
+          Type 'Response<any, Record<string, any>, number>' is not assignable to type 'void'.
+  backend/middleware/checkAuthMiddleware.ts(10,22): error TS2339: Property 'startsWith' does not exist on type 'string | string[]'.
+    Property 'startsWith' does not exist on type 'string[]'.
+  backend/middleware/checkAuthMiddleware.ts(12,34): error TS2339: Property 'startsWith' does not exist on type 'string | string[]'.
+    Property 'startsWith' does not exist on type 'string[]'.
+  backend/middleware/checkAuthMiddleware.ts(13,32): error TS2339: Property 'split' does not exist on type 'string | string[]'.
+    Property 'split' does not exist on type 'string[]'.
+  backend/middleware/checkAuthMiddleware.ts(16,13): error TS2769: No overload matches this call.
     The last overload gave the following error.
-      Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
-        Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
-          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
-            Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
-              Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
-                Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+      Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | JsonWebKeyInput | PublicKeyInput | GetPublicKeyOrSecret'.
+        Type 'undefined' is not assignable to type 'Secret | JsonWebKeyInput | PublicKeyInput | GetPublicKeyOrSecret'.
+  backend/middleware/checkAuthMiddleware.ts(20,32): error TS18048: 'decoded' is possibly 'undefined'.
+  backend/middleware/checkAuthMiddleware.ts(20,40): error TS2339: Property 'id' does not exist on type 'string | JwtPayload'.
+    Property 'id' does not exist on type 'string'.
+  backend/middleware/checkAuthMiddleware.ts(21,17): error TS2322: Type '(Document<unknown, {}, { _id?: any; password?: any; passwordConfirm?: any; email?: any; firstName?: any; username?: any; lastName?: any; refreshToken?: any; active?: any; isEmailVerified?: any; phoneNumber?: any; provider?: any; ... 62 more ...; validateSync?: any; }> & { ...; } & { ...; } & { ...; }) | null' is not assignable to type 'User | undefined'.
+    Type 'null' is not assignable to type 'User | undefined'.
+  backend/middleware/checkAuthMiddleware.ts(22,21): error TS2551: Property 'roles' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'. Did you mean 'res'?
+  backend/middleware/checkAuthMiddleware.ts(22,29): error TS18048: 'decoded' is possibly 'undefined'.
+  backend/middleware/checkAuthMiddleware.ts(22,37): error TS2339: Property 'roles' does not exist on type 'string | JwtPayload'.
+    Property 'roles' does not exist on type 'string'.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(30,44): error TS2769: No overload matches this call.\r\n' +
+    "backend/middleware/checkAuthMiddleware.ts(5,32): error TS2345: Argument of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => Promise<...>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>, number> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>, number> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>, number> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>, number>' is not assignable to type 'void'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(10,22): error TS2339: Property 'startsWith' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'startsWith' does not exist on type 'string[]'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(12,34): error TS2339: Property 'startsWith' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'startsWith' does not exist on type 'string[]'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(13,32): error TS2339: Property 'split' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'split' does not exist on type 'string[]'.\r\n" +
+    'backend/middleware/checkAuthMiddleware.ts(16,13): error TS2769: No overload matches this call.\r\n' +
     '  The last overload gave the following error.\r\n' +
-    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | JsonWebKeyInput | PublicKeyInput | GetPublicKeyOrSecret'.\r\n" +
+    "      Type 'undefined' is not assignable to type 'Secret | JsonWebKeyInput | PublicKeyInput | GetPublicKeyOrSecret'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(20,32): error TS18048: 'decoded' is possibly 'undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(20,40): error TS2339: Property 'id' does not exist on type 'string | JwtPayload'.\r\n" +
+    "  Property 'id' does not exist on type 'string'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(21,17): error TS2322: Type '(Document<unknown, {}, { _id?: any; password?: any; passwordConfirm?: any; email?: any; firstName?: any; username?: any; lastName?: any; refreshToken?: any; active?: any; isEmailVerified?: any; phoneNumber?: any; provider?: any; ... 62 more ...; validateSync?: any; }> & { ...; } & { ...; } & { ...; }) | null' is not assignable to type 'User | undefined'.\r\n" +
+    "  Type 'null' is not assignable to type 'User | undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,21): error TS2551: Property 'roles' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'. Did you mean 'res'?\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,29): error TS18048: 'decoded' is possibly 'undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,37): error TS2339: Property 'roles' does not exist on type 'string | JwtPayload'.\r\n" +
+    "  Property 'roles' does not exist on type 'string'.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(30,44): error TS2769: No overload matches this call.\r\n' +
+    "backend/middleware/checkAuthMiddleware.ts(5,32): error TS2345: Argument of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => Promise<...>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>, number> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>, number> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>, number> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>, number>' is not assignable to type 'void'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(10,22): error TS2339: Property 'startsWith' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'startsWith' does not exist on type 'string[]'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(12,34): error TS2339: Property 'startsWith' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'startsWith' does not exist on type 'string[]'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(13,32): error TS2339: Property 'split' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'split' does not exist on type 'string[]'.\r\n" +
+    'backend/middleware/checkAuthMiddleware.ts(16,13): error TS2769: No overload matches this call.\r\n' +
     '  The last overload gave the following error.\r\n' +
-    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | JsonWebKeyInput | PublicKeyInput | GetPublicKeyOrSecret'.\r\n" +
+    "      Type 'undefined' is not assignable to type 'Secret | JsonWebKeyInput | PublicKeyInput | GetPublicKeyOrSecret'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(20,32): error TS18048: 'decoded' is possibly 'undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(20,40): error TS2339: Property 'id' does not exist on type 'string | JwtPayload'.\r\n" +
+    "  Property 'id' does not exist on type 'string'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(21,17): error TS2322: Type '(Document<unknown, {}, { _id?: any; password?: any; passwordConfirm?: any; email?: any; firstName?: any; username?: any; lastName?: any; refreshToken?: any; active?: any; isEmailVerified?: any; phoneNumber?: any; provider?: any; ... 62 more ...; validateSync?: any; }> & { ...; } & { ...; } & { ...; }) | null' is not assignable to type 'User | undefined'.\r\n" +
+    "  Type 'null' is not assignable to type 'User | undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,21): error TS2551: Property 'roles' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'. Did you mean 'res'?\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,29): error TS18048: 'decoded' is possibly 'undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,37): error TS2339: Property 'roles' does not exist on type 'string | JwtPayload'.\r\n" +
+    "  Property 'roles' does not exist on type 'string'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -316,16 +86,38 @@
     '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
     '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\routes\\user.ts:3:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/auth.ts(30,44): error TS2769: No overload matches this call.\r\n' +
+    "backend/middleware/checkAuthMiddleware.ts(5,32): error TS2345: Argument of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => Promise<...>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>, number> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>, number> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>, number> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>, number>' is not assignable to type 'void'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(10,22): error TS2339: Property 'startsWith' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'startsWith' does not exist on type 'string[]'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(12,34): error TS2339: Property 'startsWith' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'startsWith' does not exist on type 'string[]'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(13,32): error TS2339: Property 'split' does not exist on type 'string | string[]'.\r\n" +
+    "  Property 'split' does not exist on type 'string[]'.\r\n" +
+    'backend/middleware/checkAuthMiddleware.ts(16,13): error TS2769: No overload matches this call.\r\n' +
     '  The last overload gave the following error.\r\n' +
-    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "    Argument of type 'string | undefined' is not assignable to parameter of type 'Secret | JsonWebKeyInput | PublicKeyInput | GetPublicKeyOrSecret'.\r\n" +
+    "      Type 'undefined' is not assignable to type 'Secret | JsonWebKeyInput | PublicKeyInput | GetPublicKeyOrSecret'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(20,32): error TS18048: 'decoded' is possibly 'undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(20,40): error TS2339: Property 'id' does not exist on type 'string | JwtPayload'.\r\n" +
+    "  Property 'id' does not exist on type 'string'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(21,17): error TS2322: Type '(Document<unknown, {}, { _id?: any; password?: any; passwordConfirm?: any; email?: any; firstName?: any; username?: any; lastName?: any; refreshToken?: any; active?: any; isEmailVerified?: any; phoneNumber?: any; provider?: any; ... 62 more ...; validateSync?: any; }> & { ...; } & { ...; } & { ...; }) | null' is not assignable to type 'User | undefined'.\r\n" +
+    "  Type 'null' is not assignable to type 'User | undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,21): error TS2551: Property 'roles' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'. Did you mean 'res'?\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,29): error TS18048: 'decoded' is possibly 'undefined'.\r\n" +
+    "backend/middleware/checkAuthMiddleware.ts(22,37): error TS2339: Property 'roles' does not exist on type 'string | JwtPayload'.\r\n" +
+    "  Property 'roles' does not exist on type 'string'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -336,11 +128,17 @@
     '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
     '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
+    '    at require (node:internal/modules/helpers:179:18)\n' +
+    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\routes\\user.ts:3:1)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
   exception: true,
-  date: 'Mon Nov 04 2024 17:43:52 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Tue Nov 05 2024 13:09:58 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 34304,
+    pid: 80692,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -351,14 +149,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 390393856,
-      heapTotal: 344821760,
-      heapUsed: 320137064,
-      external: 24816253,
-      arrayBuffers: 21825195
+      rss: 417959936,
+      heapTotal: 369201152,
+      heapUsed: 341868416,
+      external: 24844146,
+      arrayBuffers: 21841581
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 269236.828 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 339204.328 },
   trace: [
     {
       column: 12,
@@ -439,7 +237,55 @@
       line: 1231,
       method: 'require',
       native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 179,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\routes\\user.ts',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1369,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
     }
   ],
-  timestamp: '2024-11-04 05:43:52.091 PM'
+  timestamp: '2024-11-05 01:09:58.263 PM'
 }

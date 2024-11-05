@@ -2,19 +2,25 @@ import 'dotenv/config';
 import handlebars from 'handlebars';
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
+
 import transporter from '@/helpers/emailTransport';
+// import transporter from '../helpers/emailTransport';
+
 import { systemLogs } from './Logger';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
-export const sendEmail = async (email, subject, payload, template) => {
+export const sendEmail = async (
+    email: string,
+    subject: string,
+    payload: object,
+    template: string,
+) => {
     try {
-        const sourceDirectory = fs.readFileSync(
-            path.join(__dirname, template),
-            'utf8',
-        );
+        const templatePath = path.join(process.cwd(), template);
+        const sourceDirectory = fs.readFileSync(templatePath, 'utf8');
+
         const compiledTemplate = handlebars.compile(sourceDirectory);
 
         const emailOptions = {
@@ -23,6 +29,15 @@ export const sendEmail = async (email, subject, payload, template) => {
             subject,
             html: compiledTemplate(payload),
         };
+        if (!transporter) {
+            systemLogs.error(
+                'Email transporter is not initialized. Check your configuration.',
+            );
+            throw new Error(
+                'Email transporter is not initialized. Check your configuration.',
+            );
+        }
+
         await transporter.sendMail(emailOptions);
     } catch (error) {
         systemLogs.error(`email not sent: ${error}`);
@@ -30,11 +45,11 @@ export const sendEmail = async (email, subject, payload, template) => {
 };
 
 export const receiverEmailFunction = async (
-    from,
-    to,
-    subject,
-    payload,
-    template,
+    from: string,
+    to: string,
+    subject: string,
+    payload: object,
+    template: string,
 ) => {
     try {
         const sourceDirectory = fs.readFileSync(
@@ -50,6 +65,15 @@ export const receiverEmailFunction = async (
             payload,
             html: compiledTemplate(payload),
         };
+        if (!transporter) {
+            systemLogs.error(
+                'Email transporter is not initialized. Check your configuration.',
+            );
+            throw new Error(
+                'Email transporter is not initialized. Check your configuration.',
+            );
+        }
+
         await transporter.sendMail(emailOptions);
     } catch (error) {
         console.log(error);
