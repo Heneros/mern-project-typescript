@@ -1,4 +1,6 @@
 import express, { Response, Request } from 'express';
+import fs from 'fs';
+
 import cloudinaryUploader from '../config/cloudinaryConfig';
 import upload from '../helpers/multer';
 
@@ -18,10 +20,19 @@ router
                 }
 
                 const localFilePath = req.file.path;
+                const originalName = req.file.originalname;
+                const fileBuffer = fs.readFileSync(localFilePath);
 
                 //   const result = await cloudinaryUploader(localFilePath);
-                const result: { message: string; url?: string } =
-                    await cloudinaryUploader(localFilePath);
+                const result = (await cloudinaryUploader(
+                    fileBuffer,
+                    originalName,
+                )) as { url: string } | undefined;
+
+                if (!result) {
+                    res.status(500).json({ message: 'Upload failed' });
+                    return;
+                }
 
                 if (result.url) {
                     res.send(result.url);

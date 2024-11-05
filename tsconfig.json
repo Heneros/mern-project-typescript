@@ -14,6 +14,13 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@types",
+    ],
+    "types": [
+      "node",
+      "express"
+    ],
     "noEmit": false,
     "paths": {
       "@/*": [

@@ -1,28 +1,38 @@
+import { NextFunction, Request, Response } from 'express';
 import { ADMIN, USER } from '../constants/index';
+import { IUser } from '@/types/IUser';
 
 const ROLES = {
     User: USER,
     Admin: ADMIN,
 };
 
-const checkRole = (...allowedRoles) => (req, res, next) => {
-    if (!req?.user && !req?.roles) {
-        res.status(401);
-        throw new Error('You are not authorized to use our platform');
-    }
 
-    const rolesArray = [...allowedRoles];
 
-    const roleFound = req.roles
-        .map((role) => rolesArray.includes(role))
-        .find((value) => value === true);
+const checkRole =
+    (...allowedRoles: string[]) =>
+        (req: Request, res: Response, next: NextFunction) => {
+            const requestWithRoles = req as Request & {
+            roles: string[];
+            user: IUser;
+        };
 
-    if (!roleFound) {
-        res.status(401);
-        throw new Error('You are not authorized to perform this request');
-    }
-    next();
-};
+            if (!requestWithRoles.user || !requestWithRoles.roles) {
+                res.status(401);
+                throw new Error('You are not authorized to use our platform');
+            }
+
+            const rolesArray = [...allowedRoles];
+            const roleFound = requestWithRoles.roles.some((role) =>
+                rolesArray.includes(role),
+            );
+ 
+            if (!roleFound) {
+                res.status(401);
+                throw new Error('You are not authorized to perform this request');
+            }
+            next();
+        };
 
 const role = { ROLES, checkRole };
 
