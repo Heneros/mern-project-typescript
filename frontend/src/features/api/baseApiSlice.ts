@@ -3,31 +3,33 @@ import {
     fetchBaseQuery,
     BaseQueryFn,
     FetchArgs,
-    FetchBaseQueryError
+    FetchBaseQueryError,
 } from '@reduxjs/toolkit/query/react';
+import { BASE_URL } from 'shared/consts/urls';
 import type { RootState } from 'shared/lib/reducer';
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'http://localhost:1997/api/v1',
+    baseUrl: `${BASE_URL}/api/v1`,
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const state = getState() as RootState;
         const token = state.auth.user?.accessToken;
         const googleToken = state.auth?.googleToken;
-
+        //    const githubToken = state.auth?.githubToken;
         if (token) {
-            headers.set('Authorization', `Bearer ${token}`);
+            headers.set('authorization', `Bearer ${token}`);
         } else if (googleToken) {
-            headers.set('Authorization', `Bearer ${googleToken}`);
+            headers.set('authorization', `Bearer ${googleToken}`);
         }
+        //  else if (githubToken) {
+        //     headers.set('authorization', `Bearer ${githubToken}`);
+        // }
         return headers;
     },
 });
 
 const baseQueryWithRefreshToken: BaseQueryFn<
     string | FetchArgs,
-
-    // unknown: This indicates that the second argument (api) to the function can have any type
     unknown,
     FetchBaseQueryError
 > = async (args, api, extraOptions) => {
@@ -38,7 +40,7 @@ const baseQueryWithRefreshToken: BaseQueryFn<
 const baseApiSlice = createApi({
     reducerPath: 'api',
     baseQuery: baseQueryWithRefreshToken,
-    tagTypes: ["User", "Property"],
+    tagTypes: ['User', 'Property'],
     endpoints: (builder) => ({}),
 });
 

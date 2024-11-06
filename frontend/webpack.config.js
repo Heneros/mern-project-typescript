@@ -27,14 +27,16 @@ module.exports = {
             },
             {
                 test: /\.(png|jp?g|gif)$/i,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: 'assets/images/',
-                    }
-                }]
-            }
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'assets/images/',
+                        },
+                    },
+                ],
+            },
         ],
     },
     resolve: {
@@ -46,7 +48,7 @@ module.exports = {
             pages: path.resolve(__dirname, 'src/pages'),
             shared: path.resolve(__dirname, 'src/shared'),
             widgets: path.resolve(__dirname, 'src/widgets'),
-        }
+        },
     },
     devServer: {
         static: {

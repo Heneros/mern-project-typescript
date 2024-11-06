@@ -9,7 +9,6 @@ import passport from 'passport';
 import morgan from 'morgan';
 import session from 'express-session';
 
-
 import { errorHandler, notFound } from './middleware/errorMiddleware';
 import { morganMiddleware, systemLogs } from './utils/Logger';
 
@@ -67,7 +66,8 @@ const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
 
 if (process.env.NODE_ENV === 'production') {
-    const frontendPath = path.join(__dirname, '..', '..', 'dist', 'frontend');
+    const frontendPath = path.join(__dirname, '..', 'dist', 'frontend');
+    console.log('frontendPath', frontendPath);
     app.use(express.static(frontendPath));
     app.get('*', (req, res) => {
         res.sendFile(path.join(frontendPath, 'index.html'));
@@ -82,7 +82,11 @@ app.use(errorHandler);
 
 const startServer = async () => {
     try {
-        app.listen(port, () => console.log(`Working on ${port} port`));
+        app.listen(port, () =>
+            console.log(
+                `Server on ${port} running. NodeENV: ${process.env.NODE_ENV} `,
+            ),
+        );
         if (MONGO_URI) {
             await connectDB(MONGO_URI);
         }

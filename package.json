@@ -4,11 +4,16 @@
   "description": "",
   "scripts": {
     "maildev": "maildev",
+    "server:build": "tsc --project backend/tsconfig.json",
+    "client:build": "npm run build --prefix frontend",
+    "build": "npm run server:build && npm run client:build",
     "start": "node backend/server.js",
     "server": "nodemon",
     "client": "npm run webpack --prefix frontend",
     "dev": "concurrently \"npm run server\"  \"npm run client\"   \"npm run maildev\" ",
-    "test": "jest"
+    "test": "jest",
+    "lint:ts": "eslint \"./**/*.ts\"",
+    "lint:ts:fix": "eslint \"**/*.ts\" --fix"
   },
   "_moduleAliases": {
     "@": "backend",

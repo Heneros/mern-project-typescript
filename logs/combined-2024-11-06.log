@@ -1,0 +1,2777 @@
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 09:46:23.971 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '457',
+  response_time: 64.24,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 09:46:42.350 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 115.032,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 09:46:42.406 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 53.137,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 09:46:44.621 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 102.229,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 09:46:44.672 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 50.79,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 09:48:11.386 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/66698737b4ca40d2e7bfb178',
+  status: 200,
+  content_length: '463',
+  response_time: 51.806,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 09:48:17.095 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 101.267,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 09:48:17.143 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 09:59:15.089 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:05:24.843 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:08:08.382 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:19:47.714 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:30:15.932 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:37:27.089 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:37:34.744 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:43:19.823 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:43:45.294 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:50:54.840 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:51:01.798 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:51:25.437 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 10:51:40.568 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 11:29:42.522 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 141.634,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 11:31:52.875 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 262.412,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 11:31:53.001 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=2',
+  status: 200,
+  content_length: '949',
+  response_time: 277.666,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 11:32:04.439 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 11:32:39.403 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '29',
+  response_time: 1.546,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:33:55.287 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 2066,
+  response_time: 2.682,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:33:55.478 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.329,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:33:56.107 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 2066,
+  response_time: 0.902,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:33:56.265 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.266,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:33:56.706 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 2066,
+  response_time: 1.053,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:33:56.873 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.19,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:34:12.126 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 2066,
+  response_time: 0.995,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:34:12.325 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.256,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:34:12.954 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 2066,
+  response_time: 0.731,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 12:34:13.131 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-06 12:34:25.149 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 01:24:25.171 PM'
+}
+{
+  method: 'GET',
+  url: '/properties/page/1',
+  status: 200,
+  content_length: '142',
+  response_time: 3.48,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:24:42.512 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 200,
+  content_length: '142',
+  response_time: 1.161,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:24:42.756 PM'
+}
+{
+  method: 'GET',
+  url: '/properties/page/1',
+  status: 304,
+  response_time: 0.85,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:24:43.734 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.815,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:24:43.940 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 01:34:30.703 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 01:34:39.747 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 01:37:36.551 PM'
+}
+{
+  method: 'GET',
+  url: '/properties/page/1',
+  status: 304,
+  response_time: 3.73,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:37:49.404 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.896,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:37:49.611 PM'
+}
+{
+  method: 'GET',
+  url: '/properties/page/1',
+  status: 304,
+  response_time: 0.688,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:37:50.077 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.613,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:37:50.292 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '142',
+  response_time: 0.881,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:37:51.459 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.548,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:37:51.690 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.949,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:37:54.032 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.649,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:37:54.453 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 01:38:02.919 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 01:38:11.797 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: 569,
+  response_time: 12.444,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:21.757 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1040228,
+  response_time: 1.081,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:21.783 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.715,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:21.941 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.627,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.018 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 01:38:22.168 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 200,
+  content_length: 52917,
+  response_time: 1.498,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.271 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 200,
+  content_length: 65834,
+  response_time: 1.714,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.273 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 200,
+  content_length: 2512,
+  response_time: 1.741,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.292 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 200,
+  content_length: 1871,
+  response_time: 1.902,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.293 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 200,
+  content_length: 143848,
+  response_time: 2.04,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.294 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 108.544,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.417 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 200,
+  content_length: 2398,
+  response_time: 5.145,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.437 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 200,
+  content_length: 2111,
+  response_time: 6.255,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.440 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 200,
+  content_length: 2651,
+  response_time: 6.463,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.441 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 200,
+  content_length: 2223,
+  response_time: 6.327,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.442 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 200,
+  content_length: 2897,
+  response_time: 6.633,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.443 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 207.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:22.524 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.362,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.043 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.444,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.068 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.406,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.293 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.68,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.295 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 0.931,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.295 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 0.722,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.306 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.856,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.307 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 54.697,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.400 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 1.071,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.433 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.369,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.434 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.642,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.436 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 1.355,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.436 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 1.313,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.437 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 107.797,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.455 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 200,
+  content_length: 569,
+  response_time: 2.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:23.965 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 200,
+  content_length: 43950,
+  response_time: 4.863,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:26.502 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 4.733,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:26.503 PM'
+}
+{
+  method: 'GET',
+  url: '/post/assets/images/single-property.jpg',
+  status: 200,
+  content_length: 569,
+  response_time: 6.752,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:28.845 PM'
+}
+{
+  method: 'GET',
+  url: '/post/assets/images/info-icon-01.png',
+  status: 200,
+  content_length: 569,
+  response_time: 6.848,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:28.846 PM'
+}
+{
+  method: 'GET',
+  url: '/post/assets/images/info-icon-02.png',
+  status: 200,
+  content_length: 569,
+  response_time: 6.675,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:28.847 PM'
+}
+{
+  method: 'GET',
+  url: '/post/assets/images/info-icon-03.png',
+  status: 200,
+  content_length: 569,
+  response_time: 6.988,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:28.848 PM'
+}
+{
+  method: 'GET',
+  url: '/post/assets/images/info-icon-04.png',
+  status: 200,
+  content_length: 569,
+  response_time: 7.238,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:28.849 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.831,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:28.850 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 106.944,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:28.950 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 200,
+  content_length: 62023,
+  response_time: 0.629,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:32.415 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.521,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:32.417 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 1.464,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 01:38:34.447 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 2.83,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:19.206 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.946,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:19.255 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.207,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:19.742 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.068,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:19.743 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.508,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:19.773 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.443,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:19.776 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 0.335,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:19.777 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.493,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:20.879 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.373,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.699 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.706 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.708 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.51,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.727 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 2.267,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.872 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 2.956,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.882 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 2.97,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.883 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 3.653,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.885 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 4.204,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:23.886 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.692,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:24.298 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 200,
+  content_length: 43950,
+  response_time: 2.472,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:28.825 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.577,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:28.828 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '126',
+  response_time: 10008.268,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:33.885 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '133',
+  response_time: 10007.563,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:33.886 PM'
+}
+{
+  method: 'GET',
+  url: '/properties',
+  status: 200,
+  content_length: 569,
+  response_time: 1.272,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:36.444 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.325,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:36.459 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.334,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:36.548 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.766,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:36.624 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.636,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:39.869 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 4.247,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:39.876 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.596,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:39.877 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 0.68,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:39.880 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.302,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:39.882 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.925,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:39.882 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 10009.795,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:46.615 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 02:06:49.846 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 10009.411,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:06:49.888 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.46,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:47.161 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.828,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:47.224 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.443,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:47.347 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.762,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:47.405 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.29,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:47.410 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.297,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:47.411 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.253,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:47.411 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 4.67,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:47.761 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 1.823,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:49.840 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:49.852 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:49.854 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.433,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:49.897 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.387,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:50.195 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.381,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:50.204 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 2.084,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:50.212 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.372,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:50.213 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.334,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:50.213 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.725,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:50.586 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: 569,
+  response_time: 0.823,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.146 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.164 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.166 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1040228,
+  response_time: 0.642,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.221 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 200,
+  content_length: 143848,
+  response_time: 0.549,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.560 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 200,
+  content_length: 2512,
+  response_time: 5.856,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.570 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 200,
+  content_length: 1871,
+  response_time: 5.661,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.571 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 200,
+  content_length: 52917,
+  response_time: 5.555,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.572 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: 569,
+  response_time: 6.484,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.574 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 200,
+  content_length: 65834,
+  response_time: 1.838,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.576 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.583 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.584 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1040228,
+  response_time: 0.709,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.606 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 200,
+  content_length: 2512,
+  response_time: 1.735,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.814 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 200,
+  content_length: 1871,
+  response_time: 1.984,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.815 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 200,
+  content_length: 143848,
+  response_time: 2.449,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.815 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 200,
+  content_length: 52917,
+  response_time: 3.5,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.822 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 200,
+  content_length: 65834,
+  response_time: 0.604,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:51.826 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 200,
+  content_length: 569,
+  response_time: 1.198,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:07:52.262 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '126',
+  response_time: 10009.762,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:01.829 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '133',
+  response_time: 10009.165,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:01.829 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.358,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:47.353 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.612,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:47.393 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.849,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:47.526 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.469,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:47.526 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 3.334,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:47.533 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 3.631,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:47.534 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.81,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:47.536 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.983,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:08:47.849 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-06 02:08:56.254 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 2.369,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.144 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.047,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.314 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.576,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.389 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.826,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.393 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.271,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.394 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.518,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.398 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 0.492,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.400 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '457',
+  response_time: 60.474,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.464 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 5.833,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.486 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 5.163,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.487 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 5.139,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.489 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 6.084,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.490 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 5.904,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.491 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 108.929,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.519 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:11:41.709 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1',
+  status: 200,
+  content_length: 569,
+  response_time: 2.043,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:14:21.576 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1040228,
+  response_time: 0.849,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:14:21.672 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 200,
+  content_length: 569,
+  response_time: 0.945,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:14:22.007 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1',
+  status: 304,
+  response_time: 0.752,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:17:29.112 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.578,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:17:31.041 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.403,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.330 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.349,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.379 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 2.639,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.572 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 2.589,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.573 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.328,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.595 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.856,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.596 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 2.075,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.597 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.602,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.664 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 1.457,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.693 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.867,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.696 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 1.862,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.696 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 1.881,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.697 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 1.948,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.697 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 101.51,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.716 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.74,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:24.946 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.455,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.438 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.331,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.477 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 5.186,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.606 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 5.402,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.607 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 5.655,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.608 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 6.923,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.611 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 6.427,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.612 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.583,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.661 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.778,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.680 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.805,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.681 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.485,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.681 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.34,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.682 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 2.168,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.682 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 106.163,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.720 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.017,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:26.995 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.345,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.154 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.314,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.184 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 6.749,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.334 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 7.014,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.335 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 6.851,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.335 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 6.642,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.336 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 4.846,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.336 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.386,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.384 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.695,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.398 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.555,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.398 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.377,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.398 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.111,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.399 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 1.951,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.399 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 103.46,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.441 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.358,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.582 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.59,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.586 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.333,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.608 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.393,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.785 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 5.982,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.791 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 5.013,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.791 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 5.082,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.792 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 5.125,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.793 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.3,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.819 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.828 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.830 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.466,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:27.842 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 6.887,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.026 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 4.236,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.028 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.579,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.029 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.654,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.029 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.383,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.030 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '457',
+  response_time: 51.583,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.071 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.225,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.079 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.218,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.080 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.065,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.080 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 1.8,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.080 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 1.78,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.081 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.268,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.099 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.104 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.356,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.118 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 2.639,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.272 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 3.209,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.273 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 3.496,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.278 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 3.316,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.279 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.404,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.280 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.361,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.328 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 1.981,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.346 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.296,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.347 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.359,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.347 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.429,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.348 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.633,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.350 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 101.027,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.371 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: 569,
+  response_time: 0.743,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.552 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1040228,
+  response_time: 0.731,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.581 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 200,
+  content_length: 2512,
+  response_time: 1.389,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.770 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 200,
+  content_length: 1871,
+  response_time: 1.943,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.771 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 200,
+  content_length: 143848,
+  response_time: 3.392,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.772 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 200,
+  content_length: 52917,
+  response_time: 1.234,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.783 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 200,
+  content_length: 65834,
+  response_time: 1.148,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.784 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '457',
+  response_time: 51.133,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.855 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 200,
+  content_length: 2223,
+  response_time: 1.515,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.882 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 200,
+  content_length: 2111,
+  response_time: 3.243,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.883 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 200,
+  content_length: 2651,
+  response_time: 3.488,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.883 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 200,
+  content_length: 2398,
+  response_time: 5.174,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.884 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 200,
+  content_length: 2897,
+  response_time: 4.084,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.885 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 101.734,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:28.907 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 200,
+  content_length: 569,
+  response_time: 0.843,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:20:29.190 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.586,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:26:39.488 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 200,
+  content_length: 62023,
+  response_time: 2.568,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:26:39.489 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 1.916,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:26:41.507 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.715,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:26:44.564 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 0.469,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:26:46.365 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.921,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:26:47.687 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 200,
+  content_length: 569,
+  response_time: 1.139,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:29:24.836 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.492,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:29:25.097 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.336,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:29:26.454 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.697,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:29:26.545 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 0.219,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:29:27.386 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.433,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-06 02:29:29.914 PM'
+}

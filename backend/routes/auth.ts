@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express, { Request, Response } from 'express';
 import passport from 'passport';
 import jwt from 'jsonwebtoken';
@@ -15,8 +16,10 @@ import User from '../models/userModel';
 import feedbackFormController from '../controllers/auth/feedbackFormController';
 import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
 import { RequestWithUser } from '../types/RequestWithUser';
+import { systemLogs } from '@/utils/Logger';
 
 const router = express.Router();
+const domain = process.env.DOMAIN;
 
 router.post('/register', apiLimiter, registerUser);
 router.get('/verify/:emailToken/:userId', verifyUserEmail);
@@ -28,6 +31,71 @@ router.post('/reset_password', resetPassword);
 router.get('/logout', logoutUser);
 
 router.route('/feedback').post(apiLimiter, feedbackFormController);
+
+router.get(
+    '/github',
+    passport.authenticate('github', {
+        scope: ['user:email'],
+    }),
+);
+
+router.route('/github/callback').get(
+    passport.authenticate('github', {
+        failureRedirect: 'http://localhost:3000/login?error=auth_failed',
+    }),
+
+    async (req, res) => {
+        try {
+            const userReq = req as RequestWithUser;
+
+            if (!userReq.user) {
+                return res.redirect(
+                    'http://localhost:3000/login?error=auth_failed',
+                );
+            }
+            const existingUser = await User.findById(userReq.user.id);
+            if (!existingUser) {
+                return res.redirect(
+                    'http://localhost:3000/login?error=user_not_found',
+                );
+            }
+            const payload = {
+                id: userReq.user.id,
+                firstName: existingUser.firstName,
+                lastName: existingUser.lastName || 'Name',
+                username: existingUser.username,
+                provider: existingUser.provider,
+                avatar: existingUser.avatar,
+            };
+            jwt.sign(
+                payload,
+                process.env.JWT_ACCESS_SECRET_KEY!,
+                {
+                    expiresIn: '7d',
+                },
+                (err, token) => {
+                    if (err) {
+                        console.log(err);
+
+                        return res.status(500).send('Error generating token');
+                    }
+                    const jwt = `${token}`;
+                    const emebedJWT = `
+                <html>
+                <script>
+                      window.localStorage.setItem("googleToken", '${jwt}');
+                      window.location.href= "${domain}";
+                 </script>
+                </html>
+                `;
+                    res.send(emebedJWT);
+                },
+            );
+        } catch (error) {
+            systemLogs.error('error github', error);
+        }
+    },
+);
 
 router.route('/google').get(
     passport.authenticate('google', {
