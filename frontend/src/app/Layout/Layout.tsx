@@ -1,10 +1,9 @@
 import React from 'react';
 import { Outlet, ScrollRestoration } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
-import clsx from 'clsx';
+
 import 'react-toastify/dist/ReactToastify.css';
-import { Header } from 'widgets/header';
-import { Footer } from 'widgets/footer';
+import { Header } from 'components/Header';
+import { Footer } from 'components/Footer';
 import { Preloader } from 'shared/ui/Preloader';
 import { ToastContainer } from 'react-toastify';
 

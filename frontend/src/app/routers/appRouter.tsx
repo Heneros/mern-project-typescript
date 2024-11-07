@@ -21,9 +21,9 @@ import { ResendEmailTokenPage } from 'pages/resendEmailTokenPage';
 import { VerifiedPage } from 'pages/verifiedPage';
 import { AuthRequired } from 'shared/hooks/AuthRequired';
 import { ROLES } from 'shared/consts';
-import { PersonalAccount } from 'pages/PersonalAccount';
-import { ContactUs } from 'pages/ContactUs';
-import { SingleProperty } from 'pages/SingleProperty';
+import { PersonalAccount } from 'pages/personalAccount';
+import { ContactUs } from 'pages/contactUs';
+import { SingleProperty } from 'pages/singleProperty';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([

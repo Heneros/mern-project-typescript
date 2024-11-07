@@ -1,1 +1,0 @@
-export { FilterProperty } from "./ui/FilterPropety";

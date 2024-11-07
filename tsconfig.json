@@ -16,6 +16,8 @@
     "skipLibCheck": true,
     "typeRoots": [
       "./node_modules/@types",
+      "./backend/types/*.d.ts",
+      "backend/types/*.d.ts"
     ],
     "types": [
       "node",
@@ -70,6 +72,7 @@
     "frontend/src/declarations.d.ts",
     "frontend/webpack.config.js",
     "backend/**/*.ts",
+    "backend/types/types.d.ts"
   ],
   "exclude": [
     "node_modules/",

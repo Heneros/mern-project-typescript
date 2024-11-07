@@ -1,10 +1,10 @@
 import {
     useGetAllPropertiesQuery,
     useGetSinglePropertyQuery,
-} from 'features/properties/propertiesApiSlice';
+} from 'features/properties/api/propertiesApiSlice';
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { BestDeal } from 'shared/ui/BestDeal';
+import { BestDeal } from 'features/homepage/ui/bestDeal';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { PropItems } from 'shared/types/PostInfo';
 

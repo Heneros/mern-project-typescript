@@ -48,6 +48,7 @@ module.exports = {
             pages: path.resolve(__dirname, 'src/pages'),
             shared: path.resolve(__dirname, 'src/shared'),
             widgets: path.resolve(__dirname, 'src/widgets'),
+            components: path.resolve(__dirname, 'src/components'),
         },
     },
     devServer: {

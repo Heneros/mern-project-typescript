@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import { PostInfo } from 'shared/types';
-import { addToCart, ICartItem } from 'entities/cartHeader';
+import { addToCart, ICartItem } from 'entities/СartHeader/index';
 import { formatPrice } from 'shared/utils/cartFunctions';
 
 export const PropertyItem: React.FC<PostInfo> = ({

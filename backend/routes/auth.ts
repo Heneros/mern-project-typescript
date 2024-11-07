@@ -17,6 +17,7 @@ import feedbackFormController from '../controllers/auth/feedbackFormController';
 import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
 import { RequestWithUser } from '../types/RequestWithUser';
 import { systemLogs } from '@/utils/Logger';
+import handleOAuthCallback from '@/helpers/handleOAuthCallback';
 
 const router = express.Router();
 const domain = process.env.DOMAIN;
@@ -44,57 +45,7 @@ router.route('/github/callback').get(
         failureRedirect: 'http://localhost:3000/login?error=auth_failed',
     }),
 
-    async (req, res) => {
-        try {
-            const userReq = req as RequestWithUser;
-
-            if (!userReq.user) {
-                return res.redirect(
-                    'http://localhost:3000/login?error=auth_failed',
-                );
-            }
-            const existingUser = await User.findById(userReq.user.id);
-            if (!existingUser) {
-                return res.redirect(
-                    'http://localhost:3000/login?error=user_not_found',
-                );
-            }
-            const payload = {
-                id: userReq.user.id,
-                firstName: existingUser.firstName,
-                lastName: existingUser.lastName || 'Name',
-                username: existingUser.username,
-                provider: existingUser.provider,
-                avatar: existingUser.avatar,
-            };
-            jwt.sign(
-                payload,
-                process.env.JWT_ACCESS_SECRET_KEY!,
-                {
-                    expiresIn: '7d',
-                },
-                (err, token) => {
-                    if (err) {
-                        console.log(err);
-
-                        return res.status(500).send('Error generating token');
-                    }
-                    const jwt = `${token}`;
-                    const emebedJWT = `
-                <html>
-                <script>
-                      window.localStorage.setItem("googleToken", '${jwt}');
-                      window.location.href= "${domain}";
-                 </script>
-                </html>
-                `;
-                    res.send(emebedJWT);
-                },
-            );
-        } catch (error) {
-            systemLogs.error('error github', error);
-        }
-    },
+    handleOAuthCallback,
 );
 
 router.route('/google').get(
@@ -113,57 +64,7 @@ router.route('/google/redirect').get(
         failureRedirect: '/login',
         session: false,
     }),
-    async (req: Request, res: Response): Promise<void> => {
-        try {
-            const userReq = req as RequestWithUser;
-
-            if (!userReq.user) {
-                res.status(404).json({ message: 'Not found Request' });
-                return;
-            }
-            const existingUser = await User.findById(userReq.user.id);
-
-            if (!existingUser) {
-                res.status(404).json({ message: 'Not found User' });
-                return;
-            }
-
-            const payload = {
-                id: userReq.user.id,
-                roles: userReq.user.roles,
-                firstName: userReq.user.firstName,
-                lastName: userReq.user.lastName || 'No Name',
-                username: userReq.user.username,
-                provider: userReq.user.provider,
-                avatar: userReq.user.avatar,
-            };
-            jwt.sign(
-                payload,
-                process.env.JWT_ACCESS_SECRET_KEY!,
-                { expiresIn: '7d' },
-                (err, token) => {
-                    if (err) {
-                        console.log(err);
-                        return res
-                            .status(500)
-                            .send(`Error generating token '  ${err}`);
-                    }
-                    const jwt = `${token}`;
-                    const embedJWT = `
-    <html>
-    <script>
-    window.localStorage.setItem("googleToken",'${jwt}')
-    window.location.href='/dashboard'
-    </script>
-    </html>
-    `;
-                    res.send(embedJWT);
-                },
-            );
-        } catch (error) {
-            console.log(error);
-        }
-    },
+    handleOAuthCallback,
 );
 
 export default router;

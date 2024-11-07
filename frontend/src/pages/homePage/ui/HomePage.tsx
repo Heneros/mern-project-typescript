@@ -1,17 +1,18 @@
-import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
+import { useGetAllPropertiesQuery } from 'features/properties/api/propertiesApiSlice';
 import React from 'react';
 import { Spinner } from 'react-bootstrap';
-import { BestDeal } from 'shared/ui/BestDeal';
+import { BestDeal } from 'features/homepage/ui/bestDeal';
 import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
 
-import { Featured } from 'widgets/Featured';
-import { FunFacts } from 'widgets/FunFacts';
-import { HomePageProperties } from 'widgets/HomePageProperties';
-import { SliderBanner } from 'widgets/Slider';
-import { Video } from 'widgets/Video';
-import { HomePageContactUs } from 'widgets/HomePageContactUs';
+import { Featured } from 'features/homepage/ui/featured';
+import { FunFacts } from 'features/homepage/ui/funFacts';
+import { HomePageProperties } from 'features/homepage/ui/homePageProperties';
+
+import { Video } from 'features/homepage/ui/video';
+import { HomePageContactUs } from 'features/homepage/ui/homePageContactUs/ui/HomePageContactUs';
+import { SliderBanner } from 'features/homepage/ui/slider';
 
 export function HomePage() {
     const { data, isLoading, error } = useGetAllPropertiesQuery(1);

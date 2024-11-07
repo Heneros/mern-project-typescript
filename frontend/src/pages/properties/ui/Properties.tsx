@@ -3,12 +3,12 @@ import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 
-import { useGetAllPropertiesQuery } from 'features/properties/propertiesApiSlice';
+import { useGetAllPropertiesQuery } from 'features/properties/api/propertiesApiSlice';
 import { Message } from 'shared/ui/Message';
 import { PropertyItem } from 'shared/ui/PropertyItem';
 import { PostInfo } from 'shared/types';
-import { FilterProperty } from 'widgets/FilterProperty';
-import { PaginationProperties } from 'widgets/PaginationProperties';
+import { FilterProperty } from 'features/properties/ui/FilterProperty';
+import { PaginationProperties } from 'widgets/paginationProperties';
 import { useAppSelector } from 'shared/lib/store';
 import { renderError } from 'shared/utils/renderError';
 

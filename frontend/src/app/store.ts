@@ -1,23 +1,23 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import baseApiSlice from 'features/api/baseApiSlice';
 import authReducer from 'features/auth/authSlice';
-import propertyReducer from 'features/properties/propertySlice';
-import cartSlice from 'entities/cartHeader/model/cartSlice';
+import propertyReducer from 'features/properties/api/propertySlice';
+import cartSlice from 'entities/СartHeader/model/cartSlice';
 // const rootReducer = combineReducer({
 
 // });
 
 const store = configureStore({
     reducer: {
-[     baseApiSlice.reducerPath]: baseApiSlice.reducer,
-      auth: authReducer,
-      properties: propertyReducer,
-      cart: cartSlice
+        [baseApiSlice.reducerPath]: baseApiSlice.reducer,
+        auth: authReducer,
+        properties: propertyReducer,
+        cart: cartSlice,
     },
-    middleware:(getDefaultMiddleware) =>
+    middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(baseApiSlice.middleware),
-    devTools: true
-})
+    devTools: true,
+});
 
 export default store;
