@@ -2,7 +2,6 @@ import { useRegisterUserMutation } from 'features/auth/authApiSlice';
 import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Col, Row } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { FormContainer } from 'shared/ui/FormContainer';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
@@ -16,6 +15,7 @@ import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import Featured from 'shared/assets/images/featured.jpg';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import GithubAuth from 'shared/ui/GithubAuth/GithubAuth';
 
 const USERNAME_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 
@@ -316,10 +316,17 @@ export const Registration = () => {
                                         Already have an account?
                                     </Link>
                                 </Col>
-                                {/* <Col md={12} className="my-2">
-                                    Sign up with Google
-                                    <GoogleAuth />
-                                </Col> */}
+                                <Col md={12} className="my-2">
+                                    Sign up with Google or Github
+                                    <Row className="d-flex mt-4">
+                                        <Col xs="auto">
+                                            <GoogleAuth />
+                                        </Col>
+                                        <Col xs="auto">
+                                            <GithubAuth />
+                                        </Col>
+                                    </Row>
+                                </Col>
                             </Row>
                         </Form>
                     )}

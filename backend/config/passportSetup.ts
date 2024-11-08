@@ -99,7 +99,7 @@ const oauthPassport = () => {
                     const firstName = fullName.shift();
                     const lastName =
                         fullName.length > 0 ? fullName.join(' ') : ' No Name';
-
+                    //   console.log({profile});
                     const newUser = new User({
                         githubId: profile.id,
                         username: profile.username,
@@ -109,6 +109,7 @@ const oauthPassport = () => {
                         email: profile._json.email
                             ? profile._json.email
                             : `${profile.username}email@${profile.id}temp.com`,
+                        isEmailVerified: true,
                         provider: 'github',
                     });
                     await newUser.save();

@@ -19,9 +19,9 @@ export const Breadcrumbs: React.FC<BreadType> = ({
     // console.log(parts);
 
     const lastPart = parts[parts.length - 1];
-    console.log(lastParent);
+    // console.log(lastParent);
 
-    const isLastPartNumber = !isNaN(Number(lastPart));
+    // const isLastPartNumber = !isNaN(Number(lastPart));
 
     const lastParentName = lastParent ? lastParent : nameParent || lastPart;
 

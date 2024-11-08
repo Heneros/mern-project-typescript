@@ -6,6 +6,7 @@ export interface User {
     lastName: string;
     isEmailVerified: boolean;
     googleID?: string;
+
     avatar?: string;
     businessName?: string;
     phoneNumber?: string;
@@ -14,5 +15,6 @@ export interface User {
 
     refreshToken?: string[];
     accessToken?: string[];
+    githubToken?: string[];
     googleToken?: string[];
 }

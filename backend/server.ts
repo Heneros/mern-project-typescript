@@ -43,7 +43,8 @@ oauthPassport();
 app.use(cookieParser());
 app.use(
     cors({
-        origin: process.env.DOMAIN,
+        origin: process.env.DOMAINCORS!,
+
         methods: 'GET,POST,PUT,DELETE',
         credentials: true,
         allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
@@ -67,7 +68,7 @@ const MONGO_URI = process.env.MONGO_URI;
 
 if (process.env.NODE_ENV === 'production') {
     const frontendPath = path.join(__dirname, '..', 'dist', 'frontend');
-    console.log('frontendPath', frontendPath);
+    ///  console.log('frontendPath', frontendPath);
     app.use(express.static(frontendPath));
     app.get('*', (req, res) => {
         res.sendFile(path.join(frontendPath, 'index.html'));

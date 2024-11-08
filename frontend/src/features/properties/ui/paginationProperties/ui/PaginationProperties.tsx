@@ -7,9 +7,7 @@ interface PaginateProps {
     page: number;
 }
 
-export const PaginationProperties: React.FC<PaginateProps> = ({
-    pages,
-}) => {
+export const PaginationProperties: React.FC<PaginateProps> = ({ pages }) => {
     const location = useLocation();
     const currentPathPage = parseInt(
         location.pathname.split('/').pop() || '1',

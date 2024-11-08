@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-
+import React, { useEffect, useState } from 'react';
+import './DropdownCart.css';
 import { useAppSelector } from 'shared/lib/store';
-import './DropdownCart.module.css';
+
 import { CartItemBook } from '../CartItemBook/CartItemBook';
 import { Link } from 'react-router-dom';
 import { ICartItem } from '../model/types';
@@ -13,22 +13,28 @@ export const DropdownCart = () => {
     const itemsCart = useAppSelector((state) => state.cart);
 
     ///   console.log(itemsCart);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const toggleDropdown = () => {
-        setIsOpen(!isOpen);
+        // console.log(itemsCart);
+        setIsOpen((prev) => !prev);
+        // console.log(isOpen);
     };
+    // useEffect(() => {
+    //     console.log('Dropdown menu state isOpen:', isOpen);
+    // }, [isOpen]);
+
     return (
         <li className="dropdown">
             <ScheduleBtn isInCart={true} onClick={toggleDropdown} />
-
+            {/* <button onClick={toggleDropdown}>Schedule a visit</button> */}
             {isOpen && (
                 <div className="dropdown-menu">
-                    {itemsCart.cartItems.length > 0 ? (
+                    {itemsCart.cartItems ? (
                         itemsCart.cartItems.map((item: ICartItem) => (
-                            <React.Fragment key={item._id || item.index}>
+                            <>
                                 <CartItemBook {...item} />
-                            </React.Fragment>
+                            </>
                         ))
                     ) : (
                         <>Empty cart</>
@@ -36,7 +42,6 @@ export const DropdownCart = () => {
                     <span className="total-price">
                         Total Price: <b>{formatPrice(itemsCart.totalPrice)}</b>
                     </span>
-
                     <Link className="cart-link" to={'/cart'}>
                         Visit Cart
                     </Link>

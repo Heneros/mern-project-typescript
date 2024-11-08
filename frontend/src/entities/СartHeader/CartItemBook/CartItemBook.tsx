@@ -1,6 +1,8 @@
+import React from 'react';
+
 import { Link } from 'react-router-dom';
 
-import './CartItem.module.css';
+import './CartItem.css';
 import { formatPrice } from 'shared/utils/cartFunctions';
 import { ICartItem } from 'entities/СartHeader';
 

@@ -67,15 +67,6 @@ export const Header = () => {
             if (header) {
                 setIsSticky(window.scrollY > header.offsetTop);
             }
-
-            // if (sticky) {
-            //     if (window.scrollY > sticky) {
-            //         // console.log(header?.offsetTop);
-            //         setIsSticky(true);
-            //     } else {
-            //         setIsSticky(false);
-            //     }
-            // }
         };
 
         window.addEventListener('scroll', handleScroll);

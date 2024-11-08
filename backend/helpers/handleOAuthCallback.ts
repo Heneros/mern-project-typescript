@@ -3,24 +3,20 @@ import jwt from 'jsonwebtoken';
 import User from '@/models/userModel';
 import { RequestWithUser } from '@/types/RequestWithUser';
 
-const domain = process.env.DOMAIN;
+const domain = process.env.DOMAIN_CLIENT;
 
 const handleOAuthCallback = async (req: Request, res: Response) => {
     const userReq = req as RequestWithUser;
 
     try {
         if (!userReq.user) {
-            return res.redirect(
-                'http://localhost:3000/login?error=auth_failed',
-            );
+            return res.redirect(`${domain}/login?error=auth_failed`);
         }
 
         const existingUser = await User.findById(userReq.user.id);
 
         if (!existingUser) {
-            return res.redirect(
-                'http://localhost:3000/login?error=user_not_found',
-            );
+            return res.redirect(`${domain}/login?error=user_not_found`);
         }
 
         const payload = {
@@ -48,7 +44,7 @@ const handleOAuthCallback = async (req: Request, res: Response) => {
                     <html>
                     <script>
                         window.localStorage.setItem("googleToken", '${jwtToken}');
-                        window.location.href= "${domain}";
+                        window.location.href= "${domain}/personal-account";
                     </script>
                     </html>
                 `;

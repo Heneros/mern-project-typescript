@@ -1,0 +1,26 @@
+{
+  message: 'error github ValidationError: lastName: Lastname can only have Alphanumeric values. No special characters allowed',
+  level: 'error',
+  timestamp: '2024-11-08 01:25:45.815 PM'
+}
+{
+  message: 'error github ValidationError: lastName: Lastname can only have Alphanumeric values. No special characters allowed',
+  level: 'error',
+  timestamp: '2024-11-08 01:25:52.696 PM'
+}
+{
+  message: 'error github MongooseError: Operation `users.findOne()` buffering timed out after 10000ms',
+  level: 'error',
+  timestamp: '2024-11-08 02:21:23.538 PM'
+}
+{
+  message: 'error github MongooseError: Operation `users.findOne()` buffering timed out after 10000ms',
+  level: 'error',
+  timestamp: '2024-11-08 02:21:40.520 PM'
+}
+{ level: 'error', timestamp: '2024-11-08 04:52:30.626 PM' }
+{
+  message: "email not sent: Error: ENOENT: no such file or directory, open 'D:\\Projects\\mern-project-typescript\\emails\\template\\accountVerification.handlebars'",
+  level: 'error',
+  timestamp: '2024-11-08 04:53:01.043 PM'
+}

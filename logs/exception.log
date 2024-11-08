@@ -1,0 +1,318 @@
+{
+  error: [96mbackend/helpers/handleOAuthCallback.ts[0m:[93m22[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'http'.
+  
+  [7m22[0m                 `${http://localhost:3000}/login?error=user_not_found`,
+  [7m  [0m [91m                   ~~~~[0m
+  [96mbackend/helpers/handleOAuthCallback.ts[0m:[93m22[0m:[93m24[0m - [91merror[0m[90m TS1005: [0m'}' expected.
+  
+  [7m22[0m                 `${http://localhost:3000}/login?error=user_not_found`,
+  [7m  [0m [91m                       ~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96mbackend/helpers/handleOAuthCallback.ts\x1B[0m:\x1B[93m22\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'http'.\r\n" +
+    '\r\n' +
+    '\x1B[7m22\x1B[0m                 `${http://localhost:3000}/login?error=user_not_found`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/helpers/handleOAuthCallback.ts\x1B[0m:\x1B[93m22\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m'}' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m22\x1B[0m                 `${http://localhost:3000}/login?error=user_not_found`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~\x1B[0m\r\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96mbackend/helpers/handleOAuthCallback.ts\x1B[0m:\x1B[93m22\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'http'.\r\n" +
+    '\r\n' +
+    '\x1B[7m22\x1B[0m                 `${http://localhost:3000}/login?error=user_not_found`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/helpers/handleOAuthCallback.ts\x1B[0m:\x1B[93m22\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m'}' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m22\x1B[0m                 `${http://localhost:3000}/login?error=user_not_found`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~\x1B[0m\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96mbackend/helpers/handleOAuthCallback.ts\x1B[0m:\x1B[93m22\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2304: \x1B[0mCannot find name 'http'.\r\n" +
+    '\r\n' +
+    '\x1B[7m22\x1B[0m                 `${http://localhost:3000}/login?error=user_not_found`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/helpers/handleOAuthCallback.ts\x1B[0m:\x1B[93m22\x1B[0m:\x1B[93m24\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m'}' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m22\x1B[0m                 `${http://localhost:3000}/login?error=user_not_found`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                       ~\x1B[0m\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Nov 08 2024 14:24:10 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 20680,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 387489792,
+      heapTotal: 337997824,
+      heapUsed: 309802472,
+      external: 24873850,
+      arrayBuffers: 21871448
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 160526.312 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-08 02:24:10.611 PM'
+}
+{
+  error: [96mbackend/routes/auth.ts[0m:[93m20[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"D:/Projects/mern-project-typescript/backend/helpers/handleOAuthCallback"' has no default export.
+  
+  [7m20[0m import handleOAuthCallback from '@/helpers/handleOAuthCallback';
+  [7m  [0m [91m       ~~~~~~~~~~~~~~~~~~~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    `\x1B[96mbackend/routes/auth.ts\x1B[0m:\x1B[93m20\x1B[0m:\x1B[93m8\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1192: \x1B[0mModule '"D:/Projects/mern-project-typescript/backend/helpers/handleOAuthCallback"' has no default export.\r\n` +
+    '\r\n' +
+    "\x1B[7m20\x1B[0m import handleOAuthCallback from '@/helpers/handleOAuthCallback';\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m       ~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    `\x1B[96mbackend/routes/auth.ts\x1B[0m:\x1B[93m20\x1B[0m:\x1B[93m8\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1192: \x1B[0mModule '"D:/Projects/mern-project-typescript/backend/helpers/handleOAuthCallback"' has no default export.\r\n` +
+    '\r\n' +
+    "\x1B[7m20\x1B[0m import handleOAuthCallback from '@/helpers/handleOAuthCallback';\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m       ~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    `\x1B[96mbackend/routes/auth.ts\x1B[0m:\x1B[93m20\x1B[0m:\x1B[93m8\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1192: \x1B[0mModule '"D:/Projects/mern-project-typescript/backend/helpers/handleOAuthCallback"' has no default export.\r\n` +
+    '\r\n' +
+    "\x1B[7m20\x1B[0m import handleOAuthCallback from '@/helpers/handleOAuthCallback';\r\n" +
+    '\x1B[7m  \x1B[0m \x1B[91m       ~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Nov 08 2024 14:24:27 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 17256,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 269979648,
+      heapTotal: 225554432,
+      heapUsed: 204210352,
+      external: 24841696,
+      arrayBuffers: 21849747
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 160542.765 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-08 02:24:27.061 PM'
+}

@@ -15,12 +15,11 @@ import logoutUser from '../controllers/auth/logoutController';
 import User from '../models/userModel';
 import feedbackFormController from '../controllers/auth/feedbackFormController';
 import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
-import { RequestWithUser } from '../types/RequestWithUser';
-import { systemLogs } from '@/utils/Logger';
+
 import handleOAuthCallback from '@/helpers/handleOAuthCallback';
 
 const router = express.Router();
-const domain = process.env.DOMAIN;
+const domain = process.env.DOMAIN_CLIENT;
 
 router.post('/register', apiLimiter, registerUser);
 router.get('/verify/:emailToken/:userId', verifyUserEmail);
@@ -42,7 +41,7 @@ router.get(
 
 router.route('/github/callback').get(
     passport.authenticate('github', {
-        failureRedirect: 'http://localhost:3000/login?error=auth_failed',
+        failureRedirect: `${domain}/login?error=auth_failed`,
     }),
 
     handleOAuthCallback,

@@ -15,7 +15,6 @@ import {
     InputGroup,
     FormControl,
 } from 'react-bootstrap';
-import { FormLogin } from 'shared/ui/FormLogin';
 
 export const PasswordRequestPage = () => {
     const navigate = useNavigate();
@@ -46,8 +45,8 @@ export const PasswordRequestPage = () => {
                     setStatus({ success: true });
                     setSubmitting(false);
                 } catch (err) {
-                 const message = (err as { data: { message: string } })?.data
-                     .message;
+                    const message = (err as { data: { message: string } })?.data
+                        .message;
                     toast.error(message);
                     setStatus({ success: false });
                 }
