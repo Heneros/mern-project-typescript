@@ -58,7 +58,7 @@ export const Login = () => {
                 <Row className="justify-content-center">
                     <Col xs={12} className="text-center">
                         <h6>
-                            Don't have an account?{' '}
+                            Don't have an account?
                             <Link
                                 to="/registration"
                                 className="text-decoration-none"

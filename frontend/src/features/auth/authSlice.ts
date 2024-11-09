@@ -4,32 +4,24 @@ import { User } from 'shared/types/User';
 
 interface AuthSlice {
     user: User | null;
-    googleToken?: string | null;
-    githubToken?: string | null;
+    googleToken: string | null;
+    githubToken: string | null;
 }
 
-const userString = localStorage.getItem('user') || '';
+const userToken = localStorage.getItem('user');
 const googleToken = localStorage.getItem('googleToken');
 const githubToken = localStorage.getItem('githubToken');
 
-let user: User | null = null;
+let parsedUser: User | null = null;
 
-if (userString) {
-    try {
-        user = JSON.parse(userString);
-    } catch (error) {
-        console.error('Error parsing user data:', error);
-    }
+try {
+    parsedUser = userToken ? JSON.parse(userToken) : null;
+} catch (e) {
+    console.error('Error parsing stored user:', e);
 }
 
-const decodedToken: User | null = googleToken ? decodeToken(googleToken) : null;
-
 const initialState: AuthSlice = {
-    user:
-        user ||
-        (decodedToken && typeof decodedToken === 'object'
-            ? decodedToken
-            : null),
+    user: parsedUser,
     googleToken: googleToken ?? null,
     githubToken: githubToken ?? null,
 };
@@ -52,10 +44,12 @@ const authSlice = createSlice({
         updateGoogleToken: (state, action: PayloadAction<string>) => {
             state.googleToken = action.payload;
             localStorage.setItem('googleToken', action.payload);
+            //  localStorage.setItem('user', JSON.stringify(action.payload));
         },
         updateGithubToken: (state, action: PayloadAction<string>) => {
             state.githubToken = action.payload;
             localStorage.setItem('githubToken', action.payload);
+            // localStorage.setItem('user', JSON.stringify(action.payload));
         },
     },
 });
@@ -70,17 +64,18 @@ export const selectCurrentUserToken = (state: {
     const token = state.auth.user?.accessToken;
     return Array.isArray(token) ? token[0] : token;
 };
+
 export const selectCurrentUserGoogleToken = (state: {
     auth: AuthSlice;
-}): string | undefined => {
-    const googleToken = state.auth.user?.googleToken;
-    return Array.isArray(googleToken) ? googleToken[0] : googleToken;
+}): string | null => {
+    // const googleToken = state.auth.user?.googleToken;
+    // return Array.isArray(googleToken) ? googleToken[0] : googleToken;
+    return state.auth.googleToken;
 };
 
 export const selectCurrentUserGithubToken = (state: {
     auth: AuthSlice;
-}): string | undefined => {
+}): string | null => {
     //  return state.auth.githubToken;
-    const githubToken = state.auth.user?.githubToken;
-    return Array.isArray(githubToken) ? githubToken[0] : githubToken;
+    return state.auth.githubToken;
 };

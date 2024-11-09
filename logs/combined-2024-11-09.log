@@ -1,0 +1,7306 @@
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-09 09:17:30.793 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '457',
+  response_time: 67.237,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 09:32:05.906 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 121.062,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 09:32:05.967 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '457',
+  response_time: 957.656,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 10:33:29.176 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 200,
+  content_length: '79',
+  response_time: 1101.025,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 10:33:29.306 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '2719',
+  response_time: 1631.814,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 10:33:29.852 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 2.335,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 10:33:34.769 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=99a06170bcf8339b8905',
+  status: 200,
+  content_length: '572',
+  response_time: 1142.832,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 10:33:36.898 AM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 500,
+  content_length: 1367,
+  response_time: 6.281,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 10:33:37.017 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '320',
+  response_time: 167.572,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 10:33:53.307 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 251.682,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 10:34:05.697 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-09 11:04:32.046 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '29',
+  response_time: 1.497,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:04:59.326 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 1367,
+  response_time: 2.897,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:04:59.434 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.368,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:09.566 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 1367,
+  response_time: 0.737,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:09.669 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.272,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:10.172 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 1367,
+  response_time: 1.561,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:10.280 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.156,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:10.631 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 1367,
+  response_time: 0.568,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:10.739 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '29',
+  response_time: 0.281,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:31.914 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 1367,
+  response_time: 1.571,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:32.005 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '29',
+  response_time: 0.151,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:32.591 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 1367,
+  response_time: 0.533,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:32.669 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '29',
+  response_time: 0.158,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:32.999 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: 1367,
+  response_time: 0.582,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:33.091 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 11:05:43.163 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: 569,
+  response_time: 2.944,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.337 AM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1055976,
+  response_time: 1.111,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.382 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 200,
+  content_length: 52917,
+  response_time: 2.746,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.501 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 200,
+  content_length: 65834,
+  response_time: 2.541,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.505 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 200,
+  content_length: 2512,
+  response_time: 11.701,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.516 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 200,
+  content_length: 1871,
+  response_time: 12.148,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.516 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 200,
+  content_length: 143848,
+  response_time: 11.727,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.518 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 92.451,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.600 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 200,
+  content_length: 2398,
+  response_time: 4.25,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.618 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 200,
+  content_length: 2111,
+  response_time: 3.555,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.619 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 200,
+  content_length: 2651,
+  response_time: 3.966,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.620 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 200,
+  content_length: 2223,
+  response_time: 4.711,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.621 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 200,
+  content_length: 2897,
+  response_time: 5.451,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.622 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 187.608,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.701 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 200,
+  content_length: 569,
+  response_time: 2.178,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:46.972 AM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.587,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.749 AM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.512,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.778 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.319,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.867 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.256,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.867 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.706,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.868 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.988,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.877 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.806,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.880 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 94.845,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.981 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 1.73,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.992 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.599,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.993 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.123,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.994 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 0.45,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.995 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 0.948,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:47.996 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 145.29,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:48.034 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.557,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:48.168 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 82.186,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:50.490 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 304,
+  response_time: 117.559,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:50.522 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 157.707,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:50.568 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.997,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:51.270 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 200,
+  content_length: 62023,
+  response_time: 4.608,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:51.271 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.22,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:53.492 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=ebc69486f21e8934bb28',
+  status: 200,
+  content_length: '572',
+  response_time: 1344.226,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:55.404 AM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 200,
+  content_length: 569,
+  response_time: 1.219,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:55.475 AM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.653,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:55.499 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 200,
+  content_length: 43950,
+  response_time: 1.475,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:55.607 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.631,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:55.625 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.493,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:58.457 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.676,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:05:58.988 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.572,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:00.511 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.486,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:00.792 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.808,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:01.034 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.577,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:01.329 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.539,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:01.655 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 204,
+  response_time: 0.438,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.846 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.097,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.850 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.475,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.851 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 0.554,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.860 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 0.624,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.862 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.317,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.862 AM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 4.153,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.866 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 47.686,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.903 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.238,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.919 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.607,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.920 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 1.765,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.920 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 1.938,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.921 AM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.88,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:07.923 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 207.082,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 11:06:08.064 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 02:02:01.592 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 3.389,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:07.655 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.871,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:07.716 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.4,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:07.895 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.262,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:07.896 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.939,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:07.919 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.24,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:07.920 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 0.515,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:07.921 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 86.337,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:08.022 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 3.276,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:08.047 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.212,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:08.048 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.803,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:08.049 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 3.23,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:08.050 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.842,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:08.051 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 138.147,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:08.080 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 200,
+  content_length: 569,
+  response_time: 2.699,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:02:08.498 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.009,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:43.919 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 200,
+  content_length: 62023,
+  response_time: 3.149,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:43.920 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 200,
+  content_length: 569,
+  response_time: 1.034,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:44.768 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.011,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:44.796 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.458,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:44.869 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.665,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:44.893 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 0.581,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:46.761 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.316,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:46.783 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 1.143,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:46.874 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.587,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:46.902 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.714,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:48.412 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 0.823,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:48.415 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.489,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:48.417 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 200,
+  content_length: 43950,
+  response_time: 3.868,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:48.418 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:48.924 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.138,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:50.347 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=2db5756ccf03eff5fbfc',
+  status: 200,
+  content_length: '572',
+  response_time: 1032.227,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:52.320 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.569,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:52.380 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.438,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:52.410 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.357,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:52.501 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.89,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:03:52.532 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 0.325,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:36.550 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=99e32828beea6b44a43b',
+  status: 200,
+  content_length: '572',
+  response_time: 1192.398,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:38.497 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.702,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:38.648 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.351,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:38.678 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.617,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:39.010 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.876,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:39.055 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 200,
+  content_length: 569,
+  response_time: 0.858,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:46.866 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.734,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:46.898 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.355,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:47.204 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.937,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:47.260 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 0.38,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:52.546 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google/redirect?code=4%2F0AVG7fiRXLK9tB3dqejYrpB1qn7Gjnk6vQrZoYR052EtfaR8aJfycY0vWlLyrVMMCbV2tjQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent',
+  status: 200,
+  content_length: '716',
+  response_time: 924.893,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:58.481 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 1.649,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:58.699 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.459,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:58.738 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.4,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:59.017 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.722,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:06:59.058 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.706,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:07:02.076 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.709,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:07:02.595 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.642,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 02:07:02.769 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 02:37:55.283 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:21:59.809 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:41:19.951 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 57.346,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:41:20.875 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 106.176,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:41:20.933 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:50:36.227 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:53:38.791 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:53:54.028 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:54:35.699 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:54:49.139 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 200,
+  content_length: 569,
+  response_time: 3.686,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:54:54.677 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.131,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:54:55.001 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.94,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:54:55.235 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.376,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:54:55.294 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.147,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:04.619 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=ae1ab53565e5a50142c5',
+  status: 200,
+  content_length: '567',
+  response_time: 677.333,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:05.646 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 1.163,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:05.801 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.343,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:05.830 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.411,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:06.096 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.529,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:06.131 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:55:34.672 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 3.188,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:34.981 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.735,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:35.018 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.548,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:35.279 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.643,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:35.346 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.361,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:38.871 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=330c9d1492f5fd1ef1ca',
+  status: 200,
+  content_length: '572',
+  response_time: 722.786,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:39.928 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.994,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:40.090 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.42,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:40.113 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.368,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:40.382 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.615,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:40.416 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 3.083,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:42.490 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 2.479,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:42.491 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 3.582,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:42.493 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 6.697,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.086 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.678,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.087 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 2.847,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.089 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.951,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.091 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 53.153,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.135 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.334,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.147 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.294,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.148 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.983,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.149 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 3.49,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.150 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.858,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.151 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 106.403,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:43.190 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.896,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:44.159 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 3.025,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:44.162 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.487,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:55:59.761 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.582,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:56:01.561 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.336,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:56:01.593 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.313,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:56:01.784 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.7,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:56:01.812 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.624,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:56:02.948 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.316,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:56:02.973 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.298,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:56:03.146 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.577,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:56:03.188 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 03:56:55.164 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 3.688,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:44.414 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1055972,
+  response_time: 1.843,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:44.472 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 1.154,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:44.669 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.605,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:44.718 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 0.617,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:49.938 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.366,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:49.968 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.309,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:50.184 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.654,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:50.225 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.193,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:51.263 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=11e2f6e974f79ba521ff',
+  status: 200,
+  content_length: '572',
+  response_time: 651.86,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:52.230 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.634,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:52.381 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.45,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:52.410 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 1.088,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:52.630 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.698,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:58:52.670 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.594,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:00.652 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.4,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:00.685 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.391,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:00.860 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.077,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:00.915 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.566,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:02.497 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.373,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:02.536 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.312,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:02.670 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.536,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:02.720 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.602,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:14.573 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.34,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:14.619 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.476,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:14.830 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.656,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:14.860 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.497,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:18.775 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.463,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:18.812 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.374,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:19.042 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.556,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:19.092 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.521,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:26.658 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.359,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:26.701 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.438,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:26.926 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.824,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 03:59:26.968 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.775,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:14.189 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.412,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:14.284 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.627,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:14.508 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.631,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:14.580 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.464,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.886 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.649,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.887 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.737,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.897 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.184,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.897 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.312,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.899 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.17,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.900 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.312,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.942 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.229,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.963 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.998,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.964 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.268,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.964 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.435,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.965 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 2.724,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.965 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 103.571,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:15.996 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.432,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:17.397 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.537,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:17.404 PM'
+}
+{
+  method: 'GET',
+  url: '/my-account',
+  status: 200,
+  content_length: 569,
+  response_time: 1.075,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:19.897 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.289,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:19.946 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.731,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:20.184 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.647,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:26.204 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.5,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:26.247 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:26.506 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.491,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:00:26.544 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.774,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:12.874 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.398,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:13.247 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.278,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:13.351 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.583,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:13.387 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.672,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.862 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.932,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.866 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 7.271,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.873 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.549,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.874 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.351,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.875 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.46,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.875 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.496,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.921 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.054,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.950 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 1.247,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.951 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.262,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.952 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 3.247,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.953 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.306,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.953 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 103.039,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:14.975 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:02:28.592 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 2.279,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:29.904 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.704,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.034 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 0.891,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.199 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.188,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.200 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 2.038,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.211 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.479,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.212 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.874,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.213 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 60.905,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.300 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 3.775,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.323 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.978,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.324 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.451,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.324 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.827,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.325 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 0.87,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.328 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 107.341,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.354 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.696,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.679 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.404,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.791 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.365,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:30.842 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.806,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.077 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.063,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.083 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.32,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.084 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.296,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.091 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.155,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.092 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.79,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.093 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.393,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.199 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 0.494,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.332 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.333,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.334 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.036,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.340 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.916,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.340 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.333,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.341 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 50.472,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.410 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 1.142,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.434 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.057,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.434 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.867,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.436 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 1.258,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.437 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 1.611,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.438 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 107.425,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.469 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.811,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:31.691 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.586,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:33.505 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.526,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:33.506 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.596,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:34.017 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.698,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:41.067 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.372,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:41.102 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.404,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:41.314 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.825,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:41.374 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 54.081,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:45.033 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 101.06,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:45.083 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 204,
+  response_time: 0.63,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:51.678 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 50.853,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:51.732 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 108.588,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:51.792 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.95,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:54.427 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 100.137,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:02:54.476 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.192,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:04.006 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=22db04497d4445aa3082',
+  status: 200,
+  content_length: '572',
+  response_time: 692.409,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:05.219 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.873,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:05.396 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.476,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:05.425 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.486,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:05.718 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.874,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:05.747 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.599,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:12.777 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.491,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:12.808 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.395,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:13.050 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.635,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:03:13.123 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:03:43.127 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 3.547,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:04:55.355 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1056046,
+  response_time: 1.879,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:04:55.407 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.36,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:04:55.633 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.727,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:04:55.671 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.608,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:01.862 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.487,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:02.409 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.413,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:02.510 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.613,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:02.536 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.171,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:09.139 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=781a30d9925a4858c6e5',
+  status: 200,
+  content_length: '572',
+  response_time: 661.471,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:10.111 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.809,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:10.262 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.16,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:10.290 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.593,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:10.493 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.688,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:05:10.520 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:06:01.835 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 2.991,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:03.455 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1056156,
+  response_time: 2.902,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:04.057 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.407,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:04.183 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.736,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:04.209 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.402,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:10.449 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 2.19,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:10.450 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 3.207,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:10.456 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.426,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:11.337 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.753,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:11.339 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.141,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:13.393 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=f224f59e898bf58abee6',
+  status: 200,
+  content_length: '572',
+  response_time: 703.352,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:14.423 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.81,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:14.592 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.424,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:14.629 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.451,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:14.866 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.794,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:06:14.899 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 0.413,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:13.299 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google/redirect?code=4%2F0AVG7fiQpc6dha4An2zDGB83MrUlBjPB1eBCXyHohu1ldEfaKk4i1upzt3ylD_p-tSrW_cQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent',
+  status: 200,
+  content_length: '716',
+  response_time: 373.507,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:18.022 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.794,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:18.199 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.406,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:18.237 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 1.31,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:18.508 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.65,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:18.551 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.741,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:21.858 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.653,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:22.315 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.622,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:22.764 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.786,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.755 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 4.709,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.765 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 2.875,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.766 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 3.701,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.767 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.068,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.769 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.995,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.770 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 54.632,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.813 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 1.845,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.828 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.749,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.828 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.285,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.829 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.874,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.830 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.559,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.831 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 106.539,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:23.867 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.726,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:24.888 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.79,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:25.589 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.68,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:25.891 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.655,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:09:26.065 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.687,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:22.271 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.668,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:22.830 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.671,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:23.108 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.846,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:23.388 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.54,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:24.549 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.391,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:24.584 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.318,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:24.790 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.713,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:24.833 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.649,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:26.014 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.433,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:26.043 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.284,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:26.279 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.599,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:26.314 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.595,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:36.343 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.58,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:36.992 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.971,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:45.987 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.495,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:46.475 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.717,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:46.700 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.627,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:46.913 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.677,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:47.090 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.496,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:20:47.214 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:22:00.238 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 3.295,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:21.568 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.694,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:21.648 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.386,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:21.838 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.813,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:21.881 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.691,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:23.403 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.303,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:23.431 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.363,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:23.649 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.461,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:23.706 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 204,
+  response_time: 1.644,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.659 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 4.566,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.668 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 5.312,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.669 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 5.914,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.670 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 6.382,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.687 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.63,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.689 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 4.621,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.693 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 56.959,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.738 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 4.085,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.760 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.639,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.761 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.109,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.762 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.564,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.762 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.045,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.763 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 105.795,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:27.781 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 1.394,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:29.161 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.741,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:29.163 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.506,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:30.816 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=b08aa41d6355552c5ce6',
+  status: 200,
+  content_length: '572',
+  response_time: 679.708,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:31.820 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.679,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:31.978 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.451,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:32.005 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 1.233,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:32.257 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.882,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:32.288 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.656,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:34.555 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.378,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:34.579 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.481,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:34.789 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.001,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:34.825 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.569,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:35.337 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.483,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:35.362 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.325,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:35.574 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.701,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:51:35.609 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:52:08.506 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 3.529,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:11.105 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1056165,
+  response_time: 2.021,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:11.200 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.495,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:11.364 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.676,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:11.406 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.391,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:13.676 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=98778fb3817babbd48ae',
+  status: 200,
+  content_length: '572',
+  response_time: 694.847,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:14.710 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.683,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:14.871 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.474,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:14.899 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.424,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:15.135 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.589,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:15.163 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.649,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:16.464 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.343,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:16.490 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.363,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:16.721 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.795,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:16.760 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.558,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:18.357 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.686,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:18.359 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 0.408,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:19.507 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google/redirect?code=4%2F0AVG7fiRMkhw4sREka9d0Kgu3AH_GpnDeRpryyWgtAqE3YHE4CL-kHq2oAyaCuLhD89wA3w&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent',
+  status: 200,
+  content_length: '716',
+  response_time: 376.679,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:24.169 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 1.729,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:24.363 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.4,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:24.391 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.358,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:24.660 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.731,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:53:24.701 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:54:15.431 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:55:00.907 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 200,
+  content_length: 52917,
+  response_time: 3.766,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:03.780 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 200,
+  content_length: 65834,
+  response_time: 6.408,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:03.782 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 200,
+  content_length: 1871,
+  response_time: 2.569,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:03.806 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 200,
+  content_length: 2512,
+  response_time: 5.114,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:03.807 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.135,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.192 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.582,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.463 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.435,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.494 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 2.498,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.570 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 2.952,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.572 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 3.407,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.573 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 0.748,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.576 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.111,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.576 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 57.897,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.644 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 0.83,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.654 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.286,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.658 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 1.572,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.659 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.039,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.660 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.689,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.662 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 108.845,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.702 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.303,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:04.896 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.805,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:06.077 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.111,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:06.080 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 1.049,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:12.920 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.404,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:12.921 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '320',
+  response_time: 200.146,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:31.096 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.465,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:31.151 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.495,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.191 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.967,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.191 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.338,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.194 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.649,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.202 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 0.932,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.207 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 2.212,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.209 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.775,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.248 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.379,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.292 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.664,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.293 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 1.821,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.295 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 3.347,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.295 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 101.495,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.298 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 0.326,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.299 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 200,
+  content_length: '79',
+  response_time: 119.045,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:54.305 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 2.411,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:55.317 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 3.055,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:55.318 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.675,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:58.340 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.307,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:58.343 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '320',
+  response_time: 175.925,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:59.824 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.731,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:57:59.851 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:59:05.038 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 11.025,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:12.431 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 7.327,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:12.435 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 7.978,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:12.436 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.101,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:12.439 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 2.295,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:12.441 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.633,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:12.442 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 04:59:12.940 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 304,
+  response_time: 839.383,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:13.266 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 867.235,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:13.287 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 3.329,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:13.305 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.193,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:13.306 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.688,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:13.307 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 3.184,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:13.307 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 3.577,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:13.308 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 917.236,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:13.341 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.996,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:14.116 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.614,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:14.117 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.076,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:15.946 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=66260b58e200d67fe2bf',
+  status: 200,
+  content_length: '595',
+  response_time: 667.401,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:16.950 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.808,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:17.103 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.408,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:17.133 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.442,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:17.371 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.945,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:17.413 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 0.244,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:22.643 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=04c1ac6a0ebc816f4fec',
+  status: 200,
+  content_length: '595',
+  response_time: 719.905,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:23.615 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.738,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:23.795 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.561,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:23.821 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.335,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:24.093 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.736,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 04:59:24.155 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 05:02:58.804 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 3.2,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:03.788 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1056165,
+  response_time: 2.143,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:03.881 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.415,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:04.048 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.757,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:04.113 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.532,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:05.327 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.386,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:05.364 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.39,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:05.585 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.693,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:05.619 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.736,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:11.249 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.466,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:11.277 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.401,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:11.460 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.581,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:11.516 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.279,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:12.586 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=c13fa418048d37798318',
+  status: 200,
+  content_length: '595',
+  response_time: 663.622,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:13.602 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.631,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:13.766 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.387,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:13.809 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.409,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:14.019 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.835,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:14.062 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.551,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:17.001 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.75,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:17.038 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.324,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:17.231 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.722,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:17.287 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.563,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:17.759 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.436,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:17.792 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.309,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:18.009 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.509,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:03:18.073 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 1.083,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:04:52.023 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.409,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:04:52.177 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.42,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:04:52.306 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.18,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:04:52.369 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 05:05:16.063 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 2.856,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:20.468 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1056164,
+  response_time: 2.926,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:20.561 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.512,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:20.906 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.752,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:20.941 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.499,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:22.953 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.703,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:22.958 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 1.17,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:25.065 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google/redirect?code=4%2F0AVG7fiR2P8_YGyWZX7jnGP97iYnqlbzN_ayH2M4uVndfl61PrTO8AJGBbAGgtZ0jgUGZrg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent',
+  status: 200,
+  content_length: '739',
+  response_time: 384.732,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:28.665 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 1.038,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:28.849 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.424,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:28.887 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.355,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:29.167 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.836,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:29.223 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.363,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:31.042 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.747,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:31.476 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.708,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:31.639 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:31.796 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.645,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:31.954 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.798,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:32.128 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 204,
+  response_time: 0.526,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.227 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.812,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.235 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 2.849,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.237 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 3.473,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.238 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 2.138,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.248 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 1.474,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.251 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.242,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.251 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 55.15,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.299 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 1.544,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.309 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 1.243,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.310 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 1.603,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.311 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.009,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.311 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 2.575,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.312 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 111.168,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:05:42.357 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 05:07:51.384 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 3.886,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:03.878 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 1.157,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:03.972 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1056123,
+  response_time: 1.556,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.007 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.397,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.117 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.014,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.121 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.157,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.122 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.645,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.153 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.439,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.809 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.496,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.832 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.436,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.923 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.14,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.926 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.248,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.927 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.612,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:04.960 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.374,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.379 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.426,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.410 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.385,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.494 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.171,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.495 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 2.482,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.497 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.529,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.524 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.377,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.755 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.38,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.787 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 1.27,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.874 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.073,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.874 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 2.596,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.876 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.57,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:10:05.908 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 1.023,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:38.351 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.413,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:38.518 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.615,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:38.581 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.536,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:38.586 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.115,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:38.586 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.605,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:38.635 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.351,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:39.315 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.377,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:39.342 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 2.922,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:39.417 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.497,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:39.418 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.94,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:39.419 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.538,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:34:39.433 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 05:35:04.642 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 2.143,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:40.988 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1056094,
+  response_time: 1.906,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.068 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.094,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.164 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.503,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.167 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 9.74,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.180 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 7.338,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.181 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 7.516,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.181 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 58.577,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.233 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 1.627,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.275 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.068,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.275 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.397,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.276 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 0.531,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.277 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 1.68,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.279 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 105.41,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.289 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.564,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:41.532 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.628,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:42.582 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.666,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:42.586 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.185,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:48.344 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=e1c3bd70ae5826ca7d37',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:48.904 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 0.21,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:48.917 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=a679a3f702fc79ee2853',
+  status: 200,
+  content_length: '595',
+  response_time: 507.015,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:49.714 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.811,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:49.867 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.464,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:49.893 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.342,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:50.126 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.639,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:35:50.172 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 05:36:52.774 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 2.872,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:55.320 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1056053,
+  response_time: 1.729,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:55.365 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.386,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:55.587 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 1.543,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:55.709 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.463,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:55.789 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.382,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:55.991 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.556,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:56.319 PM'
+}
+{
+  method: 'GET',
+  url: '/login',
+  status: 304,
+  response_time: 0.624,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:58.255 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.682,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:58.350 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.421,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:58.486 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.702,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:36:58.626 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.667,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:01.752 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=231f1f6b9b6481ed225a',
+  status: 200,
+  content_length: '595',
+  response_time: 674.964,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:02.744 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 2.093,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:02.945 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.337,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:02.990 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.337,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:03.209 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.486,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:03.263 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.479,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:05.282 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 0.382,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:05.285 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.897,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:05.286 PM'
+}
+{
+  method: 'GET',
+  url: '/contact-us',
+  status: 200,
+  content_length: 569,
+  response_time: 1.272,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:08.116 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.075,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:08.153 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.797,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:08.326 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 0.753,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:08.327 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.277,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:08.332 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.671,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:08.370 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 1.64,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:09.146 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.628,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:09.148 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 0.504,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:11.141 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.4,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:11.178 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.341,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:11.358 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.689,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:37:11.414 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 0.639,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:16.225 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.454,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:16.279 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.417,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:16.478 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.805,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:16.520 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 05:42:42.890 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 3.464,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:43.800 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1055907,
+  response_time: 1.79,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:43.853 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.384,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:44.079 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.97,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:44.134 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 0.597,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:44.556 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.351,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:44.579 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.467,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:44.815 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.634,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:44.856 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github',
+  status: 302,
+  content_length: '0',
+  response_time: 1.208,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:48.675 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/github/callback?code=e982f3f91b155a1a00f5',
+  status: 200,
+  content_length: '595',
+  response_time: 708.106,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:49.728 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.688,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:49.874 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.359,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:49.903 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.39,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:50.083 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.718,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:42:50.118 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.611,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:29.793 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.449,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:29.840 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.406,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:30.042 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.707,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:30.094 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.482,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:33.498 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.575,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:33.499 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.807,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:33.503 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 1.741,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:34.109 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 3.971,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:34.113 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.895,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:35.807 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 106.309,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:35.909 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.996,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:36.289 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.325,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:36.290 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.998,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:36.294 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.31,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:36.625 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.641,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:36.628 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.561,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:42.359 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.366,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:42.409 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.35,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:42.595 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.578,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:43:42.633 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 05:45:42.727 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 4.545,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:52.915 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1055917,
+  response_time: 1.689,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:52.959 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.39,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:53.167 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.611,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:53.209 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.444,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:55.125 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.814,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:55.130 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 0.563,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:55.984 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.356,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:56.014 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.592,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:56.223 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.925,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:56.279 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 2.884,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.660 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 1.315,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.671 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.818,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.672 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 7.913,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.678 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.472,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.679 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 0.46,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.683 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 59.688,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.721 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured-icon.png',
+  status: 304,
+  response_time: 2.652,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.733 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-01.png',
+  status: 304,
+  response_time: 2.04,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.734 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-02.png',
+  status: 304,
+  response_time: 2.298,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.734 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-03.png',
+  status: 304,
+  response_time: 2.568,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.735 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/info-icon-04.png',
+  status: 304,
+  response_time: 2.967,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.735 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 304,
+  response_time: 112.166,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:45:57.779 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.949,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:52:19.156 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.638,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:52:20.263 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.574,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:52:20.265 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.583,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:52:20.268 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.194,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:52:20.269 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 1.232,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 05:52:20.941 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 0.716,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:01:05.599 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 0.426,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:01:05.662 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.338,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:01:05.861 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.62,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:01:05.918 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 06:01:51.784 PM'
+}
+{
+  method: 'GET',
+  url: '/registration',
+  status: 304,
+  response_time: 3.247,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:19.566 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 200,
+  content_length: 1055815,
+  response_time: 1.698,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:19.609 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 0.386,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:19.842 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.989,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:19.898 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 0.641,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:22.429 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 3.284,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:22.434 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 2.541,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:22.435 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 2.675,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:22.437 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.679,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:22.894 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google',
+  status: 302,
+  content_length: '0',
+  response_time: 1.203,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:27.370 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/google/redirect?code=4%2F0AVG7fiSmw164yFlA26QWtY0H8Rzl881A77eyBC7J8HoCx19EH-VnATw9cRewUFg4n4NFHQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent',
+  status: 200,
+  content_length: '739',
+  response_time: 413.97,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:38.085 PM'
+}
+{
+  method: 'GET',
+  url: '/personal-account',
+  status: 304,
+  response_time: 0.816,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:38.279 PM'
+}
+{
+  method: 'GET',
+  url: '/bundle.js',
+  status: 304,
+  response_time: 1.773,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:38.316 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/page-heading-bg.jpg',
+  status: 304,
+  response_time: 0.437,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:38.557 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.624,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:38.614 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 1.439,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:40.810 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.355,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:40.811 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.682,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:40.816 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/featured.jpg',
+  status: 304,
+  response_time: 1.474,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:41.295 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 304,
+  response_time: 0.844,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 06:02:41.297 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 06:03:38.144 PM'
+}

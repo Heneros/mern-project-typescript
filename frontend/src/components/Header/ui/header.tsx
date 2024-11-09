@@ -15,6 +15,10 @@ import { useLogoutUserMutation } from 'features/auth/authApiSlice';
 import { useAppSelector } from 'shared/lib/store';
 
 import './header.css';
+import {
+    selectCurrentUserGithubToken,
+    selectCurrentUserGoogleToken,
+} from 'features/auth/authSlice';
 
 export const Header = () => {
     const menuRef = useRef<HTMLUListElement>(null);
@@ -27,9 +31,11 @@ export const Header = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
     const { user: userInfo } = useAppSelector((state) => state.auth);
+    const tokenGoogle = useAppSelector(selectCurrentUserGoogleToken);
+    const tokenGithub = useAppSelector(selectCurrentUserGithubToken);
 
-    ///  console.log('userInfo', userInfo);
 
+    console.log(tokenGoogle);
     const handleOpenMenu = (e: React.MouseEvent) => {
         e.preventDefault();
         if (isMobile) {
@@ -219,7 +225,9 @@ export const Header = () => {
                                             Contact Us
                                         </Link>
                                     </li>
-                                    {!userInfo ? (
+                                    {!userInfo ||
+                                    !tokenGithub ||
+                                    !tokenGoogle ? (
                                         <>
                                             <li>
                                                 <Link

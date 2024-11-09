@@ -12,7 +12,7 @@ import {
     resetPasswordRequest,
 } from '../controllers/auth/passwordResetController';
 import logoutUser from '../controllers/auth/logoutController';
-import User from '../models/userModel';
+
 import feedbackFormController from '../controllers/auth/feedbackFormController';
 import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
 
@@ -44,7 +44,7 @@ router.route('/github/callback').get(
         failureRedirect: `${domain}/login?error=auth_failed`,
     }),
 
-    handleOAuthCallback,
+    handleOAuthCallback('githubToken'),
 );
 
 router.route('/google').get(
@@ -63,7 +63,7 @@ router.route('/google/redirect').get(
         failureRedirect: '/login',
         session: false,
     }),
-    handleOAuthCallback,
+    handleOAuthCallback('googleToken'),
 );
 
 export default router;
