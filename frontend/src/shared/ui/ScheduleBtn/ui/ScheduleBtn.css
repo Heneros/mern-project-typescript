@@ -1,0 +1,17 @@
+.lastBtnHeader{
+    cursor: pointer;
+display: block;
+    padding-right: 20px;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.4s ease 0s;
+    border: transparent;
+    letter-spacing: .25px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    border-radius: 20px;
+    padding-left: 0;
+}

@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useLocation } from 'react-router-dom';
 import { DropdownCart } from 'entities/СartHeader/index';
 import { useLogoutUserMutation } from 'features/auth/authApiSlice';
-import { useAppSelector } from 'shared/lib/store';
+import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 
 import './header.css';
 import {
@@ -23,19 +23,18 @@ import {
 export const Header = () => {
     const menuRef = useRef<HTMLUListElement>(null);
     const [open, setOpen] = useState(false);
-
+    const dispatch = useAppDispatch();
     const location = useLocation();
     const [logoutAction] = useLogoutUserMutation();
     const headerRef = useRef<HTMLDivElement | null>(null);
     const [isSticky, setIsSticky] = useState(false);
+    const [showHeader, setShowHeader] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
     const { user: userInfo } = useAppSelector((state) => state.auth);
     const tokenGoogle = useAppSelector(selectCurrentUserGoogleToken);
     const tokenGithub = useAppSelector(selectCurrentUserGithubToken);
 
-
-    console.log(tokenGoogle);
     const handleOpenMenu = (e: React.MouseEvent) => {
         e.preventDefault();
         if (isMobile) {
@@ -56,7 +55,7 @@ export const Header = () => {
 
     const logoutHandler = async () => {
         try {
-            await logoutAction(undefined).unwrap();
+            await dispatch(logoutAction(undefined)).unwrap();
         } catch (error) {
             console.log(error);
         }
@@ -100,6 +99,7 @@ export const Header = () => {
         };
     }, []);
 
+    const isLoggedIn = Boolean(userInfo || tokenGoogle || tokenGithub);
     return (
         <>
             <div className="sub-header">
@@ -225,26 +225,7 @@ export const Header = () => {
                                             Contact Us
                                         </Link>
                                     </li>
-                                    {!userInfo ||
-                                    !tokenGithub ||
-                                    !tokenGoogle ? (
-                                        <>
-                                            <li>
-                                                <Link
-                                                    to="/registration"
-                                                    className={
-                                                        isCurrentPath(
-                                                            '/registration',
-                                                        )
-                                                            ? 'active'
-                                                            : ''
-                                                    }
-                                                >
-                                                    Registration
-                                                </Link>
-                                            </li>
-                                        </>
-                                    ) : (
+                                    {isLoggedIn ? (
                                         <>
                                             <li>
                                                 <Link
@@ -266,6 +247,23 @@ export const Header = () => {
                                                     onClick={logoutHandler}
                                                 >
                                                     Log Out
+                                                </Link>
+                                            </li>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <li>
+                                                <Link
+                                                    to="/registration"
+                                                    className={
+                                                        isCurrentPath(
+                                                            '/registration',
+                                                        )
+                                                            ? 'active'
+                                                            : ''
+                                                    }
+                                                >
+                                                    Registration
                                                 </Link>
                                             </li>
                                         </>

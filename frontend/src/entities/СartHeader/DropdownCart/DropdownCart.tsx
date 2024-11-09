@@ -13,16 +13,13 @@ export const DropdownCart = () => {
     const itemsCart = useAppSelector((state) => state.cart);
 
     ///   console.log(itemsCart);
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
         // console.log(itemsCart);
         setIsOpen((prev) => !prev);
         // console.log(isOpen);
     };
-    // useEffect(() => {
-    //     console.log('Dropdown menu state isOpen:', isOpen);
-    // }, [isOpen]);
 
     return (
         <li className="dropdown">

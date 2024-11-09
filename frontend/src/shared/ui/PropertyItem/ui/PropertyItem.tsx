@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import { PostInfo } from 'shared/types';
 import { addToCart, ICartItem } from 'entities/СartHeader/index';
 import { formatPrice } from 'shared/utils/cartFunctions';
+import { ScheduleBtn } from 'shared/ui/ScheduleBtn';
 
 export const PropertyItem: React.FC<PostInfo> = ({
     _id,
@@ -73,9 +74,10 @@ export const PropertyItem: React.FC<PostInfo> = ({
                     </li>
                 </ul>
                 <div className="main-button">
-                    <Link to="#" onClick={addToCartHandler}>
+                    {/* <Link to="#" onClick={addToCartHandler}>
                         Schedule a visit
-                    </Link>
+                    </Link> */}
+                    <ScheduleBtn isInCart={false} onClick={addToCartHandler} />
                 </div>
             </div>
         </div>

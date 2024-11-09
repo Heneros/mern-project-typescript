@@ -37,6 +37,7 @@ const authSlice = createSlice({
         logOut: (state) => {
             state.user = null;
             state.googleToken = null;
+            state.githubToken = null;
             localStorage.removeItem('user');
             localStorage.removeItem('googleToken');
             localStorage.removeItem('githubToken');
