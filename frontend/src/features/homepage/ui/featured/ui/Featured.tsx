@@ -12,6 +12,7 @@ import InfoIcon from 'shared/assets/icons/info-icon-01.png';
 import InfoIconTwo from 'shared/assets/icons/info-icon-02.png';
 import InfoIconThree from 'shared/assets/icons/info-icon-03.png';
 import InfoIconFour from 'shared/assets/icons/info-icon-04.png';
+import Accordion from 'widgets/accordion/Accordion';
 
 export const Featured: React.FC<{ items: PostInfo[] }> = () => {
     const { data, isLoading, error } = useGetSinglePropertyQuery(
@@ -48,58 +49,17 @@ export const Featured: React.FC<{ items: PostInfo[] }> = () => {
                             {data.propertyPage.description.substring(0, 25)}
                         </h2>
                     </div>
-
-                    <div className="accordion" id="accordionExample">
-                        <div className="accordion-item">
-                            <h2 className="accordion-header" id="headingOne">
-                                <button
-                                    className="accordion-button"
-                                    type="button"
-                                    onClick={() => toggleAccordion(0)}
-                                    aria-expanded={activeIndex === 0}
-                                    aria-controls="collapseOne"
-                                >
-                                    Question
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseOne"
-                                className={`accordion-collapse collapse ${activeIndex === 0 ? 'show' : ''}`}
-                                aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div className="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Alias ullam sequi delectus
-                                    ipsa deleniti eligendi, consectetur tempore
-                                    ducimus quisquam officia aliquam porro amet!
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <h2 className="accordion-header" id="headingTwo">
-                                <button
-                                    className="accordion-button"
-                                    type="button"
-                                    onClick={() => toggleAccordion(1)}
-                                    aria-expanded={activeIndex === 1}
-                                    aria-controls="collapseTwo"
-                                >
-                                    Another question?
-                                </button>
-                            </h2>
-                            <div
-                                id="collapseTwo"
-                                className={`accordion-collapse collapse ${activeIndex === 1 ? 'show' : ''}`}
-                                aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample"
-                            >
-                                <div className="accordion-body">
-                                    This is the answer to another question.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <>
+                        {data.propertyPage.questionsAndAnswers ? (
+                            <Accordion
+                                questionsAndAnswers={
+                                    data.propertyPage.questionsAndAnswers
+                                }
+                            />
+                        ) : (
+                            <>No QA</>
+                        )}
+                    </>
                 </div>
                 <div className="col-lg-3">
                     <div className="info-table">

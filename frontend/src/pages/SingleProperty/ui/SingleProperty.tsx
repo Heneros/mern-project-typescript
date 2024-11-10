@@ -10,6 +10,12 @@ import { PropItems } from 'shared/types/PostInfo';
 import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
+import Accordion from 'widgets/accordion/Accordion';
+import FeaturedIcon from 'shared/assets/icons/featured-icon.png';
+import InfoIcon from 'shared/assets/icons/info-icon-01.png';
+import InfoIconTwo from 'shared/assets/icons/info-icon-02.png';
+import InfoIconThree from 'shared/assets/icons/info-icon-03.png';
+import InfoIconFour from 'shared/assets/icons/info-icon-04.png';
 
 export const SingleProperty = () => {
     const { id } = useParams();
@@ -54,135 +60,19 @@ export const SingleProperty = () => {
                                     <h4> {singleP?.title}</h4>
                                     <p>{singleP?.description}</p>
                                 </div>
-                                <div
-                                    className="accordion"
-                                    id="accordionExample"
-                                >
-                                    <div className="accordion-item">
-                                        <h2
-                                            className="accordion-header"
-                                            id="headingOne"
-                                        >
-                                            <button
-                                                className="accordion-button"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne"
-                                                aria-expanded="true"
-                                                aria-controls="collapseOne"
-                                            >
-                                                Best useful links ?
-                                            </button>
-                                        </h2>
-                                        <div
-                                            id="collapseOne"
-                                            className="accordion-collapse collapse show"
-                                            aria-labelledby="headingOne"
-                                            data-bs-parent="#accordionExample"
-                                        >
-                                            <div className="accordion-body">
-                                                Dolor{' '}
-                                                <strong>almesit amet</strong>,
-                                                consectetur adipiscing elit, sed
-                                                doesn't eiusmod tempor kinfolk
-                                                tonx seitan crucifix 3 wolf moon
-                                                bicycle rights keffiyeh
-                                                snackwave wolf same vice,
-                                                chillwave vexillologist
-                                                incididunt ut labore consectetur{' '}
-                                                <code>adipiscing</code> elit,
-                                                sed do eiusmod tempor incididunt
-                                                ut labore et dolore magna
-                                                aliqua.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <h2
-                                            className="accordion-header"
-                                            id="headingTwo"
-                                        >
-                                            <button
-                                                className="accordion-button collapsed"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseTwo"
-                                                aria-expanded="false"
-                                                aria-controls="collapseTwo"
-                                            >
-                                                How does this work ?
-                                            </button>
-                                        </h2>
-                                        <div
-                                            id="collapseTwo"
-                                            className="accordion-collapse collapse"
-                                            aria-labelledby="headingTwo"
-                                            data-bs-parent="#accordionExample"
-                                        >
-                                            <div className="accordion-body">
-                                                Dolor{' '}
-                                                <strong>almesit amet</strong>,
-                                                consectetur adipiscing elit, sed
-                                                doesn't eiusmod tempor kinfolk
-                                                tonx seitan crucifix 3 wolf moon
-                                                bicycle rights keffiyeh
-                                                snackwave wolf same vice,
-                                                chillwave vexillologist
-                                                incididunt ut labore consectetur{' '}
-                                                <code>adipiscing</code> elit,
-                                                sed do eiusmod tempor incididunt
-                                                ut labore et dolore magna
-                                                aliqua.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <h2
-                                            className="accordion-header"
-                                            id="headingThree"
-                                        >
-                                            <button
-                                                className="accordion-button collapsed"
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseThree"
-                                                aria-expanded="false"
-                                                aria-controls="collapseThree"
-                                            >
-                                                Why is Villa the best ?
-                                            </button>
-                                        </h2>
-                                        <div
-                                            id="collapseThree"
-                                            className="accordion-collapse collapse"
-                                            aria-labelledby="headingThree"
-                                            data-bs-parent="#accordionExample"
-                                        >
-                                            <div className="accordion-body">
-                                                Dolor{' '}
-                                                <strong>almesit amet</strong>,
-                                                consectetur adipiscing elit, sed
-                                                doesn't eiusmod tempor kinfolk
-                                                tonx seitan crucifix 3 wolf moon
-                                                bicycle rights keffiyeh
-                                                snackwave wolf same vice,
-                                                chillwave vexillologist
-                                                incididunt ut labore consectetur{' '}
-                                                <code>adipiscing</code> elit,
-                                                sed do eiusmod tempor incididunt
-                                                ut labore et dolore magna
-                                                aliqua.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Accordion
+                                    questionsAndAnswers={
+                                        singleP.questionsAndAnswers
+                                    }
+                                />
+                                {/*Accordion */}
                             </div>
                             <div className="col-lg-4">
                                 <div className="info-table">
                                     <ul>
                                         <li>
                                             <img
-                                                src="assets/images/info-icon-01.png"
+                                                src={InfoIcon}
                                                 alt=""
                                                 style={{ maxWidth: '52px' }}
                                             />
@@ -194,7 +84,7 @@ export const SingleProperty = () => {
                                         </li>
                                         <li>
                                             <img
-                                                src="assets/images/info-icon-02.png"
+                                                src={InfoIconTwo}
                                                 alt=""
                                                 style={{ maxWidth: '52px' }}
                                             />
@@ -206,7 +96,7 @@ export const SingleProperty = () => {
                                         </li>
                                         <li>
                                             <img
-                                                src="assets/images/info-icon-03.png"
+                                                src={InfoIconThree}
                                                 alt=""
                                                 style={{ maxWidth: '52px' }}
                                             />
@@ -218,7 +108,7 @@ export const SingleProperty = () => {
                                         </li>
                                         <li>
                                             <img
-                                                src="assets/images/info-icon-04.png"
+                                                src={InfoIconFour}
                                                 alt=""
                                                 style={{ maxWidth: '52px' }}
                                             />
