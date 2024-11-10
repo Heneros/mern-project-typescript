@@ -16,6 +16,7 @@ const createProperty = asyncHandler(async (req, res) => {
             area,
             floor,
             parking,
+            questionsAndAnswers,
         } = req.body;
 
         if (!title) {
@@ -25,10 +26,6 @@ const createProperty = asyncHandler(async (req, res) => {
         if (!price) {
             res.status(400).json({ message: 'No price' });
         }
-
-        // if (!preview) {
-        //     res.status(400).json({ message: 'No preview' });
-        // }
 
         const propertyExists = await Property.findOne({ title });
 
@@ -49,6 +46,7 @@ const createProperty = asyncHandler(async (req, res) => {
             area,
             floor,
             parking,
+            questionsAndAnswers,
         });
 
         const createdProperty = await newProperty.save();

@@ -11,7 +11,7 @@ export const CartItemBook = ({ _id, title, preview, price }: ICartItem) => {
         <>
             <div className="cart-component">
                 <span className="title">
-                    <Link className="link" to={`/properties/${_id}`}>
+                    <Link className="link" to={`/post/${_id}`}>
                         {title}
                     </Link>
                 </span>

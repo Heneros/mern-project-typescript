@@ -2,6 +2,18 @@ import mongoose from 'mongoose';
 
 const { Schema } = mongoose;
 
+const questionSchema = new Schema({
+    question: {
+        type: String,
+        default: 'Test Q',
+        // required: true,
+    },
+    answer: {
+        type: String,
+        default: 'Test A',
+    },
+});
+
 const propertySchema = new Schema(
     {
         title: {
@@ -49,6 +61,15 @@ const propertySchema = new Schema(
             type: String,
             // required: true,
             default: 'USA',
+        },
+        questionsAndAnswers: {
+            type: [questionSchema],
+            default: [
+                {
+                    question: 'Default Question',
+                    answer: 'Default Answer',
+                },
+            ],
         },
     },
     { timestamps: true },

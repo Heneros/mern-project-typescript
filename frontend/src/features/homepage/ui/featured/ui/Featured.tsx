@@ -32,7 +32,7 @@ export const Featured: React.FC<{ items: PostInfo[] }> = () => {
                             src={data.propertyPage.preview}
                             alt={data.propertyPage.title}
                         />
-                        <Link to={`/properties/${data.propertyPage._id}`}>
+                        <Link to={`/post/${data.propertyPage._id}`}>
                             <img
                                 src={FeaturedIcon}
                                 alt="icon"

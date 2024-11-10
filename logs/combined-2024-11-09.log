@@ -12463,3 +12463,28 @@
   message: 'incoming-request',
   timestamp: '2024-11-09 07:30:22.981 PM'
 }
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-09 08:12:59.970 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 404,
+  content_length: '48',
+  response_time: 11.342,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 08:17:16.344 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '60',
+  response_time: 29.45,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-09 08:17:16.366 PM'
+}

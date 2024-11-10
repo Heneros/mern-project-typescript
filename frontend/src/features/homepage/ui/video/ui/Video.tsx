@@ -31,7 +31,6 @@ export const Video = () => {
                             <div className="video-frame">
                                 <img src={VideoFrame} alt="video frame" />
                                 <Link to="https://youtube.com" target="_blank">
-                                    {/* <i className="fa fa-play"></i> */}
                                     <FontAwesomeIcon icon={faPlay} />
                                 </Link>
                             </div>

@@ -45,6 +45,7 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/express-session": "^1.18.0",
+    "@types/jest": "^29.5.14",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/morgan": "^1.9.9",
     "@types/multer": "^1.4.12",
@@ -82,6 +83,7 @@
     "typescript": "^4.0.0"
   },
   "dependencies": {
+    "@types/supertest": "^6.0.2",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.2.0",
     "cors": "^2.8.5",
@@ -94,6 +96,7 @@
     "handlebars": "^4.7.8",
     "jsonwebtoken": "^9.0.2",
     "module-alias": "^2.2.3",
+    "mongodb-memory-server": "^10.1.2",
     "mongoose": "^8.3.4",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
@@ -103,6 +106,7 @@
     "passport-github2": "^0.1.12",
     "passport-google-oauth20": "^2.0.0",
     "streamifier": "^0.1.1",
+    "supertest": "^7.0.0",
     "validator": "^13.12.0",
     "winston": "^3.13.0",
     "winston-daily-rotate-file": "^5.0.0"

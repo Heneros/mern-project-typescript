@@ -21,6 +21,7 @@
     ],
     "types": [
       "node",
+      "jest",
       "express"
     ],
     "noEmit": false,
@@ -72,7 +73,8 @@
     "frontend/src/declarations.d.ts",
     "frontend/webpack.config.js",
     "backend/**/*.ts",
-    "backend/types/types.d.ts"
+    "backend/types/types.d.ts",
+    "jest.config.ts"
   ],
   "exclude": [
     "node_modules/",
