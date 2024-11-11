@@ -99,4 +99,4 @@ const startServer = async () => {
 };
 startServer();
 
-// export { app, startServer };
+export { app, startServer };

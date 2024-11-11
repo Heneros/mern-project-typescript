@@ -5412,3 +5412,23 @@
   message: 'incoming-request',
   timestamp: '2024-11-10 05:48:12.730 PM'
 }
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2024-11-10 08:17:43.184 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/property/create',
+  status: 401,
+  content_length: '26',
+  response_time: 1.936,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-10 09:33:46.538 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: test  ',
+  level: 'info',
+  timestamp: '2024-11-10 09:33:46.572 PM'
+}

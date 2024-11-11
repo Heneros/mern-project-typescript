@@ -17,15 +17,6 @@ describe('Database Connection', () => {
         const conStatus = mongoose.connection.readyState;
         expect(conStatus).toBe(1);
     });
-
-    // it('should create a sample collection and insert a document', async () => {
-    //     const sampleSchema = new mongoose.Schema({ name: String });
-    //     const Sample = mongoose.model('Sample', sampleSchema);
-
-    //     const sampleDoc = await Sample.create({ name: 'Test' });
-
-    //     expect(sampleDoc.name).toBe('Test');
-    // });
 });
 
 describe('CRUD operations Requests', () => {
@@ -36,9 +27,10 @@ describe('CRUD operations Requests', () => {
             category: 'Apartment',
             price: 500000,
         };
-        const response = (await request.post('/api/v1/property/create')).send(
-            propertyData,
-        );
+        const response = await request
+            .post('/api/v1/property/create')
+            .send(propertyData);
+            
         expect(response.status).toBe(201);
     });
 });

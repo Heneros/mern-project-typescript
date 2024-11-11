@@ -24,6 +24,11 @@ import { ROLES } from 'shared/consts';
 import { PersonalAccount } from 'pages/personalAccount';
 import { ContactUs } from 'pages/contactUs';
 import { SingleProperty } from 'pages/singleProperty';
+import AdminAllPosts from 'pages/admin/AdminAllPosts';
+import AllOrders from 'pages/userPersonal/allOrders';
+import AdminAllUsers from 'pages/admin/AdminAllUsers';
+import AdminCreatePost from 'pages/admin/AdminCreatePost';
+import AdminEditPost from 'pages/admin/AdminEditPost';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -63,6 +68,31 @@ export const AppRouter = () => {
                         {
                             path: 'personal-account',
                             element: <PersonalAccount />,
+                        },
+                        {
+                            path: '/personal-account/all-orders',
+                            element: <AllOrders />,
+                        },
+                    ],
+                },
+                {
+                    element: <AuthRequired allowedRoles={[ROLES.Admin]} />,
+                    children: [
+                        {
+                            path: 'admin/all-posts',
+                            element: <AdminAllPosts />,
+                        },
+                        {
+                            path: 'admin/all-users',
+                            element: <AdminAllUsers />,
+                        },
+                        {
+                            path: 'admin/create-post',
+                            element: <AdminCreatePost />,
+                        },
+                        {
+                            path: 'admin/edit-post',
+                            element: <AdminEditPost />,
                         },
                     ],
                 },

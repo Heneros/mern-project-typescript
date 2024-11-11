@@ -8,6 +8,9 @@ const config: Config = {
     coverageDirectory: 'coverage',
     detectOpenHandles: true,
     coverageProvider: 'v8',
+    moduleNameMapper: {
+        '^@/(.*)$': '<rootDir>/backend/$1',
+    },
 };
 
 export default config;
