@@ -27,7 +27,7 @@ export const usersApiSlice = baseApiSlice.injectEndpoints({
                     : [{ type: 'User', id: 'LIST' }],
         }),
         getUserProfile: builder.query({
-            query: () => '/user/profile',
+            query: ({ user_id }) => `/user/profile`,
             providesTags: [{ type: 'User', id: 'SINGLE_USER' }],
         }),
         updateUserProfile: builder.mutation({

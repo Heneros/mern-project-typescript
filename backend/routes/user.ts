@@ -12,14 +12,21 @@ const router = express.Router();
 
 router
     .route('/profile')
-    .get(checkAuth, getUserProfile)
     .patch(checkAuth, updateUserProfile)
     .delete(checkAuth, deleteMyAccount);
+    
+router.get('/profile', checkAuth, getUserProfile);
 
-router.route('/all').get(checkAuth, role.checkRole(role.ROLES.Admin), getAllUserAccounts);
+router
+    .route('/all')
+    .get(checkAuth, role.checkRole(role.ROLES.Admin), getAllUserAccounts);
 
-router.route('/:id').delete(checkAuth, role.checkRole(role.ROLES.Admin), deleteUserAccount);
+router
+    .route('/:id')
+    .delete(checkAuth, role.checkRole(role.ROLES.Admin), deleteUserAccount);
 
-router.route('/:id/deactivate').get(checkAuth, role.checkRole(role.ROLES.Admin), deactivateUser);
+router
+    .route('/:id/deactivate')
+    .get(checkAuth, role.checkRole(role.ROLES.Admin), deactivateUser);
 
 export default router;

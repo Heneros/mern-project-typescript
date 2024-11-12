@@ -25,10 +25,11 @@ import { PersonalAccount } from 'pages/personalAccount';
 import { ContactUs } from 'pages/contactUs';
 import { SingleProperty } from 'pages/singleProperty';
 import AdminAllPosts from 'pages/admin/AdminAllPosts';
-import AllOrders from 'pages/userPersonal/allOrders';
+
 import AdminAllUsers from 'pages/admin/AdminAllUsers';
 import AdminCreatePost from 'pages/admin/AdminCreatePost';
 import AdminEditPost from 'pages/admin/AdminEditPost';
+import AllOrders from 'pages/allOrders/AllOrders';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([

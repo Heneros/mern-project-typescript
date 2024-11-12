@@ -1,29 +1,39 @@
 import asyncHandler from 'express-async-handler';
+import { RequestHandler, Request, Response } from 'express';
+
 import { RequestWithUser } from '@/types/RequestWithUser';
 import User from '@/models/userModel';
 
-const getUserProfile = asyncHandler(async (req, res) => {
-    // const userId = req.user._id;
-    const userId = req as RequestWithUser;
-    if (!userId.user) {
-        res.status(404).json({ message: 'Not found Request' });
-        return;
-    }
-    const userProfile = await User.findById(userId, {
-        refreshToken: 0,
-        roles: 0,
-        _id: 0,
-    }).lean();
+export const getUserProfile: RequestHandler = asyncHandler(
+    async (req: Request, res: Response) => {
+        const userReq = req as RequestWithUser;
 
-    if (!userProfile) {
-        res.status(204);
-        throw new Error('user profile not found');
-    }
+        if (!userReq.user?._id) {
+            res.status(401).json({ message: 'Not authorized' });
+            return;
+        }
 
-    res.status(200).json({
-        success: true,
-        userProfile,
-    });
-});
+        try {
+            const userProfile = await User.findById(userReq.user._id)
+                .select('-password')
+                .lean();
+
+            if (!userProfile) {
+                res.status(404).json({ message: 'User profile not found' });
+                return;
+            }
+
+            res.status(200).json(userProfile);
+        } catch (error) {
+            console.error('Error in getUserProfile:', error);
+            res.status(500).json({
+                message:
+                    error instanceof Error
+                        ? error.message
+                        : 'An unknown error occurred',
+            });
+        }
+    },
+);
 
 export default getUserProfile;

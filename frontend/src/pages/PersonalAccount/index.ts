@@ -1,1 +1,1 @@
-export {PersonalAccount} from './ui/PersonalAccount'
+export {PersonalAccount} from '../../features/user/PersonalAccount'
