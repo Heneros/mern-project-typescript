@@ -10,12 +10,10 @@ import role from '../middleware/roleMiddleware';
 
 const router = express.Router();
 
-router
-    .route('/profile')
-    .patch(checkAuth, updateUserProfile)
-    .delete(checkAuth, deleteMyAccount);
-    
+router.route('/profile').delete(checkAuth, deleteMyAccount);
+
 router.get('/profile', checkAuth, getUserProfile);
+router.patch('/profile', checkAuth, updateUserProfile);
 
 router
     .route('/all')

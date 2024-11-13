@@ -56,6 +56,9 @@ if (process.env.NODE_ENV === 'development') {
 app.use(mongoSanitize());
 app.use(morganMiddleware);
 
+// /api/v1/user/profile;
+/// http://localhost:1997/api/v1/user/profile
+
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/upload', uploadRoutes);

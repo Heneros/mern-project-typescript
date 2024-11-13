@@ -1,0 +1,56 @@
+{
+  error: Error: You are not allowed to update that field on this route
+      at updateUserProfile (D:\Projects\mern-project-typescript\backend\controllers\user\updateUserProfile.ts:44:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5),
+  level: 'error',
+  message: 'unhandledRejection: You are not allowed to update that field on this route\n' +
+    'Error: You are not allowed to update that field on this route\n' +
+    '    at updateUserProfile (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\updateUserProfile.ts:44:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: 'Error: You are not allowed to update that field on this route\n' +
+    '    at updateUserProfile (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\updateUserProfile.ts:44:15)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  rejection: true,
+  date: 'Wed Nov 13 2024 20:45:21 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22092,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 425521152,
+      heapTotal: 373190656,
+      heapUsed: 334457304,
+      external: 24922916,
+      arrayBuffers: 21893726
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 24973.593 },
+  trace: [
+    {
+      column: 15,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\updateUserProfile.ts',
+      function: 'updateUserProfile',
+      line: 44,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-13 08:45:21.846 PM'
+}
+{ level: 'error', timestamp: '2024-11-13 08:51:16.166 PM' }
+{ level: 'error', timestamp: '2024-11-13 08:52:03.323 PM' }
