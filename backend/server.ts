@@ -20,7 +20,7 @@ import propertyRoutes from './routes/propertyRoutes';
 
 import oauthPassport from './config/passportSetup';
 
-const app = express();
+export const app = express();
 
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 app.use(express.json());
@@ -81,24 +81,24 @@ if (process.env.NODE_ENV === 'production') {
 app.use(notFound);
 app.use(errorHandler);
 
-const startServer = async () => {
-    try {
-        app.listen(port, () =>
-            console.log(
-                `Server on ${port} running. NodeENV: ${process.env.NODE_ENV} `,
-            ),
-        );
-        if (MONGO_URI) {
-            await connectDB(MONGO_URI);
+if (process.env.NODE_ENV !== 'test') {
+    const startServer = async () => {
+        try {
+            app.listen(port, () =>
+                console.log(
+                    `Server on ${port} running. NodeENV: ${process.env.NODE_ENV} `,
+                ),
+            );
+            if (MONGO_URI) {
+                await connectDB(MONGO_URI);
+            }
+            systemLogs.info(
+                `Server on ${port} running. NodeENV: ${process.env.NODE_ENV}  `,
+            );
+        } catch (error) {
+            console.log(`error ${error}`);
+            systemLogs.error(`Error happened ${error}  `);
         }
-        systemLogs.info(
-            `Server on ${port} running. NodeENV: ${process.env.NODE_ENV}  `,
-        );
-    } catch (error) {
-        console.log(`error ${error}`);
-        systemLogs.error(`Error happened ${error}  `);
-    }
-};
-startServer();
-
-export { app, startServer };
+    };
+    startServer();
+}

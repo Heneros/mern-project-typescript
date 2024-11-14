@@ -1,9 +1,9 @@
 import supertest from 'supertest';
 import 'dotenv/config';
 import mongoose, { ConnectionStates } from 'mongoose';
-import { app, startServer } from '../backend/server';
+import { app } from '../backend/server';
 import connectDB from '../backend/config/connectDB';
-import createProperty from '../backend/controllers/properties/createProperty';
+import VerifyResetToken from '../backend/models/verifyResetTokenModel';
 
 const request = supertest(app);
 const MONGO_URI = process.env.MONGO_URI!;
@@ -19,19 +19,43 @@ describe('Database Connection', () => {
     });
 });
 
-describe('CRUD operations Requests', () => {
-    test('It should root posts POST method', async () => {
-        const propertyData = {
-            title: 'Test Property',
-            preview: 'Sample preview',
-            category: 'Apartment',
-            price: 500000,
+describe('CRUD operations User', () => {
+    let userId: string;
+    let token: string;
+
+    test('It should root user create', async () => {
+        const userData = {
+            username: 'admin',
+            email: 'admin@gmail.com',
+            firstName: 'First',
+            lastName: 'Last',
+            password: 'testtest',
+
+            passwordConfirm: 'testtest',
+            roles: ['Admin', 'User', 'Editor'],
+            // isEmailVerified: true,
         };
         const response = await request
-            .post('/api/v1/property/create')
-            .send(propertyData);
-            
+            .post('/api/v1/auth/register')
+            .send(userData);
+
+        // console.log('Response body:', response.body);
         expect(response.status).toBe(201);
+        userId = response.body.userId;
+        console.log('Response body:', userId);
+    });
+
+    test('It should create a verification token and verify email', async () => {
+        const tokenDoc = await VerifyResetToken.create({
+            _userId: userId,
+            token: 'testemailtoken123',
+        });
+        token = tokenDoc.token;
+        const verifyResponse = await request.get(
+            `/api/v1/auth/verify/${token}/${userId}`,
+        );
+        expect(verifyResponse.status).toBe(302);
+        expect(verifyResponse.headers.location).toBe('/auth/verify');
     });
 });
 
