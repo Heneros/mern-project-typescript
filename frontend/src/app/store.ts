@@ -2,8 +2,10 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import baseApiSlice from 'features/api/baseApiSlice';
 import authReducer from 'features/auth/authSlice';
+
 import propertyReducer from 'features/properties/api/propertySlice';
 import cartSlice from 'entities/СartHeader/model/cartSlice';
+
 // const rootReducer = combineReducer({
 
 // });

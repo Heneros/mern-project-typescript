@@ -58,13 +58,6 @@ const updateUserProfile = asyncHandler(async (req, res) => {
         );
     }
 
-    // if (email || isEmailVerified || provider || roles) {
-    //     res.status(400);
-    //     throw new Error(
-    //         'You are not allowed to update that field on this route',
-    //     );
-    // }
-
     const updatedProfile = await User.findByIdAndUpdate(
         userId,
         { ...fieldsToUpdate },

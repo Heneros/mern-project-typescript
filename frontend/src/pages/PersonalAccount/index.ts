@@ -1,1 +1,1 @@
-export {PersonalAccount} from '../../features/user/PersonalAccount'
+export { PersonalAccount } from '../../features/user/pages/PersonalAccount';

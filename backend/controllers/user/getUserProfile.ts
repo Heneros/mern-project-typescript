@@ -23,7 +23,7 @@ export const getUserProfile: RequestHandler = asyncHandler(
                 return;
             }
 
-            res.status(200).json(userProfile);
+            res.status(200).json({ success: true, userProfile });
         } catch (error) {
             console.error('Error in getUserProfile:', error);
             res.status(500).json({

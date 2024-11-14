@@ -67,6 +67,8 @@ export const FormLogin = () => {
                 } catch (err) {
                     const message = (err as { data: { message: string } })?.data
                         .message;
+                    console.log(err);
+                    // const message = err!.data!.message!;
                     toast.error(message);
                     setStatus({ success: false });
                     setSubmitting(false);

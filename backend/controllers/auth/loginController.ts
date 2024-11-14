@@ -54,8 +54,8 @@ const loginUser = async (req: Request, res: Response) => {
         let newRefreshTokenArray = !cookies?.jwtVilla
             ? existingUser.refreshToken
             : existingUser.refreshToken.filter(
-                (refT) => refT !== cookies.jwtVilla,
-            );
+                  (refT) => refT !== cookies.jwtVilla,
+              );
 
         if (cookies?.jwtVilla) {
             const refreshToken = cookies.jwtVilla;

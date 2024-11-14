@@ -27,7 +27,7 @@ export const usersApiSlice = baseApiSlice.injectEndpoints({
                     : [{ type: 'User', id: 'LIST' }],
         }),
         getUserProfile: builder.query({
-            query: ({ user_id }) => `/user/profile`,
+            query: () => `/user/profile`,
             providesTags: [{ type: 'User', id: 'SINGLE_USER' }],
         }),
         updateUserProfile: builder.mutation({
@@ -35,6 +35,7 @@ export const usersApiSlice = baseApiSlice.injectEndpoints({
                 url: '/user/profile',
                 method: 'PATCH',
                 body: profileData,
+                credentials: 'include',
             }),
             invalidatesTags: [{ type: 'User', id: 'SINGLE_USER' }],
         }),

@@ -9,23 +9,13 @@ import { Col, Container, Row, Form, Button } from 'react-bootstrap';
 import {
     useGetUserProfileQuery,
     useUpdateUserProfileMutation,
-} from './userApiSlice';
+} from '../userApiSlice';
 import { useUserRoles } from 'shared/hooks/useUserRoles';
 import { useNavigate } from 'react-router-dom';
 import { Loader } from 'shared/ui/Loader';
 import { toast } from 'react-toastify';
-import { SignUpType } from 'shared/types';
 
 export const PersonalAccount = () => {
-    const initialValues: SignUpType = {
-        username: '',
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
-        passwordConfirm: '',
-        submit: null,
-    };
     const { userId } = useUserRoles();
     const [username, setUsername] = useState<string | undefined>('');
     const [email, setEmail] = useState<string | undefined>('');
@@ -33,28 +23,43 @@ export const PersonalAccount = () => {
     const [confirmPassword, setConfirmPassword] = useState<string | undefined>(
         '',
     );
+    const [currentPassword, setCurrentPassword] = useState<string | undefined>(
+        '',
+    );
+
     const [firstName, setFirstName] = useState<string | undefined>('');
     const [lastName, setLastName] = useState<string | undefined>('');
 
-    const {
-        data: dataProfile,
-        error,
-        isLoading,
-    } = useGetUserProfileQuery(userId);
-    const [updateProfile] = useUpdateUserProfileMutation();
+    const { data } = useGetUserProfileQuery(undefined);
+
+    const [updateProfile, { data: updateData, isLoading, isSuccess }] =
+        useUpdateUserProfileMutation();
 
     const navigate = useNavigate();
-    // console.log(dataProfile);
+
     useEffect(() => {
-        if (!dataProfile && !isLoading) {
+        if (!data?.userProfile && !isLoading) {
             navigate('/login');
         } else {
-            setUsername(dataProfile?.username);
-            setEmail(dataProfile?.email);
-            setFirstName(dataProfile?.firstName);
-            setLastName(dataProfile?.lastName);
+            const userProfile = data?.userProfile;
+
+            if (userProfile) {
+                setUsername(userProfile?.username);
+                setEmail(userProfile?.email);
+                setFirstName(userProfile?.firstName);
+                setLastName(userProfile?.lastName);
+            }
         }
-    }, [dataProfile, navigate, isLoading]);
+    }, [data, navigate, isLoading]);
+
+    
+    console.log(data.userProfile);
+    useEffect(() => {
+        if (isSuccess) {
+            const message = updateData?.message;
+            toast.success(message);
+        }
+    }, [updateData, isSuccess, navigate]);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -62,23 +67,24 @@ export const PersonalAccount = () => {
             alert('Passwords do not match');
         } else {
             try {
-                await updateProfile({
+                const userData = {
                     firstName,
                     lastName,
                     username,
                     email,
-                    password,
-                }).unwrap();
+                };
+                await updateProfile(userData).unwrap();
                 console.log('Updated');
             } catch (err: unknown) {
                 const message = (err as any).error;
+                console.log(err);
                 toast.error(message);
                 //   const { data } = error;
                 //   toast.error('Error');
             }
         }
     };
-    // console.log(userId);
+    // console.log(updateData);
     return (
         <>
             <Breadcrumbs />
@@ -140,6 +146,19 @@ export const PersonalAccount = () => {
                                         setConfirmPassword(e.target.value)
                                     }
                                     placeholder="Confirm Password"
+                                    required
+                                />
+                            </Form.Group>
+
+                            <Form.Group controlId="currentPassword">
+                                <Form.Label>Current Password</Form.Label>
+                                <Form.Control
+                                    type="password"
+                                    value={currentPassword}
+                                    onChange={(e) =>
+                                        setCurrentPassword(e.target.value)
+                                    }
+                                    placeholder="Current Password"
                                     required
                                 />
                             </Form.Group>
