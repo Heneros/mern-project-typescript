@@ -10,8 +10,15 @@ const domainURL = process.env.DOMAIN;
 // $-auth    Public
 
 const registerUser = asyncHandler(async (req, res) => {
-    const { email, username, firstName, lastName, password, passwordConfirm } =
-        req.body;
+    const {
+        email,
+        username,
+        firstName,
+        lastName,
+        avatar,
+        password,
+        passwordConfirm,
+    } = req.body;
 
     const { randomBytes } = await import('crypto');
     if (!email) {
@@ -55,6 +62,9 @@ const registerUser = asyncHandler(async (req, res) => {
         lastName,
         password,
         passwordConfirm,
+        avatar:
+            avatar ||
+            'https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984210799.jpg.jpg',
     });
 
     const registeredUser = await newUser.save();

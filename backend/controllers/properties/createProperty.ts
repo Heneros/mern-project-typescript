@@ -39,6 +39,7 @@ const createProperty = asyncHandler(async (req, res) => {
             category,
             preview:
                 preview ||
+                
                 'https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg',
             description,
             bedrooms,

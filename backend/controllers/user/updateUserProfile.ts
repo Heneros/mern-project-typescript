@@ -15,7 +15,6 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     const userId = userReq.user._id;
 
     const {
-        currentPassword,
         password,
         passwordConfirm,
         ...fieldsToUpdate
@@ -28,12 +27,6 @@ const updateUserProfile = asyncHandler(async (req, res) => {
         res.status(400).json({
             message: 'User does not exist in our system',
         });
-        return;
-    }
-
-    const isMatch = await bcrypt.compare(currentPassword, user.password);
-    if (!isMatch) {
-        res.status(400).json({ message: 'Current password is incorrect' });
         return;
     }
 

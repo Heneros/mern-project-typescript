@@ -42,8 +42,7 @@ app.use(cookieParser());
 app.use(
     cors({
         origin: process.env.DOMAINCORS!,
-
-        methods: 'GET,POST,PUT,DELETE',
+        methods: 'GET,POST,PUT,PATCH, DELETE',
         credentials: true,
         allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
     }),
