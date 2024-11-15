@@ -1,6 +1,6 @@
 import supertest from 'supertest';
 import 'dotenv/config';
-import mongoose, { ConnectionStates } from 'mongoose';
+import mongoose from 'mongoose';
 import { app } from '../backend/server';
 import connectDB from '../backend/config/connectDB';
 import VerifyResetToken from '../backend/models/verifyResetTokenModel';

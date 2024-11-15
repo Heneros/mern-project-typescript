@@ -22,7 +22,7 @@ import oauthPassport from './config/passportSetup';
 
 export const app = express();
 
-app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+// app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

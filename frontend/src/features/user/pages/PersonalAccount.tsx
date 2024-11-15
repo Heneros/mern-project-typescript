@@ -16,6 +16,7 @@ import { useUserRoles } from 'shared/hooks/useUserRoles';
 import { useNavigate } from 'react-router-dom';
 import { Loader } from 'shared/ui/Loader';
 import { toast } from 'react-toastify';
+import { useSendImageMutation } from 'features/uploadImage/uploadImage';
 
 const validationSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Email is required'),
@@ -49,6 +50,7 @@ export const PersonalAccount = () => {
 
     const [updateProfile, { data: updateData, isLoading, isSuccess }] =
         useUpdateUserProfileMutation();
+    const [sendImage] = useSendImageMutation();
 
     const navigate = useNavigate();
 
@@ -92,6 +94,7 @@ export const PersonalAccount = () => {
                 email,
                 password,
                 passwordConfirm,
+                avatar,
             };
 
             await updateProfile(userData).unwrap();
@@ -101,13 +104,22 @@ export const PersonalAccount = () => {
             toast.error(message);
         }
     };
-    const uploadFileHandler = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const file = e.target.files[0];
+    const uploadFileHandler = async (
+        e: React.ChangeEvent<HTMLInputElement>,
+    ) => {
+        if (!e.target.files || e.target.files.length === 0) {
+            toast.error('No file selected');
+            return;
+        }
+        try {
+            const formData = e.target.files[0];
+            const res = await sendImage({ formData }).unwrap();
+            setAvatar(res.image);
+        } catch (error: any) {
+            toast.error(error);
+        }
 
-        const formData = new FormData();
-        setUploading(true);
-        console.log('uploadFileHandler');
+        // console.log('uploadFileHandler');
     };
 
     // console.log(updateData);

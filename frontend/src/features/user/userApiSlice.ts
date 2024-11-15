@@ -39,6 +39,14 @@ export const usersApiSlice = baseApiSlice.injectEndpoints({
             }),
             invalidatesTags: [{ type: 'User', id: 'SINGLE_USER' }],
         }),
+        updateProfileAvatar: builder.mutation({
+            query: (formData) => ({
+                url: '/upload',
+                method: 'PATCH',
+                credentials: 'include',
+                body: formData,
+            }),
+        }),
         deleteMyAccount: builder.mutation({
             query: () => ({
                 url: '/user/profile',
