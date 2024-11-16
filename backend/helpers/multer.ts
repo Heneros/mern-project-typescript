@@ -1,15 +1,20 @@
+import { NextFunction, Request, Response } from 'express';
 import fs from 'fs';
 import multer, { FileFilterCallback } from 'multer';
 import path from 'path';
 
-if (!fs.existsSync('./uploads')) {
-    fs.mkdirSync('./uploads');
+// if (!fs.existsSync('./uploads')) {
+//     fs.mkdirSync('./uploads');
+// }
+interface MulterError extends Error {
+    code?: string;
+    field?: string;
 }
 
 const storage = multer.diskStorage({
-    destination(req, file, cb) {
-        cb(null, './uploads');
-    },
+    // destination(req, file, cb) {
+    //     cb(null, './uploads');
+    // },
     filename(req, file, cb) {
         const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
         cb(
@@ -45,5 +50,26 @@ const upload = multer({
     fileFilter(req, file, cb) {
         checkImageType(file, cb);
     },
-});
-export default upload;
+}).single('logo');
+
+const handleUpload = (req: Request, res: Response, next: NextFunction) => {
+    upload(req, res, (err: any) => {
+        if (err instanceof multer.MulterError) {
+            if (err.code === 'LIMIT_FILE_SIZE') {
+                return res.status(413).json({
+                    message: 'File is too large. Maximum size is 2MB',
+                });
+            }
+            res.status(400).json({
+                message: err.message || 'Error uploading file',
+            });
+        } else if (err) {
+            return res.status(400).json({
+                message: err.message || 'Error uploading file',
+            });
+        }
+        next();
+    });
+};
+
+export default handleUpload;

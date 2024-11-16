@@ -332,3 +332,3657 @@
   ],
   timestamp: '2024-11-14 03:28:29.284 PM'
 }
+{
+  error: backend/routes/uploadRoutes.ts(37,28): error TS2339: Property 'url' does not exist on type '{}'.
+  backend/routes/uploadRoutes.ts(38,37): error TS2339: Property 'url' does not exist on type '{}'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(37,28): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    "backend/routes/uploadRoutes.ts(38,37): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(37,28): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    "backend/routes/uploadRoutes.ts(38,37): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(37,28): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    "backend/routes/uploadRoutes.ts(38,37): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 11:21:52 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 23480,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 399585280,
+      heapTotal: 349941760,
+      heapUsed: 325693120,
+      external: 24868541,
+      arrayBuffers: 21866139
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81899.593 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 11:21:52.114 AM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(38,37): error TS2339: Property 'url' does not exist on type '{}'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,37): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,37): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,37): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 11:21:58 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22704,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 404619264,
+      heapTotal: 350466048,
+      heapUsed: 325692176,
+      external: 24868613,
+      arrayBuffers: 21866211
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81905.843 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 11:21:58.361 AM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 11:22:23 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 10916,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 405442560,
+      heapTotal: 351514624,
+      heapUsed: 317722216,
+      external: 24868621,
+      arrayBuffers: 21841643
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81930.968 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 11:22:23.496 AM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 11:22:30 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 10620,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 400039936,
+      heapTotal: 351776768,
+      heapUsed: 321478576,
+      external: 24852245,
+      arrayBuffers: 21849843
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81937.796 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 11:22:30.317 AM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(38,46): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 11:22:47 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15180,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 399171584,
+      heapTotal: 350466048,
+      heapUsed: 325569112,
+      external: 24868565,
+      arrayBuffers: 21866163
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81954.484 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 11:22:47.016 AM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(33,42): error TS2339: Property 'url' does not exist on type '{}'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(33,42): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(33,42): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(33,42): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 11:22:56 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 12952,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 398430208,
+      heapTotal: 350466048,
+      heapUsed: 326062600,
+      external: 24868637,
+      arrayBuffers: 21866235
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81964.171 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 11:22:56.690 AM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(33,42): error TS2339: Property 'url' does not exist on type '{}'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(33,42): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(33,42): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(33,42): error TS2339: Property 'url' does not exist on type '{}'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 11:23:12 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15328,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 402718720,
+      heapTotal: 349417472,
+      heapUsed: 325521104,
+      external: 24868549,
+      arrayBuffers: 21866147
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 81979.593 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 11:23:12.118 AM'
+}
+{
+  error: backend/config/cloudinaryConfig.ts(19,4): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).
+  backend/config/cloudinaryConfig.ts(19,11): error TS1099: Type argument list cannot be empty.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/config/cloudinaryConfig.ts(19,4): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).\r\n" +
+    'backend/config/cloudinaryConfig.ts(19,11): error TS1099: Type argument list cannot be empty.\r\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/config/cloudinaryConfig.ts(19,4): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).\r\n" +
+    'backend/config/cloudinaryConfig.ts(19,11): error TS1099: Type argument list cannot be empty.\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/config/cloudinaryConfig.ts(19,4): error TS2314: Generic type 'Promise<T>' requires 1 type argument(s).\r\n" +
+    'backend/config/cloudinaryConfig.ts(19,11): error TS1099: Type argument list cannot be empty.\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 11:23:37 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 13524,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 400109568,
+      heapTotal: 352825344,
+      heapUsed: 315899112,
+      external: 24868565,
+      arrayBuffers: 21849779
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 82005.203 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 11:23:37.720 AM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:31:21 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 10008,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 405225472,
+      heapTotal: 351514624,
+      heapUsed: 317685736,
+      external: 24868573,
+      arrayBuffers: 21849787
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 100469.109 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:31:21.630 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:31:33 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 3840,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 413659136,
+      heapTotal: 359378944,
+      heapUsed: 324504168,
+      external: 24868533,
+      arrayBuffers: 21849747
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 100481.343 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:31:33.861 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:31:44 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 6992,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 405659648,
+      heapTotal: 352825344,
+      heapUsed: 317935856,
+      external: 24868621,
+      arrayBuffers: 21849835
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 100492.281 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:31:44.807 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:32:11 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 4424,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 399745024,
+      heapTotal: 353349632,
+      heapUsed: 315367352,
+      external: 24868573,
+      arrayBuffers: 21849787
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 100519.281 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:32:11.799 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(5,8): error TS1192: Module '"D:/Projects/mern-project-typescript/backend/helpers/multer"' has no default export.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    `backend/routes/uploadRoutes.ts(5,8): error TS1192: Module '"D:/Projects/mern-project-typescript/backend/helpers/multer"' has no default export.\r\n` +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    `backend/routes/uploadRoutes.ts(5,8): error TS1192: Module '"D:/Projects/mern-project-typescript/backend/helpers/multer"' has no default export.\r\n` +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    `backend/routes/uploadRoutes.ts(5,8): error TS1192: Module '"D:/Projects/mern-project-typescript/backend/helpers/multer"' has no default export.\r\n` +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:32:31 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15964,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 397156352,
+      heapTotal: 349679616,
+      heapUsed: 325379008,
+      external: 24868565,
+      arrayBuffers: 21866163
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 100538.937 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:32:31.463 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:32:40 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 5840,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 401952768,
+      heapTotal: 354398208,
+      heapUsed: 318111032,
+      external: 24868621,
+      arrayBuffers: 21849835
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 100548.359 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:32:40.876 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:42:07 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15512,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 401920000,
+      heapTotal: 346796032,
+      heapUsed: 321940704,
+      external: 24868613,
+      arrayBuffers: 21866211
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101115.25 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:42:07.776 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:42:30 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 13440,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 406044672,
+      heapTotal: 356495360,
+      heapUsed: 332413728,
+      external: 24868581,
+      arrayBuffers: 21866179
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101137.531 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:42:30.051 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:42:39 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 4112,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 403603456,
+      heapTotal: 355971072,
+      heapUsed: 332117984,
+      external: 24868557,
+      arrayBuffers: 21866155
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101147.281 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:42:39.813 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:43:04 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 19520,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 398110720,
+      heapTotal: 349941760,
+      heapUsed: 325519040,
+      external: 24860461,
+      arrayBuffers: 21858059
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101171.765 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:43:04.292 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:43:09 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 17504,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 403734528,
+      heapTotal: 352038912,
+      heapUsed: 315278088,
+      external: 24860437,
+      arrayBuffers: 21841651
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101177.062 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:43:09.594 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:43:51 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 2276,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 405209088,
+      heapTotal: 356757504,
+      heapUsed: 332262072,
+      external: 24860413,
+      arrayBuffers: 21858011
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101219.296 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:43:51.815 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:43:58 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 17300,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 397860864,
+      heapTotal: 350203904,
+      heapUsed: 326017000,
+      external: 24860373,
+      arrayBuffers: 21857971
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101225.484 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:43:58.003 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:44:13 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22372,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 400826368,
+      heapTotal: 350728192,
+      heapUsed: 325843048,
+      external: 24860501,
+      arrayBuffers: 21858099
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101241 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:44:13.527 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:44:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22104,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 403865600,
+      heapTotal: 356757504,
+      heapUsed: 332458952,
+      external: 24860389,
+      arrayBuffers: 21857987
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101252.593 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:44:25.125 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction) => void'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction) => void'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction) => void'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction) => void'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:44:31 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16148,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 412237824,
+      heapTotal: 358068224,
+      heapUsed: 324493584,
+      external: 24860413,
+      arrayBuffers: 21833435
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101258.984 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:44:31.501 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction) => void'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction) => void'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction) => void'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/uploadRoutes.ts(11,19): error TS2339: Property 'single' does not exist on type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>, next: NextFunction) => void'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:44:52 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 14488,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 398163968,
+      heapTotal: 349941760,
+      heapUsed: 325860672,
+      external: 24860373,
+      arrayBuffers: 21857971
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101279.781 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:44:52.309 PM'
+}
+{
+  error: backend/routes/uploadRoutes.ts(10,39): error TS2769: No overload matches this call.
+    The last overload gave the following error.
+      Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+        Type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+            Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+              Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+                Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+  backend/routes/uploadRoutes.ts(36,31): error TS18048: 'result' is possibly 'undefined'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    'backend/routes/uploadRoutes.ts(10,39): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/routes/uploadRoutes.ts(36,31): error TS18048: 'result' is possibly 'undefined'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    'backend/routes/uploadRoutes.ts(10,39): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/routes/uploadRoutes.ts(36,31): error TS18048: 'result' is possibly 'undefined'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    'backend/routes/uploadRoutes.ts(10,39): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<express.Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/routes/uploadRoutes.ts(36,31): error TS18048: 'result' is possibly 'undefined'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Nov 16 2024 16:45:45 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 17920,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 399241216,
+      heapTotal: 350728192,
+      heapUsed: 320817184,
+      external: 24860389,
+      arrayBuffers: 21833411
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 101333.421 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-16 04:45:45.940 PM'
+}

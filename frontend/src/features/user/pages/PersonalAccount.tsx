@@ -1,10 +1,8 @@
 import React, { EventHandler, useEffect, useState } from 'react';
-import SimpleMDE from 'react-simplemde-editor';
-import { MdOutlineAddPhotoAlternate } from 'react-icons/md';
 
 import 'easymde/dist/easymde.min.css';
 import * as Yup from 'yup';
-import { Formik } from 'formik';
+
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Col, Container, Row, Form, Button } from 'react-bootstrap';
@@ -17,7 +15,8 @@ import { useNavigate } from 'react-router-dom';
 import { Loader } from 'shared/ui/Loader';
 import { toast } from 'react-toastify';
 import { useSendImageMutation } from 'features/uploadImage/uploadImage';
-
+import './PersonalAccount.css';
+import { useFormik } from 'formik';
 const validationSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Email is required'),
     username: Yup.string().required('Username is required'),
@@ -44,7 +43,6 @@ export const PersonalAccount = () => {
     const [lastName, setLastName] = useState<string | undefined>('');
 
     const [avatar, setAvatar] = useState<string | undefined>('');
-    const [uploading, setUploading] = useState(false);
 
     const { data } = useGetUserProfileQuery(undefined);
 
@@ -54,27 +52,47 @@ export const PersonalAccount = () => {
 
     const navigate = useNavigate();
 
+    const formik = useFormik({
+        initialValues: {
+            email: '',
+            username: '',
+            firstName: '',
+            lastName: '',
+            password: '',
+            passwordConfirm: '',
+            avatar: '',
+        },
+        validationSchema,
+        onSubmit: async (values) => {
+            try {
+                await updateProfile(values).unwrap();
+            } catch (err: any) {
+                console.error({ err });
+                const message = err.data?.message || 'Error updating profile';
+                toast.error(message);
+            }
+        },
+    });
     useEffect(() => {
-        // if (!data?.userProfile && !isLoading) {
-        //     navigate('/login');
-        // } else {
-        const userProfile = data?.userProfile;
-
-        if (userProfile) {
-            setUsername(userProfile?.username);
-            setEmail(userProfile?.email);
-            setFirstName(userProfile?.firstName);
-            setLastName(userProfile?.lastName);
-            setAvatar(userProfile.avatar);
+        if (data?.userProfike) {
+            const userProfile = data?.userProfile;
+            formik.setValues({
+                email: userProfile.email || '',
+                username: userProfile.username || '',
+                firstName: userProfile.firstName || '',
+                lastName: userProfile.lastName || '',
+                password: '',
+                passwordConfirm: '',
+                avatar: userProfile.avatar || '',
+            });
         }
-        // }
-    }, [data, navigate, isLoading]);
+    }, [data]);
 
     // console.log(data?.userProfile);
     useEffect(() => {
-        if (isSuccess) {
-            const message = updateData?.message;
-            toast.success(message);
+        if (isSuccess && updateData?.message) {
+            // const message = updateData?.message;
+            toast.success(updateData?.messag);
         }
     }, [updateData, isSuccess, navigate]);
 
@@ -112,14 +130,23 @@ export const PersonalAccount = () => {
             return;
         }
         try {
-            const formData = e.target.files[0];
-            const res = await sendImage({ formData }).unwrap();
-            setAvatar(res.image);
+            const imageFile = e.target.files[0];
+            const res = await sendImage({ imageFile }).unwrap();
+            // setAvatar(res.image);
+            formik.setFieldValue('avatar', res.image);
         } catch (error: any) {
-            toast.error(error);
-        }
+            if (error.status === 413) {
+                toast.error('File is too large. Maximum size is 1MB');
+            } else if (error.data?.message) {
+                toast.error(error.data.message);
+            } else {
+                toast.error('Error uploading image');
+            }
 
-        // console.log('uploadFileHandler');
+            console.error('Upload error:', error);
+            // toast.error(error.data.message);
+            console.log('Error uploading image', error);
+        }
     };
 
     // console.log(updateData);
@@ -131,7 +158,6 @@ export const PersonalAccount = () => {
                     <Col md={3} className="mt-4 mb-2">
                         <NavMenu />
                     </Col>
-
                     <Col md={9} className="mt-4 mb-2">
                         <Col className="d-flex  align-items-center  flex-column">
                             <h2>Personal Account</h2>
@@ -140,79 +166,106 @@ export const PersonalAccount = () => {
                                 current password.
                             </p>
                         </Col>
-
-                        <Form onSubmit={handleSubmit}>
+                        <Form
+                            onSubmit={formik.handleSubmit}
+                            className="formPersonal"
+                        >
                             <Form.Group controlId="email">
                                 <Form.Label>E-mail</Form.Label>
                                 <Form.Control
                                     type="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="email"
+                                    {...formik.getFieldProps('email')}
+                                    isInvalid={
+                                        !!(
+                                            formik.touched.email &&
+                                            formik.errors.email
+                                        )
+                                    }
                                 />
+                                {formik.touched.email &&
+                                    formik.errors.email && (
+                                        <Form.Control.Feedback type="invalid">
+                                            {formik.errors.email}
+                                        </Form.Control.Feedback>
+                                    )}
                             </Form.Group>
                             <Form.Group controlId="username">
-                                <Form.Label>UserName</Form.Label>
+                                <Form.Label>Username</Form.Label>
                                 <Form.Control
                                     type="text"
-                                    value={username}
-                                    onChange={(e) =>
-                                        setUsername(e.target.value)
+                                    {...formik.getFieldProps('username')}
+                                    isInvalid={
+                                        !!(
+                                            formik.touched.username &&
+                                            formik.errors.username
+                                        )
                                     }
-                                    placeholder="Username"
                                 />
+                                {formik.touched.username &&
+                                    formik.errors.username && (
+                                        <Form.Control.Feedback type="invalid">
+                                            {formik.errors.username}
+                                        </Form.Control.Feedback>
+                                    )}
                             </Form.Group>
 
                             <Form.Group controlId="password">
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control
                                     type="password"
-                                    value={password}
-                                    onChange={(e) =>
-                                        setPassword(e.target.value)
+                                    {...formik.getFieldProps('password')}
+                                    isInvalid={
+                                        !!(
+                                            formik.touched.password &&
+                                            formik.errors.password
+                                        )
                                     }
-                                    placeholder="Enter new password"
-                                    required
                                 />
+                                {formik.touched.password &&
+                                    formik.errors.password && (
+                                        <Form.Control.Feedback type="invalid">
+                                            {formik.errors.password}
+                                        </Form.Control.Feedback>
+                                    )}
                             </Form.Group>
 
-                            <Form.Group
-                                className="mb-3"
-                                controlId="passwordConfirm"
-                            >
+                            <Form.Group controlId="passwordConfirm">
                                 <Form.Label>Confirm Password</Form.Label>
                                 <Form.Control
                                     type="password"
-                                    value={passwordConfirm}
-                                    onChange={(e) =>
-                                        setPasswordConfirm(e.target.value)
+                                    {...formik.getFieldProps('passwordConfirm')}
+                                    isInvalid={
+                                        !!(
+                                            formik.touched.passwordConfirm &&
+                                            formik.errors.passwordConfirm
+                                        )
                                     }
-                                    placeholder="Confirm new password"
                                 />
+                                {formik.touched.passwordConfirm &&
+                                    formik.errors.passwordConfirm && (
+                                        <Form.Control.Feedback type="invalid">
+                                            {formik.errors.passwordConfirm}
+                                        </Form.Control.Feedback>
+                                    )}
                             </Form.Group>
-
                             <Form.Group className="mb-3" controlId="uploadImg">
                                 <Form.Label>Avatar</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    value={avatar || ''}
-                                    onChange={(e) => setAvatar(e.target.value)}
-                                />
-
                                 <label htmlFor="logo">
                                     <Form.Control
                                         accept="image/*"
                                         id="logo"
                                         name="logo"
                                         type="file"
-                                        onChange={() => uploadFileHandler}
+                                        onChange={uploadFileHandler}
                                     />
-                                    {!uploading ? (
-                                        <Button variant="ou">
-                                            Choose Your Logo
-                                        </Button>
-                                    ) : (
-                                        <Loader />
+                                    {formik.values.avatar && (
+                                        <div className="preview">
+                                            <img
+                                                src={formik.values.avatar}
+                                                alt="Preview"
+                                                className="preview-img"
+                                            />
+                                        </div>
                                     )}
                                 </label>
                             </Form.Group>
@@ -223,8 +276,13 @@ export const PersonalAccount = () => {
                                 variant="primary"
                                 type="submit"
                                 className="mt-3"
+                                disabled={
+                                    !formik.isValid ||
+                                    isLoading ||
+                                    formik.isSubmitting
+                                }
                             >
-                                Update Profile
+                                {isLoading ? 'Updating...' : 'Update Profile'}
                             </Button>
                         </Form>
                     </Col>

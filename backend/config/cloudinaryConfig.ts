@@ -16,7 +16,7 @@ cloudinary.config({
 export const cloudinaryUploader = async function uploadToCloudinary(
     fileBuffer: Buffer,
     originalName: string,
-) {
+): Promise<{ url: string } | undefined> {
     try {
         const mainFolderName = 'mernVilla';
         const fileName = path.parse(originalName).name;
