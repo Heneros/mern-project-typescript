@@ -49,7 +49,7 @@ export const PropertyItem: React.FC<PostInfo> = ({
         >
             <div className="item">
                 <Link to={`/post/${_id}`}>
-                    <img src={preview} alt="preview image of villa" />
+                    <img src={preview} alt="preview of villa" />
                 </Link>
                 <span className="category">{category}</span>
                 <h6>{formatPrice(price)} </h6>

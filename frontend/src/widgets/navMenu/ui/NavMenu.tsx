@@ -1,19 +1,8 @@
-import {
-    selectCurrentUserGithubToken,
-    selectCurrentUserGoogleToken,
-    selectCurrentUserToken,
-} from 'features/auth/authSlice';
 import React from 'react';
 import { Col, Nav } from 'react-bootstrap';
-import { decodeToken } from 'react-jwt';
 import { useLocation } from 'react-router-dom';
 import { useUserRoles } from 'shared/hooks/useUserRoles';
-import { useAppSelector } from 'shared/lib/store';
-
-interface DecodedToken {
-    id: string;
-    roles: string[];
-}
+import './NavMenu.css';
 
 const NavMenu = () => {
     const location = useLocation();

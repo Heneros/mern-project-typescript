@@ -32,6 +32,7 @@ export function Properties() {
         return categoryMatch;
     });
 
+    // console.log(data?.currentPage);
     return (
         <>
             <Breadcrumbs nameParent={'Properties'} lastParent={'Properties'} />
@@ -58,6 +59,7 @@ export function Properties() {
                             <PaginationProperties
                                 pages={data?.numberOfPages}
                                 page={data?.pageNumber}
+                                isAdmin={true}
                             />
                         </Col>
                     </Row>

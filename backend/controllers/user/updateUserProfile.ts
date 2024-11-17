@@ -19,7 +19,6 @@ const updateUserProfile = asyncHandler(async (req, res) => {
         password,
         passwordConfirm,
         ...fieldsToUpdate
-        //     username,
     } = req.body;
 
     const user = await User.findById(userId).select('+password');

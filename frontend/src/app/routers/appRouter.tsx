@@ -12,13 +12,13 @@ import { Layout } from 'app/layout';
 
 import { HomePage } from 'pages/homePage';
 import { Properties } from 'pages/properties';
-import { Registration } from 'pages/registration';
+import { Registration } from 'features/auth/pages/registration';
 import { NotFound } from 'pages/notfound';
-import { PasswordReset } from 'pages/passwordreset';
-import { PasswordRequestPage } from 'pages/passwordrequestpage';
+import { PasswordReset } from 'features/auth/pages/passwordreset';
+import { PasswordRequestPage } from 'features/auth/pages/passwordrequestpage';
 import { Login } from 'pages/login';
-import { ResendEmailTokenPage } from 'pages/resendEmailTokenPage';
-import { VerifiedPage } from 'pages/verifiedPage';
+import { ResendEmailTokenPage } from 'features/auth/pages/resendEmailTokenPage';
+import { VerifiedPage } from 'features/auth/pages/verifiedPage';
 import { AuthRequired } from 'shared/hooks/AuthRequired';
 import { ROLES } from 'shared/consts';
 import { PersonalAccount } from 'pages/personalAccount';
@@ -30,6 +30,7 @@ import AdminAllUsers from 'pages/admin/AdminAllUsers';
 import AdminCreatePost from 'pages/admin/AdminCreatePost';
 import AdminEditPost from 'pages/admin/AdminEditPost';
 import AllOrders from 'pages/allOrders/AllOrders';
+import AdminPostEdit from 'pages/admin/AdminPostEdit';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -84,6 +85,10 @@ export const AppRouter = () => {
                             element: <AdminAllPosts />,
                         },
                         {
+                            path: 'admin/all-posts/:pageNumber',
+                            element: <AdminAllPosts />,
+                        },
+                        {
                             path: 'admin/all-users',
                             element: <AdminAllUsers />,
                         },
@@ -91,9 +96,10 @@ export const AppRouter = () => {
                             path: 'admin/create-post',
                             element: <AdminCreatePost />,
                         },
+
                         {
-                            path: 'admin/edit-post',
-                            element: <AdminEditPost />,
+                            path: 'admin/post/:id/edit',
+                            element: <AdminPostEdit />,
                         },
                     ],
                 },

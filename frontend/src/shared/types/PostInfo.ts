@@ -10,10 +10,10 @@ export interface PostInfo {
     readonly area: number;
     readonly floor: number;
     readonly parking: number;
-    readonly price: number; 
-    readonly category: string; 
+    readonly price: number;
+    readonly category: string;
+    readonly createdAt: Date;
 }
-
 
 export interface PropItems {
     propItems: PostInfo[];

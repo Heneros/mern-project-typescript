@@ -1,6 +1,6 @@
 # Booking villa Agency
 
-MERN. TS. Fullstack app about booking villa. You can create account through Google, Github or using email(dont forget accept validation letter in mail box). In this app have 3 roles. Admin, editor and user. 
+MERN. TS. Fullstack app about booking villa. You can create account through Google, Github or using email(don't forget accept validation letter in mail box). In this app have 3 roles: admin, editor and user. 
 
 In this app you also can have chat with another users.
 
@@ -11,11 +11,12 @@ In this app you also can have chat with another users.
 - Mongoose
 - React
 - Redux RTK
+- React Router Dom
 - React Bootstrap
 - React Toastify
 - Yup
 - Formik
-- winston
+- Winston
 - Morgan
 - Multer
 - Cloudflare 
