@@ -22,12 +22,19 @@ const validationSchema = Yup.object().shape({
         .min(3, 'Username must be at least 3 characters'),
     firstName: Yup.string().required('First name is required'),
     lastName: Yup.string().required('Last name is required'),
+    currentPassword: Yup.string().required(
+        'Current password is required to make changes',
+    ),
     password: Yup.string()
         .min(6, 'Password must be at least 6 characters')
         .required('Password is required'),
     passwordConfirm: Yup.string()
         .oneOf([Yup.ref('password')], 'Passwords must match')
-        .required('Password confirmation is required'),
+        .when('password', {
+            is: (val: string) => val && val.length > 0,
+            then: (schema) =>
+                schema.required("Password confirmation is required'"),
+        }),
     avatar: Yup.string(),
 });
 
@@ -44,6 +51,7 @@ export const PersonalAccount = () => {
             username: '',
             firstName: '',
             lastName: '',
+            currentPassword: '',
             password: '',
             passwordConfirm: '',
             avatar: '',
@@ -68,6 +76,7 @@ export const PersonalAccount = () => {
                 username: userProfile.username || '',
                 firstName: userProfile.firstName || '',
                 lastName: userProfile.lastName || '',
+                currentPassword: '',
                 password: '',
                 passwordConfirm: '',
                 avatar: userProfile.avatar || '',
@@ -161,6 +170,30 @@ export const PersonalAccount = () => {
                                         <Form.Control.Feedback type="invalid">
                                             {formik.errors.username}
                                         </Form.Control.Feedback>
+                                    )}
+                            </Form.Group>
+                            <Form.Group
+                                controlId="currentPassword"
+                                className="mb-4"
+                            >
+                                <Form.Label>Current Password *</Form.Label>
+                                <Form.Control
+                                    type="password"
+                                    {...formik.getFieldProps('currentPassword')}
+                                    isInvalid={
+                                        !!(
+                                            formik.touched.currentPassword &&
+                                            formik.errors.currentPassword
+                                        )
+                                    }
+                                />
+                                {formik.touched.currentPassword &&
+                                    formik.errors.currentPassword && (
+                                        <>
+                                            <Form.Control.Feedback type="invalid">
+                                                {formik.errors.currentPassword}
+                                            </Form.Control.Feedback>
+                                        </>
                                     )}
                             </Form.Group>
 

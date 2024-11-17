@@ -15,6 +15,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     const userId = userReq.user._id;
 
     const {
+        currentPassword,
         password,
         passwordConfirm,
         ...fieldsToUpdate
@@ -30,25 +31,26 @@ const updateUserProfile = asyncHandler(async (req, res) => {
         return;
     }
 
-    if (password && password !== passwordConfirm) {
-        res.status(400).json({ message: 'New passwords do not match' });
+    if (!currentPassword) {
+        res.status(400).json({ message: ' Current Password is required' });
+        return;
+    }
+    const isPasswordValid = await bcrypt.compare(
+        currentPassword,
+        user.password,
+    );
+
+    if (!isPasswordValid) {
+        res.status(401).json({ message: 'Current password is incorrect' });
         return;
     }
 
     if (password) {
+        if (password !== passwordConfirm) {
+            res.status(400).json({ message: 'New passwords do not match' });
+            return;
+        }
         fieldsToUpdate.password = await bcrypt.hash(password, 10);
-    }
-
-    if (!user) {
-        res.status(400);
-        throw new Error('That user does not exist in our system');
-    }
-
-    if (password !== passwordConfirm) {
-        res.status(400);
-        throw new Error(
-            'This route is not for password updates. Please use the password reset functionality instead',
-        );
     }
 
     const updatedProfile = await User.findByIdAndUpdate(

@@ -3986,3 +3986,285 @@
   ],
   timestamp: '2024-11-16 04:45:45.940 PM'
 }
+{
+  error: backend/controllers/user/updateUserProfile.ts(38,11): error TS1155: 'const' declarations must be initialized.
+  backend/controllers/user/updateUserProfile.ts(38,11): error TS7005: Variable 'isPasswordvalid' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/user/updateUserProfile.ts(38,11): error TS1155: 'const' declarations must be initialized.\r\n" +
+    "backend/controllers/user/updateUserProfile.ts(38,11): error TS7005: Variable 'isPasswordvalid' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/user/updateUserProfile.ts(38,11): error TS1155: 'const' declarations must be initialized.\r\n" +
+    "backend/controllers/user/updateUserProfile.ts(38,11): error TS7005: Variable 'isPasswordvalid' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/user/updateUserProfile.ts(38,11): error TS1155: 'const' declarations must be initialized.\r\n" +
+    "backend/controllers/user/updateUserProfile.ts(38,11): error TS7005: Variable 'isPasswordvalid' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sun Nov 17 2024 09:23:17 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15440,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 395137024,
+      heapTotal: 349679616,
+      heapUsed: 318235080,
+      external: 24844029,
+      arrayBuffers: 21841627
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 161184.703 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-17 09:23:17.232 AM'
+}
+{
+  error: backend/controllers/user/updateUserProfile.ts(55,5): error TS1003: Identifier expected.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    'backend/controllers/user/updateUserProfile.ts(55,5): error TS1003: Identifier expected.\r\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    'backend/controllers/user/updateUserProfile.ts(55,5): error TS1003: Identifier expected.\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    'backend/controllers/user/updateUserProfile.ts(55,5): error TS1003: Identifier expected.\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sun Nov 17 2024 09:28:10 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22288,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 395460608,
+      heapTotal: 348106752,
+      heapUsed: 318194024,
+      external: 24843981,
+      arrayBuffers: 21841579
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 161477.578 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-17 09:28:10.103 AM'
+}
