@@ -3387,3 +3387,418 @@
   message: 'incoming-request',
   timestamp: '2024-11-16 05:12:38.839 PM'
 }
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-16 05:43:58.362 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 115.679,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:44:08.533 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.793,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:44:09.308 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.667,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:44:46.601 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.781,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:44:46.876 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.976,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:44:47.973 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.414,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:45:08.866 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.595,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:45:09.256 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.919,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:45:11.706 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.897,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:45:12.149 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.378,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:45:14.480 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.662,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:45:15.117 PM'
+}
+{
+  method: 'PATCH',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '562',
+  response_time: 235.534,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:45:57.213 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '1555',
+  response_time: 101.557,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:45:57.325 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.366,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:16.744 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.974,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:16.988 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.39,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:21.025 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.931,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:21.624 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 100.623,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:25.596 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.156,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:48.993 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.676,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:49.163 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.183,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:53.281 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.765,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:46:53.551 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.234,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:48:27.707 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 104.229,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:48:33.128 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.227,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:48:34.430 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.065,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:48:36.536 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.192,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:49:22.437 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.021,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:49:24.571 PM'
+}
+{
+  method: 'PATCH',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '519',
+  response_time: 231.916,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:49:37.536 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '649',
+  response_time: 101.1,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:49:37.649 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.255,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:49:42.827 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.13,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:01.702 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 100.409,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:05.468 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.469,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:08.873 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.236,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:09.238 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 100.961,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:11.316 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 100.988,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:11.478 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.052,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:14.180 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.195,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:14.715 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.589,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:16.288 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:17.109 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.789,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:17.921 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '1555',
+  response_time: 101.438,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:18.477 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 100.843,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:20.328 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 100.329,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-16 05:51:21.942 PM'
+}

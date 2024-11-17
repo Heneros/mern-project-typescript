@@ -1,25 +1,25 @@
-import React, { EventHandler, useEffect, useState } from 'react';
-
-import 'easymde/dist/easymde.min.css';
+import React, { useEffect } from 'react';
+import { useFormik } from 'formik';
 import * as Yup from 'yup';
-
+import { Col, Container, Row, Form, Button } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
-import { Col, Container, Row, Form, Button } from 'react-bootstrap';
 import {
     useGetUserProfileQuery,
     useUpdateUserProfileMutation,
 } from '../userApiSlice';
-import { useUserRoles } from 'shared/hooks/useUserRoles';
 import { useNavigate } from 'react-router-dom';
-import { Loader } from 'shared/ui/Loader';
-import { toast } from 'react-toastify';
 import { useSendImageMutation } from 'features/uploadImage/uploadImage';
 import './PersonalAccount.css';
-import { useFormik } from 'formik';
+
 const validationSchema = Yup.object().shape({
-    email: Yup.string().email('Invalid email').required('Email is required'),
-    username: Yup.string().required('Username is required'),
+    email: Yup.string()
+        .email('Invalid email address')
+        .required('Email is required'),
+    username: Yup.string()
+        .required('Username is required')
+        .min(3, 'Username must be at least 3 characters'),
     firstName: Yup.string().required('First name is required'),
     lastName: Yup.string().required('Last name is required'),
     password: Yup.string()
@@ -28,28 +28,14 @@ const validationSchema = Yup.object().shape({
     passwordConfirm: Yup.string()
         .oneOf([Yup.ref('password')], 'Passwords must match')
         .required('Password confirmation is required'),
+    avatar: Yup.string(),
 });
 
 export const PersonalAccount = () => {
-    const { userId } = useUserRoles();
-    const [username, setUsername] = useState<string | undefined>('');
-    const [email, setEmail] = useState<string | undefined>('');
-    const [password, setPassword] = useState<string | undefined>('');
-    const [passwordConfirm, setPasswordConfirm] = useState<string | undefined>(
-        '',
-    );
-
-    const [firstName, setFirstName] = useState<string | undefined>('');
-    const [lastName, setLastName] = useState<string | undefined>('');
-
-    const [avatar, setAvatar] = useState<string | undefined>('');
-
     const { data } = useGetUserProfileQuery(undefined);
-
     const [updateProfile, { data: updateData, isLoading, isSuccess }] =
         useUpdateUserProfileMutation();
     const [sendImage] = useSendImageMutation();
-
     const navigate = useNavigate();
 
     const formik = useFormik({
@@ -73,9 +59,10 @@ export const PersonalAccount = () => {
             }
         },
     });
+
     useEffect(() => {
-        if (data?.userProfike) {
-            const userProfile = data?.userProfile;
+        if (data?.userProfile) {
+            const userProfile = data.userProfile;
             formik.setValues({
                 email: userProfile.email || '',
                 username: userProfile.username || '',
@@ -88,40 +75,12 @@ export const PersonalAccount = () => {
         }
     }, [data]);
 
-    // console.log(data?.userProfile);
     useEffect(() => {
         if (isSuccess && updateData?.message) {
-            // const message = updateData?.message;
-            toast.success(updateData?.messag);
+            toast.success(updateData.message);
         }
-    }, [updateData, isSuccess, navigate]);
+    }, [updateData, isSuccess]);
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-
-        if (password !== passwordConfirm) {
-            toast.error('Passwords do not match');
-            return;
-        }
-
-        try {
-            const userData = {
-                firstName,
-                lastName,
-                username,
-                email,
-                password,
-                passwordConfirm,
-                avatar,
-            };
-
-            await updateProfile(userData).unwrap();
-        } catch (err: any) {
-            console.error({ err });
-            const message = err.data?.message || 'Error updating profile';
-            toast.error(message);
-        }
-    };
     const uploadFileHandler = async (
         e: React.ChangeEvent<HTMLInputElement>,
     ) => {
@@ -132,7 +91,6 @@ export const PersonalAccount = () => {
         try {
             const imageFile = e.target.files[0];
             const res = await sendImage({ imageFile }).unwrap();
-            // setAvatar(res.image);
             formik.setFieldValue('avatar', res.image);
         } catch (error: any) {
             if (error.status === 413) {
@@ -142,14 +100,10 @@ export const PersonalAccount = () => {
             } else {
                 toast.error('Error uploading image');
             }
-
             console.error('Upload error:', error);
-            // toast.error(error.data.message);
-            console.log('Error uploading image', error);
         }
     };
 
-    // console.log(updateData);
     return (
         <>
             <Breadcrumbs />
@@ -159,10 +113,10 @@ export const PersonalAccount = () => {
                         <NavMenu />
                     </Col>
                     <Col md={9} className="mt-4 mb-2">
-                        <Col className="d-flex  align-items-center  flex-column">
+                        <Col className="d-flex align-items-center flex-column">
                             <h2>Personal Account</h2>
                             <p>
-                                Before update your profile, please enter your
+                                Before updating your profile, please enter your
                                 current password.
                             </p>
                         </Col>
@@ -189,6 +143,7 @@ export const PersonalAccount = () => {
                                         </Form.Control.Feedback>
                                     )}
                             </Form.Group>
+
                             <Form.Group controlId="username">
                                 <Form.Label>Username</Form.Label>
                                 <Form.Control
@@ -248,7 +203,11 @@ export const PersonalAccount = () => {
                                         </Form.Control.Feedback>
                                     )}
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="uploadImg">
+
+                            <Form.Group
+                                className="mb-5 mt-3 d d-flex flex-column"
+                                controlId="uploadImg"
+                            >
                                 <Form.Label>Avatar</Form.Label>
                                 <label htmlFor="logo">
                                     <Form.Control
@@ -269,9 +228,7 @@ export const PersonalAccount = () => {
                                     )}
                                 </label>
                             </Form.Group>
-                            <p>
-                                Before update please enter valid password please
-                            </p>
+
                             <Button
                                 variant="primary"
                                 type="submit"
