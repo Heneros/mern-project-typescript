@@ -43,7 +43,6 @@ export const PersonalAccount = () => {
     const [updateProfile, { data: updateData, isLoading, isSuccess }] =
         useUpdateUserProfileMutation();
     const [sendImage] = useSendImageMutation();
-    const navigate = useNavigate();
 
     const formik = useFormik({
         initialValues: {

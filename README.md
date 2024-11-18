@@ -19,7 +19,7 @@ In this app you also can have chat with another users.
 - Winston
 - Morgan
 - Multer
-- Cloudflare 
+- Cloudinary 
 - Passport.js
 - Nodemailer
 - Express Rate Limit
@@ -32,3 +32,4 @@ In this app you also can have chat with another users.
 - JEST and Supertest add.
 - AWS
 - Swagger
+- CDN add
