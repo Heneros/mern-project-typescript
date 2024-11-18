@@ -3497,3 +3497,78 @@
   message: 'incoming-request',
   timestamp: '2024-11-17 05:14:24.766 PM'
 }
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-17 09:53:18.488 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '572',
+  response_time: 100.255,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-17 09:53:28.121 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3408',
+  response_time: 241.797,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-17 09:53:28.276 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '465',
+  response_time: 420.738,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-17 09:53:38.139 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '1730',
+  response_time: 204.477,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-17 09:53:38.441 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 200,
+  content_length: '572',
+  response_time: 274.417,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-17 09:53:48.267 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3408',
+  response_time: 511.499,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-17 09:53:48.505 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/auth/logout',
+  status: 200,
+  content_length: '79',
+  response_time: 521.345,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-17 09:53:48.509 PM'
+}
