@@ -24,6 +24,7 @@ export const propertiesApiSlice = baseApiSlice.injectEndpoints({
                 url: `/property/${id}`,
                 method: 'PATCH',
                 body: otherFields,
+                credentials: 'include',
             }),
             invalidatesTags: ['Property'],
         }),

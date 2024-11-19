@@ -2,43 +2,15 @@ import React, { useEffect, useState } from 'react';
 import SimpleMDE from 'react-simplemde-editor';
 import 'easymde/dist/easymde.min.css';
 import * as Yup from 'yup';
-import {
-    Button,
-    Col,
-    Container,
-    Form,
-    Row,
-    Spinner,
-    Table,
-} from 'react-bootstrap';
+import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { useCreatePropertyMutation } from 'features/properties/api/propertiesApiSlice';
 import { useSendImageMutation } from 'features/uploadImage/uploadImage';
 import { Field, FieldArray, Formik, useFormik } from 'formik';
 import { toast } from 'react-toastify';
-
-const validationSchema = Yup.object().shape({
-    title: Yup.string().max(50, 'Max 50 characters').required('Title required'),
-    category: Yup.string().required('Category required'),
-    description: Yup.string(),
-    preview: Yup.string(),
-    bedrooms: Yup.number().required('Empty field'),
-    bathrooms: Yup.number().required('Empty field'),
-    area: Yup.string(),
-    price: Yup.number().required('Empty field'),
-    floor: Yup.number().required('Empty field'),
-    parking: Yup.string().required('Empty field'),
-    city: Yup.string().required('Empty field'),
-    country: Yup.string().required('Empty field'),
-    questionsAndAnswers: Yup.array().of(
-        Yup.object().shape({
-            question: Yup.string(),
-            answer: Yup.string(),
-        }),
-    ),
-    //   .min(3, 'You must provide at least 3 questions and answers'),
-});
+import { validationSchema } from 'shared/utils/validationSchema';
+import { initialValues } from 'shared/utils/initialValues';
 
 const AdminCreatePost = () => {
     const [createProperty, { isLoading, isSuccess }] =
@@ -91,23 +63,7 @@ const AdminCreatePost = () => {
                             <h1 className="text-center">Create Post</h1>
                             <hr />
                             <Formik
-                                initialValues={{
-                                    title: '',
-                                    description: '',
-                                    category: '',
-                                    preview: '',
-                                    bedrooms: 0,
-                                    bathrooms: 0,
-                                    city: '',
-                                    country: '',
-                                    area: 0,
-                                    floor: 0,
-                                    price: 0,
-                                    parking: 0,
-                                    questionsAndAnswers: [
-                                        { question: '', answer: '' },
-                                    ],
-                                }}
+                                initialValues={initialValues}
                                 validationSchema={validationSchema}
                                 onSubmit={async (
                                     values,
@@ -222,7 +178,18 @@ const AdminCreatePost = () => {
                                         </Form.Group>
                                         <Form.Group controlId="description">
                                             <Form.Label>Description</Form.Label>
-                                            <Form.Control
+                                            <SimpleMDE
+                                                value={values.description}
+                                                id="description"
+                                                placeholder="Leave a description here"
+                                                onChange={(value) =>
+                                                    setFieldValue(
+                                                        'description',
+                                                        value,
+                                                    )
+                                                }
+                                            />
+                                            {/* <Form.Control
                                                 as="textarea"
                                                 id="description"
                                                 placeholder="Leave a description here"
@@ -240,7 +207,7 @@ const AdminCreatePost = () => {
                                                     <Form.Control.Feedback type="invalid">
                                                         {errors.description}
                                                     </Form.Control.Feedback>
-                                                )}
+                                                )} */}
                                         </Form.Group>
 
                                         <Form.Group controlId="bedrooms">

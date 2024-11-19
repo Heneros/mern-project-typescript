@@ -30,7 +30,6 @@ import AdminAllUsers from 'pages/admin/AdminAllUsers';
 import AdminCreatePost from 'pages/admin/AdminCreatePost';
 import AdminEditPost from 'pages/admin/AdminEditPost';
 import AllOrders from 'pages/allOrders/AllOrders';
-import AdminPostEdit from 'pages/admin/AdminPostEdit';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -99,7 +98,7 @@ export const AppRouter = () => {
 
                         {
                             path: 'admin/post/:id/edit',
-                            element: <AdminPostEdit />,
+                            element: <AdminEditPost />,
                         },
                     ],
                 },

@@ -1,0 +1,15 @@
+export const initialValues = {
+    title: '',
+    description: '',
+    category: '',
+    preview: '',
+    bedrooms: 0,
+    bathrooms: 0,
+    city: '',
+    country: '',
+    area: 0,
+    floor: 0,
+    price: 0,
+    parking: 0,
+    questionsAndAnswers: [{ question: '', answer: '' }],
+};
