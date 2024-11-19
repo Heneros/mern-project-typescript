@@ -20,5 +20,6 @@ export interface IUser extends Document {
     passwordChangedAt?: Date;
     avatar?: string;
     roles: string[];
+    publicChat: boolean;
     matchPassword(enteredPassword: string): Promise<boolean>;
 }

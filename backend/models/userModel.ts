@@ -88,6 +88,10 @@ const userSchema = new Schema<IUser>(
             default: true,
         },
         refreshToken: [String],
+        publicChat: {
+            type: Boolean,
+            default: true,
+        },
     },
     { timestamps: true },
 );
