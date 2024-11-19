@@ -22,15 +22,15 @@ const validationSchema = Yup.object().shape({
     title: Yup.string().max(50, 'Max 50 characters').required('Title required'),
     category: Yup.string().required('Category required'),
     description: Yup.string(),
-    // preview: Yup.string(),
-    // bedrooms: Yup.number().required('Empty field'),
-    // bathrooms: Yup.number().required('Empty field'),
-    // area: Yup.string(),
-    // price: Yup.string(),
-    // floor: Yup.string().required('Empty field'),
-    // parking: Yup.string().required('Empty field'),
-    // city: Yup.string().required('Empty field'),
-    // country: Yup.string().required('Empty field'),
+    preview: Yup.string(),
+    bedrooms: Yup.number().required('Empty field'),
+    bathrooms: Yup.number().required('Empty field'),
+    area: Yup.string(),
+    price: Yup.number(),
+    floor: Yup.number().required('Empty field'),
+    parking: Yup.string().required('Empty field'),
+    city: Yup.string().required('Empty field'),
+    country: Yup.string().required('Empty field'),
     questionsAndAnswers: Yup.array().of(
         Yup.object().shape({
             question: Yup.string(),
@@ -96,28 +96,45 @@ const AdminCreatePost = () => {
                                     description: '',
                                     category: '',
                                     preview: '',
-                                    bedrooms: '',
-                                    bathrooms: '',
+                                    bedrooms: 0,
+                                    bathrooms: 0,
                                     city: '',
                                     country: '',
-                                    area: '',
-                                    price: '',
-                                    floor: '',
-
+                                    area: 0,
+                                    floor: 0,
+                                    price: 0,
+                                    parking: 0,
                                     questionsAndAnswers: [
                                         { question: '', answer: '' },
                                     ],
                                 }}
                                 validationSchema={validationSchema}
-                                onSubmit={async ( values) => {
+                                onSubmit={async (
+                                    values,
+                                    { setStatus, setSubmitting },
+                                ) => {
                                     try {
-                                        await createProperty(values).unwrap();
+                                        const formattedValues = {
+                                            ...values,
+                                            bedrooms: Number(values.bedrooms),
+                                            bathrooms: Number(values.bathrooms),
+                                            floor: Number(values.floor),
+                                            price: Number(values.price),
+                                            parking: Number(values.parking),
+                                        };
+                                        await createProperty(
+                                            formattedValues,
+                                        ).unwrap();
+                                        setStatus({ success: true });
+                                        setSubmitting(false);
                                     } catch (err: any) {
                                         console.error({ err });
                                         const message =
                                             err.data?.message ||
                                             'Error updating profile';
                                         toast.error(message);
+                                        setStatus({ success: false });
+                                        setSubmitting(false);
                                     }
                                 }}
                             >
@@ -125,18 +142,26 @@ const AdminCreatePost = () => {
                                     values,
                                     touched,
                                     errors,
-                                    getFieldProps,
+                                    handleChange,
                                     isSubmitting,
                                     isValid,
+                                    handleSubmit,
                                     setFieldValue,
                                 }) => (
-                                    <Form>
+                                    <Form
+                                        noValidate
+                                        autoComplete="off"
+                                        onSubmit={handleSubmit}
+                                    >
                                         <Form.Group controlId="title">
                                             <Form.Label>Title</Form.Label>
                                             <Form.Control
                                                 type="text"
                                                 id="title"
-                                                {...getFieldProps('title')}
+                                                placeholder="Title"
+                                                value={values.title}
+                                                onChange={handleChange}
+                                                // {...getFieldProps('title')}
                                                 isInvalid={
                                                     !!(
                                                         touched.title &&
@@ -156,7 +181,9 @@ const AdminCreatePost = () => {
                                                 type="text"
                                                 placeholder="Category..."
                                                 id="category"
-                                                {...getFieldProps('category')}
+                                                value={values.category}
+                                                onChange={handleChange}
+                                                // {...getFieldProps('category')}
                                                 isInvalid={
                                                     !!(
                                                         touched.category &&
@@ -177,9 +204,8 @@ const AdminCreatePost = () => {
                                                 as="textarea"
                                                 id="description"
                                                 placeholder="Leave a description here"
-                                                {...getFieldProps(
-                                                    'description',
-                                                )}
+                                                onChange={handleChange}
+                                                value={values.description}
                                                 isInvalid={
                                                     !!(
                                                         touched.description &&
@@ -202,8 +228,14 @@ const AdminCreatePost = () => {
                                                 type="text"
                                                 placeholder="Bedrooms"
                                                 id="bedrooms"
-                                                {...getFieldProps('bedrooms')}
-                                                isInvalid={!!touched.bedrooms}
+                                                value={values.bedrooms}
+                                                onChange={handleChange}
+                                                isInvalid={
+                                                    !!(
+                                                        errors.bedrooms &&
+                                                        touched.bedrooms
+                                                    )
+                                                }
                                             />
 
                                             {touched.bedrooms &&
@@ -220,8 +252,14 @@ const AdminCreatePost = () => {
                                                 type="text"
                                                 placeholder="Bathrooms"
                                                 id="bathrooms"
-                                                {...getFieldProps('bathrooms')}
-                                                isInvalid={!!touched.bathrooms}
+                                                onChange={handleChange}
+                                                value={values.bathrooms}
+                                                isInvalid={
+                                                    !!(
+                                                        errors.bathrooms &&
+                                                        touched.bathrooms
+                                                    )
+                                                }
                                             />
 
                                             {touched.bathrooms &&
@@ -239,8 +277,14 @@ const AdminCreatePost = () => {
                                                 type="text"
                                                 id="city"
                                                 placeholder="City..."
-                                                {...getFieldProps('city')}
-                                                isInvalid={!!touched.city}
+                                                onChange={handleChange}
+                                                value={values.city}
+                                                isInvalid={
+                                                    !!(
+                                                        touched.city &&
+                                                        errors.city
+                                                    )
+                                                }
                                             />
 
                                             {touched.city && errors.city && (
@@ -256,8 +300,14 @@ const AdminCreatePost = () => {
                                                 type="text"
                                                 id="floor"
                                                 placeholder="Floor"
-                                                {...getFieldProps('floor')}
-                                                isInvalid={!!touched.floor}
+                                                onChange={handleChange}
+                                                value={values.floor}
+                                                isInvalid={
+                                                    !!(
+                                                        touched.floor &&
+                                                        errors.floor
+                                                    )
+                                                }
                                             />
 
                                             {touched.floor && errors.floor && (
@@ -273,8 +323,38 @@ const AdminCreatePost = () => {
                                                 type="text"
                                                 id="country"
                                                 placeholder="Country"
-                                                {...getFieldProps('country')}
-                                                isInvalid={!!touched.country}
+                                                value={values.country}
+                                                onChange={handleChange}
+                                                isInvalid={
+                                                    !!(
+                                                        touched.country &&
+                                                        errors.country
+                                                    )
+                                                }
+                                            />
+
+                                            {touched.country &&
+                                                errors.country && (
+                                                    <Form.Control.Feedback type="invalid">
+                                                        {errors.country}
+                                                    </Form.Control.Feedback>
+                                                )}
+                                        </Form.Group>
+                                        <Form.Group controlId="price">
+                                            <Form.Label>Price</Form.Label>
+
+                                            <Form.Control
+                                                type="number"
+                                                id="price"
+                                                placeholder="Price"
+                                                value={values.price}
+                                                onChange={handleChange}
+                                                isInvalid={
+                                                    !!(
+                                                        touched.price &&
+                                                        errors.price
+                                                    )
+                                                }
                                             />
 
                                             {touched.country &&
@@ -291,7 +371,9 @@ const AdminCreatePost = () => {
                                                 type="text"
                                                 placeholder="Area"
                                                 id="area"
-                                                {...getFieldProps('area')}
+                                                onChange={handleChange}
+                                                // {...getFieldProps('area')}
+                                                value={values.area}
                                                 isInvalid={
                                                     !!(
                                                         touched.area &&
@@ -305,6 +387,28 @@ const AdminCreatePost = () => {
                                                     {errors.area}
                                                 </Form.Control.Feedback>
                                             )}
+                                        </Form.Group>
+                                        <Form.Group controlId="parking">
+                                            <Form.Label>Parking</Form.Label>
+                                            <Form.Control
+                                                type="number"
+                                                id="parking"
+                                                placeholder="Parking"
+                                                value={values.parking}
+                                                onChange={handleChange}
+                                                isInvalid={
+                                                    !!(
+                                                        touched.parking &&
+                                                        errors.parking
+                                                    )
+                                                }
+                                            />
+                                            {touched.parking &&
+                                                errors.parking && (
+                                                    <Form.Control.Feedback type="invalid">
+                                                        {errors.parking}
+                                                    </Form.Control.Feedback>
+                                                )}
                                         </Form.Group>
                                         <FieldArray name="questionsAndAnswers">
                                             {({ push, remove }) => (
@@ -400,9 +504,7 @@ const AdminCreatePost = () => {
                                                 size="lg"
                                                 type="submit"
                                                 disabled={
-                                                    !isValid ||
-                                                    isLoading ||
-                                                    isSubmitting
+                                                    !isValid || isSubmitting
                                                 }
                                             >
                                                 {isLoading
