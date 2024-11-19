@@ -26,7 +26,7 @@ const validationSchema = Yup.object().shape({
     bedrooms: Yup.number().required('Empty field'),
     bathrooms: Yup.number().required('Empty field'),
     area: Yup.string(),
-    price: Yup.number(),
+    price: Yup.number().required('Empty field'),
     floor: Yup.number().required('Empty field'),
     parking: Yup.string().required('Empty field'),
     city: Yup.string().required('Empty field'),
@@ -111,7 +111,7 @@ const AdminCreatePost = () => {
                                 validationSchema={validationSchema}
                                 onSubmit={async (
                                     values,
-                                    { setStatus, setSubmitting },
+                                    { setStatus, setSubmitting, resetForm },
                                 ) => {
                                     try {
                                         const formattedValues = {
@@ -127,6 +127,28 @@ const AdminCreatePost = () => {
                                         ).unwrap();
                                         setStatus({ success: true });
                                         setSubmitting(false);
+                                        resetForm({
+                                            values: {
+                                                title: '',
+                                                description: '',
+                                                category: '',
+                                                preview: '',
+                                                bedrooms: 0,
+                                                bathrooms: 0,
+                                                city: '',
+                                                country: '',
+                                                area: 0,
+                                                floor: 0,
+                                                price: 0,
+                                                parking: 0,
+                                                questionsAndAnswers: [
+                                                    {
+                                                        question: '',
+                                                        answer: '',
+                                                    },
+                                                ],
+                                            },
+                                        });
                                     } catch (err: any) {
                                         console.error({ err });
                                         const message =
@@ -269,7 +291,30 @@ const AdminCreatePost = () => {
                                                     </Form.Control.Feedback>
                                                 )}
                                         </Form.Group>
+                                        <Form.Group controlId="country">
+                                            <Form.Label>Country</Form.Label>
 
+                                            <Form.Control
+                                                type="text"
+                                                id="country"
+                                                placeholder="Country"
+                                                value={values.country}
+                                                onChange={handleChange}
+                                                isInvalid={
+                                                    !!(
+                                                        touched.country &&
+                                                        errors.country
+                                                    )
+                                                }
+                                            />
+
+                                            {touched.country &&
+                                                errors.country && (
+                                                    <Form.Control.Feedback type="invalid">
+                                                        {errors.country}
+                                                    </Form.Control.Feedback>
+                                                )}
+                                        </Form.Group>
                                         <Form.Group controlId="city">
                                             <Form.Label>City</Form.Label>
 
@@ -316,30 +361,7 @@ const AdminCreatePost = () => {
                                                 </Form.Control.Feedback>
                                             )}
                                         </Form.Group>
-                                        <Form.Group controlId="country">
-                                            <Form.Label>Country</Form.Label>
 
-                                            <Form.Control
-                                                type="text"
-                                                id="country"
-                                                placeholder="Country"
-                                                value={values.country}
-                                                onChange={handleChange}
-                                                isInvalid={
-                                                    !!(
-                                                        touched.country &&
-                                                        errors.country
-                                                    )
-                                                }
-                                            />
-
-                                            {touched.country &&
-                                                errors.country && (
-                                                    <Form.Control.Feedback type="invalid">
-                                                        {errors.country}
-                                                    </Form.Control.Feedback>
-                                                )}
-                                        </Form.Group>
                                         <Form.Group controlId="price">
                                             <Form.Label>Price</Form.Label>
 
