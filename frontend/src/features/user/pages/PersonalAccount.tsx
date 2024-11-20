@@ -9,7 +9,6 @@ import {
     useGetUserProfileQuery,
     useUpdateUserProfileMutation,
 } from '../userApiSlice';
-import { useNavigate } from 'react-router-dom';
 import { useSendImageMutation } from 'features/uploadImage/uploadImage';
 import './PersonalAccount.css';
 
@@ -260,7 +259,6 @@ export const PersonalAccount = () => {
                                     )}
                                 </label>
                             </Form.Group>
-
                             <Button
                                 variant="primary"
                                 type="submit"

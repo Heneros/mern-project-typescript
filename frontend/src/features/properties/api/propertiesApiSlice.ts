@@ -20,7 +20,7 @@ export const propertiesApiSlice = baseApiSlice.injectEndpoints({
             providesTags: ['Property'],
         }),
         updateProperty: builder.mutation({
-            query: (id, ...otherFields) => ({
+            query: ({id, ...otherFields}) => ({
                 url: `/property/${id}`,
                 method: 'PATCH',
                 body: otherFields,
