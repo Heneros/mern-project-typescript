@@ -9,15 +9,28 @@ import useImageUpload from 'widgets/uploadImg/useImageUpload';
 
 interface PropertyFormProps {
     propertyData?: string[];
-    createProperty?: (data: { values: any }) => { unwrap: () => Promise<any> };
+    createProperty?: (data: {
+        title: string;
+        description: string;
+        category: string;
+        preview: string;
+        bedrooms: number;
+        bathrooms: number;
+        city: string;
+        country: string;
+        area: number;
+        floor: number;
+        price: number;
+        parking: number;
+        questionsAndAnswers: { question: string; answer: string }[];
+    }) => { unwrap: () => Promise<any> };
     updateProperty?: (data: { id: string; [key: string]: any }) => {
         unwrap: () => Promise<any>;
     };
     // onSubmit: (values: any) => void;
-    validationSchema?: any;
     isLoading?: boolean;
     isUpdate: boolean;
-    postId: string | undefined;
+    postId?: string | undefined;
 }
 
 const PropertyForm: React.FC<PropertyFormProps> = ({
@@ -51,7 +64,7 @@ const PropertyForm: React.FC<PropertyFormProps> = ({
                         setStatus({ success: true });
                         setSubmitting(false);
                     } else if (createProperty) {
-                        await createProperty({ values }).unwrap();
+                        await createProperty(values).unwrap();
                         resetForm({
                             values: {
                                 title: '',
@@ -319,23 +332,23 @@ const PropertyForm: React.FC<PropertyFormProps> = ({
                                                 placeholder="Enter question"
                                                 value={qa.question}
                                                 onChange={handleChange}
-                                                isInvalid={
-                                                    touched.questionsAndAnswers &&
-                                                    touched.questionsAndAnswers[
-                                                        index
-                                                    ]?.question &&
-                                                    errors.questionsAndAnswers &&
-                                                    errors.questionsAndAnswers[
-                                                        index
-                                                    ]?.question
-                                                }
+                                                // isInvalid={
+                                                //     touched.questionsAndAnswers &&
+                                                //     touched.questionsAndAnswers[
+                                                //         index
+                                                //     ]?.question &&
+                                                //     errors.questionsAndAnswers &&
+                                                //     errors.questionsAndAnswers[
+                                                //         index
+                                                //     ]?.question
+                                                // }
                                             />
-                                            <Form.Control.Feedback type="invalid">
+                                            {/* <Form.Control.Feedback type="invalid">
                                                 {errors.questionsAndAnswers &&
                                                     errors.questionsAndAnswers[
                                                         index
                                                     ]?.question}
-                                            </Form.Control.Feedback>
+                                            </Form.Control.Feedback> */}
                                         </Form.Group>
                                         <Form.Group
                                             controlId={`questionsAndAnswers[${index}].answer`}
@@ -348,23 +361,23 @@ const PropertyForm: React.FC<PropertyFormProps> = ({
                                                 placeholder="Enter answer"
                                                 value={qa.answer}
                                                 onChange={handleChange}
-                                                isInvalid={
-                                                    touched.questionsAndAnswers &&
-                                                    touched.questionsAndAnswers[
-                                                        index
-                                                    ]?.answer &&
-                                                    errors.questionsAndAnswers &&
-                                                    errors.questionsAndAnswers[
-                                                        index
-                                                    ]?.answer
-                                                }
+                                                // isInvalid={
+                                                //     touched.questionsAndAnswers &&
+                                                //     touched.questionsAndAnswers[
+                                                //         index
+                                                //     ]?.answer &&
+                                                //     errors.questionsAndAnswers &&
+                                                //     errors.questionsAndAnswers[
+                                                //         index
+                                                //     ]?.answer
+                                                // }
                                             />
-                                            <Form.Control.Feedback type="invalid">
+                                            {/* <Form.Control.Feedback type="invalid">
                                                 {errors.questionsAndAnswers &&
                                                     errors.questionsAndAnswers[
                                                         index
                                                     ]?.answer}
-                                            </Form.Control.Feedback>
+                                            </Form.Control.Feedback> */}
                                         </Form.Group>
                                         <Button
                                             type="button"
