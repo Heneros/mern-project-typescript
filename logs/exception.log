@@ -1,0 +1,296 @@
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+      at listenInCluster (node:net:1946:12)
+      at Server.listen (node:net:2044:7)
+      at Function.listen (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\express\lib\application.js:635:24)
+      at startServer (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:87:17)
+      at Object.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:103:5)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1621:12) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at Function.listen (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:87:17)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at Function.listen (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:87:17)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+  exception: true,
+  date: 'Fri Nov 22 2024 18:25:44 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 12372,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 422080512,
+      heapTotal: 373825536,
+      heapUsed: 347878256,
+      external: 24905582,
+      arrayBuffers: 21864964
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 270266.5 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1898,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1946,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2044,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: 'startServer',
+      line: 87,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: null,
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-22 06:25:44.827 PM'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+      at listenInCluster (node:net:1946:12)
+      at Server.listen (node:net:2044:7)
+      at Function.listen (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\express\lib\application.js:635:24)
+      at startServer (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:87:17)
+      at Object.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:103:5)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1621:12) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at Function.listen (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:87:17)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at Function.listen (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:87:17)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+  exception: true,
+  date: 'Fri Nov 22 2024 18:26:13 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 12864,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 423862272,
+      heapTotal: 375660544,
+      heapUsed: 346469776,
+      external: 24905550,
+      arrayBuffers: 21864932
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 270295.156 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1898,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1946,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2044,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: 'startServer',
+      line: 87,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: null,
+      line: 103,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-22 06:26:13.486 PM'
+}

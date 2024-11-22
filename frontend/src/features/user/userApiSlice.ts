@@ -66,6 +66,8 @@ export const usersApiSlice = baseApiSlice.injectEndpoints({
             query: (id) => ({
                 url: `/user/${id}/deactivate`,
                 method: 'PATCH',
+                credentials: 'include',
+                // body: formData,
             }),
             invalidatesTags: [{ type: 'User', id: 'LIST' }],
         }),

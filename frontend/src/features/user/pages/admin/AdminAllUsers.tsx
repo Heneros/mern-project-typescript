@@ -41,12 +41,13 @@ const AdminAllUsers = () => {
         setRowsPerPage(parseInt(event.target.value, 10));
         setPage(0);
     };
-    const deactivateUserHandler = async (id: number) => {
+    const deactivateUserHandler = async (id: string) => {
+        // console.log(id);
         try {
             await deactivateUser(id).unwrap();
             toast.success('User deactivated');
         } catch (err: any) {
-            const message = err.data.message;
+            const message = err.data.message || 'Error deactivate';
             toast.error(message);
         }
     };
@@ -54,11 +55,11 @@ const AdminAllUsers = () => {
     const deleteHandler = async (id: User) => {
         try {
             if (window.confirm('Are you sure you want to delete this user?')) {
-                await deleteUser(id.toString());
+                await deleteUser(id);
                 toast.success('User deleted successfully');
             }
         } catch (err: any) {
-            const message = err.data.message;
+            const message = err.data.message || 'Error deactivate';
             toast.error(message);
         }
     };
@@ -70,9 +71,9 @@ const AdminAllUsers = () => {
         }
     }, [error, isError]);
 
-    console.log(data);
+    // console.log(data);
 
-    console.log(rows);
+    // console.log(rows);
     return (
         <>
             <Breadcrumbs lastParent={'All Users'} />
@@ -117,9 +118,9 @@ const AdminAllUsers = () => {
                                                     page * rowsPerPage +
                                                         rowsPerPage,
                                                 )
-                                                .map((row) => (
+                                                .map((row, index) => (
                                                     <>
-                                                        <tr key={row._id}>
+                                                        <tr key={index}>
                                                             <td>{row.email}</td>
                                                             <td>
                                                                 {row.username}
@@ -142,14 +143,14 @@ const AdminAllUsers = () => {
                                                             </td>
                                                             <td>
                                                                 <Button
-                                                                    variant="danger"
+                                                                    variant="secondary"
                                                                     onClick={() =>
                                                                         deactivateUserHandler(
-                                                                            row?.id,
+                                                                            row?._id,
                                                                         )
                                                                     }
                                                                 >
-                                                                    Delete
+                                                                    Deactivate
                                                                 </Button>
                                                             </td>
                                                             <td>
@@ -157,7 +158,7 @@ const AdminAllUsers = () => {
                                                                     variant="danger"
                                                                     onClick={() =>
                                                                         deleteHandler(
-                                                                            row?.id,
+                                                                            row?._id,
                                                                         )
                                                                     }
                                                                 >
@@ -169,7 +170,7 @@ const AdminAllUsers = () => {
                                                 ))
                                         ) : (
                                             <tr>
-                                                <td colSpan="8">
+                                                <td colSpan={8}>
                                                     No users found.
                                                 </td>
                                             </tr>
