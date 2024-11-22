@@ -24,11 +24,11 @@ import { ROLES } from 'shared/consts';
 import { PersonalAccount } from 'pages/personalAccount';
 import { ContactUs } from 'pages/contactUs';
 import { SingleProperty } from 'pages/singleProperty';
-import AdminAllPosts from 'pages/admin/AdminAllPosts';
+import AdminAllPosts from 'features/user/pages/admin/AdminAllPosts';
 
-import AdminAllUsers from 'pages/admin/AdminAllUsers';
-import AdminCreatePost from 'pages/admin/AdminCreatePost';
-import AdminEditPost from 'pages/admin/AdminEditPost';
+import AdminAllUsers from 'features/user/pages/admin/AdminAllUsers';
+import AdminCreatePost from 'features/user/pages/admin/AdminCreatePost';
+import AdminEditPost from 'features/user/pages/admin/AdminEditPost';
 import AllOrders from 'pages/allOrders/AllOrders';
 
 export const AppRouter = () => {
@@ -89,6 +89,10 @@ export const AppRouter = () => {
                         },
                         {
                             path: 'admin/all-users',
+                            element: <AdminAllUsers />,
+                        },
+                        {
+                            path: 'admin/all-users/:pageNumber',
                             element: <AdminAllUsers />,
                         },
                         {
