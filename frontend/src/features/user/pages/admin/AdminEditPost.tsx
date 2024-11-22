@@ -33,7 +33,7 @@ const AdminEditPost = () => {
         updateProperty,
         { data: updateData, isLoading: isLoadingUpdate, isSuccess },
     ] = useUpdatePropertyMutation();
-    const [sendImage] = useSendImageMutation();
+    // const [sendImage] = useSendImageMutation();
     const propertyData = property?.propertyPage ?? [];
 
     useEffect(() => {

@@ -3,18 +3,20 @@ import { User } from 'shared/types';
 
 interface GetAllUsersResult {
     users: User[];
+    numberOfPages: number;
+    count: number;
+    success: boolean;
 }
 
 export const usersApiSlice = baseApiSlice.injectEndpoints({
     endpoints: (builder) => ({
-        getAllUsers: builder.query<GetAllUsersResult, void>({
+        getAllUsers: builder.query<GetAllUsersResult, string>({
             query: () => ({
                 url: '/user/all',
                 validateStatus: (response, result) => {
                     return response.status === 200 && !result.isError;
                 },
             }),
-            // Этот код динамически генерирует теги для кэширования. Если результат запроса существует (result не null или undefined), он создает тег для каждого отдельного пользователя плюс общий тег для списка. Если результата нет, он возвращает только общий тег списка.
             providesTags: (result) =>
                 result
                     ? [
