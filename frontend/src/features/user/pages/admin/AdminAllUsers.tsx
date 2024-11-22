@@ -4,8 +4,9 @@ import {
     useDeleteUserMutation,
     useGetAllUsersQuery,
 } from 'features/user/userApiSlice';
+import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row, Table } from 'react-bootstrap';
+import { Button, Col, Container, Row, Table } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/Loader';
@@ -50,10 +51,10 @@ const AdminAllUsers = () => {
         }
     };
 
-    const deleteHandler = async (id: number) => {
+    const deleteHandler = async (id: User) => {
         try {
             if (window.confirm('Are you sure you want to delete this user?')) {
-                await deleteUser(id).unwrap();
+                await deleteUser(id.toString());
                 toast.success('User deleted successfully');
             }
         } catch (err: any) {
@@ -70,6 +71,8 @@ const AdminAllUsers = () => {
     }, [error, isError]);
 
     console.log(data);
+
+    console.log(rows);
     return (
         <>
             <Breadcrumbs lastParent={'All Users'} />
@@ -97,11 +100,11 @@ const AdminAllUsers = () => {
                                 >
                                     <thead>
                                         <tr>
-                                            <th>ID</th>
-                                            <th>Username</th>
                                             <th>Email</th>
-                                            <th>Active</th>
+                                            <th>Username</th>
                                             <th>Role</th>
+                                            <th>isEmailVerified</th>
+                                            <th>Join</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -114,9 +117,62 @@ const AdminAllUsers = () => {
                                                     page * rowsPerPage +
                                                         rowsPerPage,
                                                 )
-                                                .map((row) => <></>)
+                                                .map((row) => (
+                                                    <>
+                                                        <tr key={row._id}>
+                                                            <td>{row.email}</td>
+                                                            <td>
+                                                                {row.username}
+                                                            </td>
+                                                            <td>
+                                                                {row.roles?.join(
+                                                                    ' ',
+                                                                )}
+                                                            </td>
+                                                            <td>
+                                                                {row?.isEmailVerified.toString()}
+                                                            </td>
+                                                            <td>
+                                                                {format(
+                                                                    new Date(
+                                                                        row.createdAt,
+                                                                    ),
+                                                                    'MMMM dd, yyyy',
+                                                                )}
+                                                            </td>
+                                                            <td>
+                                                                <Button
+                                                                    variant="danger"
+                                                                    onClick={() =>
+                                                                        deactivateUserHandler(
+                                                                            row?.id,
+                                                                        )
+                                                                    }
+                                                                >
+                                                                    Delete
+                                                                </Button>
+                                                            </td>
+                                                            <td>
+                                                                <Button
+                                                                    variant="danger"
+                                                                    onClick={() =>
+                                                                        deleteHandler(
+                                                                            row?.id,
+                                                                        )
+                                                                    }
+                                                                >
+                                                                    Delete
+                                                                </Button>
+                                                            </td>
+                                                        </tr>
+                                                    </>
+                                                ))
                                         ) : (
-                                            <></>
+                                            <tr>
+                                                <td colSpan="8">
+                                                    No users found.
+                                                </td>
+                                            </tr>
                                         )}
                                     </tbody>
                                 </Table>

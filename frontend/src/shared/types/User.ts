@@ -1,4 +1,5 @@
-export interface User {
+interface User {
+    _id?: number;
     id?: number;
     email: String;
     username: String;
@@ -12,7 +13,7 @@ export interface User {
     phoneNumber?: string;
     roles?: string[];
     active?: boolean;
-
+    createdAt: Date;
     refreshToken?: string[];
     accessToken?: string[];
     githubToken?: string[];
