@@ -124,6 +124,7 @@ const AdminAllPosts = () => {
                                         )}
                                     </tbody>
                                 </Table>
+                                
                             </>
                         )}
                         <Row>

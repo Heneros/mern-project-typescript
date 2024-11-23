@@ -177,6 +177,7 @@ const AdminAllUsers = () => {
                                         )}
                                     </tbody>
                                 </Table>
+                                <div className="d-flex justify-content-between align-items-center mt-3"></div>
                             </>
                         )}
                     </Col>
