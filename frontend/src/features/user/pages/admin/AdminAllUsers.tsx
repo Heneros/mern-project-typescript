@@ -6,7 +6,15 @@ import {
 } from 'features/user/userApiSlice';
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, Form, Row, Table } from 'react-bootstrap';
+import {
+    Button,
+    Col,
+    Container,
+    Form,
+    Pagination,
+    Row,
+    Table,
+} from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/Loader';
@@ -29,7 +37,7 @@ const AdminAllUsers = () => {
     const [deleteUser] = useDeleteUserMutation();
     const [deactivateUser] = useDeactivateUserMutation();
 
-    const rows = data?.users;
+    const rows = data?.users || [];
 
     const handleChangePage = (newPage: number) => {
         setPage(newPage);
@@ -74,6 +82,12 @@ const AdminAllUsers = () => {
     // console.log(data);
 
     // console.log(rows);
+    const totalPages =
+        rows.length > 0 ? Math.ceil(rows.length / rowsPerPage) : [];
+    const paginatedRows = rows.slice(
+        page * rowsPerPage,
+        page * rowsPerPage + rowsPerPage,
+    );
     return (
         <>
             <Breadcrumbs lastParent={'All Users'} />
@@ -184,7 +198,86 @@ const AdminAllUsers = () => {
                                         )}
                                     </tbody>
                                 </Table>
-                                <div className="d-flex justify-content-between align-items-center"></div>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <label>
+                                            Rows per page:{' '}
+                                            <select
+                                                value={rowsPerPage}
+                                                onChange={
+                                                    handleChangeRowsPerPage
+                                                }
+                                            >
+                                                {[5, 10, 25].map((size) => (
+                                                    <option
+                                                        key={size}
+                                                        value={size}
+                                                    >
+                                                        {size}
+                                                    </option>
+                                                ))}
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <Pagination>
+                                        <Pagination.First
+                                            onClick={() => handleChangePage(0)}
+                                            disabled={page === 0}
+                                        />
+                                        <Pagination.Prev
+                                            onClick={() =>
+                                                handleChangePage(page - 1)
+                                            }
+                                            disabled={page === 0}
+                                        />
+                                        {Array.from(
+                                            Array(
+                                                Math.ceil(
+                                                    rows.length / rowsPerPage,
+                                                ),
+                                            ).keys(),
+                                        ).map((p) => (
+                                            <Pagination.Item
+                                                key={p}
+                                                active={p === page}
+                                                onClick={() =>
+                                                    handleChangePage(p)
+                                                }
+                                            >
+                                                {p + 1}
+                                            </Pagination.Item>
+                                        ))}
+                                        <Pagination.Next
+                                            onClick={() =>
+                                                handleChangePage(page + 1)
+                                            }
+                                            disabled={
+                                                page >=
+                                                Math.ceil(
+                                                    rows.length / rowsPerPage,
+                                                ) -
+                                                    1
+                                            }
+                                        />
+                                        <Pagination.Last
+                                            onClick={() =>
+                                                handleChangePage(
+                                                    Math.ceil(
+                                                        rows.length /
+                                                            rowsPerPage,
+                                                    ) - 1,
+                                                )
+                                            }
+                                            disabled={
+                                                page >=
+                                                Math.ceil(
+                                                    rows.length / rowsPerPage,
+                                                ) -
+                                                    1
+                                            }
+                                        />
+                                    </Pagination>
+                                </div>
                             </>
                         )}
                     </Col>

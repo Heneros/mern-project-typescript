@@ -2,7 +2,7 @@ import asyncHandler from 'express-async-handler';
 import User from '../../models/userModel';
 
 const getAllUserAccounts = asyncHandler(async (req, res) => {
-    const pageSize = 10;
+    const pageSize = Number(process.env.PAGE_SIZE) || 10;
 
     const page = Number(req.query.pageNumber) || 1;
 

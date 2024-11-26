@@ -91,10 +91,10 @@ export const AppRouter = () => {
                             path: 'admin/all-users',
                             element: <AdminAllUsers />,
                         },
-                        {
-                            path: 'admin/all-users/:pageNumber',
-                            element: <AdminAllUsers />,
-                        },
+                        // {
+                        //     path: 'admin/all-users/:pageNumber',
+                        //     element: <AdminAllUsers />,
+                        // },
                         {
                             path: 'admin/create-post',
                             element: <AdminCreatePost />,

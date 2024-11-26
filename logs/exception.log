@@ -294,3 +294,154 @@
   ],
   timestamp: '2024-11-22 06:26:13.486 PM'
 }
+{
+  error: backend/controllers/user/getAllUserAccounts.ts(14,16): error TS2345: Argument of type 'string | 10' is not assignable to parameter of type 'number'.
+    Type 'string' is not assignable to type 'number'.
+  backend/controllers/user/getAllUserAccounts.ts(15,15): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+  backend/controllers/user/getAllUserAccounts.ts(21,42): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/user/getAllUserAccounts.ts(14,16): error TS2345: Argument of type 'string | 10' is not assignable to parameter of type 'number'.\r\n" +
+    "  Type 'string' is not assignable to type 'number'.\r\n" +
+    "backend/controllers/user/getAllUserAccounts.ts(15,15): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.\r\n" +
+    "backend/controllers/user/getAllUserAccounts.ts(21,42): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/user/getAllUserAccounts.ts(14,16): error TS2345: Argument of type 'string | 10' is not assignable to parameter of type 'number'.\r\n" +
+    "  Type 'string' is not assignable to type 'number'.\r\n" +
+    "backend/controllers/user/getAllUserAccounts.ts(15,15): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.\r\n" +
+    "backend/controllers/user/getAllUserAccounts.ts(21,42): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/user/getAllUserAccounts.ts(14,16): error TS2345: Argument of type 'string | 10' is not assignable to parameter of type 'number'.\r\n" +
+    "  Type 'string' is not assignable to type 'number'.\r\n" +
+    "backend/controllers/user/getAllUserAccounts.ts(15,15): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.\r\n" +
+    "backend/controllers/user/getAllUserAccounts.ts(21,42): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Tue Nov 26 2024 18:00:24 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 1928,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 400982016,
+      heapTotal: 352567296,
+      heapUsed: 328547104,
+      external: 24860328,
+      arrayBuffers: 21849811
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 3422.562 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-26 06:00:24.651 PM'
+}
