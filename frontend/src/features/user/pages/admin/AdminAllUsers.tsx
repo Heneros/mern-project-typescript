@@ -6,7 +6,7 @@ import {
 } from 'features/user/userApiSlice';
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, Row, Table } from 'react-bootstrap';
+import { Button, Col, Container, Form, Row, Table } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/Loader';
@@ -142,16 +142,23 @@ const AdminAllUsers = () => {
                                                                 )}
                                                             </td>
                                                             <td>
-                                                                <Button
-                                                                    variant="secondary"
-                                                                    onClick={() =>
+                                                                <Form.Check
+                                                                    type="switch"
+                                                                    id={`user-status-${row._id}`}
+                                                                    label={
+                                                                        row.active
+                                                                            ? 'Active'
+                                                                            : 'Deactivated'
+                                                                    }
+                                                                    checked={
+                                                                        row.active
+                                                                    }
+                                                                    onChange={() =>
                                                                         deactivateUserHandler(
-                                                                            row?._id,
+                                                                            row._id,
                                                                         )
                                                                     }
-                                                                >
-                                                                    Deactivate
-                                                                </Button>
+                                                                />
                                                             </td>
                                                             <td>
                                                                 <Button
@@ -177,7 +184,7 @@ const AdminAllUsers = () => {
                                         )}
                                     </tbody>
                                 </Table>
-                                <div className="d-flex justify-content-between align-items-center mt-3"></div>
+                                <div className="d-flex justify-content-between align-items-center"></div>
                             </>
                         )}
                     </Col>
