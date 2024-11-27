@@ -4,20 +4,21 @@ import { User } from 'shared/types';
 interface GetAllUsersResult {
     users: User[];
     numberOfPages: number;
+    pageNumber: number;
     count: number;
     success: boolean;
 }
 
 export const usersApiSlice = baseApiSlice.injectEndpoints({
     endpoints: (builder) => ({
-        getAllUsers: builder.query<GetAllUsersResult, string>({
-            query: () => ({
-                url: '/user/all',
+        getAllUsers: builder.query<GetAllUsersResult, number>({
+            query: (page = 1) => ({
+                url: `/user/all?pageNumber=${page}`,
                 validateStatus: (response, result) => {
                     return response.status === 200 && !result.isError;
                 },
             }),
-            providesTags: (result) =>
+            providesTags: (result, page) =>
                 result
                     ? [
                           ...result.users.map(({ id }) => ({
@@ -25,6 +26,7 @@ export const usersApiSlice = baseApiSlice.injectEndpoints({
                               id: id as string | number,
                           })),
                           { type: 'User', id: 'LIST' },
+                        //   { type: 'User', id: `PAGE_${page}` },
                       ]
                     : [{ type: 'User', id: 'LIST' }],
         }),

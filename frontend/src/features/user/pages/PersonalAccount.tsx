@@ -1,16 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { Col, Container, Row, Form, Button } from 'react-bootstrap';
+import { Col, Container, Row, Form, Button, Modal } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import {
+    useDeleteMyAccountMutation,
     useGetUserProfileQuery,
     useUpdateUserProfileMutation,
 } from '../userApiSlice';
 import { useSendImageMutation } from 'features/uploadImage/uploadImage';
 import './PersonalAccount.css';
+import { useAppDispatch } from 'shared/lib/store';
+import { logOut } from 'features/auth/authSlice';
 
 const validationSchema = Yup.object().shape({
     email: Yup.string()
@@ -38,11 +41,32 @@ const validationSchema = Yup.object().shape({
 });
 
 export const PersonalAccount = () => {
+    const dispatch = useAppDispatch();
     const { data } = useGetUserProfileQuery(undefined);
+    const [show, setShow] = useState(false);
     const [updateProfile, { data: updateData, isLoading, isSuccess }] =
         useUpdateUserProfileMutation();
     const [sendImage] = useSendImageMutation();
+    const [deleteMyAccount] = useDeleteMyAccountMutation();
 
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    const deleteHandler = async (
+        e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    ) => {
+        e.preventDefault();
+
+        try {
+            await deleteMyAccount(undefined).unwrap();
+            dispatch(logOut());
+            toast.success('Your account has been deleted.');
+        } catch (err: any) {
+            console.error({ err });
+            const message = err.data?.message || 'Error updating profile';
+            toast.error(message);
+        }
+    };
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -259,18 +283,49 @@ export const PersonalAccount = () => {
                                     )}
                                 </label>
                             </Form.Group>
-                            <Button
-                                variant="primary"
-                                type="submit"
-                                className="mt-3"
-                                disabled={
-                                    !formik.isValid ||
-                                    isLoading ||
-                                    formik.isSubmitting
-                                }
-                            >
-                                {isLoading ? 'Updating...' : 'Update Profile'}
-                            </Button>
+                            <Col className='d-flex flex-row justify-content-between'>
+                                <Button
+                                    variant="primary"
+                                    type="submit"
+                                    className="mt-3"
+                                    disabled={
+                                        !formik.isValid ||
+                                        isLoading ||
+                                        formik.isSubmitting
+                                    }
+                                >
+                                    {isLoading
+                                        ? 'Updating...'
+                                        : 'Update Profile'}
+                                </Button>
+
+                                <Button variant="primary" onClick={handleShow}>
+                                    Delete Account
+                                </Button>
+                            </Col>
+
+                            <Modal show={show} onHide={handleClose}>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>Are you sure?</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    Account will be deleted after confirmation
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button
+                                        variant="secondary"
+                                        onClick={handleClose}
+                                    >
+                                        Discard
+                                    </Button>
+                                    <Button
+                                        variant="primary"
+                                        onClick={deleteHandler}
+                                    >
+                                        Confirm
+                                    </Button>
+                                </Modal.Footer>
+                            </Modal>
                         </Form>
                     </Col>
                 </Row>

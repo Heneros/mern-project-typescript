@@ -37,8 +37,6 @@ const AdminAllPosts = () => {
     };
 
     const propertiesList = data?.properties ?? [];
-    //   pages={data?.numberOfPages}
-    //                 page={data?.pageNumber}
 
     return (
         <>
@@ -124,7 +122,6 @@ const AdminAllPosts = () => {
                                         )}
                                     </tbody>
                                 </Table>
-                                
                             </>
                         )}
                         <Row>

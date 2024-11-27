@@ -11,38 +11,33 @@ interface PaginateProps {
 export const PaginationProperties: React.FC<PaginateProps> = ({
     isAdmin,
     pages,
+    page,
 }) => {
     const location = useLocation();
-    const currentPathPage = parseInt(
-        location.pathname.split('/').pop() || '1',
-        10,
-    );
+
+    const isAllUsersPath = location.pathname.includes('/admin/all-users');
+    const isAllPostsPath = location.pathname.includes('/admin/all-posts');
 
     const renderPagination = () => {
         const pageLinks = [];
 
         for (let i = 1; i <= pages; i++) {
-            const isActive = i === currentPathPage;
-            const linkClass = isActive ? 'is_active' : '';
+            const isActive = i === page;
 
-            // console.log(i);
+            const linkPath = isAllUsersPath
+                ? `/admin/all-users/${i}`
+                : isAllPostsPath
+                  ? `/admin/all-posts/${i}`
+                  : `/properties/page/${i}`;
+
             pageLinks.push(
-                <li key={i}>
-                    <Link
-                        className={linkClass}
-                        to={
-                            isAdmin
-                                ? `/properties/page/${i}`
-                                : `/admin/all-posts/${i}`
-                        }
-                    >
-                        {i}
-                    </Link>
+                <li key={i} className={isActive ? 'active' : ''}>
+                    <Link to={linkPath}>{i}</Link>
                 </li>,
             );
         }
         return pageLinks;
     };
 
-    return pages > 1 && <Pagination>{renderPagination()}</Pagination>;
+    return <ul className="pagination">{renderPagination()}</ul>;
 };
