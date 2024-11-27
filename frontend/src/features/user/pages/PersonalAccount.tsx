@@ -98,6 +98,7 @@ export const PersonalAccount = () => {
                 username: userProfile.username || '',
                 firstName: userProfile.firstName || '',
                 lastName: userProfile.lastName || '',
+
                 currentPassword: '',
                 password: '',
                 passwordConfirm: '',
@@ -134,6 +135,7 @@ export const PersonalAccount = () => {
             console.error('Upload error:', error);
         }
     };
+    console.log(updateData);
 
     return (
         <>
@@ -191,6 +193,25 @@ export const PersonalAccount = () => {
                                     formik.errors.username && (
                                         <Form.Control.Feedback type="invalid">
                                             {formik.errors.username}
+                                        </Form.Control.Feedback>
+                                    )}
+                            </Form.Group>
+                            <Form.Group controlId="firstName">
+                                <Form.Label>FirstName</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    {...formik.getFieldProps('firstName')}
+                                    isInvalid={
+                                        !!(
+                                            formik.touched.firstName &&
+                                            formik.errors.firstName
+                                        )
+                                    }
+                                />
+                                {formik.touched.firstName &&
+                                    formik.errors.firstName && (
+                                        <Form.Control.Feedback type="invalid">
+                                            {formik.errors.firstName}
                                         </Form.Control.Feedback>
                                     )}
                             </Form.Group>
@@ -283,7 +304,7 @@ export const PersonalAccount = () => {
                                     )}
                                 </label>
                             </Form.Group>
-                            <Col className='d-flex flex-row justify-content-between'>
+                            <Col className="d-flex flex-row justify-content-between">
                                 <Button
                                     variant="primary"
                                     type="submit"
@@ -299,7 +320,7 @@ export const PersonalAccount = () => {
                                         : 'Update Profile'}
                                 </Button>
 
-                                <Button variant="primary" onClick={handleShow}>
+                                <Button variant="danger" onClick={handleShow}>
                                     Delete Account
                                 </Button>
                             </Col>

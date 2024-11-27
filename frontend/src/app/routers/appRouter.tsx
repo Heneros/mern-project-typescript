@@ -16,7 +16,7 @@ import { Registration } from 'features/auth/pages/registration';
 import { NotFound } from 'pages/notfound';
 import { PasswordReset } from 'features/auth/pages/passwordreset';
 import { PasswordRequestPage } from 'features/auth/pages/passwordrequestpage';
-import { Login } from 'pages/login';
+import { Login } from 'features/auth/pages/login';
 import { ResendEmailTokenPage } from 'features/auth/pages/resendEmailTokenPage';
 import { VerifiedPage } from 'features/auth/pages/verifiedPage';
 import { AuthRequired } from 'shared/hooks/AuthRequired';
@@ -46,11 +46,12 @@ export const AppRouter = () => {
                 { path: 'registration', element: <Registration /> },
                 { path: 'login', element: <Login /> },
                 { path: 'auth/reset_password', element: <PasswordReset /> },
-                { path: 'auth/verify', element: <VerifiedPage /> },
                 {
                     path: 'reset_password_request',
                     element: <PasswordRequestPage />,
                 },
+                { path: 'auth/verify', element: <VerifiedPage /> },
+
                 {
                     path: 'resend',
                     element: <ResendEmailTokenPage />,

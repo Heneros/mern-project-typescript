@@ -82,7 +82,7 @@ export const PasswordReset = () => {
                     await resetPassword(value).unwrap();
                     setStatus({ success: true });
                     setSubmitting(false);
-                } catch (err) {
+                } catch (err: any) {
                     const message = err?.data.message;
                     toast.error(message);
                     setStatus({ success: false });

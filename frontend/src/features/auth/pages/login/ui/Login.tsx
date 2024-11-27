@@ -79,6 +79,19 @@ export const Login = () => {
                         </h6>
                     </Col>
                 </Row>
+                <Row className="justify-content-center mt-3">
+                    <Col xs={12} className="text-center">
+                        <h6>
+                            Lost password?
+                            <Link
+                                to="/reset_password_request"
+                                className="text-decoration-none"
+                            >
+                                New password
+                            </Link>
+                        </h6>
+                    </Col>
+                </Row>
             </Container>
         </>
     );
