@@ -58,7 +58,7 @@ export function Properties() {
                         <Col lg={12}>
                             <PaginationProperties
                                 pages={data?.numberOfPages}
-                                page={data?.pageNumber}
+                                page={currentPage}
                                 isAdmin={true}
                             />
                         </Col>

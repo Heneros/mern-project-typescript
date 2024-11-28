@@ -23,6 +23,7 @@ export const PaginationProperties: React.FC<PaginateProps> = ({
 
         for (let i = 1; i <= pages; i++) {
             const isActive = i === page;
+            console.log(page);
 
             const linkPath = isAllUsersPath
                 ? `/admin/all-users/${i}`

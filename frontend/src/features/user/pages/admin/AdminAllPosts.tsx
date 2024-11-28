@@ -14,7 +14,6 @@ import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { PostInfo } from 'shared/types';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import { PaginationProperties } from 'widgets/paginationProperties';
-import Paginate from 'widgets/paginate/Paginate';
 
 const AdminAllPosts = () => {
     const { pageNumber = '1' } = useParams();
@@ -38,6 +37,7 @@ const AdminAllPosts = () => {
 
     const propertiesList = data?.properties ?? [];
 
+    console.log(currentPage);
     return (
         <>
             <Breadcrumbs nameParent={'Test'} lastParent={'qw'} />
@@ -128,7 +128,7 @@ const AdminAllPosts = () => {
                             <Col lg={12}>
                                 <PaginationProperties
                                     pages={data?.numberOfPages}
-                                    page={data?.pageNumber}
+                                    page={currentPage}
                                     isAdmin={false}
                                 />
                             </Col>

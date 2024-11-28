@@ -25,3 +25,8 @@
     transition: all .3s;
 }
 
+
+ ul.pagination li.active a{
+        background-color: #f35525;
+    color: #fff;
+}
