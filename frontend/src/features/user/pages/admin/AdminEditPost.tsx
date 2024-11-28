@@ -9,7 +9,7 @@ import { Col, Container, Row, Form, Button } from 'react-bootstrap';
 import SimpleMDE from 'react-simplemde-editor';
 import 'easymde/dist/easymde.min.css';
 
-import { useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/Loader';
@@ -42,7 +42,9 @@ const AdminEditPost = () => {
         }
     }, [updateData, isSuccess]);
 
-    // console.log('data', propertyData);
+    const location = useLocation()
+
+    console.log('location', location);
     // console.log('property', property);
     return (
         <>
@@ -62,6 +64,7 @@ const AdminEditPost = () => {
                                 <h3 className="text-center">
                                     Edit Post {propertyData?.title}
                                 </h3>
+                                <Link to={`/post/${propertyData?._id}`}>Link on post</Link>
                                 <hr />
                                 <PropertyForm
                                     propertyData={propertyData}

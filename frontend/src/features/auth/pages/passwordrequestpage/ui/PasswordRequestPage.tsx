@@ -44,6 +44,7 @@ export const PasswordRequestPage = () => {
                     await passwordResetRequest(value).unwrap();
                     setStatus({ success: true });
                     setSubmitting(false);
+                    navigate('/');
                 } catch (err) {
                     const message = (err as { data: { message: string } })?.data
                         .message;

@@ -33,7 +33,6 @@ const Accordion: React.FC<AccordionProps> = ({ questionsAndAnswers = [] }) => {
                             index === 0 ? 'show' : ''
                         }`}
                         aria-labelledby={`heading${index}`}
-                        data-bs-parent="#accordionExample"
                     >
                         <div className="accordion-body">
                             {qa.answer || 'No answer provided.'}

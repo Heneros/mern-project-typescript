@@ -11,7 +11,7 @@ import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
 import Accordion from 'widgets/accordion/Accordion';
-import FeaturedIcon from 'shared/assets/icons/featured-icon.png';
+
 import InfoIcon from 'shared/assets/icons/info-icon-01.png';
 import InfoIconTwo from 'shared/assets/icons/info-icon-02.png';
 import InfoIconThree from 'shared/assets/icons/info-icon-03.png';
@@ -32,7 +32,7 @@ export const SingleProperty = () => {
     if (isLoading) {
         return <Loader />;
     }
-    const titlePost = singleP.title;
+    // const titlePost = singleP.title;
     // console.log(data);
     console.log(singleP);
     return (

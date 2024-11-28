@@ -7,8 +7,8 @@ import { useGetAllPropertiesQuery } from 'features/properties/api/propertiesApiS
 import { Message } from 'shared/ui/Message';
 import { PropertyItem } from 'shared/ui/PropertyItem';
 import { PostInfo } from 'shared/types';
-import { FilterProperty } from 'features/properties/ui/filterProperty/FilterProperty';
-import { PaginationProperties } from 'features/properties/ui/paginationProperties';
+import { FilterProperty } from 'widgets/filterProperty/FilterProperty';
+import { PaginationProperties } from 'widgets/paginationProperties';
 import { useAppSelector } from 'shared/lib/store';
 import { renderError } from 'shared/utils/renderError';
 

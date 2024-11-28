@@ -11,7 +11,7 @@ import {
 import { Layout } from 'app/layout';
 
 import { HomePage } from 'pages/homePage';
-import { Properties } from 'pages/properties';
+import { Properties } from 'features/properties/pages/properties';
 import { Registration } from 'features/auth/pages/registration';
 import { NotFound } from 'pages/notfound';
 import { PasswordReset } from 'features/auth/pages/passwordreset';
@@ -23,7 +23,7 @@ import { AuthRequired } from 'shared/hooks/AuthRequired';
 import { ROLES } from 'shared/consts';
 import { PersonalAccount } from 'pages/personalAccount';
 import { ContactUs } from 'pages/contactUs';
-import { SingleProperty } from 'pages/singleProperty';
+import { SingleProperty } from 'features/properties/pages/singleProperty';
 import AdminAllPosts from 'features/user/pages/admin/AdminAllPosts';
 
 import AdminAllUsers from 'features/user/pages/admin/AdminAllUsers';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pagination } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-
+import './PaginationProperties.css';
 interface PaginateProps {
     isAdmin: boolean;
     pages: number;

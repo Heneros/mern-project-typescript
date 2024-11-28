@@ -22,7 +22,7 @@ import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { useParams } from 'react-router-dom';
-import { PaginationProperties } from 'features/properties/ui/paginationProperties';
+import { PaginationProperties } from 'widgets/paginationProperties';
 
 const AdminAllUsers = () => {
     const { pageNumber = '1' } = useParams();

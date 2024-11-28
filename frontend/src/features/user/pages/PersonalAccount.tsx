@@ -27,9 +27,7 @@ const validationSchema = Yup.object().shape({
     currentPassword: Yup.string().required(
         'Current password is required to make changes',
     ),
-    password: Yup.string()
-        .min(6, 'Password must be at least 6 characters')
-        .required('Password is required'),
+    password: Yup.string().min(6, 'Password must be at least 6 characters'),
     passwordConfirm: Yup.string()
         .oneOf([Yup.ref('password')], 'Passwords must match')
         .when('password', {
@@ -197,7 +195,7 @@ export const PersonalAccount = () => {
                                     )}
                             </Form.Group>
                             <Form.Group controlId="firstName">
-                                <Form.Label>FirstName</Form.Label>
+                                <Form.Label>First Name</Form.Label>
                                 <Form.Control
                                     type="text"
                                     {...formik.getFieldProps('firstName')}
@@ -212,6 +210,25 @@ export const PersonalAccount = () => {
                                     formik.errors.firstName && (
                                         <Form.Control.Feedback type="invalid">
                                             {formik.errors.firstName}
+                                        </Form.Control.Feedback>
+                                    )}
+                            </Form.Group>
+                            <Form.Group controlId="lastName">
+                                <Form.Label>Last Name</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    {...formik.getFieldProps('lastName')}
+                                    isInvalid={
+                                        !!(
+                                            formik.touched.lastName &&
+                                            formik.errors.lastName
+                                        )
+                                    }
+                                />
+                                {formik.touched.lastName &&
+                                    formik.errors.lastName && (
+                                        <Form.Control.Feedback type="invalid">
+                                            {formik.errors.lastName}
                                         </Form.Control.Feedback>
                                     )}
                             </Form.Group>
