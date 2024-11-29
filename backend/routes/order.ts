@@ -1,6 +1,6 @@
 import express from 'express';
 
-import createOrder from '@/controllers/payment/createOrder';
+import createOrder from '@/controllers/order/createOrder';
 
 const router = express.Router();
 
