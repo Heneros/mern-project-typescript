@@ -2,6 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { Model } from 'mongoose';
 import { Request, Response } from 'express';
 import { systemLogs } from '@/utils/Logger';
+import { OrderDocument } from '@/types/OrderDocument';
 
 const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET, PAYPAL_API_URL } = process.env;
 

@@ -1,12 +1,8 @@
-import mongoose from 'mongoose';
+import mongoose, { Document } from 'mongoose';
+import { IOrder } from '@/types/IOrderItem';
 
-const orderSchema = new mongoose.Schema(
+const orderSchema = new mongoose.Schema<IOrder>(
     {
-        user: {
-            type: mongoose.Schema.Types.ObjectId,
-            required: true,
-            ref: 'User',
-        },
         orderItems: [
             {
                 title: { type: String, required: true },
@@ -20,6 +16,12 @@ const orderSchema = new mongoose.Schema(
                 },
             },
         ],
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: 'User',
+        },
+        paymentMethod: [String],
         paymentResult: {
             id: { type: String },
             status: { type: String },
