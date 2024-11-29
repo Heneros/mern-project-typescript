@@ -2,9 +2,9 @@ import axios from 'axios';
 import { Request, Response } from 'express';
 import { systemLogs } from '@/utils/Logger';
 
-const generateAccessToken = async (res: Response, req: Request) => {
-    const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET } = process.env;
+const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET, PAYPAL_API_URL } = process.env;
 
+const generateAccessToken = async (res: Response, req: Request) => {
     const auth = Buffer.from(
         `${PAYPAL_CLIENT_ID}:${PAYPAL_CLIENT_SECRET}`,
     ).toString('base64');
@@ -28,4 +28,11 @@ const generateAccessToken = async (res: Response, req: Request) => {
     }
 };
 
-export default generateAccessToken;
+const checkIfNewTransaction = async (
+    res: Response,
+    req: Request,
+    orderModel,
+    paypalTransactionId,
+) => {};
+
+export { generateAccessToken, checkIfNewTransaction };
