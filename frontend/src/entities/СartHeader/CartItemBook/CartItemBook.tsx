@@ -1,10 +1,9 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
 
 import './CartItem.css';
-import { formatPrice } from 'shared/utils/cartFunctions';
 import { ICartItem } from 'entities/СartHeader';
+import { formatPrice } from 'shared/utils/cartFunctions';
 
 export const CartItemBook = ({ _id, title, preview, price }: ICartItem) => {
     return (

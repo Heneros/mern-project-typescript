@@ -6,8 +6,8 @@ import { CartItemBook } from '../CartItemBook/CartItemBook';
 import { Link } from 'react-router-dom';
 import { ICartItem } from '../model/types';
 
-import { formatPrice } from 'shared/utils/cartFunctions';
 import { ScheduleBtn } from 'shared/ui/ScheduleBtn';
+import { formatPrice } from 'shared/utils/cartFunctions';
 
 export const DropdownCart = () => {
     const itemsCart = useAppSelector((state) => state.cart);

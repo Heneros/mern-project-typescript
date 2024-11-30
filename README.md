@@ -26,7 +26,7 @@ In this app you also can have chat with another users.
 
 
 ### Features and Technologies should be:
-- Create separate directory for socket io.
+- Add socket io.
 - Online assistant. You can book villa online if you logged. And also communicate with real assistant (editor role) through  Socket.io
 - Multiple languages ENG/Polish.
 - JEST and Supertest add.

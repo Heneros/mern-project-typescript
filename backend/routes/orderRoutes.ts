@@ -19,6 +19,6 @@ router
     .get(checkAuth, role.checkRole(role.ROLES.User), getOrderById);
 router
     .route('/:id/pay')
-    .get(checkAuth, role.checkRole(role.ROLES.User), updateOrderToPaid);
+    .put(checkAuth, role.checkRole(role.ROLES.User), updateOrderToPaid);
 
 export default router;

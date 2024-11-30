@@ -6,17 +6,18 @@ import Order from '@/models/orderModel';
 import { RequestWithUser } from '@/types/RequestWithUser';
 
 interface OrderType {
-    [_id: string]: string;
+    //   [_id: string]: string;
+    property: string;
 }
 
-const addOrderItem = async (req: Request, res: Response) => {
+const addOrderItem = async (req: Request, res: Response): Promise<void> => {
     const userReq = req as RequestWithUser;
 
     if (!userReq.user) {
         res.status(404).json({ message: 'Not found Request' });
         return;
     }
-    
+
     const userId = userReq.user._id;
     const { orderItems, paymentMethod } = req.body;
 
@@ -24,18 +25,18 @@ const addOrderItem = async (req: Request, res: Response) => {
         res.status(400).json({ message: 'No order items' });
     }
     const itemsFromDB = await Property.find({
-        _id: { $in: orderItems.map((x: OrderType) => x._id) },
+        _id: { $in: orderItems.map((x: OrderType) => x.property) },
     });
 
     const dbOrderItems: IOrderItem[] = orderItems.map(
         (itemFromClient: IOrderItem) => {
             const matchingItemFromDB = itemsFromDB.find(
                 (itemFromDB) =>
-                    itemFromDB._id.toString() === itemFromClient._id,
+                    itemFromDB._id.toString() === itemFromClient.property,
             );
             return {
                 ...itemFromClient,
-                property: itemFromClient?._id,
+                property: itemFromClient.property,
                 price: matchingItemFromDB?.price || 0,
                 _id: undefined,
             };
@@ -44,16 +45,24 @@ const addOrderItem = async (req: Request, res: Response) => {
 
     const { itemsPrice, taxPrice, totalPrice } = calcPrice(dbOrderItems);
 
-    const order: IOrder = new Order({
-        orderItems: dbOrderItems,
-        user: userId,
-        paymentMethod,
-        itemsPrice,
-        taxPrice,
-        totalPrice,
-    });
-    const createdOrder = await order.save();
-    res.status(201).json(createdOrder);
+    try {
+        const order: IOrder = new Order({
+            orderItems: dbOrderItems,
+            user: userId,
+            paymentMethod,
+            itemsPrice,
+            taxPrice,
+            totalPrice,
+        });
+        const createdOrder = await order.save();
+        res.status(201).json(createdOrder);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            message: 'Error creating order',
+            error: error instanceof Error ? error.message : 'Unknown error',
+        });
+    }
 };
 
 export default addOrderItem;

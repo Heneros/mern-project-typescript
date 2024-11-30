@@ -4,7 +4,7 @@ import baseApiSlice from 'features/api/baseApiSlice';
 import authReducer from 'features/auth/authSlice';
 
 import propertyReducer from 'features/properties/api/propertySlice';
-import cartSlice from 'entities/СartHeader/model/cartSlice';
+import cartSlice from 'features/order/api/cartSlice';
 
 // const rootReducer = combineReducer({
 

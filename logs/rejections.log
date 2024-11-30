@@ -113,3 +113,578 @@
   ],
   timestamp: '2024-11-30 02:04:08.270 PM'
 }
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:11:42 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 21924,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 371257344,
+      heapTotal: 321904640,
+      heapUsed: 315780056,
+      external: 24910856,
+      arrayBuffers: 21884282
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 227367.343 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:11:42.447 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:18:16 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16284,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 375562240,
+      heapTotal: 322166784,
+      heapUsed: 315427008,
+      external: 24893376,
+      arrayBuffers: 21866802
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 227761.406 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:18:16.507 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:20:53 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16868,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 426307584,
+      heapTotal: 372572160,
+      heapUsed: 339120704,
+      external: 24958419,
+      arrayBuffers: 21929229
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 227918.125 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:20:53.236 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:21:44 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 12432,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 378155008,
+      heapTotal: 324001792,
+      heapUsed: 315532144,
+      external: 24902091,
+      arrayBuffers: 21875517
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 227969.171 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:21:44.273 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:24:20 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 11144,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 427360256,
+      heapTotal: 373620736,
+      heapUsed: 339537968,
+      external: 24959523,
+      arrayBuffers: 21930333
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 228125.156 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:24:20.257 PM'
+}

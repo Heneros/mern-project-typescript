@@ -13,7 +13,6 @@ export const fileApiSlice = baseApiSlice.injectEndpoints({
                     method: 'PATCH',
                     credentials: 'include',
                     body: formData,
-                    // formData: true,
                 };
             },
         }),

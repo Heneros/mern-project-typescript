@@ -605,3 +605,1231 @@
   ],
   timestamp: '2024-11-30 02:04:08.270 PM'
 }
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:10:37.617 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:11:42 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 21924,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 371257344,
+      heapTotal: 321904640,
+      heapUsed: 315780056,
+      external: 24910856,
+      arrayBuffers: 21884282
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 227367.343 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:11:42.447 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:16:41.457 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:17:58.499 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:18:16 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16284,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 375562240,
+      heapTotal: 322166784,
+      heapUsed: 315427008,
+      external: 24893376,
+      arrayBuffers: 21866802
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 227761.406 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:18:16.507 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:20:21.279 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:20:37.348 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:20:52.689 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:20:53 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16868,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 426307584,
+      heapTotal: 372572160,
+      heapUsed: 339120704,
+      external: 24958419,
+      arrayBuffers: 21929229
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 227918.125 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:20:53.236 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:21:09.100 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:21:15.630 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:21:44 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 12432,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 378155008,
+      heapTotal: 324001792,
+      heapUsed: 315532144,
+      external: 24902091,
+      arrayBuffers: 21875517
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 227969.171 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:21:44.273 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:22:51.986 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:23:04.322 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 201,
+  content_length: '497',
+  response_time: 186.432,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:23:07.087 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 200,
+  content_length: '510',
+  response_time: 108.444,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:23:15.831 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 200,
+  content_length: '510',
+  response_time: 105.989,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:23:49.470 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:24:16.458 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 200,
+  content_length: '510',
+  response_time: 528.015,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:24:16.714 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\Projects\mern-project-typescript\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\Projects\mern-project-typescript\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (D:\Projects\mern-project-typescript\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:24:20 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 11144,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 427360256,
+      heapTotal: 373620736,
+      heapUsed: 339537968,
+      external: 24959523,
+      arrayBuffers: 21930333
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 228125.156 },
+  trace: [
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:24:20.257 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:24:38.646 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:25:31.730 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:25:49.544 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:25:57.576 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:26:09.693 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:26:20.966 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:26:33.652 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:26:52.970 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:27:00.024 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:27:08.542 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:27:25.066 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:27:51.004 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 201,
+  content_length: '497',
+  response_time: 188.759,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:27:52.930 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 200,
+  content_length: '1008',
+  response_time: 176.216,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:27:58.136 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:28:23.149 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/674af59b58408829db1e1026',
+  status: 200,
+  content_length: '574',
+  response_time: 170.117,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:31:18.674 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:31:35.816 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/674af59b58408829db1e1026/pay',
+  status: 500,
+  content_length: '369',
+  response_time: 121.628,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:32:42.591 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/674af59b58408829db1e1026',
+  status: 200,
+  content_length: '574',
+  response_time: 184.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 02:46:35.736 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/674af59b58408829db1e1026/pay',
+  status: 500,
+  content_length: '369',
+  response_time: 109.192,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 02:46:40.805 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 02:55:02.497 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/674af59b58408829db1e1026/pay',
+  status: 500,
+  content_length: '369',
+  response_time: 118.944,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 02:55:04.138 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/674af59b58408829db1e1026/pay',
+  status: 500,
+  content_length: '369',
+  response_time: 105.106,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 02:55:05.380 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 02:55:30.363 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/674af59b58408829db1e1026/pay',
+  status: 500,
+  content_length: '369',
+  response_time: 120.904,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 02:55:33.915 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 02:56:58.836 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/674af59b58408829db1e1026/pay',
+  status: 200,
+  content_length: '609',
+  response_time: 416.827,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 02:56:59.135 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 55.7,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:10:24.903 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 108.648,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:10:24.962 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '889',
+  response_time: 106.98,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:10:26.307 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 107.858,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:10:32.546 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=2',
+  status: 200,
+  content_length: '3087',
+  response_time: 104.527,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:10:34.417 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=3',
+  status: 304,
+  response_time: 148.516,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:10:36.323 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=4',
+  status: 304,
+  response_time: 106.836,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:10:36.715 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/667d3343e9317340ae958b3c',
+  status: 200,
+  content_length: '566',
+  response_time: 52.504,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:10:45.003 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 104.121,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:12:45.988 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.697,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:12:59.709 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 108.599,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:12:59.767 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:16:57.507 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 111.198,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:16:57.567 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.923,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:40:58.412 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 104.866,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 03:40:58.468 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 04:02:01.446 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/674af59b58408829db1e1026/pay',
+  status: 200,
+  content_length: '609',
+  response_time: 184.152,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:02:04.126 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 04:03:44.122 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 61.103,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:04:16.450 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 112.579,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:04:16.507 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.797,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:04:23.446 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 103.333,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:04:23.499 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 50.842,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:05:54.377 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 104.648,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:05:54.433 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.68,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:05:59.475 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 102.591,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:05:59.527 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.065,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:02.772 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 103.664,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:02.827 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.996,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:07.450 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 104.354,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:07.504 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 50.544,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:09.963 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 102.687,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:10.016 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.019,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:19.533 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 101.848,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:19.585 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 51.416,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:22.554 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 103.353,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:22.607 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 52.343,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:24.648 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 123.067,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:24.895 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 53.225,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:30.468 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 104.31,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 04:06:30.520 PM'
+}

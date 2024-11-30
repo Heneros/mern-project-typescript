@@ -6,8 +6,9 @@ export interface IOrderItem {
     qty: number;
     preview: string;
     price: number;
-    property?: string;
+    property: string;
 }
+
 export interface PaymentResult {
     id: string;
     status: string;
