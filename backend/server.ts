@@ -20,7 +20,8 @@ import propertyRoutes from './routes/propertyRoutes';
 import orderRoutes from './routes/orderRoutes';
 import oauthPassport from './config/passportSetup';
 
-export const app = express();
+import { app, server } from './socket/socket';
+// export const app = express();
 
 // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 app.use(express.json());
@@ -78,14 +79,14 @@ if (process.env.NODE_ENV === 'production') {
     app.get('/', (req, res) => {
         res.send('<h1>Dev version running 1!</h1>');
     });
-}
+} 
 app.use(notFound);
 app.use(errorHandler);
 
 if (process.env.NODE_ENV !== 'test') {
     const startServer = async () => {
         try {
-            app.listen(port, () =>
+            server.listen(port, () =>
                 console.log(
                     `Server on ${port} running. NodeENV: ${process.env.NODE_ENV} `,
                 ),

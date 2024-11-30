@@ -1,3 +1,3 @@
-interface UserSocketMap {
+export interface UserSocketMap {
     [userId: string]: string;
 }

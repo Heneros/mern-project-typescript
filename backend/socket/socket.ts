@@ -4,6 +4,7 @@ import http from 'http';
 import express from 'express';
 import cors from 'cors';
 import User from '@/models/userModel';
+import { UserSocketMap } from '@/types/UserSocketMap';
 
 const app = express();
 
@@ -40,3 +41,5 @@ io.on('connection', (socket) => {
         io.emit('getOnlineUsers', Object.keys(userSocketMap));
     });
 });
+
+export { io, app, server };

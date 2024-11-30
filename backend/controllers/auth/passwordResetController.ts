@@ -1,4 +1,4 @@
-import asyncHandler from 'express-async-handler';
+import asyncHandler from 'express-async-htandler';
 import User from '@/models/userModel';
 import { sendEmail } from '@/utils/sendEmail';
 import VerifyResetToken from '@/models/verifyResetTokenModel';

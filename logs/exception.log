@@ -1,62 +1,78 @@
 {
-  error: backend/controllers/order/addOrderItem.ts(38,52): error TS2339: Property 'id' does not exist on type 'string'.
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(38,52): error TS2339: Property 'id' does not exist on type 'string'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(38,52): error TS2339: Property 'id' does not exist on type 'string'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(38,52): error TS2339: Property 'id' does not exist on type 'string'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   exception: true,
-  date: 'Sat Nov 30 2024 13:17:20 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Sat Nov 30 2024 20:48:33 GMT+0300 (Moscow Standard Time)',
   process: {
-    pid: 15044,
+    pid: 2160,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 420241408,
-      heapTotal: 367529984,
-      heapUsed: 336296064,
-      external: 24843933,
-      arrayBuffers: 21841531
+      rss: 397279232,
+      heapTotal: 352043008,
+      heapUsed: 327788912,
+      external: 24856521,
+      arrayBuffers: 21846004
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 227705.125 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 26961.64 },
   trace: [
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'createTSError',
       line: 859,
       method: null,
@@ -64,7 +80,7 @@
     },
     {
       column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'reportTSError',
       line: 863,
       method: null,
@@ -72,7 +88,7 @@
     },
     {
       column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'getOutput',
       line: 1077,
       method: null,
@@ -80,7 +96,7 @@
     },
     {
       column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.compile',
       line: 1433,
       method: 'compile',
@@ -88,7 +104,7 @@
     },
     {
       column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
       line: 1617,
       method: '_compile',
@@ -98,13 +114,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -114,7 +130,7 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
       native: false
     },
@@ -122,7 +138,7 @@
       column: 12,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._load',
-      line: 1022,
+      line: 1024,
       method: '_load',
       native: false
     },
@@ -130,72 +146,88 @@
       column: 19,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.require',
-      line: 1231,
+      line: 1233,
       method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-11-30 01:17:20.230 PM'
+  timestamp: '2024-11-30 08:48:33.923 PM'
 }
 {
-  error: backend/controllers/order/addOrderItem.ts(31,26): error TS2304: Cannot find name 'ф'.
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(31,26): error TS2304: Cannot find name 'ф'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(31,26): error TS2304: Cannot find name 'ф'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(31,26): error TS2304: Cannot find name 'ф'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   exception: true,
-  date: 'Sat Nov 30 2024 13:20:30 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Sat Nov 30 2024 20:50:14 GMT+0300 (Moscow Standard Time)',
   process: {
-    pid: 808,
+    pid: 3280,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 419295232,
-      heapTotal: 367792128,
-      heapUsed: 336706720,
-      external: 24843989,
-      arrayBuffers: 21841587
+      rss: 396771328,
+      heapTotal: 351780864,
+      heapUsed: 327693408,
+      external: 24856705,
+      arrayBuffers: 21846188
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 227895.265 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27062.234 },
   trace: [
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'createTSError',
       line: 859,
       method: null,
@@ -203,7 +235,7 @@
     },
     {
       column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'reportTSError',
       line: 863,
       method: null,
@@ -211,7 +243,7 @@
     },
     {
       column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'getOutput',
       line: 1077,
       method: null,
@@ -219,7 +251,7 @@
     },
     {
       column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.compile',
       line: 1433,
       method: 'compile',
@@ -227,7 +259,7 @@
     },
     {
       column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
       line: 1617,
       method: '_compile',
@@ -237,13 +269,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -253,7 +285,7 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
       native: false
     },
@@ -261,7 +293,7 @@
       column: 12,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._load',
-      line: 1022,
+      line: 1024,
       method: '_load',
       native: false
     },
@@ -269,100 +301,88 @@
       column: 19,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.require',
-      line: 1231,
+      line: 1233,
       method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-11-30 01:20:30.366 PM'
+  timestamp: '2024-11-30 08:50:14.511 PM'
 }
 {
-  error: backend/routes/orderRoutes.ts(13,55): error TS2769: No overload matches this call.
-    The last overload gave the following error.
-      Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
-        Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
-          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
-            Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
-              Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
-                Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/orderRoutes.ts(13,55): error TS2769: No overload matches this call.\r\n' +
-    '  The last overload gave the following error.\r\n' +
-    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/orderRoutes.ts(13,55): error TS2769: No overload matches this call.\r\n' +
-    '  The last overload gave the following error.\r\n' +
-    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/routes/orderRoutes.ts(13,55): error TS2769: No overload matches this call.\r\n' +
-    '  The last overload gave the following error.\r\n' +
-    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
-    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   exception: true,
-  date: 'Sat Nov 30 2024 13:22:19 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Sat Nov 30 2024 20:51:25 GMT+0300 (Moscow Standard Time)',
   process: {
-    pid: 9152,
+    pid: 14152,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 418299904,
-      heapTotal: 368316416,
-      heapUsed: 340178120,
-      external: 24852197,
-      arrayBuffers: 21841603
+      rss: 403222528,
+      heapTotal: 351780864,
+      heapUsed: 327525576,
+      external: 24856577,
+      arrayBuffers: 21846060
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 228004.078 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27132.953 },
   trace: [
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'createTSError',
       line: 859,
       method: null,
@@ -370,7 +390,7 @@
     },
     {
       column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'reportTSError',
       line: 863,
       method: null,
@@ -378,7 +398,7 @@
     },
     {
       column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'getOutput',
       line: 1077,
       method: null,
@@ -386,7 +406,7 @@
     },
     {
       column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.compile',
       line: 1433,
       method: 'compile',
@@ -394,7 +414,7 @@
     },
     {
       column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
       line: 1617,
       method: '_compile',
@@ -404,13 +424,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -420,7 +440,7 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
       native: false
     },
@@ -428,7 +448,7 @@
       column: 12,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._load',
-      line: 1022,
+      line: 1024,
       method: '_load',
       native: false
     },
@@ -436,76 +456,88 @@
       column: 19,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.require',
-      line: 1231,
+      line: 1233,
       method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-11-30 01:22:19.178 PM'
+  timestamp: '2024-11-30 08:51:25.236 PM'
 }
 {
-  error: backend/controllers/order/addOrderItem.ts(16,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
-  backend/controllers/order/addOrderItem.ts(23,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(16,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    "backend/controllers/order/addOrderItem.ts(23,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(16,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    "backend/controllers/order/addOrderItem.ts(23,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(16,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    "backend/controllers/order/addOrderItem.ts(23,9): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   exception: true,
-  date: 'Sat Nov 30 2024 13:22:42 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Sat Nov 30 2024 20:52:59 GMT+0300 (Moscow Standard Time)',
   process: {
-    pid: 1124,
+    pid: 3388,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 420900864,
-      heapTotal: 367267840,
-      heapUsed: 337850864,
-      external: 24844061,
-      arrayBuffers: 21841659
+      rss: 388845568,
+      heapTotal: 344440832,
+      heapUsed: 320293152,
+      external: 24856601,
+      arrayBuffers: 21846084
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 228027.125 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27227.437 },
   trace: [
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'createTSError',
       line: 859,
       method: null,
@@ -513,7 +545,7 @@
     },
     {
       column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'reportTSError',
       line: 863,
       method: null,
@@ -521,7 +553,7 @@
     },
     {
       column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'getOutput',
       line: 1077,
       method: null,
@@ -529,7 +561,7 @@
     },
     {
       column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.compile',
       line: 1433,
       method: 'compile',
@@ -537,7 +569,7 @@
     },
     {
       column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
       line: 1617,
       method: '_compile',
@@ -547,13 +579,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -563,7 +595,7 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
       native: false
     },
@@ -571,7 +603,7 @@
       column: 12,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._load',
-      line: 1022,
+      line: 1024,
       method: '_load',
       native: false
     },
@@ -579,76 +611,88 @@
       column: 19,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.require',
-      line: 1231,
+      line: 1233,
       method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-11-30 01:22:42.229 PM'
+  timestamp: '2024-11-30 08:52:59.714 PM'
 }
 {
-  error: backend/controllers/order/addOrderItem.ts(63,20): error TS18046: 'error' is of type 'unknown'.
-  backend/controllers/order/addOrderItem.ts(64,9): error TS1109: Expression expected.
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(63,20): error TS18046: 'error' is of type 'unknown'.\r\n" +
-    'backend/controllers/order/addOrderItem.ts(64,9): error TS1109: Expression expected.\r\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(63,20): error TS18046: 'error' is of type 'unknown'.\r\n" +
-    'backend/controllers/order/addOrderItem.ts(64,9): error TS1109: Expression expected.\r\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(63,20): error TS18046: 'error' is of type 'unknown'.\r\n" +
-    'backend/controllers/order/addOrderItem.ts(64,9): error TS1109: Expression expected.\r\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
     '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
   exception: true,
-  date: 'Sat Nov 30 2024 13:27:32 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Sat Nov 30 2024 20:53:57 GMT+0300 (Moscow Standard Time)',
   process: {
-    pid: 6084,
+    pid: 7840,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 415555584,
-      heapTotal: 367529984,
-      heapUsed: 337390912,
-      external: 24844061,
-      arrayBuffers: 21841659
+      rss: 387022848,
+      heapTotal: 336101376,
+      heapUsed: 310137592,
+      external: 24856553,
+      arrayBuffers: 21846036
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 228317.296 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27285.625 },
   trace: [
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'createTSError',
       line: 859,
       method: null,
@@ -656,7 +700,7 @@
     },
     {
       column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'reportTSError',
       line: 863,
       method: null,
@@ -664,7 +708,7 @@
     },
     {
       column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'getOutput',
       line: 1077,
       method: null,
@@ -672,7 +716,7 @@
     },
     {
       column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.compile',
       line: 1433,
       method: 'compile',
@@ -680,7 +724,7 @@
     },
     {
       column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
       line: 1617,
       method: '_compile',
@@ -690,13 +734,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -706,7 +750,7 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
       native: false
     },
@@ -714,7 +758,7 @@
       column: 12,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._load',
-      line: 1022,
+      line: 1024,
       method: '_load',
       native: false
     },
@@ -722,10 +766,1870 @@
       column: 19,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.require',
-      line: 1231,
+      line: 1233,
       method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-11-30 01:27:32.404 PM'
+  timestamp: '2024-11-30 08:53:57.899 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:54:36 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 4236,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 389214208,
+      heapTotal: 344702976,
+      heapUsed: 320190704,
+      external: 24856609,
+      arrayBuffers: 21846092
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27324.625 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:54:36.899 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:54:49 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 1068,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 390586368,
+      heapTotal: 346013696,
+      heapUsed: 320877888,
+      external: 24856657,
+      arrayBuffers: 21846140
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27337.453 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:54:49.724 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:55:00 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 1712,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 405635072,
+      heapTotal: 354664448,
+      heapUsed: 316634680,
+      external: 24856633,
+      arrayBuffers: 21833451
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27347.906 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:55:00.182 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:55:38 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 10440,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 398745600,
+      heapTotal: 353615872,
+      heapUsed: 327528624,
+      external: 24856577,
+      arrayBuffers: 21846060
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27386.531 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:55:38.807 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:56:33 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 588,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 397004800,
+      heapTotal: 354402304,
+      heapUsed: 316589832,
+      external: 24856585,
+      arrayBuffers: 21833403
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27440.921 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:56:33.204 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:57:05 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 3500,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 397631488,
+      heapTotal: 346275840,
+      heapUsed: 319596856,
+      external: 24850476,
+      arrayBuffers: 21839959
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27472.75 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:57:05.038 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:57:35 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 8356,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 393326592,
+      heapTotal: 347635712,
+      heapUsed: 321907136,
+      external: 24856553,
+      arrayBuffers: 21846036
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27503.671 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:57:35.969 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:58:41 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 244,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 390324224,
+      heapTotal: 344965120,
+      heapUsed: 319339720,
+      external: 24856625,
+      arrayBuffers: 21846108
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27569.531 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:58:41.837 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 20:59:47 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 2456,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 384864256,
+      heapTotal: 340033536,
+      heapUsed: 307972904,
+      external: 24850532,
+      arrayBuffers: 21840015
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27635.484 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 08:59:47.790 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 21:00:52 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 2096,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 401367040,
+      heapTotal: 351256576,
+      heapUsed: 327498800,
+      external: 24860870,
+      arrayBuffers: 21850353
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27700.578 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 09:00:52.897 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 21:01:28 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 4204,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 399183872,
+      heapTotal: 354926592,
+      heapUsed: 316640432,
+      external: 24856593,
+      arrayBuffers: 21833411
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27736.484 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 09:01:28.803 PM'
+}
+{
+  error: backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.
+  backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.
+  backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/auth/passwordResetController.ts(1,26): error TS2307: Cannot find module 'express-async-htandler' or its corresponding type declarations.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,50): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(8,55): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,43): error TS7006: Parameter 'req' implicitly has an 'any' type.\r\n" +
+    "backend/controllers/auth/passwordResetController.ts(64,48): error TS7006: Parameter 'res' implicitly has an 'any' type.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1233:19)',
+  exception: true,
+  date: 'Sat Nov 30 2024 21:03:20 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 1764,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 396898304,
+      heapTotal: 345489408,
+      heapUsed: 320707696,
+      external: 24856649,
+      arrayBuffers: 21846132
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 27847.75 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1416,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1208,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1024,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1233,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 09:03:20.097 PM'
 }
