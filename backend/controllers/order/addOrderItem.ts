@@ -1,7 +1,5 @@
 import { Request, Response } from 'express';
-import { Model, ObjectId } from 'mongoose';
 import Property from '@/models/propertiesModel';
-import { OrderDocument } from '@/types/OrderDocument';
 import { IOrder, IOrderItem } from '@/types/IOrderItem';
 import { calcPrice } from '@/utils/calcPrice';
 import Order from '@/models/orderModel';
@@ -18,6 +16,7 @@ const addOrderItem = async (req: Request, res: Response) => {
         res.status(404).json({ message: 'Not found Request' });
         return;
     }
+    
     const userId = userReq.user._id;
     const { orderItems, paymentMethod } = req.body;
 

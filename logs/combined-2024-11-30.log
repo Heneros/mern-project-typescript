@@ -1,0 +1,607 @@
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 11:33:54.035 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 11:55:18.445 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:01:51.815 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:03:29.933 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:03:54.407 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:04:20.739 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:08:45.001 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:09:55.667 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:11:50.898 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:13:26.995 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:14:02.269 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:14:33.467 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:16:02.434 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:19:12.636 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:20:14.137 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 12:21:50.140 PM'
+}
+{
+  message: 'Server on 1998 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:17:37.430 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '29',
+  response_time: 4.086,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:17:51.660 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: '75',
+  response_time: 1.201,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:17:52.166 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 1.261,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:17:54.042 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.683,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:17:54.730 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.48,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:17:55.204 PM'
+}
+{
+  message: 'Server on 1998 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:17:58.644 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:21:02.691 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: '75',
+  response_time: 5.094,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:21:40.819 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 401,
+  content_length: '26',
+  response_time: 0.743,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:23:48.453 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '303',
+  response_time: 188.687,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:23:59.230 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '470',
+  response_time: 624.142,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:24:16.641 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 200,
+  content_length: '13',
+  response_time: 205.891,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:24:52.234 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:26:46.053 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 200,
+  content_length: '13',
+  response_time: 211.254,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:26:46.865 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:27:22.876 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 200,
+  content_length: '13',
+  response_time: 191.138,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:27:23.856 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:27:42.586 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order',
+  status: 200,
+  content_length: '13',
+  response_time: 254.566,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:27:44.515 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:30:24.151 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:34:42 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 8504,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 378511360,
+      heapTotal: 325578752,
+      heapUsed: 316683424,
+      external: 24943882,
+      arrayBuffers: 21908801
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 930.187 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:34:42.457 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 01:35:04.946 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/',
+  status: 200,
+  content_length: '3505',
+  response_time: 310.738,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-11-30 01:35:22.560 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 13:35:29 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 6020,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 377970688,
+      heapTotal: 327413760,
+      heapUsed: 316548792,
+      external: 24935738,
+      arrayBuffers: 21900657
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 977.515 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 01:35:29.785 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-11-30 02:04:03.653 PM'
+}
+{
+  error: Error: Order validation failed: orderItems.0.property: Path `property` is required.
+      at ValidationError.inspect (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\error\validation.js:52:26)
+      at formatValue (node:internal/util/inspect:805:19)
+      at formatProperty (node:internal/util/inspect:1945:11)
+      at formatRaw (node:internal/util/inspect:1054:9)
+      at formatValue (node:internal/util/inspect:840:10)
+      at inspect (node:internal/util/inspect:364:10)
+      at Format.transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\winston\lib\winston\logger.js:314:29)
+      at DerivedLogger.Transform._read (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:166:10) {
+    errors: {
+      'orderItems.0.property': ValidatorError: Path `property` is required.
+          at validate (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\schemaType.js:1385:13)
+          at SchemaObjectId.SchemaType.doValidate (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\schemaType.js:1369:7)
+          at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\mongoose\lib\document.js:3071:18
+          at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `property` is required.',
+          type: 'required',
+          path: 'property',
+          fullPath: undefined,
+          value: undefined
+        },
+        kind: 'required',
+        path: 'property',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose#validatorError)]: true
+      }
+    },
+    _message: 'Order validation failed'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: 'ValidationError: Order validation failed: orderItems.0.property: Path `property` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3318:32)\n' +
+    '    at EmbeddedDocument.Subdocument.invalidate (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js:229:12)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js:3079:17\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js:1388:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Sat Nov 30 2024 14:04:08 GMT+0300 (Moscow Standard Time)',
+  process: {
+    pid: 1156,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 442224640,
+      heapTotal: 384372736,
+      heapUsed: 349068880,
+      external: 24958078,
+      arrayBuffers: 21920381
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 2696 },
+  trace: [
+    {
+      column: 32,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js',
+      function: 'model.Document.invalidate',
+      line: 3318,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\types\\subdocument.js',
+      function: 'EmbeddedDocument.Subdocument.invalidate',
+      line: 229,
+      method: 'invalidate',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\document.js',
+      function: null,
+      line: 3079,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: null,
+      line: 1388,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-11-30 02:04:08.270 PM'
+}

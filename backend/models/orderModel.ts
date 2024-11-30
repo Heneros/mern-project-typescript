@@ -21,7 +21,7 @@ const orderSchema = new mongoose.Schema<IOrder>(
             required: true,
             ref: 'User',
         },
-        paymentMethod: [String],
+        paymentMethod: { type: String },
         paymentResult: {
             id: { type: String },
             status: { type: String },

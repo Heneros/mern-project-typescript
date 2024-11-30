@@ -17,7 +17,7 @@ import authRoutes from './routes/auth';
 import userRoutes from './routes/user';
 import uploadRoutes from './routes/uploadRoutes';
 import propertyRoutes from './routes/propertyRoutes';
-
+import orderRoutes from './routes/orderRoutes';
 import oauthPassport from './config/passportSetup';
 
 export const app = express();
@@ -62,6 +62,7 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/upload', uploadRoutes);
 app.use('/api/v1/property', propertyRoutes);
+app.use('/api/v1/order', orderRoutes);
 
 const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
@@ -75,7 +76,7 @@ if (process.env.NODE_ENV === 'production') {
     });
 } else {
     app.get('/', (req, res) => {
-        res.send('<h1>Dev version running!</h1>');
+        res.send('<h1>Dev version running 1!</h1>');
     });
 }
 app.use(notFound);

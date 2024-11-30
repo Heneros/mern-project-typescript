@@ -17,7 +17,7 @@ router
 router.route('/').get(getAllProperties);
 
 router.route('/:id').get(getProperty);
-
+ 
 router
     .route('/:id')
     .delete(checkAuth, role.checkRole(role.ROLES.Admin), deleteProperty);

@@ -17,7 +17,7 @@ export interface PaymentResult {
 
 export interface IOrder {
     orderItems: IOrderItem[];
-    paymentResult: PaymentResult[];
+    paymentResult?: PaymentResult;
     user: Types.ObjectId;
     paymentMethod: string;
     itemsPrice: number;
