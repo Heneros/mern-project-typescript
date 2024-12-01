@@ -1,5 +1,4 @@
 import asyncHandler from 'express-async-handler';
-import User from '@/models/userModel';
 import Message from '@/models/chatModel';
 import { RequestWithUser } from '@/types/RequestWithUser';
 

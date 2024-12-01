@@ -18,6 +18,8 @@ import userRoutes from './routes/user';
 import uploadRoutes from './routes/uploadRoutes';
 import propertyRoutes from './routes/propertyRoutes';
 import orderRoutes from './routes/orderRoutes';
+import messageRoutes from './routes/messageRoutes';
+
 import oauthPassport from './config/passportSetup';
 
 import { app, server } from './socket/socket';
@@ -63,6 +65,7 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/upload', uploadRoutes);
 app.use('/api/v1/property', propertyRoutes);
+app.use('/api/v1/messages', messageRoutes);
 app.use('/api/v1/order', orderRoutes);
 
 const port = process.env.PORT;
@@ -79,7 +82,7 @@ if (process.env.NODE_ENV === 'production') {
     app.get('/', (req, res) => {
         res.send('<h1>Dev version running 1!</h1>');
     });
-} 
+}
 app.use(notFound);
 app.use(errorHandler);
 
