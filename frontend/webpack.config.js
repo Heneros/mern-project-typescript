@@ -3,11 +3,13 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
+    cache: false,
     entry: './src/index.tsx',
     output: {
-        filename: 'bundle.js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'build'),
         publicPath: '/',
+        clean: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -19,7 +21,13 @@ module.exports = {
             {
                 test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
-                use: 'babel-loader',
+
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        cacheDirectory: false,
+                    },
+                },
             },
             {
                 test: /\.css$/,
@@ -56,6 +64,8 @@ module.exports = {
             directory: path.join(__dirname, 'public'),
         },
         compress: true,
+        hot: true,
+        watchFiles: ['src/**/*', 'public/**/*'],
         historyApiFallback: true,
         port: 3000,
     },
