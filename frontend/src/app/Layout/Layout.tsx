@@ -23,7 +23,10 @@ export function Layout() {
                 draggable
                 pauseOnHover
             />
-            <Outlet />
+         
+                <Outlet />
+         
+
             <Footer />
         </>
     );

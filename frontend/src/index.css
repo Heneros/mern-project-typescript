@@ -79,13 +79,6 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'Poppins', sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 a {
   text-decoration: none !important;
 }
@@ -117,9 +110,12 @@ img {
 Global Styles
 --------------------------------------------- 
 */
-html,
-body {
+
+html, body {
   font-family: 'Poppins', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -1341,14 +1337,35 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer.footer-no-gap {
-  margin-top: 0px;
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+      margin: 0;
+    padding: 0;
+        display: flex;
+  flex-direction: column;
+     height: 100%;
+}
+
+
+#root {
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 footer {
-  margin-top: 150px;
-  background-color: #1e1e1e;
-  min-height: 100px;
+    background-color: #1e1e1e;
+    width: 100%;
+ margin-top: 120px;
+  min-height: 100px; 
+}
+.main-content {
+flex: 1;
+}
+
+footer.footer-no-gap {
+  margin-top: 0px;
 }
 
 footer p {
@@ -1703,6 +1720,8 @@ Responsive Style
 
 body {
   overflow-x: hidden;
+   min-height: 100%;
+   position: relative;
 }
 
 @media (max-width: 767px) {
