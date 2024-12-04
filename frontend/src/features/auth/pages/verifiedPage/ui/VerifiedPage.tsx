@@ -3,7 +3,6 @@ import { faLockOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Stack, Button, Row, Col } from 'react-bootstrap';
 import { FaCheckCircle } from 'react-icons/fa';
-// import { Link } from 'react-router-dom';
 import { Link as RouterLink, LinkProps } from 'react-router-dom';
 
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>((props, ref) => (

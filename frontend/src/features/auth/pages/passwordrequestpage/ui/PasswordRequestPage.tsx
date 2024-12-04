@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import { usePasswordResetRequestMutation } from 'features/auth/authApiSlice';
 import { toast } from 'react-toastify';
-// import { GoMailRead } from 'react-icons/go';
 import {
     Container,
     Form,
