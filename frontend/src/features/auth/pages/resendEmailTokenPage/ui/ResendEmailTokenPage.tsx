@@ -6,8 +6,8 @@ import * as Yup from 'yup';
 import { useResendVerifyEmailMutation } from 'features/auth/authApiSlice';
 
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
-import { Loader } from 'shared/ui/Loader';
-import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
+import { Loader } from 'shared/ui/loader';
+import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 
 export const ResendEmailTokenPage = () => {
     const navigate = useNavigate();

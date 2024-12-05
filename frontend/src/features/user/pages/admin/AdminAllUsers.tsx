@@ -16,9 +16,9 @@ import {
     Table,
 } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
-import { Loader } from 'shared/ui/Loader';
-import { Message } from 'shared/ui/Message';
+import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Loader } from 'shared/ui/loader';
+import { Message } from 'shared/ui/message';
 import { renderError } from 'shared/utils/renderError';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { useParams } from 'react-router-dom';

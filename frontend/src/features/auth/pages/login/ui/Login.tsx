@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
-import { FormLogin } from 'shared/ui/FormLogin';
-import GithubAuth from 'shared/ui/GithubAuth/GithubAuth';
-import { GoogleAuth } from 'shared/ui/GoogleAuth';
+import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { FormLogin } from 'shared/ui/formLogin';
+import GithubAuth from 'shared/ui/githubAuth/GithubAuth';
+import { GoogleAuth } from 'shared/ui/googleAuth';
 
 export const Login = () => {
     return (

@@ -5,10 +5,10 @@ import {
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { BestDeal } from 'features/homepage/ui/bestDeal';
-import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 import { PropItems } from 'shared/types/PostInfo';
-import { Loader } from 'shared/ui/Loader';
-import { Message } from 'shared/ui/Message';
+import { Loader } from 'shared/ui/loader';
+import { Message } from 'shared/ui/message';
 import { renderError } from 'shared/utils/renderError';
 import Accordion from 'widgets/accordion/Accordion';
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 
 import { useGetAllPropertiesQuery } from 'features/properties/api/propertiesApiSlice';
-import { Message } from 'shared/ui/Message';
-import { PropertyItem } from 'shared/ui/PropertyItem';
+import { Message } from 'shared/ui/message';
+import { PropertyItem } from 'shared/ui/propertyItem';
 import { PostInfo } from 'shared/types';
 import { FilterProperty } from 'widgets/filterProperty/FilterProperty';
 import { PaginationProperties } from 'widgets/paginationProperties';

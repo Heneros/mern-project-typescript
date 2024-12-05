@@ -1,9 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { decodeToken } from 'react-jwt';
+import { decodeToken, isExpired } from 'react-jwt';
 import { User } from 'shared/types/User';
 
 interface AuthSlice {
     user: User | null;
+    isAuthenticated: boolean;
     googleToken: string | null;
     githubToken: string | null;
 }
@@ -20,7 +21,14 @@ try {
     console.error('Error parsing stored user:', e);
 }
 
+const isAuthenticated = !!(
+    (userToken && !isExpired(userToken)) ||
+    (googleToken && !isExpired(googleToken)) ||
+    (githubToken && !isExpired(githubToken))
+);
+
 const initialState: AuthSlice = {
+    isAuthenticated,
     user: parsedUser,
     googleToken: googleToken ?? null,
     githubToken: githubToken ?? null,
@@ -30,6 +38,9 @@ const authSlice = createSlice({
     name: 'auth',
     initialState,
     reducers: {
+        setAuthenticated(state, action: PayloadAction<boolean>) {
+            state.isAuthenticated = action.payload;
+        },
         logIn: (state, action: PayloadAction<User>) => {
             state.user = action.payload;
             localStorage.setItem('user', JSON.stringify(action.payload));
@@ -58,6 +69,9 @@ const authSlice = createSlice({
 export const { logIn, logOut, updateGoogleToken, updateGithubToken } =
     authSlice.actions;
 export default authSlice.reducer;
+
+export const selectIsAuthenticated = (state: { auth: AuthSlice }) =>
+    state.auth.isAuthenticated;
 
 export const selectCurrentUserToken = (state: {
     auth: AuthSlice;

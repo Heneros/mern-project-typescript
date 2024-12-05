@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ContactUsForm } from 'widgets/contactUsForm';
-import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 import PhoneIcon from 'shared/assets/icons/phone-icon.png';
 import EmailIcon from 'shared/assets/icons/email-icon.png';
 

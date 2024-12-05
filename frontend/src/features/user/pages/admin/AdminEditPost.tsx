@@ -11,9 +11,9 @@ import 'easymde/dist/easymde.min.css';
 
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
-import { Loader } from 'shared/ui/Loader';
-import { Message } from 'shared/ui/Message';
+import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Loader } from 'shared/ui/loader';
+import { Message } from 'shared/ui/message';
 import { initialValues as defaultValues } from 'shared/utils/initialValues';
 import { renderError } from 'shared/utils/renderError';
 import { validationSchema } from 'shared/utils/validationSchema';
@@ -42,7 +42,7 @@ const AdminEditPost = () => {
         }
     }, [updateData, isSuccess]);
 
-    const location = useLocation()
+    const location = useLocation();
 
     console.log('location', location);
     // console.log('property', property);
@@ -64,7 +64,9 @@ const AdminEditPost = () => {
                                 <h3 className="text-center">
                                     Edit Post {propertyData?.title}
                                 </h3>
-                                <Link to={`/post/${propertyData?._id}`}>Link on post</Link>
+                                <Link to={`/post/${propertyData?._id}`}>
+                                    Link on post
+                                </Link>
                                 <hr />
                                 <PropertyForm
                                     propertyData={propertyData}

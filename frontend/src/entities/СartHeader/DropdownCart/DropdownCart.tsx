@@ -6,7 +6,7 @@ import { CartItemBook } from '../CartItemBook/CartItemBook';
 import { Link } from 'react-router-dom';
 import { ICartItem } from '../model/types';
 
-import { ScheduleBtn } from 'shared/ui/ScheduleBtn';
+import { ScheduleBtn } from 'shared/ui/scheduleBtn';
 import { formatPrice } from 'shared/utils/cartFunctions';
 
 export const DropdownCart = () => {

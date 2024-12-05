@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropItems } from 'shared/types/PostInfo';
-import { PropertyItem } from 'shared/ui/PropertyItem';
+import { PropertyItem } from 'shared/ui/propertyItem';
 
 export const HomePageProperties: React.FC<PropItems> = ({ propItems }) => {
     return (

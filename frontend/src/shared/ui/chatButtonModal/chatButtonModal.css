@@ -44,4 +44,8 @@
     display: flex;
     justify-content: space-between;
 }
-
+.chatModalHeader > button{
+    outline: none;
+    border: unset;
+    background-color: unset;
+}

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 import { postIdProperty } from 'shared/consts';
 import { PostInfo } from 'shared/types';
-import { Loader } from 'shared/ui/Loader';
-import { Message } from 'shared/ui/Message';
+import { Loader } from 'shared/ui/loader';
+import { Message } from 'shared/ui/message';
 import { getErrorMessage } from 'shared/utils/getErrorMessage';
 import FeaturedIcon from 'shared/assets/icons/featured-icon.png';
 import InfoIcon from 'shared/assets/icons/info-icon-01.png';

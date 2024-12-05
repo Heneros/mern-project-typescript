@@ -4,7 +4,7 @@ import { Outlet, ScrollRestoration } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import { Header } from 'components/Header';
 import { Footer } from 'components/Footer';
-import { Preloader } from 'shared/ui/Preloader';
+import { Preloader } from 'shared/ui/preloader';
 import { ToastContainer } from 'react-toastify';
 import ChatButtonModal from 'shared/ui/chatButtonModal/ChatButtonModal';
 
