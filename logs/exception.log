@@ -1,0 +1,1005 @@
+{
+  error: backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; chat: any; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.
+    Object literal may only specify known properties, and 'chat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.
+  backend/models/userModel.ts(95,9): error TS18004: No value exists in scope for the shorthand property 'chat'. Either declare one or provide an initializer.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; chat: any; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'chat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    "backend/models/userModel.ts(95,9): error TS18004: No value exists in scope for the shorthand property 'chat'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; chat: any; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'chat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    "backend/models/userModel.ts(95,9): error TS18004: No value exists in scope for the shorthand property 'chat'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; chat: any; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'chat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    "backend/models/userModel.ts(95,9): error TS18004: No value exists in scope for the shorthand property 'chat'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Dec 06 2024 20:58:34 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 13820,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 396832768,
+      heapTotal: 347934720,
+      heapUsed: 316025064,
+      external: 24822173,
+      arrayBuffers: 21831115
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 200189.89 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-06 08:58:34.560 PM'
+}
+{
+  error: backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; avalaible: any; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.
+    Object literal may only specify known properties, and 'avalaible' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.
+  backend/models/userModel.ts(95,9): error TS18004: No value exists in scope for the shorthand property 'avalaible'. Either declare one or provide an initializer.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; avalaible: any; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'avalaible' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    "backend/models/userModel.ts(95,9): error TS18004: No value exists in scope for the shorthand property 'avalaible'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; avalaible: any; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'avalaible' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    "backend/models/userModel.ts(95,9): error TS18004: No value exists in scope for the shorthand property 'avalaible'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; avalaible: any; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'avalaible' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    "backend/models/userModel.ts(95,9): error TS18004: No value exists in scope for the shorthand property 'avalaible'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Dec 06 2024 20:58:47 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 5800,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 391098368,
+      heapTotal: 347410432,
+      heapUsed: 316807336,
+      external: 24822173,
+      arrayBuffers: 21831115
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 200202.859 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-06 08:58:47.523 PM'
+}
+{
+  error: backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; avalaibletoChat: {}; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.
+    Object literal may only specify known properties, and 'avalaibletoChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; avalaibletoChat: {}; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'avalaibletoChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; avalaibletoChat: {}; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'avalaibletoChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(95,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 16 more ...; avalaibletoChat: {}; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'avalaibletoChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Dec 06 2024 20:58:55 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 20940,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 396980224,
+      heapTotal: 347148288,
+      heapUsed: 315427736,
+      external: 24822181,
+      arrayBuffers: 21831123
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 200211.218 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-06 08:58:55.890 PM'
+}
+{
+  error: backend/models/userModel.ts(91,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 15 more ...; publicToChat: { ...; }; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.
+    Object literal may only specify known properties, but 'publicToChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'. Did you mean to write 'publicChat'?
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(91,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 15 more ...; publicToChat: { ...; }; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, but 'publicToChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'. Did you mean to write 'publicChat'?\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(91,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 15 more ...; publicToChat: { ...; }; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, but 'publicToChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'. Did you mean to write 'publicChat'?\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(91,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 15 more ...; publicToChat: { ...; }; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, but 'publicToChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'. Did you mean to write 'publicChat'?\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Dec 06 2024 21:05:37 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 1080,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 396562432,
+      heapTotal: 347672576,
+      heapUsed: 315555192,
+      external: 24822173,
+      arrayBuffers: 21831115
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 200613.328 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-06 09:05:37.998 PM'
+}
+{
+  error: backend/routes/user.ts(23,44): error TS2304: Cannot find name 'getAllPu'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/user.ts(23,44): error TS2304: Cannot find name 'getAllPu'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/user.ts(23,44): error TS2304: Cannot find name 'getAllPu'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/user.ts(23,44): error TS2304: Cannot find name 'getAllPu'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Dec 06 2024 21:22:18 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22560,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 407285760,
+      heapTotal: 358854656,
+      heapUsed: 324486384,
+      external: 24835829,
+      arrayBuffers: 21833427
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 201613.828 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-06 09:22:18.493 PM'
+}
+{
+  error: backend/controllers/message/getUsersForSidebar.ts(15,9): error TS1214: Identifier expected. 'public' is a reserved word in strict mode. Modules are automatically in strict mode.
+  backend/controllers/message/getUsersForSidebar.ts(15,9): error TS18004: No value exists in scope for the shorthand property 'public'. Either declare one or provide an initializer.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/message/getUsersForSidebar.ts(15,9): error TS1214: Identifier expected. 'public' is a reserved word in strict mode. Modules are automatically in strict mode.\r\n" +
+    "backend/controllers/message/getUsersForSidebar.ts(15,9): error TS18004: No value exists in scope for the shorthand property 'public'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/message/getUsersForSidebar.ts(15,9): error TS1214: Identifier expected. 'public' is a reserved word in strict mode. Modules are automatically in strict mode.\r\n" +
+    "backend/controllers/message/getUsersForSidebar.ts(15,9): error TS18004: No value exists in scope for the shorthand property 'public'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/message/getUsersForSidebar.ts(15,9): error TS1214: Identifier expected. 'public' is a reserved word in strict mode. Modules are automatically in strict mode.\r\n" +
+    "backend/controllers/message/getUsersForSidebar.ts(15,9): error TS18004: No value exists in scope for the shorthand property 'public'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Dec 06 2024 21:37:17 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 4444,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 431202304,
+      heapTotal: 381423616,
+      heapUsed: 346821936,
+      external: 24860349,
+      arrayBuffers: 21857947
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202512.968 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-06 09:37:17.635 PM'
+}
+{
+  error: backend/models/userModel.ts(91,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 15 more ...; publicChat: { ...; }; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.
+    Object literal may only specify known properties, but 'publicChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'. Did you mean to write 'publicToChat'?
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(91,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 15 more ...; publicChat: { ...; }; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, but 'publicChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'. Did you mean to write 'publicToChat'?\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(91,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 15 more ...; publicChat: { ...; }; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, but 'publicChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'. Did you mean to write 'publicToChat'?\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/userModel.ts(91,9): error TS2345: Argument of type '{ email: { type: StringConstructor; lowercase: true; unique: true; required: true; validate: [(str: string, options?: IsEmailOptions | undefined) => boolean, string]; }; ... 15 more ...; publicChat: { ...; }; }' is not assignable to parameter of type 'IUser | { email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, but 'publicChat' does not exist in type '{ email?: SchemaDefinitionProperty<string, IUser> | undefined; username?: SchemaDefinitionProperty<string, IUser> | undefined; ... 17 more ...; id?: SchemaDefinitionProperty<...> | undefined; }'. Did you mean to write 'publicToChat'?\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Fri Dec 06 2024 21:54:19 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15064,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 392982528,
+      heapTotal: 347410432,
+      heapUsed: 316107368,
+      external: 24822181,
+      arrayBuffers: 21831123
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 203534.812 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-06 09:54:19.481 PM'
+}

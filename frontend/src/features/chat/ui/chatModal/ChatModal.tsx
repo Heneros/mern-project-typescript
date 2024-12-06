@@ -10,6 +10,8 @@ import { IoMdClose } from 'react-icons/io';
 import { decodeToken } from 'react-jwt';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import './styles/chatModal.css';
+import ChatLeftSide from '../chatLeftSide/chatLeftSide';
+import { useGetAllChatsQuery } from 'features/chat/api/chatApiSlice';
 
 const ChatModal: React.FC<ChatModalProps> = ({
     isOpen,
@@ -21,6 +23,8 @@ const ChatModal: React.FC<ChatModalProps> = ({
     const tokenArray = useAppSelector(selectCurrentUserToken);
     const tokenGithubArray = useAppSelector(selectCurrentUserGoogleToken);
     const tokenGoogleArray = useAppSelector(selectCurrentUserGithubToken);
+
+    const { data: dataUserChat } = useGetAllChatsQuery(undefined);
 
     useEffect(() => {
         const token: string | null = tokenArray ?? null;
@@ -59,7 +63,9 @@ const ChatModal: React.FC<ChatModalProps> = ({
                     <div className="chatModalBody">
                         {isAuthenticated ? (
                             <>
-                                <div className="leftSide"></div>
+                                <div className="leftSide">
+                                    <ChatLeftSide dataUserChat={dataUserChat} />
+                                </div>
                                 <div className="rightSide"></div>
                             </>
                         ) : (

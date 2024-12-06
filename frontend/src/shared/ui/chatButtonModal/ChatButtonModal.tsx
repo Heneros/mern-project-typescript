@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { IoChatbubbleEllipsesOutline } from 'react-icons/io5';
 import './chatButtonModal.css';
-import ChatModal from 'widgets/chatModal/chatModal';
+import ChatModal from 'features/chat/ui/chatModal/ChatModal';
+
 const ChatButtonModal = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef<HTMLDivElement | null>(null);

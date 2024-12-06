@@ -7,6 +7,7 @@ import getAllUserAccounts from '../controllers/user/getAllUserAccounts';
 import deleteUserAccount from '../controllers/user/deleteUserAccount';
 import deactivateUser from '../controllers/user/deactivateUser';
 import role from '../middleware/roleMiddleware';
+import getAllUserChats from '@/controllers/user/getAllPublicChat';
 
 const router = express.Router();
 
@@ -18,6 +19,8 @@ router.patch('/profile', checkAuth, updateUserProfile);
 router
     .route('/all')
     .get(checkAuth, role.checkRole(role.ROLES.Admin), getAllUserAccounts);
+
+// router.route('/getAllChat').get(checkAuth, getAllUserChats);
 
 router
     .route('/:id')

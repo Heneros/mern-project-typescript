@@ -12,7 +12,8 @@ const getUsersForSidebar = asyncHandler(async (req, res) => {
     const loggedInUserId = userReq.user._id;
     const filteredUsers = await User.find({
         _id: { $ne: loggedInUserId },
-    }).select('-password');
+        publicChat: true,
+    }).select('-password -refreshToken -googleID');
 
     res.status(200).json(filteredUsers);
 });

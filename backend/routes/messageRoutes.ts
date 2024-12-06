@@ -11,5 +11,4 @@ router.route('/users').get(checkAuth, getUsersForSidebar);
 router.route('/:id').get(checkAuth, getMessages);
 router.route('/send/:id').post(checkAuth, sendMessage);
 
-
 export default router;
