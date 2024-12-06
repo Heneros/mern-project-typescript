@@ -66,8 +66,13 @@ const authSlice = createSlice({
     },
 });
 
-export const { logIn, logOut, updateGoogleToken, updateGithubToken } =
-    authSlice.actions;
+export const {
+    logIn,
+    logOut,
+    setAuthenticated,
+    updateGoogleToken,
+    updateGithubToken,
+} = authSlice.actions;
 export default authSlice.reducer;
 
 export const selectIsAuthenticated = (state: { auth: AuthSlice }) =>
