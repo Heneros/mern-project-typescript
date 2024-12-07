@@ -1,29 +1,30 @@
-import React from 'react';
-
-interface UserChat {
-    _id: string;
-    username: string;
-    firstName: string;
-    avatar: string;
-}
+import React, { Dispatch, SetStateAction } from 'react';
 
 interface ChatLeftSideProp {
-    dataUserChat: UserChat[];
+    dataUserChat: UserChat;
+
+    ///  setSelectedChat: Dispatch<SetStateAction<ChatType | null>>;
+    setSelectedChat: React.Dispatch<React.SetStateAction<ChatType | null>>;
+
+    onClick: () => void;
 }
 
-const ChatLeftSide: React.FC<ChatLeftSideProp> = ({ dataUserChat }) => {
+const ChatLeftSide: React.FC<ChatLeftSideProp> = ({
+    dataUserChat,
+    onClick,
+}) => {
+
+     
     return (
         <>
-            {dataUserChat ? (
-                dataUserChat?.map((item, index) => (
-                    <div key={index} className="parentItem">
-                        {item.username}
-                        {item.avatar}
-                    </div>
-                ))
-            ) : (
-                <>No chats</>
-            )}
+            <div
+                key={dataUserChat._id}
+                className="parentItem"
+                onClick={onClick}
+            >
+                {dataUserChat.username}
+                {/* {item.avatar} */}
+            </div>
         </>
     );
 };

@@ -10,8 +10,19 @@ interface Message {
 }
 
 interface ChatType {
-    readonly username: string;
-    readonly messages: Message[];
-    setSelectedChat: (_id: string) => void;
+    // readonly username: string;
+    _id: string;
+    setSelectedChat: () => void;
+    
+    onClick: () => void;
+}
+
+interface UserChat {
+    _id: string;
+    username: string;
+    firstName: string;
+    avatar: string;
+    index: string;
+    setSelectedChat: () => void;
     onClick: () => void;
 }

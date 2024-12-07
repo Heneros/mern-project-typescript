@@ -10,7 +10,7 @@ import { IoMdClose } from 'react-icons/io';
 import { decodeToken } from 'react-jwt';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import './styles/chatModal.css';
-import ChatLeftSide from '../chatLeftSide/chatLeftSide';
+import ChatLeftSide from '../chatLeftSide/ChatLeftSide';
 import { useGetAllChatsQuery } from 'features/chat/api/chatApiSlice';
 import ChatRightSide from '../chatRightSide/ChatRightSide';
 
@@ -53,6 +53,7 @@ const ChatModal: React.FC<ChatModalProps> = ({
     const handleClose = () => {
         closeModal();
     };
+
     return (
         <>
             <div ref={menuRef} className={`chatModal ${isOpen ? 'open' : ''}`}>
@@ -67,10 +68,27 @@ const ChatModal: React.FC<ChatModalProps> = ({
                         {isAuthenticated ? (
                             <>
                                 <div className="leftSide">
-                                    <ChatLeftSide
-                                        dataUserChat={dataUserChat}
-                                        setSelectedChat={setSelectedChat}
-                                    />
+                                    {dataUserChat ? (
+                                        dataUserChat?.map(
+                                            (itemUser: UserChat) => (
+                                                <>
+                                                    <ChatLeftSide
+                                                        dataUserChat={itemUser}
+                                                        setSelectedChat={
+                                                            setSelectedChat
+                                                        }
+                                                        onClick={() =>
+                                                            setSelectedChat(
+                                                                itemUser,
+                                                            )
+                                                        }
+                                                    />
+                                                </>
+                                            ),
+                                        )
+                                    ) : (
+                                        <></>
+                                    )}
                                 </div>
                                 <div className="rightSide">
                                     {selectedChat ? (
@@ -78,7 +96,7 @@ const ChatModal: React.FC<ChatModalProps> = ({
                                             selectedChat={selectedChat}
                                         />
                                     ) : (
-                                        <>Select Chat1</>
+                                        <>Select Chat</>
                                     )}
                                 </div>
                             </>

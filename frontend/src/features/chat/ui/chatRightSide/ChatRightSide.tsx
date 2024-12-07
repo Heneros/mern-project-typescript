@@ -1,7 +1,29 @@
 import React from 'react';
+import ChatHeader from '../chatHeader/ChatHeader';
+import ChatMessage from '../chatMessage/ChatMessage';
+import ChatInput from '../chatInput/chatInput';
 
-const ChatRightSide = ({ selectedChat }) => {
-    return <div>ChatRightSide</div>;
+interface ChatRoomProps {
+    selectedChat: ChatType;
+}
+
+const ChatRightSide: React.FC<ChatRoomProps> = ({ selectedChat }) => {
+    const { _id } = selectedChat;
+    console.log(_id);
+
+    return (
+        <>
+            {selectedChat ? (
+                <div className="chatRoom">
+                    <ChatHeader />
+                    <ChatMessage />
+                    <ChatInput />
+                </div>
+            ) : (
+                <>No chat found</>
+            )}
+        </>
+    );
 };
 
 export default ChatRightSide;
