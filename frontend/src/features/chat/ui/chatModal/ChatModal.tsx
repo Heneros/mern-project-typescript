@@ -5,19 +5,22 @@ import {
     selectIsAuthenticated,
     setAuthenticated,
 } from 'features/auth/authSlice';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { decodeToken } from 'react-jwt';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import './styles/chatModal.css';
 import ChatLeftSide from '../chatLeftSide/chatLeftSide';
 import { useGetAllChatsQuery } from 'features/chat/api/chatApiSlice';
+import ChatRightSide from '../chatRightSide/ChatRightSide';
 
 const ChatModal: React.FC<ChatModalProps> = ({
     isOpen,
     closeModal,
     menuRef,
 }) => {
+    const [selectedChat, setSelectedChat] = useState<ChatType | null>(null);
+
     const isAuthenticated = useAppSelector(selectIsAuthenticated);
     const dispatch = useAppDispatch();
     const tokenArray = useAppSelector(selectCurrentUserToken);
@@ -64,9 +67,20 @@ const ChatModal: React.FC<ChatModalProps> = ({
                         {isAuthenticated ? (
                             <>
                                 <div className="leftSide">
-                                    <ChatLeftSide dataUserChat={dataUserChat} />
+                                    <ChatLeftSide
+                                        dataUserChat={dataUserChat}
+                                        setSelectedChat={setSelectedChat}
+                                    />
                                 </div>
-                                <div className="rightSide"></div>
+                                <div className="rightSide">
+                                    {selectedChat ? (
+                                        <ChatRightSide
+                                            selectedChat={selectedChat}
+                                        />
+                                    ) : (
+                                        <>Select Chat1</>
+                                    )}
+                                </div>
                             </>
                         ) : (
                             <>You are not authorize. Log in</>

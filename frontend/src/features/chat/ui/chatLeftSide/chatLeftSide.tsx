@@ -13,11 +13,18 @@ interface ChatLeftSideProp {
 
 const ChatLeftSide: React.FC<ChatLeftSideProp> = ({ dataUserChat }) => {
     return (
-        <ul>
-            {dataUserChat ? dataUserChat?.map((item, index) => (
-                <li>{item.username}</li>
-            )): (<>No chats</>)}
-        </ul>
+        <>
+            {dataUserChat ? (
+                dataUserChat?.map((item, index) => (
+                    <div key={index} className="parentItem">
+                        {item.username}
+                        {item.avatar}
+                    </div>
+                ))
+            ) : (
+                <>No chats</>
+            )}
+        </>
     );
 };
 
