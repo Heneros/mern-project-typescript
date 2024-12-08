@@ -1,26 +1,23 @@
 import React, { Dispatch, SetStateAction } from 'react';
 
 interface ChatLeftSideProp {
-    dataUserChat: UserChat;
-
-    ///  setSelectedChat: Dispatch<SetStateAction<ChatType | null>>;
+    dataUserChat: ChatType;
     setSelectedChat: React.Dispatch<React.SetStateAction<ChatType | null>>;
-
-    onClick: () => void;
 }
 
 const ChatLeftSide: React.FC<ChatLeftSideProp> = ({
     dataUserChat,
-    onClick,
+    setSelectedChat,
 }) => {
-
-     
+    const handleClick = () => {
+        setSelectedChat(dataUserChat);
+    };
     return (
         <>
             <div
                 key={dataUserChat._id}
                 className="parentItem"
-                onClick={onClick}
+                onClick={handleClick}
             >
                 {dataUserChat.username}
                 {/* {item.avatar} */}

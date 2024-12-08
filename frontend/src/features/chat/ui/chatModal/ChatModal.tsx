@@ -9,11 +9,11 @@ import React, { useEffect, useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { decodeToken } from 'react-jwt';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
-import './styles/chatModal.css';
 import ChatLeftSide from '../chatLeftSide/ChatLeftSide';
 import { useGetAllChatsQuery } from 'features/chat/api/chatApiSlice';
 import ChatRightSide from '../chatRightSide/ChatRightSide';
 
+import '../styles/chatModal.css';
 const ChatModal: React.FC<ChatModalProps> = ({
     isOpen,
     closeModal,
@@ -35,7 +35,6 @@ const ChatModal: React.FC<ChatModalProps> = ({
         const tokenGoogle: string | null = tokenGoogleArray ?? null;
 
         const decodedToken = token ? decodeToken(token) : null;
-        // console.log(decodedToken);
         const decodedGithubToken = tokenGithub
             ? decodeToken(tokenGithub)
             : null;
@@ -70,17 +69,13 @@ const ChatModal: React.FC<ChatModalProps> = ({
                                 <div className="leftSide">
                                     {dataUserChat ? (
                                         dataUserChat?.map(
-                                            (itemUser: UserChat) => (
+                                            (itemUser: ChatType) => (
                                                 <>
                                                     <ChatLeftSide
+                                                        key={itemUser._id}
                                                         dataUserChat={itemUser}
                                                         setSelectedChat={
                                                             setSelectedChat
-                                                        }
-                                                        onClick={() =>
-                                                            setSelectedChat(
-                                                                itemUser,
-                                                            )
                                                         }
                                                     />
                                                 </>

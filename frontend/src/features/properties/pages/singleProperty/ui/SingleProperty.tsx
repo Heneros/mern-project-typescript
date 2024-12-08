@@ -34,7 +34,7 @@ export const SingleProperty = () => {
     }
     // const titlePost = singleP.title;
     // console.log(data);
-    console.log(singleP);
+    // console.log(singleP);
     return (
         <>
             <Breadcrumbs lastParent={singleP.title} nameParent={'Properties'} />

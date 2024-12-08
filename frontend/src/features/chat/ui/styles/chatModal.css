@@ -69,3 +69,11 @@
         width: 70%;
       flex: 1;
 }
+
+.containerPreview{
+    max-width: 250px;
+}
+
+.containerPreview img{
+    max-width: 25%;
+}

@@ -12,17 +12,22 @@ interface Message {
 interface ChatType {
     // readonly username: string;
     _id: string;
-    setSelectedChat: () => void;
-    
-    onClick: () => void;
+    username: string;
+    // setSelectedChat: () => void;
+    // onClick: () => void;
 }
 
-interface UserChat {
-    _id: string;
-    username: string;
-    firstName: string;
-    avatar: string;
-    index: string;
-    setSelectedChat: () => void;
-    onClick: () => void;
+interface ChatRoomProps {
+    selectedChat: ChatType;
 }
+
+// interface UserChat {
+//     _id: string;
+//     username: string;
+//     firstName: string;
+//     avatar: string;
+//     index: string;
+
+//     setSelectedChat: () => void;
+//     // onClick: () => void;
+// }

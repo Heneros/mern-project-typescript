@@ -12,7 +12,7 @@ import { getReceiverSocketId, io } from '@/socket/socket';
 const sendMessage = asyncHandler(async (req: Request, res: Response) => {
     const { text, image } = req.body;
     const { id: receiverId } = req.params;
-    let imageUrl;
+    let imageUrl = null;
     const userReq = req as RequestWithUser;
 
     if (!userReq.user) {
@@ -20,30 +20,48 @@ const sendMessage = asyncHandler(async (req: Request, res: Response) => {
     }
     const senderId = userReq.user._id;
 
-    if (image) {
-        if (!req.file) {
-            res.status(400).json({
-                message: 'Error during upload file',
-            });
-            return;
-        }
+    // if (image) {
+    //     if (!req.file) {
+    //         res.status(400).json({
+    //             message: 'Error during upload file',
+    //         });
+    //         console.log('Error during upload file');
 
-        const localFilePath = req.file.path;
+    //         return;
+    //     }
+
+    //     const localFilePath = req.file.path;
+    //     const originalName = req.file.originalname;
+    //     const fileBuffer = fs.readFileSync(localFilePath);
+    //     try {
+    //         const uploadResponse = await cloudinaryUploader(
+    //             fileBuffer,
+    //             originalName,
+    //         );
+    //         imageUrl = uploadResponse?.url;
+
+    //         console.log(uploadResponse);
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+
+    //     // imageUrl = uploadResponse.secure_url;
+    // }
+    if (req.file) {
+        const fileBuffer = req.file.buffer;
         const originalName = req.file.originalname;
-        const fileBuffer = fs.readFileSync(localFilePath);
+
         try {
             const uploadResponse = await cloudinaryUploader(
                 fileBuffer,
                 originalName,
             );
             imageUrl = uploadResponse?.url;
-
-            console.log(uploadResponse);
         } catch (error) {
-            console.log(error);
+            console.error('Cloudinary upload error:', error);
+            res.status(500).json({ message: 'File upload failed' });
+            return;
         }
-
-        // imageUrl = uploadResponse.secure_url;
     }
 
     const newMessage = new Message({

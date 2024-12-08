@@ -16,10 +16,10 @@ export const chatsApiSlice = baseApiSlice.injectEndpoints({
             providesTags: ['Chat'],
         }),
         sendMessageChat: builder.mutation({
-            query: ({ id, newMsg }) => ({
+            query: ({ id, text, image }) => ({
                 url: `messages/send/${id}`,
                 method: 'POST',
-                body: newMsg,
+                body: { text, image },
             }),
             invalidatesTags: ['Chat'],
         }),

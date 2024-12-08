@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
     // const userId = socket.handshake.query.userId;
     if (typeof userId === 'string') {
         userSocketMap[userId] = socket.id;
-        console.log('userSocketMap[userId]', userSocketMap[userId]);
+        console.log(`userSocketMap[userId]`, userSocketMap[userId]);
     }
 
     io.emit('getOnlineUsers', Object.keys(userSocketMap));
