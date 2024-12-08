@@ -1,4 +1,5 @@
 import express from 'express';
+import multer from 'multer';
 
 import checkAuth from '@/middleware/checkAuthMiddleware';
 import getUsersForSidebar from '@/controllers/message/getUsersForSidebar';
@@ -7,8 +8,11 @@ import sendMessage from '@/controllers/message/sendMessage';
 
 const router = express.Router();
 
+const storage = multer.memoryStorage();
+const upload = multer({ storage });
+
 router.route('/users').get(checkAuth, getUsersForSidebar);
 router.route('/:id').get(checkAuth, getMessages);
-router.route('/send/:id').post(checkAuth, sendMessage);
+router.route('/send/:id').post(checkAuth, upload.single('image'), sendMessage);
 
 export default router;

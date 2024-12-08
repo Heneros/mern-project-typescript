@@ -2,50 +2,61 @@ import React, { useRef, useState } from 'react';
 import socket from 'app/socket';
 import { useSendMessageChatMutation } from 'features/chat/api/chatApiSlice';
 import { Button, Form } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 const ChatInput: React.FC<ChatRoomProps> = ({ selectedChat }) => {
     // const { _id } = selectedChat;
     const [text, setText] = useState<string | undefined>('');
     const [imagePreview, setImagePreview] = useState<string | null>(null);
-    const fileInputRef = useRef(null);
+    const fileInputRef = useRef<HTMLInputElement>(null);
     const [sendMessage] = useSendMessageChatMutation();
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
-    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (!e.target.files || e.target.files.length === 0) {
-            console.log('No file selected');
+    const handleImageChange = (
+        e: React.ChangeEvent<HTMLInputElement>,
+    ): void => {
+        const file = e.target.files?.[0];
+        if (!file) {
+            toast.error('No file selected');
             return;
         }
-        const file = e.target.files[0];
-        setSelectedFile(file);
+
+        if (!file.type.startsWith('image/')) {
+            toast.error('Please select an image file');
+            return;
+        }
 
         const reader = new FileReader();
         reader.onloadend = () => {
-            setImagePreview(reader.result as string);
+            if (reader.result) {
+                setImagePreview(reader.result as string);
+            }
         };
         reader.readAsDataURL(file);
+        setSelectedFile(file);
     };
 
     const handleSendMessage = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!text?.trim() && !imagePreview) return;
 
-        // const formData = new FormData();
-
-        // if (selectedFile) {
-        //     formData.append('image', selectedFile);
-        // }
+        const formData = new FormData();
+        formData.append('text', text as string);
+        if (selectedFile) {
+            formData.append('image', selectedFile);
+        }
 
         try {
             await sendMessage({
                 id: selectedChat._id,
-                text,
-                image: imagePreview,
+                messageData: formData,
             });
 
-            console.log({ text, imagePreview });
+            // console.log(selectedFile);
             setText('');
+            setSelectedFile(null);
             setImagePreview(null);
+            if (fileInputRef.current) fileInputRef.current.value = '';
         } catch (error) {
             console.log(error);
         }
