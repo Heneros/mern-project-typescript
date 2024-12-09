@@ -14,11 +14,16 @@ import { useGetAllChatsQuery } from 'features/chat/api/chatApiSlice';
 import ChatRightSide from '../chatRightSide/ChatRightSide';
 
 import '../styles/chatModal.css';
+import { useGetUserProfileQuery } from 'features/user/userApiSlice';
+import socket from 'app/socket';
+
 const ChatModal: React.FC<ChatModalProps> = ({
     isOpen,
     closeModal,
     menuRef,
 }) => {
+    const { data: profileMy, isSuccess } = useGetUserProfileQuery(undefined);
+
     const [selectedChat, setSelectedChat] = useState<ChatType | null>(null);
 
     const isAuthenticated = useAppSelector(selectIsAuthenticated);
@@ -28,6 +33,7 @@ const ChatModal: React.FC<ChatModalProps> = ({
     const tokenGoogleArray = useAppSelector(selectCurrentUserGithubToken);
 
     const { data: dataUserChat } = useGetAllChatsQuery(undefined);
+    const [onlineUsers, setOnlineUsers] = useState<UserChat[]>([]);
 
     useEffect(() => {
         const token: string | null = tokenArray ?? null;
@@ -49,6 +55,40 @@ const ChatModal: React.FC<ChatModalProps> = ({
         }
     }, [tokenArray, tokenGithubArray, tokenGoogleArray]);
 
+    useEffect(() => {
+        const userId = profileMy?.userProfile?._id;
+
+        if (isSuccess && userId) {
+            socket.emit('setOnlineUser', userId);
+        }
+
+        const handleBeforeUnload = () => {
+            if (userId) {
+                socket.emit('removeOnlineUser', userId);
+            }
+        };
+        window.addEventListener('beforeunload', handleBeforeUnload);
+
+        return () => {
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+            socket.off('removeOnlineUser', userId);
+        };
+    }, [isSuccess, profileMy?.userProfile?._id]);
+
+    useEffect(() => {
+        const handleGetOnlineUsers = (users: UserChat[]) => {
+            setOnlineUsers(users);
+        };
+
+        socket.on('getOnlineUsers', handleGetOnlineUsers);
+
+        return () => {
+            socket.off('getOnlineUsers', handleGetOnlineUsers);
+        };
+    }, []);
+
+    console.log(onlineUsers);
+
     const handleClose = () => {
         closeModal();
     };
@@ -67,8 +107,8 @@ const ChatModal: React.FC<ChatModalProps> = ({
                         {isAuthenticated ? (
                             <>
                                 <div className="leftSide">
-                                    {dataUserChat ? (
-                                        dataUserChat?.map(
+                                    {onlineUsers ? (
+                                        onlineUsers?.map(
                                             (itemUser: ChatType) => (
                                                 <>
                                                     <ChatLeftSide

@@ -1,4 +1,6 @@
-import React, { Dispatch, SetStateAction } from 'react';
+import socket from 'app/socket';
+import { useGetUserProfileQuery } from 'features/user/userApiSlice';
+import React, { Dispatch, SetStateAction, useEffect } from 'react';
 
 interface ChatLeftSideProp {
     dataUserChat: ChatType;
@@ -9,6 +11,12 @@ const ChatLeftSide: React.FC<ChatLeftSideProp> = ({
     dataUserChat,
     setSelectedChat,
 }) => {
+    // const { data: profileMy, isSuccess } = useGetUserProfileQuery(undefined);
+    /// const { _id } = profileMy?.userProfile;
+
+    // console.log(userId);
+
+
     const handleClick = () => {
         setSelectedChat(dataUserChat);
     };
