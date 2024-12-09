@@ -50,17 +50,33 @@ io.on('connection', async (socket) => {
             (user) => user._id.toString() !== userId,
         );
 
-        // console.log('usersWithStatus', userId);
+        // console.log('Filtered online users for', userId, filteredUsers);
 
-        io.emit(
-            'getOnlineUsers',
-            filteredUsers?.map((user) => ({
-                _id: user._id,
-                username: user.username,
-                avatar: user.avatar,
-                status: 'online',
-            })),
-        );
+        const socketId = userSocketMap[userId];
+
+        if (socketId) {
+            io.to(socketId).emit(
+                'getOnlineUsers',
+                filteredUsers?.map((user) => ({
+                    _id: user._id,
+                    username: user.username,
+                    avatar: user.avatar,
+                    status: 'online',
+                })),
+            );
+        } else {
+            console.log(`Socket ID for user ${userId} not found.`);
+        }
+        // console.log('onlineUsers', userId);
+        // io.to(userId).emit(
+        //     'getOnlineUsers',
+        //     filteredUsers?.map((user) => ({
+        //         _id: user._id,
+        //         username: user.username,
+        //         avatar: user.avatar,
+        //         status: 'online',
+        //     })),
+        // );
         // userSocketMap[userId] = socket.id;
         // console.log('setOnlineUser', usersWithStatus);
     });

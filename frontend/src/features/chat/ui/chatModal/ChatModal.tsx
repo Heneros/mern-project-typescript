@@ -62,22 +62,23 @@ const ChatModal: React.FC<ChatModalProps> = ({
             socket.emit('setOnlineUser', userId);
         }
 
-        const handleBeforeUnload = () => {
-            if (userId) {
-                socket.emit('removeOnlineUser', userId);
-            }
-        };
-        window.addEventListener('beforeunload', handleBeforeUnload);
+        // const handleBeforeUnload = () => {
+        //     if (userId) {
+        //         socket.emit('removeOnlineUser', userId);
+        //     }
+        // };
+        // window.addEventListener('beforeunload', handleBeforeUnload);
 
-        return () => {
-            window.removeEventListener('beforeunload', handleBeforeUnload);
-            socket.off('removeOnlineUser', userId);
-        };
+        // return () => {
+        //     window.removeEventListener('beforeunload', handleBeforeUnload);
+        //     socket.off('removeOnlineUser', userId);
+        // };
     }, [isSuccess, profileMy?.userProfile?._id]);
 
     useEffect(() => {
         const handleGetOnlineUsers = (users: UserChat[]) => {
             setOnlineUsers(users);
+            console.log(users);
         };
 
         socket.on('getOnlineUsers', handleGetOnlineUsers);
