@@ -16,7 +16,6 @@ const ChatLeftSide: React.FC<ChatLeftSideProp> = ({
 
     // console.log(userId);
 
-
     const handleClick = () => {
         setSelectedChat(dataUserChat);
     };
@@ -27,6 +26,7 @@ const ChatLeftSide: React.FC<ChatLeftSideProp> = ({
                 className="parentItem"
                 onClick={handleClick}
             >
+                {dataUserChat.status}
                 {dataUserChat.username}
                 {/* {item.avatar} */}
             </div>

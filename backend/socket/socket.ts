@@ -27,58 +27,29 @@ io.on('connection', async (socket) => {
 
     const userId = socket.handshake.query.userId as string | undefined;
 
-    // const userId = socket.handshake.query.userId;
-    // if (typeof userId === 'string') {
-    //     userSocketMap[userId] = socket.id;
-    //     console.log(`userSocketMap[userId]`, userSocketMap[userId]);
-    // }
+    const updateUserStatus = async () => {
+        const onlineUsers = Object.keys(userSocketMap);
+        const allUsers = await User.find().select('_id username avatar');
 
+        const usersWithStatus = allUsers.map((user) => ({
+            _id: user._id,
+            username: user.username,
+            avatar: user.avatar,
+            status: onlineUsers.includes(user._id.toString())
+                ? 'online'
+                : 'offline',
+        }));
+        console.log('getUsers', usersWithStatus);
+        io.emit('getUsers', usersWithStatus);
+    };
     socket.on('setOnlineUser', async (userId) => {
-        console.log('setOnlineUser', userId);
+        // console.log('setOnlineUser', userId);
 
         if (typeof userId === 'string') {
             userSocketMap[userId] = socket.id;
             console.log(`User ${userId} is now online`);
         }
-        const onlineUsers = Object.keys(userSocketMap);
-
-        const usersWithStatus = await User.find({
-            _id: { $in: onlineUsers },
-        }).select('_id username avatar');
-
-        const filteredUsers = usersWithStatus?.filter(
-            (user) => user._id.toString() !== userId,
-        );
-
-        // console.log('Filtered online users for', userId, filteredUsers);
-
-        const socketId = userSocketMap[userId];
-
-        if (socketId) {
-            io.to(socketId).emit(
-                'getOnlineUsers',
-                filteredUsers?.map((user) => ({
-                    _id: user._id,
-                    username: user.username,
-                    avatar: user.avatar,
-                    status: 'online',
-                })),
-            );
-        } else {
-            console.log(`Socket ID for user ${userId} not found.`);
-        }
-        // console.log('onlineUsers', userId);
-        // io.to(userId).emit(
-        //     'getOnlineUsers',
-        //     filteredUsers?.map((user) => ({
-        //         _id: user._id,
-        //         username: user.username,
-        //         avatar: user.avatar,
-        //         status: 'online',
-        //     })),
-        // );
-        // userSocketMap[userId] = socket.id;
-        // console.log('setOnlineUser', usersWithStatus);
+        await updateUserStatus();
     });
 
     socket.on('removeOnlineUser', (userId) => {

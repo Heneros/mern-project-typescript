@@ -16,14 +16,19 @@ import ChatRightSide from '../chatRightSide/ChatRightSide';
 import '../styles/chatModal.css';
 import { useGetUserProfileQuery } from 'features/user/userApiSlice';
 import socket from 'app/socket';
-
+type User = {
+    _id: string;
+    username: string;
+    avatar: string;
+    status: 'online' | 'offline';
+};
 const ChatModal: React.FC<ChatModalProps> = ({
     isOpen,
     closeModal,
     menuRef,
 }) => {
     const { data: profileMy, isSuccess } = useGetUserProfileQuery(undefined);
-
+    const [users, setUsers] = useState<User[]>([]);
     const [selectedChat, setSelectedChat] = useState<ChatType | null>(null);
 
     const isAuthenticated = useAppSelector(selectIsAuthenticated);
@@ -61,35 +66,34 @@ const ChatModal: React.FC<ChatModalProps> = ({
         if (isSuccess && userId) {
             socket.emit('setOnlineUser', userId);
         }
-
-        // const handleBeforeUnload = () => {
-        //     if (userId) {
-        //         socket.emit('removeOnlineUser', userId);
-        //     }
-        // };
-        // window.addEventListener('beforeunload', handleBeforeUnload);
-
-        // return () => {
-        //     window.removeEventListener('beforeunload', handleBeforeUnload);
-        //     socket.off('removeOnlineUser', userId);
-        // };
     }, [isSuccess, profileMy?.userProfile?._id]);
 
+    // useEffect(() => {
+    //     const handleGetOnlineUsers = (users: UserChat[]) => {
+    //         setOnlineUsers(users);
+    //         // console.log(users);
+    //     };
+
+    //     socket.on('getOnlineUsers', handleGetOnlineUsers);
+
+    //     return () => {
+    //         socket.off('getOnlineUsers', handleGetOnlineUsers);
+    //     };
+    // }, []);
     useEffect(() => {
-        const handleGetOnlineUsers = (users: UserChat[]) => {
-            setOnlineUsers(users);
-            console.log(users);
+        const handleGetUsers = (usersWithStatus: User[]) => {
+            setUsers(usersWithStatus);
         };
 
-        socket.on('getOnlineUsers', handleGetOnlineUsers);
+        socket.on('getUsers', handleGetUsers);
 
         return () => {
-            socket.off('getOnlineUsers', handleGetOnlineUsers);
+            socket.off('getUsers', handleGetUsers);
         };
     }, []);
 
-    console.log(onlineUsers);
-
+    console.log(users);
+    // console.log(onlineUsers);
     const handleClose = () => {
         closeModal();
     };
@@ -108,20 +112,18 @@ const ChatModal: React.FC<ChatModalProps> = ({
                         {isAuthenticated ? (
                             <>
                                 <div className="leftSide">
-                                    {onlineUsers ? (
-                                        onlineUsers?.map(
-                                            (itemUser: ChatType) => (
-                                                <>
-                                                    <ChatLeftSide
-                                                        key={itemUser._id}
-                                                        dataUserChat={itemUser}
-                                                        setSelectedChat={
-                                                            setSelectedChat
-                                                        }
-                                                    />
-                                                </>
-                                            ),
-                                        )
+                                    {users ? (
+                                        users?.map((itemUser: ChatType) => (
+                                            <>
+                                                <ChatLeftSide
+                                                    key={itemUser._id}
+                                                    dataUserChat={itemUser}
+                                                    setSelectedChat={
+                                                        setSelectedChat
+                                                    }
+                                                />
+                                            </>
+                                        ))
                                     ) : (
                                         <></>
                                     )}
