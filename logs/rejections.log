@@ -688,3 +688,885 @@
   ],
   timestamp: '2024-11-30 01:24:20.257 PM'
 }
+{
+  error: TypeError: Cannot destructure property '_id' of 'data' as it is null.
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:73:17)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    "TypeError: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:17)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:17)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:14:26 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 1664,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 390348800,
+      heapTotal: 337670144,
+      heapUsed: 326987520,
+      external: 25003713,
+      arrayBuffers: 21968632
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5161.39 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:14:26.668 PM'
+}
+{
+  error: TypeError: Cannot destructure property '_id' of 'data' as it is null.
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:73:17)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    "TypeError: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:17)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:17)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:15:14 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 1528,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 439005184,
+      heapTotal: 382177280,
+      heapUsed: 349961752,
+      external: 24915137,
+      arrayBuffers: 21877460
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5209.343 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:15:14.614 PM'
+}
+{
+  error: TypeError: Cannot destructure property '_id' of 'data' as it is null.
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:73:17)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    "TypeError: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:17)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:17)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:15:53 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 14544,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 443928576,
+      heapTotal: 392531968,
+      heapUsed: 363827864,
+      external: 24984005,
+      arrayBuffers: 21946308
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5247.75 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:15:53.020 PM'
+}
+{
+  error: TypeError: Cannot destructure property '_id' of 'data' as it is null.
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:73:17)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    "TypeError: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:17)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot destructure property '_id' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:17)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:16:47 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 9288,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 446078976,
+      heapTotal: 394366976,
+      heapUsed: 367635296,
+      external: 25037627,
+      arrayBuffers: 21999930
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5302.531 },
+  trace: [
+    {
+      column: 17,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:16:47.801 PM'
+}
+{
+  error: TypeError: Cannot destructure property 'chatId' of 'data' as it is null.
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:73:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    "TypeError: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:25)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:25)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:17:26 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 4700,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 445063168,
+      heapTotal: 390803456,
+      heapUsed: 360843776,
+      external: 24915164,
+      arrayBuffers: 21877487
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5341.015 },
+  trace: [
+    {
+      column: 25,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:17:26.287 PM'
+}
+{
+  error: TypeError: Cannot destructure property 'chatId' of 'data' as it is null.
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:73:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    "TypeError: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:25)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:25)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:20:19 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 12988,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 388694016,
+      heapTotal: 336359424,
+      heapUsed: 325388752,
+      external: 24969766,
+      arrayBuffers: 21934685
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5513.953 },
+  trace: [
+    {
+      column: 25,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:20:19.234 PM'
+}
+{
+  error: TypeError: Cannot destructure property 'chatId' of 'data' as it is null.
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:73:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    "TypeError: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:25)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:25)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:21:02 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 4424,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 445816832,
+      heapTotal: 394891264,
+      heapUsed: 358068936,
+      external: 24987039,
+      arrayBuffers: 21949342
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5556.828 },
+  trace: [
+    {
+      column: 25,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:21:02.106 PM'
+}
+{
+  error: TypeError: Cannot read properties of null (reading '_id')
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:74:39)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot read properties of null (reading '_id')\n" +
+    "TypeError: Cannot read properties of null (reading '_id')\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:74:39)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot read properties of null (reading '_id')\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:74:39)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:21:44 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 2320,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 441286656,
+      heapTotal: 391221248,
+      heapUsed: 363591616,
+      external: 24988308,
+      arrayBuffers: 21950611
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5599.453 },
+  trace: [
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 74,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:21:44.726 PM'
+}
+{
+  error: TypeError: Cannot destructure property 'chatId' of 'data' as it is null.
+      at Socket.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\socket\socket.ts:73:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at Socket.emitUntyped (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\typed-events.js:69:22)
+      at C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\socket.io\dist\socket.js:697:39
+      at processTicksAndRejections (node:internal/process/task_queues:77:11),
+  level: 'error',
+  message: "unhandledRejection: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    "TypeError: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:25)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  stack: "TypeError: Cannot destructure property 'chatId' of 'data' as it is null.\n" +
+    '    at Socket.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts:73:25)\n' +
+    '    at Socket.emit (node:events:519:28)\n' +
+    '    at Socket.emit (node:domain:488:12)\n' +
+    '    at Socket.emitUntyped (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n' +
+    '    at C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js:697:39\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:77:11)',
+  rejection: true,
+  date: 'Tue Dec 10 2024 18:26:11 GMT+0200 (Eastern European Standard Time)',
+  process: {
+    pid: 2340,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.14.0',
+    argv: [
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 389263360,
+      heapTotal: 336097280,
+      heapUsed: 327286736,
+      external: 24974886,
+      arrayBuffers: 21939805
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 5866.328 },
+  trace: [
+    {
+      column: 25,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\socket\\socket.ts',
+      function: null,
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'Socket.emit',
+      line: 519,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:domain',
+      function: 'Socket.emit',
+      line: 488,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\typed-events.js',
+      function: 'Socket.emitUntyped',
+      line: 69,
+      method: 'emitUntyped',
+      native: false
+    },
+    {
+      column: 39,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\socket.io\\dist\\socket.js',
+      function: null,
+      line: 697,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 77,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-10 06:26:11.606 PM'
+}

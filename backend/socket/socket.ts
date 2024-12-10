@@ -27,11 +27,21 @@ io.on('connection', async (socket) => {
 
     const userId = socket.handshake.query.userId as string | undefined;
 
-    const updateUserStatus = async () => {
+    const updateUserStatus = async (userId: string) => {
         const onlineUsers = Object.keys(userSocketMap);
         const allUsers = await User.find().select('_id username avatar');
 
-        const usersWithStatus = allUsers.map((user) => ({
+        const filteredUsers = allUsers?.filter(
+            ///   (item) => item._id.toString() !== socket.handshake.query.userId,
+            (item) => item._id.toString() !== userId,
+        );
+
+        //  console.log('filteredUsers', filteredUsers);
+        // console.log('userSocketMap[userId]', userSocketMap[userId]);
+
+        ///  console.log('filteredUsers', userSocketMap[userId]);
+        // console.log('userId', userId);
+        const usersWithStatus = filteredUsers.map((user) => ({
             _id: user._id,
             username: user.username,
             avatar: user.avatar,
@@ -39,7 +49,7 @@ io.on('connection', async (socket) => {
                 ? 'online'
                 : 'offline',
         }));
-        console.log('getUsers', usersWithStatus);
+        /// console.log('getUsers', usersWithStatus);
         io.emit('getUsers', usersWithStatus);
     };
     socket.on('setOnlineUser', async (userId) => {
@@ -48,17 +58,21 @@ io.on('connection', async (socket) => {
         if (typeof userId === 'string') {
             userSocketMap[userId] = socket.id;
             console.log(`User ${userId} is now online`);
+            await updateUserStatus(userId);
         }
-        await updateUserStatus();
     });
 
-    socket.on('removeOnlineUser', (userId) => {
-        if (userId && userSocketMap[userId]) {
-            delete userSocketMap[userId];
-            console.log(`${userId} manually removed`);
-
-            io.emit('getOnlineUsers', Object.keys(userSocketMap));
+    socket.on('join_room', async (chatId) => {
+        if (chatId) {
+            socket.join(chatId);
+            //   console.log('_id', chatId);
+        } else {
+            console.log(' error join_room');
         }
+    });
+
+    socket.on('sendMessage', async (messageData) => {
+        //const { chatId } = data;
     });
 
     socket.on('disconnect', () => {

@@ -31,3 +31,13 @@ interface UserChat {
     // setSelectedChat: () => void;
     // onClick: () => void;
 }
+
+interface Message {
+    _id: string;
+    text: string;
+    senderId: string;
+    receiverId: string;
+    image: string;
+    // setSelectedChat: () => void;
+    // onClick: () => void;
+}

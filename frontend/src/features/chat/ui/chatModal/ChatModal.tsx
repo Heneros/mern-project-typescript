@@ -68,18 +68,6 @@ const ChatModal: React.FC<ChatModalProps> = ({
         }
     }, [isSuccess, profileMy?.userProfile?._id]);
 
-    // useEffect(() => {
-    //     const handleGetOnlineUsers = (users: UserChat[]) => {
-    //         setOnlineUsers(users);
-    //         // console.log(users);
-    //     };
-
-    //     socket.on('getOnlineUsers', handleGetOnlineUsers);
-
-    //     return () => {
-    //         socket.off('getOnlineUsers', handleGetOnlineUsers);
-    //     };
-    // }, []);
     useEffect(() => {
         const handleGetUsers = (usersWithStatus: User[]) => {
             setUsers(usersWithStatus);
@@ -92,7 +80,7 @@ const ChatModal: React.FC<ChatModalProps> = ({
         };
     }, []);
 
-    console.log(users);
+    /// console.log(users);
     // console.log(onlineUsers);
     const handleClose = () => {
         closeModal();
