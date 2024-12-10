@@ -1,12 +1,13 @@
 import socket from 'app/socket';
 import { useGetIdChatQuery } from 'features/chat/api/chatApiSlice';
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useGetUserProfileQuery } from 'features/user/userApiSlice';
 
 const ChatMessage: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
     const { data: chatId, isSuccess } = useGetIdChatQuery(selectedChat._id);
     const { data: dataProfile } = useGetUserProfileQuery(undefined);
 
+    // console.log('messages', selectedChat._id);
     const [messages, setMessages] = useState<Message[]>([]);
 
     useEffect(() => {
@@ -15,32 +16,28 @@ const ChatMessage: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
         }
     }, [isSuccess, chatId]);
 
+    const handleReceiveMessage = useCallback((message: Message) => {
+        setMessages((prevMessages) => [...prevMessages, message]);
+        console.log('Received message:', message);
+    }, []);
+
     useEffect(() => {
         if (selectedChat._id) {
             socket.emit('join_room', selectedChat._id);
+            // socket.on('receiveMessage', handleReceiveMessage);
         }
-
-        return () => {
-            socket.off('receiveMessage');
-        };
-    }, [chatId]);
-
-    useEffect(() => {
         socket.on('receiveMessage', (message) => {
             console.log(message);
-            if (message.id === selectedChat._id) {
-                setMessages((prevMessages) => [...prevMessages, message]);
-            } else {
-                console.log('setMessages error');
-            }
+            setMessages((prev) => [...prev, message]);
         });
+
         return () => {
-            socket.off('receiveMessage');
+            socket.off('receiveMessage', handleReceiveMessage);
         };
-    });
+    }, [chatId]);
     //
     // console.log('userId', userId);
-    console.log('messages', messages);
+
     return (
         <>
             <div className="listMsg">

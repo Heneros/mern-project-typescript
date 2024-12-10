@@ -66,7 +66,7 @@ const ChatInput: React.FC<ChatRoomProps> = ({ selectedChat }) => {
                 };
 
                 socket.emit('sendMessage', messageData);
-                console.log(messageData);
+                // console.log(messageData);
             }
 
             setText('');

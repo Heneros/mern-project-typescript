@@ -68,8 +68,12 @@ io.on('connection', async (socket) => {
     socket.on('sendMessage', async (formData) => {
         try {
             console.log('formData._id', formData);
+            // socket.broadcast.to(formData.id).emit('receiveMessage', formData);
 
-            io.to(formData.id).emit('receiveMessage', { formData });
+            io.to(formData.receiverId.toString()).emit(
+                'receiveMessage',
+                formData,
+            );
         } catch (error) {
             console.error('Error sending message:', error);
         }
