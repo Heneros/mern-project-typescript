@@ -3,7 +3,7 @@ import ChatHeader from '../chatHeader/ChatHeader';
 import ChatMessage from '../chatMessage/ChatMessage';
 import ChatInput from '../chatInput/chatInput';
 
-const ChatRightSide: React.FC<ChatRoomProps> = ({ selectedChat }) => {
+const ChatRightSide: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
     // const { _id } = selectedChat;
     // console.log(_id);
 
@@ -12,7 +12,7 @@ const ChatRightSide: React.FC<ChatRoomProps> = ({ selectedChat }) => {
             {selectedChat ? (
                 <div className="chatRoom">
                     <ChatHeader selectedChat={selectedChat} />
-                    <ChatMessage selectedChat={selectedChat} />
+                    <ChatMessage userId={userId} selectedChat={selectedChat} />
                     <ChatInput selectedChat={selectedChat} />
                 </div>
             ) : (

@@ -3,9 +3,11 @@ import socket from 'app/socket';
 import { useSendMessageChatMutation } from 'features/chat/api/chatApiSlice';
 import { Button, Form } from 'react-bootstrap';
 import { toast } from 'react-toastify';
+import { useGetUserProfileQuery } from 'features/user/userApiSlice';
 
 const ChatInput: React.FC<ChatRoomProps> = ({ selectedChat }) => {
     // const { _id } = selectedChat;
+    const { data: dataProfile, isSuccess } = useGetUserProfileQuery(undefined);
     const [text, setText] = useState<string | undefined>('');
     const [imagePreview, setImagePreview] = useState<string | null>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
@@ -53,6 +55,20 @@ const ChatInput: React.FC<ChatRoomProps> = ({ selectedChat }) => {
             });
 
             // console.log(selectedFile);
+            if (isSuccess) {
+                const dataProfileSender = dataProfile?.userProfile._id;
+                const messageData = {
+                    id: selectedChat._id,
+                    senderId: dataProfileSender,
+                    receiverId: selectedChat._id,
+                    text: text || null,
+                    image: imagePreview || null,
+                };
+
+                socket.emit('sendMessage', messageData);
+                console.log(messageData);
+            }
+
             setText('');
             setSelectedFile(null);
             setImagePreview(null);
@@ -61,6 +77,7 @@ const ChatInput: React.FC<ChatRoomProps> = ({ selectedChat }) => {
             console.log(error);
         }
     };
+    // console.log('selectedChat', selectedChat);
     return (
         <div className="message-input">
             {imagePreview && (

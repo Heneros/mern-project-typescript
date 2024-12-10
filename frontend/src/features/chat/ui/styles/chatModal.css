@@ -77,3 +77,14 @@
 .containerPreview img{
     max-width: 25%;
 }
+
+
+.msgImg{
+    max-width: 250px;
+    width: 25%;
+}
+
+.listMsg{
+        overflow-y: scroll;
+    max-height: 250px;
+}

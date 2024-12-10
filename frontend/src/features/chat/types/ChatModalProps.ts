@@ -4,11 +4,6 @@ interface ChatModalProps {
     menuRef: React.RefObject<HTMLDivElement>;
 }
 
-interface Message {
-    _id: string;
-    username: string;
-}
-
 interface ChatType {
     // readonly username: string;
     _id: string;
@@ -20,6 +15,7 @@ interface ChatType {
 
 interface ChatRoomProps {
     selectedChat: ChatType;
+    userId?: string;
 }
 
 interface UserChat {

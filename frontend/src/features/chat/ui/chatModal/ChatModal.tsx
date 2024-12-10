@@ -37,9 +37,6 @@ const ChatModal: React.FC<ChatModalProps> = ({
     const tokenGithubArray = useAppSelector(selectCurrentUserGoogleToken);
     const tokenGoogleArray = useAppSelector(selectCurrentUserGithubToken);
 
-    const { data: dataUserChat } = useGetAllChatsQuery(undefined);
-    const [onlineUsers, setOnlineUsers] = useState<UserChat[]>([]);
-
     useEffect(() => {
         const token: string | null = tokenArray ?? null;
         const tokenGithub: string | null = tokenGithubArray ?? null;
@@ -59,14 +56,13 @@ const ChatModal: React.FC<ChatModalProps> = ({
             dispatch(setAuthenticated(false));
         }
     }, [tokenArray, tokenGithubArray, tokenGoogleArray]);
+    const userId = profileMy?.userProfile?._id;
 
     useEffect(() => {
-        const userId = profileMy?.userProfile?._id;
-
         if (isSuccess && userId) {
             socket.emit('setOnlineUser', userId);
         }
-    }, [isSuccess, profileMy?.userProfile?._id]);
+    }, [isSuccess, profileMy]);
 
     useEffect(() => {
         const handleGetUsers = (usersWithStatus: User[]) => {
@@ -80,8 +76,7 @@ const ChatModal: React.FC<ChatModalProps> = ({
         };
     }, []);
 
-    /// console.log(users);
-    // console.log(onlineUsers);
+    // console.log(userId);
     const handleClose = () => {
         closeModal();
     };
@@ -119,6 +114,7 @@ const ChatModal: React.FC<ChatModalProps> = ({
                                 <div className="rightSide">
                                     {selectedChat ? (
                                         <ChatRightSide
+                                            userId={userId}
                                             selectedChat={selectedChat}
                                         />
                                     ) : (

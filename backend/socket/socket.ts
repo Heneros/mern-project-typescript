@@ -5,6 +5,7 @@ import express from 'express';
 import cors from 'cors';
 import User from '@/models/userModel';
 import { UserSocketMap } from '@/types/UserSocketMap';
+import Message from '@/models/chatModel';
 
 const app = express();
 
@@ -32,15 +33,8 @@ io.on('connection', async (socket) => {
         const allUsers = await User.find().select('_id username avatar');
 
         const filteredUsers = allUsers?.filter(
-            ///   (item) => item._id.toString() !== socket.handshake.query.userId,
             (item) => item._id.toString() !== userId,
         );
-
-        //  console.log('filteredUsers', filteredUsers);
-        // console.log('userSocketMap[userId]', userSocketMap[userId]);
-
-        ///  console.log('filteredUsers', userSocketMap[userId]);
-        // console.log('userId', userId);
         const usersWithStatus = filteredUsers.map((user) => ({
             _id: user._id,
             username: user.username,
@@ -71,8 +65,14 @@ io.on('connection', async (socket) => {
         }
     });
 
-    socket.on('sendMessage', async (messageData) => {
-        //const { chatId } = data;
+    socket.on('sendMessage', async (formData) => {
+        try {
+            console.log('formData._id', formData);
+
+            io.to(formData.id).emit('receiveMessage', { formData });
+        } catch (error) {
+            console.error('Error sending message:', error);
+        }
     });
 
     socket.on('disconnect', () => {
