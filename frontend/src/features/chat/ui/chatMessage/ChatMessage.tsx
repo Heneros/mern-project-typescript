@@ -24,17 +24,15 @@ const ChatMessage: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
     useEffect(() => {
         if (selectedChat._id) {
             socket.emit('join_room', selectedChat._id);
-            // socket.on('receiveMessage', handleReceiveMessage);
+            socket.on('receiveMessage', handleReceiveMessage);
+
+            console.log(`Emitted join_room for room: ${selectedChat._id}`);
         }
-        socket.on('receiveMessage', (message) => {
-            console.log(message);
-            setMessages((prev) => [...prev, message]);
-        });
 
         return () => {
             socket.off('receiveMessage', handleReceiveMessage);
         };
-    }, [chatId]);
+    }, [selectedChat._id]);
     //
     // console.log('userId', userId);
 

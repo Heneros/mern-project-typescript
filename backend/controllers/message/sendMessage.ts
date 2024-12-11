@@ -10,8 +10,6 @@ import cloudinaryUploader from '@/config/cloudinaryConfig';
 import { getReceiverSocketId, io } from '@/socket/socket';
 
 const sendMessage = asyncHandler(async (req: Request, res: Response) => {
-    console.log('Body:', req.body);
-    console.log('File:', req.file);
     const { text, image } = req.body;
     const { id: receiverId } = req.params;
     let imageUrl = null;

@@ -14,6 +14,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
         origin: process.env.DOMAINCORS,
+        methods: ['GET', 'POST'],
     },
 });
 
@@ -56,24 +57,39 @@ io.on('connection', async (socket) => {
         }
     });
 
-    socket.on('join_room', async (chatId) => {
-        if (chatId) {
-            socket.join(chatId);
-            //   console.log('_id', chatId);
-        } else {
-            console.log(' error join_room');
-        }
+    socket.on('join_room', async (roomId) => {
+        // if (chatId) {
+        socket.join(roomId);
+        console.log(`User with socket ID ${socket.id} joined room: ${roomId}`);
+        console.log('Current rooms:', socket.rooms); // Debug the user's rooms
+
+        //   console.log('_id', chatId);
+        // } else {
+        //     console.log(' error join_room');
+        // }
     });
 
     socket.on('sendMessage', async (formData) => {
         try {
-            console.log('formData._id', formData);
-            // socket.broadcast.to(formData.id).emit('receiveMessage', formData);
+            const { id: chatId, senderId, receiverId, text, image } = formData;
 
-            io.to(formData.receiverId.toString()).emit(
-                'receiveMessage',
-                formData,
-            );
+            console.log('Received message in backend:', formData);
+
+            const newMessage = await Message.create({
+                chatId,
+                senderId,
+                receiverId,
+                text,
+                image,
+            });
+
+            console.log('Sending to room:', chatId);
+            console.log('Rooms:', socket.rooms);
+
+            // Отправить сообщение в комнату
+            io.to(chatId).emit('receiveMessage', newMessage);
+
+            console.log('Message emitted successfully');
         } catch (error) {
             console.error('Error sending message:', error);
         }
