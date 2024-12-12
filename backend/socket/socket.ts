@@ -29,6 +29,12 @@ io.on('connection', async (socket) => {
 
     const userId = socket.handshake.query.userId as string | undefined;
 
+    io.emit('getOnlineUsers', Object.keys(userSocketMap));
+
+    socket.on('newMessage', (data, id) => {
+        socket.broadcast.emit('newMessage', data);
+    });
+
     const updateUserStatus = async (userId: string) => {
         const onlineUsers = Object.keys(userSocketMap);
         const allUsers = await User.find().select('_id username avatar');
@@ -45,6 +51,7 @@ io.on('connection', async (socket) => {
                 : 'offline',
         }));
         /// console.log('getUsers', usersWithStatus);
+        //  io.to()emit('getUsers', usersWithStatus);
         io.emit('getUsers', usersWithStatus);
     };
     socket.on('setOnlineUser', async (userId) => {
@@ -58,15 +65,11 @@ io.on('connection', async (socket) => {
     });
 
     socket.on('join_room', async (roomId) => {
-        // if (chatId) {
-        socket.join(roomId);
-        console.log(`User with socket ID ${socket.id} joined room: ${roomId}`);
-        console.log('Current rooms:', socket.rooms); // Debug the user's rooms
-
-        //   console.log('_id', chatId);
-        // } else {
-        //     console.log(' error join_room');
-        // }
+        if (roomId) {
+            socket.join(roomId);
+        } else {
+            console.log(' error join_room');
+        }
     });
 
     socket.on('sendMessage', async (formData) => {
@@ -83,10 +86,6 @@ io.on('connection', async (socket) => {
                 image,
             });
 
-            console.log('Sending to room:', chatId);
-            console.log('Rooms:', socket.rooms);
-
-            // Отправить сообщение в комнату
             io.to(chatId).emit('receiveMessage', newMessage);
 
             console.log('Message emitted successfully');

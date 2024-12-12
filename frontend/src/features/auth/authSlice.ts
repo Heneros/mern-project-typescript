@@ -1,12 +1,22 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import socket from 'app/socket'; // Ensure this imports a valid socket instance
 import { decodeToken, isExpired } from 'react-jwt';
+import { BASE_URL } from 'shared/consts/urls';
 import { User } from 'shared/types/User';
+import axios from 'axios';
+import { Socket } from 'socket.io-client'; // Import Socket type
 
 interface AuthSlice {
     user: User | null;
     isAuthenticated: boolean;
     googleToken: string | null;
     githubToken: string | null;
+
+    authUser?: any;
+    isCheckingAuth?: boolean;
+    socket?: Socket | null; // Use Socket type here
+
+    onlineUsers: string[];
 }
 
 const userToken = localStorage.getItem('user');
@@ -32,7 +42,26 @@ const initialState: AuthSlice = {
     user: parsedUser,
     googleToken: googleToken ?? null,
     githubToken: githubToken ?? null,
+
+    authUser: null,
+    isCheckingAuth: true,
+    socket: null,
+    onlineUsers: [],
 };
+
+export const checkAuth = createAsyncThunk(
+    'auth/checkAuth',
+    async (_, thunkAPI) => {
+        try {
+            const response = await axios.get(`${BASE_URL}/auth/check`);
+            return response.data;
+        } catch (error: any) {
+            return thunkAPI.rejectWithValue(
+                error.response?.data.message || 'Error checking auth',
+            );
+        }
+    },
+);
 
 const authSlice = createSlice({
     name: 'auth',
@@ -56,13 +85,49 @@ const authSlice = createSlice({
         updateGoogleToken: (state, action: PayloadAction<string>) => {
             state.googleToken = action.payload;
             localStorage.setItem('googleToken', action.payload);
-            //  localStorage.setItem('user', JSON.stringify(action.payload));
         },
         updateGithubToken: (state, action: PayloadAction<string>) => {
             state.githubToken = action.payload;
             localStorage.setItem('githubToken', action.payload);
-            // localStorage.setItem('user', JSON.stringify(action.payload));
         },
+
+        setAuthUser(state, action) {
+            state.authUser = action.payload;
+        },
+        setOnlineUsers(state, action) {
+            state.onlineUsers = action.payload;
+        },
+        connectSocket(state) {
+            // if (state.socket?.connected) return;
+            // socket.on('connection', () => {
+            //     //
+            //     state?.socket = socket;
+            //     console.log('Socket connected');
+            // });
+            // socket.on('getOnlineUsers', (userIds) => {
+            //     state.onlineUsers = userIds;
+            // });
+        },
+        disconnectSocket(state) {
+            state.socket?.disconnect();
+            state.socket = null;
+        },
+    },
+    extraReducers: (builder) => {
+        builder
+            .addCase(checkAuth.pending, (state) => {
+                state.isCheckingAuth = true;
+            })
+            .addCase(checkAuth.fulfilled, (state, action) => {
+                state.authUser = action.payload;
+                state.isCheckingAuth = false;
+
+                socket.emit('join', { userId: action.payload._id });
+            })
+            .addCase(checkAuth.rejected, (state) => {
+                state.authUser = null;
+                state.isCheckingAuth = false;
+            });
     },
 });
 
@@ -72,7 +137,13 @@ export const {
     setAuthenticated,
     updateGoogleToken,
     updateGithubToken,
+
+    setAuthUser,
+    connectSocket,
+    disconnectSocket,
+    setOnlineUsers,
 } = authSlice.actions;
+
 export default authSlice.reducer;
 
 export const selectIsAuthenticated = (state: { auth: AuthSlice }) =>
@@ -87,15 +158,8 @@ export const selectCurrentUserToken = (state: {
 
 export const selectCurrentUserGoogleToken = (state: {
     auth: AuthSlice;
-}): string | null => {
-    // const googleToken = state.auth.user?.googleToken;
-    // return Array.isArray(googleToken) ? googleToken[0] : googleToken;
-    return state.auth.googleToken;
-};
+}): string | null => state.auth.googleToken;
 
 export const selectCurrentUserGithubToken = (state: {
     auth: AuthSlice;
-}): string | null => {
-    //  return state.auth.githubToken;
-    return state.auth.githubToken;
-};
+}): string | null => state.auth.githubToken;

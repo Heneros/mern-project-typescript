@@ -31,7 +31,7 @@ const checkAuth = asyncHandler(
         if (typeof authHeader === 'string') {
             jwtToken = authHeader.split(' ')[1];
         }
- 
+
         if (!jwtToken) {
             res.status(401).json({ message: 'Unauthorized' });
             return;

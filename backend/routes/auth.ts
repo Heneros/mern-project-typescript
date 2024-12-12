@@ -17,6 +17,9 @@ import feedbackFormController from '../controllers/auth/feedbackFormController';
 import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
 
 import handleOAuthCallback from '@/helpers/handleOAuthCallback';
+import checkAuth from '@/middleware/checkAuthMiddleware';
+
+import checkAuthController from '../controllers/auth/checkAuthController';
 
 const router = express.Router();
 const domain = process.env.DOMAIN_CLIENT;
@@ -29,6 +32,7 @@ router.post('/resend_email_token', resendEmailVerificationToken);
 router.post('/reset_password_request', resetPasswordRequest);
 router.post('/reset_password', resetPassword);
 router.get('/logout', logoutUser);
+router.get('/check', checkAuth, checkAuthController);
 
 router.route('/feedback').post(apiLimiter, feedbackFormController);
 

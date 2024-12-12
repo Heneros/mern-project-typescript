@@ -55,19 +55,7 @@ const ChatInput: React.FC<ChatRoomProps> = ({ selectedChat }) => {
             });
 
             // console.log(selectedFile);
-            // if (isSuccess) {
-            //     const dataProfileSender = dataProfile?.userProfile._id;
-            //     const messageData = {
-            //         id: selectedChat._id,
-            //         senderId: dataProfileSender,
-            //         receiverId: selectedChat._id,
-            //         text: text || null,
-            //         image: imagePreview || null,
-            //     };
-
-            //     socket.emit('sendMessage', messageData);
-            //     // console.log(messageData);
-            // }
+  
 
             setText('');
             setSelectedFile(null);

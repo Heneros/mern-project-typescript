@@ -1396,3 +1396,1274 @@
   ],
   timestamp: '2024-12-11 04:16:28.677 PM'
 }
+{
+  error: backend/routes/auth.ts(32,22): error TS2304: Cannot find name 'check'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(32,22): error TS2304: Cannot find name 'check'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(32,22): error TS2304: Cannot find name 'check'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(32,22): error TS2304: Cannot find name 'check'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:53:28 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 10796,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 281350144,
+      heapTotal: 234881024,
+      heapUsed: 209460240,
+      external: 24833512,
+      arrayBuffers: 21841563
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202389.75 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:53:28.001 AM'
+}
+{
+  error: backend/routes/auth.ts(32,22): error TS2304: Cannot find name 'checkA'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(32,22): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(32,22): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(32,22): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:53:33 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 17044,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 284565504,
+      heapTotal: 234618880,
+      heapUsed: 210098176,
+      external: 24833552,
+      arrayBuffers: 21841603
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202394.937 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:53:33.191 AM'
+}
+{
+  error: backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'check'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'check'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'check'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'check'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:53:53 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16064,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 283148288,
+      heapTotal: 235143168,
+      heapUsed: 211129872,
+      external: 24833504,
+      arrayBuffers: 21841555
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202415.062 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:53:53.318 AM'
+}
+{
+  error: backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'checkA'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:53:55 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15716,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 280621056,
+      heapTotal: 234876928,
+      heapUsed: 210875312,
+      external: 24833560,
+      arrayBuffers: 21841611
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202417.515 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:53:55.765 AM'
+}
+{
+  error: backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'checkA'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(33,33): error TS2304: Cannot find name 'checkA'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:54:13 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 10092,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 280961024,
+      heapTotal: 236187648,
+      heapUsed: 206820648,
+      external: 24833568,
+      arrayBuffers: 21841619
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202435.734 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:54:13.997 AM'
+}
+{
+  error: backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.
+  backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:54:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 7304,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 282427392,
+      heapTotal: 234876928,
+      heapUsed: 209863184,
+      external: 24833488,
+      arrayBuffers: 21841539
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202446.984 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:54:25.240 AM'
+}
+{
+  error: backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.
+  backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.
+  backend/routes/auth.ts(21,23): error TS2307: Cannot find module './../controllers/auth/checkAuth' or its corresponding type declarations.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,23): error TS2307: Cannot find module './../controllers/auth/checkAuth' or its corresponding type declarations.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,23): error TS2307: Cannot find module './../controllers/auth/checkAuth' or its corresponding type declarations.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,23): error TS2307: Cannot find module './../controllers/auth/checkAuth' or its corresponding type declarations.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:54:45 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 11068,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 280604672,
+      heapTotal: 235139072,
+      heapUsed: 209082024,
+      external: 24825360,
+      arrayBuffers: 21833411
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202467.546 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:54:45.798 AM'
+}
+{
+  error: backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.
+  backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:54:50 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 3596,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 283295744,
+      heapTotal: 235143168,
+      heapUsed: 210215792,
+      external: 24833488,
+      arrayBuffers: 21841539
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202472.359 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:54:50.618 AM'
+}
+{
+  error: backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.
+  backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(20,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    "backend/routes/auth.ts(21,8): error TS2300: Duplicate identifier 'checkAuth'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Dec 12 2024 00:54:53 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15224,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 281972736,
+      heapTotal: 234614784,
+      heapUsed: 214239320,
+      external: 24833568,
+      arrayBuffers: 21841619
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 202475.687 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-12 12:54:53.949 AM'
+}

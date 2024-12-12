@@ -16,25 +16,39 @@ const ChatMessage: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
         }
     }, [isSuccess, chatId]);
 
-    const handleReceiveMessage = useCallback((message: Message) => {
-        setMessages((prevMessages) => [...prevMessages, message]);
-        console.log('Received message:', message);
-    }, []);
+    const handleReceiveMessage = useCallback(
+        (newMessage: Message) => {
+            // console.log('Received message:', newMessage);
+            // console.log('Current selected chat:', selectedChat._id);
+            // console.log('New message receiver ID:', newMessage.receiverId);
+            // console.log('Current user ID:', userId);
+
+            if (
+                newMessage.receiverId === userId ||
+                newMessage.senderId === userId
+            ) {
+                setMessages((prevMessages) => {
+                    const messageExists = prevMessages.some(
+                        (msg) => msg._id === newMessage._id,
+                    );
+
+                    return messageExists
+                        ? prevMessages
+                        : [...prevMessages, newMessage];
+                });
+            }
+        },
+        [userId, selectedChat._id],
+    );
 
     useEffect(() => {
-        if (selectedChat._id) {
-            socket.emit('join_room', selectedChat._id);
-            socket.on('newMessage', handleReceiveMessage);
-
-            console.log(`Emitted join_room for room: ${selectedChat._id}`);
-        }
+        socket.on('newMessage', handleReceiveMessage);
 
         return () => {
             socket.off('newMessage', handleReceiveMessage);
         };
-    }, [selectedChat._id]);
+    }, [handleReceiveMessage]);
     //
-    // console.log('userId', userId);
 
     return (
         <>
