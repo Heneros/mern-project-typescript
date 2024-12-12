@@ -1,13 +1,13 @@
 import socket from 'app/socket';
 import { useGetIdChatQuery } from 'features/chat/api/chatApiSlice';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useGetUserProfileQuery } from 'features/user/userApiSlice';
 
 const ChatMessage: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
     const { data: chatId, isSuccess } = useGetIdChatQuery(selectedChat._id);
     const { data: dataProfile } = useGetUserProfileQuery(undefined);
 
-    // console.log('messages', selectedChat._id);
+    const messageEndRef = useRef<HTMLDivElement | null>(null);
     const [messages, setMessages] = useState<Message[]>([]);
 
     useEffect(() => {
@@ -48,7 +48,18 @@ const ChatMessage: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
             socket.off('newMessage', handleReceiveMessage);
         };
     }, [handleReceiveMessage]);
-    //
+
+    useEffect(() => {
+        scrollToBottom();
+    }, [messages]);
+
+    const scrollToBottom = () => {
+        if (messageEndRef.current) {
+            messageEndRef.current.scrollIntoView({
+                behavior: 'smooth',
+            });
+        }
+    };
 
     return (
         <>
@@ -57,26 +68,25 @@ const ChatMessage: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
                     messages?.map((item: Message, index) => {
                         const isSendByUser = item.receiverId === userId;
                         return (
-                            <div className="chat-message">
-                                <div
-                                    key={item._id || index}
-                                    className={`message ${isSendByUser ? 'received' : 'sent'} `}
-                                >
-                                    {item.text ? (
-                                        <>
-                                            <span> {item.text}</span>
-                                        </>
-                                    ) : null}
-                                    {item.image ? (
-                                        <>
-                                            <img
-                                                src={item.image}
-                                                alt=""
-                                                className="msgImg"
-                                            />
-                                        </>
-                                    ) : null}
-                                </div>
+                            <div
+                                ref={messageEndRef}
+                                key={item._id || index}
+                                className={`message ${isSendByUser ? 'received' : 'sent'} `}
+                            >
+                                {item.text ? (
+                                    <>
+                                        <span> {item.text}</span>
+                                    </>
+                                ) : null}
+                                {item.image ? (
+                                    <>
+                                        <img
+                                            src={item.image}
+                                            alt=""
+                                            className="msgImg"
+                                        />
+                                    </>
+                                ) : null}
                             </div>
                         );
                     })

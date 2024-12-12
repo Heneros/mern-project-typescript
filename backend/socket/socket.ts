@@ -35,13 +35,25 @@ io.on('connection', async (socket) => {
         socket.broadcast.emit('newMessage', data);
     });
 
+    socket.on('setOnlineUser', async (userId) => {
+        // console.log('setOnlineUser', userId);
+
+        if (typeof userId === 'string') {
+            userSocketMap[userId] = socket.id;
+            console.log(`User ${userId} is now online`);
+            await updateUserStatus(userId);
+        }
+    });
     const updateUserStatus = async (userId: string) => {
         const onlineUsers = Object.keys(userSocketMap);
-        const allUsers = await User.find().select('_id username avatar');
+        const allUsers = await User.find({ _id: { $ne: userId } }).select(
+            '_id username avatar',
+        );
 
         const filteredUsers = allUsers?.filter(
             (item) => item._id.toString() !== userId,
         );
+
         const usersWithStatus = filteredUsers.map((user) => ({
             _id: user._id,
             username: user.username,
@@ -54,16 +66,6 @@ io.on('connection', async (socket) => {
         //  io.to()emit('getUsers', usersWithStatus);
         io.emit('getUsers', usersWithStatus);
     };
-    socket.on('setOnlineUser', async (userId) => {
-        // console.log('setOnlineUser', userId);
-
-        if (typeof userId === 'string') {
-            userSocketMap[userId] = socket.id;
-            console.log(`User ${userId} is now online`);
-            await updateUserStatus(userId);
-        }
-    });
-
     socket.on('join_room', async (roomId) => {
         if (roomId) {
             socket.join(roomId);

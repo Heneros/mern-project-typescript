@@ -82,9 +82,80 @@
 .msgImg{
     max-width: 250px;
     width: 25%;
+
 }
 
 .listMsg{
-        overflow-y: scroll;
+    overflow-y: scroll;
     max-height: 140px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 12px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 10px; */
+  background-color: #f9f9f9;
+}
+.chat-message {
+  display: flex;
+  justify-content: flex-start;
+}
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.listMsg .sent{
+ align-self: flex-end;
+   background-color: #d1f7c4;
+  color: #2f4f2f;
+  text-align: right;
+  border-top-right-radius: 0;
+
+}
+.listMsg .received{
+ align-self: flex-start;
+   background-color: #e9e9e9;
+  color: #333;
+  text-align: left;
+  border-top-left-radius: 0;
+
+}
+.message span {
+  display: block;
+}
+
+.msgImg {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.listMsg::-webkit-scrollbar {
+  width: 8px;
+}
+
+.listMsg::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.listMsg::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.listMsg::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media (max-width: 600px) {
+  .message {
+    max-width: 90%;
+    font-size: 13px;
+  }
 }
