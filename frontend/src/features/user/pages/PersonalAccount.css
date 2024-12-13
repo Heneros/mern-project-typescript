@@ -1,7 +1,8 @@
-.formPersonal .avatar-block{
-  /* display: flex;
-  flex-direction: column; */
-}
+
 .formPersonal .preview-img{
 max-width: 250px;
+}
+
+.icon-button .lastBtnHeader {
+  text-align: center;
 }

@@ -23,12 +23,23 @@ const ChatLeftSide: React.FC<ChatLeftSideProp> = ({
         <>
             <div
                 key={dataUserChat._id}
-                className="parentItem"
+                className={`parentItem ${dataUserChat.status === 'online' ? 'online' : 'offline'}`}
                 onClick={handleClick}
             >
-                {dataUserChat.status}
-                {dataUserChat.username}
-                {/* {item.avatar} */}
+                <div className="userAvatar">
+                    <img
+                        src={dataUserChat.avatar || '/default-avatar.png'}
+                        // alt={`${dataUserChat.username}'s avatar`}
+                    />
+                </div>
+                <div className="userInfo">
+                    <span className="userName">{dataUserChat.username}</span>
+                    <p className={`userStatus ${dataUserChat.status}`}>
+                        {dataUserChat.status === 'online'
+                            ? 'Online'
+                            : 'Offline'}
+                    </p>
+                </div>
             </div>
         </>
     );

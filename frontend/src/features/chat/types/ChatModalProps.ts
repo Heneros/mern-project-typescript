@@ -8,6 +8,7 @@ interface ChatType {
     // readonly username: string;
     _id: string;
     username: string;
+    avatar: string;
     status: string;
     // setSelectedChat: () => void;
     // onClick: () => void;

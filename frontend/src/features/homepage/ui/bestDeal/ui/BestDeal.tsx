@@ -217,7 +217,7 @@ export const BestDeal: React.FC<PropItems> = ({ propItems }) => {
                                                                         addToCartHandler
                                                                     }
                                                                     isInCart={
-                                                                        true
+                                                                        false
                                                                     }
                                                                 />
                                                             </div>

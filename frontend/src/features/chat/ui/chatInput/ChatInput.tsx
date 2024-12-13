@@ -87,7 +87,7 @@ const ChatInput: React.FC<ChatRoomProps> = ({ selectedChat }) => {
                     onChange={handleImageChange}
                 />
                 <Button className="btn btn-success" type="submit">
-                    Submit Message
+                    Submit
                 </Button>
             </Form>
         </div>

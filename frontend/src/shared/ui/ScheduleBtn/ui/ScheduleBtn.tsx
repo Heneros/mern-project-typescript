@@ -16,10 +16,18 @@ export const ScheduleBtn: React.FC<ScheduleBtnProps> = ({
     return (
         <>
             <span className="lastBtnHeader" onClick={onClick}>
-                <i>
-                    <FontAwesomeIcon icon={faCalendar} />
-                </i>
-                {isInCart ? 'Schedule a visit' : 'Add to cart'}
+                {/* Fix later */}
+                {isInCart ? (
+                    <>
+                        {' '}
+                        <i>
+                            <FontAwesomeIcon icon={faCalendar} />
+                        </i>
+                        Schedule a visit
+                    </>
+                ) : (
+                    'Schedule a visit'
+                )}
             </span>
         </>
     );
