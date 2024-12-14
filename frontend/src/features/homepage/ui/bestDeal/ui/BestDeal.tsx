@@ -69,6 +69,7 @@ export const BestDeal: React.FC<PropItems> = ({ propItems }) => {
                     title: currentProperty.title,
                     preview: currentProperty.preview,
                     price: currentProperty.price,
+                    city: currentProperty.city,
                 };
                 dispatch(addToCart(cartItem));
                 toast.success(

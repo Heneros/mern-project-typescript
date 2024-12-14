@@ -18,6 +18,7 @@ export const PropertyItem: React.FC<PostInfo> = ({
     bathrooms,
     area,
     floor,
+    city,
 }) => {
     const dispatch = useAppDispatch();
     /// const { data, isLoading, error } = useGetSinglePropertyQuery(_id);
@@ -35,6 +36,7 @@ export const PropertyItem: React.FC<PostInfo> = ({
                 title: title,
                 preview: preview,
                 price: price,
+                city: city,
             };
             dispatch(addToCart(cartItem));
             toast.success(`Product ${title} added to cart!`);

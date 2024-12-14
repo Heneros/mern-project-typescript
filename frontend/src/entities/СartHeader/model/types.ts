@@ -4,6 +4,7 @@ export interface ICartItem {
     title: string;
     preview: string;
     price: number;
+    city: string;
 }
 
 export interface ICartState {
