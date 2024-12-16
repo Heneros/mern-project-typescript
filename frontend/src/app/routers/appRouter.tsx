@@ -30,9 +30,10 @@ import AdminAllUsers from 'features/user/pages/admin/AdminAllUsers';
 import AdminCreatePost from 'features/user/pages/admin/AdminCreatePost';
 import AdminEditPost from 'features/user/pages/admin/AdminEditPost';
 import AllOrders from 'pages/allOrders/AllOrders';
-import Order from 'features/order/pages/order';
+import Order from 'features/order/pages/Order';
 import Cart from 'features/order/pages/Cart';
 import PaymentMethod from 'features/order/pages/PaymentMethod';
+import PlaceOrder from 'features/order/pages/PlaceOrder';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -86,6 +87,11 @@ export const AppRouter = () => {
                             path: '/payment-method',
                             element: <PaymentMethod />,
                         },
+                        {
+                            path: '/place-order',
+                            element: <PlaceOrder />,
+                        },
+
                         {
                             path: '/order/:id',
                             element: <Order />,

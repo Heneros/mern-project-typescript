@@ -87,6 +87,7 @@ const loginUser = asyncHandler(async (req: Request, res: Response) => {
 
     res.json({
         success: true,
+        _id: existingUser._id,
         firstName: existingUser.firstName,
         lastName: existingUser.lastName,
         username: existingUser.username,

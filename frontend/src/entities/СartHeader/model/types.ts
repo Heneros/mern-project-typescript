@@ -5,9 +5,14 @@ export interface ICartItem {
     preview: string;
     price: number;
     city: string;
+    qty: number;
 }
 
 export interface ICartState {
     cartItems: Array<ICartItem>;
     totalPrice: string;
+    itemsTotal: number;
+
+    paymentMethod: string;
+    taxPrice: number;
 }

@@ -1570,3 +1570,123 @@
   ],
   timestamp: '2024-12-10 06:26:11.606 PM'
 }
+{
+  error: TypeError: Cannot read properties of undefined (reading 'length')
+      at addOrderItem (D:\Projects\mern-project-typescript\backend\controllers\order\addOrderItem.ts:24:20)
+      at Layer.handle [as handle_request] (D:\Projects\mern-project-typescript\node_modules\express\lib\router\layer.js:95:5)
+      at next (D:\Projects\mern-project-typescript\node_modules\express\lib\router\route.js:149:13)
+      at D:\Projects\mern-project-typescript\backend\middleware\roleMiddleware.ts:34:13
+      at Layer.handle [as handle_request] (D:\Projects\mern-project-typescript\node_modules\express\lib\router\layer.js:95:5)
+      at next (D:\Projects\mern-project-typescript\node_modules\express\lib\router\route.js:149:13)
+      at D:\Projects\mern-project-typescript\backend\middleware\checkAuthMiddleware.ts:50:17
+      at processTicksAndRejections (node:internal/process/task_queues:95:5),
+  level: 'error',
+  message: "unhandledRejection: Cannot read properties of undefined (reading 'length')\n" +
+    "TypeError: Cannot read properties of undefined (reading 'length')\n" +
+    '    at addOrderItem (D:\\Projects\\mern-project-typescript\\backend\\controllers\\order\\addOrderItem.ts:24:20)\n' +
+    '    at Layer.handle [as handle_request] (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\backend\\middleware\\roleMiddleware.ts:34:13\n' +
+    '    at Layer.handle [as handle_request] (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\backend\\middleware\\checkAuthMiddleware.ts:50:17\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: "TypeError: Cannot read properties of undefined (reading 'length')\n" +
+    '    at addOrderItem (D:\\Projects\\mern-project-typescript\\backend\\controllers\\order\\addOrderItem.ts:24:20)\n' +
+    '    at Layer.handle [as handle_request] (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\backend\\middleware\\roleMiddleware.ts:34:13\n' +
+    '    at Layer.handle [as handle_request] (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js:149:13)\n' +
+    '    at D:\\Projects\\mern-project-typescript\\backend\\middleware\\checkAuthMiddleware.ts:50:17\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  rejection: true,
+  date: 'Tue Dec 17 2024 00:14:49 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 27908,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 369197056,
+      heapTotal: 360996864,
+      heapUsed: 342470904,
+      external: 26168549,
+      arrayBuffers: 23136311
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 177500.156 },
+  trace: [
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\order\\addOrderItem.ts',
+      function: 'addOrderItem',
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js',
+      function: 'next',
+      line: 149,
+      method: null,
+      native: false
+    },
+    {
+      column: 13,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\middleware\\roleMiddleware.ts',
+      function: null,
+      line: 34,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\layer.js',
+      function: 'Layer.handle [as handle_request]',
+      line: 95,
+      method: 'handle [as handle_request]',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\express\\lib\\router\\route.js',
+      function: 'next',
+      line: 149,
+      method: null,
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\middleware\\checkAuthMiddleware.ts',
+      function: null,
+      line: 50,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2024-12-17 12:14:49.202 AM'
+}

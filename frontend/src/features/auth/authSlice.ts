@@ -1,10 +1,10 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import socket from 'app/socket'; // Ensure this imports a valid socket instance
+import socket from 'app/socket'
 import { decodeToken, isExpired } from 'react-jwt';
 import { BASE_URL } from 'shared/consts/urls';
 import { User } from 'shared/types/User';
 import axios from 'axios';
-import { Socket } from 'socket.io-client'; // Import Socket type
+import { Socket } from 'socket.io-client'; 
 
 interface AuthSlice {
     user: User | null;
@@ -14,7 +14,7 @@ interface AuthSlice {
 
     authUser?: any;
     isCheckingAuth?: boolean;
-    socket?: Socket | null; // Use Socket type here
+    socket?: Socket | null; 
 
     onlineUsers: string[];
 }

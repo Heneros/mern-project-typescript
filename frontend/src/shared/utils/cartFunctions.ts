@@ -1,15 +1,21 @@
+import { ICartItem } from 'entities/СartHeader';
+
 export const addDecimals = (num: number): string => {
     return (Math.round(num * 100) / 100).toFixed(2);
 };
 
-interface CartItem {
-    price: number;
-}
+// interface CartItem {
+//     price: number;
+//     qty: number;
+//     // itemsPrice: number;
+// }
 
 interface CartState {
-    cartItems: CartItem[];
+    cartItems: ICartItem[];
+    itemsTotal: number;
+    taxPrice: number;
     totalPrice: string;
-    // price: number;
+    paymentMethod?: string;
 }
 export const formatPrice = (number: any) => {
     return Intl.NumberFormat('en-US', {
@@ -18,9 +24,13 @@ export const formatPrice = (number: any) => {
     }).format(number / 1);
 };
 
-export const updateCart = (state: CartState): CartState => {
-    const total = state.cartItems.reduce((acc, item) => acc + item.price, 0);
-    state.totalPrice = addDecimals(total);
+// export const updateCart = (state: CartState): CartState => {
+export const updateCart = (state: CartState) => {
+    state.itemsTotal = state.cartItems.length;
+
+    state.taxPrice = Number((0.15 * state.itemsTotal).toFixed(2));
+    state.totalPrice = addDecimals(state.itemsTotal + state.taxPrice);
+
     localStorage.setItem('cart', JSON.stringify(state));
     return state;
 };
