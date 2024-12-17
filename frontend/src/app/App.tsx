@@ -6,7 +6,7 @@ import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 const App = () => {
     const initialOptions = {
-        clientId: '',
+        clientId: process.env.PAYPAL_CLIENT_ID!,
         currency: 'USD',
         intent: 'capture',
     };

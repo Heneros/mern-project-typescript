@@ -2,11 +2,13 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link, useNavigate } from 'react-router-dom';
 import {
+    Alert,
     Button,
     Card,
     Col,
     Container,
     Form,
+    Image,
     ListGroup,
     ListGroupItem,
     Row,
@@ -23,6 +25,8 @@ import {
 } from '../api/order';
 import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
 import { toast } from 'react-toastify';
+import { formatPrice } from 'shared/utils/cartFunctions';
+import { PostInfo } from 'shared/types';
 
 const Order = () => {
     const { id } = useParams();
@@ -53,9 +57,6 @@ const Order = () => {
                     },
                 });
 
-
-
-                
                 paypalDispatch({
                     type: 'setLoadingStatus',
                     value: 'pending',
@@ -100,22 +101,89 @@ const Order = () => {
             }
         });
     }
-
+    // const orderItem = order.order ?? [];
+    const {
+        _id,
+        paymentMethod,
+        createdAt,
+        isPaid,
+        itemsPrice,
+        orderItems,
+        taxPrice,
+        totalPrice,
+        user,
+    } = order?.order || {};
     console.log(order);
     return (
         <>
             <Breadcrumbs nameParent="Order" lastParent="Page of Order" />
             <Container>
-                <Row>
-                    <Col className="text-center">
-                        <h2> Order #{order?.order._id}</h2>
+                <Row className="text-center border p-3 my-2">
+                    <Col>
+                        <h2> Order #{_id}</h2>
                     </Col>
                 </Row>
-                <PayPalButtons
-                    createOrder={createOrder}
-                    onApprove={onApprove}
-                    onError={onError}
-                ></PayPalButtons>
+                <Row>
+                    <Col md={7}>
+                        <ListGroup>
+                            <ListGroup.Item>
+                                <h5>Payment Method:</h5>
+                                {paymentMethod}
+                            </ListGroup.Item>
+                            <ListGroup.Item>
+                                {isPaid ? (
+                                    <Alert variant="success">{isPaid} </Alert>
+                                ) : (
+                                    <Alert variant="danger">Not Paid</Alert>
+                                )}
+                            </ListGroup.Item>
+                            <ListGroup.Item>
+                                <h5>Order Items</h5>
+                            </ListGroup.Item>
+                            {orderItems?.length === 0 ? (
+                                <ListGroup.Item>
+                                    <small className="text-muted">
+                                        Order is empty
+                                    </small>
+                                </ListGroup.Item>
+                            ) : (
+                                orderItems?.map(
+                                    (item: PostInfo, index: string) => (
+                                        <ListGroup.Item key={index}>
+                                            <Row className="align-items-center text-center">
+                                                <Col xs={5} md={1}>
+                                                    <Image
+                                                        src={item.preview}
+                                                        alt={item.title}
+                                                        fluid
+                                                        rounded
+                                                    />
+                                                </Col>
+                                                <Col xs={12} md={8}>
+                                                    <Link
+                                                        to={`/post/${item._id}`}
+                                                    >
+                                                        {item.title}
+                                                    </Link>
+                                                </Col>
+                                                <Col xs={12} md={3}>
+                                                    {formatPrice(item.price)} ={' '}
+                                                </Col>
+                                            </Row>
+                                        </ListGroup.Item>
+                                    ),
+                                )
+                            )}
+                        </ListGroup>
+                    </Col>
+                    <Col md={5}>
+                        <PayPalButtons
+                            createOrder={createOrder}
+                            onApprove={onApprove}
+                            onError={onError}
+                        ></PayPalButtons>
+                    </Col>
+                </Row>
             </Container>
         </>
     );

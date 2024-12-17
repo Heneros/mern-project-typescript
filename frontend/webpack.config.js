@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     mode: 'development',
@@ -14,6 +15,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
+        }),
+        new Dotenv({
+            path: path.resolve(__dirname, '../.env'),
+            systemvars: true,
         }),
     ],
     module: {
@@ -65,7 +70,7 @@ module.exports = {
         },
         compress: true,
         hot: true,
-        watchFiles: ['src/index.tsx',],
+        watchFiles: ['src/index.tsx'],
         historyApiFallback: true,
         port: 3000,
     },
