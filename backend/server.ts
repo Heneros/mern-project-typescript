@@ -68,6 +68,10 @@ app.use('/api/v1/property', propertyRoutes);
 app.use('/api/v1/messages', messageRoutes);
 app.use('/api/v1/order', orderRoutes);
 
+app.get('/api/config/paypal', (req, res) => {
+    res.send({ clientId: process.env.PAYPAL_CLIENT_ID });
+});
+
 const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
 

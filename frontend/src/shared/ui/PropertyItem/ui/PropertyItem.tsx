@@ -33,6 +33,7 @@ export const PropertyItem: React.FC<PostInfo> = ({
         if (!isItemInCart) {
             const cartItem: ICartItem = {
                 _id: _id,
+                property: _id,
                 title: title,
                 preview: preview,
                 price: price,

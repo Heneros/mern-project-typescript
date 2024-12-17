@@ -4,11 +4,6 @@ export const addDecimals = (num: number): string => {
     return (Math.round(num * 100) / 100).toFixed(2);
 };
 
-// interface CartItem {
-//     price: number;
-//     qty: number;
-//     // itemsPrice: number;
-// }
 
 interface CartState {
     cartItems: ICartItem[];
@@ -26,7 +21,10 @@ export const formatPrice = (number: any) => {
 
 // export const updateCart = (state: CartState): CartState => {
 export const updateCart = (state: CartState) => {
-    state.itemsTotal = state.cartItems.length;
+    state.itemsTotal = state.cartItems.reduce(
+        (acc, item) => acc + Number(item.price || 0),
+        0,
+    );
 
     state.taxPrice = Number((0.15 * state.itemsTotal).toFixed(2));
     state.totalPrice = addDecimals(state.itemsTotal + state.taxPrice);

@@ -3,7 +3,7 @@ import { Types } from 'mongoose';
 export interface IOrderItem {
     _id: string;
     title: string;
-    qty: number;
+    // qty: number;
     preview: string;
     price: number;
     property: string;

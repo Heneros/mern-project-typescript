@@ -66,6 +66,7 @@ export const BestDeal: React.FC<PropItems> = ({ propItems }) => {
             if (!isItemInCart) {
                 const cartItem: ICartItem = {
                     _id: currentProperty._id,
+                    property: currentProperty._id,
                     title: currentProperty.title,
                     preview: currentProperty.preview,
                     price: currentProperty.price,

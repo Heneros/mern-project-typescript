@@ -23,7 +23,7 @@ const Cart = () => {
         navigate('/payment-method');
     };
 
-    console.log(cartItems);
+    // console.log(cartItems);
 
     return (
         <>
@@ -70,7 +70,7 @@ const Cart = () => {
                                                 handleRemoveItem(item._id)
                                             }
                                         >
-                                            Remove{' '}
+                                            Remove
                                         </Button>
                                     </td>
                                 </tr>
@@ -84,7 +84,8 @@ const Cart = () => {
                         )}
                     </tbody>
                 </Table>
-                <Col className="d-flex justify-content-between">
+
+                <Col className="d-flex justify-content-between my-4">
                     <Button
                         type="button"
                         variant="danger"
@@ -92,7 +93,12 @@ const Cart = () => {
                     >
                         Remove all
                     </Button>
-                    <strong>Total Price: {cart.totalPrice} $</strong>
+                    <div className=" d-flex flex-column text-right">
+                        <strong>Tax Price: {cart.taxPrice} $</strong>
+                        <strong>
+                            Total Price(with taxes): {cart.totalPrice} $
+                        </strong>
+                    </div>
                 </Col>
                 <Col className="d-flex justify-content-end ">
                     <Button

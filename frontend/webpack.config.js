@@ -25,7 +25,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        cacheDirectory: false,
+                        cacheDirectory: true,
                     },
                 },
             },
@@ -65,7 +65,7 @@ module.exports = {
         },
         compress: true,
         hot: true,
-        watchFiles: ['src/**/*', 'public/**/*'],
+        watchFiles: ['src/index.tsx',],
         historyApiFallback: true,
         port: 3000,
     },

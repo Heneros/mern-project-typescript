@@ -1,11 +1,12 @@
 export interface ICartItem {
-    _id: string;
+    _id?: string;
+    property: string;
     index?: string;
     title: string;
     preview: string;
     price: number;
     city: string;
-    qty: number;
+    // qty: number;
 }
 
 export interface ICartState {

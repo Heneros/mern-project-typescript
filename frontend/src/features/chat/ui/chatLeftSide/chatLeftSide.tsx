@@ -4,6 +4,7 @@ import React, { Dispatch, SetStateAction, useEffect } from 'react';
 
 interface ChatLeftSideProp {
     dataUserChat: ChatType;
+
     setSelectedChat: React.Dispatch<React.SetStateAction<ChatType | null>>;
 }
 
@@ -11,11 +12,6 @@ const ChatLeftSide: React.FC<ChatLeftSideProp> = ({
     dataUserChat,
     setSelectedChat,
 }) => {
-    // const { data: profileMy, isSuccess } = useGetUserProfileQuery(undefined);
-    /// const { _id } = profileMy?.userProfile;
-
-    // console.log(userId);
-
     const handleClick = () => {
         setSelectedChat(dataUserChat);
     };

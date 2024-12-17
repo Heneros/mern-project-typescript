@@ -3,3 +3,4 @@ export const BASE_URL = 'http://localhost:1997';
 
 export const UPLOAD_URL = '/upload';
 export const ORDER_URL = '/order';
+export const PAYPAL_URL = '/api/config/paypal';

@@ -6,7 +6,7 @@ function addDecimals(num: number) {
 
 function calcPrice(orderItems: IOrderItem[]) {
     const itemsPrice = orderItems.reduce(
-        (acc, item) => acc + (item.price * 100 * item.qty) / 100,
+        (acc, item) => acc + (item.price * 100) / 100,
         0,
     );
 

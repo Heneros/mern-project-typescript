@@ -96,17 +96,17 @@ const ChatModal: React.FC<ChatModalProps> = ({
                             <>
                                 <div className="leftSide">
                                     {users ? (
-                                        users?.map((itemUser: ChatType) => (
-                                            <>
+                                        users?.map(
+                                            (itemUser: ChatType, index) => (
                                                 <ChatLeftSide
-                                                    key={itemUser._id}
+                                                    key={itemUser._id || index}
                                                     dataUserChat={itemUser}
                                                     setSelectedChat={
                                                         setSelectedChat
                                                     }
                                                 />
-                                            </>
-                                        ))
+                                            ),
+                                        )
                                     ) : (
                                         <></>
                                     )}

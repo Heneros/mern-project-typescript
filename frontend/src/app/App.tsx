@@ -2,12 +2,19 @@ import React from 'react';
 
 import { Providers } from './Providers/providers';
 import { AppRouter } from './routers';
-
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 const App = () => {
+    const initialOptions = {
+        clientId: '',
+        currency: 'USD',
+        intent: 'capture',
+    };
     return (
         <Providers>
-            <AppRouter />
+            <PayPalScriptProvider options={initialOptions}>
+                <AppRouter />
+            </PayPalScriptProvider>
         </Providers>
     );
 };

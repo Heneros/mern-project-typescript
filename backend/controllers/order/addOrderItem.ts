@@ -4,6 +4,7 @@ import { IOrder, IOrderItem } from '@/types/IOrderItem';
 import { calcPrice } from '@/utils/calcPrice';
 import Order from '@/models/orderModel';
 import { RequestWithUser } from '@/types/RequestWithUser';
+import { systemLogs } from '@/utils/Logger';
 
 interface OrderType {
     //   [_id: string]: string;
@@ -58,6 +59,7 @@ const addOrderItem = async (req: Request, res: Response): Promise<void> => {
         res.status(201).json(createdOrder);
     } catch (error) {
         console.error(error);
+        systemLogs.error(` Add orders ${error}`);
         res.status(500).json({
             message: 'Error creating order',
             error: error instanceof Error ? error.message : 'Unknown error',

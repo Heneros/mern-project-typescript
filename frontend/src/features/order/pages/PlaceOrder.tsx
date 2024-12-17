@@ -17,34 +17,32 @@ import { useAddOrderItemMutation } from '../api/order';
 import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 import { PostInfo } from 'shared/types';
 import { formatPrice } from 'shared/utils/cartFunctions';
-
-interface CartItem {
-    qty: number;
-}
+import { clearCartItems } from '../api/cartSlice';
 
 const PlaceOrder = () => {
     const navigate = useNavigate();
     const cart = useAppSelector((state) => state.cart);
     const dispatch = useAppDispatch();
 
-    const [createOrder, { isLoading, error }] = useAddOrderItemMutation();
-
-    const totalItems =
-        cart.cartItems.length > 1
-            ? cart.cartItems.reduce(
-                  (total: number, item: CartItem) => total + item.qty,
-              )
-            : [];
+    const [addOrderItem, { isLoading, error: errorOrder }] =
+        useAddOrderItemMutation();
 
     const { user: userInfo } = useAppSelector((state) => state.auth);
 
-    console.log(userInfo);
+    const { cartItems } = cart;
+    // console.log(cartItems.length);
     const placeOrderHandler = async () => {
         try {
-            const res = await createOrder({
+            const res = await addOrderItem({
                 user: userInfo._id,
-            });
-        } catch (error) {}
+                paymentMethod: cart.paymentMethod,
+                orderItems: cart.cartItems,
+            }).unwrap();
+            dispatch(clearCartItems());
+            navigate(`/order/${res._id}`);
+        } catch (error) {
+            console.log(error || errorOrder);
+        }
     };
     return (
         <>
@@ -123,7 +121,7 @@ const PlaceOrder = () => {
                                     <ListGroup.Item>
                                         <Row>
                                             <Col>Items</Col>
-                                            <Col>{cart.itemsTotal}</Col>
+                                            <Col>{cartItems.length}</Col>
                                         </Row>
                                     </ListGroup.Item>
 
