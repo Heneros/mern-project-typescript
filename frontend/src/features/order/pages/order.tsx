@@ -34,9 +34,20 @@ const Order = () => {
         data: order,
         refetch,
         isLoading,
-        error,
+        error: errorOrder,
     } = useGetMyOrderByIdQuery(id);
 
+    const {
+        _id,
+        paymentMethod,
+        createdAt,
+        isPaid,
+        itemsPrice,
+        orderItems,
+        taxPrice,
+        totalPrice,
+        user,
+    } = order?.order || {};
     const [payOrder, { isLoading: loadingPay }] = usePayOrderMutation();
     const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
     const {
@@ -71,13 +82,33 @@ const Order = () => {
         }
     }, [errorPayPal, loadingPayPal, order, paypal, paypalDispatch]);
     // const [payOrder, {isLoading: loadingPay}] = usePayO
+
+
+    
+  function onApprove(data, actions) {
+      return actions.order.capture().then(async function (details) {
+          try {
+              await payOrder({ orderId, details });
+              refetch();
+              toast.success('Payment successful');
+          } catch (err) {
+              toast.error(err?.data?.message || err.message);
+          }
+      });
+  }
     function createOrder(data, actions) {
+        if (!isLoading && !errorOrder && totalPrice === undefined)
+            if (!totalPrice) {
+                toast.error('Total price is not defined');
+                return Promise.reject(new Error('Total price is missing'));
+            }
         return actions.order
             .create({
                 purchase_units: [
                     {
                         amount: {
-                            value: order.totalPrice,
+                            //   value: totalPrice,
+                            value: totalPrice,
                         },
                     },
                 ],
@@ -90,30 +121,10 @@ const Order = () => {
         console.log(err.message);
         toast.error(err.message);
     }
-    function onApprove(data, actions) {
-        return actions.order.capture().then(async function (details) {
-            try {
-                await payOrder({ orderId, details });
-                refetch();
-                toast.success('Payment successful');
-            } catch (err) {
-                toast.error(err?.data?.message || err.message);
-            }
-        });
-    }
+
+
     // const orderItem = order.order ?? [];
-    const {
-        _id,
-        paymentMethod,
-        createdAt,
-        isPaid,
-        itemsPrice,
-        orderItems,
-        taxPrice,
-        totalPrice,
-        user,
-    } = order?.order || {};
-    console.log(order);
+
     return (
         <>
             <Breadcrumbs nameParent="Order" lastParent="Page of Order" />
@@ -161,7 +172,7 @@ const Order = () => {
                                                 </Col>
                                                 <Col xs={12} md={8}>
                                                     <Link
-                                                        to={`/post/${item._id}`}
+                                                        to={`/post/${item?._id}`}
                                                     >
                                                         {item.title}
                                                     </Link>
@@ -177,11 +188,15 @@ const Order = () => {
                         </ListGroup>
                     </Col>
                     <Col md={5}>
-                        <PayPalButtons
-                            createOrder={createOrder}
-                            onApprove={onApprove}
-                            onError={onError}
-                        ></PayPalButtons>
+                        {order?.order?.totalPrice ? (
+                            <PayPalButtons
+                                createOrder={createOrder}
+                                onApprove={onApprove}
+                                onError={onError}
+                            />
+                        ) : (
+                            <div>Loading payment details...</div>
+                        )}
                     </Col>
                 </Row>
             </Container>

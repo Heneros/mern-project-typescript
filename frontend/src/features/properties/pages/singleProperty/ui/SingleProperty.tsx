@@ -57,7 +57,7 @@ export const SingleProperty = () => {
                                     <span className="category">
                                         {singleP?.category}
                                     </span>
-                                    <h4> {singleP?.title}</h4>
+                                    {/* <h4> {singleP?.title}</h4> */}
                                     <p>{singleP?.description}</p>
                                 </div>
                                 <Accordion
