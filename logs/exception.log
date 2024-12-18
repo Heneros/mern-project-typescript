@@ -1,18 +1,33 @@
 {
-  error: backend/controllers/order/updateOrderToPaid.ts(10,1): error TS2304: Cannot find name 'CONST'.
-  backend/controllers/order/updateOrderToPaid.ts(10,7): error TS2304: Cannot find name 'OBJ'.
-  backend/controllers/order/updateOrderToPaid.ts(10,1): error TS1435: Unknown keyword or identifier. Did you mean 'const'?
+  error: backend/routes/orderRoutes.ts(22,54): error TS2769: No overload matches this call.
+    The last overload gave the following error.
+      Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+        Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
+          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+            Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+              Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+                Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(10,1): error TS2304: Cannot find name 'CONST'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(10,7): error TS2304: Cannot find name 'OBJ'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(10,1): error TS1435: Unknown keyword or identifier. Did you mean 'const'?\r\n" +
+    'backend/routes/orderRoutes.ts(22,54): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(10,1): error TS2304: Cannot find name 'CONST'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(10,7): error TS2304: Cannot find name 'OBJ'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(10,1): error TS1435: Unknown keyword or identifier. Did you mean 'const'?\r\n" +
+    'backend/routes/orderRoutes.ts(22,54): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -25,9 +40,14 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(10,1): error TS2304: Cannot find name 'CONST'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(10,7): error TS2304: Cannot find name 'OBJ'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(10,1): error TS1435: Unknown keyword or identifier. Did you mean 'const'?\r\n" +
+    'backend/routes/orderRoutes.ts(22,54): error TS2769: No overload matches this call.\r\n' +
+    '  The last overload gave the following error.\r\n' +
+    "    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'RequestHandlerParams<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "      Type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'RequestHandler<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.\r\n" +
+    "        Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "          Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "            Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "              Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -40,9 +60,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Wed Dec 18 2024 17:21:07 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 18 2024 21:09:31 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 16988,
+    pid: 6440,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -53,614 +73,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 424034304,
-      heapTotal: 373035008,
-      heapUsed: 347693664,
-      external: 24881216,
-      arrayBuffers: 21878814
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 45829.718 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-18 05:21:07.976 PM'
-}
-{
-  error: backend/controllers/order/updateOrderToPaid.ts(7,5): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
-    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
-      Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
-        Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
-          Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(7,5): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
-    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(7,5): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
-    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(7,5): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
-    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Wed Dec 18 2024 17:23:50 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 22468,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 426516480,
-      heapTotal: 381947904,
-      heapUsed: 351058072,
-      external: 24873032,
-      arrayBuffers: 21870630
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 45992.281 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-18 05:23:50.543 PM'
-}
-{
-  error: backend/controllers/order/updateOrderToPaid.ts(8,5): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
-    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
-      Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
-        Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
-          Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(8,5): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
-    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(8,5): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
-    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(8,5): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
-    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
-    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
-    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
-    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Wed Dec 18 2024 17:23:57 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 22024,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 434675712,
-      heapTotal: 382472192,
-      heapUsed: 345002272,
-      external: 24881200,
-      arrayBuffers: 21866163
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 45999.109 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-18 05:23:57.366 PM'
-}
-{
-  error: backend/controllers/order/updateOrderToPaid.ts(30,13): error TS18047: 'order' is possibly 'null'.
-  backend/controllers/order/updateOrderToPaid.ts(31,13): error TS18047: 'order' is possibly 'null'.
-  backend/controllers/order/updateOrderToPaid.ts(32,13): error TS18047: 'order' is possibly 'null'.
-  backend/controllers/order/updateOrderToPaid.ts(40,40): error TS18047: 'order' is possibly 'null'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(30,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(31,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(32,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(40,40): error TS18047: 'order' is possibly 'null'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(30,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(31,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(32,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(40,40): error TS18047: 'order' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(30,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(31,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(32,13): error TS18047: 'order' is possibly 'null'.\r\n" +
-    "backend/controllers/order/updateOrderToPaid.ts(40,40): error TS18047: 'order' is possibly 'null'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Wed Dec 18 2024 17:24:16 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 20728,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 421576704,
-      heapTotal: 373035008,
-      heapUsed: 347176672,
-      external: 24881240,
-      arrayBuffers: 21878838
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 46018.093 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-18 05:24:16.341 PM'
-}
-{
-  error: backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Wed Dec 18 2024 18:02:45 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 18400,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 425750528,
+      rss: 426409984,
       heapTotal: 380112896,
-      heapUsed: 350762784,
-      external: 24860389,
-      arrayBuffers: 21857987
+      heapUsed: 343366656,
+      external: 24860381,
+      arrayBuffers: 21857979
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 48326.859 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 59533.484 },
   trace: [
     {
       column: 12,
@@ -743,17 +163,29 @@
       native: false
     }
   ],
-  timestamp: '2024-12-18 06:02:45.114 PM'
+  timestamp: '2024-12-18 09:09:31.731 PM'
 }
 {
-  error: backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.
+  error: backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+      Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+        Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+          Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -766,7 +198,11 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -779,9 +215,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Wed Dec 18 2024 18:03:02 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 18 2024 21:10:00 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 3216,
+    pid: 9168,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -792,14 +228,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 421920768,
-      heapTotal: 372772864,
-      heapUsed: 343904616,
-      external: 24860437,
-      arrayBuffers: 21858035
+      rss: 427696128,
+      heapTotal: 373297152,
+      heapUsed: 348353856,
+      external: 24881231,
+      arrayBuffers: 21878829
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 48344.687 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 59562.421 },
   trace: [
     {
       column: 12,
@@ -882,17 +318,29 @@
       native: false
     }
   ],
-  timestamp: '2024-12-18 06:03:02.937 PM'
+  timestamp: '2024-12-18 09:10:00.678 PM'
 }
 {
-  error: backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.
+  error: backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+      Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+        Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+          Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -905,7 +353,11 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/addOrderItem.ts(37,21): error TS2367: This comparison appears to be unintentional because the types 'string' and 'ObjectId' have no overlap.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -918,9 +370,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Wed Dec 18 2024 18:03:09 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 18 2024 21:10:50 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 3192,
+    pid: 13972,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -931,14 +383,745 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 421969920,
+      rss: 429551616,
+      heapTotal: 381161472,
+      heapUsed: 350931288,
+      external: 24873095,
+      arrayBuffers: 21870693
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 59612.64 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-18 09:10:50.893 PM'
+}
+{
+  error: backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.
+    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.
+      Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.
+        Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.
+          Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(7,40): error TS2345: Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>, number>, next: NextFunction) => void | Promise<...>'.\r\n" +
+    "  Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'void | Promise<void>'.\r\n" +
+    "    Type 'Promise<Response<any, Record<string, any>> | undefined>' is not assignable to type 'Promise<void>'.\r\n" +
+    "      Type 'Response<any, Record<string, any>> | undefined' is not assignable to type 'void'.\r\n" +
+    "        Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Wed Dec 18 2024 21:11:02 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 21080,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 427544576,
+      heapTotal: 373821440,
+      heapUsed: 348511232,
+      external: 24881303,
+      arrayBuffers: 21878901
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 59624.531 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-18 09:11:02.792 PM'
+}
+{
+  error: backend/controllers/order/updateOrderToPaid.ts(15,13): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+  backend/controllers/order/updateOrderToPaid.ts(22,17): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(15,13): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(22,17): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(15,13): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(22,17): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(15,13): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(22,17): error TS2322: Type 'Response<any, Record<string, any>>' is not assignable to type 'void'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Wed Dec 18 2024 21:11:09 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 23188,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 432074752,
+      heapTotal: 380899328,
+      heapUsed: 349986352,
+      external: 24873063,
+      arrayBuffers: 21870661
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 59631.703 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-18 09:11:09.959 PM'
+}
+{
+  error: backend/controllers/order/updateOrderToPaid.ts(26,13): error TS18047: 'order' is possibly 'null'.
+  backend/controllers/order/updateOrderToPaid.ts(27,13): error TS18047: 'order' is possibly 'null'.
+  backend/controllers/order/updateOrderToPaid.ts(28,13): error TS18047: 'order' is possibly 'null'.
+  backend/controllers/order/updateOrderToPaid.ts(36,40): error TS18047: 'order' is possibly 'null'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(26,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(27,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(28,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(36,40): error TS18047: 'order' is possibly 'null'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(26,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(27,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(28,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(36,40): error TS18047: 'order' is possibly 'null'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/updateOrderToPaid.ts(26,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(27,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(28,13): error TS18047: 'order' is possibly 'null'.\r\n" +
+    "backend/controllers/order/updateOrderToPaid.ts(36,40): error TS18047: 'order' is possibly 'null'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Wed Dec 18 2024 21:12:11 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 21736,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 422395904,
+      heapTotal: 373297152,
+      heapUsed: 346770264,
+      external: 24881231,
+      arrayBuffers: 21878829
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 59692.953 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-18 09:12:11.200 PM'
+}
+{
+  error: backend/models/orderModel.ts(19,9): error TS2345: Argument of type '{ orderItems: { title: { type: StringConstructor; required: true; }; preview: { type: StringConstructor; required: true; }; price: { type: NumberConstructor; required: true; }; property: { ...; }; }[]; ... 8 more ...; paidAt: { ...; }; }' is not assignable to parameter of type 'IOrder | { orderItems?: SchemaDefinitionProperty<IOrderItem[], IOrder> | undefined; paymentResult?: SchemaDefinitionProperty<PaymentResult | undefined, IOrder> | undefined; ... 7 more ...; save?: SchemaDefinitionProperty<...> | undefined; } | undefined'.
+    Object literal may only specify known properties, and 'paypalOrderId' does not exist in type '{ orderItems?: SchemaDefinitionProperty<IOrderItem[], IOrder> | undefined; paymentResult?: SchemaDefinitionProperty<PaymentResult | undefined, IOrder> | undefined; ... 7 more ...; save?: SchemaDefinitionProperty<...> | undefined; }'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/orderModel.ts(19,9): error TS2345: Argument of type '{ orderItems: { title: { type: StringConstructor; required: true; }; preview: { type: StringConstructor; required: true; }; price: { type: NumberConstructor; required: true; }; property: { ...; }; }[]; ... 8 more ...; paidAt: { ...; }; }' is not assignable to parameter of type 'IOrder | { orderItems?: SchemaDefinitionProperty<IOrderItem[], IOrder> | undefined; paymentResult?: SchemaDefinitionProperty<PaymentResult | undefined, IOrder> | undefined; ... 7 more ...; save?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'paypalOrderId' does not exist in type '{ orderItems?: SchemaDefinitionProperty<IOrderItem[], IOrder> | undefined; paymentResult?: SchemaDefinitionProperty<PaymentResult | undefined, IOrder> | undefined; ... 7 more ...; save?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/orderModel.ts(19,9): error TS2345: Argument of type '{ orderItems: { title: { type: StringConstructor; required: true; }; preview: { type: StringConstructor; required: true; }; price: { type: NumberConstructor; required: true; }; property: { ...; }; }[]; ... 8 more ...; paidAt: { ...; }; }' is not assignable to parameter of type 'IOrder | { orderItems?: SchemaDefinitionProperty<IOrderItem[], IOrder> | undefined; paymentResult?: SchemaDefinitionProperty<PaymentResult | undefined, IOrder> | undefined; ... 7 more ...; save?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'paypalOrderId' does not exist in type '{ orderItems?: SchemaDefinitionProperty<IOrderItem[], IOrder> | undefined; paymentResult?: SchemaDefinitionProperty<PaymentResult | undefined, IOrder> | undefined; ... 7 more ...; save?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/models/orderModel.ts(19,9): error TS2345: Argument of type '{ orderItems: { title: { type: StringConstructor; required: true; }; preview: { type: StringConstructor; required: true; }; price: { type: NumberConstructor; required: true; }; property: { ...; }; }[]; ... 8 more ...; paidAt: { ...; }; }' is not assignable to parameter of type 'IOrder | { orderItems?: SchemaDefinitionProperty<IOrderItem[], IOrder> | undefined; paymentResult?: SchemaDefinitionProperty<PaymentResult | undefined, IOrder> | undefined; ... 7 more ...; save?: SchemaDefinitionProperty<...> | undefined; } | undefined'.\r\n" +
+    "  Object literal may only specify known properties, and 'paypalOrderId' does not exist in type '{ orderItems?: SchemaDefinitionProperty<IOrderItem[], IOrder> | undefined; paymentResult?: SchemaDefinitionProperty<PaymentResult | undefined, IOrder> | undefined; ... 7 more ...; save?: SchemaDefinitionProperty<...> | undefined; }'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Wed Dec 18 2024 21:16:44 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 18928,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 435507200,
+      heapTotal: 386404352,
+      heapUsed: 354360368,
+      external: 24864919,
+      arrayBuffers: 21862517
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 59966.625 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-18 09:16:44.872 PM'
+}
+{
+  error: backend/controllers/order/addOrderItem.ts(56,13): error TS18004: No value exists in scope for the shorthand property 'paypalOrderId'. Either declare one or provide an initializer.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(56,13): error TS18004: No value exists in scope for the shorthand property 'paypalOrderId'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(56,13): error TS18004: No value exists in scope for the shorthand property 'paypalOrderId'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(56,13): error TS18004: No value exists in scope for the shorthand property 'paypalOrderId'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Wed Dec 18 2024 21:43:26 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 13020,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 426295296,
       heapTotal: 373035008,
-      heapUsed: 344069024,
-      external: 24860429,
-      arrayBuffers: 21858027
+      heapUsed: 348361704,
+      external: 24860413,
+      arrayBuffers: 21858011
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 48351.218 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 61568.171 },
   trace: [
     {
       column: 12,
@@ -1021,17 +1204,17 @@
       native: false
     }
   ],
-  timestamp: '2024-12-18 06:03:09.476 PM'
+  timestamp: '2024-12-18 09:43:26.420 PM'
 }
 {
-  error: backend/controllers/order/updateOrderToPaid.ts(14,48): error TS2348: Value of type 'typeof ObjectId' is not callable. Did you mean to include 'new'?
+  error: backend/controllers/order/addOrderItem.ts(56,13): error TS18004: No value exists in scope for the shorthand property 'paypalOrderId'. Either declare one or provide an initializer.
   ,
   level: 'error',
   message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(14,48): error TS2348: Value of type 'typeof ObjectId' is not callable. Did you mean to include 'new'?\r\n" +
+    "backend/controllers/order/addOrderItem.ts(56,13): error TS18004: No value exists in scope for the shorthand property 'paypalOrderId'. Either declare one or provide an initializer.\r\n" +
     '\n' +
     'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(14,48): error TS2348: Value of type 'typeof ObjectId' is not callable. Did you mean to include 'new'?\r\n" +
+    "backend/controllers/order/addOrderItem.ts(56,13): error TS18004: No value exists in scope for the shorthand property 'paypalOrderId'. Either declare one or provide an initializer.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -1044,7 +1227,7 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/updateOrderToPaid.ts(14,48): error TS2348: Value of type 'typeof ObjectId' is not callable. Did you mean to include 'new'?\r\n" +
+    "backend/controllers/order/addOrderItem.ts(56,13): error TS18004: No value exists in scope for the shorthand property 'paypalOrderId'. Either declare one or provide an initializer.\r\n" +
     '\n' +
     '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
     '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
@@ -1057,9 +1240,9 @@
     '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
     '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Wed Dec 18 2024 18:33:15 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 18 2024 21:43:38 GMT+0200 (Восточная Европа, стандартное время)',
   process: {
-    pid: 5792,
+    pid: 21888,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -1070,14 +1253,14 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 418627584,
-      heapTotal: 373035008,
-      heapUsed: 346359952,
-      external: 24881269,
-      arrayBuffers: 21878867
+      rss: 425123840,
+      heapTotal: 373297152,
+      heapUsed: 348443752,
+      external: 24860421,
+      arrayBuffers: 21858019
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 50157.703 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 61580.125 },
   trace: [
     {
       column: 12,
@@ -1160,5 +1343,426 @@
       native: false
     }
   ],
-  timestamp: '2024-12-18 06:33:15.953 PM'
+  timestamp: '2024-12-18 09:43:38.386 PM'
+}
+{
+  error: backend/controllers/order/addOrderItem.ts(49,47): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,47): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,47): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,47): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Wed Dec 18 2024 21:43:58 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 8752,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 432857088,
+      heapTotal: 381947904,
+      heapUsed: 346708720,
+      external: 24852189,
+      arrayBuffers: 21849787
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 61600.328 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-18 09:43:58.575 PM'
+}
+{
+  error: backend/controllers/order/addOrderItem.ts(49,37): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.
+  backend/controllers/order/addOrderItem.ts(58,13): error TS18004: No value exists in scope for the shorthand property 'taxPrice'. Either declare one or provide an initializer.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,37): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    "backend/controllers/order/addOrderItem.ts(58,13): error TS18004: No value exists in scope for the shorthand property 'taxPrice'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,37): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    "backend/controllers/order/addOrderItem.ts(58,13): error TS18004: No value exists in scope for the shorthand property 'taxPrice'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,37): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    "backend/controllers/order/addOrderItem.ts(58,13): error TS18004: No value exists in scope for the shorthand property 'taxPrice'. Either declare one or provide an initializer.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Wed Dec 18 2024 21:44:04 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 21164,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 424972288,
+      heapTotal: 373035008,
+      heapUsed: 344779064,
+      external: 24860397,
+      arrayBuffers: 21857995
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 61606.359 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-18 09:44:04.613 PM'
+}
+{
+  error: backend/controllers/order/addOrderItem.ts(49,37): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,37): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,37): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/controllers/order/addOrderItem.ts(49,37): error TS2339: Property 'paypalOrderId' does not exist on type '{ itemsPrice: string; taxPrice: string; totalPrice: string; }'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Wed Dec 18 2024 21:44:37 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 9404,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 432611328,
+      heapTotal: 380899328,
+      heapUsed: 351859208,
+      external: 24860421,
+      arrayBuffers: 21858019
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 61638.875 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2024-12-18 09:44:37.127 PM'
 }

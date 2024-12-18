@@ -83,19 +83,36 @@ const Order = () => {
     }, [errorPayPal, loadingPayPal, order, paypal, paypalDispatch]);
     // const [payOrder, {isLoading: loadingPay}] = usePayO
 
+    function onApprove(data, actions) {
+        return actions.order.capture().then(async function (details) {
+            try {
+                const currentOrderId = _id; // Use the MongoDB _id from your order data
 
-    
-  function onApprove(data, actions) {
-      return actions.order.capture().then(async function (details) {
-          try {
-              await payOrder({ orderId, details });
-              refetch();
-              toast.success('Payment successful');
-          } catch (err) {
-              toast.error(err?.data?.message || err.message);
-          }
-      });
-  }
+                if (!currentOrderId) {
+                    toast.error('Order ID is missing');
+                    return;
+                }
+
+                await payOrder({
+                    orderId: currentOrderId, // Use MongoDB _id
+                    details: {
+                        id: details.id,
+                        status: details.status,
+                        update_time: details.update_time,
+                        payer: {
+                            email_address: details.payer.email_address,
+                        },
+                    },
+                });
+
+                refetch();
+                toast.success('Payment successful');
+            } catch (err) {
+                console.error('Payment Error:', err);
+                toast.error(err?.data?.message || err.message);
+            }
+        });
+    }
     function createOrder(data, actions) {
         if (!isLoading && !errorOrder && totalPrice === undefined)
             if (!totalPrice) {
@@ -107,7 +124,6 @@ const Order = () => {
                 purchase_units: [
                     {
                         amount: {
-                            //   value: totalPrice,
                             value: totalPrice,
                         },
                     },
@@ -121,8 +137,7 @@ const Order = () => {
         console.log(err.message);
         toast.error(err.message);
     }
-
-
+    console.log(order);
     // const orderItem = order.order ?? [];
 
     return (

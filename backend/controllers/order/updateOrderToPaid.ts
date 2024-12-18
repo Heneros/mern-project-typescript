@@ -4,53 +4,53 @@ import mongoose from 'mongoose';
 
 import Order from '@/models/orderModel';
 
-const updateOrderToPaid = asyncHandler(
-    async (req: Request, res: Response): Promise<void> => {
-        const { id } = req.params;
-        if (!mongoose.Types.ObjectId.isValid(id)) {
-            res.status(400).json({ message: 'Invalid Order ID' });
-            return;
-        }
-        try {
-            // const orderId = new mongoose.Types.ObjectId(id);
+const updateOrderToPaid = asyncHandler(async (req: Request, res: Response) => {
+    try {
+        // First try to find by MongoDB ObjectId
+        let order = await Order.findById(req.params.id);
 
-            const order = await Order.findById(id);
-
-            if (!order) {
-                res.status(404).json({ message: 'Order not found' });
-                return;
-            }
-
-            order.isPaid = true;
-            order.paidAt = new Date();
-            order.paymentResult = {
-                id: req.body.id,
-                status: req.body.status,
-                update_time: req.body.update_time,
-                email_address:
-                    req.body.payer?.email_address || 'email_address@gmail.com',
-            };
-
-            const updatedOrder = await order.save();
-
-            res.status(200).json(updatedOrder);
-        } catch (error) {
-            // Comprehensive error handling
-            console.error('Error updating order:', error);
-
-            // if (error instanceof mongoose.Error.CastError) {
-            //     res.status(400).json({
-            //         message: 'Invalid Order ID',
-            //         error: error.message,
-            //     });
-            //     return;
-            // }
-
-            res.status(500).json({
-                message: 'Internal server error',
-                error: error instanceof Error ? error.message : 'Unknown error',
+        // If not found, try to find by PayPal order ID
+        if (!order) {
+            order = await Order.findOne({
+                $or: [
+                    { _id: req.params.id },
+                    { 'paymentResult.id': req.params.id },
+                ],
             });
         }
-    },
-);
+
+        if (!order) {
+            res.status(404);
+            throw new Error('Order not found');
+        }
+
+        order.isPaid = true;
+        order.paidAt = new Date();
+        order.paymentResult = {
+            id: req.body.id,
+            status: req.body.status,
+            update_time: req.body.update_time,
+            email_address: req.body.payer.email_address,
+        };
+
+        const updatedOrder = await order.save();
+        res.json(updatedOrder);
+    } catch (error) {
+        // If it's a CastError, return a more specific error message
+        if (error instanceof mongoose.Error.CastError) {
+            res.status(400).json({
+                message: 'Invalid order ID format',
+                error: error.message,
+            });
+            return;
+        }
+
+        console.error('Error updating order:', error);
+        res.status(500).json({
+            message: 'Error updating order',
+            error: error instanceof Error ? error.message : 'Unknown error',
+        });
+    }
+});
+
 export default updateOrderToPaid;

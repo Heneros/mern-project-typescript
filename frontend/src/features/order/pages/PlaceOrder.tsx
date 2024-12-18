@@ -35,11 +35,13 @@ const PlaceOrder = () => {
         try {
             const res = await addOrderItem({
                 user: userInfo._id,
+                paypalOrderId: Date.now(),
                 paymentMethod: cart.paymentMethod,
                 orderItems: cart.cartItems,
             }).unwrap();
+
             dispatch(clearCartItems());
-            navigate(`/order/${res._id}`);
+            navigate(`/order/${res.paypalOrderId}`);
         } catch (error) {
             console.log(error || errorOrder);
         }

@@ -20,6 +20,7 @@ export interface IOrder {
     orderItems: IOrderItem[];
     paymentResult?: PaymentResult;
     user: Types.ObjectId;
+    paypalOrderId: string;
     paymentMethod: string;
     itemsPrice: number;
     taxPrice: number;

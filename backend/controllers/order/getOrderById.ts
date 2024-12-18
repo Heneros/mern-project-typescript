@@ -16,12 +16,10 @@ const getOrderById = asyncHandler(
         try {
             //     const objectId = new mongoose.Types.ObjectId(id);
 
-            const order = await Order.findById(req.params.id)
+            const order = await Order.findOne({
+                paypalOrderId: req.params.id,
+            })
                 .populate('user', 'username email')
-                // .populate({
-                //     path: 'orderItems.property',
-                //     select: 'title',
-                // })
                 .exec();
 
             if (!order) {

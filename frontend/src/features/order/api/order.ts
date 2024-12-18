@@ -23,18 +23,18 @@ export const orderApiSlice = baseApiSlice.injectEndpoints({
             }),
             providesTags: ['Order'],
         }),
-        updateOrderToPaid: builder.mutation({
-            query: (id) => ({
-                url: `${ORDER_URL}/${id}/pay`,
-                method: 'PUT',
-            }),
-            invalidatesTags: ['Order'],
-        }),
+        // updateOrderToPaid: builder.mutation({
+        //     query: (id) => ({
+        //         url: `${ORDER_URL}/${id}/pay`,
+        //         method: 'PUT',
+        //     }),
+        //     invalidatesTags: ['Order'],
+        // }),
         payOrder: builder.mutation({
-            query: ({ orderId, details }) => ({
-                url: `${ORDER_URL}/${orderId}/pay`,
+            query: (data) => ({
+                url: `${ORDER_URL}/${data.orderId}/pay`,
                 method: 'PUT',
-                body: details,
+                body: data.details,
             }),
             invalidatesTags: ['Order'],
         }),
@@ -51,7 +51,7 @@ export const {
     useAddOrderItemMutation,
     useGetMyOrderQuery,
     useGetMyOrderByIdQuery,
-    useUpdateOrderToPaidMutation,
+    // useUpdateOrderToPaidMutation,
     usePayOrderMutation,
     useGetPaypalClientIdQuery,
 } = orderApiSlice;

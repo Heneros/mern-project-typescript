@@ -6,7 +6,7 @@ const orderSchema = new mongoose.Schema<IOrder>(
         orderItems: [
             {
                 title: { type: String, required: true },
-   
+
                 preview: { type: String, required: true },
                 price: { type: Number, required: true },
                 property: {
@@ -16,7 +16,11 @@ const orderSchema = new mongoose.Schema<IOrder>(
                 },
             },
         ],
-
+        paypalOrderId: {
+            type: String,
+            required: true,
+            unique: true,
+        },
         user: {
             type: mongoose.Schema.Types.ObjectId,
 

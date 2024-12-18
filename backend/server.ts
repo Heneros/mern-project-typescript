@@ -68,7 +68,7 @@ app.use('/api/v1/property', propertyRoutes);
 app.use('/api/v1/messages', messageRoutes);
 app.use('/api/v1/order', orderRoutes);
 
-app.get('/api/config/paypal', (req, res) => {
+app.get('/api/v1/config/paypal', (req, res) => {
     res.send({ clientId: process.env.PAYPAL_CLIENT_ID });
 });
 

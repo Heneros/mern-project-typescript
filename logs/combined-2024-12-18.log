@@ -4052,3 +4052,2129 @@
   message: 'incoming-request',
   timestamp: '2024-12-18 07:05:47.034 PM'
 }
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 08:17:20.947 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/api/config/paypal',
+  status: 500,
+  content_length: '88',
+  response_time: 1.454,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:38:59.030 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 109.934,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:38:59.142 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 179.914,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:38:59.192 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/api/config/paypal',
+  status: 500,
+  content_length: '88',
+  response_time: 0.269,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:39:17.979 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.939,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:39:18.090 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 158.428,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:39:18.132 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 08:39:47.063 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 08:40:05.664 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/api/config/paypal',
+  status: 500,
+  content_length: '88',
+  response_time: 1.558,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:40:07.782 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.457,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:40:07.893 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 175.387,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:40:07.944 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/api/config/paypal',
+  status: 500,
+  content_length: '88',
+  response_time: 0.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:43:32.352 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 109.797,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:43:32.464 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 0,
+  response_time: '0',
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:43:32.507 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/api/config/paypal',
+  status: 500,
+  content_length: '88',
+  response_time: 0.283,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:43:33.325 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '2108',
+  response_time: 119.997,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:43:33.446 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 200,
+  content_length: '576',
+  response_time: 177.418,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:43:33.495 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 08:44:00.976 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 500,
+  content_length: '84',
+  response_time: 1.49,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:44:23.615 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 112.279,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:44:23.730 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 181.628,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:44:23.780 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 500,
+  content_length: '84',
+  response_time: 0.197,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:44:34.154 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: '75',
+  response_time: 0.158,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:44:34.328 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 08:45:01.824 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 200,
+  content_length: '95',
+  response_time: 1.554,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:45:39.162 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 08:45:39.708 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.616,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:45:41.779 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 114.104,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:45:41.895 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 178.7,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:45:41.945 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.275,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:26.759 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.537,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:26.869 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 164.636,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:26.919 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.179,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:46.639 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.988,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:46.748 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.829,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:46.794 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.176,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:59.731 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 111.761,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:59.844 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.072,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:46:59.885 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/8ES98272MX2733829/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 54.401,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:47:23.587 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:47:23.752 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.225,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:51:21.462 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.565,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:51:21.571 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.346,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:51:21.615 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.259,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:52:01.683 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.511,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:52:01.795 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 159.494,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:52:01.839 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/3NB01376X89692441/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 53.604,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:52:15.347 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 155.851,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:52:15.512 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.187,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:53:22.420 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.97,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:53:22.528 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.689,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:53:22.574 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.151,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:53:45.833 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:53:45.941 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 155.934,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:53:45.986 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/2EC21302MA812202K/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 54.118,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:53:57.444 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.128,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:53:57.609 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 08:54:16.264 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.573,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:54:30.710 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 111.164,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:54:30.823 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 177.74,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:54:30.875 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.245,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:54:32.751 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 111.294,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:54:32.864 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 165.378,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:54:32.914 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/85U61745U3283462E/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 57.341,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:54:43.402 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 159.44,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:54:43.570 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:55:50.042 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.66,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:55:50.150 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 159.446,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:55:50.197 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/7BL648887L745381N/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 54.362,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:56:01.081 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.006,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:56:01.246 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.169,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:56:12.867 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 110.547,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:56:12.979 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.846,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:56:13.023 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.197,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:58:19.111 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.401,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:58:19.220 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 156.661,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:58:19.264 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/0T713952EP7886010/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 54.691,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:58:31.441 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 157.464,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:58:31.608 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.371,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:59:04.274 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 112.371,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:59:04.389 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 160.482,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:59:04.427 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/2U5468996N759542H/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 54.407,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:59:13.562 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 156.217,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 08:59:13.726 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:00:45.694 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.352,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:01:32.116 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:01:32.650 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 835.007,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:01:32.959 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.378,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:01:33.976 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.093,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:01:34.085 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 165.806,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:01:34.146 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/3WL40783M4649974L/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 55.57,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:01:43.660 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 159.477,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:01:43.828 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.845,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:02:13.544 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:02:13.957 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 833.751,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:02:14.356 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 814.968,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:02:14.364 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/9H9422172R7362052/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 54.895,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:02:22.884 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 159.614,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:02:23.053 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:02:39.438 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.408,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:02:56.894 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:02:57.427 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 820.474,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:02:57.722 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.348,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:03:00.411 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.361,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:03:00.521 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 166.683,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:03:00.583 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/5N30262939364563N/pay',
+  status: 500,
+  content_length: '151',
+  response_time: 67.064,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:03:11.260 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 158.065,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:03:11.427 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:13:38.252 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.582,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:14:01.188 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 111.479,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:14:01.301 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 177.688,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:14:01.352 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/1BS07336TV963924K/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 54.988,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:14:15.441 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 304,
+  response_time: 160.629,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:14:15.634 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:17:00.768 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:17:42.320 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:17:49.108 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.434,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:36:44.389 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 500,
+  content_length: '29',
+  response_time: 117.067,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:36:44.499 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 112.818,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:36:44.504 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.199,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:12.101 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 500,
+  content_length: '29',
+  response_time: 107.129,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:12.205 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.934,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:12.211 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.277,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:26.872 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 500,
+  content_length: '29',
+  response_time: 107.279,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:26.978 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.818,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:26.981 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.192,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:47.613 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 500,
+  content_length: '29',
+  response_time: 107.378,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:47.705 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.177,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:37:47.722 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.366,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:21.440 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 500,
+  content_length: '29',
+  response_time: 106.991,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:21.544 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.292,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:21.548 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.213,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:23.169 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 500,
+  content_length: '29',
+  response_time: 107.29,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:23.275 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 108.18,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:23.279 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:38:35.367 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.488,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:41.939 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/6762fc17abe47dbe00488568',
+  status: 500,
+  content_length: '29',
+  response_time: 116.322,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:42.048 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 109.486,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:42.051 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 110.894,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:38:47.612 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 111.751,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:39:12.993 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 111.433,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:39:12.996 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 107.831,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:39:58.165 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 109.641,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:39:58.169 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:40:18.061 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 117.915,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:40:18.062 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:40:18.807 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 111.031,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:40:18.808 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:40:18.970 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 108.093,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:40:18.971 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:40:19.129 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 107.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:40:19.130 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:40:19.316 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 107.828,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:40:19.317 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:40:21.184 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 108.043,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:40:21.184 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:40:21.357 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 107.23,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:40:21.358 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.165,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:41:28.022 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:45:12.473 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 115.092,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:45:39.181 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 104.803,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:45:55.588 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.95,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:50:05.867 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:51:52.494 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 117.793,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:51:52.496 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.966,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:51:56.712 PM'
+}
+{
+  message: 'Add orders ValidationError: paypalOrderId: Path `paypalOrderId` is required.',
+  level: 'error',
+  timestamp: '2024-12-18 09:51:57.794 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 500,
+  content_length: '118',
+  response_time: 105.65,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:51:57.795 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 104.744,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:55:40.838 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 201,
+  content_length: '530',
+  response_time: 218.368,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:55:41.772 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.441,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:55:41.813 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/676328bd5da71dd605a85063',
+  status: 500,
+  content_length: '29',
+  response_time: 104.2,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:55:41.915 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.208,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:55:47.582 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/676328bd5da71dd605a85063',
+  status: 500,
+  content_length: '29',
+  response_time: 103.714,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:55:47.684 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 104.35,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:55:47.688 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.19,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:57:05.562 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/676328bd5da71dd605a85063',
+  status: 500,
+  content_length: '29',
+  response_time: 102.465,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:57:05.664 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.922,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:57:05.666 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.166,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:57:06.480 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/676328bd5da71dd605a85063',
+  status: 500,
+  content_length: '29',
+  response_time: 102.775,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:57:06.581 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.741,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:57:06.584 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 09:57:35.629 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.65,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:08.490 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.473,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:08.599 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551741548',
+  status: 200,
+  content_length: '608',
+  response_time: 172.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:08.649 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.28,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:25.471 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/676328bd5da71dd605a85063',
+  status: 500,
+  content_length: '29',
+  response_time: 104.338,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:25.566 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.644,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:25.579 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3505',
+  response_time: 106.558,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:28.221 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/order',
+  status: 201,
+  content_length: '530',
+  response_time: 217.948,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:40.227 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.32,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:40.267 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 200,
+  content_length: '608',
+  response_time: 159.317,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:58:40.422 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/api/orders/1734551919995/pay',
+  status: 500,
+  content_length: '99',
+  response_time: 0.302,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:59:27.564 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 154.848,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 09:59:27.732 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.569,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:00:59.104 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.609,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:00:59.213 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 154.091,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:00:59.253 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.217,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:01:30.402 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.643,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:01:30.510 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 152.85,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:01:30.537 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/1734551919995/pay',
+  status: 400,
+  content_length: '30',
+  response_time: 52.648,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:01:39.307 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 154.376,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:01:39.493 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.192,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:02:50.903 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.366,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:02:51.007 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 154.247,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:02:51.054 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.199,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:02:56.208 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 102.88,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:02:56.313 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 154.898,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:02:56.361 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.148,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:03:20.161 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.093,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:03:20.263 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 154.003,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:03:20.313 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.174,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:03:29.727 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.508,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:03:29.832 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 156.256,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:03:29.881 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 10:03:47.137 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.568,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:04:06.238 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.923,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:04:06.347 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 166.874,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:04:06.397 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/1734551919995/pay',
+  status: 500,
+  content_length: '1430',
+  response_time: 55.649,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:04:18.381 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 153.889,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:04:18.545 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.239,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:06:12.590 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 101.94,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:06:12.694 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 153.639,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:06:12.740 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 10:06:45.868 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 10:07:09.889 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 4.327,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:07:36.540 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 106.834,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:07:36.648 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 176.956,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:07:36.699 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/1734551919995/pay',
+  status: 500,
+  content_length: '146',
+  response_time: 80.244,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:09:32.985 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 155.916,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:09:33.154 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/1734551919995/pay',
+  status: 500,
+  content_length: '146',
+  response_time: 54.536,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:33:11.081 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 155.457,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:33:11.244 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-18 10:34:15.285 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 1.516,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:37:34.209 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 107.775,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:37:34.318 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 176.723,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:37:34.369 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.626,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:38:46.575 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 103.173,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:38:46.680 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 159.029,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:38:46.726 PM'
+}
+{
+  method: 'PUT',
+  url: '/api/v1/order/676329707c27d47f3352e944/pay',
+  status: 200,
+  content_length: '722',
+  response_time: 171.183,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:38:55.582 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 200,
+  content_length: '800',
+  response_time: 152.622,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:38:55.744 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/config/paypal',
+  status: 304,
+  response_time: 0.214,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:39:09.707 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 104.297,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:39:09.813 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/order/1734551919995',
+  status: 304,
+  response_time: 154.325,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-18 10:39:09.857 PM'
+}
