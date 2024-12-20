@@ -14,8 +14,6 @@ const getOrderById = asyncHandler(
         }
 
         try {
-            //     const objectId = new mongoose.Types.ObjectId(id);
-
             const order = await Order.findOne({
                 paypalOrderId: req.params.id,
             })
@@ -24,6 +22,15 @@ const getOrderById = asyncHandler(
 
             if (!order) {
                 res.status(404).json({ message: 'Order not found' });
+            }
+            const userId = userReq.user._id.toString();
+            const orderUserId = order?.user._id.toString();
+
+            if (orderUserId !== userId) {
+                res.status(403).json({
+                    message: 'Access denied to this order',
+                });
+                return;
             }
 
             res.status(200).json({ order });

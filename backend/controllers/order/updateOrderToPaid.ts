@@ -8,15 +8,6 @@ const updateOrderToPaid = asyncHandler(async (req: Request, res: Response) => {
     try {
         let order = await Order.findById(req.params.id);
 
-        // if (!order) {
-        //     order = await Order.findOne({
-        //         $or: [
-        //             { _id: req.params.id },
-        //             { 'paymentResult.id': req.params.id },
-        //         ],
-        //     });
-        // }
-
         if (!order) {
             res.status(404);
             throw new Error('Order not found');

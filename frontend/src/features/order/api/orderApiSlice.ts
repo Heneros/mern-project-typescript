@@ -31,7 +31,7 @@ export const orderApiSlice = baseApiSlice.injectEndpoints({
         //     invalidatesTags: ['Order'],
         // }),
         payOrder: builder.mutation({
-            query: (data) => ({
+            query: ({ data }) => ({
                 url: `${ORDER_URL}/${data.orderId}/pay`,
                 method: 'PUT',
                 body: data.details,
