@@ -13,6 +13,8 @@ export interface PostInfo {
     readonly price: number;
     readonly category: string;
     readonly createdAt: Date;
+
+    readonly property?: string;
 }
 
 export interface PropItems {

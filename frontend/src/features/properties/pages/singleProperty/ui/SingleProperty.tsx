@@ -18,113 +18,131 @@ import InfoIconThree from 'shared/assets/icons/info-icon-03.png';
 import InfoIconFour from 'shared/assets/icons/info-icon-04.png';
 
 export const SingleProperty = () => {
-    const { id } = useParams();
+    const { id: singleId } = useParams<{ id: string }>();
+
     const {
         data: dataSingle,
-        isLoading,
-        error,
-    } = useGetSinglePropertyQuery(id);
-    const singleP = dataSingle?.propertyPage;
-    const { data } = useGetAllPropertiesQuery('1');
+        isLoading: isLoadingSingle,
+        error: errorSingle,
+    } = useGetSinglePropertyQuery(singleId, { skip: !singleId });
+    const {
+        data,
+        isLoading: isLoadingAll,
+        error: errorAll,
+    } = useGetAllPropertiesQuery('1');
 
     const propItems = data?.properties || [];
 
-    if (isLoading) {
-        return <Loader />;
-    }
-    // const titlePost = singleP.title;
-    // console.log(data);
-    // console.log(singleP);
+    const isLoading = isLoadingSingle || isLoadingAll;
+    const error = errorSingle || errorAll;
+
+    // const dataSingle?.propertyPage = dataSingle?.propertyPage;
+    console.log(singleId);
     return (
         <>
-            <Breadcrumbs lastParent={singleP.title} nameParent={'Properties'} />
-            <div className="single-property section">
-                <div className="container">
-                    {isLoading ? (
-                        <Loader />
-                    ) : error ? (
-                        <Message variant="danger">{renderError(error)}</Message>
-                    ) : (
-                        <div className="row">
-                            <div className="col-lg-8">
-                                <div className="main-image">
-                                    <img
-                                        src="assets/images/single-property.jpg"
-                                        alt=""
+            {isLoading ? (
+                <Loader />
+            ) : error ? (
+                <Message variant="danger">{renderError(error)}</Message>
+            ) : (
+                <>
+                    <Breadcrumbs
+                        lastParent={dataSingle?.propertyPage?.title}
+                        nameParent={'Properties'}
+                    />
+                    <div className="single-property section">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-8">
+                                    <div className="main-image">
+                                        <img
+                                            src="assets/images/single-property.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className="main-content">
+                                        <span className="category">
+                                            {dataSingle?.propertyPage?.category}
+                                        </span>
+                                        {/* <h4> {dataSingle?.propertyPage?.title}</h4> */}
+                                        <p>
+                                            {
+                                                dataSingle?.propertyPage
+                                                    ?.description
+                                            }
+                                        </p>
+                                    </div>
+                                    <Accordion
+                                        questionsAndAnswers={
+                                            dataSingle?.propertyPage
+                                                .questionsAndAnswers
+                                        }
                                     />
+                                    {/*Accordion */}
                                 </div>
-                                <div className="main-content">
-                                    <span className="category">
-                                        {singleP?.category}
-                                    </span>
-                                    {/* <h4> {singleP?.title}</h4> */}
-                                    <p>{singleP?.description}</p>
-                                </div>
-                                <Accordion
-                                    questionsAndAnswers={
-                                        singleP.questionsAndAnswers
-                                    }
-                                />
-                                {/*Accordion */}
-                            </div>
-                            <div className="col-lg-4">
-                                <div className="info-table">
-                                    <ul>
-                                        <li>
-                                            <img
-                                                src={InfoIcon}
-                                                alt=""
-                                                style={{ maxWidth: '52px' }}
-                                            />
-                                            <h4>
-                                                450 m2
-                                                <br />
-                                                <span>Total Flat Space</span>
-                                            </h4>
-                                        </li>
-                                        <li>
-                                            <img
-                                                src={InfoIconTwo}
-                                                alt=""
-                                                style={{ maxWidth: '52px' }}
-                                            />
-                                            <h4>
-                                                Contract
-                                                <br />
-                                                <span>Contract Ready</span>
-                                            </h4>
-                                        </li>
-                                        <li>
-                                            <img
-                                                src={InfoIconThree}
-                                                alt=""
-                                                style={{ maxWidth: '52px' }}
-                                            />
-                                            <h4>
-                                                Payment
-                                                <br />
-                                                <span>Payment Process</span>
-                                            </h4>
-                                        </li>
-                                        <li>
-                                            <img
-                                                src={InfoIconFour}
-                                                alt=""
-                                                style={{ maxWidth: '52px' }}
-                                            />
-                                            <h4>
-                                                Safety
-                                                <br />
-                                                <span>24/7 Under Control</span>
-                                            </h4>
-                                        </li>
-                                    </ul>
+                                <div className="col-lg-4">
+                                    <div className="info-table">
+                                        <ul>
+                                            <li>
+                                                <img
+                                                    src={InfoIcon}
+                                                    alt=""
+                                                    style={{ maxWidth: '52px' }}
+                                                />
+                                                <h4>
+                                                    450 m2
+                                                    <br />
+                                                    <span>
+                                                        Total Flat Space
+                                                    </span>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <img
+                                                    src={InfoIconTwo}
+                                                    alt=""
+                                                    style={{ maxWidth: '52px' }}
+                                                />
+                                                <h4>
+                                                    Contract
+                                                    <br />
+                                                    <span>Contract Ready</span>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <img
+                                                    src={InfoIconThree}
+                                                    alt=""
+                                                    style={{ maxWidth: '52px' }}
+                                                />
+                                                <h4>
+                                                    Payment
+                                                    <br />
+                                                    <span>Payment Process</span>
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <img
+                                                    src={InfoIconFour}
+                                                    alt=""
+                                                    style={{ maxWidth: '52px' }}
+                                                />
+                                                <h4>
+                                                    Safety
+                                                    <br />
+                                                    <span>
+                                                        24/7 Under Control
+                                                    </span>
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    )}
-                </div>
-            </div>
+                    </div>
+                </>
+            )}
 
             <BestDeal propItems={propItems} />
         </>

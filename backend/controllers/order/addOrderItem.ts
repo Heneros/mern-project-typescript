@@ -53,13 +53,12 @@ const addOrderItem = async (req: Request, res: Response): Promise<void> => {
             orderItems: dbOrderItems,
             user: userId,
             paymentMethod,
-            paypalOrderId, 
+            paypalOrderId,
             itemsPrice,
             taxPrice,
             totalPrice,
         });
 
-        // Check if paypalOrderId already exists
         if (paypalOrderId) {
             const existingOrder = await Order.findOne({ paypalOrderId });
             if (existingOrder) {

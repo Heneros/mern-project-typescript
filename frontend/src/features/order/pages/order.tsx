@@ -15,14 +15,12 @@ import {
     Tab,
     Table,
 } from 'react-bootstrap';
-import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 import {
-    useAddOrderItemMutation,
     useGetMyOrderByIdQuery,
     useGetPaypalClientIdQuery,
     usePayOrderMutation,
-} from '../api/order';
+} from '../api/orderApiSlice';
 import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
 import { toast } from 'react-toastify';
 import { formatPrice } from 'shared/utils/cartFunctions';
@@ -36,6 +34,13 @@ const Order = () => {
         isLoading,
         error: errorOrder,
     } = useGetMyOrderByIdQuery(id);
+    const [payOrder, { isLoading: loadingPay }] = usePayOrderMutation();
+    const {
+        data: paypal,
+        isLoading: loadingPayPal,
+        error: errorPayPal,
+    } = useGetPaypalClientIdQuery(undefined);
+    const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
 
     const {
         _id,
@@ -48,14 +53,6 @@ const Order = () => {
         totalPrice,
         user,
     } = order?.order || {};
-    const [payOrder, { isLoading: loadingPay }] = usePayOrderMutation();
-    const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
-    const {
-        data: paypal,
-        isLoading: loadingPayPal,
-        error: errorPayPal,
-    } = useGetPaypalClientIdQuery(undefined);
-    const { userInfo } = useAppSelector((state) => state.auth);
 
     useEffect(() => {
         if (!errorPayPal && !loadingPayPal && paypal.clientId) {
@@ -81,12 +78,11 @@ const Order = () => {
             }
         }
     }, [errorPayPal, loadingPayPal, order, paypal, paypalDispatch]);
-    // const [payOrder, {isLoading: loadingPay}] = usePayO
 
     function onApprove(data, actions) {
         return actions.order.capture().then(async function (details) {
             try {
-                const currentOrderId = _id; // Use the MongoDB _id from your order data
+                const currentOrderId = _id;
 
                 if (!currentOrderId) {
                     toast.error('Order ID is missing');
@@ -94,7 +90,7 @@ const Order = () => {
                 }
 
                 await payOrder({
-                    orderId: currentOrderId, // Use MongoDB _id
+                    orderId: currentOrderId,
                     details: {
                         id: details.id,
                         status: details.status,
@@ -158,7 +154,7 @@ const Order = () => {
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 {isPaid ? (
-                                    <Alert variant="success">{isPaid} </Alert>
+                                    <Alert variant="success">Paid</Alert>
                                 ) : (
                                     <Alert variant="danger">Not Paid</Alert>
                                 )}
@@ -177,7 +173,7 @@ const Order = () => {
                                     (item: PostInfo, index: string) => (
                                         <ListGroup.Item key={index}>
                                             <Row className="align-items-center text-center">
-                                                <Col xs={5} md={1}>
+                                                <Col xs={6} md={2}>
                                                     <Image
                                                         src={item.preview}
                                                         alt={item.title}
@@ -185,21 +181,31 @@ const Order = () => {
                                                         rounded
                                                     />
                                                 </Col>
-                                                <Col xs={12} md={8}>
+                                                <Col xs={12} md={7}>
                                                     <Link
-                                                        to={`/post/${item?._id}`}
+                                                        to={`/post/${item?.property}`}
                                                     >
                                                         {item.title}
                                                     </Link>
                                                 </Col>
-                                                <Col xs={12} md={3}>
-                                                    {formatPrice(item.price)} ={' '}
+                                                <Col xs={11} md={3}>
+                                                    {formatPrice(item.price)}
                                                 </Col>
                                             </Row>
                                         </ListGroup.Item>
                                     ),
                                 )
                             )}
+                            <ListGroup.Item>
+                                <strong>Tax Price:</strong>
+
+                                <strong> {formatPrice(taxPrice)} </strong>
+                                <hr />
+
+                                <strong>Total Price:</strong>
+
+                                <strong> {formatPrice(totalPrice)} </strong>
+                            </ListGroup.Item>
                         </ListGroup>
                     </Col>
                     <Col md={5}>

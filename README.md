@@ -4,7 +4,7 @@ MERN. TS. Fullstack app about booking villa. You can create account through Goog
 
 In this app you also can have chat with another users.
 
-# Libraries 
+# Packages 
 
 
 - Express 

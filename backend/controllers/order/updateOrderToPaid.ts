@@ -6,18 +6,16 @@ import Order from '@/models/orderModel';
 
 const updateOrderToPaid = asyncHandler(async (req: Request, res: Response) => {
     try {
-        // First try to find by MongoDB ObjectId
         let order = await Order.findById(req.params.id);
 
-        // If not found, try to find by PayPal order ID
-        if (!order) {
-            order = await Order.findOne({
-                $or: [
-                    { _id: req.params.id },
-                    { 'paymentResult.id': req.params.id },
-                ],
-            });
-        }
+        // if (!order) {
+        //     order = await Order.findOne({
+        //         $or: [
+        //             { _id: req.params.id },
+        //             { 'paymentResult.id': req.params.id },
+        //         ],
+        //     });
+        // }
 
         if (!order) {
             res.status(404);
@@ -36,7 +34,6 @@ const updateOrderToPaid = asyncHandler(async (req: Request, res: Response) => {
         const updatedOrder = await order.save();
         res.json(updatedOrder);
     } catch (error) {
-        // If it's a CastError, return a more specific error message
         if (error instanceof mongoose.Error.CastError) {
             res.status(400).json({
                 message: 'Invalid order ID format',

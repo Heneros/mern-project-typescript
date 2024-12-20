@@ -10,7 +10,7 @@ export const propertiesApiSlice = baseApiSlice.injectEndpoints({
             query: (propertyInfo) => ({
                 url: '/property/create',
                 method: 'POST',
-                credentials: 'include',
+                // credentials: 'include',
                 body: propertyInfo,
             }),
             invalidatesTags: ['Property'],
@@ -24,7 +24,7 @@ export const propertiesApiSlice = baseApiSlice.injectEndpoints({
                 url: `/property/${id}`,
                 method: 'PATCH',
                 body: otherFields,
-                credentials: 'include',
+                // credentials: 'include',
             }),
             invalidatesTags: ['Property'],
         }),

@@ -21,7 +21,7 @@ import { ResendEmailTokenPage } from 'features/auth/pages/resendEmailTokenPage';
 import { VerifiedPage } from 'features/auth/pages/verifiedPage';
 import { AuthRequired } from 'shared/hooks/AuthRequired';
 import { ROLES } from 'shared/consts';
-import { PersonalAccount } from 'pages/personalAccount';
+import { PersonalAccount } from 'features/user/pages/PersonalAccount';
 import { ContactUs } from 'pages/contactUs';
 import { SingleProperty } from 'features/properties/pages/singleProperty';
 import AdminAllPosts from 'features/user/pages/admin/AdminAllPosts';

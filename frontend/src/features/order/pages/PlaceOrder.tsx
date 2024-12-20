@@ -13,7 +13,7 @@ import {
     Table,
 } from 'react-bootstrap';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
-import { useAddOrderItemMutation } from '../api/order';
+import { useAddOrderItemMutation } from '../api/orderApiSlice';
 import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 import { PostInfo } from 'shared/types';
 import { formatPrice } from 'shared/utils/cartFunctions';
