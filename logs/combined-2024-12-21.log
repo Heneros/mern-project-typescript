@@ -1,0 +1,57 @@
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-21 02:20:24.772 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 304,
+  response_time: 62.543,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-21 02:31:20.622 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3504',
+  response_time: 114.745,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-21 02:31:20.681 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 114.865,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-21 02:31:20.683 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3504',
+  response_time: 104.13,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-21 02:32:18.536 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 105.134,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2024-12-21 02:32:18.539 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2024-12-21 04:44:27.374 PM'
+}

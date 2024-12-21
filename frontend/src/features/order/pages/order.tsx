@@ -97,16 +97,8 @@ const Order = () => {
                 }
 
                 await payOrder({
-      
                     orderId: currentOrderId,
-                    details: {
-                        id: details.id,
-                        status: details.status,
-                        update_time: details.update_time,
-                        payer: {
-                            email_address: details.payer.email_address,
-                        },
-                    },
+                    details,
                 });
 
                 refetch();
