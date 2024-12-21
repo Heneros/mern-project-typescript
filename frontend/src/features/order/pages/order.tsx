@@ -30,6 +30,7 @@ import { Loader } from 'shared/ui/loader';
 import { Message } from 'shared/ui/message';
 import { renderError } from 'shared/utils/renderError';
 import { useAppSelector } from 'shared/lib/store';
+import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 
 const Order = () => {
     const { id } = useParams();
@@ -60,6 +61,45 @@ const Order = () => {
         totalPrice,
         user,
     } = order?.order || {};
+
+    const stripe = useStripe();
+    const elements = useElements();
+
+    async function handleStripePayment() {
+        if (!stripe || !elements) {
+            toast.error('Stripe has not loaded');
+            return;
+        }
+
+        const cardElement = elements.getElement(CardElement);
+
+        if (!cardElement) {
+            toast.error('Card element not found');
+            return;
+        }
+
+        try {
+            const { paymentIntent, error } = await stripe.confirmCardPayment(
+                process.env.STRIPE_SECRET!,
+                {
+                    payment_method: {
+                        card: cardElement,
+                    },
+                },
+            );
+
+            if (error) {
+                toast.error(error.message);
+            } else if (paymentIntent?.status === 'succeeded') {
+                await payOrder({ orderId: _id, details: paymentIntent });
+                refetch();
+                toast.success('Payment successful');
+            }
+        } catch (err) {
+            console.error('Stripe Payment Error:', err);
+            toast.error(err.message || 'Payment failed');
+        }
+    }
 
     useEffect(() => {
         if (!errorPayPal && !loadingPayPal && paypal.clientId) {
@@ -249,11 +289,26 @@ const Order = () => {
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         {!loadingPayPal && !isPaid ? (
-                                            <PayPalButtons
-                                                createOrder={createOrder}
-                                                onApprove={onApprove}
-                                                onError={onError}
-                                            />
+                                            <>
+                                                <PayPalButtons
+                                                    createOrder={createOrder}
+                                                    onApprove={onApprove}
+                                                    onError={onError}
+                                                />
+                                                <h5>Pay with Stripe</h5>{' '}
+                                                <ListGroup.Item>
+                                                    <CardElement />
+                                                    <Button
+                                                        className="mt-3"
+                                                        onClick={
+                                                            handleStripePayment
+                                                        }
+                                                        disabled={loadingPay}
+                                                    >
+                                                        Pay Now
+                                                    </Button>
+                                                </ListGroup.Item>
+                                            </>
                                         ) : (
                                             <Alert variant="success">
                                                 Order payed

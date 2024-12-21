@@ -23,6 +23,7 @@ import messageRoutes from './routes/messageRoutes';
 import oauthPassport from './config/passportSetup';
 
 import { app, server } from './socket/socket';
+import { confirmPayment, createIntent } from './utils/stripe';
 // export const app = express();
 
 // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
@@ -71,6 +72,9 @@ app.use('/api/v1/order', orderRoutes);
 app.get('/api/v1/config/paypal', (req, res) => {
     res.send({ clientId: process.env.PAYPAL_CLIENT_ID });
 });
+
+app.post('/api/v1/confirm-payment', confirmPayment);
+app.post('/api/v1/create-payment-intent', createIntent);
 
 const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;

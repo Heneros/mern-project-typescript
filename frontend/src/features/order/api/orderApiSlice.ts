@@ -1,5 +1,5 @@
 import baseApiSlice from 'features/api/baseApiSlice';
-import { ORDER_URL, PAYPAL_URL } from 'shared/consts/urls';
+import { ORDER_URL, PAYPAL_URL, STRIPE_INTENT } from 'shared/consts/urls';
 
 export const orderApiSlice = baseApiSlice.injectEndpoints({
     endpoints: (builder) => ({
@@ -44,6 +44,15 @@ export const orderApiSlice = baseApiSlice.injectEndpoints({
             }),
             keepUnusedDataFor: 5,
         }),
+        createStripeIntent: builder.mutation({
+            query: ({ data }) => ({
+                url: STRIPE_INTENT,
+                method: 'POST',
+                body: data,
+            }),
+            invalidatesTags: ['Order'],
+        }),
+        
     }),
 });
 
