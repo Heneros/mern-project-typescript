@@ -11,13 +11,14 @@ const createIntent = asyncHandler(async (req, res) => {
         res.status(400).json({ message: 'Amount and orderId are required' });
         return;
     }
-    console.log({ amount, orderId });
+    // console.log({ amount, orderId });  
     try {
         const paymentIntent = await stripe.paymentIntents.create({
             amount: Math.round(amount * 100),
             currency: 'usd',
             metadata: { orderId },
         });
+        console.log({ paymentIntent });
         res.status(200).json({ clientSecret: paymentIntent.client_secret });
     } catch (error) {
         console.error('Error creating payment intent:', error);

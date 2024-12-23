@@ -35,11 +35,14 @@ import { renderError } from 'shared/utils/renderError';
 import { useAppSelector } from 'shared/lib/store';
 import {
     CardElement,
+    Elements,
     PaymentElement,
     useElements,
     useStripe,
 } from '@stripe/react-stripe-js';
 import StripeCheckout from 'widgets/stripeCheckout/StripeCheckout';
+import { loadStripe } from '@stripe/stripe-js';
+const stripe = loadStripe(process.env.STRIPE_PUBLIC!);
 
 const Order = () => {
     const { id } = useParams();
@@ -59,6 +62,7 @@ const Order = () => {
     const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
     const [isProcessing, setIsProcessing] = useState(false);
     const [isStripeReady, setIsStripeReady] = useState(false);
+    const [isReady, setIsReady] = useState(false);
 
     const {
         _id,
@@ -85,6 +89,9 @@ const Order = () => {
             setIsStripeReady(true);
         }
     }, [stripe, elements]);
+    const handleCardChange = (event) => {
+        setIsStripeReady(event.complete);
+    };
 
     const handleStripePayment = async () => {
         if (!stripe || !elements) {
@@ -106,10 +113,11 @@ const Order = () => {
                 orderId: _id,
             }).unwrap();
 
-            if (!clientSecret) {
-                toast.error('Error');
+            if (!clientSecret || clientSecret.length === 0) {
+                toast.error('Error: Client secret is empty');
                 throw new Error('Failed to get client secret');
             }
+            console.log(clientSecret);
 
             const paymentResult = await stripe.confirmCardPayment(
                 clientSecret,
@@ -347,7 +355,11 @@ const Order = () => {
                                                         ) : (
                                                             <>
                                                                 <div>
-                                                                    <CardElement />
+                                                                    <CardElement
+                                                                        onChange={
+                                                                            handleCardChange
+                                                                        }
+                                                                    />
                                                                 </div>
                                                                 <Button
                                                                     className="mt-3"
