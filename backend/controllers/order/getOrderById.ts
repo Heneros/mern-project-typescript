@@ -14,9 +14,7 @@ const getOrderById = asyncHandler(
         }
 
         try {
-            const order = await Order.findOne({
-                paypalOrderId: req.params.id,
-            })
+            const order = await Order.findById(req.params.id)
                 .populate('user', 'username email')
                 .exec();
 

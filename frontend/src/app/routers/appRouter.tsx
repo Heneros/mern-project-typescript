@@ -34,6 +34,7 @@ import Order from 'features/order/pages/Order';
 import Cart from 'features/order/pages/Cart';
 import PaymentMethod from 'features/order/pages/PaymentMethod';
 import PlaceOrder from 'features/order/pages/PlaceOrder';
+import Success from 'features/order/pages/Success';
 
 export const AppRouter = () => {
     const router = createBrowserRouter([
@@ -95,6 +96,10 @@ export const AppRouter = () => {
                         {
                             path: '/order/:id',
                             element: <Order />,
+                        },
+                        {
+                            path: '/success/:id',
+                            element: <Success />,
                         },
                     ],
                 },

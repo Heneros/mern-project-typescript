@@ -42,7 +42,7 @@ import {
 } from '@stripe/react-stripe-js';
 import StripeCheckout from 'widgets/stripeCheckout/StripeCheckout';
 import { loadStripe } from '@stripe/stripe-js';
-const stripe = loadStripe(process.env.STRIPE_PUBLIC!);
+const stripePromise = loadStripe(process.env.STRIPE_PUBLIC!);
 
 const Order = () => {
     const { id } = useParams();
@@ -91,6 +91,34 @@ const Order = () => {
     }, [stripe, elements]);
     const handleCardChange = (event) => {
         setIsStripeReady(event.complete);
+    };
+
+    console.log(orderItems);
+
+    const handleCheckout = async () => {
+        try {
+            const response = await createCheckoutSession({
+                items: orderItems,
+                _id: _id,
+            }).unwrap();
+            const { sessionId } = response;
+
+            const stripe = await stripePromise;
+            if (!stripe) {
+                throw new Error('Stripe не загружен');
+            }
+
+            const result = await stripe.redirectToCheckout({
+                sessionId: sessionId,
+            });
+
+            if (result.error) {
+                throw new Error(result.error.message);
+            }
+        } catch (error) {
+            console.error('Checkout error:', error);
+            toast.error(error.message || 'Ошибка оплаты');
+        }
     };
 
     const handleStripePayment = async () => {
@@ -355,25 +383,19 @@ const Order = () => {
                                                         ) : (
                                                             <>
                                                                 <div>
-                                                                    <CardElement
+                                                                    {/* <CardElement
                                                                         onChange={
                                                                             handleCardChange
                                                                         }
-                                                                    />
+                                                                    /> */}
                                                                 </div>
                                                                 <Button
                                                                     className="mt-3"
                                                                     onClick={
-                                                                        handleStripePayment
-                                                                    }
-                                                                    disabled={
-                                                                        !isStripeReady ||
-                                                                        isProcessing
+                                                                        handleCheckout
                                                                     }
                                                                 >
-                                                                    {isProcessing
-                                                                        ? 'Processing...'
-                                                                        : 'Pay Now'}
+                                                                    Checkout
                                                                 </Button>
                                                             </>
                                                         )}

@@ -44,16 +44,7 @@ export const orderApiSlice = baseApiSlice.injectEndpoints({
             }),
             keepUnusedDataFor: 5,
         }),
-        createCheckoutSession: builder.mutation<
-            { url: string },
-            { items: { priceId: string; quantity: number }[] }
-        >({
-            query: (body) => ({
-                url: 'create-checkout-session',
-                method: 'POST',
-                body,
-            }),
-        }),
+
         createStripeIntent: builder.mutation({
             query: ({
                 amount,
@@ -67,6 +58,13 @@ export const orderApiSlice = baseApiSlice.injectEndpoints({
                 body: { amount, orderId },
             }),
             invalidatesTags: ['Order'],
+        }),
+        createCheckoutSession: builder.mutation({
+            query: ({ items, _id }) => ({
+                url: `${ORDER_URL}/create-checkout-session`,
+                method: 'POST',
+                body: { items, _id },
+            }),
         }),
     }),
 });

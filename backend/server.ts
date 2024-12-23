@@ -28,30 +28,31 @@ import { app, server } from './socket/socket';
 
 // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(
+    cors({
+        origin:
+            process.env.NODE_ENV === 'production'
+                ? process.env.DOMAIN!
+                : process.env.DOMAINCORS!,
+        methods: 'GET,POST,PUT,PATCH, DELETE',
+        credentials: true,
+        allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+    }),
+);
 app.use(
     session({
         secret: process.env.SESSION_SECRET!,
         resave: false,
-        saveUninitialized: false,
+        saveUninitialized: true,
         cookie: { secure: process.env.NODE_ENV !== 'development' },
     }),
 );
 
 app.use(passport.initialize());
 oauthPassport();
-
-app.use(cookieParser());
-app.use(
-    cors({
-        origin: process.env.DOMAINCORS!,
-        methods: 'GET,POST,PUT,PATCH, DELETE',
-        credentials: true,
-        allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
-    }),
-);
-
+console.log('Client Domain:', process.env.DOMAIN_CLIENT);
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('tiny'));
 }
