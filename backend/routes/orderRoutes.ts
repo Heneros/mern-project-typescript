@@ -5,6 +5,11 @@ import addOrderItem from '@/controllers/order/addOrderItem';
 import getMyOrders from '@/controllers/order/getMyOrders';
 import getOrderById from '@/controllers/order/getOrderById';
 import updateOrderToPaid from '@/controllers/order/updateOrderToPaid';
+import {
+    confirmPayment,
+    createCheckoutSession,
+    createIntent,
+} from '@/utils/stripe';
 
 const router = express.Router();
 
@@ -21,4 +26,15 @@ router
     .route('/:id/pay')
     .put(checkAuth, role.checkRole(role.ROLES.User), updateOrderToPaid);
 
+router
+    .route('/create-payment-intent')
+    .post(checkAuth, role.checkRole(role.ROLES.User), createIntent);
+
+router
+    .route('/confirm-payment')
+    .post(checkAuth, role.checkRole(role.ROLES.User), confirmPayment);
+
+router
+    .route('/create-checkout-session')
+    .post(checkAuth, role.checkRole(role.ROLES.User), createCheckoutSession);
 export default router;

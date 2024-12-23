@@ -11,6 +11,7 @@ const createIntent = asyncHandler(async (req, res) => {
         res.status(400).json({ message: 'Amount and orderId are required' });
         return;
     }
+    console.log({ amount, orderId });
     try {
         const paymentIntent = await stripe.paymentIntents.create({
             amount: Math.round(amount * 100),
@@ -51,4 +52,28 @@ const confirmPayment = asyncHandler(async (req, res) => {
         });
     }
 });
-export { createIntent, confirmPayment };
+
+const createCheckoutSession = asyncHandler(async (req, res) => {
+    const { items } = req.body;
+
+    try {
+        const session = await stripe.checkout.sessions.create({
+            payment_method_types: ['card'],
+            line_items: items.map(
+                (item: { priceId: string; quantity: number }) => ({
+                    price: item.priceId,
+                    quantity: item.quantity,
+                }),
+            ),
+            mode: 'payment',
+            success_url: `${process.env.DOMAINCORS}/success`,
+            cancel_url: `${process.env.DOMAINCORS}/cancel`,
+        });
+
+        res.status(200).json({ url: session.url });
+    } catch (error) {
+        res.status(500).json({ error: (error as Error).message });
+    }
+});
+
+export { createIntent, confirmPayment, createCheckoutSession };

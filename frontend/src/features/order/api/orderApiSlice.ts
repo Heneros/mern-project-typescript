@@ -44,15 +44,30 @@ export const orderApiSlice = baseApiSlice.injectEndpoints({
             }),
             keepUnusedDataFor: 5,
         }),
-        createStripeIntent: builder.mutation({
-            query: ({ data }) => ({
-                url: STRIPE_INTENT,
+        createCheckoutSession: builder.mutation<
+            { url: string },
+            { items: { priceId: string; quantity: number }[] }
+        >({
+            query: (body) => ({
+                url: 'create-checkout-session',
                 method: 'POST',
-                body: data,
+                body,
+            }),
+        }),
+        createStripeIntent: builder.mutation({
+            query: ({
+                amount,
+                orderId,
+            }: {
+                amount: number;
+                orderId: string;
+            }) => ({
+                url: `${ORDER_URL}/create-payment-intent`,
+                method: 'POST',
+                body: { amount, orderId },
             }),
             invalidatesTags: ['Order'],
         }),
-        
     }),
 });
 
@@ -63,4 +78,6 @@ export const {
     // useUpdateOrderToPaidMutation,
     usePayOrderMutation,
     useGetPaypalClientIdQuery,
+    useCreateStripeIntentMutation,
+    useCreateCheckoutSessionMutation,
 } = orderApiSlice;

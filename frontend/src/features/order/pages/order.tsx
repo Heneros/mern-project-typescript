@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { format } from 'date-fns';
 import { Link, useNavigate } from 'react-router-dom';
@@ -13,11 +13,14 @@ import {
     ListGroup,
     ListGroupItem,
     Row,
+    Spinner,
     Tab,
     Table,
 } from 'react-bootstrap';
 import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 import {
+    useCreateCheckoutSessionMutation,
+    useCreateStripeIntentMutation,
     useGetMyOrderByIdQuery,
     useGetPaypalClientIdQuery,
     usePayOrderMutation,
@@ -30,7 +33,13 @@ import { Loader } from 'shared/ui/loader';
 import { Message } from 'shared/ui/message';
 import { renderError } from 'shared/utils/renderError';
 import { useAppSelector } from 'shared/lib/store';
-import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
+import {
+    CardElement,
+    PaymentElement,
+    useElements,
+    useStripe,
+} from '@stripe/react-stripe-js';
+import StripeCheckout from 'widgets/stripeCheckout/StripeCheckout';
 
 const Order = () => {
     const { id } = useParams();
@@ -48,6 +57,8 @@ const Order = () => {
         error: errorPayPal,
     } = useGetPaypalClientIdQuery(undefined);
     const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
+    const [isProcessing, setIsProcessing] = useState(false);
+    const [isStripeReady, setIsStripeReady] = useState(false);
 
     const {
         _id,
@@ -55,22 +66,31 @@ const Order = () => {
         createdAt,
         isPaid,
         paidAt,
-        itemsPrice,
         orderItems,
         taxPrice,
         totalPrice,
         user,
     } = order?.order || {};
-
+    const [
+        createStripeIntent,
+        { isLoading: loadingStripe, error: errorStripeInt },
+    ] = useCreateStripeIntentMutation();
     const stripe = useStripe();
     const elements = useElements();
+    const [createCheckoutSession, { isLoading: stripeLoading }] =
+        useCreateCheckoutSessionMutation();
 
-    async function handleStripePayment() {
+    useEffect(() => {
+        if (stripe && elements) {
+            setIsStripeReady(true);
+        }
+    }, [stripe, elements]);
+
+    const handleStripePayment = async () => {
         if (!stripe || !elements) {
             toast.error('Stripe has not loaded');
             return;
         }
-
         const cardElement = elements.getElement(CardElement);
 
         if (!cardElement) {
@@ -78,29 +98,46 @@ const Order = () => {
             return;
         }
 
+        setIsProcessing(true);
+
         try {
-            const { paymentIntent, error } = await stripe.confirmCardPayment(
-                process.env.STRIPE_SECRET!,
+            const { clientSecret } = await createStripeIntent({
+                amount: totalPrice,
+                orderId: _id,
+            }).unwrap();
+
+            if (!clientSecret) {
+                toast.error('Error');
+                throw new Error('Failed to get client secret');
+            }
+
+            const paymentResult = await stripe.confirmCardPayment(
+                clientSecret,
                 {
                     payment_method: {
                         card: cardElement,
                     },
                 },
             );
+            if (paymentResult.error) {
+                toast.error(paymentResult.error.message);
+            } else if (paymentResult.paymentIntent?.status === 'succeeded') {
+                await payOrder({
+                    orderId: _id,
+                    details: orderItems,
+                });
 
-            if (error) {
-                toast.error(error.message);
-            } else if (paymentIntent?.status === 'succeeded') {
-                await payOrder({ orderId: _id, details: paymentIntent });
                 refetch();
                 toast.success('Payment successful');
             }
-        } catch (err) {
-            console.error('Stripe Payment Error:', err);
-            toast.error(err.message || 'Payment failed');
+            // const { clientSecret } = await createIntentResponse;
+            // console.log(createIntentResponse);
+            // toast.success('Success');
+        } catch (error) {
+            toast.error(error.message);
+            console.error(error);
         }
-    }
-
+    };
     useEffect(() => {
         if (!errorPayPal && !loadingPayPal && paypal.clientId) {
             const loadPaypalScript = async () => {
@@ -174,10 +211,11 @@ const Order = () => {
         toast.error(err.message);
     }
 
-    // const orderItem = order.order ?? [];
     const isLoading = loadingPay || myOrderByIdLoading;
     const error = errorOrder;
 
+    if (myOrderByIdLoading) return <Spinner animation="border" />;
+    if (errorOrder) return <Alert variant="danger">Error loading order</Alert>;
     return (
         <>
             <Breadcrumbs nameParent="Order" lastParent="Page of Order" />
@@ -297,16 +335,37 @@ const Order = () => {
                                                 />
                                                 <h5>Pay with Stripe</h5>{' '}
                                                 <ListGroup.Item>
-                                                    <CardElement />
-                                                    <Button
-                                                        className="mt-3"
-                                                        onClick={
-                                                            handleStripePayment
-                                                        }
-                                                        disabled={loadingPay}
-                                                    >
-                                                        Pay Now
-                                                    </Button>
+                                                    <div className="stripe-payment-container">
+                                                        {loadingStripe ? (
+                                                            <Spinner />
+                                                        ) : errorStripeInt ? (
+                                                            <>
+                                                                {renderError(
+                                                                    errorStripeInt,
+                                                                )}
+                                                            </>
+                                                        ) : (
+                                                            <>
+                                                                <div>
+                                                                    <CardElement />
+                                                                </div>
+                                                                <Button
+                                                                    className="mt-3"
+                                                                    onClick={
+                                                                        handleStripePayment
+                                                                    }
+                                                                    disabled={
+                                                                        !isStripeReady ||
+                                                                        isProcessing
+                                                                    }
+                                                                >
+                                                                    {isProcessing
+                                                                        ? 'Processing...'
+                                                                        : 'Pay Now'}
+                                                                </Button>
+                                                            </>
+                                                        )}
+                                                    </div>
                                                 </ListGroup.Item>
                                             </>
                                         ) : (

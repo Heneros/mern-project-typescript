@@ -12,11 +12,13 @@ const App = () => {
         currency: 'USD',
         intent: 'capture',
     };
-    const stripePromise = loadStripe(process.env.STRIPE_PUBLIC as string);
+    const stripe = loadStripe(
+        'pk_test_51Kfwo6IDfKx1lWo4MFsDTUZ63BDX3OJylj7AYm52L2UYXE0IIpYN42gU5QgxgvyKVFbI7fBmbP9KUBJsYzq2zuro00OLP9j6uV',
+    );
 
     return (
         <Providers>
-            <Elements stripe={stripePromise}>
+            <Elements stripe={stripe}>
                 <PayPalScriptProvider options={initialOptions}>
                     <AppRouter />
                 </PayPalScriptProvider>

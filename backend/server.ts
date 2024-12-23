@@ -23,7 +23,7 @@ import messageRoutes from './routes/messageRoutes';
 import oauthPassport from './config/passportSetup';
 
 import { app, server } from './socket/socket';
-import { confirmPayment, createIntent } from './utils/stripe';
+
 // export const app = express();
 
 // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
@@ -59,9 +59,6 @@ if (process.env.NODE_ENV === 'development') {
 app.use(mongoSanitize());
 app.use(morganMiddleware);
 
-// /api/v1/user/profile;
-/// http://localhost:1997/api/v1/user/profile
-
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/upload', uploadRoutes);
@@ -72,9 +69,8 @@ app.use('/api/v1/order', orderRoutes);
 app.get('/api/v1/config/paypal', (req, res) => {
     res.send({ clientId: process.env.PAYPAL_CLIENT_ID });
 });
-
-app.post('/api/v1/confirm-payment', confirmPayment);
-app.post('/api/v1/create-payment-intent', createIntent);
+// app.post('/api/v1/create-payment-intent', createIntent);
+// app.post('/api/v1/confirm-payment', confirmPayment);
 
 const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
