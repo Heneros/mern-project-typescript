@@ -95,7 +95,9 @@ const createCheckoutSession = asyncHandler(async (req, res) => {
             payment_method_types: ['card'],
             line_items: lineItems,
             mode: 'payment',
-
+            metadata: {
+                email: 'qwerty@rtdgrty.com',
+            },
             success_url: `${domain}/success/${_id}`,
             cancel_url: `${domain}/cancel`,
         });
