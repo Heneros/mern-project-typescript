@@ -13,14 +13,9 @@ import {
     ListGroup,
     ListGroupItem,
     Row,
-    Spinner,
-    Tab,
-    Table,
 } from 'react-bootstrap';
 import { Breadcrumbs } from 'shared/ui/breadcrumbs';
 import {
-    useCreateCheckoutSessionMutation,
-    useCreateStripeIntentMutation,
     useGetMyOrderByIdQuery,
     useGetPaypalClientIdQuery,
     usePayOrderMutation,
@@ -30,19 +25,11 @@ import { toast } from 'react-toastify';
 import { formatPrice } from 'shared/utils/cartFunctions';
 import { PostInfo } from 'shared/types';
 import { Loader } from 'shared/ui/loader';
-import { Message } from 'shared/ui/message';
 import { renderError } from 'shared/utils/renderError';
-import { useAppSelector } from 'shared/lib/store';
-import {
-    CardElement,
-    Elements,
-    PaymentElement,
-    useElements,
-    useStripe,
-} from '@stripe/react-stripe-js';
+
 import StripeCheckout from 'widgets/stripeCheckout/StripeCheckout';
-import { loadStripe } from '@stripe/stripe-js';
-const stripePromise = loadStripe(process.env.STRIPE_PUBLIC!);
+import PayPalPayment from 'widgets/payPalPayment/PayPalPayment';
+import { handleError } from 'shared/utils/handleError';
 
 const Order = () => {
     const { id } = useParams();
@@ -52,17 +39,7 @@ const Order = () => {
         isLoading: myOrderByIdLoading,
         error: errorOrder,
     } = useGetMyOrderByIdQuery(id);
-
     const [payOrder, { isLoading: loadingPay }] = usePayOrderMutation();
-    const {
-        data: paypal,
-        isLoading: loadingPayPal,
-        error: errorPayPal,
-    } = useGetPaypalClientIdQuery(undefined);
-    const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
-    const [isProcessing, setIsProcessing] = useState(false);
-    const [isStripeReady, setIsStripeReady] = useState(false);
-    const [isReady, setIsReady] = useState(false);
 
     const {
         _id,
@@ -75,183 +52,39 @@ const Order = () => {
         totalPrice,
         user,
     } = order?.order || {};
-    const [
-        createStripeIntent,
-        { isLoading: loadingStripe, error: errorStripeInt },
-    ] = useCreateStripeIntentMutation();
-    const stripe = useStripe();
-    const elements = useElements();
-    const [createCheckoutSession, { isLoading: stripeLoading }] =
-        useCreateCheckoutSessionMutation();
 
-    useEffect(() => {
-        if (stripe && elements) {
-            setIsStripeReady(true);
-        }
-    }, [stripe, elements]);
-    const handleCardChange = (event) => {
-        setIsStripeReady(event.complete);
-    };
-
-    console.log(orderItems);
-
-    const handleCheckout = async () => {
+    const handlePaymentSuccess = async (details: any) => {
         try {
-            const response = await createCheckoutSession({
-                items: orderItems,
-                _id: _id,
-            }).unwrap();
-            const { sessionId } = response;
+            const currentOrderId = _id;
 
-            const stripe = await stripePromise;
-            if (!stripe) {
-                throw new Error('Stripe не загружен');
+            if (!currentOrderId) {
+                toast.error('Order ID is missing');
+                return;
             }
 
-            const result = await stripe.redirectToCheckout({
-                sessionId: sessionId,
-            });
-
-            if (result.error) {
-                throw new Error(result.error.message);
-            }
-        } catch (error) {
-            console.error('Checkout error:', error);
-            toast.error(error.message || 'Ошибка оплаты');
-        }
-    };
-
-    const handleStripePayment = async () => {
-        if (!stripe || !elements) {
-            toast.error('Stripe has not loaded');
-            return;
-        }
-        const cardElement = elements.getElement(CardElement);
-
-        if (!cardElement) {
-            toast.error('Card element not found');
-            return;
-        }
-
-        setIsProcessing(true);
-
-        try {
-            const { clientSecret } = await createStripeIntent({
-                amount: totalPrice,
-                orderId: _id,
-            }).unwrap();
-
-            if (!clientSecret || clientSecret.length === 0) {
-                toast.error('Error: Client secret is empty');
-                throw new Error('Failed to get client secret');
-            }
-            console.log(clientSecret);
-
-            const paymentResult = await stripe.confirmCardPayment(
-                clientSecret,
-                {
-                    payment_method: {
-                        card: cardElement,
-                    },
-                },
-            );
-            if (paymentResult.error) {
-                toast.error(paymentResult.error.message);
-            } else if (paymentResult.paymentIntent?.status === 'succeeded') {
-                await payOrder({
-                    orderId: _id,
-                    details: orderItems,
-                });
-
-                refetch();
-                toast.success('Payment successful');
-            }
-            // const { clientSecret } = await createIntentResponse;
-            // console.log(createIntentResponse);
-            // toast.success('Success');
-        } catch (error) {
-            toast.error(error.message);
-            console.error(error);
-        }
-    };
-    useEffect(() => {
-        if (!errorPayPal && !loadingPayPal && paypal.clientId) {
-            const loadPaypalScript = async () => {
-                paypalDispatch({
-                    type: 'resetOptions',
-                    value: {
-                        'client-id': paypal.clientId,
-                        currency: 'USD',
-                    },
-                });
-
-                paypalDispatch({
-                    type: 'setLoadingStatus',
-                    value: 'pending',
-                });
-            };
-
-            if (order && !order.isPaid) {
-                if (!window.paypal) {
-                    loadPaypalScript();
-                }
-            }
-        }
-    }, [errorPayPal, loadingPayPal, order, paypal, paypalDispatch]);
-
-    function onApprove(data, actions) {
-        return actions.order.capture().then(async function (details) {
-            try {
-                const currentOrderId = _id;
-
-                if (!currentOrderId) {
-                    toast.error('Order ID is missing');
-                    return;
-                }
-
-                await payOrder({
+            await payOrder({
+                data: {
                     orderId: currentOrderId,
-                    details,
-                });
-
-                refetch();
-                toast.success('Payment successful');
-            } catch (err) {
-                console.error('Payment Error:', err);
-                toast.error(err?.data?.message || err.message);
-            }
-        });
-    }
-    function createOrder(data, actions) {
-        if (!isLoading && !errorOrder && totalPrice === undefined)
-            if (!totalPrice) {
-                toast.error('Total price is not defined');
-                return Promise.reject(new Error('Total price is missing'));
-            }
-        return actions.order
-            .create({
-                purchase_units: [
-                    {
-                        amount: {
-                            value: totalPrice,
-                        },
-                    },
-                ],
-            })
-            .then((orderId) => {
-                return orderId;
+                    updateTime: new Date().toISOString(),
+                    paymentId: 'PAYMENT_ID_FROM_PAYPAL',
+                    paymentStatus: 'COMPLETED',
+                    payerEmail: user.email,
+                },
             });
-    }
-    function onError(err) {
-        console.log(err.message);
-        toast.error(err.message);
-    }
+
+            refetch();
+            toast.success('Payment successful');
+        } catch (err) {
+            // console.error('Payment Error:', err);
+            // toast.error(err?.data?.message || err.message);
+            const errorMessage = handleError(error);
+            toast.error(errorMessage || 'Error payment payOrder');
+        }
+    };
 
     const isLoading = loadingPay || myOrderByIdLoading;
     const error = errorOrder;
 
-    if (myOrderByIdLoading) return <Spinner animation="border" />;
-    if (errorOrder) return <Alert variant="danger">Error loading order</Alert>;
     return (
         <>
             <Breadcrumbs nameParent="Order" lastParent="Page of Order" />
@@ -259,7 +92,7 @@ const Order = () => {
                 {isLoading ? (
                     <Loader />
                 ) : error ? (
-                    <Message variant="danger">{renderError(error)}</Message>
+                    <Alert variant="danger">{renderError(error)}</Alert>
                 ) : (
                     <>
                         {' '}
@@ -362,43 +195,26 @@ const Order = () => {
                                             : 'Invalid date'}
                                     </ListGroup.Item>
                                     <ListGroup.Item>
-                                        {!loadingPayPal && !isPaid ? (
+                                        {!isPaid ? (
                                             <>
-                                                <PayPalButtons
-                                                    createOrder={createOrder}
-                                                    onApprove={onApprove}
-                                                    onError={onError}
+                                                <PayPalPayment
+                                                    orderId={_id}
+                                                    totalPrice={totalPrice}
+                                                    isPaid={isPaid}
+                                                    onPaymentSuccess={
+                                                        handlePaymentSuccess
+                                                    }
                                                 />
                                                 <h5>Pay with Stripe</h5>{' '}
                                                 <ListGroup.Item>
                                                     <div className="stripe-payment-container">
-                                                        {loadingStripe ? (
-                                                            <Spinner />
-                                                        ) : errorStripeInt ? (
-                                                            <>
-                                                                {renderError(
-                                                                    errorStripeInt,
-                                                                )}
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                <div>
-                                                                    {/* <CardElement
-                                                                        onChange={
-                                                                            handleCardChange
-                                                                        }
-                                                                    /> */}
-                                                                </div>
-                                                                <Button
-                                                                    className="mt-3"
-                                                                    onClick={
-                                                                        handleCheckout
-                                                                    }
-                                                                >
-                                                                    Checkout
-                                                                </Button>
-                                                            </>
-                                                        )}
+                                                        <StripeCheckout
+                                                            _id={_id}
+                                                            orderItems={
+                                                                orderItems
+                                                            }
+                                                            user={user}
+                                                        />
                                                     </div>
                                                 </ListGroup.Item>
                                             </>

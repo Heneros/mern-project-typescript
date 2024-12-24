@@ -6,6 +6,8 @@ import Order from '@/models/orderModel';
 
 const updateOrderToPaid = asyncHandler(async (req: Request, res: Response) => {
     try {
+        // console.log('Request body:', req.body);
+
         let order = await Order.findById(req.params.id);
 
         if (!order) {
@@ -19,7 +21,7 @@ const updateOrderToPaid = asyncHandler(async (req: Request, res: Response) => {
             id: req.body.id,
             status: req.body.status,
             update_time: req.body.update_time,
-            email_address: req.body.payer?.email_address || 'email_address',
+            email_address: req.body.payer?.email_address,
         };
 
         const updatedOrder = await order.save();

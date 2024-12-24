@@ -56,9 +56,8 @@ const confirmPayment = asyncHandler(async (req, res) => {
 });
 
 const createCheckoutSession = asyncHandler(async (req, res) => {
-    console.log('Request body:', req.body);
 
-    const { items, _id } = req.body;
+    const { items, _id, user } = req.body;
 
     if (!_id) {
         console.error('Missing _id');
@@ -66,8 +65,8 @@ const createCheckoutSession = asyncHandler(async (req, res) => {
         return;
     }
 
-    const idUnqique = uuidv4();
-    console.log(idUnqique);
+    // const idUnqique = uuidv4();
+    // console.log(idUnqique);
 
     if (!items || !Array.isArray(items) || items.length === 0) {
         console.error('Invalid items:', items);
@@ -95,9 +94,9 @@ const createCheckoutSession = asyncHandler(async (req, res) => {
             payment_method_types: ['card'],
             line_items: lineItems,
             mode: 'payment',
-            metadata: {
-                email: 'qwerty@rtdgrty.com',
-            },
+            // metadata: {
+            //     email: user.email,
+            // },
             success_url: `${domain}/success/${_id}`,
             cancel_url: `${domain}/cancel`,
         });

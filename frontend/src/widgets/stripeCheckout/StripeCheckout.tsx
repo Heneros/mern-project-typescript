@@ -1,80 +1,63 @@
 import React, { useState } from 'react';
-import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { Button } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import {
-    useCreateStripeIntentMutation,
-    usePayOrderMutation,
-} from 'features/order/api/orderApiSlice';
+import { useCreateCheckoutSessionMutation } from 'features/order/api/orderApiSlice';
+import { loadStripe } from '@stripe/stripe-js';
+import { handleError } from 'shared/utils/handleError';
 
+const stripePromise = loadStripe(process.env.STRIPE_PUBLIC!);
+
+type User = {
+    _id: string;
+};
 const StripeCheckout = ({
     _id,
     orderItems,
-    totalPrice,
+    user,
 }: {
     _id: string;
     orderItems: any[];
-    totalPrice: number;
+    user: User;
 }) => {
-    const stripe = useStripe();
-    const elements = useElements();
-    const [isProcessing, setIsProcessing] = useState(false);
+    const [createCheckoutSession, { isLoading: stripeLoading }] =
+        useCreateCheckoutSessionMutation();
 
-    const [createStripeIntent] = useCreateStripeIntentMutation();
-    const [payOrder] = usePayOrderMutation();
-
-    const handleStripePayment = async () => {
-        if (!stripe || !elements) {
-            toast.error('Stripe is not ready');
-            return;
-        }
-
-        const cardElement = elements.getElement(CardElement);
-        if (!cardElement) {
-            toast.error('Card details are missing');
-            return;
-        }
-
-        setIsProcessing(true);
-
+    const handleCheckout = async () => {
         try {
-            const { clientSecret } = await createStripeIntent({
-                amount: totalPrice * 100,
-                orderId: _id,
+            const response = await createCheckoutSession({
+                items: orderItems,
+                _id: _id,
+                user,
             }).unwrap();
+            const { sessionId } = response;
 
-            const paymentResult = await stripe.confirmCardPayment(
-                clientSecret,
-                {
-                    payment_method: {
-                        card: cardElement,
-                    },
-                },
-            );
-
-            if (paymentResult.error) {
-                toast.error(paymentResult.error.message);
-            } else if (paymentResult.paymentIntent?.status === 'succeeded') {
-                await payOrder({ orderId: _id, details: orderItems }).unwrap();
-                toast.success('Payment successful!');
+            const stripe = await stripePromise;
+            if (!stripe) {
+                throw new Error('Stripe not loaded');
             }
-        } catch (error: any) {
-            toast.error(error.message || 'Payment failed');
-        } finally {
-            setIsProcessing(false);
+
+            const result = await stripe.redirectToCheckout({
+                sessionId: sessionId,
+            });
+
+            if (result.error) {
+                throw new Error(result.error.message);
+            }
+        } catch (error) {
+            console.error('Checkout error:', error);
+            const errorMessage = handleError(error);
+            toast.error(errorMessage || 'Error payment stripe');
         }
     };
 
     return (
         <div className="stripe-checkout">
-            <CardElement />
             <Button
                 className="mt-3 w-100"
                 variant="success"
-                onClick={handleStripePayment}
-                disabled={isProcessing}
+                onClick={handleCheckout}
             >
-                {isProcessing ? 'Processing...' : 'Pay Now'}
+                Pay with Stripe
             </Button>
         </div>
     );

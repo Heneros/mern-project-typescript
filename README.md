@@ -3,7 +3,7 @@
 MERN. TS. Fullstack app about booking villa. You can create account through Google, Github or using email(don't forget accept validation letter in mail box). You can reset password. In this app have 4 roles: admin, editor, user and visitor
 
 In this app, you can also have live chat with other users using Socket.IO. 
-This app also includes elements of an e-commerce platform, featuring CRUD operations for products and orders, as well as integration with Stripe and PayPal.
+This app also includes elements of an e-commerce platform, featuring CRUD operations for products and orders, as well as integration with Stripe and PayPal api.
 
 # Packages 
 
@@ -37,5 +37,5 @@ This app also includes elements of an e-commerce platform, featuring CRUD operat
 - CDN add
 - After order was paid. Should be link on PDF file. 
 - Redis integrate
-
+- Discounts and coupons 
 ## 

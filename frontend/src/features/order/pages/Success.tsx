@@ -11,25 +11,23 @@ const Success = () => {
     const [payOrder] = usePayOrderMutation();
     const {
         data: order,
-        refetch,
         isLoading: myOrderByIdLoading,
         error: errorOrder,
     } = useGetMyOrderByIdQuery(id);
     const navigate = useNavigate();
-    const { orderItems } = order?.order || {};
+    const { orderItems, user } = order?.order || {};
 
     console.log(orderItems);
     useEffect(() => {
         const processPayment = async () => {
             try {
-                // await payOrder({
-                //     orderId: id,
-                //     details: orderItems,
-                // }).unwrap();
                 await payOrder({
                     data: {
                         orderId: id,
-                        details: orderItems,
+                        updateTime: new Date().toISOString(),
+                        paymentId: 'PAYMENT_ID_FROM_STRIPE',
+                        paymentStatus: 'COMPLETED',
+                        payerEmail: user.email,
                     },
                 });
                 toast.success('Payment successfully accomplished!!');
@@ -49,7 +47,7 @@ const Success = () => {
     }
 
     if (errorOrder) {
-        return <div>Error: {errorOrder.message}</div>;
+        return <div>Error: {errorOrder?.message}</div>;
     }
 
     return <div>Processing Payment...</div>;

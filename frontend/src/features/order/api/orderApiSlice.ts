@@ -23,18 +23,19 @@ export const orderApiSlice = baseApiSlice.injectEndpoints({
             }),
             providesTags: ['Order'],
         }),
-        // updateOrderToPaid: builder.mutation({
-        //     query: (id) => ({
-        //         url: `${ORDER_URL}/${id}/pay`,
-        //         method: 'PUT',
-        //     }),
-        //     invalidatesTags: ['Order'],
-        // }),
+
         payOrder: builder.mutation({
             query: ({ data }) => ({
                 url: `${ORDER_URL}/${data.orderId}/pay`,
                 method: 'PUT',
-                body: data.details,
+                body: {
+                    id: data.paymentId,
+                    status: data.paymentStatus,
+                    update_time: data.updateTime,
+                    payer: {
+                        email_address: data.payerEmail,
+                    },
+                },
             }),
             invalidatesTags: ['Order'],
         }),
@@ -60,10 +61,10 @@ export const orderApiSlice = baseApiSlice.injectEndpoints({
             invalidatesTags: ['Order'],
         }),
         createCheckoutSession: builder.mutation({
-            query: ({ items, _id }) => ({
+            query: ({ items, _id, user }) => ({
                 url: `${ORDER_URL}/create-checkout-session`,
                 method: 'POST',
-                body: { items, _id },
+                body: { items, _id, user },
             }),
         }),
     }),
