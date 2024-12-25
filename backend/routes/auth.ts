@@ -26,6 +26,49 @@ const domain = process.env.DOMAIN_CLIENT;
 
 router.post('/register', apiLimiter, registerUser);
 router.get('/verify/:emailToken/:userId', verifyUserEmail);
+/**
+ * @swagger
+ * /auth/login:
+ *   post:
+ *     tags:
+ *       - Authentication
+ *     summary: Login a user
+ *     description: Log in a user and return access and refresh tokens.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 description: User's email address.
+ *                 example: user@example.com
+ *               password:
+ *                 type: string
+ *                 description: User's password.
+ *                 example: password123
+ *     responses:
+ *       200:
+ *         description: Successful login
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 accessToken:
+ *                   type: string
+ *                   description: Access token.
+ *                   example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+ *                 refreshToken:
+ *                   type: string
+ *                   description: Refresh token.
+ *                   example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+ *       401:
+ *         description: Unauthorized - Invalid credentials
+ */
+
 router.post('/login', loginLimiter, loginUser);
 router.route('/new_access_token').get(newAccessToken);
 router.post('/resend_email_token', resendEmailVerificationToken);

@@ -57,7 +57,6 @@ app.use(
 app.use(passport.initialize());
 oauthPassport();
 
-
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('tiny'));
 }
@@ -76,8 +75,15 @@ app.get('/api/v1/config/paypal', (req, res) => {
     res.send({ clientId: process.env.PAYPAL_CLIENT_ID });
 });
 
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
+app.use(
+    '/docs',
+    swaggerUi.serve,
+    swaggerUi.setup(swaggerSpec, {
+        swaggerOptions: {
+            persistAuthorization: true,
+        },
+    }),
+);
 
 const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;

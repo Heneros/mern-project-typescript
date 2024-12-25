@@ -1,5 +1,7 @@
 import swaggerJSDoc from 'swagger-jsdoc';
 
+const domain = process.env.DOMAIN;
+
 const swaggerDefinition = {
     openapi: '3.0.0',
     info: {
@@ -13,15 +15,28 @@ const swaggerDefinition = {
     },
     servers: [
         {
-            url: 'http://localhost:1997',
+            url: `${domain}/api/v1`,
             description: 'Development server',
         },
     ],
+    tags: [
+        {
+            name: 'Authentication',
+            description:
+                'Endpoints for authentication(login, logout, register...)',
+        },
+        {
+            name: 'User',
+            description:
+                'Endpoints for user(profile, updateAccount, deleteAccount, deactivate...)',
+        },
+    ],
+    
     components: {
         securitySchemes: {
             bearerAuth: {
                 type: 'http',
-                schema: 'bearer',
+                scheme: 'bearer',
                 bearerFormat: 'JWT',
             },
         },

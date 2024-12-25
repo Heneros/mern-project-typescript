@@ -13,13 +13,33 @@ const router = express.Router();
 
 /**
  * @swagger
- * /api/v1/user/profile:
+ * /user/profile:
  *   get:
+ *     tags:
+ *        - User
  *     summary: Retrieve a profile user
  *     description: Only authenticated users can see their profile.
+ *     security:
+ *      - bearerAuth: []
+ *     parameters:
+ *      - in: header
+ *        name: Authorization
+ *        schema:
+ *          type: string
+ *          example: test1323
+ *        description: Access token bearer to request
  *     responses:
  *       200:
  *         description: Profile  success.
+ *         content:
+ *             application/json:
+ *                schema: 
+ *                  type: object
+ *                  properties:
+ *                    id:
+ *                     type: string
+ *                     description: User ID.
+ *                     example: "64bfc36f2f84e2c5c98e4cda"
  *       401:
  *         description: Unauthorized.
  *       404:
