@@ -1,96 +1,121 @@
 {
-  error: backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.
-  ,
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+      at listenInCluster (node:net:1946:12)
+      at Server.listen (node:net:2044:7)
+      at startServer (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:102:20)
+      at Object.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:118:5)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1621:12)
+      at Module.load (node:internal/modules/cjs/loader:1208:32) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
   level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:102:20)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:118:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:102:20)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:118:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)',
   exception: true,
-  date: 'Tue Dec 24 2024 01:15:49 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 25 2024 17:48:55 GMT+0200 (Eastern European Standard Time)',
   process: {
-    pid: 27024,
+    pid: 19580,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 482807808,
-      heapTotal: 436887552,
-      heapUsed: 398994888,
-      external: 24865687,
-      arrayBuffers: 21858003
+      rss: 504856576,
+      heapTotal: 452669440,
+      heapUsed: 414366520,
+      external: 24924032,
+      arrayBuffers: 21882083
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 203549.328 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 177877.843 },
   trace: [
     {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1898,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1946,
       method: null,
       native: false
     },
     {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2044,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: 'startServer',
+      line: 102,
       method: null,
       native: false
     },
     {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
+      column: 5,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: null,
+      line: 118,
       method: null,
       native: false
     },
     {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
       native: false
     },
     {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      column: 23,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
-      line: 1617,
+      line: 1618,
       method: '_compile',
       native: false
     },
@@ -98,13 +123,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -114,122 +139,131 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-12-24 01:15:49.512 AM'
+  timestamp: '2024-12-25 05:48:55.586 PM'
 }
 {
-  error: backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.
-  ,
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+      at listenInCluster (node:net:1946:12)
+      at Server.listen (node:net:2044:7)
+      at startServer (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:103:20)
+      at Object.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:119:5)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1621:12)
+      at Module.load (node:internal/modules/cjs/loader:1208:32) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
   level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:20)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:119:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:20)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:119:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)',
   exception: true,
-  date: 'Tue Dec 24 2024 01:16:17 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 25 2024 17:57:20 GMT+0200 (Eastern European Standard Time)',
   process: {
-    pid: 8732,
+    pid: 1852,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 484020224,
-      heapTotal: 434266112,
-      heapUsed: 407947408,
-      external: 24873911,
-      arrayBuffers: 21871346
+      rss: 499326976,
+      heapTotal: 450572288,
+      heapUsed: 419256424,
+      external: 24915803,
+      arrayBuffers: 21873854
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 203577.046 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 272.203 },
   trace: [
     {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1898,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1946,
       method: null,
       native: false
     },
     {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2044,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: 'startServer',
+      line: 103,
       method: null,
       native: false
     },
     {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
+      column: 5,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: null,
+      line: 119,
       method: null,
       native: false
     },
     {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
       native: false
     },
     {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      column: 23,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
-      line: 1617,
+      line: 1618,
       method: '_compile',
       native: false
     },
@@ -237,13 +271,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -253,126 +287,131 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-12-24 01:16:17.243 AM'
+  timestamp: '2024-12-25 05:57:20.484 PM'
 }
 {
-  error: backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.
-  backend/controllers/order/getOrderById.ts(17,39): error TS1003: Identifier expected.
-  ,
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+      at listenInCluster (node:net:1946:12)
+      at Server.listen (node:net:2044:7)
+      at startServer (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:103:20)
+      at Object.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:119:5)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1621:12)
+      at Module.load (node:internal/modules/cjs/loader:1208:32) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
   level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    'backend/controllers/order/getOrderById.ts(17,39): error TS1003: Identifier expected.\r\n' +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    'backend/controllers/order/getOrderById.ts(17,39): error TS1003: Identifier expected.\r\n' +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/controllers/order/getOrderById.ts(15,17): error TS2339: Property '_id' does not exist on type 'String'.\r\n" +
-    'backend/controllers/order/getOrderById.ts(17,39): error TS1003: Identifier expected.\r\n' +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:20)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:119:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:20)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:119:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)',
   exception: true,
-  date: 'Tue Dec 24 2024 01:17:02 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 25 2024 18:00:06 GMT+0200 (Eastern European Standard Time)',
   process: {
-    pid: 26712,
+    pid: 11636,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 483225600,
-      heapTotal: 434528256,
-      heapUsed: 408167192,
-      external: 24873871,
-      arrayBuffers: 21871306
+      rss: 497922048,
+      heapTotal: 452145152,
+      heapUsed: 420168200,
+      external: 24915795,
+      arrayBuffers: 21873846
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 203622.625 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 438.39 },
   trace: [
     {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1898,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1946,
       method: null,
       native: false
     },
     {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2044,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: 'startServer',
+      line: 103,
       method: null,
       native: false
     },
     {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
+      column: 5,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: null,
+      line: 119,
       method: null,
       native: false
     },
     {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
       native: false
     },
     {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      column: 23,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
-      line: 1617,
+      line: 1618,
       method: '_compile',
       native: false
     },
@@ -380,13 +419,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -396,122 +435,131 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-12-24 01:17:02.821 AM'
+  timestamp: '2024-12-25 06:00:06.662 PM'
 }
 {
-  error: backend/utils/stripe.ts(104,41): error TS2304: Cannot find name 'invoice_creation'.
-  ,
+  error: Error: listen EADDRINUSE: address already in use :::1997
+      at Server.setupListenHandle [as _listen2] (node:net:1898:16)
+      at listenInCluster (node:net:1946:12)
+      at Server.listen (node:net:2044:7)
+      at startServer (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:103:20)
+      at Object.<anonymous> (C:\Users\Admin\Desktop\Projects\mern-ts\backend\server.ts:119:5)
+      at Module._compile (node:internal/modules/cjs/loader:1358:14)
+      at Module.m._compile (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+      at Object.require.extensions.<computed> [as .ts] (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ts-node\src\index.ts:1621:12)
+      at Module.load (node:internal/modules/cjs/loader:1208:32) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 1997
+  },
   level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,41): error TS2304: Cannot find name 'invoice_creation'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,41): error TS2304: Cannot find name 'invoice_creation'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,41): error TS2304: Cannot find name 'invoice_creation'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::1997\n' +
+    'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:20)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:119:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::1997\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n' +
+    '    at listenInCluster (node:net:1946:12)\n' +
+    '    at Server.listen (node:net:2044:7)\n' +
+    '    at startServer (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:103:20)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts:119:5)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n' +
+    '    at Module.m._compile (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1208:32)',
   exception: true,
-  date: 'Tue Dec 24 2024 01:29:22 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 25 2024 18:00:43 GMT+0200 (Eastern European Standard Time)',
   process: {
-    pid: 25552,
+    pid: 11324,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 486748160,
-      heapTotal: 436887552,
-      heapUsed: 406326896,
-      external: 24873799,
-      arrayBuffers: 21857923
+      rss: 502779904,
+      heapTotal: 450048000,
+      heapUsed: 420595816,
+      external: 24915763,
+      arrayBuffers: 21873814
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 204362.609 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 475.125 },
   trace: [
     {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1898,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1946,
       method: null,
       native: false
     },
     {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2044,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: 'startServer',
+      line: 103,
       method: null,
       native: false
     },
     {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
+      column: 5,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts',
+      function: null,
+      line: 119,
       method: null,
       native: false
     },
     {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1358,
+      method: '_compile',
       native: false
     },
     {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      column: 23,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
-      line: 1617,
+      line: 1618,
       method: '_compile',
       native: false
     },
@@ -519,13 +567,13 @@
       column: 10,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module._extensions..js',
-      line: 1427,
+      line: 1416,
       method: '.js',
       native: false
     },
     {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\src\\index.ts',
       function: 'Object.require.extensions.<computed> [as .ts]',
       line: 1621,
       method: 'ts]',
@@ -535,864 +583,156 @@
       column: 32,
       file: 'node:internal/modules/cjs/loader',
       function: 'Module.load',
-      line: 1206,
+      line: 1208,
       method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
       native: false
     }
   ],
-  timestamp: '2024-12-24 01:29:22.801 AM'
+  timestamp: '2024-12-25 06:00:43.394 PM'
 }
 {
-  error: backend/utils/stripe.ts(104,41): error TS18047: 'session.invoice_creation' is possibly 'null'.
-  backend/utils/stripe.ts(104,66): error TS2339: Property 'metadata' does not exist on type 'InvoiceCreation'.
-  ,
+  error: Error: EPIPE: broken pipe, write
+      at Socket._write (node:internal/net:61:18)
+      at writeOrBuffer (node:internal/streams/writable:564:12)
+      at _write (node:internal/streams/writable:493:10)
+      at Socket.Writable.write (node:internal/streams/writable:502:10)
+      at Array.logRequest (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\morgan\index.js:130:14)
+      at listener (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\morgan\node_modules\on-finished\index.js:169:15)
+      at onFinish (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\morgan\node_modules\on-finished\index.js:100:5)
+      at callback (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ee-first\index.js:55:10)
+      at ServerResponse.onevent (C:\Users\Admin\Desktop\Projects\mern-ts\node_modules\ee-first\index.js:93:5)
+      at ServerResponse.emit (node:events:531:35) {
+    errno: -4047,
+    syscall: 'write',
+    code: 'EPIPE'
+  },
   level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,41): error TS18047: 'session.invoice_creation' is possibly 'null'.\r\n" +
-    "backend/utils/stripe.ts(104,66): error TS2339: Property 'metadata' does not exist on type 'InvoiceCreation'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,41): error TS18047: 'session.invoice_creation' is possibly 'null'.\r\n" +
-    "backend/utils/stripe.ts(104,66): error TS2339: Property 'metadata' does not exist on type 'InvoiceCreation'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,41): error TS18047: 'session.invoice_creation' is possibly 'null'.\r\n" +
-    "backend/utils/stripe.ts(104,66): error TS2339: Property 'metadata' does not exist on type 'InvoiceCreation'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  message: 'uncaughtException: EPIPE: broken pipe, write\n' +
+    'Error: EPIPE: broken pipe, write\n' +
+    '    at Socket._write (node:internal/net:61:18)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:564:12)\n' +
+    '    at _write (node:internal/streams/writable:493:10)\n' +
+    '    at Socket.Writable.write (node:internal/streams/writable:502:10)\n' +
+    '    at Array.logRequest (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\index.js:130:14)\n' +
+    '    at listener (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\node_modules\\on-finished\\index.js:169:15)\n' +
+    '    at onFinish (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\node_modules\\on-finished\\index.js:100:5)\n' +
+    '    at callback (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ee-first\\index.js:55:10)\n' +
+    '    at ServerResponse.onevent (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ee-first\\index.js:93:5)\n' +
+    '    at ServerResponse.emit (node:events:531:35)',
+  stack: 'Error: EPIPE: broken pipe, write\n' +
+    '    at Socket._write (node:internal/net:61:18)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:564:12)\n' +
+    '    at _write (node:internal/streams/writable:493:10)\n' +
+    '    at Socket.Writable.write (node:internal/streams/writable:502:10)\n' +
+    '    at Array.logRequest (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\index.js:130:14)\n' +
+    '    at listener (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\node_modules\\on-finished\\index.js:169:15)\n' +
+    '    at onFinish (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\node_modules\\on-finished\\index.js:100:5)\n' +
+    '    at callback (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ee-first\\index.js:55:10)\n' +
+    '    at ServerResponse.onevent (C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ee-first\\index.js:93:5)\n' +
+    '    at ServerResponse.emit (node:events:531:35)',
   exception: true,
-  date: 'Tue Dec 24 2024 01:30:45 GMT+0200 (Восточная Европа, стандартное время)',
+  date: 'Wed Dec 25 2024 18:01:15 GMT+0200 (Eastern European Standard Time)',
   process: {
-    pid: 6720,
+    pid: 1348,
     uid: null,
     gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
+    cwd: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts',
     execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
+    version: 'v20.14.0',
     argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 498503680,
-      heapTotal: 445276160,
-      heapUsed: 407693504,
-      external: 24873863,
-      arrayBuffers: 21857987
+      rss: 447803392,
+      heapTotal: 396992512,
+      heapUsed: 387426016,
+      external: 24979534,
+      arrayBuffers: 21940344
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 204445.765 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 506.968 },
   trace: [
     {
+      column: 18,
+      file: 'node:internal/net',
+      function: 'Socket._write',
+      line: 61,
+      method: '_write',
+      native: false
+    },
+    {
       column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 564,
       method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
       native: false
     },
     {
       column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-24 01:30:45.952 AM'
-}
-{
-  error: backend/utils/stripe.ts(104,68): error TS2339: Property 'metadata' does not exist on type 'InvoiceCreation'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,68): error TS2339: Property 'metadata' does not exist on type 'InvoiceCreation'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,68): error TS2339: Property 'metadata' does not exist on type 'InvoiceCreation'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,68): error TS2339: Property 'metadata' does not exist on type 'InvoiceCreation'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Tue Dec 24 2024 01:30:56 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 15380,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 490565632,
-      heapTotal: 437411840,
-      heapUsed: 401488216,
-      external: 24873879,
-      arrayBuffers: 21858003
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 204456.39 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 493,
       method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
       native: false
     },
     {
       column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
+      file: 'node:internal/streams/writable',
+      function: 'Socket.Writable.write',
+      line: 502,
+      method: 'write',
       native: false
     },
     {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
+      column: 14,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\index.js',
+      function: 'Array.logRequest',
+      line: 130,
+      method: 'logRequest',
       native: false
     },
     {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-24 01:30:56.579 AM'
-}
-{
-  error: backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Tue Dec 24 2024 01:33:23 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 25636,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 499412992,
-      heapTotal: 445538304,
-      heapUsed: 407583968,
-      external: 24882071,
-      arrayBuffers: 21866195
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 204603.187 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
+      column: 15,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\node_modules\\on-finished\\index.js',
+      function: 'listener',
+      line: 169,
       method: null,
       native: false
     },
     {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
+      column: 5,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\morgan\\node_modules\\on-finished\\index.js',
+      function: 'onFinish',
+      line: 100,
       method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
       native: false
     },
     {
       column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ee-first\\index.js',
+      function: 'callback',
+      line: 55,
+      method: null,
       native: false
     },
     {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
+      column: 5,
+      file: 'C:\\Users\\Admin\\Desktop\\Projects\\mern-ts\\node_modules\\ee-first\\index.js',
+      function: 'ServerResponse.onevent',
+      line: 93,
+      method: 'onevent',
       native: false
     },
     {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
+      column: 35,
+      file: 'node:events',
+      function: 'ServerResponse.emit',
+      line: 531,
+      method: 'emit',
       native: false
     }
   ],
-  timestamp: '2024-12-24 01:33:23.375 AM'
-}
-{
-  error: backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Tue Dec 24 2024 01:33:44 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 30524,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 488812544,
-      heapTotal: 436887552,
-      heapUsed: 400978896,
-      external: 24873855,
-      arrayBuffers: 21857979
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 204624.734 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-24 01:33:44.927 AM'
-}
-{
-  error: backend/controllers/order/updateOrderToPaid.ts(23,13): error TS1117: An object literal cannot have multiple properties with the same name.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    'backend/controllers/order/updateOrderToPaid.ts(23,13): error TS1117: An object literal cannot have multiple properties with the same name.\r\n' +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/controllers/order/updateOrderToPaid.ts(23,13): error TS1117: An object literal cannot have multiple properties with the same name.\r\n' +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    'backend/controllers/order/updateOrderToPaid.ts(23,13): error TS1117: An object literal cannot have multiple properties with the same name.\r\n' +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Tue Dec 24 2024 01:34:12 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 13836,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 474066944,
-      heapTotal: 424353792,
-      heapUsed: 396922288,
-      external: 24881900,
-      arrayBuffers: 21879498
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 204652.343 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-24 01:34:12.530 AM'
-}
-{
-  error: backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.
-  ,
-  level: 'error',
-  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
-    "backend/utils/stripe.ts(104,50): error TS2339: Property 'details' does not exist on type 'Response<Session>'.\r\n" +
-    '\n' +
-    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
-    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
-    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
-    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
-  exception: true,
-  date: 'Tue Dec 24 2024 01:34:19 GMT+0200 (Восточная Европа, стандартное время)',
-  process: {
-    pid: 18820,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 499888128,
-      heapTotal: 446062592,
-      heapUsed: 415640288,
-      external: 24873839,
-      arrayBuffers: 21871274
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 204659.125 },
-  trace: [
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'createTSError',
-      line: 859,
-      method: null,
-      native: false
-    },
-    {
-      column: 19,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'reportTSError',
-      line: 863,
-      method: null,
-      native: false
-    },
-    {
-      column: 36,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'getOutput',
-      line: 1077,
-      method: null,
-      native: false
-    },
-    {
-      column: 41,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.compile',
-      line: 1433,
-      method: 'compile',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1617,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    }
-  ],
-  timestamp: '2024-12-24 01:34:19.314 AM'
+  timestamp: '2024-12-25 06:01:15.243 PM'
 }

@@ -11,10 +11,23 @@ import getAllUserChats from '@/controllers/user/getAllPublicChat';
 
 const router = express.Router();
 
-router.route('/profile').delete(checkAuth, deleteMyAccount);
-
+/**
+ * @swagger
+ * /api/v1/user/profile:
+ *   get:
+ *     summary: Retrieve a profile user
+ *     description: Only authenticated users can see their profile.
+ *     responses:
+ *       200:
+ *         description: Profile  success.
+ *       401:
+ *         description: Unauthorized.
+ *       404:
+ *         description: Not found
+ * */
 router.get('/profile', checkAuth, getUserProfile);
 router.patch('/profile', checkAuth, updateUserProfile);
+router.route('/profile').delete(checkAuth, deleteMyAccount);
 
 router
     .route('/all')

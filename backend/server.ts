@@ -8,6 +8,9 @@ import mongoSanitize from 'express-mongo-sanitize';
 import passport from 'passport';
 import morgan from 'morgan';
 import session from 'express-session';
+import swaggerJSDoc from 'swagger-jsdoc';
+
+import swaggerUi from 'swagger-ui-express';
 
 import { errorHandler, notFound } from './middleware/errorMiddleware';
 import { morganMiddleware, systemLogs } from './utils/Logger';
@@ -23,6 +26,7 @@ import messageRoutes from './routes/messageRoutes';
 import oauthPassport from './config/passportSetup';
 
 import { app, server } from './socket/socket';
+import { swaggerSpec } from './swagger';
 
 // export const app = express();
 
@@ -52,7 +56,8 @@ app.use(
 
 app.use(passport.initialize());
 oauthPassport();
-console.log('Client Domain:', process.env.DOMAIN_CLIENT);
+
+
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('tiny'));
 }
@@ -70,8 +75,9 @@ app.use('/api/v1/order', orderRoutes);
 app.get('/api/v1/config/paypal', (req, res) => {
     res.send({ clientId: process.env.PAYPAL_CLIENT_ID });
 });
-// app.post('/api/v1/create-payment-intent', createIntent);
-// app.post('/api/v1/confirm-payment', confirmPayment);
+
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
 
 const port = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI;
