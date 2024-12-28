@@ -24,6 +24,48 @@ import checkAuthController from '../controllers/auth/checkAuthController';
 const router = express.Router();
 const domain = process.env.DOMAIN_CLIENT;
 
+/**
+ * @swagger
+ *
+ * /auth/register:
+ *   post:
+ *     tags:
+ *        - Authentication
+ *     summary: Registration user
+ *     description: Registration with confirmation in mail box
+ *     requestBody:
+ *      required: true
+ *      content:
+ *          application/json:
+ *             schema:
+ *                 type: object
+ *                 properties:
+ *                   email:
+ *                     type: string
+ *                     description: Users email should be unique
+ *                     example: test4@gmail.com
+ *                   username:
+ *                     type: string
+ *                     description:  username must be alphanumeric,without special characters.Hyphens and underscores allowed. Also he should have unique.
+ *                     example: james1ja
+ *                   password:
+ *                     type: string
+ *                     description: Users password 
+ *                     example:  password
+ *                   passwordConfirm:
+ *                     type: string
+ *                     description: Confirm password
+ *                     example:  confirm password
+ *      response:
+ *          
+ *             400:
+ *               description: Invalid request.         
+ *
+ *
+ *
+ *
+ * */
+
 router.post('/register', apiLimiter, registerUser);
 router.get('/verify/:emailToken/:userId', verifyUserEmail);
 /**

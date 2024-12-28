@@ -30,8 +30,21 @@ const swaggerDefinition = {
             description:
                 'Endpoints for user(profile, updateAccount, deleteAccount, deactivate...)',
         },
+        {
+            name: 'Properties',
+            description: 'Endpoints for user(CRUD operations)',
+        },
+        {
+            name: 'Order',
+            description: 'Endpoints for order(CRUD operations)',
+        },
+        {
+            name: 'Message',
+            description:
+                'For socket.io communication(Send message, get chat or chats)',
+        },
     ],
-    
+
     components: {
         securitySchemes: {
             bearerAuth: {
