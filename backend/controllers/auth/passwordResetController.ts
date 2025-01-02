@@ -56,6 +56,10 @@ const resetPasswordRequest = asyncHandler(async (req, res) => {
 
         res.status(200).json({
             success: true,
+            newVerificationToken:
+                process.env.NODE_ENV === 'development'
+                    ? newVerificationToken
+                    : undefined,
             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
         });
     }

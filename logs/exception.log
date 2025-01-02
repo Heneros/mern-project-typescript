@@ -944,3 +944,3527 @@
   ],
   timestamp: '2025-01-02 09:28:12.810 PM'
 }
+{
+  error: TypeError: Cannot convert undefined or null to object
+      at Function.getOwnPropertyNames (<anonymous>)
+      at addDataToSwaggerObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:203:34)
+      at updateSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:222:3)
+      at getSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:235:5)
+      at module.exports (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\lib.js:35:33)
+      at Object.<anonymous> (D:\Projects\mern-project-typescript\backend\swagger.ts:69:40)
+      at Module._compile (node:internal/modules/cjs/loader:1369:14)
+      at Module.m._compile (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+      at Object.require.extensions.<computed> [as .ts] (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1621:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot convert undefined or null to object\n' +
+    'TypeError: Cannot convert undefined or null to object\n' +
+    '    at Function.getOwnPropertyNames (<anonymous>)\n' +
+    '    at addDataToSwaggerObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:203:34)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:3)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)\n' +
+    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\swagger.ts:69:40)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+  stack: 'TypeError: Cannot convert undefined or null to object\n' +
+    '    at Function.getOwnPropertyNames (<anonymous>)\n' +
+    '    at addDataToSwaggerObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:203:34)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:3)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)\n' +
+    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\swagger.ts:69:40)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:31:04 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 11444,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 497983488,
+      heapTotal: 449781760,
+      heapUsed: 417163696,
+      external: 24869929,
+      arrayBuffers: 21866196
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 253796.39 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: 'Function.getOwnPropertyNames',
+      line: null,
+      method: 'getOwnPropertyNames',
+      native: false
+    },
+    {
+      column: 34,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'addDataToSwaggerObject',
+      line: 203,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'updateSpecificationObject',
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'getSpecificationObject',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js',
+      function: 'module.exports',
+      line: 35,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 40,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\swagger.ts',
+      function: null,
+      line: 69,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1369,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:31:04.881 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 15, column 9:
+              properties:
+              ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/resend_email_token:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Resend email verification token.\r\n' +
+        '  description: Resends an email verification token to the user if the email is not yet verified.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - email\r\n' +
+        '        properties:\r\n' +
+        '             email:\r\n' +
+        '               type: string\r\n' +
+        '               format: email\r\n' +
+        '               example: user@example.com\r\n' +
+        '               description: The email address of the user.\n' +
+        '\x00',
+      position: 384,
+      line: 14,
+      column: 8
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 15, column 9:\n' +
+    '            properties:\n' +
+    '            ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 15, column 9:\n' +
+    '            properties:\n' +
+    '            ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 15, column 9:\n' +
+    '            properties:\n' +
+    '            ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:34:23 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 14540,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 496111616,
+      heapTotal: 449519616,
+      heapUsed: 418560776,
+      external: 24869897,
+      arrayBuffers: 21866164
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 253994.718 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:34:23.209 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 15, column 15:
+                    properties:
+                    ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/resend_email_token:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Resend email verification token.\r\n' +
+        '  description: Resends an email verification token to the user if the email is not yet verified.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - email\r\n' +
+        '              properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\n' +
+        '\x00',
+      position: 390,
+      line: 14,
+      column: 14
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 15, column 15:\n' +
+    '                  properties:\n' +
+    '                  ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 15, column 15:\n' +
+    '                  properties:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 15, column 15:\n' +
+    '                  properties:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:34:40 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 14300,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 492605440,
+      heapTotal: 448995328,
+      heapUsed: 419113176,
+      external: 24878559,
+      arrayBuffers: 21874826
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 254011.843 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:34:40.331 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 21, column 11:
+                responses:
+                ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/resend_email_token:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Resend email verification token.\r\n' +
+        '  description: Resends an email verification token to the user if the email is not yet verified.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - email\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '          responses:\n' +
+        '\x00',
+      position: 600,
+      line: 20,
+      column: 10
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 21, column 11:\n' +
+    '              responses:\n' +
+    '              ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 21, column 11:\n' +
+    '              responses:\n' +
+    '              ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 21, column 11:\n' +
+    '              responses:\n' +
+    '              ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:36:29 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 18860,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 494821376,
+      heapTotal: 449519616,
+      heapUsed: 419975248,
+      external: 24886783,
+      arrayBuffers: 21883050
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 254120.781 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:36:29.261 PM'
+}
+{
+  error: YAMLException: unidentified alias "*******" at line 22, column 34:
+                      example: ********
+                                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readAlias (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1276:5)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1368:20)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'unidentified alias "*******"',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - password\r\n' +
+        '              - passwordConfirm\r\n' +
+        '              - userId\r\n' +
+        '\r\n' +
+        '             properties:\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Successfully sent request to email account.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 571,
+      line: 21,
+      column: 33
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:51:34 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 2724,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 495575040,
+      heapTotal: 448208896,
+      heapUsed: 421729856,
+      external: 24886711,
+      arrayBuffers: 21882978
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255026.281 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readAlias',
+      line: 1276,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1368,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:51:34.759 PM'
+}
+{
+  error: YAMLException: unidentified alias "*******" at line 22, column 34:
+                      example: ********
+                                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readAlias (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1276:5)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1368:20)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'unidentified alias "*******"',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - password\r\n' +
+        '              - passwordConfirm\r\n' +
+        '              - userId\r\n' +
+        '\r\n' +
+        '             properties:\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Successfully sent request to email account.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 571,
+      line: 21,
+      column: 33
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:51:49 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 26504,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 494612480,
+      heapTotal: 448995328,
+      heapUsed: 420973640,
+      external: 24886799,
+      arrayBuffers: 21883066
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255040.781 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readAlias',
+      line: 1276,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1368,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:51:49.274 PM'
+}
+{
+  error: YAMLException: unidentified alias "*******" at line 22, column 34:
+                      example: ********
+                                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readAlias (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1276:5)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1368:20)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'unidentified alias "*******"',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - password\r\n' +
+        '              - passwordConfirm\r\n' +
+        '              - userId\r\n' +
+        '\r\n' +
+        '             properties:\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Successfully sent request to email account.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 571,
+      line: 21,
+      column: 33
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:51:54 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15760,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 494563328,
+      heapTotal: 448208896,
+      heapUsed: 421809592,
+      external: 24886831,
+      arrayBuffers: 21883098
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255046.14 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readAlias',
+      line: 1276,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1368,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:51:54.634 PM'
+}
+{
+  error: YAMLException: unidentified alias "*******" at line 22, column 34:
+                      example: ********
+                                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readAlias (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1276:5)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1368:20)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'unidentified alias "*******"',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - password\r\n' +
+        '              - passwordConfirm\r\n' +
+        '              - userId\r\n' +
+        '\r\n' +
+        '             properties:\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               passwordConfirm:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Successfully sent request to email account.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 571,
+      line: 21,
+      column: 33
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:52:07 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 24016,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 499269632,
+      heapTotal: 452927488,
+      heapUsed: 416983920,
+      external: 24869976,
+      arrayBuffers: 21866243
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255058.734 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readAlias',
+      line: 1276,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1368,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:52:07.216 PM'
+}
+{
+  error: YAMLException: unidentified alias "*******" at line 22, column 34:
+                      example: ********
+                                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readAlias (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1276:5)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1368:20)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'unidentified alias "*******"',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - password\r\n' +
+        '              - passwordConfirm\r\n' +
+        '              - userId\r\n' +
+        '\r\n' +
+        '             properties:\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               passwordConfirm:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '                  \r\n' +
+        '\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Successfully sent request to email account.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 571,
+      line: 21,
+      column: 33
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:52:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 20724,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 495026176,
+      heapTotal: 448208896,
+      heapUsed: 420927632,
+      external: 24886775,
+      arrayBuffers: 21883042
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255077.234 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readAlias',
+      line: 1276,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1368,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:52:25.714 PM'
+}
+{
+  error: YAMLException: unidentified alias "*******" at line 22, column 34:
+                      example: ********
+                                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readAlias (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1276:5)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1368:20)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'unidentified alias "*******"',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - password\r\n' +
+        '              - passwordConfirm\r\n' +
+        '              - userId\r\n' +
+        '\r\n' +
+        '             properties:\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               passwordConfirm:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               userId:\r\n' +
+        '                type: string\r\n' +
+        '                example: 64f50a60f89d874e12345678\r\n' +
+        '                description: The unique ID of the user requesting the reset.\r\n' +
+        '\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Successfully sent request to email account.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 571,
+      line: 21,
+      column: 33
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:52:44 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 7808,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 502591488,
+      heapTotal: 457646080,
+      heapUsed: 426089712,
+      external: 24869921,
+      arrayBuffers: 21866188
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255096.156 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readAlias',
+      line: 1276,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1368,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:52:44.640 PM'
+}
+{
+  error: YAMLException: unidentified alias "*******" at line 22, column 34:
+                      example: ********
+                                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readAlias (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1276:5)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1368:20)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'unidentified alias "*******"',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - password\r\n' +
+        '              - passwordConfirm\r\n' +
+        '              - userId\r\n' +
+        '\r\n' +
+        '             properties:\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               passwordConfirm:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               userId:\r\n' +
+        '                type: string\r\n' +
+        '                example: 64f50a60f89d874e12345678\r\n' +
+        '                description: The unique ID of the user requesting the reset.\r\n' +
+        '\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Password reset was successful.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 571,
+      line: 21,
+      column: 33
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: unidentified alias "*******" at line 22, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:52:51 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 15936,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 503742464,
+      heapTotal: 456859648,
+      heapUsed: 427689512,
+      external: 24886807,
+      arrayBuffers: 21883074
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255103.171 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readAlias',
+      line: 1276,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1368,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:52:51.651 PM'
+}
+{
+  error: YAMLException: unidentified alias "*******" at line 21, column 34:
+                      example: ********
+                                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readAlias (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1276:5)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1368:20)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'unidentified alias "*******"',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - password\r\n' +
+        '              - passwordConfirm\r\n' +
+        '              - userId\r\n' +
+        '             properties:\r\n' +
+        '               password:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               passwordConfirm:\r\n' +
+        '                type: string\r\n' +
+        '                format: password\r\n' +
+        '                example: ********\r\n' +
+        '                description: The new password of the user.\r\n' +
+        '               userId:\r\n' +
+        '                type: string\r\n' +
+        '                example: 64f50a60f89d874e12345678\r\n' +
+        '                description: The unique ID of the user requesting the reset.\r\n' +
+        '\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Password reset was successful.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 569,
+      line: 20,
+      column: 33
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: unidentified alias "*******" at line 21, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    'YAMLException: unidentified alias "*******" at line 21, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: unidentified alias "*******" at line 21, column 34:\n' +
+    '                    example: ********\n' +
+    '                                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readAlias (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1276:5)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1368:20)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:53:02 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 1844,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 501219328,
+      heapTotal: 450306048,
+      heapUsed: 418680824,
+      external: 24869985,
+      arrayBuffers: 21866252
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255114.109 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readAlias',
+      line: 1276,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1368,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:53:02.600 PM'
+}
+{
+  error: [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m57[0m:[93m30[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.
+    Type '{ success: boolean; newVerificationToken: any; }' has no call signatures.
+  
+  [7m57[0m         res.status(200).json({
+  [7m  [0m [91m                             ~[0m
+  [7m58[0m             success: true,
+  [7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+  [7m59[0m             newVerificationToken:
+  [7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+  [7m60[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
+  [7m  [0m [91m~~~~~~~~~~~~~~~~~~~~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m60[0m:[93m13[0m - [91merror[0m[90m TS2552: [0mCannot find name 'message'. Did you mean 'onmessage'?
+  
+  [7m60[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
+  [7m  [0m [91m            ~~~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.dom.d.ts[0m:[93m18255[0m:[93m13[0m
+      [7m18255[0m declare var onmessage: ((this: Window, ev: MessageEvent) => any) | null;
+      [7m     [0m [96m            ~~~~~~~~~[0m
+      'onmessage' is declared here.
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m60[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m',' expected.
+  
+  [7m60[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
+  [7m  [0m [91m                   ~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m60[0m:[93m22[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+  
+  [7m60[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
+  [7m  [0m [91m                     ~~~~~~~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m61[0m:[93m9[0m - [91merror[0m[90m TS1135: [0mArgument expression expected.
+  
+  [7m61[0m         });
+  [7m  [0m [91m        ~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m61[0m:[93m10[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+  
+  [7m61[0m         });
+  [7m  [0m [91m         ~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m62[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+  
+  [7m62[0m     }
+  [7m  [0m [91m    ~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m63[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+  
+  [7m63[0m });
+  [7m  [0m [91m~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m63[0m:[93m2[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+  
+  [7m63[0m });
+  [7m  [0m [91m ~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m57\x1B[0m:\x1B[93m30\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2349: \x1B[0mThis expression is not callable.\r\n' +
+    "  Type '{ success: boolean; newVerificationToken: any; }' has no call signatures.\r\n" +
+    '\r\n' +
+    '\x1B[7m57\x1B[0m         res.status(200).json({\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                             ~\x1B[0m\r\n' +
+    '\x1B[7m58\x1B[0m             success: true,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m59\x1B[0m             newVerificationToken:\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'message'. Did you mean 'onmessage'?\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m            ~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.dom.d.ts\x1B[0m:\x1B[93m18255\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m18255\x1B[0m declare var onmessage: ((this: Window, ev: MessageEvent) => any) | null;\r\n' +
+    '    \x1B[7m     \x1B[0m \x1B[96m            ~~~~~~~~~\x1B[0m\r\n' +
+    "    'onmessage' is declared here.\r\n" +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m22\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1136: \x1B[0mProperty assignment expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                     ~~~~~~~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1135: \x1B[0mArgument expression expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m        ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m62\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m62\x1B[0m     }\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m    ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m1\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m2\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m ~\x1B[0m\r\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m57\x1B[0m:\x1B[93m30\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2349: \x1B[0mThis expression is not callable.\r\n' +
+    "  Type '{ success: boolean; newVerificationToken: any; }' has no call signatures.\r\n" +
+    '\r\n' +
+    '\x1B[7m57\x1B[0m         res.status(200).json({\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                             ~\x1B[0m\r\n' +
+    '\x1B[7m58\x1B[0m             success: true,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m59\x1B[0m             newVerificationToken:\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'message'. Did you mean 'onmessage'?\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m            ~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.dom.d.ts\x1B[0m:\x1B[93m18255\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m18255\x1B[0m declare var onmessage: ((this: Window, ev: MessageEvent) => any) | null;\r\n' +
+    '    \x1B[7m     \x1B[0m \x1B[96m            ~~~~~~~~~\x1B[0m\r\n' +
+    "    'onmessage' is declared here.\r\n" +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m22\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1136: \x1B[0mProperty assignment expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                     ~~~~~~~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1135: \x1B[0mArgument expression expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m        ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m62\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m62\x1B[0m     }\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m    ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m1\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m2\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m ~\x1B[0m\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m57\x1B[0m:\x1B[93m30\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2349: \x1B[0mThis expression is not callable.\r\n' +
+    "  Type '{ success: boolean; newVerificationToken: any; }' has no call signatures.\r\n" +
+    '\r\n' +
+    '\x1B[7m57\x1B[0m         res.status(200).json({\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                             ~\x1B[0m\r\n' +
+    '\x1B[7m58\x1B[0m             success: true,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m59\x1B[0m             newVerificationToken:\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'message'. Did you mean 'onmessage'?\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m            ~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.dom.d.ts\x1B[0m:\x1B[93m18255\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m18255\x1B[0m declare var onmessage: ((this: Window, ev: MessageEvent) => any) | null;\r\n' +
+    '    \x1B[7m     \x1B[0m \x1B[96m            ~~~~~~~~~\x1B[0m\r\n' +
+    "    'onmessage' is declared here.\r\n" +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m22\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1136: \x1B[0mProperty assignment expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                     ~~~~~~~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1135: \x1B[0mArgument expression expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m        ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m62\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m62\x1B[0m     }\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m    ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m1\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m2\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m ~\x1B[0m\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Jan 02 2025 22:59:56 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 5980,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 464871424,
+      heapTotal: 412409856,
+      heapUsed: 381533248,
+      external: 24850728,
+      arrayBuffers: 21848163
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255527.64 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 10:59:56.130 PM'
+}
+{
+  error: [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m57[0m:[93m30[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.
+    Type '{ success: boolean; newVerificationToken: string | undefined; }' has no call signatures.
+  
+  [7m57[0m         res.status(200).json({
+  [7m  [0m [91m                             ~[0m
+  [7m58[0m             success: true,
+  [7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+  [7m59[0m             newVerificationToken: process.env.
+  [7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+  [7m60[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
+  [7m  [0m [91m~~~~~~~~~~~~~~~~~~~~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m60[0m:[93m20[0m - [91merror[0m[90m TS1005: [0m',' expected.
+  
+  [7m60[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
+  [7m  [0m [91m                   ~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m60[0m:[93m22[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.
+  
+  [7m60[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
+  [7m  [0m [91m                     ~~~~~~~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m61[0m:[93m9[0m - [91merror[0m[90m TS1135: [0mArgument expression expected.
+  
+  [7m61[0m         });
+  [7m  [0m [91m        ~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m61[0m:[93m10[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+  
+  [7m61[0m         });
+  [7m  [0m [91m         ~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m62[0m:[93m5[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+  
+  [7m62[0m     }
+  [7m  [0m [91m    ~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m63[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+  
+  [7m63[0m });
+  [7m  [0m [91m~[0m
+  [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m63[0m:[93m2[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+  
+  [7m63[0m });
+  [7m  [0m [91m ~[0m
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m57\x1B[0m:\x1B[93m30\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2349: \x1B[0mThis expression is not callable.\r\n' +
+    "  Type '{ success: boolean; newVerificationToken: string | undefined; }' has no call signatures.\r\n" +
+    '\r\n' +
+    '\x1B[7m57\x1B[0m         res.status(200).json({\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                             ~\x1B[0m\r\n' +
+    '\x1B[7m58\x1B[0m             success: true,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m59\x1B[0m             newVerificationToken: process.env.\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m22\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1136: \x1B[0mProperty assignment expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                     ~~~~~~~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1135: \x1B[0mArgument expression expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m        ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m62\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m62\x1B[0m     }\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m    ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m1\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m2\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m ~\x1B[0m\r\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m57\x1B[0m:\x1B[93m30\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2349: \x1B[0mThis expression is not callable.\r\n' +
+    "  Type '{ success: boolean; newVerificationToken: string | undefined; }' has no call signatures.\r\n" +
+    '\r\n' +
+    '\x1B[7m57\x1B[0m         res.status(200).json({\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                             ~\x1B[0m\r\n' +
+    '\x1B[7m58\x1B[0m             success: true,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m59\x1B[0m             newVerificationToken: process.env.\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m22\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1136: \x1B[0mProperty assignment expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                     ~~~~~~~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1135: \x1B[0mArgument expression expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m        ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m62\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m62\x1B[0m     }\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m    ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m1\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m2\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m ~\x1B[0m\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m57\x1B[0m:\x1B[93m30\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2349: \x1B[0mThis expression is not callable.\r\n' +
+    "  Type '{ success: boolean; newVerificationToken: string | undefined; }' has no call signatures.\r\n" +
+    '\r\n' +
+    '\x1B[7m57\x1B[0m         res.status(200).json({\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                             ~\x1B[0m\r\n' +
+    '\x1B[7m58\x1B[0m             success: true,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m59\x1B[0m             newVerificationToken: process.env.\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~~~~~~~~~~~~~~~~~~~~\x1B[0m\r\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m20\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1005: \x1B[0m',' expected.\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                   ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m22\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1136: \x1B[0mProperty assignment expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m                     ~~~~~~~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m9\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1135: \x1B[0mArgument expression expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m        ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m61\x1B[0m:\x1B[93m10\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m61\x1B[0m         });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m         ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m62\x1B[0m:\x1B[93m5\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m62\x1B[0m     }\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m    ~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m1\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m~\x1B[0m\r\n' +
+    '\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m63\x1B[0m:\x1B[93m2\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS1128: \x1B[0mDeclaration or statement expected.\r\n' +
+    '\r\n' +
+    '\x1B[7m63\x1B[0m });\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m ~\x1B[0m\r\n' +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Jan 02 2025 23:00:09 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 11016,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 456445952,
+      heapTotal: 407506944,
+      heapUsed: 374032272,
+      external: 24850680,
+      arrayBuffers: 21848115
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255541.109 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 11:00:09.601 PM'
+}
+{
+  error: [96mbackend/controllers/auth/passwordResetController.ts[0m:[93m60[0m:[93m13[0m - [91merror[0m[90m TS2552: [0mCannot find name 'message'. Did you mean 'onmessage'?
+  
+  [7m60[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,
+  [7m  [0m [91m            ~~~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.dom.d.ts[0m:[93m18255[0m:[93m13[0m
+      [7m18255[0m declare var onmessage: ((this: Window, ev: MessageEvent) => any) | null;
+      [7m     [0m [96m            ~~~~~~~~~[0m
+      'onmessage' is declared here.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'message'. Did you mean 'onmessage'?\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m            ~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.dom.d.ts\x1B[0m:\x1B[93m18255\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m18255\x1B[0m declare var onmessage: ((this: Window, ev: MessageEvent) => any) | null;\r\n' +
+    '    \x1B[7m     \x1B[0m \x1B[96m            ~~~~~~~~~\x1B[0m\r\n' +
+    "    'onmessage' is declared here.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'message'. Did you mean 'onmessage'?\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m            ~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.dom.d.ts\x1B[0m:\x1B[93m18255\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m18255\x1B[0m declare var onmessage: ((this: Window, ev: MessageEvent) => any) | null;\r\n' +
+    '    \x1B[7m     \x1B[0m \x1B[96m            ~~~~~~~~~\x1B[0m\r\n' +
+    "    'onmessage' is declared here.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96mbackend/controllers/auth/passwordResetController.ts\x1B[0m:\x1B[93m60\x1B[0m:\x1B[93m13\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2552: \x1B[0mCannot find name 'message'. Did you mean 'onmessage'?\r\n" +
+    '\r\n' +
+    '\x1B[7m60\x1B[0m             message: `Hey ${existingUser.firstName}, an email has been sent to your account with the password reset link`,\r\n' +
+    '\x1B[7m  \x1B[0m \x1B[91m            ~~~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.dom.d.ts\x1B[0m:\x1B[93m18255\x1B[0m:\x1B[93m13\x1B[0m\r\n' +
+    '    \x1B[7m18255\x1B[0m declare var onmessage: ((this: Window, ev: MessageEvent) => any) | null;\r\n' +
+    '    \x1B[7m     \x1B[0m \x1B[96m            ~~~~~~~~~\x1B[0m\r\n' +
+    "    'onmessage' is declared here.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Thu Jan 02 2025 23:00:28 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22876,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 456376320,
+      heapTotal: 405069824,
+      heapUsed: 375385408,
+      external: 24850720,
+      arrayBuffers: 21848155
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255560.359 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 11:00:28.849 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 32, column 18:
+                       newVerificationToken:
+                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - email\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Successfully sent request to email account.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                 newVerificationToken:\r\n' +
+        '                     type: string\r\n' +
+        '                     \r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 907,
+      line: 31,
+      column: 17
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 32, column 18:\n' +
+    '                     newVerificationToken:\n' +
+    '                     ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 32, column 18:\n' +
+    '                     newVerificationToken:\n' +
+    '                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 32, column 18:\n' +
+    '                     newVerificationToken:\n' +
+    '                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 23:01:00 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16944,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 495325184,
+      heapTotal: 449781760,
+      heapUsed: 418348000,
+      external: 24869921,
+      arrayBuffers: 21866188
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255592.453 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 11:01:00.941 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 32, column 18:
+                       newVerificationToken:
+                       ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/reset_password_request:\r\n' +
+        ' post:\r\n' +
+        '  tags:\r\n' +
+        '    - Authentication\r\n' +
+        '  summary: Reset Password Request.\r\n' +
+        '  description: Reset Password request should send an email to user to reset password.\r\n' +
+        '  requestBody:\r\n' +
+        '    required: true\r\n' +
+        '    content:\r\n' +
+        '      application/json:\r\n' +
+        '         schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - email\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '  responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Successfully sent request to email account.\r\n' +
+        '       content:\r\n' +
+        '           application/json:\r\n' +
+        '             schema:\r\n' +
+        '               type: object\r\n' +
+        '               properties:\r\n' +
+        '                  success:\r\n' +
+        '                     type: boolean\r\n' +
+        '                     example: true\r\n' +
+        '                 newVerificationToken:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: newVerificationToken\r\n' +
+        '                  message:\r\n' +
+        '                     type: string\r\n' +
+        '                     example: "USERNAME, an email has been sent to your account with the password reset link"\r\n' +
+        '     400:\r\n' +
+        '       description:  That email is not associated with any account\r\n' +
+        '     500:\r\n' +
+        '       description: Internal server error.\n' +
+        '\x00',
+      position: 907,
+      line: 31,
+      column: 17
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 32, column 18:\n' +
+    '                     newVerificationToken:\n' +
+    '                     ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 32, column 18:\n' +
+    '                     newVerificationToken:\n' +
+    '                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 32, column 18:\n' +
+    '                     newVerificationToken:\n' +
+    '                     ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Thu Jan 02 2025 23:01:08 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 17624,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 500060160,
+      heapTotal: 448995328,
+      heapUsed: 420509848,
+      external: 24886807,
+      arrayBuffers: 21883074
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 255599.734 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-02 11:01:08.215 PM'
+}

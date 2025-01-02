@@ -179,42 +179,163 @@ router.get('/verify/:emailToken/:userId', verifyUserEmail);
 
 router.post('/login', loginLimiter, loginUser);
 
+router.route('/new_access_token').get(newAccessToken);
+
 /**
  * @swagger
- * /auth/new_access_token:
- *  get:
- *    tags:
- *      - Authentication
- *    summary: New Access Token
- *    description: Send access token to user after registration.
- *    parameters:
- *      - in: cookie
- *        name: jwtVilla
- *        required: true
- *        schema:
- *          type: string
- *          description: Refresh token stored in the browser cookies.
- *        response:
- *          200:
- *           description: Successfully issued a new access token.
- *           content:
- *              application/json:
- *               schema:
- *                  type: object
- *                  properties:
- *                    success:
+ * /auth/resend_email_token:
+ *  post:
+ *   tags:
+ *     - Authentication
+ *   summary: Resend email verification token.
+ *   description: Resends an email verification token to the user if the email is not yet verified.
+ *   requestBody:
+ *     required: true
+ *     content:
+ *       application/json:
+ *          schema:
+ *              type: object
+ *              required:
+ *               - email
+ *              properties:
+ *                email:
+ *                 type: string
+ *                 format: email
+ *                 example: user@example.com
+ *                 description: The email address of the user.
+ *   responses:
+ *      200:
+ *        description: Successfully sent a new email verification link.
+ *        content:
+ *            application/json:
+ *              schema:
+ *                type: object
+ *                properties:
+ *                   success:
  *                      type: boolean
  *                      example: true
- *
+ *                   message:
+ *                      type: string
+ *                      example: "USERNAME,  an email has been sent to your account, please verify within 15 minutes"
+ *      400:
+ *        description:  Bad Request. Invalid email, user not found, or user already verified.
+ *      500:
+ *        description: Internal server error.
+ */
+router.post('/resend_email_token', resendEmailVerificationToken);
+
+/**
+ * @swagger
+ * /auth/reset_password_request:
+ *  post:
+ *   tags:
+ *     - Authentication
+ *   summary: Reset Password Request.
+ *   description: Reset Password request should send an email to user to reset password.
+ *   requestBody:
+ *     required: true
+ *     content:
+ *       application/json:
+ *          schema:
+ *              type: object
+ *              required:
+ *               - email
+ *              properties:
+ *                email:
+ *                 type: string
+ *                 format: email
+ *                 example: user@example.com
+ *                 description: The email address of the user.
+ *   responses:
+ *      200:
+ *        description: Successfully sent request to email account.
+ *        content:
+ *            application/json:
+ *              schema:
+ *                type: object
+ *                properties:
+ *                   success:
+ *                      type: boolean
+ *                      example: true
+ *                   newVerificationToken:
+ *                      type: string
+ *                      example: newVerificationToken
+ *                   message:
+ *                      type: string
+ *                      example: "USERNAME, an email has been sent to your account with the password reset link"
+ *      400:
+ *        description:  That email is not associated with any account
+ *      500:
+ *        description: Internal server error.
  *
  *
  */
-router.route('/new_access_token').get(newAccessToken);
-router.post('/resend_email_token', resendEmailVerificationToken);
 router.post('/reset_password_request', resetPasswordRequest);
+
+/**
+ * @swagger
+ * /auth/reset_password:
+ *  post:
+ *    tags:
+ *      - Authentication
+ *    summary: Reset Password
+ *    description: Allows a user to reset their password using a token.
+ *    requestBody:
+ *      required: true
+ *      content:
+ *        application/json:
+ *          schema:
+ *            type: object
+ *            required:
+ *              - password
+ *              - passwordConfirm
+ *              - userId
+ *              - emailToken
+ *            properties:
+ *              password:
+ *                type: string
+ *                format: password
+ *                example: StrongPass123!
+ *                description: The new password for the user.
+ *              passwordConfirm:
+ *                type: string
+ *                format: password
+ *                example: StrongPass123!
+ *                description: Confirmation of the new password.
+ *              token:
+ *                type: string
+ *                example: 64f50a60f89d874e12345678
+ *                description: The unique ID of the user requesting the reset.
+ *    responses:
+ *      200:
+ *        description: Password reset was successful.
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: object
+ *              properties:
+ *                success:
+ *                  type: boolean
+ *                  example: true
+ *                message:
+ *                  type: string
+ *                  example: "Hey John,Your password reset was successful. An email has been sent to confirm the same"
+ *      400:
+ *        description: Bad Request. Missing or invalid fields, token expired, or password mismatch.
+ *        content:
+ *          application/json:
+ *            schema:
+ *              type: object
+ *              properties:
+ *                message:
+ *                  type: string
+ *                  example: "Your token is either invalid or expired. Try resetting your password again"
+ *      500:
+ *        description: Internal server error.
+ */
+
 router.post('/reset_password', resetPassword);
 router.get('/logout', logoutUser);
-router.get('/check', checkAuth, checkAuthController);
 
 router.route('/feedback').post(apiLimiter, feedbackFormController);
 
