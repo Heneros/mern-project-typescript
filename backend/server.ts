@@ -100,6 +100,7 @@ if (process.env.NODE_ENV === 'production') {
         res.send('<h1>Dev version running 1!</h1>');
     });
 }
+
 app.use(notFound);
 app.use(errorHandler);
 

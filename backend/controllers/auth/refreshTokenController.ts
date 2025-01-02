@@ -99,8 +99,7 @@ const newAccessToken = async (req: Request, res: Response): Promise<void> => {
         } catch (error) {
             existingUser.refreshToken = [...newRefreshTokenArray];
             await existingUser.save();
-            res.sendStatus(403);
-            //      return;
+            //  res.status(403).json({ message: `Refresh token error ${error}` });
         }
     } catch (error) {
         res.sendStatus(500);
