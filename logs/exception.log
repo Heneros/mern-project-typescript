@@ -4468,3 +4468,3147 @@
   ],
   timestamp: '2025-01-02 11:01:08.215 PM'
 }
+{
+  error: TypeError: Cannot convert undefined or null to object
+      at Function.getOwnPropertyNames (<anonymous>)
+      at addDataToSwaggerObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:203:34)
+      at updateSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:222:3)
+      at getSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:235:5)
+      at module.exports (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\lib.js:35:33)
+      at Object.<anonymous> (D:\Projects\mern-project-typescript\backend\swagger.ts:69:40)
+      at Module._compile (node:internal/modules/cjs/loader:1369:14)
+      at Module.m._compile (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1618:23)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+      at Object.require.extensions.<computed> [as .ts] (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1621:12),
+  level: 'error',
+  message: 'uncaughtException: Cannot convert undefined or null to object\n' +
+    'TypeError: Cannot convert undefined or null to object\n' +
+    '    at Function.getOwnPropertyNames (<anonymous>)\n' +
+    '    at addDataToSwaggerObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:203:34)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:3)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)\n' +
+    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\swagger.ts:69:40)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+  stack: 'TypeError: Cannot convert undefined or null to object\n' +
+    '    at Function.getOwnPropertyNames (<anonymous>)\n' +
+    '    at addDataToSwaggerObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:203:34)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:3)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)\n' +
+    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\swagger.ts:69:40)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:00:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 34548,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 493936640,
+      heapTotal: 448471040,
+      heapUsed: 421302920,
+      external: 24886767,
+      arrayBuffers: 21883034
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 403160.593 },
+  trace: [
+    {
+      column: null,
+      file: null,
+      function: 'Function.getOwnPropertyNames',
+      line: null,
+      method: 'getOwnPropertyNames',
+      native: false
+    },
+    {
+      column: 34,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'addDataToSwaggerObject',
+      line: 203,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'updateSpecificationObject',
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'getSpecificationObject',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js',
+      function: 'module.exports',
+      line: 35,
+      method: 'exports',
+      native: false
+    },
+    {
+      column: 40,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\swagger.ts',
+      function: null,
+      line: 69,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1369,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1618,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:00:25.045 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 24, column 12:
+                 subject
+                 ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '           subject\n' +
+        '\x00',
+      position: 612,
+      line: 23,
+      column: 11
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 24, column 12:\n' +
+    '               subject\n' +
+    '               ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 24, column 12:\n' +
+    '               subject\n' +
+    '               ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 24, column 12:\n' +
+    '               subject\n' +
+    '               ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:21:12 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22560,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 495562752,
+      heapTotal: 448471040,
+      heapUsed: 420626392,
+      external: 24886807,
+      arrayBuffers: 21883074
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404408.375 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:21:12.820 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 24, column 15:
+                    subject:
+                    ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '              subject:\n' +
+        '\x00',
+      position: 615,
+      line: 23,
+      column: 14
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 24, column 15:\n' +
+    '                  subject:\n' +
+    '                  ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 24, column 15:\n' +
+    '                  subject:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 24, column 15:\n' +
+    '                  subject:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:21:36 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 5332,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 497016832,
+      heapTotal: 450043904,
+      heapUsed: 417481624,
+      external: 24869937,
+      arrayBuffers: 21866204
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404432.312 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:21:36.763 PM'
+}
+{
+  error: YAMLException: can not read an implicit mapping pair; a colon is missed at line 26, column 23:
+                      format
+                            ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1064:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'can not read an implicit mapping pair; a colon is missed',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '               subject:\r\n' +
+        '                type: string\r\n' +
+        '                format\n' +
+        '\x00',
+      position: 678,
+      line: 25,
+      column: 22
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: can not read an implicit mapping pair; a colon is missed at line 26, column 23:\n' +
+    '                    format\n' +
+    '                          ^\n' +
+    'YAMLException: can not read an implicit mapping pair; a colon is missed at line 26, column 23:\n' +
+    '                    format\n' +
+    '                          ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1064:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: can not read an implicit mapping pair; a colon is missed at line 26, column 23:\n' +
+    '                    format\n' +
+    '                          ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1064:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:21:54 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 19308,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 494096384,
+      heapTotal: 448995328,
+      heapUsed: 420977064,
+      external: 24886767,
+      arrayBuffers: 21883034
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404449.828 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1064,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:21:54.279 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 32, column 15:
+                    name:
+                    ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '               subject:\r\n' +
+        '                type: string\r\n' +
+        '                example: TestSubject\r\n' +
+        '                description: Subject to send in header in mail\r\n' +
+        '               message:\r\n' +
+        '                type: string\r\n' +
+        '                example: Message\r\n' +
+        '                description: Message to send in mail body\r\n' +
+        '              name:\r\n' +
+        '                type: string\r\n' +
+        '                example: Name\r\n' +
+        '                description: Message to send in mail body\n' +
+        '\x00',
+      position: 920,
+      line: 31,
+      column: 14
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:26:15 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 9384,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 510652416,
+      heapTotal: 460529664,
+      heapUsed: 428726432,
+      external: 24869897,
+      arrayBuffers: 21866164
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404710.765 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:26:15.210 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 32, column 15:
+                    name:
+                    ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '               subject:\r\n' +
+        '                type: string\r\n' +
+        '                example: TestSubject\r\n' +
+        '                description: Subject to send in header in mail\r\n' +
+        '               message:\r\n' +
+        '                type: string\r\n' +
+        '                example: Message\r\n' +
+        '                description: Message to send in mail body\r\n' +
+        '              name:\r\n' +
+        '                type: string\r\n' +
+        '                example: Name\r\n' +
+        '                description: Name of user\n' +
+        '\x00',
+      position: 920,
+      line: 31,
+      column: 14
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:26:26 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 18452,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 500715520,
+      heapTotal: 448733184,
+      heapUsed: 421188088,
+      external: 24886759,
+      arrayBuffers: 21883026
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404721.656 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:26:26.110 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 32, column 15:
+                    name:
+                    ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '               subject:\r\n' +
+        '                type: string\r\n' +
+        '                example: TestSubject\r\n' +
+        '                description: Subject to send in header in mail\r\n' +
+        '               message:\r\n' +
+        '                type: string\r\n' +
+        '                example: Message\r\n' +
+        '                description: Message to send in mail body\r\n' +
+        '              name:\r\n' +
+        '                type: string\r\n' +
+        '                example: Name\r\n' +
+        '                description: Name of user\r\n' +
+        '   responses:\n' +
+        '\x00',
+      position: 920,
+      line: 31,
+      column: 14
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:26:41 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 19948,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 501075968,
+      heapTotal: 448995328,
+      heapUsed: 421282688,
+      external: 24886759,
+      arrayBuffers: 21883026
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404736.968 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:26:41.426 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 32, column 15:
+                    name:
+                    ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '               subject:\r\n' +
+        '                type: string\r\n' +
+        '                example: TestSubject\r\n' +
+        '                description: Subject to send in header in mail\r\n' +
+        '               message:\r\n' +
+        '                type: string\r\n' +
+        '                example: Message\r\n' +
+        '                description: Message to send in mail body\r\n' +
+        '              name:\r\n' +
+        '                type: string\r\n' +
+        '                example: Name\r\n' +
+        '                description: Name of user\r\n' +
+        '   responses:\r\n' +
+        '     200:\n' +
+        '\x00',
+      position: 920,
+      line: 31,
+      column: 14
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:26:50 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 9616,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 497500160,
+      heapTotal: 450043904,
+      heapUsed: 417753976,
+      external: 24869921,
+      arrayBuffers: 21866188
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404745.906 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:26:50.356 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 32, column 15:
+                    name:
+                    ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '               subject:\r\n' +
+        '                type: string\r\n' +
+        '                example: TestSubject\r\n' +
+        '                description: Subject to send in header in mail\r\n' +
+        '               message:\r\n' +
+        '                type: string\r\n' +
+        '                example: Message\r\n' +
+        '                description: Message to send in mail body\r\n' +
+        '              name:\r\n' +
+        '                type: string\r\n' +
+        '                example: Name\r\n' +
+        '                description: Name of user\r\n' +
+        '   responses:\r\n' +
+        '     200:\r\n' +
+        '       description: Password reset was successful.\n' +
+        '\x00',
+      position: 920,
+      line: 31,
+      column: 14
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:26:59 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 8536,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 497799168,
+      heapTotal: 447684608,
+      heapUsed: 421049544,
+      external: 24886759,
+      arrayBuffers: 21883026
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404755.328 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:26:59.782 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 32, column 15:
+                    name:
+                    ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: '/auth/feedback/:\r\n' +
+        ' post:\r\n' +
+        '   tags:\r\n' +
+        '     - Authentication\r\n' +
+        '   summary: Send feedback form\r\n' +
+        '   description: Send feedback  data form to admin\r\n' +
+        '   requestBody:\r\n' +
+        '     required: true\r\n' +
+        '     content:\r\n' +
+        '        application/json:\r\n' +
+        '          schema:\r\n' +
+        '             type: object\r\n' +
+        '             required:\r\n' +
+        '              - name\r\n' +
+        '              - email\r\n' +
+        '              - subject\r\n' +
+        '              - message\r\n' +
+        '             properties:\r\n' +
+        '               email:\r\n' +
+        '                type: string\r\n' +
+        '                format: email\r\n' +
+        '                example: user@example.com\r\n' +
+        '                description: The email address of the user.\r\n' +
+        '               subject:\r\n' +
+        '                type: string\r\n' +
+        '                example: TestSubject\r\n' +
+        '                description: Subject to send in header in mail\r\n' +
+        '               message:\r\n' +
+        '                type: string\r\n' +
+        '                example: Message\r\n' +
+        '                description: Message to send in mail body\r\n' +
+        '              name:\r\n' +
+        '                type: string\r\n' +
+        '                example: Name\r\n' +
+        '                description: Name of user\n' +
+        '\x00',
+      position: 920,
+      line: 31,
+      column: 14
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 32, column 15:\n' +
+    '                  name:\n' +
+    '                  ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:29:28 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 9900,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 495337472,
+      heapTotal: 447946752,
+      heapUsed: 421113936,
+      external: 24886815,
+      arrayBuffers: 21883082
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 404904.359 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:29:28.815 PM'
+}
+{
+  error: backend/routes/auth.ts(22,33): error TS2307: Cannot find module '../controllers/auth/checkAuthController' or its corresponding type declarations.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(22,33): error TS2307: Cannot find module '../controllers/auth/checkAuthController' or its corresponding type declarations.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(22,33): error TS2307: Cannot find module '../controllers/auth/checkAuthController' or its corresponding type declarations.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/routes/auth.ts(22,33): error TS2307: Cannot find module '../controllers/auth/checkAuthController' or its corresponding type declarations.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  exception: true,
+  date: 'Sat Jan 04 2025 16:48:00 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16012,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 316530688,
+      heapTotal: 266072064,
+      heapUsed: 237331096,
+      external: 24824632,
+      arrayBuffers: 21833411
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 406016.468 },
+  trace: [
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1427,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1206,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1022,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1231,
+      method: 'require',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 04:48:00.918 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 4, column 4:
+         summary: Get
+         ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readDocument (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1525:3)
+      at loadDocuments (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1588:5)
+      at load (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1614:19)
+      at Object.safeLoad (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1637:10) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: 'get:\r\n  tags:\r\n   - Message\r\n   summary: Get\n\x00',
+      position: 32,
+      line: 3,
+      column: 3
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get\n' +
+    '       ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get\n' +
+    '       ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1525:3)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get\n' +
+    '       ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1525:3)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)',
+  exception: true,
+  date: 'Sat Jan 04 2025 17:12:40 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 18332,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 501977088,
+      heapTotal: 448471040,
+      heapUsed: 420570920,
+      external: 24886775,
+      arrayBuffers: 21883042
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 407495.765 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readDocument',
+      line: 1525,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'loadDocuments',
+      line: 1588,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'load',
+      line: 1614,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'Object.safeLoad',
+      line: 1637,
+      method: 'safeLoad',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 05:12:40.212 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 4, column 4:
+         summary: Get users lists
+         ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readDocument (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1525:3)
+      at loadDocuments (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1588:5)
+      at load (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1614:19)
+      at Object.safeLoad (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1637:10) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: 'get:\r\n  tags:\r\n   - Message\r\n   summary: Get users lists\n\x00',
+      position: 32,
+      line: 3,
+      column: 3
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get users lists\n' +
+    '       ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get users lists\n' +
+    '       ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1525:3)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get users lists\n' +
+    '       ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1525:3)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)',
+  exception: true,
+  date: 'Sat Jan 04 2025 17:12:52 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 10936,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 497852416,
+      heapTotal: 449519616,
+      heapUsed: 418852944,
+      external: 24869905,
+      arrayBuffers: 21866172
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 407508.531 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readDocument',
+      line: 1525,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'loadDocuments',
+      line: 1588,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'load',
+      line: 1614,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'Object.safeLoad',
+      line: 1637,
+      method: 'safeLoad',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 05:12:52.988 PM'
+}
+{
+  error: YAMLException: bad indentation of a mapping entry at line 4, column 4:
+         summary: Get users list  
+         ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1107:7)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readBlockMapping (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1089:11)
+      at composeNode (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1359:12)
+      at readDocument (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1525:3)
+      at loadDocuments (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1588:5)
+      at load (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1614:19)
+      at Object.safeLoad (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1637:10) {
+    reason: 'bad indentation of a mapping entry',
+    mark: Mark {
+      name: null,
+      buffer: 'get:\r\n' +
+        '  tags:\r\n' +
+        '   - Message\r\n' +
+        '   summary: Get users list  \r\n' +
+        '   description: Get users list for chat\n' +
+        '\x00',
+      position: 32,
+      line: 3,
+      column: 3
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get users list  \n' +
+    '       ^\n' +
+    'YAMLException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get users list  \n' +
+    '       ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1525:3)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)',
+  stack: 'YAMLException: bad indentation of a mapping entry at line 4, column 4:\n' +
+    '       summary: Get users list  \n' +
+    '       ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1107:7)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readBlockMapping (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1089:11)\n' +
+    '    at composeNode (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1359:12)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1525:3)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)',
+  exception: true,
+  date: 'Sat Jan 04 2025 17:13:10 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 22748,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 498139136,
+      heapTotal: 447684608,
+      heapUsed: 421630368,
+      external: 24886711,
+      arrayBuffers: 21882978
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 407525.718 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1107,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readBlockMapping',
+      line: 1089,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'composeNode',
+      line: 1359,
+      method: null,
+      native: false
+    },
+    {
+      column: 3,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readDocument',
+      line: 1525,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'loadDocuments',
+      line: 1588,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'load',
+      line: 1614,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'Object.safeLoad',
+      line: 1637,
+      method: 'safeLoad',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 05:13:10.170 PM'
+}
+{
+  error: YAMLException: end of the stream or a document separator is expected at line 2, column 5:
+       get:
+          ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readDocument (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1545:5)
+      at loadDocuments (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1588:5)
+      at load (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1614:19)
+      at Object.safeLoad (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1637:10)
+      at getAnnotations (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\utils.js:46:33)
+      at updateSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:222:41)
+      at getSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:235:5)
+      at module.exports (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\lib.js:35:33) {
+    reason: 'end of the stream or a document separator is expected',
+    mark: Mark {
+      name: null,
+      buffer: '/\r\n' +
+        ' get:\r\n' +
+        '  tags:\r\n' +
+        '   - Message\r\n' +
+        '  summary: Get users list\r\n' +
+        '  description: Get users list for chat\n' +
+        '\x00',
+      position: 7,
+      line: 1,
+      column: 4
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: end of the stream or a document separator is expected at line 2, column 5:\n' +
+    '     get:\n' +
+    '        ^\n' +
+    'YAMLException: end of the stream or a document separator is expected at line 2, column 5:\n' +
+    '     get:\n' +
+    '        ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1545:5)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)\n' +
+    '    at getAnnotations (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js:46:33)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:41)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)',
+  stack: 'YAMLException: end of the stream or a document separator is expected at line 2, column 5:\n' +
+    '     get:\n' +
+    '        ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1545:5)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)\n' +
+    '    at getAnnotations (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js:46:33)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:41)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)',
+  exception: true,
+  date: 'Sat Jan 04 2025 17:13:59 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 16044,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 497233920,
+      heapTotal: 448208896,
+      heapUsed: 420636048,
+      external: 24886759,
+      arrayBuffers: 21883026
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 407575.156 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readDocument',
+      line: 1545,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'loadDocuments',
+      line: 1588,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'load',
+      line: 1614,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'Object.safeLoad',
+      line: 1637,
+      method: 'safeLoad',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js',
+      function: 'getAnnotations',
+      line: 46,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'updateSpecificationObject',
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'getSpecificationObject',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js',
+      function: 'module.exports',
+      line: 35,
+      method: 'exports',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 05:13:59.605 PM'
+}
+{
+  error: YAMLException: end of the stream or a document separator is expected at line 2, column 5:
+       get:
+          ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readDocument (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1545:5)
+      at loadDocuments (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1588:5)
+      at load (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1614:19)
+      at Object.safeLoad (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1637:10)
+      at getAnnotations (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\utils.js:46:33)
+      at updateSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:222:41)
+      at getSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:235:5)
+      at module.exports (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\lib.js:35:33) {
+    reason: 'end of the stream or a document separator is expected',
+    mark: Mark {
+      name: null,
+      buffer: '/messages/users\r\n' +
+        ' get:\r\n' +
+        '  tags:\r\n' +
+        '   - Message\r\n' +
+        '  summary: Get users list\r\n' +
+        '  description: Get users list for chat\n' +
+        '\x00',
+      position: 21,
+      line: 1,
+      column: 4
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: end of the stream or a document separator is expected at line 2, column 5:\n' +
+    '     get:\n' +
+    '        ^\n' +
+    'YAMLException: end of the stream or a document separator is expected at line 2, column 5:\n' +
+    '     get:\n' +
+    '        ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1545:5)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)\n' +
+    '    at getAnnotations (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js:46:33)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:41)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)',
+  stack: 'YAMLException: end of the stream or a document separator is expected at line 2, column 5:\n' +
+    '     get:\n' +
+    '        ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1545:5)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)\n' +
+    '    at getAnnotations (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js:46:33)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:41)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)',
+  exception: true,
+  date: 'Sat Jan 04 2025 17:14:17 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 33236,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 496676864,
+      heapTotal: 448208896,
+      heapUsed: 421513528,
+      external: 24886775,
+      arrayBuffers: 21883042
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 407592.703 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readDocument',
+      line: 1545,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'loadDocuments',
+      line: 1588,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'load',
+      line: 1614,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'Object.safeLoad',
+      line: 1637,
+      method: 'safeLoad',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js',
+      function: 'getAnnotations',
+      line: 46,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'updateSpecificationObject',
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'getSpecificationObject',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js',
+      function: 'module.exports',
+      line: 35,
+      method: 'exports',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 05:14:17.158 PM'
+}
+{
+  error: YAMLException: end of the stream or a document separator is expected at line 2, column 6:
+        get:
+           ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readDocument (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1545:5)
+      at loadDocuments (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1588:5)
+      at load (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1614:19)
+      at Object.safeLoad (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1637:10)
+      at getAnnotations (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\utils.js:46:33)
+      at updateSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:222:41)
+      at getSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:235:5)
+      at module.exports (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\lib.js:35:33) {
+    reason: 'end of the stream or a document separator is expected',
+    mark: Mark {
+      name: null,
+      buffer: '/messages/users\r\n' +
+        '  get:\r\n' +
+        '   tags:\r\n' +
+        '     - Message\r\n' +
+        '   summary: Get users list\r\n' +
+        '   description: Get users list for chat\n' +
+        '\x00',
+      position: 22,
+      line: 1,
+      column: 5
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: end of the stream or a document separator is expected at line 2, column 6:\n' +
+    '      get:\n' +
+    '         ^\n' +
+    'YAMLException: end of the stream or a document separator is expected at line 2, column 6:\n' +
+    '      get:\n' +
+    '         ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1545:5)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)\n' +
+    '    at getAnnotations (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js:46:33)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:41)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)',
+  stack: 'YAMLException: end of the stream or a document separator is expected at line 2, column 6:\n' +
+    '      get:\n' +
+    '         ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1545:5)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)\n' +
+    '    at getAnnotations (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js:46:33)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:41)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)',
+  exception: true,
+  date: 'Sat Jan 04 2025 17:14:58 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 21324,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 498884608,
+      heapTotal: 447946752,
+      heapUsed: 422031384,
+      external: 24886743,
+      arrayBuffers: 21883010
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 407634.312 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readDocument',
+      line: 1545,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'loadDocuments',
+      line: 1588,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'load',
+      line: 1614,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'Object.safeLoad',
+      line: 1637,
+      method: 'safeLoad',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js',
+      function: 'getAnnotations',
+      line: 46,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'updateSpecificationObject',
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'getSpecificationObject',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js',
+      function: 'module.exports',
+      line: 35,
+      method: 'exports',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 05:14:58.757 PM'
+}
+{
+  error: YAMLException: end of the stream or a document separator is expected at line 2, column 6:
+        get:
+           ^
+      at generateError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:167:10)
+      at throwError (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:173:9)
+      at readDocument (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1545:5)
+      at loadDocuments (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1588:5)
+      at load (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1614:19)
+      at Object.safeLoad (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\node_modules\js-yaml\lib\js-yaml\loader.js:1637:10)
+      at getAnnotations (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\utils.js:46:33)
+      at updateSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:222:41)
+      at getSpecificationObject (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\specification.js:235:5)
+      at module.exports (D:\Projects\mern-project-typescript\node_modules\swagger-jsdoc\src\lib.js:35:33) {
+    reason: 'end of the stream or a document separator is expected',
+    mark: Mark {
+      name: null,
+      buffer: '/messages/users\r\n' +
+        '  get:\r\n' +
+        '   tags:\r\n' +
+        '     - Message\r\n' +
+        '   summary: Get users list\r\n' +
+        '   description: Get users list for chat\n' +
+        '\x00',
+      position: 22,
+      line: 1,
+      column: 5
+    }
+  },
+  level: 'error',
+  message: 'uncaughtException: end of the stream or a document separator is expected at line 2, column 6:\n' +
+    '      get:\n' +
+    '         ^\n' +
+    'YAMLException: end of the stream or a document separator is expected at line 2, column 6:\n' +
+    '      get:\n' +
+    '         ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1545:5)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)\n' +
+    '    at getAnnotations (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js:46:33)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:41)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)',
+  stack: 'YAMLException: end of the stream or a document separator is expected at line 2, column 6:\n' +
+    '      get:\n' +
+    '         ^\n' +
+    '    at generateError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:167:10)\n' +
+    '    at throwError (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:173:9)\n' +
+    '    at readDocument (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1545:5)\n' +
+    '    at loadDocuments (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1588:5)\n' +
+    '    at load (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1614:19)\n' +
+    '    at Object.safeLoad (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js:1637:10)\n' +
+    '    at getAnnotations (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js:46:33)\n' +
+    '    at updateSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:222:41)\n' +
+    '    at getSpecificationObject (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js:235:5)\n' +
+    '    at module.exports (D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js:35:33)',
+  exception: true,
+  date: 'Sat Jan 04 2025 17:15:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 27256,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 503480320,
+      heapTotal: 450306048,
+      heapUsed: 417786072,
+      external: 24869977,
+      arrayBuffers: 21866244
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 407660.718 },
+  trace: [
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'generateError',
+      line: 167,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'throwError',
+      line: 173,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'readDocument',
+      line: 1545,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'loadDocuments',
+      line: 1588,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'load',
+      line: 1614,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\node_modules\\js-yaml\\lib\\js-yaml\\loader.js',
+      function: 'Object.safeLoad',
+      line: 1637,
+      method: 'safeLoad',
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\utils.js',
+      function: 'getAnnotations',
+      line: 46,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'updateSpecificationObject',
+      line: 222,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\specification.js',
+      function: 'getSpecificationObject',
+      line: 235,
+      method: null,
+      native: false
+    },
+    {
+      column: 33,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\swagger-jsdoc\\src\\lib.js',
+      function: 'module.exports',
+      line: 35,
+      method: 'exports',
+      native: false
+    }
+  ],
+  timestamp: '2025-01-04 05:15:25.167 PM'
+}

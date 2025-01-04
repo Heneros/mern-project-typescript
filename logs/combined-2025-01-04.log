@@ -1,0 +1,561 @@
+{
+  method: 'GET',
+  url: '/docs',
+  status: 301,
+  content_length: 154,
+  response_time: 1.836,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 03:59:25.615 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.302,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 03:59:25.623 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 03:59:25.633 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.039,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 03:59:25.773 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.826,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 03:59:25.846 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.926,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 03:59:25.847 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 304,
+  response_time: 0.28,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 03:59:25.878 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.377,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 03:59:26.099 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 03:59:51.644 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:01:53.938 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:07:44.536 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:07:52.141 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:07:58.797 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:08:07.926 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:08:25.992 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:11:41.828 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:12:01.667 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.779,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:12:59.813 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.236,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:12:59.989 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.402,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:13:00.033 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.345,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:13:00.034 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '18079',
+  response_time: 0.395,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:13:00.037 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.362,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:13:00.151 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:13:47.866 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:14:24.049 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:14:45.998 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:15:16.027 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:18:11.906 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:22:28.418 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:22:42.492 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:23:22.165 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:29:59.829 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:30:09.734 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:30:17.445 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:36:23.889 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:38:00.536 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:38:10.539 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:38:25.192 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:38:42.513 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:39:35.845 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:39:46.469 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:40:19.796 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:40:33.064 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:40:49.210 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:40:56.474 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 3.989,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:42:33.993 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.175,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:42:34.028 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.2,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:42:34.058 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.579,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:42:34.059 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '20034',
+  response_time: 0.233,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:42:34.115 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.614,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:42:34.328 PM'
+}
+{
+  message: 'email not sent: Error: connect ECONNREFUSED 127.0.0.1:1025',
+  level: 'error',
+  timestamp: '2025-01-04 04:42:46.888 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback/',
+  status: 201,
+  content_length: '46',
+  response_time: 16.854,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:42:46.890 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:43:13.986 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:44:18.973 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback/',
+  status: 201,
+  content_length: '46',
+  response_time: 133.981,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 04:45:52.781 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:46:22.920 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:48:07.409 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 04:59:16.081 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 05:00:16.095 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 05:09:56.319 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 05:10:17.740 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 05:10:35.357 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 05:13:20.920 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.669,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:13:27.359 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.066,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:13:27.378 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '20202',
+  response_time: 0.287,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:13:27.388 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 5.732,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:13:27.389 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 3.808,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:13:27.390 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.865,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:13:27.659 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-04 05:15:39.908 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 3.324,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:14.345 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.077,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:14.370 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 0.427,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:14.403 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '20251',
+  response_time: 0.377,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:14.461 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.211,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:14.461 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.371,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:14.598 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/messages/users',
+  status: 200,
+  content_length: '1721',
+  response_time: 120.956,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:23.299 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/messages/users',
+  status: 304,
+  response_time: 103.46,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:25.181 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/messages/users',
+  status: 304,
+  response_time: 103.089,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:26.528 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/messages/users',
+  status: 304,
+  response_time: 103.028,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-04 05:16:26.707 PM'
+}

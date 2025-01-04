@@ -41,10 +41,9 @@ const swaggerDefinition = {
         {
             name: 'Message',
             description:
-                'For socket.io communication(Send message, get chat or chats)',
+                'For socket.io communication(Send message, get specific chat or chats)',
         },
     ],
-
     components: {
         securitySchemes: {
             bearerAuth: {

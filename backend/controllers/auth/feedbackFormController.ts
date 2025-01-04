@@ -37,7 +37,7 @@ const feedbackFormController = async (req: Request, res: Response) => {
         const receiverEmail: string | undefined = process.env.AUTHOR_APP;
 
         if (receiverEmail) {
-            res.status(404);
+            // res.status(404);
 
             await receiverEmailFunction(
                 email,

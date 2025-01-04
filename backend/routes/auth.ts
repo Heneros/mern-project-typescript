@@ -19,8 +19,6 @@ import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
 import handleOAuthCallback from '@/helpers/handleOAuthCallback';
 import checkAuth from '@/middleware/checkAuthMiddleware';
 
-import checkAuthController from '../controllers/auth/checkAuthController';
-
 const router = express.Router();
 const domain = process.env.DOMAIN_CLIENT;
 
@@ -335,8 +333,62 @@ router.post('/reset_password_request', resetPasswordRequest);
  */
 
 router.post('/reset_password', resetPassword);
+
 router.get('/logout', logoutUser);
 
+/**
+ * @swagger
+ * /auth/feedback/:
+ *  post:
+ *    tags:
+ *      - Authentication
+ *    summary: Send feedback form
+ *    description: Send feedback  data form to admin
+ *    requestBody:
+ *      required: true
+ *      content:
+ *         application/json:
+ *           schema:
+ *              type: object
+ *              required:
+ *               - name
+ *               - email
+ *               - subject
+ *               - message
+ *              properties:
+ *                email:
+ *                 type: string
+ *                 format: email
+ *                 example: user@example.com
+ *                 description: The email address of the user.
+ *                subject:
+ *                 type: string
+ *                 example: TestSubject
+ *                 description: Subject to send in header in mail
+ *                message:
+ *                 type: string
+ *                 example: Message
+ *                 description: Message to send in mail body
+ *                name:
+ *                 type: string
+ *                 example: Name
+ *                 description: Name of user
+ *    responses:
+ *      201:
+ *        description: Data was sent!
+ *        content:
+ *           application/json:
+ *              schema:
+ *                type: object
+ *                properties:
+ *                   message:
+ *                     type: string
+ *                     example: "message was sent!"
+ *      400:
+ *        description: Bad request. Field(s) missing value(s)
+ *      500:
+ *        description: Internal server error.
+ */
 router.route('/feedback').post(apiLimiter, feedbackFormController);
 
 router.get(
