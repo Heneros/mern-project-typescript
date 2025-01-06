@@ -1,4 +1,5 @@
 import swaggerJSDoc from 'swagger-jsdoc';
+import { authSwagger } from './swagger/auth.swagger';
 
 const domain = process.env.DOMAIN;
 
@@ -19,6 +20,9 @@ const swaggerDefinition = {
             description: 'Development server',
         },
     ],
+    paths: {
+        ...authSwagger,
+    },
     tags: [
         {
             name: 'Authentication',
