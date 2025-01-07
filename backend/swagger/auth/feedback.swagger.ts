@@ -3,39 +3,42 @@ import {
     internalServerErrorResponse,
 } from '../swagger.components';
 
-export const resetPasswordSwagger = {
-    '/auth/reset_password': {
+export const feedbackSwagger = {
+    '/auth/feedback': {
         post: {
             tags: ['Authentication'],
-            summary: 'Reset Password',
-            description: 'Allows a user to reset their password using a token.',
+            summary: 'Send feedback form',
+            description: 'Send feedback  data form to admin',
             requestBody: {
                 required: true,
                 content: {
                     'application/json': {
                         schema: {
                             type: 'object',
-                            required: ['password', 'passwordConfirm', 'userId'],
+                            required: ['name', 'email', 'subject', 'message'],
                             properties: {
-                                password: {
+                                email: {
                                     type: 'string',
-                                    format: 'password',
-                                    example: 'StrongPass123!',
+                                    format: 'email',
+                                    example: 'user@example.com',
                                     description:
-                                        'The new password for the user.',
+                                        'The email address of the user.',
                                 },
-                                passwordConfirm: {
+                                subject: {
                                     type: 'string',
-                                    format: 'password',
-                                    example: 'StrongPass123!',
+                                    example: 'TestSubject',
                                     description:
-                                        'Confirmation of the new password.',
+                                        'Subject to send in header in mail',
                                 },
-                                token: {
+                                message: {
                                     type: 'string',
-                                    example: '64f50a60f89d874e12345678',
-                                    description:
-                                        'The unique ID of the user requesting the reset.',
+                                    example: 'Message',
+                                    description: 'Message to send in mail body',
+                                },
+                                name: {
+                                    type: 'string',
+                                    example: 'Name',
+                                    description: 'Name of user',
                                 },
                             },
                         },
@@ -45,17 +48,16 @@ export const resetPasswordSwagger = {
             responses: {
                 ...badRequestResponse,
                 200: {
-                    description: 'Password reset was successfully!',
+                    description:
+                        'Successfully sent message from feedback form!',
                     content: {
                         'application/json': {
                             schema: {
                                 type: 'object',
                                 properties: {
-                                    success: { type: 'boolean', example: true },
                                     message: {
                                         type: 'string',
-                                        example:
-                                            'Hey User, Your password reset was successful. An email has been sent to confirm the same',
+                                        example: 'Message was sent!',
                                     },
                                 },
                             },

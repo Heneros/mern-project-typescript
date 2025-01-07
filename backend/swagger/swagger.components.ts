@@ -15,6 +15,22 @@ export const badRequestResponse = {
             },
         },
     },
+    401: {
+        description: 'Not authorized',
+        content: {
+            'application/json': {
+                schema: {
+                    type: 'object',
+                    properties: {
+                        message: {
+                            type: 'string',
+                            example: 'Not authorized',
+                        },
+                    },
+                },
+            },
+        },
+    },
 };
 
 export const internalServerErrorResponse = {

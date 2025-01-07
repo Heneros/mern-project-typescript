@@ -153,3 +153,803 @@
   level: 'error',
   timestamp: '2025-01-04 04:42:46.888 PM'
 }
+{
+  error: CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '":id"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: ':id',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:10:27 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 18396,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 504635392,
+      heapTotal: 454574080,
+      heapUsed: 422898472,
+      external: 25070449,
+      arrayBuffers: 22039928
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 673769.093 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:10:27.414 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '":id"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: ':id',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:11:23 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 13344,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 508129280,
+      heapTotal: 454049792,
+      heapUsed: 424577384,
+      external: 25097067,
+      arrayBuffers: 22066546
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 673824.765 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:11:23.082 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '":id"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: ':id',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:12:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 26920,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 510509056,
+      heapTotal: 456146944,
+      heapUsed: 421249192,
+      external: 25040628,
+      arrayBuffers: 22010107
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 673887.14 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:12:25.462 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '":id"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: ':id',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:13:27 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 3388,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 505999360,
+      heapTotal: 454836224,
+      heapUsed: 423782856,
+      external: 25110807,
+      arrayBuffers: 22080286
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 673949.375 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:13:27.692 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value "672e0b0d6b8a1d1375c020b212" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '"672e0b0d6b8a1d1375c020b212"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: '672e0b0d6b8a1d1375c020b212',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value "672e0b0d6b8a1d1375c020b212" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value "672e0b0d6b8a1d1375c020b212" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value "672e0b0d6b8a1d1375c020b212" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:16:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 10220,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 452186112,
+      heapTotal: 398741504,
+      heapUsed: 388881888,
+      external: 24963467,
+      arrayBuffers: 21935725
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 674127.296 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:16:25.624 PM'
+}

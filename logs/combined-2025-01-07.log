@@ -133,3 +133,3618 @@
   level: 'info',
   timestamp: '2025-01-07 12:17:18.252 AM'
 }
+{
+  method: 'GET',
+  url: '/api',
+  status: 500,
+  content_length: '67',
+  response_time: 1.563,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:32:56.477 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: '75',
+  response_time: 0.772,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:32:56.666 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:32:57.211 PM'
+}
+{
+  method: 'GET',
+  url: '/docs',
+  status: 301,
+  content_length: 154,
+  response_time: 1.46,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:32:58.411 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 200,
+  content_length: '3106',
+  response_time: 1.02,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:32:58.418 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 200,
+  content_length: 152072,
+  response_time: 4.696,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:32:58.437 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 200,
+  content_length: 230007,
+  response_time: 2.419,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:32:58.440 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 200,
+  content_length: 1426050,
+  response_time: 5.136,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:32:58.453 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '21992',
+  response_time: 0.26,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:32:58.572 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:33:57.074 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:34:29.943 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:34:55.800 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:37:19.383 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:37:40.385 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:37:50.990 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:38:03.131 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:38:13.650 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:38:24.843 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:41:37.563 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:41:48.174 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:42:03.214 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:42:20.038 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:43:03.516 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 200,
+  content_length: '3106',
+  response_time: 2.792,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:43:21.707 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '21992',
+  response_time: 0.321,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:43:21.762 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 200,
+  content_length: 152072,
+  response_time: 18.423,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:43:21.764 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 200,
+  content_length: 230007,
+  response_time: 5.328,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:43:21.766 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 200,
+  content_length: 1426050,
+  response_time: 11.207,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:43:21.822 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 200,
+  content_length: 628,
+  response_time: 3.405,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 03:43:22.000 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:43:22.162 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:43:46.122 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:43:53.337 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 03:44:04.018 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:02:40.213 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:07:03.447 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:07:18.634 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:25:19.663 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:25:46.717 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:25:56.582 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:26:11.300 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:26:36.022 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:59:07.275 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:59:16.800 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 04:59:35.459 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:05:39.097 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:05:57.015 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:06:06.622 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:08:40.971 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:08:58.334 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:09:11.716 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:10:14.751 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:10:23.746 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:10:33.210 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:10:47.585 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.454,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:11:49.420 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '21324',
+  response_time: 0.343,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:11:49.491 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 2.724,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:11:49.492 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 2.236,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:11:49.493 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.12,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:11:49.494 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 200,
+  content_length: 628,
+  response_time: 1.383,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:11:49.742 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:11:50.090 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:12:54.220 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:13:03.157 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:13:31.737 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:25:55.977 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:26:09.493 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:26:17.518 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:26:30.454 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:27:16.471 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.76,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:24.928 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.123,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:25.045 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '21491',
+  response_time: 0.305,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:25.098 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 4.857,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:25.099 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.816,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:25.100 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.723,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:25.210 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 0.561,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:39.501 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 0.401,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:39.714 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 304,
+  response_time: 0.263,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:39.736 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 3.898,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:39.737 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.262,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:39.737 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.687,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:39.837 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 0.58,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:42.643 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 0.51,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:42.671 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 304,
+  response_time: 0.213,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:42.685 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 2.834,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:42.685 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 0.884,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:42.686 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.446,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:28:42.798 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:28:55.732 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:29:03.435 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:29:15.475 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.786,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:30:18.969 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.239,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:30:19.086 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 3.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:30:19.138 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.723,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:30:19.139 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 304,
+  response_time: 0.3,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:30:19.140 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.453,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:30:19.209 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:30:35.248 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:30:48.017 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:30:54.424 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:32:09.935 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:35:19.336 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:35:42.012 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:35:53.908 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:45:14.445 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:45:50.875 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:46:01.228 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:46:14.436 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:46:27.679 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:46:58.245 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:47:11.140 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:47:22.261 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.887,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:32.156 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.165,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:32.183 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '24704',
+  response_time: 0.286,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:32.197 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 4.11,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:32.198 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.675,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:32.199 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.357,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:32.370 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 0.668,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:34.133 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 0.431,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:34.357 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 304,
+  response_time: 0.234,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:34.382 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 2.302,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:34.382 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.041,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:34.383 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.474,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:34.491 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.869,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:56.890 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 2.5,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:57.020 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '24604',
+  response_time: 0.261,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:57.028 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 2.203,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:57.029 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.949,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:57.030 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.329,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:47:57.276 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:47:57.424 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 202.557,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:48:08.128 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:49:08.557 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 400,
+  content_length: '42',
+  response_time: 2.129,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:49:10.983 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:50:36.197 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:50:53.376 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:51:07.443 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:53:40.132 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:53:52.373 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:54:10.322 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:55:13.377 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:55:47.826 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:56:06.106 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:56:39.483 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:56:54.661 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:57:02.170 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:57:19.014 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:57:29.737 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:57:40.142 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:57:47.185 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:58:02.909 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 4.259,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:58:03.586 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 2.94,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:58:03.612 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.425,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:58:03.613 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 3.374,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:58:03.614 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '27713',
+  response_time: 0.331,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:58:03.619 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 1.298,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 05:58:03.865 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 05:58:25.321 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:02:07.894 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:02:28.982 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:03:06.752 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:03:20.203 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:03:50.924 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:04:12.291 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:04:25.100 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.838,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:02.933 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.389,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:03.044 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 0.573,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:03.063 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '26026',
+  response_time: 0.397,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:03.081 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.307,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:03.081 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.5,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:03.314 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 200,
+  content_length: '1593',
+  response_time: 128.782,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:09.958 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.568,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:25.301 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 2.585,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:25.381 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 3.611,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:25.383 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.619,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:25.384 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '25701',
+  response_time: 0.267,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:25.469 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.368,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:25.814 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:05:25.986 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 118.82,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:05:31.597 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:06:20.743 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:13:11.671 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:13:35.504 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:13:50.162 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:14:04.164 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:14:12.087 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:14:37.550 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:14:56.353 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:15:09.693 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:15:27.763 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:15:48.954 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:16:05.013 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:16:17.291 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:16:38.062 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:16:44.477 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:17:02.899 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:19:05.477 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:20:18.766 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:20:33.766 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:21:21.906 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:21:41.789 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:22:20.063 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:22:31.041 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:22:43.794 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:23:05.442 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:23:23.139 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:23:29.703 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:24:26.116 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.783,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:24:56.516 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.986,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:24:56.553 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '26615',
+  response_time: 0.271,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:24:56.558 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 0.719,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:24:56.559 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.419,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:24:56.560 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 6.493,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:24:56.826 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:24:57.118 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 3.37,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:35.423 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 3.06,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:35.463 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.582,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:35.464 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '25701',
+  response_time: 0.337,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:35.466 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 5.236,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:35.467 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 2.499,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:35.764 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:25:35.983 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.951,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:45.745 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.47,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:45.872 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '26615',
+  response_time: 0.258,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:45.880 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.954,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:45.881 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.253,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:45.882 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:25:45.941 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 3.498,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:25:46.111 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:27:42.754 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:27:49.389 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 5.207,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:28:32.350 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.092,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:28:32.414 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.076,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:28:32.452 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 0.918,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:28:32.453 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '28535',
+  response_time: 0.202,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:28:32.460 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:28:32.563 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.37,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:28:32.730 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:30:16.033 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:30:40.507 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:30:47.928 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:31:01.897 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:31:16.383 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:31:42.796 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:31:50.864 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:32:06.253 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:32:18.983 PM'
+}
+{
+  method: 'PATCH',
+  url: '/api/v1/user/profile',
+  status: 401,
+  content_length: '43',
+  response_time: 182.945,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:32:34.058 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:33:58.908 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:34:06.202 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:37:27.073 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:37:47.713 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:38:10.285 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:38:27.059 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:38:56.970 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:39:05.137 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:39:19.324 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:39:31.271 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 3.045,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:39:34.512 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 4.449,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:39:34.555 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.6,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:39:34.556 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '31073',
+  response_time: 0.411,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:39:34.559 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 5.501,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:39:34.560 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.436,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:39:34.788 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:40:32.855 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:42:59.722 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:43:13.806 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:45:11.563 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:54:00.534 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:54:12.171 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:54:31.681 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:54:39.234 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:54:54.113 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:55:09.056 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:55:18.287 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:55:51.002 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:56:00.178 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:56:28.876 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:56:39.410 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:56:47.665 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:57:03.336 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:57:20.399 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.723,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:20.526 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.08,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:20.622 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '32528',
+  response_time: 0.449,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:20.663 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 0.796,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:20.665 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.796,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:20.667 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.446,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:20.991 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.629,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:40.723 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.68,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:40.765 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.22,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:40.768 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '32527',
+  response_time: 0.291,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:40.770 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.055,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:40.770 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 0.949,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:40.869 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 0.394,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:40.997 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.356,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:41.040 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 304,
+  response_time: 0.282,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:41.045 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.79,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:41.046 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.434,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 06:57:41.238 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:57:41.260 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:59:04.893 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 06:59:41.471 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:00:09.596 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.576,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:15.639 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.244,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:15.686 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '32880',
+  response_time: 0.241,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:15.697 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 2.896,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:15.698 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.748,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:15.699 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.646,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:15.994 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:00:16.235 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all?pageNumber=1',
+  status: 200,
+  content_length: '996',
+  response_time: 189.82,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:23.181 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 200,
+  content_length: '3106',
+  response_time: 0.929,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:32.489 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '32880',
+  response_time: 0.265,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:32.723 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 200,
+  content_length: 152072,
+  response_time: 8.766,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:32.729 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 200,
+  content_length: 230007,
+  response_time: 6.323,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:32.732 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 200,
+  content_length: 1426050,
+  response_time: 6.264,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:32.736 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 200,
+  content_length: 628,
+  response_time: 0.705,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:32.873 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all?pageNumber=1',
+  status: 401,
+  content_length: '26',
+  response_time: 0.28,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:00:35.849 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:01:50.217 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:02:05.616 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:02:16.813 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:02:40.485 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:02:49.994 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:02:57.812 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:03:07.062 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:03:15.810 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:03:22.168 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:03:45.739 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:05:07.933 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:05:15.892 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:05:27.064 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:05:39.915 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:06:00.444 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:06:20.082 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:08:49.046 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:08:59.299 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 3.333,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:09:09.205 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.246,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:09:09.321 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.653,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:09:09.360 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.833,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:09:09.363 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '40767',
+  response_time: 0.303,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:09:09.365 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 5.19,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:09:09.646 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:09:26.478 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all?pageNumber=1',
+  status: 304,
+  response_time: 166.729,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:09:29.961 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all?pageNumber=2',
+  status: 200,
+  content_length: '867',
+  response_time: 154.985,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:09:37.495 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.893,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:10:20.170 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.489,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:10:20.332 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 0.684,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:10:20.378 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.129,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:10:20.379 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '40787',
+  response_time: 0.432,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:10:20.387 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.292,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:10:20.670 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:10:20.760 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '":id"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: ':id',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:10:27 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 18396,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 504635392,
+      heapTotal: 454574080,
+      heapUsed: 422898472,
+      external: 25070449,
+      arrayBuffers: 22039928
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 673769.093 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:10:27.414 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:11:13.746 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 3.006,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:11:19.185 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.604,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:11:19.223 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '40786',
+  response_time: 0.267,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:11:19.230 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 2.033,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:11:19.230 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.811,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:11:19.231 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.598,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:11:19.509 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '":id"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: ':id',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:11:23 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 13344,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 508129280,
+      heapTotal: 454049792,
+      heapUsed: 424577384,
+      external: 25097067,
+      arrayBuffers: 22066546
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 673824.765 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:11:23.082 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:11:42.151 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:11:56.014 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:12:19.369 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.831,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:12:21.746 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 2.794,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:12:21.770 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.936,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:12:21.772 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 0.708,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:12:21.773 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '40971',
+  response_time: 0.26,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:12:21.775 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.504,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:12:21.935 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '":id"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: ':id',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:12:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 26920,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 510509056,
+      heapTotal: 456146944,
+      heapUsed: 421249192,
+      external: 25040628,
+      arrayBuffers: 22010107
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 673887.14 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:12:25.462 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:13:16.409 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 200,
+  content_length: '3106',
+  response_time: 3.265,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:13:22.418 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.326,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:13:22.683 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 1.525,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:13:22.705 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.245,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:13:22.705 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 304,
+  response_time: 0.349,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:13:22.706 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.692,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:13:22.988 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '":id"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: ':id',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value ":id" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:13:27 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 3388,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 505999360,
+      heapTotal: 454836224,
+      heapUsed: 423782856,
+      external: 25110807,
+      arrayBuffers: 22080286
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 673949.375 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:13:27.692 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.745,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:14:56.561 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 2.253,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:14:56.601 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 2.597,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:14:56.605 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '40972',
+  response_time: 0.399,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:14:56.606 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 2.69,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:14:56.607 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.521,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:14:56.815 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:14:57.361 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:15:09.738 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:15:41.012 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/',
+  status: 304,
+  response_time: 2.926,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:15:51.443 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui.css',
+  status: 304,
+  response_time: 1.129,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:15:51.466 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-bundle.js',
+  status: 304,
+  response_time: 0.493,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:15:51.471 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-standalone-preset.js',
+  status: 304,
+  response_time: 1.144,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:15:51.472 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/swagger-ui-init.js',
+  status: 200,
+  content_length: '40972',
+  response_time: 0.419,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:15:51.481 PM'
+}
+{
+  method: 'GET',
+  url: '/docs/favicon-32x32.png',
+  status: 304,
+  response_time: 0.631,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:15:51.651 PM'
+}
+{
+  method: 'DELETE',
+  url: '/api/v1/user/672e0b0d6b8a1d1375c020b2',
+  status: 200,
+  content_length: '61',
+  response_time: 181.347,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:15:59.642 PM'
+}
+{
+  error: CastError: Cast to ObjectId failed for value "672e0b0d6b8a1d1375c020b212" (type string) at path "_id" for model "User"
+      at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:250:11)
+      at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+      at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+      at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+      at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+      at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+      at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+      at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async deleteUserAccount (D:\Projects\mern-project-typescript\backend\controllers\user\deleteUserAccount.ts:5:18) {
+    stringValue: '"672e0b0d6b8a1d1375c020b212"',
+    messageFormat: undefined,
+    kind: 'ObjectId',
+    value: '672e0b0d6b8a1d1375c020b212',
+    path: '_id',
+    reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+        at new ObjectId (D:\Projects\mern-project-typescript\node_modules\bson\src\objectid.ts:115:15)
+        at castObjectId (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at SchemaObjectId.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schema\objectId.js:248:12)
+        at SchemaObjectId.SchemaType.applySetters (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1236:12)
+        at SchemaObjectId.SchemaType.castForQuery (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1653:17)
+        at cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\cast.js:390:32)
+        at model.Query.Query.cast (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4908:12)
+        at model.Query.Query._castConditions (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2302:10)
+        at model.Query._findOne (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:2626:8)
+        at model.Query.exec (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\query.js:4449:80),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'unhandledRejection: Cast to ObjectId failed for value "672e0b0d6b8a1d1375c020b212" (type string) at path "_id" for model "User"\n' +
+    'CastError: Cast to ObjectId failed for value "672e0b0d6b8a1d1375c020b212" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  stack: 'CastError: Cast to ObjectId failed for value "672e0b0d6b8a1d1375c020b212" (type string) at path "_id" for model "User"\n' +
+    '    at SchemaObjectId.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n' +
+    '    at SchemaObjectId.SchemaType.applySetters (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1236:12)\n' +
+    '    at SchemaObjectId.SchemaType.castForQuery (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js:1653:17)\n' +
+    '    at cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js:390:32)\n' +
+    '    at model.Query.Query.cast (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4908:12)\n' +
+    '    at model.Query.Query._castConditions (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2302:10)\n' +
+    '    at model.Query._findOne (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:2626:8)\n' +
+    '    at model.Query.exec (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js:4449:80)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async deleteUserAccount (D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts:5:18)',
+  rejection: true,
+  date: 'Tue Jan 07 2025 19:16:25 GMT+0200 (Восточная Европа, стандартное время)',
+  process: {
+    pid: 10220,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Projects\\mern-project-typescript',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 452186112,
+      heapTotal: 398741504,
+      heapUsed: 388881888,
+      external: 24963467,
+      arrayBuffers: 21935725
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 674127.296 },
+  trace: [
+    {
+      column: 11,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schema\\objectId.js',
+      function: 'SchemaObjectId.cast',
+      line: 250,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.applySetters',
+      line: 1236,
+      method: 'applySetters',
+      native: false
+    },
+    {
+      column: 17,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\schemaType.js',
+      function: 'SchemaObjectId.SchemaType.castForQuery',
+      line: 1653,
+      method: 'castForQuery',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\cast.js',
+      function: 'cast',
+      line: 390,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query.cast',
+      line: 4908,
+      method: 'cast',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.Query._castConditions',
+      line: 2302,
+      method: '_castConditions',
+      native: false
+    },
+    {
+      column: 8,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query._findOne',
+      line: 2626,
+      method: '_findOne',
+      native: false
+    },
+    {
+      column: 80,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\query.js',
+      function: 'model.Query.exec',
+      line: 4449,
+      method: 'exec',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'processTicksAndRejections',
+      line: 95,
+      method: null,
+      native: false
+    },
+    {
+      column: 18,
+      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\user\\deleteUserAccount.ts',
+      function: 'async deleteUserAccount',
+      line: 5,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-01-07 07:16:25.624 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:16:54.566 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:17:42.152 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:18:15.581 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:18:24.878 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:19:08.625 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-07 07:19:29.749 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all?pageNumber=1',
+  status: 200,
+  content_length: '996',
+  response_time: 170.543,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:19:36.988 PM'
+}
+{
+  method: 'DELETE',
+  url: '/api/v1/user/6776f31b2cceede7a5b3b2bb',
+  status: 200,
+  content_length: '60',
+  response_time: 166.072,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-07 07:19:56.219 PM'
+}

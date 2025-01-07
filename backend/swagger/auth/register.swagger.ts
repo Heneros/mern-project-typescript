@@ -15,6 +15,14 @@ export const registerUserSwagger = {
                     'application/json': {
                         schema: {
                             type: 'object',
+                            required: [
+                                'email',
+                                'username',
+                                'firstName',
+                                'lastName',
+                                'password',
+                                'passwordConfirm',
+                            ],
                             properties: {
                                 email: {
                                     type: 'string',
