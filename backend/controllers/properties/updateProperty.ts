@@ -1,8 +1,8 @@
 import asyncHandler from 'express-async-handler';
 import Property from '@/models/propertiesModel';
 
-// $-title   PUT property
-// $-path    PUT /api/v1/property/:id
+// $-title   PATCH property
+// $-path    PATCH /api/v1/property/:id
 // $-auth    Private
 
 const updateProperty = asyncHandler(async (req, res): Promise<void> => {

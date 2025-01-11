@@ -1,6 +1,8 @@
 import swaggerJSDoc from 'swagger-jsdoc';
 import { authSwagger } from './swagger/auth.swagger';
 import { userSwagger } from './swagger/user.swagger';
+import { ordersSwagger } from './swagger/order.swagger';
+import { propertiesSwagger } from './swagger/properties.swagger';
 
 const domain = process.env.DOMAIN;
 
@@ -24,6 +26,8 @@ const swaggerDefinition = {
     paths: {
         ...authSwagger,
         ...userSwagger,
+        ...ordersSwagger,
+        ...propertiesSwagger,
     },
     tags: [
         {

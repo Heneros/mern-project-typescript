@@ -1,7 +1,6 @@
 import express from 'express';
 import Stripe from 'stripe';
 import asyncHandler from 'express-async-handler';
-import { v4 as uuidv4 } from 'uuid';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET!);
 
@@ -19,7 +18,7 @@ const createIntent = asyncHandler(async (req, res) => {
             currency: 'usd',
             metadata: { orderId },
         });
-        console.log({ paymentIntent });
+        // console.log({ paymentIntent });
         res.status(200).json({ clientSecret: paymentIntent.client_secret });
     } catch (error) {
         console.error('Error creating payment intent:', error);
@@ -38,7 +37,7 @@ const confirmPayment = asyncHandler(async (req, res) => {
         });
         return;
     }
-    console.log(details);
+    // console.log(details);
 
     try {
         const paymentIntent =
@@ -56,7 +55,6 @@ const confirmPayment = asyncHandler(async (req, res) => {
 });
 
 const createCheckoutSession = asyncHandler(async (req, res) => {
-
     const { items, _id, user } = req.body;
 
     if (!_id) {
@@ -64,9 +62,6 @@ const createCheckoutSession = asyncHandler(async (req, res) => {
         res.status(400).json({ error: 'Order ID (_id) is required' });
         return;
     }
-
-    // const idUnqique = uuidv4();
-    // console.log(idUnqique);
 
     if (!items || !Array.isArray(items) || items.length === 0) {
         console.error('Invalid items:', items);
@@ -101,7 +96,7 @@ const createCheckoutSession = asyncHandler(async (req, res) => {
             cancel_url: `${domain}/cancel`,
         });
 
-        console.log('Session created:', session);
+        // console.log('Session created:', session);
         // Return sessionId instead of sessionUrl
         res.json({ sessionId: session.id });
     } catch (error) {
