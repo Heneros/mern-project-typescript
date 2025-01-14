@@ -48,11 +48,6 @@ const swaggerDefinition = {
             name: 'Order',
             description: 'Endpoints for order(CRUD operations)',
         },
-        {
-            name: 'Message',
-            description:
-                'For socket.io communication(Send message, get specific chat or chats)',
-        },
     ],
     components: {
         securitySchemes: {

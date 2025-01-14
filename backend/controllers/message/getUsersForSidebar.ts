@@ -1,7 +1,10 @@
 import asyncHandler from 'express-async-handler';
 import User from '@/models/userModel';
-
 import { RequestWithUser } from '@/types/RequestWithUser';
+
+/// $-title Get specific chat
+/// $-path GET /api/v1/messages/:id
+/// $-auth Private
 
 const getUsersForSidebar = asyncHandler(async (req, res) => {
     const userReq = req as RequestWithUser;

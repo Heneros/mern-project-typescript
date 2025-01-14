@@ -10,15 +10,7 @@ const router = express.Router();
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
-/**
- * @swagger
- * /messages/users:
- *   get:
- *    tags:
- *      - Message
- *    summary: Get users list
- *    description: Get users list for chat
- */
+
 
 router.route('/users').get(checkAuth, getUsersForSidebar);
 router.route('/:id').get(checkAuth, getMessages);

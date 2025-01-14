@@ -1,13 +1,15 @@
 import asyncHandler from 'express-async-handler';
 import { Request, Response } from 'express';
-import fs from 'fs';
 
-import User from '@/models/userModel';
 import Message from '@/models/chatModel';
 
 import { RequestWithUser } from '@/types/RequestWithUser';
 import cloudinaryUploader from '@/config/cloudinaryConfig';
 import { getReceiverSocketId, io } from '@/socket/socket';
+
+/// $-title Send Message to specific user in chat through Socket.Io
+/// $-path POST /api/v1/messages/send/:id
+/// $-auth Private
 
 const sendMessage = asyncHandler(async (req: Request, res: Response) => {
     const { text, image } = req.body;

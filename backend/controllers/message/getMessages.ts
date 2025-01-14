@@ -2,6 +2,10 @@ import asyncHandler from 'express-async-handler';
 import Message from '@/models/chatModel';
 import { RequestWithUser } from '@/types/RequestWithUser';
 
+/// $-title Get all chats
+/// $-path GET /api/v1/messages/user
+/// $-auth Private
+
 const getMessages = asyncHandler(async (req, res) => {
     const { id: userToChatId } = req.params;
     const userReq = req as RequestWithUser;
