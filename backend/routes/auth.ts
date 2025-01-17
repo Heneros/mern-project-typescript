@@ -21,7 +21,14 @@ import handleOAuthCallback from '@/helpers/handleOAuthCallback';
 const router = express.Router();
 const domain = process.env.DOMAIN_CLIENT;
 
-router.post('/register',  registerUser);
+router.post('/register', apiLimiter, registerUser);
+
+// router.post(
+//     '/register',
+//     process.env.NODE_ENV === 'production'
+//         ? [apiLimiter, registerUser]
+//         : registerUser,
+// );
 router.get('/verify/:emailToken/:userId', verifyUserEmail);
 
 router.post('/login', loginLimiter, loginUser);
