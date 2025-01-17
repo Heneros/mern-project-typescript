@@ -8,7 +8,6 @@ import mongoSanitize from 'express-mongo-sanitize';
 import passport from 'passport';
 import morgan from 'morgan';
 import session from 'express-session';
-import swaggerJSDoc from 'swagger-jsdoc';
 
 import swaggerUi from 'swagger-ui-express';
 
@@ -125,3 +124,4 @@ if (process.env.NODE_ENV !== 'test') {
     };
     startServer();
 }
+export { app };

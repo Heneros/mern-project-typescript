@@ -100,11 +100,13 @@ const registerUser = asyncHandler(async (req, res) => {
             res.status(201).json({
                 success: true,
                 userId:
-                    process.env.NODE_ENV === 'development'
+                    process.env.NODE_ENV === 'development' ||
+                    process.env.NODE_ENV === 'test'
                         ? registeredUser._id
                         : undefined,
                 emailToken:
-                    process.env.NODE_ENV === 'development'
+                    process.env.NODE_ENV === 'development' ||
+                    process.env.NODE_ENV === 'test'
                         ? emailVerificationToken.token
                         : undefined,
                 message: `A new user ${registeredUser.firstName} has been registered! A Verification email has been sent to your account. Please verify within 15 minutes`,

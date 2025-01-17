@@ -1,0 +1,288 @@
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-17 01:34:03.984 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 404,
+  content_length: '48',
+  response_time: 59.906,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 01:46:53.385 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3431',
+  response_time: 122.174,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 01:46:53.454 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 122.535,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 01:46:53.456 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 404,
+  content_length: '48',
+  response_time: 54.471,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 01:46:55.608 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3431',
+  response_time: 111.001,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 01:46:55.669 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 304,
+  response_time: 112.18,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 01:46:55.672 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-17 02:31:06.988 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-17 02:33:09.000 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-17 02:36:39.594 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-17 02:58:57.842 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-17 02:59:48.382 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-17 03:04:05.594 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-01-17 03:04:30.725 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: test  ',
+  level: 'info',
+  timestamp: '2025-01-17 03:04:53.305 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '101',
+  response_time: 892.735,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:04:53.664 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: test  ',
+  level: 'info',
+  timestamp: '2025-01-17 03:07:57.048 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '105',
+  response_time: 684.11,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:07:57.139 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: test  ',
+  level: 'info',
+  timestamp: '2025-01-17 03:09:48.048 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '105',
+  response_time: 763.003,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:09:48.148 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:11:05.422 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:11:05.430 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '150',
+  response_time: 191.946,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:11:05.438 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '105',
+  response_time: 51.679,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:11:22.793 AM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: test  ',
+  level: 'info',
+  timestamp: '2025-01-17 03:12:08.060 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '105',
+  response_time: 794.433,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:12:08.151 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '105',
+  response_time: 51.945,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:13:48.609 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '105',
+  response_time: 58.305,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:14:42.807 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:15:34.320 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:15:34.335 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '150',
+  response_time: 181.508,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:15:34.343 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:16:07.758 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:16:07.766 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '150',
+  response_time: 185.905,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:16:07.776 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:17:09.761 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:17:09.769 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 189.753,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:17:09.777 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:17:32.111 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-01-17 03:17:32.119 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 188.73,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-01-17 03:17:32.126 AM'
+}

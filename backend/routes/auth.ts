@@ -17,7 +17,6 @@ import feedbackFormController from '../controllers/auth/feedbackFormController';
 import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
 
 import handleOAuthCallback from '@/helpers/handleOAuthCallback';
-import checkAuth from '@/middleware/checkAuthMiddleware';
 
 const router = express.Router();
 const domain = process.env.DOMAIN_CLIENT;

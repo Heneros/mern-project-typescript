@@ -2,7 +2,6 @@ import 'dotenv/config';
 import { Server } from 'socket.io';
 import http from 'http';
 import express from 'express';
-import cors from 'cors';
 import User from '@/models/userModel';
 import { UserSocketMap } from '@/types/UserSocketMap';
 import Message from '@/models/chatModel';
@@ -35,15 +34,6 @@ io.on('connection', async (socket) => {
         socket.broadcast.emit('newMessage', data);
     });
 
-    socket.on('setOnlineUser', async (userId) => {
-        // console.log('setOnlineUser', userId);
-
-        if (typeof userId === 'string') {
-            userSocketMap[userId] = socket.id;
-            console.log(`User ${userId} is now online`);
-            await updateUserStatus(userId);
-        }
-    });
     const updateUserStatus = async (userId: string) => {
         const onlineUsers = Object.keys(userSocketMap);
         const allUsers = await User.find({ _id: { $ne: userId } }).select(
@@ -66,6 +56,16 @@ io.on('connection', async (socket) => {
         //  io.to()emit('getUsers', usersWithStatus);
         io.emit('getUsers', usersWithStatus);
     };
+    socket.on('setOnlineUser', async (userId) => {
+        // console.log('setOnlineUser', userId);
+
+        if (typeof userId === 'string') {
+            userSocketMap[userId] = socket.id;
+            console.log(`User ${userId} is now online`);
+            await updateUserStatus(userId);
+        }
+    });
+
     socket.on('join_room', async (roomId) => {
         if (roomId) {
             socket.join(roomId);
