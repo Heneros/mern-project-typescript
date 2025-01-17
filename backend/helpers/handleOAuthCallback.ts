@@ -24,7 +24,7 @@ const handleOAuthCallback =
                 id: userReq.user.id,
                 firstName: existingUser.firstName,
                 roles: existingUser.roles || 'User',
-                lastName: existingUser.lastName || 'Name',
+                lastName: existingUser.lastName || 'Unwkown',
                 username: existingUser.username,
                 provider: existingUser.provider,
                 avatar: existingUser.avatar,

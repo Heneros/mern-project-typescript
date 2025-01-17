@@ -50,7 +50,10 @@ const registerUser = asyncHandler(async (req, res) => {
         const userExists = await User.findOne({ email });
 
         if (userExists) {
-            res.status(400);
+            res.status(400).json({
+                message:
+                    "The email address you've entered is already associated with another account",
+            });
             throw new Error(
                 "The email address you've entered is already associated with another account",
             );
