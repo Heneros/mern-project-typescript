@@ -8,6 +8,8 @@ const config: Config = {
     coverageDirectory: 'coverage',
     detectOpenHandles: true,
     coverageProvider: 'v8',
+    testMatch: ['**/test/**/*.test.ts'],
+    setupFiles: ['dotenv/config'],
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/backend/$1',
     },

@@ -5,6 +5,8 @@
     },
     "include": [
         "backend/**/*.ts",
+        "tsconfig.json",
+        "jest.config.ts",
         "frontend/src/**/*.ts",
         "frontend/src/**/*.tsx",
         "test/**/*.ts",

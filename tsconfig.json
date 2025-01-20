@@ -7,7 +7,7 @@
     "experimentalDecorators": true,
     "allowJs": false,
     "baseUrl": ".",
-    "isolatedModules": true,
+    "isolatedModules": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

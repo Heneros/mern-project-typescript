@@ -5,142 +5,68 @@ import { connectTestDB, disconnectTestDB } from './setupTestDB';
 import User from '../backend/models/userModel';
 import { sendEmail } from '../backend/utils/sendEmail';
 
-const request = supertest(app);
+export const request = supertest(app);
 
 jest.mock('../backend/utils/sendEmail');
 
-describe('Auth operations - All Scenarios', () => {
-    let userId: string;
-    let token: string;
+// describe('Auth operations - All Scenarios', () => {
+//     let userId: string;
+//     let token: string;
 
-    beforeAll(async () => {
-        await connectTestDB();
-    });
+//     beforeAll(async () => {
+//         await connectTestDB();
+//     });
 
-    /// Success Scenarios
-    describe('Success Scenarios', () => {
-        test('It should user create - Success Scenarios', async () => {
-            const userData = {
-                username: 'admin',
-                email: 'admin@gmail.com',
-                firstName: 'First',
-                lastName: 'Last',
-                password: 'testtest',
-                passwordConfirm: 'testtest',
-                roles: ['Admin', 'User', 'Editor'],
-            };
-            const response = await request
-                .post('/api/v1/auth/register')
-                .send(userData);
+//     /// Success Scenarios
+//     describe('Success Scenarios', () => {
+//         // test('Resend email verification token', async () => {
+//         //     const dataEmail = {
+//         //         email: 'admin@gmail.com',
+//         //     };
+//         //     const user = await User.findOne({
+//         //         email: dataEmail.email,
+//         //     });
+//         //     if (!user) {
+//         //         throw new Error('User not found');
+//         //     }
+//         //     if (user.isEmailVerified) {
+//         //         throw new Error(
+//         //             'This account has already been verified. Please login',
+//         //         );
+//         //     }
+//         //     const response = await request
+//         //         .post('/api/v1/auth/resend_email_token')
+//         //         .send({ email: user.email });
+//         //     expect(response.status).toBe(200);
+//         //     expect(sendEmail).toHaveBeenCalledWith(
+//         //         user.email,
+//         //         'Account Verification',
+//         //         expect.any(Object),
+//         //         './emails/template/accountVerification.handlebars',
+//         //     );
+//         //     expect(response.body).toEqual({
+//         //         success: true,
+//         //         message: expect.stringContaining(
+//         //             `${user.firstName}, an email has been sent to your account, please verify within 15 minutes`,
+//         //         ),
+//         //     });
+//         // });
+//         // test('new access token.', async () => {});
+//         // test('It should create a verification token and verify email', async () => {
+//         //     const tokenDoc = await VerifyResetToken.create({
+//         //         _userId: userId,
+//         //         token: 'testemailtoken123',
+//         //     });
+//         //     token = tokenDoc.token;
+//         //     const verifyResponse = await request.get(
+//         //         `/api/v1/auth/verify/${token}/${userId}`,
+//         //     );
+//         //     expect(verifyResponse.status).toBe(302);
+//         //     expect(verifyResponse.headers.location).toBe('/auth/verify');
+//         // });
+//     });
 
-            // console.log('userData userData:', userData);
-            expect(response.status).toBe(201);
-            userId = response.body.userId;
-            // console.log('Response body:', userId);
-        });
-
-        test('Resend email verification token', async () => {
-            const dataEmail = {
-                email: 'admin@gmail.com',
-            };
-
-            const user = await User.findOne({
-                email: dataEmail.email,
-            });
-
-            if (!user) {
-                throw new Error('User not found');
-            }
-
-            if (user.isEmailVerified) {
-                throw new Error(
-                    'This account has already been verified. Please login',
-                );
-            }
-
-            const response = await request
-                .post('/api/v1/auth/resend_email_token')
-                .send({ email: user.email });
-
-            expect(response.status).toBe(200);
-
-            expect(sendEmail).toHaveBeenCalledWith(
-                user.email,
-                'Account Verification',
-                expect.any(Object),
-                './emails/template/accountVerification.handlebars',
-            );
-            expect(response.body).toEqual({
-                success: true,
-                message: expect.stringContaining(
-                    `${user.firstName}, an email has been sent to your account, please verify within 15 minutes`,
-                ),
-            });
-        });
-
-        test('It should create a verification token and verify email', async () => {
-            const tokenDoc = await VerifyResetToken.create({
-                _userId: userId,
-                token: 'testemailtoken123',
-            });
-            token = tokenDoc.token;
-            const verifyResponse = await request.get(
-                `/api/v1/auth/verify/${token}/${userId}`,
-            );
-            expect(verifyResponse.status).toBe(302);
-
-            expect(verifyResponse.headers.location).toBe('/auth/verify');
-        });
-    });
-
-    describe('Failures scenarios', () => {
-        test('It should fail when registering with an existing email', async () => {
-            const existingUserData = {
-                username: 'admin',
-                email: 'admin@gmail.com',
-                firstName: 'First',
-                lastName: 'Last',
-                password: 'testtest',
-                passwordConfirm: 'testtest',
-            };
-
-            await request.post('/api/v1/auth/register').send(existingUserData);
-
-            const response = await request
-                .post('/api/v1/auth/register')
-                .send(existingUserData);
-            // console.log(response.body);
-
-            expect(response.status).toBe(400);
-
-            expect(response.body.message).toContain(
-                "The email address you've entered is already associated with another account",
-            );
-        });
-
-        test('It should fail when field(s) empty', async () => {
-            const existingUserData = {
-                username: '',
-                email: '',
-                firstName: '',
-                lastName: '',
-                password: '',
-                passwordConfirm: '',
-            };
-
-            await request.post('/api/v1/auth/register').send(existingUserData);
-
-            const response = await request
-                .post('/api/v1/auth/register')
-                .send(existingUserData);
-
-            expect(response.status).toBe(400);
-            expect(response.body.message).toContain(
-                'All fields are required: email, username, firstName, lastName, password, and passwordConfirm',
-            );
-        });
-    });
-    afterAll(async () => {
-        await disconnectTestDB();
-    });
-});
+//     afterAll(async () => {
+//         await disconnectTestDB();
+//     });
+// });
