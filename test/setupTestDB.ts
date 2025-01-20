@@ -6,7 +6,6 @@ const MONGO_URI = String(process.env.MONGO_URI_LOCAL!);
 export const connectTestDB = async () => {
     try {
         await connectDB(MONGO_URI);
-        //   console.log('MongoDB Connected:', mongoose.connection.host);
     } catch (error) {
         console.error('Database connection error:', error);
         throw error;
