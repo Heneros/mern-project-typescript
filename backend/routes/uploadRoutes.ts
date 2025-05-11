@@ -30,9 +30,7 @@ router.route('/').patch(handleUpload, async (req: Request, res: Response) => {
         } else {
             res.status(500).send('Failed to upload image.');
         }
-        // res.status(500).json({
-        //     message: 'Upload failed, no URL returned',
-        // });
+
     } catch (error) {
         console.error('Upload error:', error);
         res.status(500).send({ message: 'Upload failed' });

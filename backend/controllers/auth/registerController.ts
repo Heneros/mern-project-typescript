@@ -100,6 +100,7 @@ const registerUser = asyncHandler(
 
           
             const verificationToken = randomBytes(32).toString('hex');
+          
             const emailVerificationToken = new VerificationToken({
                 _userId: registeredUser._id,
                 token: verificationToken,

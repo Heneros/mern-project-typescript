@@ -5,12 +5,13 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: ./docker/local/express/Dockerfile
+      dockerfile: ./docker/dev/express/Dockerfile
+    env_file: ./.env  
     volumes:
       - /app/node_modules
       - .:/app
-    # ports:
-    #   - "1997:1997"
+    ports:
+      - "1997:1997"
     depends_on:
       - mongodb
     networks:
@@ -18,22 +19,27 @@ services:
 
   frontend:
     build:
-      context: ./frontend
-      dockerfile: ./docker/Dockerfile
-    restart: on-failure
+      context: .
+      dockerfile: ./docker/dev/frontend/Dockerfile
+    restart: always
     volumes:
       - ./frontend:/app
       - /app/node_modules
     networks:
       - mern-project_villa
 
-  mailhog:
-    image: mailhog/mailhog:v1.0.0
-    networks:
+  maildev:
+   image: maildev/maildev:2.2.1
+   restart: always
+   ports:
+    - "1080:1080"
+    - "1025:1025"
+   environment:
+      - MAILDEV_WEB_PORT=1080
+      - MAILDEV_SMTP_PORT=1025
+   networks:
       - mern-project_villa
-    ports:
-      - "8025:8025"
-      - "1025:1025"
+
 
   mongo-express:
     image: mongo-express:0.54.0
