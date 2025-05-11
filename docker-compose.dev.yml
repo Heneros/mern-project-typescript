@@ -9,7 +9,8 @@ services:
     env_file: ./.env  
     volumes:
       - /app/node_modules
-      - .:/app
+      # - .:/app
+      - ./backend:/app
     ports:
       - "1997:1997"
     depends_on:

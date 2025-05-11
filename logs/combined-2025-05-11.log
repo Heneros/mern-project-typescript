@@ -1,0 +1,359 @@
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-05-11 09:59:28.367 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '31',
+  response_time: 2.092,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 09:59:29.675 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: '75',
+  response_time: 0.717,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 09:59:30.057 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.359,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 09:59:36.881 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: '31',
+  response_time: 0.447,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:00:17.867 PM'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 500,
+  content_length: '75',
+  response_time: 0.239,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:00:18.454 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.254,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:01:42.431 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-05-11 10:04:32.147 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 2.112,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:04:38.160 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 401,
+  content_length: '26',
+  response_time: 0.803,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:04:38.810 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 404,
+  content_length: '48',
+  response_time: 51.638,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:04:38.848 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3431',
+  response_time: 97.067,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:04:38.903 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 401,
+  content_length: '26',
+  response_time: 0.405,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:04:43.060 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 404,
+  content_length: '48',
+  response_time: 41.05,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:04:43.104 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3431',
+  response_time: 88.9,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:04:43.155 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 404,
+  content_length: '48',
+  response_time: 43.76,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:04:51.992 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 1.666,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:17:46.731 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: development  ',
+  level: 'info',
+  timestamp: '2025-05-11 10:17:47.288 PM'
+}
+{
+  message: 'Server on 1997 running. NodeENV: production  ',
+  level: 'info',
+  timestamp: '2025-05-11 10:19:44.160 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  content_length: 696,
+  response_time: 11.201,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:00.607 PM'
+}
+{
+  method: 'GET',
+  url: '/main.d825de5bb17566aa3a1c.js',
+  status: 200,
+  content_length: 1807411,
+  response_time: 2.265,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:00.655 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 200,
+  content_length: 52917,
+  response_time: 7.991,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.212 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 200,
+  content_length: 65834,
+  response_time: 7.779,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.216 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 200,
+  content_length: 1871,
+  response_time: 5.631,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.217 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 200,
+  content_length: 2512,
+  response_time: 8.466,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.219 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 200,
+  content_length: 143848,
+  response_time: 5.372,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.220 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 401,
+  content_length: '26',
+  response_time: 1.265,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.264 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 404,
+  content_length: '48',
+  response_time: 47.968,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.297 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3431',
+  response_time: 102.198,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.361 PM'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 304,
+  response_time: 0.59,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.586 PM'
+}
+{
+  method: 'GET',
+  url: '/main.d825de5bb17566aa3a1c.js',
+  status: 304,
+  response_time: 0.662,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:01.854 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-frame.jpg',
+  status: 304,
+  response_time: 0.837,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:02.156 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/phone-icon.png',
+  status: 304,
+  response_time: 5.308,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:02.220 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/email-icon.png',
+  status: 304,
+  response_time: 1.482,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:02.274 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/video-bg.jpg',
+  status: 304,
+  response_time: 5.811,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:02.279 PM'
+}
+{
+  method: 'GET',
+  url: '/assets/images/contact-bg.jpg',
+  status: 304,
+  response_time: 6.132,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:02.280 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/profile',
+  status: 401,
+  content_length: '26',
+  response_time: 0.592,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:02.290 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/666720f01ed8af0105a0d444',
+  status: 404,
+  content_length: '48',
+  response_time: 45.286,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:02.321 PM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/property/?page=1',
+  status: 200,
+  content_length: '3431',
+  response_time: 86.114,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-11 10:20:02.368 PM'
+}

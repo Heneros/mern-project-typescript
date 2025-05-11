@@ -4,10 +4,10 @@ ENV NODE_ENV=development
 
 WORKDIR /app
 
-COPY ./backend/package*.json ./
+COPY backend/package*.json ./
 
 RUN npm install
 
-COPY ./backend .
+COPY backend/ .
 
 CMD ["npm", "run", "server"]

@@ -1,0 +1,164 @@
+[{
+  "_id": {
+    "$oid": "67332bd4d9712b8ece95774a"
+  },
+  "email": "woods@gmail.com",
+  "username": "user",
+  "firstName": "james",
+  "lastName": "woods",
+  "password": "$2a$10$5BIQRUH1wVteFzKzUk4sTegaBAvuDZXA.dCTIQuy0Pb2FrJAsrzyy",
+  "isEmailVerified": true,
+  "phoneNumber": "+254123456789",
+  "provider": "email",
+  "roles": [
+    "User"
+  ],
+  "active": false,
+  "refreshToken": [
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzMyYmQ0ZDk3MTJiOGVjZTk1Nzc0YSIsImlhdCI6MTczMTQwODE0MywiZXhwIjoxNzM0MDAwMTQzfQ.ZGcQjxm1GGQPjr6sUlsgYvVXJM0XQzs0MLlQM8-06qQ"
+  ],
+  "createdAt": {
+    "$date": "2024-11-12T10:20:04.384Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-26T13:37:32.533Z"
+  },
+  "__v": 1,
+  "publicChat": true
+},{
+  "_id": {
+    "$oid": "6738b0d3bc69a50643663670"
+  },
+  "email": "woods1@gmail.com",
+  "username": "woods1",
+  "firstName": "james",
+  "lastName": "woods",
+  "password": "$2a$10$jy4EpC.DCyqZ.wUgQW80OuwqCQ1zwneA9rpvyIcOPmuuGFx7/7IKG",
+  "isEmailVerified": true,
+  "avatar": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984210799.jpg.jpg",
+  "phoneNumber": "+254123456789",
+  "provider": "email",
+  "roles": [
+    "User",
+    "Admin"
+  ],
+  "active": true,
+  "refreshToken": [
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzhiMGQzYmM2OWE1MDY0MzY2MzY3MCIsImlhdCI6MTczMTc2ODU0NiwiZXhwIjoxNzM0MzYwNTQ2fQ.ExOX_bBt4fkBjEw-VS3ExDQYSclkGyUTuF3-IL_aW0M",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzhiMGQzYmM2OWE1MDY0MzY2MzY3MCIsImlhdCI6MTczMzc3NTU4OCwiZXhwIjoxNzM2MzY3NTg4fQ.ZZX6HEGk7IxIai-bE-SSFkPqKmEEMUkwgvobqZDE8gE",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzhiMGQzYmM2OWE1MDY0MzY2MzY3MCIsImlhdCI6MTczMzg0NTM2OCwiZXhwIjoxNzM2NDM3MzY4fQ.LGrGOlIvaCXPeqWcVYmMHzzuaVTN4mFaO0vBr6KVa-s",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzhiMGQzYmM2OWE1MDY0MzY2MzY3MCIsImlhdCI6MTczNDcyNzIzOCwiZXhwIjoxNzM3MzE5MjM4fQ.GS9tO5tNgj-CpjTE4b1Y7TVYZ7tCeUYRuqJLVXTp_9Q",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzhiMGQzYmM2OWE1MDY0MzY2MzY3MCIsImlhdCI6MTczNDcyODc1MywiZXhwIjoxNzM3MzIwNzUzfQ.ec3H_sGUl05krj1yvXII3XZHTMwHbJAHRdt-ZGV8eek",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MzhiMGQzYmM2OWE1MDY0MzY2MzY3MCIsImlhdCI6MTczNTg1MTI4NywiZXhwIjoxNzM4NDQzMjg3fQ.YY2ZvfGXteOxFelefO1TXnbeljF6VR5ICl5ETDCAglU"
+  ],
+  "createdAt": {
+    "$date": "2024-11-16T14:48:51.501Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-02T21:05:25.510Z"
+  },
+  "__v": 13,
+  "publicChat": true,
+  "passwordChangedAt": {
+    "$date": "2025-01-02T21:05:25.576Z"
+  }
+},{
+  "_id": {
+    "$oid": "674733b9f859f18504a045b2"
+  },
+  "email": "watsonwatson@gmail.com",
+  "username": "watsonwatson1",
+  "firstName": "watsonwatson",
+  "lastName": "watsonwatson1",
+  "password": "$2a$10$jI08JpYTXxPzFxiUH34DyuP1s67Z1GB0H2H3ROUBf6VDXVyI7NUJu",
+  "isEmailVerified": true,
+  "avatar": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984210799.jpg.jpg",
+  "phoneNumber": "+254123456789",
+  "provider": "email",
+  "roles": [
+    "User",
+    "Admin",
+    "Editor",
+    ""
+  ],
+  "active": true,
+  "refreshToken": [
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczMjc4NzY3MywiZXhwIjoxNzM1Mzc5NjczfQ.EmqqUAeZuS5FTd7AfggAYrJKNVyB-Ij6Q2TKnw7cFus",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczMjk2MjI1NiwiZXhwIjoxNzM1NTU0MjU2fQ.5-5eB48lsKAzKQzSAT04AWKS64MIygcRiJJ0zMaNpoo",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczMjk4NzkxMywiZXhwIjoxNzM1NTc5OTEzfQ.yHsDi0QZG5ZIKoGX4lE4YBGn4R0LXbuvSH9l14BByEE",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczMzM5NzcwNCwiZXhwIjoxNzM1OTg5NzA0fQ.lmoI6gO71DM-vRrf0qQwObjgY90-7sENFaXC_kM8ylk",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczMzUxMzkxNSwiZXhwIjoxNzM2MTA1OTE1fQ.qzAIHTZ3Xl_nE6FictHyznOozBlYBaGLVP_EYIYVZ9I",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczMzc2ODUyMiwiZXhwIjoxNzM2MzYwNTIyfQ.G67cHrhsHPZECnvtOCSyWo0k1aBGkLXvyV87DARzBQw",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczMzc2OTMzMywiZXhwIjoxNzM2MzYxMzMzfQ.Q0nRPGLVKbrRJlYyq0ASYW1M3np3iu94kXHHdtM_cjA",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNDM4MjE2MywiZXhwIjoxNzM2OTc0MTYzfQ.KCe6AuBxqz0-OskT0_7gCS0r6UOIEnx23DQJLgYv5dg",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNDUzMjI3MCwiZXhwIjoxNzM3MTI0MjcwfQ.BQdPGa6I0etQT4NvkBpRLr_42YKNGl2J_giOQ9fVDWU",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNDcyODU1MCwiZXhwIjoxNzM3MzIwNTUwfQ.TI-h-J56C8PNDmWwRDB0Os4990w5Mv9O4CUXVVirzvs",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNDk2Mjk5OCwiZXhwIjoxNzM3NTU0OTk4fQ.KIFtLR5C3xf8gjx838X57W9ZI1SInlCYo1W6ws2-J3I",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNDk2NDkzNCwiZXhwIjoxNzM3NTU2OTM0fQ.s6uJoLMnik6vkL6LSqPc-alwBuDViK62PmoAfTn3Kic",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNDk4ODUxMiwiZXhwIjoxNzM3NTgwNTEyfQ.-KwlK5xs1dy1sigkd-nfG8LS2KCC_1wANy8I8eBVegY",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNDk4ODk3MiwiZXhwIjoxNzM3NTgwOTcyfQ.H9QrOuER_wG7UPqO181kLJCSjbOWnpL-jDgisST9swE",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNTA1NzQzMCwiZXhwIjoxNzM3NjQ5NDMwfQ.ILa_kV2Zo73eYUuFMOGwSQVxs4Ny3IbRKSupL20pxTo",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNTE1NzE1NCwiZXhwIjoxNzM3NzQ5MTU0fQ.3F3F_DJM4i26284b1BBYF8DcR2Efh2S94EkC0yuHARY",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDczM2I5Zjg1OWYxODUwNGEwNDViMiIsImlhdCI6MTczNTg0Njc5MSwiZXhwIjoxNzM1OTMzMTkxfQ.p4knSUCB9oHp2mI1JTUZn6bWHM0sCClibP6UDtMfAJE"
+  ],
+  "publicChat": true,
+  "createdAt": {
+    "$date": "2024-11-27T14:59:05.095Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-02T19:39:51.364Z"
+  },
+  "__v": 40
+},{
+  "_id": {
+    "$oid": "6789acb5fbeeba3b81084797"
+  },
+  "email": "admin@gmail.com",
+  "username": "admin",
+  "firstName": "First",
+  "lastName": "Last",
+  "password": "$2a$10$jzhURuiO7CrJtul7.85mTO0mlBN4hZTzetRtACCJmonLdd6EmruRW",
+  "isEmailVerified": false,
+  "avatar": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984210799.jpg.jpg",
+  "phoneNumber": "+254123456789",
+  "provider": "email",
+  "roles": [
+    "User"
+  ],
+  "active": true,
+  "refreshToken": [],
+  "publicChat": true,
+  "createdAt": {
+    "$date": "2025-01-17T01:04:53.401Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-17T01:04:53.401Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "678ac9c423a84497fcb9ba94"
+  },
+  "email": "james@gmail.com",
+  "username": "james",
+  "firstName": "Test",
+  "lastName": "Jamess",
+  "password": "$2a$10$e2uH4pCBhadZd1/Y9ollkeFGhi7AeBz25FpLdjVp33JDOQKcZ./1a",
+  "isEmailVerified": false,
+  "avatar": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984210799.jpg.jpg",
+  "phoneNumber": "+254123456789",
+  "provider": "email",
+  "roles": [
+    "User"
+  ],
+  "active": true,
+  "refreshToken": [],
+  "publicChat": true,
+  "createdAt": {
+    "$date": "2025-01-17T21:21:08.306Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-17T21:21:08.306Z"
+  },
+  "__v": 0
+}]

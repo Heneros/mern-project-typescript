@@ -1,0 +1,31 @@
+{
+    "indexes": [
+        {
+            "v": {
+                "$numberInt": "2"
+            },
+            "key": {
+                "_id": {
+                    "$numberInt": "1"
+                }
+            },
+            "name": "_id_"
+        },
+        {
+            "v": {
+                "$numberInt": "2"
+            },
+            "key": {
+                "paypalOrderId": {
+                    "$numberInt": "1"
+                }
+            },
+            "name": "paypalOrderId_1",
+            "background": true,
+            "unique": true
+        }
+    ],
+    "uuid": "a11b2e66591c417eaf1805c8d545e880",
+    "collectionName": "orders",
+    "type": "collection"
+}

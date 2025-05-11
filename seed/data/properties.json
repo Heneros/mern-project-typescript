@@ -1,0 +1,906 @@
+[{
+  "_id": {
+    "$oid": "66698737b4ca40d2e7bfb178"
+  },
+  "title": "Updated Luxury Villa",
+  "preview": "https://example.com/updated-image.jpg",
+  "category": "Commercial",
+  "description": "A newly renovated villa with ocean view",
+  "price": 550000,
+  "bedrooms": 6,
+  "bathrooms": 5,
+  "area": 150,
+  "floor": 3,
+  "parking": 0,
+  "city": "New York",
+  "country": "USA",
+  "createdAt": {
+    "$date": "2024-06-12T11:32:07.029Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-11T15:50:48.465Z"
+  },
+  "__v": 0,
+  "questionsAndAnswers": [
+    {
+      "question": "Does the property have a garage?",
+      "answer": "Yes, it has a garage.",
+      "_id": {
+        "$oid": "678293581377f0b50b5e887b"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "667d32bae9317340ae958b34"
+  },
+  "title": "26 Mid Street Portland, OR 38540",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "Penthouse",
+  "description": "Apartmnet luxury",
+  "price": 125500,
+  "bedrooms": 32,
+  "bathrooms": 12,
+  "area": 123,
+  "floor": 12,
+  "parking": 21,
+  "city": "New York",
+  "country": "USA",
+  "createdAt": {
+    "$date": "2024-06-27T09:36:58.956Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-20T18:28:52.507Z"
+  },
+  "__v": 0,
+  "questionsAndAnswers": [
+    {
+      "question": "213",
+      "answer": "123123",
+      "_id": {
+        "$oid": "673dcc6b08b3006ce3d35d55"
+      }
+    },
+    {
+      "question": "12",
+      "answer": "213",
+      "_id": {
+        "$oid": "674831187ce580b9929274f5"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "667d3302e9317340ae958b38"
+  },
+  "title": "34 Hope Street Portland, OR 12",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1732198116/mernVilla/futuramaposter_1732198113082%3B.jpg",
+  "category": "Penthouse",
+  "description": "Apartmnet luxury",
+  "price": 925000,
+  "bedrooms": 32,
+  "bathrooms": 12,
+  "area": 123,
+  "floor": 12,
+  "parking": 21,
+  "city": "New York",
+  "country": "USA",
+  "createdAt": {
+    "$date": "2024-06-27T09:38:10.533Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-21T14:08:48.066Z"
+  },
+  "__v": 0,
+  "questionsAndAnswers": [
+    {
+      "question": "Default Question",
+      "answer": "Default Answer",
+      "_id": {
+        "$oid": "673f3cbfd6d37f51417b1e1a"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "667d3343e9317340ae958b3c"
+  },
+  "title": "22 Hope Street Portland, OR 16540",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "Modern Condo",
+  "description": "Apartmnet luxury",
+  "price": 450000,
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "area": 2,
+  "floor": 2,
+  "parking": 4,
+  "city": "New York",
+  "country": "USA",
+  "createdAt": {
+    "$date": "2024-06-27T09:39:15.299Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-28T09:43:20.546Z"
+  },
+  "__v": 0,
+  "questionsAndAnswers": [
+    {
+      "question": "",
+      "answer": "",
+      "_id": {
+        "$oid": "67483b2227f96be6447670f7"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "667d33dce9317340ae958b44"
+  },
+  "title": "26 Old Street Miami, OR 12870",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1732198329/mernVilla/futuramaposter_1732198326286%3B.jpg",
+  "category": "Penthouse",
+  "description": "Apartmnet luxury\n*12*",
+  "price": 125000,
+  "bedrooms": 121,
+  "bathrooms": 4,
+  "area": 1,
+  "floor": 1,
+  "parking": 3,
+  "city": "New York1",
+  "country": "USA",
+  "createdAt": {
+    "$date": "2024-06-27T09:41:48.845Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-21T14:12:14.726Z"
+  },
+  "__v": 0,
+  "questionsAndAnswers": [
+    {
+      "question": "Default Question",
+      "answer": "Default Answer",
+      "_id": {
+        "$oid": "673dd77408b3006ce3d35dc3"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "667d3410e9317340ae958b48"
+  },
+  "title": "34 New Street Miami, OR 24650",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "Villa House",
+  "description": "Apartmnet luxury",
+  "price": 320000,
+  "bedrooms": 12,
+  "bathrooms": 4,
+  "area": 1,
+  "floor": 1,
+  "parking": 3,
+  "city": "New York",
+  "country": "USA",
+  "createdAt": {
+    "$date": "2024-06-27T09:42:40.236Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-27T09:42:40.236Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6730be1913f9cf4cfe0b2734"
+  },
+  "title": "Apartmnet New",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "Test",
+  "description": "Apartmnet luxury",
+  "price": 351,
+  "bedrooms": 32,
+  "bathrooms": 12,
+  "area": 123,
+  "floor": 12,
+  "parking": 21,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [],
+  "createdAt": {
+    "$date": "2024-11-10T14:07:21.451Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-10T14:07:21.451Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6730be8065ee0bc417f5555b"
+  },
+  "title": "Unique Appar New",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "Appart",
+  "description": "Apartmnet luxury",
+  "price": 1234,
+  "bedrooms": 32,
+  "bathrooms": 12,
+  "area": 123,
+  "floor": 12,
+  "parking": 21,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [],
+  "createdAt": {
+    "$date": "2024-11-10T14:09:04.799Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-10T14:09:04.799Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6730beeb167c535f9181da29"
+  },
+  "title": "Unique Appar qw",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "House Lux",
+  "description": "Apartmnet luxury",
+  "price": 62,
+  "bedrooms": 3,
+  "bathrooms": 12,
+  "area": 5,
+  "floor": 5,
+  "parking": 5,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "Bond",
+      "answer": "James",
+      "_id": {
+        "$oid": "6730beeb167c535f9181da2a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-10T14:10:51.062Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-10T14:10:51.062Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6730c0b25e73ec40f5b4c671"
+  },
+  "title": "Unique3 Appar qw",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "House Lux",
+  "description": "Apartmnet luxury",
+  "price": 62,
+  "bedrooms": 3,
+  "bathrooms": 12,
+  "area": 5,
+  "floor": 5,
+  "parking": 5,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [],
+  "createdAt": {
+    "$date": "2024-11-10T14:18:26.162Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-10T14:18:26.162Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6730c25c553db0525961dea0"
+  },
+  "title": "Unique Appar 12",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "House Lux",
+  "description": "Apartmnet luxury",
+  "price": 62,
+  "bedrooms": 3,
+  "bathrooms": 12,
+  "area": 5,
+  "floor": 5,
+  "parking": 5,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "Bond",
+      "answer": "James",
+      "_id": {
+        "$oid": "6730c25c553db0525961dea1"
+      }
+    },
+    {
+      "question": "q",
+      "answer": "qweqwe",
+      "_id": {
+        "$oid": "6746e2fce23bdefa305e5acf"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-10T14:25:32.202Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-27T09:14:36.310Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c7833cdedb8d18803881a"
+  },
+  "title": "qwewq",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "qwqweqw",
+  "description": "",
+  "price": 0,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "area": 0,
+  "floor": 0,
+  "parking": 0,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "",
+      "answer": "",
+      "_id": {
+        "$oid": "673c7833cdedb8d18803881b"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T11:36:19.006Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T11:36:19.006Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c7838cdedb8d188038820"
+  },
+  "title": "qwewq",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "qwqweqw",
+  "description": "",
+  "price": 123,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "area": 0,
+  "floor": 0,
+  "parking": 0,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "",
+      "answer": "",
+      "_id": {
+        "$oid": "673c7838cdedb8d188038821"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T11:36:24.580Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T11:36:24.580Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c7840cdedb8d188038825"
+  },
+  "title": "qwewqtest",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "qwqweqw",
+  "description": "",
+  "price": 123,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "area": 0,
+  "floor": 0,
+  "parking": 0,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "",
+      "answer": "",
+      "_id": {
+        "$oid": "673c7840cdedb8d188038826"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T11:36:32.215Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T11:36:32.215Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c7c1f94ed42fd63c465e8"
+  },
+  "title": "qwe",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "qwe",
+  "description": "qwqwe",
+  "price": 0,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "area": 12,
+  "floor": 0,
+  "parking": 12,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "qw",
+      "answer": "aws",
+      "_id": {
+        "$oid": "673c7c1f94ed42fd63c465e9"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T11:53:03.351Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T11:53:03.351Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c7c3594ed42fd63c465ee"
+  },
+  "title": "qwe",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "qwe",
+  "description": "qwqwe",
+  "price": 123,
+  "bedrooms": 0,
+  "bathrooms": 0,
+  "area": 12,
+  "floor": 1234,
+  "parking": 12,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "qw",
+      "answer": "aws",
+      "_id": {
+        "$oid": "673c7c3594ed42fd63c465ef"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T11:53:25.164Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T11:53:25.164Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c7c6294ed42fd63c465f3"
+  },
+  "title": "qwerty",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "qwertyqwerty",
+  "description": "qwertyqwertyqwertyqwerty",
+  "price": 213,
+  "bedrooms": 45,
+  "bathrooms": 123,
+  "area": 21,
+  "floor": 45,
+  "parking": 12,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "",
+      "answer": "",
+      "_id": {
+        "$oid": "673c7c6294ed42fd63c465f4"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T11:54:10.489Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T11:54:10.489Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c7c8b94ed42fd63c465f9"
+  },
+  "title": "qwerty",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "qwertyqwerty",
+  "description": "qwertyqwertyqwerty",
+  "price": 456,
+  "bedrooms": 1233,
+  "bathrooms": 12,
+  "area": 321,
+  "floor": 76578,
+  "parking": 123,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "qwertyqwerty",
+      "answer": "qwerty",
+      "_id": {
+        "$oid": "673c7c8b94ed42fd63c465fa"
+      }
+    },
+    {
+      "question": "yes",
+      "answer": "no?",
+      "_id": {
+        "$oid": "673c7c8b94ed42fd63c465fb"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T11:54:51.802Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T11:54:51.802Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c7c9094ed42fd63c465ff"
+  },
+  "title": "qwertyqww",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "qwertyqwerty",
+  "description": "qwertyqwertyqwerty",
+  "price": 456,
+  "bedrooms": 1233,
+  "bathrooms": 12,
+  "area": 321,
+  "floor": 76578,
+  "parking": 123,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "qwertyqwerty",
+      "answer": "qwerty",
+      "_id": {
+        "$oid": "673c7c9094ed42fd63c46600"
+      }
+    },
+    {
+      "question": "yes",
+      "answer": "no?",
+      "_id": {
+        "$oid": "673c7c9094ed42fd63c46601"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T11:54:56.375Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T11:54:56.375Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c854eed1abcb45eb70dae"
+  },
+  "title": "Autumn",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "AutumnAutumn",
+  "description": "",
+  "price": 33,
+  "bedrooms": 42,
+  "bathrooms": 32,
+  "area": 123,
+  "floor": 213,
+  "parking": 12,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "yes\\\\|??",
+      "answer": "qwwerw132432432432",
+      "_id": {
+        "$oid": "673c854eed1abcb45eb70db0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T12:32:14.600Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-21T14:26:26.582Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673c8722ed1abcb45eb70dda"
+  },
+  "title": "Testq1",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "йцуцй",
+  "description": "**цйуцйу**\n",
+  "price": 3223324,
+  "bedrooms": 12,
+  "bathrooms": 23,
+  "area": 2332,
+  "floor": 12,
+  "parking": 1234,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "",
+      "answer": "",
+      "_id": {
+        "$oid": "673c8722ed1abcb45eb70ddb"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-19T12:40:02.217Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-19T12:40:02.217Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673f4946d696ace804f2fecd"
+  },
+  "title": "йцуцйуq",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1716984705/mernvilla/uploads/logo-1716984707439.jpg.jpg",
+  "category": "уцйуцйуцйуц",
+  "description": "уцй",
+  "price": 21321,
+  "bedrooms": 213213,
+  "bathrooms": 123,
+  "area": 0,
+  "floor": 0,
+  "parking": 1212,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "йцуцйу",
+      "answer": "уйццйуцйу",
+      "_id": {
+        "$oid": "673f4946d696ace804f2fece"
+      }
+    },
+    {
+      "question": "",
+      "answer": "",
+      "_id": {
+        "$oid": "673f495dd696ace804f2fee8"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-21T14:52:54.130Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-21T14:56:09.851Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673f4a38d696ace804f2ff03"
+  },
+  "title": "Neat",
+  "preview": "https://res.cloudinary.com/dmk9uxtiu/image/upload/v1732200983/mernVilla/futuramaposter_1732200982234%3B.jpg",
+  "category": "eqw",
+  "description": "qwert",
+  "price": 24342,
+  "bedrooms": 4,
+  "bathrooms": 213,
+  "area": 0,
+  "floor": 23,
+  "parking": 0,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "qw",
+      "answer": "wqsaF",
+      "_id": {
+        "$oid": "673f4a38d696ace804f2ff04"
+      }
+    },
+    {
+      "question": "",
+      "answer": "",
+      "_id": {
+        "$oid": "673f4a38d696ace804f2ff05"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-11-21T14:56:56.992Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-21T14:56:56.992Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "67828ac77a7e8ce61bf572ba"
+  },
+  "title": "Luxury Villa",
+  "preview": "https://example.com/image.jpg",
+  "category": "Residential",
+  "description": "A beautiful villa with ocean view",
+  "price": 500000,
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "area": 125,
+  "floor": 12,
+  "parking": 1,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "string",
+      "answer": "string",
+      "_id": {
+        "$oid": "67828ac77a7e8ce61bf572bb"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-01-11T15:14:15.280Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-11T15:14:15.280Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "67828acc7a7e8ce61bf572c0"
+  },
+  "title": "Luxury Villa",
+  "preview": "https://example.com/image.jpg",
+  "category": "Residential",
+  "description": "A beautiful villa with ocean view",
+  "price": 500000,
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "area": 125,
+  "floor": 12,
+  "parking": 1,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "string",
+      "answer": "string",
+      "_id": {
+        "$oid": "67828acc7a7e8ce61bf572c1"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-01-11T15:14:20.076Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-11T15:14:20.076Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6782916565f332892541f9ff"
+  },
+  "title": "Luxury Villa",
+  "preview": "https://example.com/image.jpg",
+  "category": "Residential",
+  "description": "A beautiful villa with ocean view",
+  "price": 500000,
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "area": 125,
+  "floor": 12,
+  "parking": 1,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "string",
+      "answer": "string",
+      "_id": {
+        "$oid": "6782916565f332892541fa00"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-01-11T15:42:29.214Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-11T15:42:29.214Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6782916c65f332892541fa05"
+  },
+  "title": "Luxury Villa",
+  "preview": "https://example.com/image.jpg",
+  "category": "Residential",
+  "description": "A beautiful villa with ocean view",
+  "price": 500000,
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "area": 125,
+  "floor": 12,
+  "parking": 1,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "string",
+      "answer": "string",
+      "_id": {
+        "$oid": "6782916c65f332892541fa06"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-01-11T15:42:36.358Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-11T15:42:36.358Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6782917365f332892541fa0a"
+  },
+  "title": "Luxury Villa 1",
+  "preview": "https://example.com/image.jpg",
+  "category": "Residential",
+  "description": "A beautiful villa with ocean view",
+  "price": 500000,
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "area": 125,
+  "floor": 12,
+  "parking": 1,
+  "city": "New York",
+  "country": "USA",
+  "questionsAndAnswers": [
+    {
+      "question": "string",
+      "answer": "string",
+      "_id": {
+        "$oid": "6782917365f332892541fa0b"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-01-11T15:42:43.660Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-11T15:42:43.660Z"
+  },
+  "__v": 0
+}]

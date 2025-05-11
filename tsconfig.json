@@ -71,6 +71,7 @@
   "include": [
     "frontend/src/**/*.tsx",
     "frontend/src/**/*.ts",
+    "seed/*.ts",
     "frontend/src/declarations.d.ts",
     "frontend/webpack.config.js",
     "backend/**/*.ts",

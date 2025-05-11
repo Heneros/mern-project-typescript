@@ -67,5 +67,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'react/no-unknown-property': 'off',
         'no-unneeded-ternary': 'warn',
+        'no-else-return': 'warn',
+        'no-restricted-syntax': 'warn',
     },
 };
