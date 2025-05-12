@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler';
-import User from '../../models/userModel';
+import User from '@/models/userModel';
 
 const logoutUser = asyncHandler(async (req, res) => {
     const cookies = req.cookies;

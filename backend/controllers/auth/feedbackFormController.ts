@@ -1,7 +1,10 @@
 import { Request, Response } from 'express';
 import { receiverEmailFunction } from '@/utils/sendEmail';
 
-const feedbackFormController = async (req: Request, res: Response) => {
+const feedbackFormController = async (
+    req: Request,
+    res: Response,
+): Promise<void> => {
     try {
         const { name, subject, email, message } = req.body;
 

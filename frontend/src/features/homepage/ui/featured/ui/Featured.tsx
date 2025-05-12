@@ -1,7 +1,6 @@
 import { useGetSinglePropertyQuery } from 'features/properties/api/propertiesApiSlice';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { postIdProperty } from 'shared/consts';
 import { PostInfo } from 'shared/types';
 import { Loader } from 'shared/ui/loader';
@@ -13,11 +12,14 @@ import InfoIconTwo from 'shared/assets/icons/info-icon-02.png';
 import InfoIconThree from 'shared/assets/icons/info-icon-03.png';
 import InfoIconFour from 'shared/assets/icons/info-icon-04.png';
 import Accordion from 'widgets/accordion/Accordion';
+import { Col } from 'react-bootstrap';
 
 export const Featured: React.FC<{ items: PostInfo[] }> = () => {
     const { data, isLoading, error } = useGetSinglePropertyQuery(
         postIdProperty.id,
     );
+
+    // console.log(data);
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const toggleAccordion = (index: number) => {
@@ -42,7 +44,7 @@ export const Featured: React.FC<{ items: PostInfo[] }> = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="col-lg-5">
+                <Col className="col-lg-5">
                     <div className="section-heading">
                         <h6>{data.propertyPage.title}</h6>
                         <h2>
@@ -60,7 +62,7 @@ export const Featured: React.FC<{ items: PostInfo[] }> = () => {
                             <>No QA</>
                         )}
                     </>
-                </div>
+                </Col>
                 <div className="col-lg-3">
                     <div className="info-table">
                         <ul>

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import connectDB from '../backend/config/connectDB';
 
-const MONGO_URI = String(process.env.MONGO_URI_LOCAL!);
+const MONGO_URI = String(process.env.MONGO_URI_TEST!);
 
 export const connectTestDB = async () => {
     try {

@@ -1,9 +1,8 @@
-import { request } from '../auth.test';
+import { request } from '../server.test';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 
 describe('Register all scenarios', () => {
     let userId: string;
-    let token: string;
 
     beforeAll(async () => {
         await connectTestDB();

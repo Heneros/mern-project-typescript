@@ -4,6 +4,7 @@ import { randomBytes } from 'crypto';
 import User from '../../models/userModel';
 import VerificationToken from '../../models/verifyResetTokenModel';
 import { sendEmail } from '../../utils/sendEmail';
+import { systemLogs } from '@/utils/Logger';
 
 const domainURL = process.env.DOMAIN;
 
@@ -13,6 +14,9 @@ const domainURL = process.env.DOMAIN;
 
 const registerUser = asyncHandler(
     async (req: Request, res: Response): Promise<void> => {
+        // try {
+        // } catch (error) {}
+
         const {
             email,
             username,
@@ -98,9 +102,8 @@ const registerUser = asyncHandler(
         try {
             const registeredUser = await newUser.save();
 
-          
             const verificationToken = randomBytes(32).toString('hex');
-          
+
             const emailVerificationToken = new VerificationToken({
                 _userId: registeredUser._id,
                 token: verificationToken,
@@ -108,14 +111,12 @@ const registerUser = asyncHandler(
 
             await emailVerificationToken.save();
 
- 
             const emailLink = `${domainURL}/api/v1/auth/verify/${emailVerificationToken.token}/${registeredUser._id}`;
 
             const payload = {
                 name: registeredUser.firstName,
                 link: emailLink,
             };
-
 
             await sendEmail(
                 registeredUser.email,
@@ -140,9 +141,10 @@ const registerUser = asyncHandler(
             });
         } catch (error: any) {
             console.error('Error during registration:', error.message);
+            systemLogs.error(error);
             res.status(500).json({
                 success: false,
-                message: 'Internal server error',
+                message: `Internal server error ${error.message}`,
             });
         }
     },

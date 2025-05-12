@@ -27,7 +27,7 @@ export const cloudinaryUploader = async function uploadToCloudinary(
             const uploadStream = cloudinary.uploader.upload_stream(
                 {
                     public_id: filePathOnCloudinary,
-                    // resource_type: 'auto',
+
                     resource_type: 'image',
                     fetch_format: 'auto',
                     quality: 'auto:eco',

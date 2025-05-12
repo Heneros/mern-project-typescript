@@ -85,7 +85,9 @@ app.use(
 );
 
 const port = process.env.PORT;
-const MONGO_URI = process.env.MONGO_URI;
+const MONGO_URI = process.env.MONGO_URI_LOCAL;
+
+// const MONGO_URI = process.env.MONGO_URI ;
 
 if (process.env.NODE_ENV === 'production') {
     const frontendPath = path.join(__dirname, '..', 'dist', 'frontend');

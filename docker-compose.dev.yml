@@ -1,33 +1,22 @@
 version: '3.9'
 
 services:
-  backend:
-    restart: always
-    build:
-      context: .
-      dockerfile: ./docker/dev/express/Dockerfile
-    env_file: ./.env  
-    volumes:
-      - /app/node_modules
-      # - .:/app
-      - ./backend:/app
-    ports:
-      - "1997:1997"
-    depends_on:
-      - mongodb
-    networks:
-      - mern-project_villa
-
-  frontend:
-    build:
-      context: .
-      dockerfile: ./docker/dev/frontend/Dockerfile
-    restart: always
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
-    networks:
-      - mern-project_villa
+  # backend:
+  #   restart: always
+  #   build:
+  #     context: .
+  #     dockerfile: ./docker/dev/express/Dockerfile
+  #   env_file: ./.env  
+  #   volumes:
+  #     - /app/node_modules
+  #     # - .:/app
+  #     - ./backend:/app
+  #   ports:
+  #     - "1997:1997"
+  #   depends_on:
+  #     - mongodb
+  #   networks:
+  #     - mern-project_villa
 
   maildev:
    image: maildev/maildev:2.2.1
@@ -70,19 +59,19 @@ services:
       networks:
         - mern-project_villa
 
-  nginx:
-    build:
-      context: ./docker/local/nginx
-      dockerfile: Dockerfile
-    ports:
-      - "8080:80"
-    depends_on:
-      - backend  
-    restart: always
-    volumes:
-      - static_volume:/app/staticfiles
-    networks:
-      - mern-project_villa
+  # nginx:
+  #   build:
+  #     context: ./docker/local/nginx
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8080:80"
+  #   depends_on:
+  #     - backend  
+  #   restart: always
+  #   volumes:
+  #     - static_volume:/app/staticfiles
+  #   networks:
+  #     - mern-project_villa
 
 networks:
   mern-project_villa:

@@ -2,12 +2,15 @@ import supertest from 'supertest';
 import 'dotenv/config';
 import mongoose from 'mongoose';
 import { app } from '../backend/server';
-import connectDB from '../backend/config/connectDB';
-import VerifyResetToken from '../backend/models/verifyResetTokenModel';
 import { connectTestDB, disconnectTestDB } from './setupTestDB';
 
+export const request = supertest(app);
+jest.mock('../backend/utils/sendEmail');
+
 beforeAll(async () => {
+
     await connectTestDB();
+    console.log(123)
 });
 
 describe('Database Connection', () => {
@@ -18,7 +21,5 @@ describe('Database Connection', () => {
 });
 
 afterAll(async () => {
-    // await mongoose.connection.dropDatabase();
-    // await mongoose.disconnect();
     await disconnectTestDB();
 });
