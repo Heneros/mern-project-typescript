@@ -1,9 +1,9 @@
 import express, { Response, Request } from 'express';
 import fs from 'fs';
 
-import cloudinaryUploader from '../config/cloudinaryConfig';
+import cloudinaryUploader from '@/config/cloudinaryConfig';
 // import upload from '../helpers/multer';
-import handleUpload from '../helpers/multer';
+import handleUpload from '@/helpers/multer';
 
 const router = express.Router();
 
@@ -30,7 +30,6 @@ router.route('/').patch(handleUpload, async (req: Request, res: Response) => {
         } else {
             res.status(500).send('Failed to upload image.');
         }
-
     } catch (error) {
         console.error('Upload error:', error);
         res.status(500).send({ message: 'Upload failed' });

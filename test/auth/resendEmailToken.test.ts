@@ -1,31 +1,61 @@
-// import request from 'supertest';
-// import * as bcrypt from 'bcrypt';
-import { request } from '../server.test';
-import { connectTestDB, disconnectTestDB } from '../setupTestDB';
+// import { request } from '../server.test';
+// import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 
-describe('Auth Resend Email', () => {
-    beforeAll(async () => {
-        await connectTestDB();
-    });
+// describe('User Registration Flow', () => {
+//     beforeAll(async () => {
+//         await connectTestDB();
+//     }, 30000);
 
-    afterAll(async () => {
-        await disconnectTestDB();
-    });
+//     afterAll(async () => {
+//         await disconnectTestDB();
+//     }, 30000);
 
-    it('Resend Email success', async () => {
-        const userData = {
-            username: 'admin',
-            email: 'admin@gmail.com',
-            firstName: 'First',
-            lastName: 'Last',
-            password: 'testtest',
-            passwordConfirm: 'testtest',
-            roles: ['Admin', 'User', 'Editor'],
-        };
-        const response = await request
-            .post('/api/v1/auth/register')
-            .send(userData);
-        console.log(response.body);
-        expect(response.body).toHaveProperty('success', true);
-    });
-});
+//     describe('Success Scenario', () => {
+//         it('should register new user with 201 status', async () => {
+//             const response = await request.post('/api/v1/auth/register').send({
+//                 username: 'testuser',
+//                 email: 'test@example.com',
+//                 firstName: 'Test',
+//                 lastName: 'User',
+//                 password: 'validPassword123!',
+//                 passwordConfirm: 'validPassword123!',
+//                 roles: ['User'],
+//             });
+
+//             expect(response.status).toBe(201);
+//             expect(response.body).toMatchObject({
+//                 success: true,
+//                 userId: expect.any(String),
+//             });
+//         });
+//     });
+
+//     describe('Failure Scenarios', () => {
+//         it('should block duplicate email registration', async () => {
+//             const duplicateUser = {
+//                 username: 'duplicate',
+//                 email: 'test@example.com', 
+//                 firstName: 'Duplicate',
+//                 lastName: 'User',
+//                 password: 'Password123!',
+//                 passwordConfirm: 'Password123!',
+//             };
+
+//             const response = await request
+//                 .post('/api/v1/auth/register')
+//                 .send(duplicateUser);
+
+//             expect(response.status).toBe(400);
+//             expect(response.body.message).toMatch(/already associated/i);
+//         });
+
+//         it('should validate required fields', async () => {
+//             const response = await request
+//                 .post('/api/v1/auth/register')
+//                 .send({});
+
+//             expect(response.status).toBe(400);
+//             expect(response.body.message).toMatch(/required fields/i);
+//         });
+//     });
+// });

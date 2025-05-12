@@ -1,8 +1,9 @@
 import { request } from '../server.test';
+
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 
 describe('Register all scenarios', () => {
-    let userId: string;
+    let userId;
 
     beforeAll(async () => {
         await connectTestDB();

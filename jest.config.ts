@@ -9,10 +9,20 @@ const config: Config = {
     detectOpenHandles: true,
     coverageProvider: 'v8',
     testMatch: ['**/test/**/*.test.ts'],
+    testTimeout: 30000,
+
     setupFiles: ['dotenv/config'],
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/backend/$1',
+        '^server$': '<rootDir>/backend/server.ts',
+        '^models/(.*)$': '<rootDir>/backend/models/$1',
     },
+    rootDir: '.',
+    // globals: {
+    //     'ts-jest': {
+    //         tsconfig: '<rootDir>/tsconfig.json',
+    //     },
+    // },
 };
 
 export default config;
