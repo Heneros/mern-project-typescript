@@ -1,61 +1,76 @@
-import { request } from '../server.test';
-import verifyResetTokenModel from '../../backend/models/verifyResetTokenModel';
+import request from 'supertest';
+import * as emailService from '../../backend/utils/sendEmail';
+
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
+import { app } from '@/server';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
+
+jest.mock('../../backend/utils/sendEmail', () => ({
+    sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),
+}));
 
 describe('Resend Email Verification Token  ', () => {
     beforeAll(async () => {
         await connectTestDB();
     }, 30000);
 
+    afterEach(async () => {
+        await User.deleteMany({});
+        await VerifyResetToken.deleteMany({});
+    });
+
     afterAll(async () => {
         await disconnectTestDB();
     }, 30000);
 
     describe('Success Scenario', () => {
-        it('should register new user with 201 status', async () => {
-            const user = await registerTestUser();
+        it('Should send email', async () => {
+            const user = await registerTestUser({ isEmailVerified: false });
 
-            const response = await request
+            const response = await request(app)
                 .post('/api/v1/auth/resend_email_token')
                 .send({ email: user.email });
-            console.log(response.body);
+            // console.log(user);
             expect(response.status).toBe(200);
 
-            // expect(response.status).toBe(201);
-            // expect(response.body).toMatchObject({
-            //     success: true,
-            //     userId: expect.any(String),
-            // });
+            expect(response.body).toEqual({
+                message: `${user.firstName}, an email has been sent to your account, please verify within 15 minutes`,
+                success: true,
+            });
+            expect(emailService.sendEmail).toHaveBeenCalled();
+
+            const tokens = await VerifyResetToken.find({ _userId: user._id });
+            expect(tokens).toHaveLength(1);
+            // expect(response.status).toBe(200);
         });
     });
 
-    // describe('Failure Scenarios', () => {
-    //     it('should block duplicate email registration', async () => {
-    //         const duplicateUser = {
-    //             username: 'duplicate',
-    //             email: 'test@example.com',
-    //             firstName: 'Duplicate',
-    //             lastName: 'User',
-    //             password: 'Password123!',
-    //             passwordConfirm: 'Password123!',
-    //         };
+    describe('Failure Scenarios', () => {
+        it('should block resend if already verified', async () => {
+            const user = await registerTestUser({ isEmailVerified: true });
+            const res = await request(app)
+                .post('/api/v1/auth/resend_email_token')
+                .send({ email: user.email });
 
-    //         const response = await request
-    //             .post('/api/v1/auth/register')
-    //             .send(duplicateUser);
+            expect(res.body).toEqual({
+                message: 'This account has already been verified. Please login',
+                success: false,
+            });
+        });
+        it('should block resend if already verified', async () => {
+            const user = await registerTestUser({ isEmailVerified: true });
 
-    //         expect(response.status).toBe(400);
-    //         expect(response.body.message).toMatch(/already associated/i);
-    //     });
+            const res = await request(app)
+                .post('/api/v1/auth/resend_email_token')
+                .send({ email: user.email });
 
-    //     it('should validate required fields', async () => {
-    //         const response = await request
-    //             .post('/api/v1/auth/register')
-    //             .send({});
-
-    //         expect(response.status).toBe(400);
-    //         expect(response.body.message).toMatch(/required fields/i);
-    //     });
-    // });
+            expect(res.status).toBe(400);
+            expect(res.body).toEqual({
+                success: false,
+                message: 'This account has already been verified. Please login',
+            });
+        });
+    });
 });

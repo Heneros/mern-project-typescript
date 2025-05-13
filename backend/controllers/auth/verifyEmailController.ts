@@ -3,6 +3,7 @@ import asyncHandler from 'express-async-handler';
 import User from '@/models/userModel';
 import VerifyResetToken from '@/models/verifyResetTokenModel';
 import { sendEmail } from '@/utils/sendEmail';
+import { systemLogs } from '@/utils/Logger';
 
 const domainURL = process.env.DOMAIN;
 
@@ -11,44 +12,55 @@ const verifyUserEmail = asyncHandler(async (req, res) => {
         '-passwordConfirm',
     );
 
-    if (!user) {
-        res.status(400);
-        throw new Error('We were unable to find a user for this token');
-    }
-    if (user.isEmailVerified) {
-        res.status(400).send(
-            'This user has already been verified. Please login',
-        );
-    }
+    try {
+        if (!user) {
+            res.status(400);
+            throw new Error('We were unable to find a user for this token');
+        }
+        if (user.isEmailVerified) {
+            res.status(400).json({
+                message: 'This user has already been verified. Please login',
+            });
+            return;
+        }
 
-    const userToken = await VerifyResetToken.findOne({
-        _userId: user._id,
-        token: req.params.emailToken,
-    });
+        const userToken = await VerifyResetToken.findOne({
+            _userId: user._id,
+            token: req.params.emailToken,
+        });
 
-    if (!userToken) {
-        res.status(400);
-        throw new Error('Token invalid! Your token may have expired');
-    }
+        if (!userToken) {
+            res.status(400);
+            throw new Error('Token invalid! Your token may have expired');
+        }
 
-    user.isEmailVerified = true;
-    await user.save();
+        user.isEmailVerified = true;
+        await user.save();
 
-    if (user.isEmailVerified) {
-        const emailLink = `${domainURL}/login`;
+        if (user.isEmailVerified) {
+            const emailLink = `${domainURL}/login`;
 
-        const payload = {
-            name: user.firstName,
-            link: emailLink,
-        };
+            const payload = {
+                name: user.firstName,
+                link: emailLink,
+            };
+            await VerifyResetToken.deleteOne({
+                _userId: user._id,
+                token: req.params.emailToken,
+            });
 
-        await sendEmail(
-            user.email,
-            'Welcome - Account Verified',
-            payload,
-            './emails/template/welcome.handlebars',
-        );
-        res.redirect('/auth/verify');
+            await sendEmail(
+                user.email,
+                'Welcome - Account Verified',
+                payload,
+                './emails/template/welcome.handlebars',
+            );
+
+            res.redirect('/auth/verify');
+        }
+    } catch (error) {
+        console.error(error);
+        systemLogs.error(error);
     }
 });
 

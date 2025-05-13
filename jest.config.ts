@@ -10,7 +10,6 @@ const config: Config = {
     coverageProvider: 'v8',
     testMatch: ['**/test/**/*.test.ts'],
     testTimeout: 30000,
-
     setupFiles: ['dotenv/config'],
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/backend/$1',

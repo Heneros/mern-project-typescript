@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "composite": true,
     "target": "es2022",
     "module": "CommonJS",
     "jsx": "preserve",
@@ -26,7 +25,8 @@
       "jest",
       "express"
     ],
-    "noEmit": false,
+    "composite": true,
+    "noEmit": true,
     "paths": {
       "@/*": [
         "backend/*"
@@ -60,7 +60,10 @@
       ],
       "server": [
         "backend/server.ts"
-      ]
+      ],
+      "@helpers/*": [
+        "test/helpers/*"
+      ],
     }
   },
   "ts-node": {},
@@ -72,8 +75,8 @@
   "include": [
     "frontend/src/**/*.tsx",
     "frontend/src/**/*.ts",
-    "seed/*.ts",
-    "test/*.ts",
+    "seed/**/*.ts",
+    "test/**/*.ts",
     "frontend/src/declarations.d.ts",
     "frontend/webpack.config.js",
     "backend/**/*.ts",
