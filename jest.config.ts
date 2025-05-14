@@ -17,6 +17,7 @@ const config: Config = {
         '^models/(.*)$': '<rootDir>/backend/models/$1',
     },
     rootDir: '.',
+    testPathIgnorePatterns: ['/node_modules/', '/ignore/'],
     // globals: {
     //     'ts-jest': {
     //         tsconfig: '<rootDir>/tsconfig.json',

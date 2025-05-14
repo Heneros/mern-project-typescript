@@ -1,0 +1,1110 @@
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:03:12.482 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:03:12.493 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 189.537,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:12.502 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 97.518,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:12.633 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.251,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:12.660 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:03:16.335 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:03:16.338 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 143.233,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:16.342 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 80.841,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:16.448 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 0.84,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:16.469 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 3.408,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:21.752 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 400,
+  content_length: '47',
+  response_time: 1.839,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:21.858 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/feedback\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:03:21.956 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 1.127,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:21.963 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 0.909,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:21.966 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 0.974,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:21.970 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 429,
+  content_length: '52',
+  response_time: 5.569,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:21.974 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/feedback\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:03:21.999 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 429,
+  content_length: '52',
+  response_time: 5.982,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:03:22.006 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:05:45.898 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:05:45.908 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 375.788,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:05:45.917 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 88.328,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:05:46.046 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.299,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:05:46.074 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.399 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.409 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 195.132,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:36.417 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 87.724,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:36.540 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.224,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:36.565 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.597 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.603 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.609 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.612 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.617 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.621 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.626 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.629 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 10.069,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:36.632 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 6.665,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:36.635 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 7.588,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:36.638 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 6.176,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:36.641 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/feedback\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:36.662 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 429,
+  content_length: '52',
+  response_time: 4.607,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:36.668 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.012 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.021 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 201.777,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:57.029 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 88.582,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:57.154 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.245,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:57.181 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.213 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.219 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.225 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.228 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.233 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.238 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.243 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.246 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 10.428,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:57.249 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 7.127,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:57.252 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 7.457,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:57.254 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 6.339,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:57.257 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/feedback\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:06:57.276 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 429,
+  content_length: '52',
+  response_time: 4.371,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:06:57.281 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.116 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.124 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 179.768,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:07:56.133 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 85.625,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:07:56.251 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.25,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:07:56.277 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.308 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.314 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.320 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.323 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.328 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.331 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.338 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.341 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 9.538,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:07:56.344 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 6.831,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:07:56.346 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 8.029,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:07:56.349 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 201,
+  content_length: '46',
+  response_time: 6.071,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:07:56.352 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/feedback\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:07:56.371 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/feedback',
+  status: 429,
+  content_length: '52',
+  response_time: 4.414,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:07:56.376 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:08:41.968 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:08:41.977 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 197.781,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:08:41.987 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 95.389,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:08:42.124 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:09:12.018 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:09:12.030 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 194.742,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:12.038 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 99.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:12.177 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.354,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:12.209 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:09:31.545 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:09:31.554 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 194.397,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:31.562 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 122.284,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:31.723 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.195,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:31.753 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:09:51.728 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:09:51.737 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 203.41,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:51.745 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 88.071,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:51.872 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.287,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:09:51.899 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:12:17.316 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:12:17.325 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 190.584,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:17.334 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 86.923,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:17.457 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.19,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:17.482 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:12:17.586 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:12:17.590 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 90.101,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:17.594 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/login\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:12:17.669 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 429,
+  content_length: '52',
+  response_time: 4.517,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:17.675 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 484.891,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.135 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '714',
+  response_time: 485.776,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.138 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '714',
+  response_time: 484.081,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.141 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '714',
+  response_time: 482.274,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.143 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '714',
+  response_time: 480.756,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.146 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '598',
+  response_time: 495.018,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.167 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 665.326,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.327 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '598',
+  response_time: 667.428,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.335 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/login\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:12:18.346 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 429,
+  content_length: '52',
+  response_time: 4.391,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:12:18.351 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:13:20.617 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:13:20.626 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 193.236,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:20.636 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 99.009,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:20.773 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '50',
+  response_time: 1.432,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:20.799 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 400,
+  content_length: '42',
+  response_time: 4.919,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:20.826 AM'
+}
+{
+  message: 'Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:13:20.935 AM'
+}
+{
+  message: 'email not sent: Error: Email transporter is not initialized. Check your configuration.',
+  level: 'error',
+  timestamp: '2025-05-15 12:13:20.940 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 93.483,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:20.943 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/login\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:13:21.036 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/login\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:13:21.047 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 429,
+  content_length: '52',
+  response_time: 7.946,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.060 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 429,
+  content_length: '52',
+  response_time: 12.132,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.063 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 542.114,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.550 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '714',
+  response_time: 537.485,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.553 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '714',
+  response_time: 534.016,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.556 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '714',
+  response_time: 529.221,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.558 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '714',
+  response_time: 526.944,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.561 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 500,
+  content_length: '598',
+  response_time: 540.594,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.579 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 200,
+  content_length: '455',
+  response_time: 632.978,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.665 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/login\tundefined',
+  level: 'error',
+  timestamp: '2025-05-15 12:13:21.675 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/login',
+  status: 429,
+  content_length: '52',
+  response_time: 4.647,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-15 12:13:21.681 AM'
+}

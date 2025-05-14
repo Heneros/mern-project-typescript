@@ -29,7 +29,6 @@ const loginUser = asyncHandler(
         if (!existingUser || !(await existingUser.matchPassword(password))) {
             res.status(400).json({ message: 'Invalid credentials provided' });
             // systemLogs.error('Incorrect email or password');
-            // throw new Error('Invalid credentials provided');
             return;
         }
 

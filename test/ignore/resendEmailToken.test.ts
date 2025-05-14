@@ -43,7 +43,6 @@ describe('Resend Email Verification Token  ', () => {
 
             const tokens = await VerifyResetToken.find({ _userId: user._id });
             expect(tokens).toHaveLength(1);
-            // expect(response.status).toBe(200);
         });
     });
 

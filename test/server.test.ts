@@ -6,15 +6,6 @@ import { connectTestDB, disconnectTestDB } from './setupTestDB';
 
 export const request = supertest(app);
 
-// export const emailService = jest.mock('../backend/utils/sendEmail', () => ({
-//     sendEmail: jest.fn().mockResolvedValue(true),
-//     // receiverEmailFunction: jest.fn().mockResolvedValue(true),
-// }));
-
-// jest.mock('../backend/utils/sendEmail', () => ({
-//     sendEmail: jest.fn().mockResolvedValue(true),
-// }));
-
 beforeAll(async () => {
     await connectTestDB();
 });

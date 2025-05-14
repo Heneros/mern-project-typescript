@@ -1,9 +1,8 @@
 import { request } from '../server.test';
-
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 
 describe('Register all scenarios', () => {
-    let userId;
+    // let userId;
 
     beforeAll(async () => {
         await connectTestDB();
@@ -29,7 +28,7 @@ describe('Register all scenarios', () => {
 
         // console.log('userData userData:', userData);
         expect(response.status).toBe(201);
-        userId = response.body.userId;
+        // userId = response.body.userId;
         // console.log('Response body:', userId);
     });
 
