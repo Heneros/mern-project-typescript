@@ -5,7 +5,7 @@ import User from '../../models/userModel';
 import VerificationToken from '../../models/verifyResetTokenModel';
 import { sendEmail } from '@/utils/sendEmail';
 
-const domainURL = process.env.DOMAINVERIFY;
+const domainURL = process.env.DOMAIN;
 
 const resendEmailVerificationToken = async (req: any, res: any) => {
     const { email } = req.body;

@@ -36,7 +36,7 @@ router.post('/login', loginLimiter, loginUser);
 router.route('/new_access_token').get(newAccessToken);
 router.post('/resend_email_token', resendEmailVerificationToken);
 
-router.post('/reset_password_request', resetPasswordRequest);
+router.post('/reset_password_request', apiLimiter, resetPasswordRequest);
 
 router.post('/reset_password', resetPassword);
 

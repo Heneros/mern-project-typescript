@@ -1,8 +1,8 @@
 import request from 'supertest';
-import * as emailService from '../../backend/utils/sendEmail';
+import * as emailService from '../../../backend/utils/sendEmail';
 
-import { connectTestDB, disconnectTestDB } from '../setupTestDB';
-import { registerTestUser } from '../helpers/registerTestUser';
+import { connectTestDB, disconnectTestDB } from '../../setupTestDB';
+import { registerTestUser } from '../../helpers/registerTestUser';
 import { app } from '@/server';
 import User from '@/models/userModel';
 import VerifyResetToken from '@/models/verifyResetTokenModel';
