@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler';
-import { Request } from 'express';
+
 import bcrypt from 'bcryptjs';
 
 import User from '@/models/userModel';
