@@ -22,7 +22,7 @@ const getAllUserAccounts = asyncHandler(async (req, res) => {
         .skip(pageSize * (page - 1))
         .lean();
 
-    res.json({
+    res.status(200).json({
         success: true,
         count,
         numberOfPages: Math.ceil(count / pageSize),

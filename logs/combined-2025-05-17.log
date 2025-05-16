@@ -1,0 +1,4902 @@
+{
+  errors: {
+    username: ValidatorError: username must be alphanumeric,without special characters.Hyphens and underscores allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function: validator],
+        message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+        type: 'user defined',
+        path: 'username',
+        fullPath: undefined,
+        value: 'Dennis.Towne'
+      },
+      kind: 'user defined',
+      path: 'username',
+      value: 'Dennis.Towne',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    firstName: ValidatorError: First Name can only have Alphanumeric values. No special characters allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'First Name can only have Alphanumeric values. No special characters allowed',
+        type: 'user defined',
+        validator: [Function: isAlphanumeric],
+        path: 'firstName',
+        fullPath: undefined,
+        value: 'Retha.Mosciski39'
+      },
+      kind: 'user defined',
+      path: 'firstName',
+      value: 'Retha.Mosciski39',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-17 12:01:17.402 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '262',
+  response_time: 230.6,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:01:17.448 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '268',
+  response_time: 169.742,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:07:38.628 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 171.14,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.063 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.177 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.186 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.191 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.197 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.202 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.207 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.214 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.219 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 5.279,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.223 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.467,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.226 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.494,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.228 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.545,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.231 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.328,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.233 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 4.337,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.237 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.289,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.240 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.46,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.243 AM'
+}
+{
+  errors: {
+    firstName: ValidatorError: First Name can only have Alphanumeric values. No special characters allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'First Name can only have Alphanumeric values. No special characters allowed',
+        type: 'user defined',
+        validator: [Function: isAlphanumeric],
+        path: 'firstName',
+        fullPath: undefined,
+        value: 'Kellen.Bernhard23'
+      },
+      kind: 'user defined',
+      path: 'firstName',
+      value: 'Kellen.Bernhard23',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.253 AM'
+}
+{
+  errors: {
+    firstName: ValidatorError: First Name can only have Alphanumeric values. No special characters allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'First Name can only have Alphanumeric values. No special characters allowed',
+        type: 'user defined',
+        validator: [Function: isAlphanumeric],
+        path: 'firstName',
+        fullPath: undefined,
+        value: 'Alayna.Paucek'
+      },
+      kind: 'user defined',
+      path: 'firstName',
+      value: 'Alayna.Paucek',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.271 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '162',
+  response_time: 92.559,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.308 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '162',
+  response_time: 100.563,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.439 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 331.08,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.493 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 329.483,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:34:10.514 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 187.79,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.002 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.113 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.120 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.125 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.131 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.137 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.142 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.147 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.153 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 5.152,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.157 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.447,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.161 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.354,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.163 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 4.712,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.166 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.36,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.168 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.254,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.171 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.246,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.173 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.417,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.175 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 443.271,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.544 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '287',
+  response_time: 441.432,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.547 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 439.826,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.550 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 444.993,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:19.579 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 171.346,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.777 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.883 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.890 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.895 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.902 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.907 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.912 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.917 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.923 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 5.324,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.928 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.453,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.931 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 4.73,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.933 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.384,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.936 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.329,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.938 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.301,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.941 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.64,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.943 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 4.499,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:56.945 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 442.412,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:57.313 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 439.326,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:57.316 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 437.356,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:57.319 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 443.813,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:35:57.345 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 171.463,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.536 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.644 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.652 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.657 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.663 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.669 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.675 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.680 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.686 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 5.32,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.690 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.625,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.693 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.476,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.697 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.43,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.699 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.516,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.702 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.385,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.704 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.321,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.707 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 3.762,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:16.709 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 716.804,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:18.419 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 715.406,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:18.423 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 713.983,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:18.427 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 712.563,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:18.438 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 176.472,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:47.938 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:48.031 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 5.275,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:48.038 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 612.95,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:49.549 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 608.763,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:49.553 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 603.616,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:49.556 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 609.616,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:39:49.562 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 179.616,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:41:14.335 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:41:14.497 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 5.686,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:41:14.503 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 343.105,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:41:14.826 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 340.662,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:41:14.829 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 344.659,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:41:14.845 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 342.395,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:41:14.848 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 5.411,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:41:14.900 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 189.711,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:17.235 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:47:17.347 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 7.029,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:17.356 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 364.52,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:17.688 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 360.893,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:17.692 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '268',
+  response_time: 365.802,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:17.709 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 358.729,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:17.712 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 4.637,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:17.769 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 167.425,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:50.412 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 158.825,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:50.636 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 168.979,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:50.651 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 5.055,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:47:50.692 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 177.352,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:49:45.770 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 320.44,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:49:46.158 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 318.01,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:49:46.161 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 318.625,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:49:46.178 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 324.105,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:49:46.180 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 4.364,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:49:46.232 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 182.061,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:50:59.888 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 316.022,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:51:00.274 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 314.344,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:51:00.277 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 312.184,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:51:00.280 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 337.142,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:51:00.322 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 4.716,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:51:00.351 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 169.119,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:52:44.678 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 296.465,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:52:45.060 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 330.131,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:52:45.076 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '280',
+  response_time: 324.733,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:52:45.082 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 341.18,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:52:45.103 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 4.848,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:52:45.146 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 176.14,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:54:38.828 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 338.428,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:54:39.253 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '280',
+  response_time: 333.253,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:54:39.258 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '267',
+  response_time: 330.302,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:54:39.262 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 362.798,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:54:39.318 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 401,
+  content_length: '26',
+  response_time: 2.964,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:54:39.351 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 194.994,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:56:21.951 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '268',
+  response_time: 315.284,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:56:22.334 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 313.59,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:56:22.337 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 311.717,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:56:22.339 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '268',
+  response_time: 335.145,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:56:22.382 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 4.92,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:56:22.414 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 171.257,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:57:28.921 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 309.986,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:57:29.320 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 316.318,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:57:29.323 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 322.87,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:57:29.325 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '286',
+  response_time: 341.22,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:57:29.369 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 4.558,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:57:29.399 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 184.85,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:58:39.421 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 357.843,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:58:39.866 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 361.649,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:58:39.887 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 359.207,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:58:39.895 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 404.152,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:58:39.927 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 6.3,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:58:39.989 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 178.584,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:59:31.654 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 315.309,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:59:32.052 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 321.23,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:59:32.055 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 315.063,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:59:32.057 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 340.147,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:59:32.099 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 401,
+  content_length: '26',
+  response_time: 2.714,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 12:59:32.127 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 176.587,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:00:00.287 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 314.133,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:00:00.682 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 319.719,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:00:00.685 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 320.326,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:00:00.701 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 318.168,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:00:00.704 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '651',
+  response_time: 10.306,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:00:00.762 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 175.768,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:06.992 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 343.152,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:07.425 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 373.764,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:07.445 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 380.558,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:07.449 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 377.835,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:07.470 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '651',
+  response_time: 9.001,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:07.513 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 169.888,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:36.716 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 312.674,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:37.100 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 310.585,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:37.103 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 308.636,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:37.106 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 331.49,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:37.147 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '651',
+  response_time: 9.736,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:01:37.180 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 169.376,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:02:26.047 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 312.833,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:02:26.434 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 310.777,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:02:26.437 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 308.667,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:02:26.440 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 331.543,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:02:26.482 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '651',
+  response_time: 9.563,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:02:26.514 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 197.467,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:03:29.301 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 316.76,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:03:29.700 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '281',
+  response_time: 314.682,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:03:29.703 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 311.33,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:03:29.705 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 337.021,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:03:29.749 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '651',
+  response_time: 9.709,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:03:29.783 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 168.927,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:04:19.414 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 319.725,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:04:19.809 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '267',
+  response_time: 316.969,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:04:19.812 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 313.007,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:04:19.814 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 334.813,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:04:19.856 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '651',
+  response_time: 9.63,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:04:19.888 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 172.427,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:05:22.901 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '279',
+  response_time: 312.533,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:05:23.302 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '285',
+  response_time: 318.548,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:05:23.306 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 312.765,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:05:23.309 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 338.449,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:05:23.352 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '651',
+  response_time: 9.737,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:05:23.386 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 176.676,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:07:28.560 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 312.342,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:07:28.950 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 310.113,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:07:28.953 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '279',
+  response_time: 308.183,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:07:28.955 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '268',
+  response_time: 330.661,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:07:28.997 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 9.684,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:07:29.030 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 185.261,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:10:36.100 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 335.283,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:10:36.515 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 333.006,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:10:36.518 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 331.129,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:10:36.521 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 358.716,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:10:36.573 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 401,
+  content_length: '26',
+  response_time: 3.351,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:10:36.605 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 172.031,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:14:08.052 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 315.277,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:14:08.444 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 313.058,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:14:08.447 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 310.785,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:14:08.450 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 334.81,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:14:08.494 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 9.514,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:14:08.526 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 182.285,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:19:49.507 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '283',
+  response_time: 328.461,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:19:49.947 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 326.068,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:19:49.952 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 323.115,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:19:49.955 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 351.428,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:19:50.002 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 4.759,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:19:50.035 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 175.796,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:20:42.012 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 324.029,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:20:42.417 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 321.861,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:20:42.421 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 317.738,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:20:42.425 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 344.765,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:20:42.469 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 5.833,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:20:42.502 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 176.137,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:21:12.461 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 310.16,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:21:12.853 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 317.613,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:21:12.856 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 309.937,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:21:12.860 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 335.317,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:21:12.902 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 403,
+  content_length: '9',
+  response_time: 4.481,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:21:12.931 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 177.901,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:23:54.333 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '279',
+  response_time: 354.697,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:23:54.793 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 350.683,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:23:54.797 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 354.974,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:23:54.815 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 349.123,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:23:54.818 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 401,
+  content_length: '26',
+  response_time: 2.853,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:23:54.874 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 169.468,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:31.774 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 311.388,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:32.185 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 307.735,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:32.188 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 305.746,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:32.191 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 329.985,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:32.233 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 401,
+  content_length: '26',
+  response_time: 2.569,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:32.259 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 169.513,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:53.095 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 325.568,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:53.493 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 322.701,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:53.496 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 326.146,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:53.513 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 324.24,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:53.516 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 9.593,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:24:53.572 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 182.898,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:28:44.179 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 324.275,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:28:44.598 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 321.088,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:28:44.603 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 318.22,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:28:44.606 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 345.229,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:28:44.654 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 11.493,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:28:44.692 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 168.535,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:30:11.060 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '267',
+  response_time: 342.908,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:30:11.482 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 341.292,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:30:11.486 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 336.513,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:30:11.489 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 363.441,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:30:11.537 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 9.883,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:30:11.574 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 169.463,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:31:24.136 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 313.712,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:31:24.564 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 312.024,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:31:24.567 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 310.869,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:31:24.569 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 333.436,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:31:24.611 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 9.932,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:31:24.645 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 184.489,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:35:42.249 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 193.003,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:36:13.785 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 176.184,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:36:50.198 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 311.364,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:36:50.631 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 309.608,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:36:50.634 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 307.818,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:36:50.636 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 332.959,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:36:50.677 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 9.741,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:36:50.712 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 185.665,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:41:38.408 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 319.847,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:41:38.840 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '267',
+  response_time: 318.145,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:41:38.843 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 316.374,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:41:38.845 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 342.261,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:41:38.888 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 9.892,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:41:38.924 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 174.985,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:43:04.163 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '282',
+  response_time: 316.518,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:43:04.604 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 314.275,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:43:04.608 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 312.34,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:43:04.611 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 338.415,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:43:04.657 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '966',
+  response_time: 49.069,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:43:04.732 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 170.857,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:47:47.550 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 317.891,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:47:47.972 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '283',
+  response_time: 315.527,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:47:47.976 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 311.694,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:47:47.978 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 336.577,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:47:48.021 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '986',
+  response_time: 20.325,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:47:48.065 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 180.73,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:48:33.841 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 309.54,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:48:34.278 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 308.17,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:48:34.281 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '280',
+  response_time: 307.628,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:48:34.283 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 331.698,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:48:34.324 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '996',
+  response_time: 20.724,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:48:34.368 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 177.183,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:53:51.150 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 337.692,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:53:51.638 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 332.064,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:53:51.641 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 334.38,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:53:51.658 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 330.328,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:53:51.661 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '990',
+  response_time: 20.532,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:53:51.727 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 176.103,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:54:34.774 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 314.165,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:54:35.202 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 312.426,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:54:35.206 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '279',
+  response_time: 311.493,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:54:35.208 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 334.63,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:54:35.250 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '984',
+  response_time: 20.34,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:54:35.296 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 176.909,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:55:26.942 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 313.918,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:55:27.385 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 312.358,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:55:27.388 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 311.414,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:55:27.391 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '285',
+  response_time: 335.842,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:55:27.433 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '1005',
+  response_time: 19.976,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:55:27.477 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 182.218,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:56:01.274 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 321.774,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:56:01.713 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 319.12,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:56:01.716 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 315.095,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:56:01.719 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 339.968,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:56:01.764 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '983',
+  response_time: 23.562,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:56:01.813 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 187.046,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:59:09.971 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 318.728,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:59:10.416 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 315.83,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:59:10.420 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 314.477,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:59:10.422 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 338.242,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:59:10.464 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '968',
+  response_time: 19.519,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 01:59:10.508 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 181.264,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:00:52.727 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 313.186,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:00:53.156 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '280',
+  response_time: 311.607,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:00:53.159 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '267',
+  response_time: 309.8,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:00:53.162 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 333.754,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:00:53.205 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '988',
+  response_time: 20.542,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:00:53.249 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 183.83,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:18.970 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 318.046,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:19.398 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '279',
+  response_time: 316.208,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:19.401 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 312.399,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:19.404 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 337.988,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:19.448 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '966',
+  response_time: 19.72,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:19.493 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 183.754,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:54.414 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 317.699,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:54.849 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 315.402,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:54.853 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 311.432,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:54.856 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 337.285,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:54.901 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '995',
+  response_time: 18.258,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:02:54.945 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 175.496,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:24.010 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 323.021,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:24.448 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 321.324,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:24.453 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 319.495,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:24.456 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 349.635,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:24.504 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '982',
+  response_time: 20.916,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:24.553 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 193.916,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:44.011 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 318.103,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:44.445 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 316.383,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:44.448 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '281',
+  response_time: 312.682,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:44.451 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 339.495,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:44.496 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '1002',
+  response_time: 19.733,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:04:44.542 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 184.59,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:05:19.667 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 317.886,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:05:20.116 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 315.816,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:05:20.119 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 311.138,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:05:20.121 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '268',
+  response_time: 335.547,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:05:20.164 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '979',
+  response_time: 19.27,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:05:20.207 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 179.196,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:06:05.191 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 317.286,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:06:05.616 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 315.644,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:06:05.619 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 312.142,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:06:05.621 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 337.789,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:06:05.665 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '974',
+  response_time: 19.395,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:06:05.709 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 179.02,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:28.393 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 313.1,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:28.819 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 311.087,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:28.822 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 307.139,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:28.824 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 331.113,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:28.866 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '988',
+  response_time: 18.764,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:28.910 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 192.608,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:51.281 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 349.949,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:51.714 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 348.193,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:51.717 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '279',
+  response_time: 344.511,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:51.720 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 370.978,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:51.764 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '994',
+  response_time: 19.845,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:10:51.808 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 174.033,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:12:44.920 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 332.587,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:12:45.363 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 331.319,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:12:45.366 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 327.924,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:12:45.368 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 351.813,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:12:45.410 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '975',
+  response_time: 18.424,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:12:45.452 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 180.136,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:13:38.011 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 322.278,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:13:38.450 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 320.362,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:13:38.454 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 316.956,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:13:38.457 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 347.322,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:13:38.506 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '984',
+  response_time: 20.678,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:13:38.554 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 175.862,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:15:42.255 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 313.222,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:15:42.677 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 311.354,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:15:42.680 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 307.715,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:15:42.682 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 332.357,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:15:42.726 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '979',
+  response_time: 18.998,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:15:42.770 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 02:15:42.795 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 5.573,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:15:42.801 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 172.923,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:03.919 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 313.442,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:04.379 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 311.606,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:04.383 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 311.414,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:04.385 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 335.576,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:04.429 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '988',
+  response_time: 24.866,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:04.484 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 02:16:04.513 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 429,
+  content_length: '52',
+  response_time: 7.405,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:04.521 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 186.203,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:39.031 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 314.97,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:39.469 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 314.134,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:39.473 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 310.86,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:39.475 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 335.695,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:39.518 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '981',
+  response_time: 18.379,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:39.560 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 81.398,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:39.666 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 7.39,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:16:39.695 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 183.893,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:17:52.063 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 315.875,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:17:52.495 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 313.933,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:17:52.499 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 310.34,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:17:52.501 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 336.205,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:17:52.546 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '988',
+  response_time: 19.748,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:17:52.591 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '280',
+  response_time: 81.41,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:17:52.698 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 7.64,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:17:52.728 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 196.183,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:18:40.864 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 318.235,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:18:41.317 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '267',
+  response_time: 316.489,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:18:41.320 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 312.961,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:18:41.323 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 338.396,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:18:41.367 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '990',
+  response_time: 18.272,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:18:41.409 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 80.52,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:18:41.514 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 7.523,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:18:41.543 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 174.01,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:19:15.119 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 311.365,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:19:15.547 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 309.357,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:19:15.551 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 307.507,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:19:15.554 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '275',
+  response_time: 333.525,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:19:15.597 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '985',
+  response_time: 18.504,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:19:15.641 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 79.871,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:19:15.745 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 7.422,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:19:15.774 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 209.444,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:10.401 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 317.733,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:10.798 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 315.736,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:10.802 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 312.156,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:10.805 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '279',
+  response_time: 338.858,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:10.848 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '996',
+  response_time: 40.115,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:10.912 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 83.152,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:11.023 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 8.674,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:11.053 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 81.54,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:11.155 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 6.722,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:11.183 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 175.384,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.185 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 308.936,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.625 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 306.469,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.629 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 304.623,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.632 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 329.176,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.672 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '976',
+  response_time: 18.631,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.714 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 79.833,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.819 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 7.361,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.847 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 79.945,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.947 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 6.613,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:33.974 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 175.57,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:46.862 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 327.81,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.305 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 329.257,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.309 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 327.229,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.312 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 361.062,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.367 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '972',
+  response_time: 25.371,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.422 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '270',
+  response_time: 91.471,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.546 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 8.762,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.581 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 85.889,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.691 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 6.062,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:20:47.719 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 182.089,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.271 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '276',
+  response_time: 313.921,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.710 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '271',
+  response_time: 311.959,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.713 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 311.09,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.716 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '269',
+  response_time: 336.587,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.759 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '968',
+  response_time: 19.812,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.804 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '274',
+  response_time: 81.092,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.910 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 7.301,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.940 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 401,
+  content_length: '26',
+  response_time: 2.16,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:21:34.963 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 206.31,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.141 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '268',
+  response_time: 318.233,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.549 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '268',
+  response_time: 316.319,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.554 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '277',
+  response_time: 313.69,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.557 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '273',
+  response_time: 339.822,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.600 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 200,
+  content_length: '977',
+  response_time: 19.336,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.644 AM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '278',
+  response_time: 81.658,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.751 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 500,
+  content_length: '659',
+  response_time: 8.068,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.787 AM'
+}
+{
+  method: 'GET',
+  url: '/api/v1/user/all',
+  status: 401,
+  content_length: '26',
+  response_time: 2.183,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-17 02:22:10.811 AM'
+}

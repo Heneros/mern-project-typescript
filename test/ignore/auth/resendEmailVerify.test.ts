@@ -2,7 +2,6 @@ import request from 'supertest';
 import * as bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
-import * as emailService from '../../../backend/utils/sendEmail';
 
 import { app } from '@/server';
 import { connectTestDB, disconnectTestDB } from '../../setupTestDB';
@@ -48,6 +47,7 @@ describe('Resend Token Verification to user ', () => {
             { _id: user._id },
             { $set: { refreshToken: [validRefreshToken] } },
         );
+
     }, 30000);
 
     afterEach(async () => {

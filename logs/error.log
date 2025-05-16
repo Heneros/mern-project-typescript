@@ -2282,3 +2282,453 @@
   level: 'error',
   timestamp: '2025-05-15 07:36:15.675 PM'
 }
+{
+  errors: {
+    email: ValidatorError: Please provide a valid email
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'Please provide a valid email',
+        type: 'user defined',
+        validator: <ref *1> [Function: isEmail] { default: [Circular *1] },
+        path: 'email',
+        fullPath: undefined,
+        value: 'test-fri may 16 2025 23:46:23 gmt+0300 (восточная европа, летнее время)@example.com'
+      },
+      kind: 'user defined',
+      path: 'email',
+      value: 'test-fri may 16 2025 23:46:23 gmt+0300 (восточная европа, летнее время)@example.com',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    username: ValidatorError: username must be alphanumeric,without special characters.Hyphens and underscores allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function: validator],
+        message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+        type: 'user defined',
+        path: 'username',
+        fullPath: undefined,
+        value: 'testuser-Fri May 16 2025 23:46:23 GMT+0300 (Восточная Европа, летнее время)'
+      },
+      kind: 'user defined',
+      path: 'username',
+      value: 'testuser-Fri May 16 2025 23:46:23 GMT+0300 (Восточная Европа, летнее время)',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    firstName: ValidatorError: First Name can only have Alphanumeric values. No special characters allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'First Name can only have Alphanumeric values. No special characters allowed',
+        type: 'user defined',
+        validator: [Function: isAlphanumeric],
+        path: 'firstName',
+        fullPath: undefined,
+        value: 'Test-Fri May 16 2025 23:46:23 GMT+0300 (Восточная Европа, летнее время)'
+      },
+      kind: 'user defined',
+      path: 'firstName',
+      value: 'Test-Fri May 16 2025 23:46:23 GMT+0300 (Восточная Европа, летнее время)',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:46:23.199 PM'
+}
+{
+  errors: {
+    email: ValidatorError: Please provide a valid email
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'Please provide a valid email',
+        type: 'user defined',
+        validator: <ref *1> [Function: isEmail] { default: [Circular *1] },
+        path: 'email',
+        fullPath: undefined,
+        value: 'test-fri may 16 2025 23:46:59 gmt+0300 (восточная европа, летнее время)@example.com'
+      },
+      kind: 'user defined',
+      path: 'email',
+      value: 'test-fri may 16 2025 23:46:59 gmt+0300 (восточная европа, летнее время)@example.com',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:46:59.395 PM'
+}
+{
+  errors: {
+    email: ValidatorError: Please provide a valid email
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'Please provide a valid email',
+        type: 'user defined',
+        validator: <ref *1> [Function: isEmail] { default: [Circular *1] },
+        path: 'email',
+        fullPath: undefined,
+        value: 'testfri may 16 2025 23:47:42 gmt+0300 (восточная европа, летнее время)@example.com'
+      },
+      kind: 'user defined',
+      path: 'email',
+      value: 'testfri may 16 2025 23:47:42 gmt+0300 (восточная европа, летнее время)@example.com',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:47:43.138 PM'
+}
+{
+  errors: {
+    username: ValidatorError: username must be alphanumeric,without special characters.Hyphens and underscores allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function: validator],
+        message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+        type: 'user defined',
+        path: 'username',
+        fullPath: undefined,
+        value: 'testuser-ebEVeOX0E6HR8dfkP_Jib'
+      },
+      kind: 'user defined',
+      path: 'username',
+      value: 'testuser-ebEVeOX0E6HR8dfkP_Jib',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:56:05.732 PM'
+}
+{
+  errors: {
+    username: ValidatorError: username must be alphanumeric,without special characters.Hyphens and underscores allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function: validator],
+        message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+        type: 'user defined',
+        path: 'username',
+        fullPath: undefined,
+        value: 'testuser-cgv0xXBrhPkOLnK_8cDJp'
+      },
+      kind: 'user defined',
+      path: 'username',
+      value: 'testuser-cgv0xXBrhPkOLnK_8cDJp',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:59:35.547 PM'
+}
+{
+  errors: {
+    username: ValidatorError: username must be alphanumeric,without special characters.Hyphens and underscores allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function: validator],
+        message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+        type: 'user defined',
+        path: 'username',
+        fullPath: undefined,
+        value: 'Dennis.Towne'
+      },
+      kind: 'user defined',
+      path: 'username',
+      value: 'Dennis.Towne',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    firstName: ValidatorError: First Name can only have Alphanumeric values. No special characters allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'First Name can only have Alphanumeric values. No special characters allowed',
+        type: 'user defined',
+        validator: [Function: isAlphanumeric],
+        path: 'firstName',
+        fullPath: undefined,
+        value: 'Retha.Mosciski39'
+      },
+      kind: 'user defined',
+      path: 'firstName',
+      value: 'Retha.Mosciski39',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-17 12:01:17.402 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.177 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.186 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.191 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.197 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.202 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.207 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.214 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.219 AM'
+}
+{
+  errors: {
+    firstName: ValidatorError: First Name can only have Alphanumeric values. No special characters allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'First Name can only have Alphanumeric values. No special characters allowed',
+        type: 'user defined',
+        validator: [Function: isAlphanumeric],
+        path: 'firstName',
+        fullPath: undefined,
+        value: 'Kellen.Bernhard23'
+      },
+      kind: 'user defined',
+      path: 'firstName',
+      value: 'Kellen.Bernhard23',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.253 AM'
+}
+{
+  errors: {
+    firstName: ValidatorError: First Name can only have Alphanumeric values. No special characters allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'First Name can only have Alphanumeric values. No special characters allowed',
+        type: 'user defined',
+        validator: [Function: isAlphanumeric],
+        path: 'firstName',
+        fullPath: undefined,
+        value: 'Alayna.Paucek'
+      },
+      kind: 'user defined',
+      path: 'firstName',
+      value: 'Alayna.Paucek',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-17 12:34:10.271 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.113 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.120 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.125 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.131 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.137 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.142 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.147 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:19.153 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.883 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.890 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.895 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.902 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.907 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.912 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.917 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:35:56.923 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.644 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.652 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.657 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.663 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.669 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.675 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.680 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:16.686 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:39:48.031 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:41:14.497 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 12:47:17.347 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 02:15:42.795 AM'
+}
+{
+  message: 'Too many requests: Too many requests from this IP address\tPOST\t/register\tundefined',
+  level: 'error',
+  timestamp: '2025-05-17 02:16:04.513 AM'
+}

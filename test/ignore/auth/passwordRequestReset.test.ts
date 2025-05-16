@@ -1,6 +1,6 @@
 import request from 'supertest';
 import * as bcrypt from 'bcryptjs';
-
+import jwt from 'jsonwebtoken';
 import * as emailService from '../../../backend/utils/sendEmail';
 
 import { app } from '@/server';
@@ -109,6 +109,5 @@ describe('Request reset Password ', () => {
                 message: 'Too many requests from this IP address',
             });
         });
-    
     });
 });

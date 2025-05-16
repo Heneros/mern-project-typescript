@@ -1,0 +1,278 @@
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 177.758,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:21:33.834 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/resend_email_token',
+  status: 200,
+  content_length: '106',
+  response_time: 23.818,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:21:33.889 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 84.524,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:21:34.030 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/resend_email_token',
+  status: 400,
+  content_length: '82',
+  response_time: 5.287,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:21:34.061 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 80.959,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:21:34.164 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/resend_email_token',
+  status: 400,
+  content_length: '82',
+  response_time: 4.88,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:21:34.190 PM'
+}
+{
+  errors: {
+    email: ValidatorError: Please provide a valid email
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'Please provide a valid email',
+        type: 'user defined',
+        validator: <ref *1> [Function: isEmail] { default: [Circular *1] },
+        path: 'email',
+        fullPath: undefined,
+        value: 'test-fri may 16 2025 23:46:23 gmt+0300 (восточная европа, летнее время)@example.com'
+      },
+      kind: 'user defined',
+      path: 'email',
+      value: 'test-fri may 16 2025 23:46:23 gmt+0300 (восточная европа, летнее время)@example.com',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    username: ValidatorError: username must be alphanumeric,without special characters.Hyphens and underscores allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function: validator],
+        message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+        type: 'user defined',
+        path: 'username',
+        fullPath: undefined,
+        value: 'testuser-Fri May 16 2025 23:46:23 GMT+0300 (Восточная Европа, летнее время)'
+      },
+      kind: 'user defined',
+      path: 'username',
+      value: 'testuser-Fri May 16 2025 23:46:23 GMT+0300 (Восточная Европа, летнее время)',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    firstName: ValidatorError: First Name can only have Alphanumeric values. No special characters allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'First Name can only have Alphanumeric values. No special characters allowed',
+        type: 'user defined',
+        validator: [Function: isAlphanumeric],
+        path: 'firstName',
+        fullPath: undefined,
+        value: 'Test-Fri May 16 2025 23:46:23 GMT+0300 (Восточная Европа, летнее время)'
+      },
+      kind: 'user defined',
+      path: 'firstName',
+      value: 'Test-Fri May 16 2025 23:46:23 GMT+0300 (Восточная Европа, летнее время)',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:46:23.199 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '299',
+  response_time: 82.236,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:46:23.221 PM'
+}
+{
+  errors: {
+    email: ValidatorError: Please provide a valid email
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'Please provide a valid email',
+        type: 'user defined',
+        validator: <ref *1> [Function: isEmail] { default: [Circular *1] },
+        path: 'email',
+        fullPath: undefined,
+        value: 'test-fri may 16 2025 23:46:59 gmt+0300 (восточная европа, летнее время)@example.com'
+      },
+      kind: 'user defined',
+      path: 'email',
+      value: 'test-fri may 16 2025 23:46:59 gmt+0300 (восточная европа, летнее время)@example.com',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:46:59.395 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '111',
+  response_time: 72.44,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:46:59.412 PM'
+}
+{
+  errors: {
+    email: ValidatorError: Please provide a valid email
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        message: 'Please provide a valid email',
+        type: 'user defined',
+        validator: <ref *1> [Function: isEmail] { default: [Circular *1] },
+        path: 'email',
+        fullPath: undefined,
+        value: 'testfri may 16 2025 23:47:42 gmt+0300 (восточная европа, летнее время)@example.com'
+      },
+      kind: 'user defined',
+      path: 'email',
+      value: 'testfri may 16 2025 23:47:42 gmt+0300 (восточная европа, летнее время)@example.com',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:47:43.138 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '111',
+  response_time: 90.74,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:47:43.156 PM'
+}
+{
+  errors: {
+    username: ValidatorError: username must be alphanumeric,without special characters.Hyphens and underscores allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function: validator],
+        message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+        type: 'user defined',
+        path: 'username',
+        fullPath: undefined,
+        value: 'testuser-ebEVeOX0E6HR8dfkP_Jib'
+      },
+      kind: 'user defined',
+      path: 'username',
+      value: 'testuser-ebEVeOX0E6HR8dfkP_Jib',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:56:05.732 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '174',
+  response_time: 74.317,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:56:05.748 PM'
+}
+{
+  errors: {
+    username: ValidatorError: username must be alphanumeric,without special characters.Hyphens and underscores allowed
+        at validate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1385:13)
+        at SchemaString.Object.<anonymous>.SchemaType.doValidate (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\schemaType.js:1369:7)
+        at D:\Projects\mern-project-typescript\node_modules\mongoose\lib\document.js:3071:18
+        at processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function: validator],
+        message: 'username must be alphanumeric,without special characters.Hyphens and underscores allowed',
+        type: 'user defined',
+        path: 'username',
+        fullPath: undefined,
+        value: 'testuser-cgv0xXBrhPkOLnK_8cDJp'
+      },
+      kind: 'user defined',
+      path: 'username',
+      value: 'testuser-cgv0xXBrhPkOLnK_8cDJp',
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'User validation failed',
+  level: 'error',
+  timestamp: '2025-05-16 11:59:35.547 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 500,
+  content_length: '174',
+  response_time: 113.278,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-16 11:59:35.573 PM'
+}
