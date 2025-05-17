@@ -17,11 +17,11 @@ jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),
 }));
 
-describe('Delete My account', () => {
+describe('Deactivate user account', () => {
     let userToken: string;
     let userTokenWrong: string;
 
-    let userId: string;
+    let adminData;
 
     const objData = {
         currentPassword: 'validPassword123!',
@@ -59,7 +59,6 @@ describe('Delete My account', () => {
 
         const res = await registerTestUser({ isEmailVerified: true });
 
-        userId = res._id.toString();
         // userToken = res;
         const token = 'abc123';
         await VerifyResetToken.create({
@@ -89,46 +88,34 @@ describe('Delete My account', () => {
     }, 30000);
 
     describe('Success Scenario', () => {
-        it('Delete my account', async () => {
+        it('Update password', async () => {
+            const responseS = await registerNotAdmin({ isEmailVerified: true });
+
             const res = await request(app)
-                .delete('/api/v1/user/profile')
+                .patch(`/api/v1/user/${responseS?._id}/deactivate`)
                 .set('Authorization', `Bearer ${userToken}`)
-                .set('Content-Type', 'application/json');
-            //     .send();
-            // console.log(res.body);
+                .set('Content-Type', 'application/json')
+                .send();
 
-            expect(res.body.success).toBe(true);
-            expect(res.body.message).toBe('Your user account has been deleted');
-
-            const deletedUser = await User.findById(userId);
-            expect(deletedUser).toBeNull();
+            expect(res.status).toBe(200);
+            expect(res.body.active).toBe(false);
+            const updatedUser = await User.findById(responseS?._id);
+            expect(updatedUser!.active).toBe(false);
         });
     });
 
     describe('Failure Scenarios', () => {
-        it('should fail if no token provided', async () => {
-            const res = await request(app)
-                .delete('/api/v1/user/profile')
-                .send({});
-            expect(res.status).toBe(401);
-        });
-
         it('should return 404 if user not found', async () => {
-            const fakeToken = jwt.sign(
-                { id: '507f1f77bcf86cd799439011', roles: ['User'] },
-                process.env.JWT_ACCESS_SECRET_KEY!,
-                { expiresIn: '1h' },
-            );
+            const fakeId = '507f1f77bcf86cd799439011';
+            const res = await request(app)
+                .patch(`/api/v1/user/${fakeId}/deactivate`)
+                .set('Authorization', `Bearer ${userToken}`)
+                .set('Content-Type', 'application/json')
+                .expect(404);
 
-            const response = await request(app)
-                .delete('/api/v1/user/profile')
-                .set('Authorization', `Bearer ${fakeToken}`);
-            // .expect(404);
-
-            // console.log(response.body);
-
-            expect(response.body.success).toBe(false);
-            expect(response.body.message).toMatch(/not found/i);
+            // expect(res.body.success).toBe(false);
+            expect(res.body.success).toBe(false);
+            expect(res.body.message).toMatch(/user was not found/i);
         });
     });
 });

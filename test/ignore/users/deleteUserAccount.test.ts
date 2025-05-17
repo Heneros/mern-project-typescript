@@ -3,11 +3,11 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 
 import * as emailService from '@/utils/sendEmail';
-import { connectTestDB, disconnectTestDB } from '../setupTestDB';
+import { connectTestDB, disconnectTestDB } from '../../setupTestDB';
 import {
     registerNotAdmin,
     registerTestUser,
-} from '../helpers/registerTestUser';
+} from '../../helpers/registerTestUser';
 import { app } from '@/server';
 import User from '@/models/userModel';
 import VerifyResetToken from '@/models/verifyResetTokenModel';
@@ -17,11 +17,11 @@ jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),
 }));
 
-describe('Deactivate user account', () => {
+describe('Delete User account /api/v1/user/:id', () => {
     let userToken: string;
     let userTokenWrong: string;
 
-    let adminData;
+    let userId: string;
 
     const objData = {
         currentPassword: 'validPassword123!',
@@ -51,7 +51,7 @@ describe('Deactivate user account', () => {
             { _id: res._id },
             { $set: { refreshToken: [userToken] } },
         );
-    }, 30000);
+    });
 
     beforeEach(async () => {
         // await User.deleteMany({});
@@ -59,6 +59,7 @@ describe('Deactivate user account', () => {
 
         const res = await registerTestUser({ isEmailVerified: true });
 
+        userId = res._id.toString();
         // userToken = res;
         const token = 'abc123';
         await VerifyResetToken.create({
@@ -88,74 +89,60 @@ describe('Deactivate user account', () => {
     }, 30000);
 
     describe('Success Scenario', () => {
-        it('Update password', async () => {
+        it('Delete user account', async () => {
+            const responseS = await registerNotAdmin({ isEmailVerified: true });
+
             const res = await request(app)
-                .patch('/api/v1/user/profile')
+                .delete(`/api/v1/user/${responseS!._id}`)
                 .set('Authorization', `Bearer ${userToken}`)
-                .set('Content-Type', 'application/json')
-                .send(objData)
-                .expect(200);
+                .set('Content-Type', 'application/json');
+            //     .send();
             // console.log(res.body);
 
-            expect(res.status).toBe(200);
             expect(res.body.success).toBe(true);
-            expect(res.body.message).toContain(
-                'your profile was successfully updated',
+            expect(res.body.message).toBe(
+                `User ${responseS!.firstName} deleted successfully`,
             );
 
-            const updatedUser = await User.findById(
-                res.body.updatedProfile._id,
-            ).select('+password');
-
-            const isMatch = await bcrypt.compare(
-                objData.password,
-                updatedUser!.password,
-            );
-
-            expect(isMatch).toBe(true);
-        });
-
-        it('Update name and username', async () => {
-            const res = await request(app)
-                .patch('/api/v1/user/profile')
-                .set('Authorization', `Bearer ${userToken}`)
-                .set('Content-Type', 'application/json')
-                .send({
-                    currentPassword: objData.currentPassword,
-                    username: 'James',
-                });
-
-            // console.log('  123  objData.password;', objData!.password);
-            expect(res.status).toBe(200);
-            expect(res.body.success).toBe(true);
-            // expect(res.body.success).toBe(true);
-            expect(res.body.message).toContain(
-                'your profile was successfully updated',
-            );
-            expect(res.body.updatedProfile.username).toBe('James');
+            const deletedUser = await User.findById(responseS?._id);
+            expect(deletedUser).toBeNull();
         });
     });
 
     describe('Failure Scenarios', () => {
-        it('should fail if no token provided', async () => {
+        it('should return 404 if user not found', async () => {
+            // const responseS = await registerNotAdmin({ isEmailVerified: true });
+            // const fakeId = '507f1f77bcf86cd799439011';
+
             const res = await request(app)
-                .patch('/api/v1/user/profile')
-                .send({});
-            expect(res.status).toBe(401);
+                .delete(`/api/v1/user/507f1f77bcf86cd799439011`)
+                .set('Authorization', `Bearer ${userToken}`)
+                .set('Content-Type', 'application/json')
+                .expect(404);
+
+            expect(res.body.success).toBe(false);
+            expect(res.body.message).toMatch(/user not found/i);
         });
 
-        it('should fail if new password and confirmation do not match', async () => {
+        it('should return 403 only admin', async () => {
+            const responseS = await registerNotAdmin({ isEmailVerified: true });
+            // const fakeId = '507f1f77bcf86cd799439011';
+
+            userTokenWrong = jwt.sign(
+                { id: responseS!._id, roles: ['User'] },
+                process.env.JWT_ACCESS_SECRET_KEY!,
+                { expiresIn: '1d' },
+            );
             const res = await request(app)
-                .patch('/api/v1/user/profile')
-                .set('Authorization', `Bearer ${userToken}`)
-                .send({
-                    currentPassword: 'originalPassword',
-                    password: 'NewPassword123!',
-                    passwordConfirm: 'MismatchPassword!',
-                });
-            console.log(res.body);
-            expect(res.status).toBe(401);
-            expect(res.body.message).toBe('Current password is incorrect');
+                .delete(`/api/v1/user/507f1f77bcf86cd799439011`)
+                .set('Authorization', `Bearer ${userTokenWrong}`)
+                .set('Content-Type', 'application/json');
+
+            // console.log(res.body);
+            expect(res.body.success).toBe(false);
+            expect(res.body.message).toMatch(
+                /You are not authorized to perform this request/i,
+            );
         });
     });
 });

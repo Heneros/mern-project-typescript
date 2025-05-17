@@ -1,20 +1,24 @@
 import { Request, Response } from 'express';
+import asyncHandler from 'express-async-handler';
 import User from '@/models/userModel';
 
-const deleteUserAccount = async (req: Request, res: Response) => {
-    const user = await User.findById(req.params.id);
+const deleteUserAccount = asyncHandler(
+    async (req: Request, res: Response): Promise<void> => {
+        const user = await User.findById(req.params.id);
+        if (!user) {
+            res.status(404).json({
+                success: false,
+                message: 'User not found',
+            });
+            return;
+        }
 
-    if (user) {
         await user.deleteOne();
-
         res.json({
             success: true,
             message: `User ${user.firstName} deleted successfully`,
         });
-    } else {
-        res.status(404);
-        throw new Error('user not found');
-    }
-};
+    },
+);
 
 export default deleteUserAccount;
