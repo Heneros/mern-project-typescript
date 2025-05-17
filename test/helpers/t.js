@@ -1,6 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var faker_1 = require("@faker-js/faker");
-// const cleaned = n.replace(/[.\-_,]/g, '');
-var n = faker_1.faker.internet.username();
-console.log(n.replace(/[.\-_,]/g, ''));
+// const maskCreditCard = function (number) {
+//     const str = number + '';
+//     const last = str.slice(-4);
+//     return last.padStart(str.length, '*');
+// };
+// console.log(maskCreditCard(45345345435)); ////*******5435
+// console.log(maskCreditCard(1223324324324)); ///*********4324
+var maskCreditCard = function (number) {
+    var str = number + '';
+    var last = str.slice(-4);
+    return last.padStart(str.length, '*');
+};
+console.log(maskCreditCard(45345345435));
