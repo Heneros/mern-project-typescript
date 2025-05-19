@@ -1,0 +1,100 @@
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 180.05,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:52.802 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 400,
+  content_length: '89',
+  response_time: 5.855,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:52.920 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/property/create',
+  status: 201,
+  content_length: '59',
+  response_time: 20.494,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:52.972 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 82.485,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:53.083 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/property/create',
+  status: 400,
+  content_length: '38',
+  response_time: 10.729,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:53.146 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 83.499,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:53.256 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '272',
+  response_time: 91.384,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:53.396 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/property/create',
+  status: 500,
+  content_length: '659',
+  response_time: 7.109,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:53.435 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/auth/register',
+  status: 201,
+  content_length: '266',
+  response_time: 84.635,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:53.543 PM'
+}
+{
+  method: 'POST',
+  url: '/api/v1/property/create',
+  status: 400,
+  content_length: '22',
+  response_time: 6.198,
+  level: 'http',
+  message: 'incoming-request',
+  timestamp: '2025-05-19 09:12:53.591 PM'
+}
