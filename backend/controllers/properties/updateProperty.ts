@@ -12,6 +12,7 @@ const updateProperty = asyncHandler(async (req, res): Promise<void> => {
 
     if (!property) {
         res.status(404).json({ message: 'Property not found' });
+        return;
     }
 
     const fieldsToUpdate = req.body;

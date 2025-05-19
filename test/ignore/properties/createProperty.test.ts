@@ -169,7 +169,7 @@ describe('Create Property /api/v1/property/create', () => {
                     preview: '123we',
                 })
                 .expect(400);
-            console.log(response.body);
+            // console.log(response.body);
             expect(response.body.message).toMatch(/no price/i);
         });
     });
