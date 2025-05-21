@@ -36,6 +36,8 @@ const propertySchema = new Schema(
         },
         price: {
             type: Number,
+            required: true,
+            min: [0, 'Price must be a positive number'],
         },
         bedrooms: {
             type: Number,
