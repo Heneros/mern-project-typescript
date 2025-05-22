@@ -10,6 +10,12 @@ import { systemLogs } from '@/utils/Logger';
 interface OrderType {
     property: string;
 }
+
+// $-title   Order property
+// $-path    POST /api/v1/order/:id
+// $-order   Private
+
+
 const addOrderItem = async (req: Request, res: Response): Promise<void> => {
     const userReq = req as RequestWithUser;
 
@@ -73,7 +79,7 @@ const addOrderItem = async (req: Request, res: Response): Promise<void> => {
         res.status(201).json(createdOrder);
     } catch (error) {
         console.error(error);
-        systemLogs.error(`Add orders ${error}`);
+        systemLogs.error(`Add orders Error ${error}`);
         res.status(500).json({
             message: 'Error creating order',
             error: error instanceof Error ? error.message : 'Unknown error',

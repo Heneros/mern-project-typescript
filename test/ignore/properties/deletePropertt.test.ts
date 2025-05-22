@@ -18,7 +18,7 @@ jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),
 }));
 
-describe('Get all Property GET /api/v1/property', () => {
+describe('Delete  Property DELETE /api/v1/property/:id', () => {
     let userToken: string;
     let userTokenWrong: string;
 
@@ -89,62 +89,59 @@ describe('Get all Property GET /api/v1/property', () => {
     }, 30000);
 
     describe('Success Scenario', () => {
-        it('should Get all properties successfully', async () => {
-            const testProperties = Array.from({ length: 12 }).map((_, i) => ({
-                title: `Title Property ${i + 1}`,
-                description: `Description ${i + 1}`,
-                price: 100000 + i * 1000,
-                address: `Address ${i + 1}`,
-                preview: `Preview ${i + 1}`,
-            }));
+        it('should Delete property successfully', async () => {
+            const propTest = await Property.create({
+                title: 'Duplicate Property',
+                price: 100000,
+                preview: 'qwerty123',
+            });
 
-            await Property.insertMany(testProperties);
-
-            const res = await request(app).get('/api/v1/property');
-
-            expect(res.statusCode).toBe(200);
-            expect(res.body.success).toBe(true);
-            expect(res.body.count).toBe(12);
-            expect(res.body.numberOfPages).toBeGreaterThan(1);
-            expect(res.body.properties.length).toBeGreaterThanOrEqual(6);
-        });
-
-        it('should Get all properties from second page successfully', async () => {
-            const testProperties = Array.from({ length: 12 }).map((_, i) => ({
-                title: `Title Property ${i + 1}`,
-                description: `Description ${i + 1}`,
-                price: 100000 + i * 1000,
-                address: `Address ${i + 1}`,
-                preview: `Preview ${i + 1}`,
-            }));
-
-            await Property.insertMany(testProperties);
-
-            const res = await request(app).get('/api/v1/property?page=2');
+            const res = await request(app)
+                .delete(`/api/v1/property/${propTest._id}`)
+                .set('Authorization', `Bearer ${userToken}`)
+                .set('Content-Type', 'application/json')
+                .expect(200);
 
             expect(res.statusCode).toBe(200);
-            expect(res.body.success).toBe(true);
-            expect(res.body.count).toBe(12);
-            expect(res.body.properties.length).toBeGreaterThanOrEqual(1);
+            expect(res.body).toHaveProperty('success', true);
+            expect(res.body).toHaveProperty('message', 'Property was deleted!');
         });
     });
 
     describe('Failure Scenarios', () => {
-        it('should Not Get all properties if page not', async () => {
-            const testProperties = Array.from({ length: 12 }).map((_, i) => ({
-                title: `Title Property ${i + 1}`,
-                description: `Description ${i + 1}`,
-                price: 100000 + i * 1000,
-                address: `Address ${i + 1}`,
-                preview: `Preview ${i + 1}`,
-            }));
+        it('Return 404. Cant delete property if you not exist property', async () => {
+            const res = await request(app)
+                .delete(`/api/v1/property/507f1f77bcf86cd799439011`)
+                .set('Authorization', `Bearer ${userToken}`)
+                .set('Content-Type', 'application/json')
+                .expect(404);
 
-            await Property.insertMany(testProperties);
+            // expect(res.body.success).toBe(false);
+            expect(res.body.message).toMatch(/Not found property to delete/i);
+        });
+        it('Return 403. Cant delete property  if you not admin', async () => {
+            const propTest = await Property.create({
+                title: 'Duplicate Property',
+                price: 100000,
+                preview: 'qwerty123',
+            });
+            const responseS = await registerNotAdmin({ isEmailVerified: true });
+            userTokenWrong = jwt.sign(
+                { id: responseS!._id, roles: ['User'] },
+                process.env.JWT_ACCESS_SECRET_KEY!,
+                { expiresIn: '1d' },
+            );
 
-            const res = await request(app).get('/api/v1/property?page=12');
-            // console.log(res.body);
+            const res = await request(app)
+                .delete(`/api/v1/property/${propTest._id}`)
+                .set('Authorization', `Bearer ${userTokenWrong}`)
+                .set('Content-Type', 'application/json')
+                .expect(500);
 
-            expect(res.body.properties.length).toBeLessThanOrEqual(0);
+            expect(res.body.success).toBe(false);
+            expect(res.body.message).toMatch(
+                /You are not authorized to perform this request/i,
+            );
         });
     });
 });

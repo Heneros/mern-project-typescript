@@ -3,7 +3,6 @@ type Edge = {
     to: string;
     weight: number;
 };
-
 // Граф храним как объект: для каждой вершины — массив её ребер
 type Graph = Record<string, Edge[]>;
 

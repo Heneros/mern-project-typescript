@@ -2732,3 +2732,38 @@
   level: 'error',
   timestamp: '2025-05-17 02:16:04.513 AM'
 }
+{
+  message: 'Add orders Error MongoServerError: E11000 duplicate key error collection: mernVillaTest.orders index: paypalOrderId_1 dup key: { paypalOrderId: "paypal_123456-1747925211477" }',
+  level: 'error',
+  timestamp: '2025-05-22 05:46:51.731 PM'
+}
+{
+  message: 'Add orders Error MongoServerError: E11000 duplicate key error collection: mernVillaTest.orders index: paypalOrderId_1 dup key: { paypalOrderId: "paypal_123456-1747925211482" }',
+  level: 'error',
+  timestamp: '2025-05-22 05:46:51.744 PM'
+}
+{
+  message: 'Add orders Error MongoServerError: E11000 duplicate key error collection: mernVillaTest.orders index: paypalOrderId_1 dup key: { paypalOrderId: "paypal_123456-1747925212030" }',
+  level: 'error',
+  timestamp: '2025-05-22 05:46:52.284 PM'
+}
+{
+  message: 'Add orders Error MongoServerError: E11000 duplicate key error collection: mernVillaTest.orders index: paypalOrderId_1 dup key: { paypalOrderId: "paypal_123456-1747925212551" }',
+  level: 'error',
+  timestamp: '2025-05-22 05:46:52.839 PM'
+}
+{
+  message: 'Add orders Error MongoServerError: E11000 duplicate key error collection: mernVillaTest.orders index: paypalOrderId_1 dup key: { paypalOrderId: "paypal_123456-1747925212554" }',
+  level: 'error',
+  timestamp: '2025-05-22 05:46:52.854 PM'
+}
+{
+  message: 'Add orders Error MongoServerError: E11000 duplicate key error collection: mernVillaTest.orders index: paypalOrderId_1 dup key: { paypalOrderId: "paypal_123456-1747925264590" }',
+  level: 'error',
+  timestamp: '2025-05-22 05:47:44.893 PM'
+}
+{
+  message: 'Add orders Error MongoServerError: E11000 duplicate key error collection: mernVillaTest.orders index: paypalOrderId_1 dup key: { paypalOrderId: "paypal_123456-1747925265161" }',
+  level: 'error',
+  timestamp: '2025-05-22 05:47:45.424 PM'
+}
