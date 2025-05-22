@@ -33,14 +33,14 @@ const getOrderById = asyncHandler(
 
             res.status(200).json({ order });
         } catch (error) {
-            if (error instanceof mongoose.Error.CastError) {
-                res.status(400).json({
-                    message: 'Invalid Order ID format',
-                    error: error.message,
-                });
-            }
+            // if (error instanceof mongoose.Error.CastError) {
+            //     res.status(400).json({
+            //         message: 'Invalid Order ID format',
+            //         error: error.message,
+            //     });
+            // }
 
-            console.error('Error fetching order:', error);
+            // console.error('Error fetching order:', error);
             res.status(500).json({
                 message: 'Internal server error',
                 error: error instanceof Error ? error.message : 'Unknown error',

@@ -17,10 +17,11 @@ export interface PaymentResult {
 }
 
 export interface IOrder {
+    _id?: string;
     orderItems: IOrderItem[];
     paymentResult?: PaymentResult;
     user: Types.ObjectId;
-    paypalOrderId: string;
+    paypalOrderId?: string;
     paymentMethod: string;
     itemsPrice: number;
     taxPrice: number;

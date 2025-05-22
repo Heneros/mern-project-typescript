@@ -141,43 +141,33 @@ describe('Get all My Orders GET /api/v1/orders', () => {
             expect(res.body.numberOfPages).toBeGreaterThanOrEqual(1);
             expect(res.body.orders[0]).toHaveProperty('user');
         });
+
         it('should Get all orders from second page', async () => {
             const res = await request(app)
                 .get('/api/v1/order?page=2')
                 .set('Authorization', `Bearer ${userToken}`);
 
-
             expect(res.body.count).toBeGreaterThan(1);
-    
         });
     });
 
     describe('Failure Scenarios', () => {
-        it('should Not Get all orders if not proper user', async () => {
-            //     const testProperties = Array.from({ length: 12 }).map((_, i) => ({
-            //         title: `Title Property ${i + 1}`,
-            //         description: `Description ${i + 1}`,
-            //         price: 100000 + i * 1000,
-            //         address: `Address ${i + 1}`,
-            //         preview: `Preview ${i + 1}`,
-            //     }));
-            //     await Property.insertMany(testProperties);
-            //     const res = await request(app).get('/api/v1/property?page=12');
-            //     // console.log(res.body);
-            //     expect(res.body.properties.length).toBeLessThanOrEqual(0);
-        });
         it('should Not Get all orders if not  authorized', async () => {
-            //     const testProperties = Array.from({ length: 12 }).map((_, i) => ({
-            //         title: `Title Property ${i + 1}`,
-            //         description: `Description ${i + 1}`,
-            //         price: 100000 + i * 1000,
-            //         address: `Address ${i + 1}`,
-            //         preview: `Preview ${i + 1}`,
-            //     }));
-            //     await Property.insertMany(testProperties);
-            //     const res = await request(app).get('/api/v1/property?page=12');
-            //     // console.log(res.body);
-            //     expect(res.body.properties.length).toBeLessThanOrEqual(0);
+            const responseS = await registerNotAdmin({ isEmailVerified: true });
+            // const fakeId = '507f1f77bcf86cd799439011';
+
+            userTokenWrong = jwt.sign(
+                { id: responseS!._id, roles: ['User'] },
+                process.env.JWT_ACCESS_SECRET_KEY!,
+                { expiresIn: '1d' },
+            );
+
+            const res = await request(app)
+                .get('/api/v1/order/507f1f77bcf86cd799439011')
+                .set('Authorization', `Bearer`)
+                .expect(401);
+
+            expect(res.body.message).toMatch(/Unauthorized/i);
         });
     });
 });
