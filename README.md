@@ -28,7 +28,7 @@ This app also includes elements of an e-commerce platform, featuring CRUD operat
 - API Paypal and Stripe 
 - Swagger
 - JEST and Supertest add.
-
+- Seed.ts file create
 
 ### Features and Technologies should be:
 - Online assistant. You can book villa online if you logged. And also communicate with real assistant (editor role) through  Socket.io
@@ -39,7 +39,4 @@ This app also includes elements of an e-commerce platform, featuring CRUD operat
 - Redis integrate
 - Discounts and coupons 
 - Reviews to villas add. with integrate websocket.
-- Seed.ts file create
 - Create new cluster mongodb for swagger dev version.
-
-## 

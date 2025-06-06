@@ -1,0 +1,53 @@
+name: MERN-Villa
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    basic:
+        runs-on: ubuntu-latest
+        services:
+            mongodb:
+                image:  mongo:5.0.6-focal
+                env:
+                 MONGO_ROOT_USERNAME: admin
+                 MONGO_ROOT_PASSWORD: admin123456
+            mongo-express:
+                image: mongo-express:0.54.0
+                env:
+                 ME_CONFIG_MONGODB_SERVER: mongodb
+                 ME_CONFIG_BASICAUTH_USERNAME: admin
+                 ME_CONFIG_BASICAUTH_PASSWORD: admin123456
+                 MONGO_ROOT_USERNAME: admin
+                 MONGO_ROOT_PASSWORD: admin123456       
+            maildev:
+              image: maildev/maildev
+              ports:
+               - 1080:1080 
+               - 1025:1025 
+        steps:        
+                
+         - name: Checkout
+           uses: actions/checkout@v3     
+
+         - name: Set up Node.js
+           uses: actions/setup-node@v4
+           with:
+                node-version: 20.12.2
+                cache: 'npm'
+
+         - name: Install dependencies
+           run: npm ci
+
+         - name: Build Project
+           run: npm run build  
+
+         - name: Run tests
+           env:
+            MONGO_URI: mongodb://admin:admin123456@localhost:27017/mernVillaTest?authSource=admin
+           run: npm run test
+
+         - run:  echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+         - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
