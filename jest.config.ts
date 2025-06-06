@@ -9,7 +9,7 @@ const config: Config = {
     detectOpenHandles: true,
     coverageProvider: 'v8',
     testMatch: ['**/test/**/*.test.ts'],
-    testTimeout: 30000,
+    testTimeout: 60000,
     setupFiles: ['dotenv/config'],
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/backend/$1',

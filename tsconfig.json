@@ -5,7 +5,7 @@
     "jsx": "preserve",
     "experimentalDecorators": true,
     "allowJs": false,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "moduleResolution": "node",
     "isolatedModules": false,
     "allowSyntheticDefaultImports": true,
@@ -32,37 +32,37 @@
         "backend/*"
       ],
       "config/*": [
-        "backend/config/*"
+        "./config/*"
       ],
       "constants/*": [
-        "backend/constants/*"
+        "./constants/*"
       ],
       "controllers/*": [
-        "backend/controllers/*"
+        "./controllers/*"
       ],
       "helpers/*": [
-        "backend/helpers/*"
+        "./helpers/*"
       ],
       "middleware/*": [
-        "backend/middleware/*"
+        "./middleware/*"
       ],
       "models/*": [
-        "backend/models/*"
+        "./models/*"
       ],
       "routes/*": [
-        "backend/routes/*"
+        "./routes/*"
       ],
       "types/*": [
-        "backend/types/*"
+        "./types/*"
       ],
       "utils/*": [
-        "backend/utils/*"
+        "./utils/*"
       ],
       "server": [
-        "backend/server.ts"
+        "./server.ts"
       ],
       "@helpers/*": [
-        "test/helpers/*"
+        "./helpers/*"
       ],
     }
   },

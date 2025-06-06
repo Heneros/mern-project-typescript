@@ -28,8 +28,9 @@ import { app, server } from './socket/socket';
 import { swaggerSpec } from './swagger';
 
 // export const app = express();
-
 // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
