@@ -2,7 +2,7 @@ import express from 'express';
 import Stripe from 'stripe';
 import asyncHandler from 'express-async-handler';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET!);
+const stripe = new Stripe(process.env.STRIPE_SECRET! || '');
 
 const createIntent = asyncHandler(async (req, res) => {
     const { amount, orderId } = req.body;
