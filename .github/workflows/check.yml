@@ -32,6 +32,7 @@ jobs:
 
          - name: Install dependencies
            run: npm ci
+         
 
          - name: Set up env variables  
            run: |  
@@ -39,7 +40,7 @@ jobs:
             echo "PAGINATION=5" >> $GITHUB_ENV
 
          - name: Build Project
-           run: npm run build  
+           run: npm run server:build  
 
          - name: Run tests
            env:
