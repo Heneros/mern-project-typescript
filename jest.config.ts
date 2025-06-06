@@ -15,6 +15,7 @@ const config: Config = {
         '^@/(.*)$': '<rootDir>/$1',
     },
     rootDir: '.',
+    setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
     testPathIgnorePatterns: ['/node_modules/', '/ignore/'],
 };
 
