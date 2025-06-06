@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import connectDB from '@/config/connectDB';
+import connectDB from '@/backend/config/connectDB';
 
 export const connectTestDB = async () => {
     try {

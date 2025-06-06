@@ -29,14 +29,16 @@
     "noEmit": true,
     "paths": {
       "@/*": [
-        "backend/*"
-      ],
+        "./*"
+      ], 
       "config/*": [
         "./config/*"
       ],
       "constants/*": [
         "./constants/*"
       ],
+
+ 
       "controllers/*": [
         "./controllers/*"
       ],

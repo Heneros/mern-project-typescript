@@ -1,4 +1,4 @@
-import { IUser } from '@/types/IUser';
+import { IUser } from '@/backend/types/IUser';
 
 declare global {
     namespace Express {

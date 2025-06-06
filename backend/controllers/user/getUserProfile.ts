@@ -1,8 +1,8 @@
 import asyncHandler from 'express-async-handler';
 import { RequestHandler, Request, Response } from 'express';
 
-import { RequestWithUser } from '@/types/RequestWithUser';
-import User from '@/models/userModel';
+import { RequestWithUser } from '@/backend/types/RequestWithUser';
+import User from '@/backend/models/userModel';
 
 export const getUserProfile: RequestHandler = asyncHandler(
     async (req: Request, res: Response) => {

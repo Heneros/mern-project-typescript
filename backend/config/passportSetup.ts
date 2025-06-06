@@ -4,7 +4,7 @@ import { Strategy as GoogleStrategy, Profile } from 'passport-google-oauth20';
 import { Strategy as GitHubStrategy } from 'passport-github2';
 // import GoogleStrategy from 'passport-google-oauth20';
 import User from '../models/userModel';
-import { systemLogs } from '@/utils/Logger';
+import { systemLogs } from '@/backend/utils/Logger';
 
 const domainURL = process.env.DOMAIN;
 const googleCallbackURL = process.env.GOOGLE_CALLBACK_URL;

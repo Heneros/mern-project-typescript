@@ -4,7 +4,7 @@ import { randomBytes } from 'crypto';
 import User from '../../models/userModel';
 import VerificationToken from '../../models/verifyResetTokenModel';
 import { sendEmail } from '../../utils/sendEmail';
-import { systemLogs } from '@/utils/Logger';
+import { systemLogs } from '@/backend/utils/Logger';
 
 const domainURL = process.env.DOMAIN;
 

@@ -3,22 +3,22 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
 
-import * as emailService from '@/utils/sendEmail';
+import * as emailService from '@/backend/utils/sendEmail';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import {
     registerNotAdmin,
     registerTestUser,
 } from '../helpers/registerTestUser';
-import { app } from '@/server';
+import { app } from '@/backend/server';
 
-import User from '@/models/userModel';
-import VerifyResetToken from '@/models/verifyResetTokenModel';
-import Property from '@/models/propertiesModel';
-import Order from '@/models/orderModel';
-import { IOrder } from '@/types/IOrderItem';
-import { IUser } from '@/types/IUser';
+import User from '@/backend/models/userModel';
+import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
+import Property from '@/backend/models/propertiesModel';
+import Order from '@/backend/models/orderModel';
+import { IOrder } from '@/backend/types/IOrderItem';
+import { IUser } from '@/backend/types/IUser';
 
-jest.mock('@/utils/sendEmail', () => ({
+jest.mock('@/backend/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),
 }));
 

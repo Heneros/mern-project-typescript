@@ -1,7 +1,7 @@
 import jwt, { JwtPayload, VerifyErrors } from 'jsonwebtoken';
 import { CookieOptions, Request, Response } from 'express';
-import User from '@/models/userModel';
-import { systemLogs } from '@/utils/Logger';
+import User from '@/backend/models/userModel';
+import { systemLogs } from '@/backend/utils/Logger';
 
 interface DecodedToken extends JwtPayload {
     id: string;

@@ -2,8 +2,8 @@ import asyncHandler from 'express-async-handler';
 
 import bcrypt from 'bcryptjs';
 
-import User from '@/models/userModel';
-import { RequestWithUser } from '@/types/RequestWithUser';
+import User from '@/backend/models/userModel';
+import { RequestWithUser } from '@/backend/types/RequestWithUser';
 
 const updateUserProfile = asyncHandler(async (req, res) => {
     const userReq = req as RequestWithUser;
@@ -14,12 +14,8 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 
     const userId = userReq.user._id;
 
-    const {
-        currentPassword,
-        password,
-        passwordConfirm,
-        ...fieldsToUpdate
-    } = req.body;
+    const { currentPassword, password, passwordConfirm, ...fieldsToUpdate } =
+        req.body;
 
     const user = await User.findById(userId).select('+password');
 

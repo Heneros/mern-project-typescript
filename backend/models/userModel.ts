@@ -3,7 +3,7 @@ import 'dotenv/config';
 import mongoose from 'mongoose';
 import validator from 'validator';
 import { USER } from '../constants/index';
-import { IUser } from '@/types/IUser';
+import { IUser } from '@/backend/types/IUser';
 
 const { Schema } = mongoose;
 

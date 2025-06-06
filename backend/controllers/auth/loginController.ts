@@ -1,8 +1,8 @@
 import asyncHandler from 'express-async-handler';
 import jwt from 'jsonwebtoken';
 import { CookieOptions, Request, Response } from 'express';
-import User from '@/models/userModel';
-import { systemLogs } from '@/utils/Logger';
+import User from '@/backend/models/userModel';
+import { systemLogs } from '@/backend/utils/Logger';
 
 // $-title   Login User, get access and refresh tokens
 // $-path    POST /api/v1/auth/login

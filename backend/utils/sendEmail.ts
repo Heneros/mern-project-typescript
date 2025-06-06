@@ -3,7 +3,7 @@ import handlebars from 'handlebars';
 import fs from 'fs';
 import path from 'path';
 
-import transporter from '@/helpers/emailTransport';
+import transporter from '@/backend/helpers/emailTransport';
 // import transporter from '../helpers/emailTransport';
 
 import { systemLogs } from './Logger';

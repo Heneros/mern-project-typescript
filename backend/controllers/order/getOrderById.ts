@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
 import mongoose from 'mongoose';
 import asyncHandler from 'express-async-handler';
-import Order from '@/models/orderModel';
-import { RequestWithUser } from '@/types/RequestWithUser';
+import Order from '@/backend/models/orderModel';
+import { RequestWithUser } from '@/backend/types/RequestWithUser';
 
 const getOrderById = asyncHandler(
     async (req: Request, res: Response): Promise<void> => {

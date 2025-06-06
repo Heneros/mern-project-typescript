@@ -1,7 +1,7 @@
 import asyncHandler from 'express-async-handler';
 import { Request, Response } from 'express';
 
-import User from '@/models/userModel';
+import User from '@/backend/models/userModel';
 
 const deactivateUser = asyncHandler(
     async (req: Request, res: Response): Promise<void> => {

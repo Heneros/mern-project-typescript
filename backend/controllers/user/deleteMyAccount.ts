@@ -1,8 +1,8 @@
 import asyncHandler from 'express-async-handler';
 import { Request, Response } from 'express';
 
-import User from '@/models/userModel';
-import { RequestWithUser } from '@/types/RequestWithUser';
+import User from '@/backend/models/userModel';
+import { RequestWithUser } from '@/backend/types/RequestWithUser';
 
 const deleteMyAccount = asyncHandler(
     async (req: Request, res: Response): Promise<void> => {

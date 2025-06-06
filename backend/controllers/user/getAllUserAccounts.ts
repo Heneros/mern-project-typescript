@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler';
 import User from '../../models/userModel';
-import { RequestWithUser } from '@/types/RequestWithUser';
+import { RequestWithUser } from '@/backend/types/RequestWithUser';
 
 const getAllUserAccounts = asyncHandler(async (req, res) => {
     const pageSize = Number(process.env.PAGE_SIZE) || 10;

@@ -12,17 +12,10 @@ const config: Config = {
     testTimeout: 60000,
     setupFiles: ['dotenv/config'],
     moduleNameMapper: {
-        '^@/(.*)$': '<rootDir>/backend/$1',
-        '^server$': '<rootDir>/backend/server.ts',
-        '^models/(.*)$': '<rootDir>/backend/models/$1',
+        '^@/(.*)$': '<rootDir>/$1',
     },
     rootDir: '.',
     testPathIgnorePatterns: ['/node_modules/', '/ignore/'],
-    // globals: {
-    //     'ts-jest': {
-    //         tsconfig: '<rootDir>/tsconfig.json',
-    //     },
-    // },
 };
 
 export default config;

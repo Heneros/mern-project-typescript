@@ -3,15 +3,15 @@ import * as bcrypt from 'bcryptjs';
 
 import * as emailService from '../../backend/utils/sendEmail';
 
-import { app } from '@/server';
+import { app } from '@/backend/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
 
-import User from '@/models/userModel';
-import VerifyResetToken from '@/models/verifyResetTokenModel';
-import { IUser } from '@/types/IUser';
+import User from '@/backend/models/userModel';
+import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
+import { IUser } from '@/backend/types/IUser';
 
-jest.mock('@/utils/sendEmail', () => ({
+jest.mock('@/backend/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(true),
 }));
 
@@ -57,7 +57,10 @@ describe('Reset Password ', () => {
             });
             expect(t).toBeNull();
             const updated = await User.findById(user._id).select('+password');
-            const match = await bcrypt.compare(obj.password, updated!.password);
+            const match = await bcrypt.compare(
+                obj.password,
+                updated!.password as any,
+            );
 
             // console.log(t);
             expect(match).toBe(true);

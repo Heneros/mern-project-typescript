@@ -16,7 +16,7 @@ import logoutUser from '../controllers/auth/logoutController';
 import feedbackFormController from '../controllers/auth/feedbackFormController';
 import { apiLimiter, loginLimiter } from '../middleware/apiLimiter';
 
-import handleOAuthCallback from '@/helpers/handleOAuthCallback';
+import handleOAuthCallback from '@/backend/helpers/handleOAuthCallback';
 
 const router = express.Router();
 const domain = process.env.DOMAIN_CLIENT;

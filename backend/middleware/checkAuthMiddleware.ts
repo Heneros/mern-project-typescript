@@ -1,7 +1,7 @@
 import asyncHandler from 'express-async-handler';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
-import User from '@/models/userModel';
+import User from '@/backend/models/userModel';
 
 interface ExtendedRequest extends Request {
     user?: any;
