@@ -13,15 +13,7 @@ jobs:
                 image:  mongo:5.0.6-focal
                 env:
                  MONGO_ROOT_USERNAME: admin
-                 MONGO_ROOT_PASSWORD: admin123456
-            mongo-express:
-                image: mongo-express:0.54.0
-                env:
-                 ME_CONFIG_MONGODB_SERVER: mongodb
-                 ME_CONFIG_BASICAUTH_USERNAME: admin
-                 ME_CONFIG_BASICAUTH_PASSWORD: admin123456
-                 MONGO_ROOT_USERNAME: admin
-                 MONGO_ROOT_PASSWORD: admin123456       
+                 MONGO_ROOT_PASSWORD: admin123456    
             maildev:
               image: maildev/maildev
               ports:
