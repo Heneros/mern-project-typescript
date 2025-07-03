@@ -23,9 +23,6 @@ const verifyResetTokenSchema = new Schema<IVerifyResetToken>({
     },
 });
 
-
-
-
 const VerifyResetToken: Model<IVerifyResetToken> =
     mongoose.models.VerifyResetToken ||
     mongoose.model<IVerifyResetToken>(

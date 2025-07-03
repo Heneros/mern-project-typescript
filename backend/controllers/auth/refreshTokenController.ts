@@ -51,7 +51,7 @@ const newAccessToken = async (req: Request, res: Response): Promise<void> => {
         }
 
         const newRefreshTokenArray = existingUser.refreshToken.filter(
-            (refT) => refT !== refreshToken,
+            (refT: any) => refT !== refreshToken,
         );
 
         try {

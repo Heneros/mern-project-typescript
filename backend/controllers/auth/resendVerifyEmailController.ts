@@ -1,8 +1,8 @@
 import asyncHandler from 'express-async-handler';
 import { Request, Response } from 'express';
 
-import User from '../../models/userModel';
-import VerificationToken from '../../models/verifyResetTokenModel';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
 import { sendEmail } from '@/utils/sendEmail';
 
 const domainURL = process.env.DOMAIN;
@@ -34,7 +34,7 @@ const resendEmailVerificationToken = async (req: any, res: any) => {
         // throw new Error('This account has already been verified. Please login');
     }
 
-    let verificationToken = await VerificationToken.findOne({
+    let verificationToken = await VerifyResetToken.findOne({
         _userId: user._id,
     });
 
@@ -44,7 +44,7 @@ const resendEmailVerificationToken = async (req: any, res: any) => {
 
     const resetToken = randomBytes(32).toString('hex');
 
-    let emailToken = await new VerificationToken({
+    let emailToken = await new VerifyResetToken({
         _userId: user._id,
         token: resetToken,
     }).save();

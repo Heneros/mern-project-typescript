@@ -1,12 +1,16 @@
 import asyncHandler from 'express-async-handler';
 import { Request, Response } from 'express';
 import { randomBytes } from 'crypto';
-import User from '../../models/userModel';
-import VerificationToken from '../../models/verifyResetTokenModel';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
 import { sendEmail } from '../../utils/sendEmail';
 import { systemLogs } from '@/utils/Logger';
 
 const domainURL = process.env.DOMAIN;
+
+
+
+
 
 // $-title   Register User and send email verification link
 // $-path    POST /api/v1/auth/register
@@ -104,7 +108,7 @@ const registerUser = asyncHandler(
 
             const verificationToken = randomBytes(32).toString('hex');
 
-            const emailVerificationToken = new VerificationToken({
+            const emailVerificationToken = new VerifyResetToken({
                 _userId: registeredUser._id,
                 token: verificationToken,
             });

@@ -10,7 +10,7 @@ import mongoSanitize from 'express-mongo-sanitize';
 import passport from 'passport';
 import morgan from 'morgan';
 import session from 'express-session';
-   
+
 import swaggerUi from 'swagger-ui-express';
 
 import { errorHandler, notFound } from './middleware/errorMiddleware';
@@ -88,7 +88,7 @@ app.use(
 );
 
 const port = process.env.PORT || 3005;
-const MONGO_URI = process.env.MONGO_URI_LOCAL;
+const MONGO_URI = process.env.MONGO_URI;
 
 // const MONGO_URI = process.env.MONGO_URI ;
 
@@ -104,6 +104,8 @@ if (process.env.NODE_ENV === 'production') {
         res.send('<h1>Dev version running 1!</h1>');
     });
 }
+  
+
 
 app.use(notFound);
 app.use(errorHandler);

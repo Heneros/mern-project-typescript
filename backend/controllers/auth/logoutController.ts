@@ -23,7 +23,7 @@ const logoutUser = asyncHandler(async (req, res) => {
     }
     if (existingUser) {
         existingUser.refreshToken = existingUser.refreshToken.filter(
-            (refT) => refT !== refreshToken,
+            (refT: any) => refT !== refreshToken,
         );
 
         await existingUser.save();

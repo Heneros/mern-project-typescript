@@ -1,66 +1,44 @@
 {
-  error: Error: Cannot find module '@/utils/Logger'
-  Require stack:
-  - D:\Projects\mern-project-typescript\backend\controllers\auth\registerController.ts
-  - D:\Projects\mern-project-typescript\backend\routes\auth.ts
-  - D:\Projects\mern-project-typescript\backend\server.ts
-      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
-      at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\Projects\mern-project-typescript\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
-      at Function.Module._load (node:internal/modules/cjs/loader:984:27)
-      at Module.require (node:internal/modules/cjs/loader:1231:19)
-      at require (node:internal/modules/helpers:179:18)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\backend\controllers\auth\registerController.ts:7:1)
-      at Module._compile (node:internal/modules/cjs/loader:1369:14)
-      at Module.m._compile (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1618:23)
-      at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
-      at Object.require.extensions.<computed> [as .ts] (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1621:12) {
-    code: 'MODULE_NOT_FOUND',
-    requireStack: [
-      'D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts',
-      'D:\\Projects\\mern-project-typescript\\backend\\routes\\auth.ts',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ]
-  },
+  error: backend/config/connectDB.ts(10,13): error TS2345: Argument of type '{ authSource: string; useUnifiedTopology: boolean; }' is not assignable to parameter of type 'ConnectOptions'.
+    Object literal may only specify known properties, and 'useUnifiedTopology' does not exist in type 'ConnectOptions'.
+  ,
   level: 'error',
-  message: "uncaughtException: Cannot find module '@/utils/Logger'\n" +
-    'Require stack:\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\routes\\auth.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\server.ts\n' +
-    "Error: Cannot find module '@/utils/Logger'\n" +
-    'Require stack:\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\routes\\auth.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\server.ts\n' +
-    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)\n' +
-    '    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\\Projects\\mern-project-typescript\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:811:30)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:984:27)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts:7:1)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "backend/config/connectDB.ts(10,13): error TS2345: Argument of type '{ authSource: string; useUnifiedTopology: boolean; }' is not assignable to parameter of type 'ConnectOptions'.\r\n" +
+    "  Object literal may only specify known properties, and 'useUnifiedTopology' does not exist in type 'ConnectOptions'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/config/connectDB.ts(10,13): error TS2345: Argument of type '{ authSource: string; useUnifiedTopology: boolean; }' is not assignable to parameter of type 'ConnectOptions'.\r\n" +
+    "  Object literal may only specify known properties, and 'useUnifiedTopology' does not exist in type 'ConnectOptions'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
     '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
-  stack: "Error: Cannot find module '@/utils/Logger'\n" +
-    'Require stack:\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\routes\\auth.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\server.ts\n' +
-    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)\n' +
-    '    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\\Projects\\mern-project-typescript\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:811:30)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:984:27)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts:7:1)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "backend/config/connectDB.ts(10,13): error TS2345: Argument of type '{ authSource: string; useUnifiedTopology: boolean; }' is not assignable to parameter of type 'ConnectOptions'.\r\n" +
+    "  Object literal may only specify known properties, and 'useUnifiedTopology' does not exist in type 'ConnectOptions'.\r\n" +
+    '\n' +
+    '    at createTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
     '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
+    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1231:19)',
   exception: true,
-  date: 'Thu Jul 03 2025 12:51:09 GMT+0300 (Восточная Европа, летнее время)',
+  date: 'Thu Jul 03 2025 14:30:03 GMT+0300 (Восточная Европа, летнее время)',
   process: {
-    pid: 49140,
+    pid: 53072,
     uid: null,
     gid: null,
     cwd: 'D:\\Projects\\mern-project-typescript',
@@ -71,76 +49,52 @@
       'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
     ],
     memoryUsage: {
-      rss: 451612672,
-      heapTotal: 399929344,
-      heapUsed: 370497432,
-      external: 24848695,
-      arrayBuffers: 21846130
+      rss: 293449728,
+      heapTotal: 252051456,
+      heapUsed: 226663048,
+      external: 6426192,
+      arrayBuffers: 3579511
     }
   },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 402667.625 },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 408601.812 },
   trace: [
     {
-      column: 15,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._resolveFilename',
-      line: 1143,
-      method: '_resolveFilename',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js',
-      function: 'Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename]',
-      line: 811,
-      method: 'installedValue [as _resolveFilename]',
-      native: false
-    },
-    {
-      column: 27,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 984,
-      method: '_load',
+      column: 12,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
       native: false
     },
     {
       column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    },
-    {
-      column: 18,
-      file: 'node:internal/modules/helpers',
-      function: 'require',
-      line: 179,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
       method: null,
       native: false
     },
     {
-      column: 1,
-      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts',
-      function: null,
-      line: 7,
+      column: 36,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
       method: null,
       native: false
     },
     {
-      column: 14,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._compile',
-      line: 1369,
-      method: '_compile',
+      column: 41,
+      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
       native: false
     },
     {
-      column: 23,
+      column: 30,
       file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
       function: 'Module.m._compile',
-      line: 1618,
+      line: 1617,
       method: '_compile',
       native: false
     },
@@ -159,273 +113,6 @@
       line: 1621,
       method: 'ts]',
       native: false
-    }
-  ],
-  timestamp: '2025-07-03 12:51:09.537 PM'
-}
-{
-  error: Error: Cannot find module '@/utils/Logger'
-  Require stack:
-  - D:\Projects\mern-project-typescript\backend\controllers\auth\registerController.ts
-  - D:\Projects\mern-project-typescript\backend\routes\auth.ts
-  - D:\Projects\mern-project-typescript\backend\server.ts
-      at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
-      at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\Projects\mern-project-typescript\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
-      at Function.Module._load (node:internal/modules/cjs/loader:984:27)
-      at Module.require (node:internal/modules/cjs/loader:1231:19)
-      at require (node:internal/modules/helpers:179:18)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\backend\controllers\auth\registerController.ts:7:1)
-      at Module._compile (node:internal/modules/cjs/loader:1369:14)
-      at Module.m._compile (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1618:23)
-      at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
-      at Object.require.extensions.<computed> [as .ts] (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1621:12) {
-    code: 'MODULE_NOT_FOUND',
-    requireStack: [
-      'D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts',
-      'D:\\Projects\\mern-project-typescript\\backend\\routes\\auth.ts',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ]
-  },
-  level: 'error',
-  message: "uncaughtException: Cannot find module '@/utils/Logger'\n" +
-    'Require stack:\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\routes\\auth.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\server.ts\n' +
-    "Error: Cannot find module '@/utils/Logger'\n" +
-    'Require stack:\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\routes\\auth.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\server.ts\n' +
-    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)\n' +
-    '    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\\Projects\\mern-project-typescript\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:811:30)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:984:27)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts:7:1)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
-  stack: "Error: Cannot find module '@/utils/Logger'\n" +
-    'Require stack:\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\routes\\auth.ts\n' +
-    '- D:\\Projects\\mern-project-typescript\\backend\\server.ts\n' +
-    '    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)\n' +
-    '    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\\Projects\\mern-project-typescript\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js:811:30)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:984:27)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts:7:1)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module.m._compile (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1618:23)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .ts] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1621:12)',
-  exception: true,
-  date: 'Thu Jul 03 2025 12:51:14 GMT+0300 (Восточная Европа, летнее время)',
-  process: {
-    pid: 28944,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 448786432,
-      heapTotal: 398356480,
-      heapUsed: 367891072,
-      external: 24844353,
-      arrayBuffers: 21841788
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 402672.578 },
-  trace: [
-    {
-      column: 15,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._resolveFilename',
-      line: 1143,
-      method: '_resolveFilename',
-      native: false
-    },
-    {
-      column: 30,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\@cspotcode\\source-map-support\\source-map-support.js',
-      function: 'Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename]',
-      line: 811,
-      method: 'installedValue [as _resolveFilename]',
-      native: false
-    },
-    {
-      column: 27,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 984,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    },
-    {
-      column: 18,
-      file: 'node:internal/modules/helpers',
-      function: 'require',
-      line: 179,
-      method: null,
-      native: false
-    },
-    {
-      column: 1,
-      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\registerController.ts',
-      function: null,
-      line: 7,
-      method: null,
-      native: false
-    },
-    {
-      column: 14,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._compile',
-      line: 1369,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 23,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Module.m._compile',
-      line: 1618,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .ts]',
-      line: 1621,
-      method: 'ts]',
-      native: false
-    }
-  ],
-  timestamp: '2025-07-03 12:51:14.495 PM'
-}
-{
-  error: OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.
-      at Mongoose.model (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\mongoose.js:608:13)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\dist\backend\models\verifyResetTokenModel.js:22:45)
-      at Module._compile (node:internal/modules/cjs/loader:1369:14)
-      at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
-      at Object.require.extensions.<computed> [as .js] (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1608:43)
-      at Module.load (node:internal/modules/cjs/loader:1206:32)
-      at Function.Module._load (node:internal/modules/cjs/loader:1022:12)
-      at Module.require (node:internal/modules/cjs/loader:1231:19)
-      at require (node:internal/modules/helpers:179:18)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\backend\controllers\auth\verifyEmailController.ts:4:1),
-  level: 'error',
-  message: 'uncaughtException: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    'OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    '    at Mongoose.model (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js:608:13)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js:22:45)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .js] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1608:43)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts:4:1)',
-  stack: 'OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    '    at Mongoose.model (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js:608:13)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js:22:45)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .js] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1608:43)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts:4:1)',
-  exception: true,
-  date: 'Thu Jul 03 2025 12:51:29 GMT+0300 (Восточная Европа, летнее время)',
-  process: {
-    pid: 4140,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 447156224,
-      heapTotal: 399405056,
-      heapUsed: 375241760,
-      external: 24855250,
-      arrayBuffers: 21852685
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 402687.765 },
-  trace: [
-    {
-      column: 13,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js',
-      function: 'Mongoose.model',
-      line: 608,
-      method: 'model',
-      native: false
-    },
-    {
-      column: 45,
-      file: 'D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js',
-      function: null,
-      line: 22,
-      method: null,
-      native: false
-    },
-    {
-      column: 14,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._compile',
-      line: 1369,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 43,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .js]',
-      line: 1608,
-      method: 'js]',
-      native: false
     },
     {
       column: 32,
@@ -450,449 +137,7 @@
       line: 1231,
       method: 'require',
       native: false
-    },
-    {
-      column: 18,
-      file: 'node:internal/modules/helpers',
-      function: 'require',
-      line: 179,
-      method: null,
-      native: false
-    },
-    {
-      column: 1,
-      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts',
-      function: null,
-      line: 4,
-      method: null,
-      native: false
     }
   ],
-  timestamp: '2025-07-03 12:51:29.679 PM'
-}
-{
-  error: OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.
-      at Mongoose.model (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\mongoose.js:608:13)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\dist\backend\models\verifyResetTokenModel.js:22:45)
-      at Module._compile (node:internal/modules/cjs/loader:1369:14)
-      at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
-      at Object.require.extensions.<computed> [as .js] (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1608:43)
-      at Module.load (node:internal/modules/cjs/loader:1206:32)
-      at Function.Module._load (node:internal/modules/cjs/loader:1022:12)
-      at Module.require (node:internal/modules/cjs/loader:1231:19)
-      at require (node:internal/modules/helpers:179:18)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\backend\controllers\auth\verifyEmailController.ts:4:1),
-  level: 'error',
-  message: 'uncaughtException: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    'OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    '    at Mongoose.model (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js:608:13)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js:22:45)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .js] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1608:43)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts:4:1)',
-  stack: 'OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    '    at Mongoose.model (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js:608:13)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js:22:45)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .js] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1608:43)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts:4:1)',
-  exception: true,
-  date: 'Thu Jul 03 2025 12:51:29 GMT+0300 (Восточная Европа, летнее время)',
-  process: {
-    pid: 4140,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 447369216,
-      heapTotal: 399405056,
-      heapUsed: 375365680,
-      external: 24861226,
-      arrayBuffers: 21858621
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 402687.765 },
-  trace: [
-    {
-      column: 13,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js',
-      function: 'Mongoose.model',
-      line: 608,
-      method: 'model',
-      native: false
-    },
-    {
-      column: 45,
-      file: 'D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js',
-      function: null,
-      line: 22,
-      method: null,
-      native: false
-    },
-    {
-      column: 14,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._compile',
-      line: 1369,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 43,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .js]',
-      line: 1608,
-      method: 'js]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    },
-    {
-      column: 18,
-      file: 'node:internal/modules/helpers',
-      function: 'require',
-      line: 179,
-      method: null,
-      native: false
-    },
-    {
-      column: 1,
-      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts',
-      function: null,
-      line: 4,
-      method: null,
-      native: false
-    }
-  ],
-  timestamp: '2025-07-03 12:51:29.684 PM'
-}
-{
-  error: OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.
-      at Mongoose.model (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\mongoose.js:608:13)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\dist\backend\models\verifyResetTokenModel.js:22:45)
-      at Module._compile (node:internal/modules/cjs/loader:1369:14)
-      at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
-      at Object.require.extensions.<computed> [as .js] (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1608:43)
-      at Module.load (node:internal/modules/cjs/loader:1206:32)
-      at Function.Module._load (node:internal/modules/cjs/loader:1022:12)
-      at Module.require (node:internal/modules/cjs/loader:1231:19)
-      at require (node:internal/modules/helpers:179:18)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\backend\controllers\auth\verifyEmailController.ts:4:1),
-  level: 'error',
-  message: 'uncaughtException: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    'OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    '    at Mongoose.model (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js:608:13)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js:22:45)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .js] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1608:43)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts:4:1)',
-  stack: 'OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    '    at Mongoose.model (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js:608:13)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js:22:45)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .js] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1608:43)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts:4:1)',
-  exception: true,
-  date: 'Thu Jul 03 2025 12:51:43 GMT+0300 (Восточная Европа, летнее время)',
-  process: {
-    pid: 26060,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 448667648,
-      heapTotal: 400191488,
-      heapUsed: 375998000,
-      external: 24855258,
-      arrayBuffers: 21852693
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 402701.812 },
-  trace: [
-    {
-      column: 13,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js',
-      function: 'Mongoose.model',
-      line: 608,
-      method: 'model',
-      native: false
-    },
-    {
-      column: 45,
-      file: 'D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js',
-      function: null,
-      line: 22,
-      method: null,
-      native: false
-    },
-    {
-      column: 14,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._compile',
-      line: 1369,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 43,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .js]',
-      line: 1608,
-      method: 'js]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    },
-    {
-      column: 18,
-      file: 'node:internal/modules/helpers',
-      function: 'require',
-      line: 179,
-      method: null,
-      native: false
-    },
-    {
-      column: 1,
-      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts',
-      function: null,
-      line: 4,
-      method: null,
-      native: false
-    }
-  ],
-  timestamp: '2025-07-03 12:51:43.726 PM'
-}
-{
-  error: OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.
-      at Mongoose.model (D:\Projects\mern-project-typescript\node_modules\mongoose\lib\mongoose.js:608:13)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\dist\backend\models\verifyResetTokenModel.js:22:45)
-      at Module._compile (node:internal/modules/cjs/loader:1369:14)
-      at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
-      at Object.require.extensions.<computed> [as .js] (D:\Projects\mern-project-typescript\node_modules\ts-node\src\index.ts:1608:43)
-      at Module.load (node:internal/modules/cjs/loader:1206:32)
-      at Function.Module._load (node:internal/modules/cjs/loader:1022:12)
-      at Module.require (node:internal/modules/cjs/loader:1231:19)
-      at require (node:internal/modules/helpers:179:18)
-      at Object.<anonymous> (D:\Projects\mern-project-typescript\backend\controllers\auth\verifyEmailController.ts:4:1),
-  level: 'error',
-  message: 'uncaughtException: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    'OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    '    at Mongoose.model (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js:608:13)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js:22:45)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .js] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1608:43)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts:4:1)',
-  stack: 'OverwriteModelError: Cannot overwrite `VerifyResetToken` model once compiled.\n' +
-    '    at Mongoose.model (D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js:608:13)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js:22:45)\n' +
-    '    at Module._compile (node:internal/modules/cjs/loader:1369:14)\n' +
-    '    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)\n' +
-    '    at Object.require.extensions.<computed> [as .js] (D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts:1608:43)\n' +
-    '    at Module.load (node:internal/modules/cjs/loader:1206:32)\n' +
-    '    at Function.Module._load (node:internal/modules/cjs/loader:1022:12)\n' +
-    '    at Module.require (node:internal/modules/cjs/loader:1231:19)\n' +
-    '    at require (node:internal/modules/helpers:179:18)\n' +
-    '    at Object.<anonymous> (D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts:4:1)',
-  exception: true,
-  date: 'Thu Jul 03 2025 12:51:43 GMT+0300 (Восточная Европа, летнее время)',
-  process: {
-    pid: 26060,
-    uid: null,
-    gid: null,
-    cwd: 'D:\\Projects\\mern-project-typescript',
-    execPath: 'C:\\Program Files\\nodejs\\node.exe',
-    version: 'v20.12.2',
-    argv: [
-      'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\dist\\bin.js',
-      'D:\\Projects\\mern-project-typescript\\backend\\server.ts'
-    ],
-    memoryUsage: {
-      rss: 448880640,
-      heapTotal: 400191488,
-      heapUsed: 376127752,
-      external: 24861235,
-      arrayBuffers: 21858630
-    }
-  },
-  os: { loadavg: [ 0, 0, 0 ], uptime: 402701.812 },
-  trace: [
-    {
-      column: 13,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\mongoose\\lib\\mongoose.js',
-      function: 'Mongoose.model',
-      line: 608,
-      method: 'model',
-      native: false
-    },
-    {
-      column: 45,
-      file: 'D:\\Projects\\mern-project-typescript\\dist\\backend\\models\\verifyResetTokenModel.js',
-      function: null,
-      line: 22,
-      method: null,
-      native: false
-    },
-    {
-      column: 14,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._compile',
-      line: 1369,
-      method: '_compile',
-      native: false
-    },
-    {
-      column: 10,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._extensions..js',
-      line: 1427,
-      method: '.js',
-      native: false
-    },
-    {
-      column: 43,
-      file: 'D:\\Projects\\mern-project-typescript\\node_modules\\ts-node\\src\\index.ts',
-      function: 'Object.require.extensions.<computed> [as .js]',
-      line: 1608,
-      method: 'js]',
-      native: false
-    },
-    {
-      column: 32,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.load',
-      line: 1206,
-      method: 'load',
-      native: false
-    },
-    {
-      column: 12,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module._load',
-      line: 1022,
-      method: '_load',
-      native: false
-    },
-    {
-      column: 19,
-      file: 'node:internal/modules/cjs/loader',
-      function: 'Module.require',
-      line: 1231,
-      method: 'require',
-      native: false
-    },
-    {
-      column: 18,
-      file: 'node:internal/modules/helpers',
-      function: 'require',
-      line: 179,
-      method: null,
-      native: false
-    },
-    {
-      column: 1,
-      file: 'D:\\Projects\\mern-project-typescript\\backend\\controllers\\auth\\verifyEmailController.ts',
-      function: null,
-      line: 4,
-      method: null,
-      native: false
-    }
-  ],
-  timestamp: '2025-07-03 12:51:43.731 PM'
+  timestamp: '2025-07-03 02:30:03.732 PM'
 }
