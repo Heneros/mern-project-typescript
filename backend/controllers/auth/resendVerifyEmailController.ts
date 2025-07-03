@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 
 import User from '../../models/userModel';
 import VerificationToken from '../../models/verifyResetTokenModel';
-import { sendEmail } from '@/backend/utils/sendEmail';
+import { sendEmail } from '@/utils/sendEmail';
 
 const domainURL = process.env.DOMAIN;
 

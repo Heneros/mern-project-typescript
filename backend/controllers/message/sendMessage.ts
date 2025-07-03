@@ -1,11 +1,11 @@
 import asyncHandler from 'express-async-handler';
 import { Request, Response } from 'express';
 
-import Message from '@/backend/models/chatModel';
+import Message from '@/models/chatModel';
 
-import { RequestWithUser } from '@/backend/types/RequestWithUser';
-import cloudinaryUploader from '@/backend/config/cloudinaryConfig';
-import { getReceiverSocketId, io } from '@/backend/socket/socket';
+import { RequestWithUser } from '@/types/RequestWithUser';
+import cloudinaryUploader from '@/config/cloudinaryConfig';
+import { getReceiverSocketId, io } from '@/socket/socket';
 
 /// $-title Send Message to specific user in chat through Socket.Io
 /// $-path POST /api/v1/messages/send/:id

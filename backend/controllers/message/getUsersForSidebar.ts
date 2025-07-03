@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler';
-import User from '@/backend/models/userModel';
-import { RequestWithUser } from '@/backend/types/RequestWithUser';
+import User from '@/models/userModel';
+import { RequestWithUser } from '@/types/RequestWithUser';
 
 /// $-title Get specific chat
 /// $-path GET /api/v1/messages/:id

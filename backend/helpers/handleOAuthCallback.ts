@@ -1,7 +1,7 @@
 import express, { Response, Request } from 'express';
 import jwt from 'jsonwebtoken';
-import User from '@/backend/models/userModel';
-import { RequestWithUser } from '@/backend/types/RequestWithUser';
+import User from '@/models/userModel';
+import { RequestWithUser } from '@/types/RequestWithUser';
 
 const domain = process.env.DOMAIN_CLIENT;
 

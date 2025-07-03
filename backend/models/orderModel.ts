@@ -1,5 +1,5 @@
 import mongoose, { Document } from 'mongoose';
-import { IOrder } from '@/backend/types/IOrderItem';
+import { IOrder } from '@/types/IOrderItem';
 
 const orderSchema = new mongoose.Schema<IOrder>(
     {

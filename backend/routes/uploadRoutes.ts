@@ -1,9 +1,9 @@
 import express, { Response, Request } from 'express';
 import fs from 'fs';
 
-import cloudinaryUploader from '@/backend/config/cloudinaryConfig';
+import cloudinaryUploader from '@/config/cloudinaryConfig';
 // import upload from '../helpers/multer';
-import handleUpload from '@/backend/helpers/multer';
+import handleUpload from '@/helpers/multer';
 
 const router = express.Router();
 

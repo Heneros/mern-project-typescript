@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
 import mongoose, { Types } from 'mongoose';
-import Property from '@/backend/models/propertiesModel';
-import { IOrder, IOrderItem } from '@/backend/types/IOrderItem';
-import { calcPrice } from '@/backend/utils/calcPrice';
-import Order from '@/backend/models/orderModel';
-import { RequestWithUser } from '@/backend/types/RequestWithUser';
-import { systemLogs } from '@/backend/utils/Logger';
+import Property from '@/models/propertiesModel';
+import { IOrder, IOrderItem } from '@/types/IOrderItem';
+import { calcPrice } from '@/utils/calcPrice';
+import Order from '@/models/orderModel';
+import { RequestWithUser } from '@/types/RequestWithUser';
+import { systemLogs } from '@/utils/Logger';
 
 interface OrderType {
     property: string;

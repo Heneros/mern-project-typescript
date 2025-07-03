@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler';
-import Property from '@/backend/models/propertiesModel';
+import Property from '@/models/propertiesModel';
 
 // $-title   PATCH property
 // $-path    PATCH /api/v1/property/:id

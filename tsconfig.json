@@ -5,7 +5,9 @@
     "jsx": "preserve",
     "experimentalDecorators": true,
     "allowJs": false,
-    "baseUrl": "./",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "/dist/backend",
     "moduleResolution": "node",
     "isolatedModules": false,
     "allowSyntheticDefaultImports": true,
@@ -29,16 +31,14 @@
     "noEmit": true,
     "paths": {
       "@/*": [
-        "./*"
-      ], 
+        "backend/*"
+      ],
       "config/*": [
         "./config/*"
       ],
       "constants/*": [
         "./constants/*"
       ],
-
- 
       "controllers/*": [
         "./controllers/*"
       ],
@@ -62,9 +62,6 @@
       ],
       "server": [
         "./server.ts"
-      ],
-      "@helpers/*": [
-        "./helpers/*"
       ],
     }
   },

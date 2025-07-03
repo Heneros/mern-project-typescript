@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler';
-import Property from '@/backend/models/propertiesModel';
-import { pageSize } from '@/backend/constants';
+import Property from '@/models/propertiesModel';
+import { pageSize } from '@/constants';
 
 const getAllProperties = asyncHandler(async (req, res) => {
     const page = Number(req.query.page) || 1;

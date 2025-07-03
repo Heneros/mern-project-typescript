@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import { ADMIN, USER } from '../constants/index';
-import { IUser } from '@/backend/types/IUser';
+import { IUser } from '@/types/IUser';
 
 const ROLES = {
     User: USER,

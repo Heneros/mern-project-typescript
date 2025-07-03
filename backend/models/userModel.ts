@@ -3,7 +3,7 @@ import 'dotenv/config';
 import mongoose from 'mongoose';
 import validator from 'validator';
 import { USER } from '../constants/index';
-import { IUser } from '@/backend/types/IUser';
+import { IUser } from '@/types/IUser';
 
 const { Schema } = mongoose;
 
@@ -128,6 +128,6 @@ userSchema.pre('save', async function (this: IUser, next) {
 userSchema.methods.matchPassword = async function (givenPassword: string) {
     return bcrypt.compare(givenPassword, this.password);
 };
-const User = mongoose.model('User', userSchema);
+const User = mongoose.models.User || mongoose.model('User', userSchema);
 
 export default User;

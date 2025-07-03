@@ -1,10 +1,10 @@
 import express from 'express';
 import multer from 'multer';
 
-import checkAuth from '@/backend/middleware/checkAuthMiddleware';
-import getUsersForSidebar from '@/backend/controllers/message/getUsersForSidebar';
-import getMessages from '@/backend/controllers/message/getMessages';
-import sendMessage from '@/backend/controllers/message/sendMessage';
+import checkAuth from '@/middleware/checkAuthMiddleware';
+import getUsersForSidebar from '@/controllers/message/getUsersForSidebar';
+import getMessages from '@/controllers/message/getMessages';
+import sendMessage from '@/controllers/message/sendMessage';
 
 const router = express.Router();
 

@@ -1,5 +1,7 @@
 import type { Request, Response } from 'express';
-import { receiverEmailFunction } from '@/backend/utils/sendEmail';
+import { receiverEmailFunction } from '@/utils/sendEmail';
+
+
 
 const feedbackFormController = async (
     req: Request,

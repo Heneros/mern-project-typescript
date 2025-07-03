@@ -1,7 +1,7 @@
 import asyncHandler from 'express-async-handler';
-import User from '@/backend/models/userModel';
-import { sendEmail } from '@/backend/utils/sendEmail';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
+import User from '@/models/userModel';
+import { sendEmail } from '@/utils/sendEmail';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
 
 const domainURL = process.env.DOMAIN;
 

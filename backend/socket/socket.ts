@@ -2,9 +2,9 @@ import 'dotenv/config';
 import { Server } from 'socket.io';
 import http from 'http';
 import express from 'express';
-import User from '@/backend/models/userModel';
-import { UserSocketMap } from '@/backend/types/UserSocketMap';
-import Message from '@/backend/models/chatModel';
+import User from '@/models/userModel';
+import { UserSocketMap } from '@/types/UserSocketMap';
+import Message from '@/models/chatModel';
 
 const app = express();
 

@@ -1,15 +1,15 @@
 import express from 'express';
-import checkAuth from '@/backend/middleware/checkAuthMiddleware';
-import role from '@/backend/middleware/roleMiddleware';
-import addOrderItem from '@/backend/controllers/order/addOrderItem';
-import getMyOrders from '@/backend/controllers/order/getMyOrders';
-import getOrderById from '@/backend/controllers/order/getOrderById';
-import updateOrderToPaid from '@/backend/controllers/order/updateOrderToPaid';
+import checkAuth from '@/middleware/checkAuthMiddleware';
+import role from '@/middleware/roleMiddleware';
+import addOrderItem from '@/controllers/order/addOrderItem';
+import getMyOrders from '@/controllers/order/getMyOrders';
+import getOrderById from '@/controllers/order/getOrderById';
+import updateOrderToPaid from '@/controllers/order/updateOrderToPaid';
 import {
     confirmPayment,
     createCheckoutSession,
     createIntent,
-} from '@/backend/utils/stripe';
+} from '@/utils/stripe';
 
 const router = express.Router();
 

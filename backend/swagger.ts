@@ -6,6 +6,8 @@ import { propertiesSwagger } from './swagger/properties.swagger';
 
 const domain = process.env.DOMAIN;
 
+
+
 const swaggerDefinition = {
     openapi: '3.0.0',
     info: {

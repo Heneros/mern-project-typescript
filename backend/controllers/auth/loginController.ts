@@ -1,12 +1,15 @@
 import asyncHandler from 'express-async-handler';
 import jwt from 'jsonwebtoken';
 import { CookieOptions, Request, Response } from 'express';
-import User from '@/backend/models/userModel';
-import { systemLogs } from '@/backend/utils/Logger';
+import User from '@/models/userModel';
 
 // $-title   Login User, get access and refresh tokens
 // $-path    POST /api/v1/auth/login
 // $-auth    Public
+
+
+
+
 
 const loginUser = asyncHandler(
     async (req: Request, res: Response): Promise<void> => {
@@ -62,7 +65,7 @@ const loginUser = asyncHandler(
         let newRefreshTokenArray = !cookies?.jwtVilla
             ? existingUser.refreshToken
             : existingUser.refreshToken.filter(
-                  (refT) => refT !== cookies.jwtVilla,
+                  (refT: any) => refT !== cookies.jwtVilla,
               );
 
         if (cookies?.jwtVilla) {

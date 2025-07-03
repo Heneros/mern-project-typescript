@@ -1,92 +1,74 @@
-// Тип для описания одного ребра: куда идём и сколько «стоит» переход
-type Edge = {
-    to: string;
-    weight: number;
-};
-// Граф храним как объект: для каждой вершины — массив её ребер
-type Graph = Record<string, Edge[]>;
-
-// Очень простая приоритетная очередь на массиве.
-// Для учебных задач пойдёт, но для больших графов лучше заменить на кучу.
-class SimplePriorityQueue {
-    // Храним пары [вершина, приоритет]
-    private data: [string, number][] = [];
-
-    // Вставляем элемент и тут же сортируем весь массив по приоритету
-    enqueue(node: string, priority: number) {
-        this.data.push([node, priority]);
-        this.data.sort((a, b) => a[1] - b[1]);
-    }
-
-    // Достаём элемент с минимальным приоритетом (самый «близкий»)
-    dequeue(): string | undefined {
-        const pair = this.data.shift();
-        return pair ? pair[0] : undefined;
-    }
-
-    // Пустая ли очередь?
-    isEmpty(): boolean {
-        return this.data.length === 0;
-    }
+interface Product {
+    id: number;
+    name: string;
+    category: 'electronics' | 'clothing' | 'books';
+    price: number;
+    inStock: boolean;
+    rating?: number;
 }
 
-// Основная функция: принимает граф и имя стартовой вершины
-function dijkstra(graph: Graph, source: string) {
-    // 1) Инициализация
-    const dist: Record<string, number> = {}; // расстояния
-    const prev: Record<string, string | null> = {}; // предыдущие вершины
-    const pq = new SimplePriorityQueue(); // наша очередь
+interface FilterOptions {
+    category?: Product['category'];
+    priceRange?: [number, number]; // от и до
+    inStockOnly?: boolean;
+    minRating?: number;
+}
 
-    // Ставим dist = ∞ для всех, кроме source = 0
-    for (const node in graph) {
-        dist[node] = Infinity;
-        prev[node] = null;
-    }
-    dist[source] = 0;
-    pq.enqueue(source, 0);
-
-    // 2) Основной цикл
-    while (!pq.isEmpty()) {
-        // Берём вершину u с минимальным dist[u]
-        const u = pq.dequeue()!;
-        // Идём по всем её соседям
-        for (const edge of graph[u]) {
-            const v = edge.to;
-            const weight = edge.weight;
-
-            // Вычисляем альтернативное расстояние через u
-            const alt = dist[u] + weight;
-            // Если лучше, чем текущее dist[v] — обновляем
-            if (alt < dist[v]) {
-                dist[v] = alt;
-                prev[v] = u;
-                // И помещаем v в очередь с новым приоритетом
-                pq.enqueue(v, alt);
-            }
+function filterProducts(
+    products: Product[],
+    filters: FilterOptions,
+): Product[] {
+    return products.filter((product) => {
+        if (filters.category && product.category !== filters.category) {
+            return false;
         }
-    }
 
-    // Возвращаем оба словаря
-    return { dist, prev };
+        if (
+            filters.priceRange &&
+            (product.price < filters.priceRange[0] ||
+                product.price > filters.priceRange[1])
+        ) {
+            return false;
+        }
+
+        if (filters.inStockOnly && !product.inStock) {
+            return false;
+        }
+
+        if (
+            filters.minRating !== undefined &&
+            (product.rating === undefined || product.rating < filters.minRating)
+        ) {
+            return false;
+        }
+        return true;
+    });
 }
 
-// === Пример использования ===
-const graph: Graph = {
-    A: [
-        { to: 'B', weight: 5 },
-        { to: 'C', weight: 2 },
-    ],
-    B: [
-        { to: 'C', weight: 1 },
-        { to: 'D', weight: 2 },
-    ],
-    C: [
-        { to: 'B', weight: 3 },
-        { to: 'D', weight: 7 },
-    ],
-    D: [],
-};
+const catalog: Product[] = [
+    {
+        id: 1,
+        name: 'iPhone',
+        category: 'electronics',
+        price: 999,
+        inStock: true,
+        rating: 5,
+    },
+    {
+        id: 2,
+        name: 'Jeans',
+        category: 'clothing',
+        price: 50,
+        inStock: false,
+        rating: 4,
+    },
+    { id: 3, name: 'Book', category: 'books', price: 20, inStock: true },
+];
 
-const result = dijkstra(graph, 'A');
-console.log('Кратчайшие расстояния:', result.dist);
-console.log('Предыдущие вершины:', result.prev);
+const filtered = filterProducts(catalog, {
+    category: 'electronics',
+    priceRange: [500, 1000],
+    inStockOnly: true,
+    minRating: 4,
+});
+console.log(filtered);

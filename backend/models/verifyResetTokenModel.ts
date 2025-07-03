@@ -1,8 +1,14 @@
-import mongoose from 'mongoose';
+import mongoose, { Model } from 'mongoose';
+import { Document } from 'mongoose';
 
+export interface IVerifyResetToken extends Document {
+    _userId: mongoose.Types.ObjectId;
+    token: string;
+    createdAt: Date;
+}
 const { Schema } = mongoose;
 
-const verifyResetTokenSchema = new Schema({
+const verifyResetTokenSchema = new Schema<IVerifyResetToken>({
     _userId: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
@@ -17,9 +23,14 @@ const verifyResetTokenSchema = new Schema({
     },
 });
 
-const VerifyResetToken = mongoose.model(
-    'VerifyResetToken',
-    verifyResetTokenSchema,
-);
+
+
+
+const VerifyResetToken: Model<IVerifyResetToken> =
+    mongoose.models.VerifyResetToken ||
+    mongoose.model<IVerifyResetToken>(
+        'VerifyResetToken',
+        verifyResetTokenSchema,
+    );
 
 export default VerifyResetToken;

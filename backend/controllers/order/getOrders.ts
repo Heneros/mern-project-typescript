@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import asyncHandler from 'express-async-handler';
-import Order from '@/backend/models/orderModel';
-import { pageSize } from '@/backend/constants';
+import Order from '@/models/orderModel';
+import { pageSize } from '@/constants';
 
 const getOrders = asyncHandler(
     async (req: Request, res: Response): Promise<void> => {
