@@ -53,7 +53,7 @@
   "scripts": {
     "webpack": "webpack serve",
     "start": "react-scripts start",
-    "build": "webpack --mode production --output-path ../dist/frontend",
+    "build": "npx webpack --mode production --output-path ../dist/frontend",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
