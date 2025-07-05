@@ -17,6 +17,9 @@
     "noImplicitAny": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     "types": [
       "node",
       "jest",
