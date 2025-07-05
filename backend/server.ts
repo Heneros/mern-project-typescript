@@ -10,7 +10,7 @@ import mongoSanitize from 'express-mongo-sanitize';
 import passport from 'passport';
 import morgan from 'morgan';
 import session from 'express-session';
-
+import MongoStore from 'connect-mongo';
 import swaggerUi from 'swagger-ui-express';
 
 import { errorHandler, notFound } from './middleware/errorMiddleware';
@@ -52,6 +52,10 @@ app.use(
         secret: process.env.SESSION_SECRET!,
         resave: false,
         saveUninitialized: true,
+        store: MongoStore.create({
+            mongoUrl: process.env.MONGO_URI,
+            ttl: 14 * 24 * 60 * 60,
+        }),
         cookie: { secure: process.env.NODE_ENV !== 'development' },
     }),
 );
@@ -90,8 +94,6 @@ app.use(
 const port = process.env.PORT || 3005;
 const MONGO_URI = process.env.MONGO_URI;
 
-// const MONGO_URI = process.env.MONGO_URI ;
-
 if (process.env.NODE_ENV === 'production') {
     const frontendPath = path.join(__dirname, '..', 'dist', 'frontend');
     ///  console.log('frontendPath', frontendPath);
@@ -104,8 +106,6 @@ if (process.env.NODE_ENV === 'production') {
         res.send('<h1>Dev version running 1!</h1>');
     });
 }
-  
-
 
 app.use(notFound);
 app.use(errorHandler);

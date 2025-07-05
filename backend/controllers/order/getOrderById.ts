@@ -9,7 +9,7 @@ const getOrderById = asyncHandler(
         // const { id } = req.params;
         const userReq = req as RequestWithUser;
 
-        if (!userReq.user) {
+        if (!userReq.user._id) {
             res.status(404).json({ message: 'User not authenticated' });
         }
 
@@ -21,17 +21,20 @@ const getOrderById = asyncHandler(
             if (!order) {
                 res.status(404).json({ message: 'Order not found' });
             }
-            const userId = userReq.user._id.toString();
-            const orderUserId = order?.user._id.toString();
 
-            if (orderUserId !== userId) {
-                res.status(403).json({
-                    message: 'Access denied to this order',
-                });
-                return;
+            if (userReq.user._id) {
+                const userId = userReq.user._id.toString() as any;
+                const orderUserId = order?.user._id.toString();
+
+                if (orderUserId !== userId) {
+                    res.status(403).json({
+                        message: 'Access denied to this order',
+                    });
+                    return;
+                }
+
+                res.status(200).json({ order });
             }
-
-            res.status(200).json({ order });
         } catch (error) {
             // if (error instanceof mongoose.Error.CastError) {
             //     res.status(400).json({

@@ -7,7 +7,7 @@
     "allowJs": false,
     "baseUrl": ".",
     "rootDir": ".",
-    "outDir": "/dist/backend",
+    "outDir": "./dist/backend",
     "moduleResolution": "node",
     "isolatedModules": false,
     "allowSyntheticDefaultImports": true,
@@ -27,8 +27,8 @@
       "jest",
       "express"
     ],
-    "composite": true,
-    "noEmit": true,
+    "composite": false,
+    "noEmit": false,
     "paths": {
       "@/*": [
         "backend/*"
