@@ -1,3 +1,7 @@
+
+
+
+
 # Booking villa Agency
 
 MERN. TS. Fullstack app about booking villa. You can create account through Google, Github or using email(don't forget accept validation letter in mail box). You can reset password or request new validation email(if you missed). In this app have 3 roles: admin, editor, user 
@@ -40,3 +44,34 @@ This app also includes elements of an e-commerce platform, featuring CRUD operat
 - Discounts and coupons 
 - Reviews to villas add. with integrate websocket.
 - Create new cluster mongodb for swagger dev version.
+
+
+## Build project 
+
+Install dependencies:
+
+```bash
+  npm run ci
+```
+Seed db:
+
+```bash
+  npm run seed
+```
+
+
+Build project:
+
+```bash
+  npm run build
+```
+
+Launch project:
+
+```bash
+  npm start:prod
+```
+
+Visit site [link](http://localhost:3000/)
+
+Check documentation in  [localhost](http://localhost:1997/docs)
