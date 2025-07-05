@@ -18,6 +18,7 @@
     "skipLibCheck": true,
     "strictNullChecks": true,
     "typeRoots": [
+      "./backend/types",
       "./node_modules/@types"
     ],
     "types": [
