@@ -18,13 +18,11 @@
     "skipLibCheck": true,
     "strictNullChecks": true,
     "typeRoots": [
-      "./node_modules/@types",
-      "./backend/types",
+      // "./node_modules/@types",
+      // "./backend/types",
     ],
     "types": [
-      "node",
-      "jest",
-      "express"
+
     ],
     "composite": false,
     "noEmit": false,
@@ -78,8 +76,8 @@
     "frontend/src/declarations.d.ts",
     "frontend/webpack.config.js",
     "backend/**/*.ts",
-    "backend/types/types.d.ts",
-    "jest.config.ts"
+    // "backend/types/types.d.ts",
+    // "jest.config.ts"
   ],
   "exclude": [
     "node_modules/",
