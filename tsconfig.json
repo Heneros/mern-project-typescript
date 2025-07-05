@@ -19,8 +19,7 @@
     "strictNullChecks": true,
     "typeRoots": [
       "./node_modules/@types",
-      "./backend/types/*.d.ts",
-      "backend/types/*.d.ts"
+      "./backend/types",
     ],
     "types": [
       "node",
