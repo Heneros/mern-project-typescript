@@ -24,7 +24,7 @@ import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
 import { toast } from 'react-toastify';
 import { formatPrice } from 'shared/utils/cartFunctions';
 import { PostInfo } from 'shared/types';
-import { Loader } from 'shared/ui/loader';
+import { Loader } from 'shared/ui/Loader';
 import { renderError } from 'shared/utils/renderError';
 
 import StripeCheckout from 'widgets/stripeCheckout/StripeCheckout';

@@ -7,8 +7,8 @@ import { useParams } from 'react-router-dom';
 import { BestDeal } from 'features/homepage/ui/bestDeal';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { PropItems } from 'shared/types/PostInfo';
-import { Loader } from 'shared/ui/loader';
-import { Message } from 'shared/ui/message';
+import { Loader } from 'shared/ui/Loader';
+import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
 import Accordion from 'widgets/accordion/Accordion';
 

@@ -6,7 +6,7 @@ import { PostInfo } from 'shared/types';
 // import { Message } from 'shared/ui/Message';
 // import { Spinner } from 'react-bootstrap';
 // import { renderError } from 'shared/utils/renderError';
-import { ScheduleBtn } from 'shared/ui/scheduleBtn';
+import { ScheduleBtn } from 'shared/ui/ScheduleBtn';
 import { addToCart, ICartItem } from 'entities/СartHeader/index';
 import { toast } from 'react-toastify';
 import { PropItems } from 'shared/types/PostInfo';

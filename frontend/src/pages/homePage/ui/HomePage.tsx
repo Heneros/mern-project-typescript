@@ -2,7 +2,7 @@ import { useGetAllPropertiesQuery } from 'features/properties/api/propertiesApiS
 import React from 'react';
 import { Spinner } from 'react-bootstrap';
 import { BestDeal } from 'features/homepage/ui/bestDeal';
-import { Loader } from 'shared/ui/loader';
+import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
 

@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 
 import { useGetAllPropertiesQuery } from 'features/properties/api/propertiesApiSlice';
-import { Message } from 'shared/ui/message';
-import { PropertyItem } from 'shared/ui/propertyItem';
+import { Message } from 'shared/ui/Message';
+import { PropertyItem } from 'shared/ui/PropertyItem';
 import { PostInfo } from 'shared/types';
 import { FilterProperty } from 'widgets/filterProperty/FilterProperty';
 import { PaginationProperties } from 'widgets/paginationProperties';

@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import { useResendVerifyEmailMutation } from 'features/auth/authApiSlice';
 
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
-import { Loader } from 'shared/ui/loader';
+import { Loader } from 'shared/ui/Loader';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 
 export const ResendEmailTokenPage = () => {

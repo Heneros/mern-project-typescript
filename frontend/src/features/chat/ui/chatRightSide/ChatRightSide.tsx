@@ -1,7 +1,7 @@
 import React from 'react';
 import ChatHeader from '../chatHeader/ChatHeader';
 import ChatMessage from '../chatMessage/ChatMessage';
-import ChatInput from '../chatInput/chatInput';
+import ChatInput from '../chatInput/ChatInput';
 
 const ChatRightSide: React.FC<ChatRoomProps> = ({ selectedChat, userId }) => {
     // const { _id } = selectedChat;

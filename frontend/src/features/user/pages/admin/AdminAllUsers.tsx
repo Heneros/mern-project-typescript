@@ -17,8 +17,8 @@ import {
 } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
-import { Loader } from 'shared/ui/loader';
-import { Message } from 'shared/ui/message';
+import { Loader } from 'shared/ui/Loader';
+import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { useParams } from 'react-router-dom';
