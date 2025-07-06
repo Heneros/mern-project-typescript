@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 
 import { useGetAllPropertiesQuery } from 'features/properties/api/propertiesApiSlice';
 import { Message } from 'shared/ui/message';

@@ -8,7 +8,7 @@ import {
     Route,
     RouterProvider,
 } from 'react-router-dom';
-import { Layout } from 'app/layout';
+import { Layout } from 'app/Layout';
 
 import { HomePage } from 'pages/homePage';
 import { Properties } from 'features/properties/pages/properties';

@@ -14,7 +14,7 @@ import {
     ListGroupItem,
     Row,
 } from 'react-bootstrap';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import {
     useGetMyOrderByIdQuery,
     useGetPaypalClientIdQuery,

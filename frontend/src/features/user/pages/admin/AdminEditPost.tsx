@@ -11,7 +11,7 @@ import 'easymde/dist/easymde.min.css';
 
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/loader';
 import { Message } from 'shared/ui/message';
 import { initialValues as defaultValues } from 'shared/utils/initialValues';

@@ -14,7 +14,7 @@ import {
 } from 'react-bootstrap';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import { useAddOrderItemMutation } from '../api/orderApiSlice';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { PostInfo } from 'shared/types';
 import { formatPrice } from 'shared/utils/cartFunctions';
 import { clearCartItems } from '../api/cartSlice';

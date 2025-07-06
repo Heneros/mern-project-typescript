@@ -7,7 +7,7 @@ import { useResendVerifyEmailMutation } from 'features/auth/authApiSlice';
 
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import { Loader } from 'shared/ui/loader';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 
 export const ResendEmailTokenPage = () => {
     const navigate = useNavigate();

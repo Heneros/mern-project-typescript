@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import { Col, Container, Row, Form, Button, Modal } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import {
     useDeleteMyAccountMutation,
     useGetUserProfileQuery,

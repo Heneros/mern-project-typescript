@@ -3,7 +3,7 @@ import { Button, Col, Container, Row, Tab, Table } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
 import { PostInfo } from 'shared/types';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { clearCartItem, clearCartItems } from '../api/cartSlice';
 
 const Cart = () => {

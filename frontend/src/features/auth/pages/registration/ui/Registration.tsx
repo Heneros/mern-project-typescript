@@ -11,7 +11,7 @@ import {
 } from 'shared/utils/password-strength';
 import { PasswordStrength, SignUpType } from 'shared/types';
 import { GoogleAuth } from 'shared/ui/googleAuth';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import Featured from 'shared/assets/images/featured.jpg';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

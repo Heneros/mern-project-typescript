@@ -3,7 +3,7 @@ import SimpleMDE from 'react-simplemde-editor';
 // import 'easymde/dist/easymde.min.css';
 import * as Yup from 'yup';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
 import { useCreatePropertyMutation } from 'features/properties/api/propertiesApiSlice';
 import { useSendImageMutation } from 'features/uploadImage/uploadImage';

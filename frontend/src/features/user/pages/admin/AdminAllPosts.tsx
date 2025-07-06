@@ -6,7 +6,7 @@ import React from 'react';
 import { format } from 'date-fns';
 import { Button, Col, Container, Row, Spinner, Table } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
-import { Breadcrumbs } from 'shared/ui/breadcrumbs';
+import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/loader';
 import { Message } from 'shared/ui/message';
 import { renderError } from 'shared/utils/renderError';
