@@ -6,7 +6,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "composite": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -19,6 +18,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
+    "composite": false,
     "allowImportingTsExtensions": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
