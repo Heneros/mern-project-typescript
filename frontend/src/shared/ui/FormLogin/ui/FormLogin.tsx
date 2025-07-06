@@ -12,7 +12,7 @@ import { useAppDispatch } from 'shared/lib/store';
 import { LoginTypes } from 'shared/types';
 import { logIn } from 'features/auth/authSlice';
 import { Loader } from 'shared/ui/Loader';
-import { AuthButtonAnimation } from 'shared/ui/authButtonAnimation';
+import { AuthButtonAnimation } from 'shared/ui/AuthButtonAnimation';
 import { useAuthUser } from 'shared/hooks/useAuthUser';
 
 export const FormLogin = () => {

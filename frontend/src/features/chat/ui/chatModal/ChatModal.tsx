@@ -9,7 +9,7 @@ import React, { useEffect, useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { decodeToken } from 'react-jwt';
 import { useAppDispatch, useAppSelector } from 'shared/lib/store';
-import ChatLeftSide from '../chatLeftSide/ChatLeftSide';
+import ChatLeftSide from '../chatLeftSide/chatLeftSide';
 // import { useGetAllChatsQuery } from 'features/chat/api/chatApiSlice';
 import ChatRightSide from '../chatRightSide/ChatRightSide';
 

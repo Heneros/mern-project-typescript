@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { FormLogin } from 'shared/ui/FormLogin';
 import GithubAuth from 'shared/ui/githubAuth/GithubAuth';
-import { GoogleAuth } from 'shared/ui/googleAuth';
+import { GoogleAuth } from 'shared/ui/GoogleAuth';
 
 export const Login = () => {
     return (
