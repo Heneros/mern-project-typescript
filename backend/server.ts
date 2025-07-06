@@ -95,7 +95,7 @@ const port = process.env.PORT || 3005;
 const MONGO_URI = process.env.MONGO_URI;
 
 if (process.env.NODE_ENV === 'production') {
-    const frontendPath = path.join(__dirname, '..', 'dist', 'frontend');
+    const frontendPath = path.join(__dirname, '..', 'frontend');
     ///  console.log('frontendPath', frontendPath);
     app.use(express.static(frontendPath));
     app.get('*', (req, res) => {
