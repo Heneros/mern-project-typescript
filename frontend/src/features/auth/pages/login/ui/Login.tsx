@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { FormLogin } from 'shared/ui/FormLogin';
-import GithubAuth from 'shared/ui/githubAuth/GithubAuth';
+import GithubAuth from 'shared/ui/GithubAuth/GithubAuth';
 import { GoogleAuth } from 'shared/ui/GoogleAuth';
 
 export const Login = () => {

@@ -15,7 +15,7 @@ import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import Featured from 'shared/assets/images/featured.jpg';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import GithubAuth from 'shared/ui/githubAuth/GithubAuth';
+import GithubAuth from 'shared/ui/GithubAuth/GithubAuth';
 
 const USERNAME_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 
