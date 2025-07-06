@@ -57,13 +57,13 @@ module.exports = {
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
         alias: {
-            app: path.resolve(__dirname, 'src/app'),
-            entities: path.resolve(__dirname, 'src/entities'),
-            features: path.resolve(__dirname, 'src/features'),
-            pages: path.resolve(__dirname, 'src/pages'),
-            shared: path.resolve(__dirname, 'src/shared'),
-            widgets: path.resolve(__dirname, 'src/widgets'),
-            components: path.resolve(__dirname, 'src/components'),
+            // app: path.resolve(__dirname, 'src/app'),
+            // entities: path.resolve(__dirname, 'src/entities'),
+            // features: path.resolve(__dirname, 'src/features'),
+            // pages: path.resolve(__dirname, 'src/pages'),
+            // shared: path.resolve(__dirname, 'src/shared'),
+            // widgets: path.resolve(__dirname, 'src/widgets'),
+            // components: path.resolve(__dirname, 'src/components'),
         },
     },
     devServer: {
