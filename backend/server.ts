@@ -42,7 +42,7 @@ app.use(
             process.env.NODE_ENV === 'production'
                 ? process.env.DOMAIN!
                 : process.env.DOMAINCORS!,
-        methods: 'GET,POST,PUT,PATCH, DELETE',
+      //  methods: 'GET,POST,PUT,PATCH, DELETE',
         credentials: true,
         allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
     }),
