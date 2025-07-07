@@ -4,9 +4,11 @@ import connectDB from '@/config/connectDB';
 export const connectTestDB = async () => {
     try {
         if (mongoose.connection.readyState === 0) {
-            await connectDB(process.env.MONGO_URI_TEST!);
-            //   console.log('Connected to TEST database');
+            // await connectDB(process.env.MONGO_URI_TEST!);
+            await connectDB(process.env.MONGO_URI!);
+            //   console.log('Connected to TEST database'); 
         }
+
     } catch (error) {
         console.error('Test DB connection error:', error);
         process.exit(1);
