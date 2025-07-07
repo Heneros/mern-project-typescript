@@ -3,16 +3,16 @@ import * as bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import * as emailService from '../../backend/utils/sendEmail';
 
-import { app } from '@/backend/server';
+import { app } from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
 
-import User from '@/backend/models/userModel';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
-import { IUser } from '@/backend/types/IUser';
-import { domainURL } from '@/backend/constants';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
+import { IUser } from '@/types/IUser';
+import { domainURL } from '@/constants';
 
-jest.mock('@/backend/utils/sendEmail', () => ({
+jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(true),
 }));
 

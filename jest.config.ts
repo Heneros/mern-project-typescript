@@ -12,7 +12,8 @@ const config: Config = {
     testTimeout: 60000,
     setupFiles: ['dotenv/config'],
     moduleNameMapper: {
-        '^@/(.*)$': '<rootDir>/$1',
+        '^@/(.*)$': '<rootDir>/backend/$1',
+
     },
     rootDir: '.',
     setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],

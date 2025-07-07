@@ -1,7 +1,7 @@
 import supertest from 'supertest';
 import mongoose from 'mongoose';
 // import * as emailService from '../backend/utils/sendEmail';
-import { app } from '@/backend/server';
+import { app } from '@/server';
 import { connectTestDB, disconnectTestDB } from './setupTestDB';
 
 export const request = supertest(app);

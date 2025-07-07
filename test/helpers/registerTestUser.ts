@@ -1,8 +1,8 @@
 import request from 'supertest';
 import { faker } from '@faker-js/faker';
 
-import { app } from '@/backend/server';
-import User from '@/backend/models/userModel';
+import { app } from '@/server';
+import User from '@/models/userModel';
 
 export const registerTestUser = async (overrides = {}) => {
     const defaultUser = {

@@ -6,7 +6,8 @@ const logoutUser = asyncHandler(async (req, res) => {
 
     if (!cookies?.jwtVilla) {
         res.sendStatus(204);
-        throw new Error('No cookie found');
+        return;
+        //  throw new Error('No cookie found');
     }
 
     const refreshToken = cookies.jwtVilla;
