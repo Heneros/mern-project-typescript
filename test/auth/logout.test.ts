@@ -3,16 +3,16 @@ import * as bcrypt from 'bcryptjs';
 
 import * as emailService from '../../backend/utils/sendEmail';
 
-import { app } from '@/backend/server';
+import { app } from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
 
-import User from '@/backend/models/userModel';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
-import { IUser } from '@/backend/types/IUser';
-import { domainURL } from '@/backend/constants';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
+import { IUser } from '@/types/IUser';
+import { domainURL } from '@/constants';
 
-jest.mock('@/backend/utils/sendEmail', () => ({
+jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(true),
 }));
 
@@ -94,51 +94,4 @@ describe('Logout user ', () => {
             // expect(response?.refreshToken).not.toContain('abc123');
         });
     });
-
-    // describe('Failure Scenarios', () => {
-    //     it('should reject if email missing', async () => {
-    //         const res = await request(app)
-    //             .post('/api/v1/auth/reset_password_request')
-    //             .send({});
-
-    //         // expect(res.status).toBe(400);
-    //         expect(res.body).toMatchObject({
-    //             message: 'You must enter your email address',
-    //         });
-    //     });
-
-    //     it(' should reject if user not found', async () => {
-    //         const res = await request(app)
-    //             .post('/api/v1/auth/reset_password_request')
-    //             .send({ email: 'nonexistent@example.com' });
-
-    //         console.log(res.body);
-    //         // expect(res.status).toBe(400);
-    //         expect(res.body).toMatchObject({
-    //             success: false,
-    //             message: 'That email is not associated with any account',
-    //         });
-    //     });
-    //     it('Check if user exist in model ', async () => {
-    //         const resetReq = [];
-    //         for (let i = 0; i < 4; i += 1) {
-    //             resetReq.push(
-    //                 request(app)
-    //                     .post('/api/v1/auth/reset_password_request')
-    //                     .send({ email: user.email }),
-    //             );
-    //         }
-    //         await Promise.all(resetReq);
-    //         const blockedRes = await request(app)
-    //             .post('/api/v1/auth/reset_password_request')
-    //             .send({ email: user.email });
-
-    //         // console.log(blockedRes.body);
-    //         // expect(res.status).toBe(400);
-    //         expect(blockedRes.status).toBe(429);
-    //         expect(blockedRes.body).toEqual({
-    //             message: 'Too many requests from this IP address',
-    //         });
-    //     });
-    // });
 });

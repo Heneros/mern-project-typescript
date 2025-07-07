@@ -1,12 +1,12 @@
 import request from 'supertest';
 // import * as emailService from '../../backend/utils/sendEmail';
-import { app } from '@/backend/server';
+import { app } from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
-import User from '@/backend/models/userModel';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
 
-// jest.mock('@/backend/utils/sendEmail', () => ({
+// jest.mock('@/utils/sendEmail', () => ({
 //     receiverEmailFunction: jest.fn().mockResolvedValue(true),
 // }));
 

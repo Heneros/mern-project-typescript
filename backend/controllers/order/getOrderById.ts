@@ -20,6 +20,7 @@ const getOrderById = asyncHandler(
 
             if (!order) {
                 res.status(404).json({ message: 'Order not found' });
+                return;
             }
 
             if (userReq.user._id) {

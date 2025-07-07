@@ -6,13 +6,13 @@ import {
     registerNotAdmin,
     registerTestUser,
 } from '../helpers/registerTestUser';
-import { app } from '@/backend/server';
-import User from '@/backend/models/userModel';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
-import { IUser } from '@/backend/types/IUser';
-import Property from '@/backend/models/propertiesModel';
+import { app } from '@/server';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
+import { IUser } from '@/types/IUser';
+import Property from '@/models/propertiesModel';
 
-jest.mock('@/backend/utils/sendEmail', () => ({
+jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),
 }));
 

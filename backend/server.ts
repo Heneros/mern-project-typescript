@@ -29,7 +29,6 @@ import oauthPassport from './config/passportSetup';
 import { app, server } from './socket/socket';
 import { swaggerSpec } from './swagger';
 
-console.log('Server file started in', process.env.NODE_ENV);
 // export const app = express();
 // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
@@ -42,7 +41,7 @@ app.use(
             process.env.NODE_ENV === 'production'
                 ? process.env.DOMAIN!
                 : process.env.DOMAINCORS!,
-      //  methods: 'GET,POST,PUT,PATCH, DELETE',
+        //  methods: 'GET,POST,PUT,PATCH, DELETE',
         credentials: true,
         allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
     }),

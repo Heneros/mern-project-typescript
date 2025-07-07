@@ -1,9 +1,11 @@
 import asyncHandler from 'express-async-handler';
+import { Request, Response } from 'express';
 import Property from '@/models/propertiesModel';
+
 // $-title   Create property
 // $-path    POST /api/v1/property/create
 // $-auth    Private
-const createProperty = asyncHandler(async (req, res) => {
+const createProperty = async (req: Request, res: Response): Promise<void> => {
     try {
         const {
             title,
@@ -21,16 +23,19 @@ const createProperty = asyncHandler(async (req, res) => {
 
         if (!title) {
             res.status(400).json({ message: 'No title' });
+            return;
         }
 
         if (!price) {
             res.status(400).json({ message: 'No price' });
+            return;
         }
 
         const propertyExists = await Property.findOne({ title });
 
         if (propertyExists) {
             res.status(400).json({ message: 'Property already created' });
+            return;
         }
 
         const newProperty = new Property({
@@ -53,6 +58,7 @@ const createProperty = asyncHandler(async (req, res) => {
 
         if (!createdProperty) {
             res.status(400).json({ message: 'Property could not created' });
+            return;
         }
 
         if (createdProperty) {
@@ -65,6 +71,6 @@ const createProperty = asyncHandler(async (req, res) => {
         res.status(400).json({ message: 'error create post of property' });
         console.log(error);
     }
-});
+};
 
 export default createProperty;

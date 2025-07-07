@@ -3,9 +3,9 @@ import * as emailService from '../../backend/utils/sendEmail';
 
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
-import { app } from '@/backend/server';
-import User from '@/backend/models/userModel';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
+import { app } from '@/server';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
 
 jest.mock('../../backend/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),

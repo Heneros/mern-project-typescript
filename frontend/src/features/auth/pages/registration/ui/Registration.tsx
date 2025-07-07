@@ -18,7 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import GithubAuth from 'shared/ui/GithubAuth/GithubAuth';
 
 const USERNAME_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
-
+w
 export const Registration = () => {
     const initialValues: SignUpType = {
         username: '',

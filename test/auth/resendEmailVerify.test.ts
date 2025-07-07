@@ -3,15 +3,17 @@ import * as bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
 
-import { app } from '@/backend/server';
+import { app } from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
 
-import User from '@/backend/models/userModel';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
-import { IUser } from '@/backend/types/IUser';
+import User from '@/models/userModel';
+import VerifyResetToken, {
+    IVerifyResetToken,
+} from '@/models/verifyResetTokenModel';
+import { IUser } from '@/types/IUser';
 
-jest.mock('@/backend/utils/sendEmail', () => ({
+jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(true),
 }));
 
@@ -105,9 +107,15 @@ describe('Resend Token Verification to user ', () => {
 
             expect(res.status).toBe(403);
 
-            const freshUser = await User.findById({ _id: user._id }).lean();
+            //  const freshUser = await User.findById({ _id: user._id }).lean();
+            const tokenDoc = await VerifyResetToken.findOne({
+                _userId: user._id,
+            })
+                .lean<IVerifyResetToken>()
+                .exec();
 
-            expect(freshUser?.refreshToken).toBeUndefined();
+            // console.log(freshUser);
+            expect(tokenDoc?.token).toBeUndefined();
         });
     });
 });

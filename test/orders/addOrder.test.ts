@@ -2,22 +2,22 @@ import request from 'supertest';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 
-import * as emailService from '@/backend/utils/sendEmail';
+import * as emailService from '@/utils/sendEmail';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import {
     registerNotAdmin,
     registerTestUser,
 } from '../helpers/registerTestUser';
-import { app } from '@/backend/server';
+import { app } from '@/server';
 
-import User from '@/backend/models/userModel';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
-import Property from '@/backend/models/propertiesModel';
-import Order from '@/backend/models/orderModel';
-import { IOrder } from '@/backend/types/IOrderItem';
-import { IUser } from '@/backend/types/IUser';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
+import Property from '@/models/propertiesModel';
+import Order from '@/models/orderModel';
+import { IOrder } from '@/types/IOrderItem';
+import { IUser } from '@/types/IUser';
 
-jest.mock('@/backend/utils/sendEmail', () => ({
+jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),
 }));
 

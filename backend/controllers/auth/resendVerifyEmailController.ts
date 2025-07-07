@@ -7,7 +7,10 @@ import { sendEmail } from '@/utils/sendEmail';
 
 const domainURL = process.env.DOMAIN;
 
-const resendEmailVerificationToken = async (req: any, res: any) => {
+const resendEmailVerificationToken = async (
+    req: Request,
+    res: Response,
+): Promise<void> => {
     const { email } = req.body;
     const { randomBytes } = await import('crypto');
     const user = await User.findOne({ email });
@@ -15,22 +18,25 @@ const resendEmailVerificationToken = async (req: any, res: any) => {
     if (!email) {
         res.status(400).json({ message: 'An email must be provided' });
         // throw new Error('An email must be provided');
+        return;
     }
 
     if (!user) {
-        return res.status(400).json({
+        res.status(400).json({
             message: 'We were unable to find a user with that email address',
         });
+        return;
         // throw new Error(
         //     'We were unable to find a user with that email address',
         // );
     }
 
     if (user.isEmailVerified) {
-        return res.status(400).json({
+        res.status(400).json({
             success: false,
             message: 'This account has already been verified. Please login',
         });
+        return;
         // throw new Error('This account has already been verified. Please login');
     }
 
@@ -39,7 +45,8 @@ const resendEmailVerificationToken = async (req: any, res: any) => {
     });
 
     if (verificationToken) {
-        await verificationToken.deleteOne();
+        // await verificationToken.deleteOne();
+        await VerifyResetToken.deleteMany({ _userId: user._id });
     }
 
     const resetToken = randomBytes(32).toString('hex');

@@ -2,21 +2,18 @@ import request from 'supertest';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 
-import * as emailService from '@/backend/utils/sendEmail';
+import * as emailService from '@/utils/sendEmail';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
-import {
-    registerNotAdmin,
-    registerTestUser,
-} from '../helpers/registerTestUser';
-import { app } from '@/backend/server';
+import { registerNotAdmin, registerTestUser } from '../helpers/registerTestUser';
+import { app } from '@/server';
 
-import User from '@/backend/models/userModel';
-import VerifyResetToken from '@/backend/models/verifyResetTokenModel';
-import Property from '@/backend/models/propertiesModel';
-import Order from '@/backend/models/orderModel';
-import { IOrder } from '@/backend/types/IOrderItem';
+import User from '@/models/userModel';
+import VerifyResetToken from '@/models/verifyResetTokenModel';
+import Property from '@/models/propertiesModel';
+import Order from '@/models/orderModel';
+import { IOrder } from '@/types/IOrderItem';
 
-jest.mock('@/backend/utils/sendEmail', () => ({
+jest.mock('@/utils/sendEmail', () => ({
     sendEmail: jest.fn().mockResolvedValue(() => Promise.resolve(true)),
 }));
 
@@ -156,7 +153,7 @@ describe('Get all My Orders GET /api/v1/orders', () => {
                 .set('Authorization', `Bearer ${userToken}`)
                 .expect(404);
 
-            // console.log(res.body);
+            ///    console.log(res.body);
             expect(res.body.message).toMatch(/Order not found/i);
         });
     });
