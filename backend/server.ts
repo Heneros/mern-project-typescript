@@ -1,4 +1,4 @@
-// import 'module-alias/register';
+import 'module-alias/register';
 
 import 'dotenv/config';
 
@@ -64,10 +64,11 @@ oauthPassport();
 
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('tiny'));
+    app.use(mongoSanitize());
+    app.use(morganMiddleware);
+
 }
 
-app.use(mongoSanitize());
-app.use(morganMiddleware);
 
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/user', userRoutes);
@@ -94,7 +95,7 @@ const port = process.env.PORT || 3005;
 const MONGO_URI = process.env.MONGO_URI;
 
 if (process.env.NODE_ENV === 'production') {
-    const frontendPath = path.join(__dirname, '..', 'frontend');
+    const frontendPath = path.join(__dirname, '..',  'frontend');
     ///  console.log('frontendPath', frontendPath);
     app.use(express.static(frontendPath));
     app.get('*', (req, res) => {

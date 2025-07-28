@@ -1,57 +1,83 @@
 import { Request, Response } from 'express';
 import morgan from 'morgan';
 import { createLogger, format, transports } from 'winston';
-import 'winston-daily-rotate-file';
+import TransportStream from 'winston-transport';
 
-const { combine, timestamp, prettyPrint } = format;
+const { combine, timestamp, prettyPrint, json } = format;
+const isProd = process.env.NODE_ENV === 'production';
 
-const fileRotateTransport = new transports.DailyRotateFile({
-    filename: 'logs/combined-%DATE%.log',
-    datePattern: 'YYYY-MM-DD',
-    maxFiles: '14d',
-});
+// Базовые транспорты — всегда
+const loggerTransports: TransportStream[] = [
+  new transports.Console({
+    level: isProd ? 'info' : 'http',
+    format: combine(
+      timestamp({ format: 'YYYY-MM-DD HH:mm:ss.SSS' }),
+      isProd ? json() : prettyPrint()
+    )
+  })
+];
+
+// Только в development добавляем файловую ротацию
+if (process.env.NODE_ENV === 'development') {
+  // Динамически подключаем winston-daily-rotate-file
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { DailyRotateFile } = require('winston-daily-rotate-file');
+
+  loggerTransports.push(
+    new DailyRotateFile({
+      level: 'http',
+      filename: 'logs/combined-%DATE%.log',
+      datePattern: 'YYYY-MM-DD',
+      maxFiles: '14d',
+      zippedArchive: true,
+      format: combine(
+        timestamp({ format: 'YYYY-MM-DD HH:mm:ss.SSS' }),
+        json()
+      )
+    }),
+    new transports.File({
+      level: 'error',
+      filename: 'logs/error.log',
+      format: combine(
+        timestamp({ format: 'YYYY-MM-DD HH:mm:ss.SSS' }),
+        json()
+      )
+    })
+  );
+}
 
 export const systemLogs = createLogger({
-    level: 'http',
-    format: combine(
-        timestamp({
-            format: 'YYYY-MM-DD hh:mm:ss.SSS A',
-        }),
-        prettyPrint(),
-    ),
-    transports: [
-        fileRotateTransport,
-        new transports.File({
-            level: 'error',
-            filename: 'logs/error.log',
-        }),
-    ],
+  level: isProd ? 'info' : 'http',
+  transports: loggerTransports,
+  ...( !isProd && {
     exceptionHandlers: [
-        new transports.File({ filename: 'logs/exception.log' }),
+      new transports.File({ filename: 'logs/exception.log' })
     ],
     rejectionHandlers: [
-        new transports.File({ filename: 'logs/rejections.log' }),
-    ],
+      new transports.File({ filename: 'logs/rejections.log' })
+    ]
+  })
 });
 
 export const morganMiddleware = morgan(
-    (tokens, req: Request, res: Response) =>
-        JSON.stringify({
-            method: tokens.method(req, res),
-            url: tokens.url(req, res),
-            status: Number.parseFloat(tokens.status(req, res) as string) || 0,
-            content_length: tokens.res(req, res, 'content-length'),
-            response_time:
-                Number.parseFloat(
-                    tokens['response-time'](req, res) as string,
-                ) || '0',
-        }),
-    {
-        stream: {
-            write: (message) => {
-                const data = JSON.parse(message);
-                systemLogs.http('incoming-request', data);
-            },
-        },
-    },
+  (tokens, req: Request, res: Response) =>
+    JSON.stringify({
+      method: tokens.method(req, res),
+      url: tokens.url(req, res),
+      status: Number(tokens.status(req, res)),
+      content_length: tokens.res(req, res, 'content-length'),
+      response_time: tokens['response-time'](req, res)
+    }),
+  {
+    stream: {
+      write: (message: string) => {
+        try {
+          const data = JSON.parse(message);
+          systemLogs.http('incoming-request', data);
+        } catch {
+ 
+        }
+      }
+    }
+  }
 );
