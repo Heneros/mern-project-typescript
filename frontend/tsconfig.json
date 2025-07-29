@@ -18,9 +18,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+ "noEmit": false,
+ "composite": false,
     "jsx": "react-jsx",
-    "baseUrl": "src",
+   "baseUrl": "./src",
+    
     "paths": {
       "app/*": [
         "app/*"
