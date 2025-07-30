@@ -1,4 +1,4 @@
-import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
+import { DISPATCH_ACTION, PayPalButtons, SCRIPT_LOADING_STATE, usePayPalScriptReducer } from '@paypal/react-paypal-js';
 import { useGetPaypalClientIdQuery } from 'features/order/api/orderApiSlice';
 import React, { useEffect } from 'react';
 import { toast } from 'react-toastify';
@@ -26,15 +26,15 @@ const PayPalPayment: React.FC<PayPalPaymentProps> = ({
         if (totalPrice) {
             const loadPaypalScript = () => {
                 paypalDispatch({
-                    type: 'resetOptions',
+                    type: 'resetOptions' as DISPATCH_ACTION,
                     value: {
                         'client-id': paypal.clientId,
                         currency: 'USD',
-                    },
+                    } as any,
                 });
                 paypalDispatch({
-                    type: 'setLoadingStatus',
-                    value: 'pending',
+                    type: 'setLoadingStatus' as any ,
+                    value: 'pending' as SCRIPT_LOADING_STATE,
                 });
             };
 

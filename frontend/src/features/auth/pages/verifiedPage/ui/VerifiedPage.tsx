@@ -30,8 +30,9 @@ export const VerifiedPage: React.FC = () => {
                 <h5>Your Account has been verified and is ready for use.</h5>
                 <h5>An Email to confirm the same has been sent</h5>
                 <Button
-                    variant="primary"
-                    as={Link}
+           
+             variant="primary"
+  as={RouterLink as any}
                     to="/login"
                     className="auto d-flex justify-content-center align-items-center"
                 >

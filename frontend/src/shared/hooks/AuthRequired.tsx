@@ -10,8 +10,8 @@ export const AuthRequired: React.FC<AuthRequiredProps> = ({ allowedRoles }) => {
     const location = useLocation();
     const authUser = useAuthUser();
 
-    const { userInfo } = useAppSelector((state) => state.auth);
-    console.log(userInfo);
+    // const { userInfo } = useAppSelector((state) => state.auth);
+    // console.log(userInfo);
     if (!authUser) {
         <Navigate to="/login" state={{ from: location }} replace />;
     }

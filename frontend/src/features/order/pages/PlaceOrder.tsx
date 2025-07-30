@@ -77,8 +77,8 @@ const PlaceOrder = () => {
                                         <ListGroup>
                                             {cart?.cartItems.map(
                                                 (
-                                                    item: PostInfo,
-                                                    index: string,
+                                                    item,
+                                                    index,
                                                 ) => (
                                                     <ListGroup.Item key={index}>
                                                         <Row className="align-items-center text-center">

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import SimpleMDE from 'react-simplemde-editor';
 // import 'easymde/dist/easymde.min.css';
-import * as Yup from 'yup';
+
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
-import NavMenu from 'widgets/navMenu/ui/NavMenu';
+import {NavMenu} from 'widgets/navMenu';
 import { useCreatePropertyMutation } from 'features/properties/api/propertiesApiSlice';
 import { useSendImageMutation } from 'features/uploadImage/uploadImage';
 import { Field, FieldArray, Formik, useFormik } from 'formik';

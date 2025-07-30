@@ -17,7 +17,7 @@ import { Message } from 'shared/ui/Message';
 import { initialValues as defaultValues } from 'shared/utils/initialValues';
 import { renderError } from 'shared/utils/renderError';
 import { validationSchema } from 'shared/utils/validationSchema';
-import NavMenu from 'widgets/navMenu/ui/NavMenu';
+import {NavMenu} from 'widgets/navMenu';
 
 const AdminEditPost = () => {
     const { id: postId } = useParams();
@@ -165,8 +165,8 @@ const AdminEditPost = () => {
                                                         )
                                                     }
                                                 />
-                                                {touched.title &&
-                                                    typeof errors.title ===
+                                                {touched.title && 
+                                                    typeof errors.title === 
                                                         'string' && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.title}
@@ -201,7 +201,7 @@ const AdminEditPost = () => {
                                                         )
                                                     }
                                                 />
-                                                {touched.description &&
+                                                {touched.description && typeof errors.description === 'string'  && 
                                                     errors.description && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.description}
@@ -227,7 +227,7 @@ const AdminEditPost = () => {
                                                     }
                                                 />
 
-                                                {touched.bedrooms &&
+                                                {touched.bedrooms && typeof errors.bedrooms === 'string'  && 
                                                     errors.bedrooms && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.bedrooms}
@@ -253,7 +253,7 @@ const AdminEditPost = () => {
                                                     }
                                                 />
 
-                                                {touched.bathrooms &&
+                                                {touched.bathrooms &&  typeof errors.bathrooms === 'string'  && 
                                                     errors.bathrooms && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.bathrooms}
@@ -277,7 +277,7 @@ const AdminEditPost = () => {
                                                     }
                                                 />
 
-                                                {touched.country &&
+                                                {touched.country && typeof errors.country === 'string'  && 
                                                     errors.country && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.country}
@@ -301,7 +301,7 @@ const AdminEditPost = () => {
                                                     }
                                                 />
 
-                                                {touched.city &&
+                                                {touched.city && typeof errors.city === 'string'  && 
                                                     errors.city && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.city}
@@ -325,7 +325,7 @@ const AdminEditPost = () => {
                                                     }
                                                 />
 
-                                                {touched.floor &&
+                                                {touched.floor && typeof errors.floor === 'string'  && 
                                                     errors.floor && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.floor}
@@ -350,7 +350,7 @@ const AdminEditPost = () => {
                                                     }
                                                 />
 
-                                                {touched.country &&
+                                                {touched.country &&  typeof errors.country === 'string'  && 
                                                     errors.country && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.country}
@@ -375,7 +375,7 @@ const AdminEditPost = () => {
                                                     }
                                                 />
 
-                                                {touched.area &&
+                                                {touched.area && typeof errors.area === 'string'  && 
                                                     errors.area && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.area}
@@ -397,7 +397,7 @@ const AdminEditPost = () => {
                                                         )
                                                     }
                                                 />
-                                                {touched.parking &&
+                                                {touched.parking && typeof errors.parking === 'string'  && 
                                                     errors.parking && (
                                                         <Form.Control.Feedback type="invalid">
                                                             {errors.parking}

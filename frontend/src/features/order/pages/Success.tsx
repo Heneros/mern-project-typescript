@@ -47,7 +47,8 @@ const Success = () => {
     }
 
     if (errorOrder) {
-        return <div>Error: {errorOrder?.message}</div>;
+        // return <div>Error: {errorOrder?.message}</div>;
+              return <div>Error: with order. </div>;
     }
 
     return <div>Processing Payment...</div>;

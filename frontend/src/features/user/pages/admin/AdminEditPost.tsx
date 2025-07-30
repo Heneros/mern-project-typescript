@@ -18,7 +18,7 @@ import { Message } from 'shared/ui/Message';
 // import { initialValues as defaultValues } from 'shared/utils/initialValues';
 import { renderError } from 'shared/utils/renderError';
 import { validationSchema } from 'shared/utils/validationSchema';
-import NavMenu from 'widgets/navMenu/ui/NavMenu';
+import {NavMenu} from 'widgets/navMenu';
 import PropertyForm from 'widgets/propertyForm/PropertyForm';
 
 const AdminEditPost = () => {

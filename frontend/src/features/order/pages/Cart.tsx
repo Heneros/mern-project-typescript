@@ -46,7 +46,7 @@ const Cart = () => {
                     </thead>
                     <tbody>
                         {cartItems.length > 0 ? (
-                            cartItems.map((item: PostInfo, index: string) => (
+                            cartItems.map((item, index) => (
                                 <tr key={item._id}>
                                     <td>{index + 1}</td>
                                     <td>

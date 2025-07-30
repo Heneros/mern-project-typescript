@@ -11,8 +11,7 @@ const store = configureStore({
     reducer: {
         [baseApiSlice.reducerPath]: baseApiSlice.reducer,
         auth: authReducer,
-        properties: propertyReducer,
-        // chat: chatReducer,
+        properties: propertyReducer,    
         cart: cartSlice,
     },
     middleware: (getDefaultMiddleware) =>
@@ -22,4 +21,5 @@ const store = configureStore({
 
 export type RootState = ReturnType<typeof store.getState>;
 
+export type AppDispatch = typeof store.dispatch;
 export default store;

@@ -29,7 +29,6 @@
     "bootstrap": "^5.3.3",
     "clsx": "^2.1.1",
     "core-js": "^3.44.0",
-    "css-loader": "^7.1.2",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
     "dotenv-webpack": "^8.1.0",
@@ -54,13 +53,13 @@
     "swiper": "^11.1.4",
     "ts-loader": "^9.5.2",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
-    "web-vitals": "^2.1.4",
-    "yup": "^1.4.0",
     "ttsc": "^0.3.1",
     "typescript": "^4.9.5",
     "typescript-transform-paths": "^3.5.5",
+    "web-vitals": "^2.1.4",
     "webpack": "^5.101.0",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "webpack": "webpack serve",
@@ -84,5 +83,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0"
   }
 }

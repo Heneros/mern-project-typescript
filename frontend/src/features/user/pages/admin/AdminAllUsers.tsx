@@ -20,9 +20,10 @@ import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
-import NavMenu from 'widgets/navMenu/ui/NavMenu';
+import { NavMenu } from 'widgets/navMenu';
 import { useParams } from 'react-router-dom';
 import { PaginationProperties } from 'widgets/paginationProperties';
+import { User } from 'shared/types';
 
 const AdminAllUsers = () => {
     const { pageNumber = '1' } = useParams();
@@ -52,7 +53,7 @@ const AdminAllUsers = () => {
         }
     };
 
-    const deleteHandler = async (id: User) => {
+    const deleteHandler = async (id: string) => {
         try {
             if (window.confirm('Are you sure you want to delete this user?')) {
                 await deleteUser(id);
@@ -75,7 +76,7 @@ const AdminAllUsers = () => {
     // console.log(data);
     const rows = data?.users || [];
 
-    console.log(rows);
+  //  console.log(rows);
 
     return (
         <>
@@ -143,7 +144,7 @@ const AdminAllUsers = () => {
                                                             checked={row.active}
                                                             onChange={() =>
                                                                 deactivateUserHandler(
-                                                                    row._id,
+                                                                    String(row?._id),
                                                                 )
                                                             }
                                                         />
@@ -153,7 +154,7 @@ const AdminAllUsers = () => {
                                                             variant="danger"
                                                             onClick={() =>
                                                                 deleteHandler(
-                                                                    row?._id,
+                                                                    String(row?._id),
                                                                 )
                                                             }
                                                         >

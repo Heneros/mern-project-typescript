@@ -10,7 +10,7 @@ import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
 import { renderError } from 'shared/utils/renderError';
-import NavMenu from 'widgets/navMenu/ui/NavMenu';
+import {NavMenu} from 'widgets/navMenu';
 import { PostInfo } from 'shared/types';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import { PaginationProperties } from 'widgets/paginationProperties';

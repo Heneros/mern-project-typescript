@@ -42,7 +42,7 @@ export const useAuthUser = () => {
     } else if (githubToken) {
         const gitDecodedToken = decodeToken<DecodedToken>(githubToken);
 
-        console.log('Decoded Github Token:', gitDecodedToken);
+        // console.log('Decoded Github Token:', gitDecodedToken);
         if (gitDecodedToken && 'roles' in gitDecodedToken) {
             const { roles } = gitDecodedToken;
             isAdmin = gitDecodedToken.roles.includes('Admin');

@@ -23,12 +23,11 @@ import {
 export const Header = () => {
     const menuRef = useRef<HTMLUListElement>(null);
     const [open, setOpen] = useState(false);
-    const dispatch = useAppDispatch();
     const location = useLocation();
     const [logoutAction] = useLogoutUserMutation();
     const headerRef = useRef<HTMLDivElement | null>(null);
+    
     const [isSticky, setIsSticky] = useState(false);
-    const [showHeader, setShowHeader] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
     const { user: userInfo } = useAppSelector((state) => state.auth);
@@ -55,7 +54,8 @@ export const Header = () => {
 
     const logoutHandler = async () => {
         try {
-            await dispatch(logoutAction(undefined)).unwrap();
+            await logoutAction(undefined).unwrap();
+            // await dispatch(logoutAction(undefined)).unwrap();
         } catch (error) {
             console.log(error);
         }

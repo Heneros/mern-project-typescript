@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Col, Container, Row, Form, Button, Modal } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import NavMenu from 'widgets/navMenu/ui/NavMenu';
+import {NavMenu} from 'widgets/navMenu';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import {
     useDeleteMyAccountMutation,

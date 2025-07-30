@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { useUserRoles } from 'shared/hooks/useUserRoles';
 import './NavMenu.css';
 
-const NavMenu = () => {
+export const NavMenu = () => {
     const location = useLocation();
 
     const isCurrentPath = (path: string) => location.pathname === path;
@@ -64,4 +64,3 @@ const NavMenu = () => {
     );
 };
 
-export default NavMenu;
