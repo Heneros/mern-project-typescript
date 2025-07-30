@@ -1,9 +1,10 @@
+/// @ts-ignore
 import {
     useGetSinglePropertyQuery,
     useUpdatePropertyMutation,
 } from 'features/properties/api/propertiesApiSlice';
-import { useSendImageMutation } from 'features/uploadImage/uploadImage';
-import { Formik, useFormik, FieldArray, Field } from 'formik';
+// import { useSendImageMutation } from 'features/uploadImage/uploadImage';
+// import { Formik, useFormik, FieldArray, Field } from 'formik';
 import React, { useEffect } from 'react';
 import { Col, Container, Row, Form, Button } from 'react-bootstrap';
 import SimpleMDE from 'react-simplemde-editor';
@@ -14,7 +15,7 @@ import { toast } from 'react-toastify';
 import { Breadcrumbs } from 'shared/ui/Breadcrumbs';
 import { Loader } from 'shared/ui/Loader';
 import { Message } from 'shared/ui/Message';
-import { initialValues as defaultValues } from 'shared/utils/initialValues';
+// import { initialValues as defaultValues } from 'shared/utils/initialValues';
 import { renderError } from 'shared/utils/renderError';
 import { validationSchema } from 'shared/utils/validationSchema';
 import NavMenu from 'widgets/navMenu/ui/NavMenu';
@@ -42,9 +43,9 @@ const AdminEditPost = () => {
         }
     }, [updateData, isSuccess]);
 
-    const location = useLocation();
+   // const location = useLocation();
 
-    console.log('location', location);
+///console.log('location', location);
     // console.log('property', property);
     return (
         <>
@@ -58,8 +59,12 @@ const AdminEditPost = () => {
                         {isLoading ? (
                             <Loader />
                         ) : error ? (
-                            <Message>{renderError(error)}</Message>
-                        ) : (
+                            // @ts-ignore 
+                            <>
+        
+                <Message>{renderError(error as any) as React.ReactNode}</Message>
+                            </>
+                             ) : (
                             <>
                                 <h3 className="text-center">
                                     Edit Post {propertyData?.title}

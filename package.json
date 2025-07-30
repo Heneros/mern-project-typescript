@@ -5,7 +5,7 @@
   "scripts": {
     "server:build": "tsc --project tsconfig.build.json",
     "server:build:clean": "rm -rf dist && tsc --project tsconfig.build.json",
-  "client:build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "client:build": "npm install --prefix frontend && npm run build --prefix frontend",
     "build": "npm run server:build && npm run client:build",
     "docker:dev": "docker compose -f docker-compose.dev.yml up -d ",
     "docker:dev:build": "docker compose -f docker-compose.dev.yml up -d --build",

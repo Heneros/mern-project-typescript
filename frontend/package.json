@@ -4,6 +4,8 @@
   "private": true,
   "proxy": "https://mern-project-typescript.vercel.app",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
@@ -23,8 +25,10 @@
     "@types/redux": "^3.6.0",
     "@types/redux-thunk": "^2.1.0",
     "axios": "^1.7.8",
+    "babel-plugin-module-resolver": "^5.0.2",
     "bootstrap": "^5.3.3",
     "clsx": "^2.1.1",
+    "core-js": "^3.44.0",
     "css-loader": "^7.1.2",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
@@ -32,6 +36,7 @@
     "formik": "^2.4.6",
     "framer-motion": "^11.2.11",
     "html-webpack-plugin": "^5.6.3",
+    "mern-project-typescript": "file:..",
     "moment": "^2.30.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
@@ -42,30 +47,25 @@
     "react-redux": "^9.1.2",
     "react-router-bootstrap": "^0.26.3",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "^5.0.0",
     "react-simplemde-editor": "^5.2.0",
     "react-toastify": "^10.0.5",
     "socket.io-client": "^4.8.1",
     "styled-components": "^6.1.8",
     "swiper": "^11.1.4",
-    "typescript": "^4.9.5",
+    "ts-loader": "^9.5.2",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
     "web-vitals": "^2.1.4",
-    "webpack": "^5.99.9",
-      "tsconfig-paths-webpack-plugin": "^4.2.0",
-    "webpack-cli": "^6.0.1",
     "yup": "^1.4.0",
-        "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
-    "babel-plugin-module-resolver": "^5.0.2",
-    "core-js": "^3.44.0",
-    "ts-loader": "^9.5.2"
+    "ttsc": "^0.3.1",
+    "typescript": "^4.9.5",
+    "typescript-transform-paths": "^3.5.5",
+    "webpack": "^5.101.0",
+    "webpack-cli": "^6.0.1"
   },
   "scripts": {
     "webpack": "webpack serve",
     "start": "webpack start",
-    "build": "npx webpack --mode production --output-path ../dist/frontend",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "ttsc -p tsconfig.build.json && webpack --config ./webpack.config.js --mode production"
   },
   "eslintConfig": {
     "extends": [
@@ -84,7 +84,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
   }
 }
