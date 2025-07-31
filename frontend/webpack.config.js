@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 const isProd = mode === 'production';
@@ -56,15 +57,20 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
-        alias: {
-            'app': path.resolve(__dirname, 'src/app'),
-            'entities': path.resolve(__dirname, 'src/entities'),
-            'features': path.resolve(__dirname, 'src/features'),
-            'pages': path.resolve(__dirname, 'src/pages'),
-            'shared': path.resolve(__dirname, 'src/shared'),
-            'widgets': path.resolve(__dirname, 'src/widgets'),
-            'components': path.resolve(__dirname, 'src/components'),
-        },
+            plugins: [
+      new TsconfigPathsPlugin({
+        configFile: "./tsconfig.json", 
+      }),
+    ],
+        // alias: {
+        //     'app': path.resolve(__dirname, 'src/app'),
+        //     'entities': path.resolve(__dirname, 'src/entities'),
+        //     'features': path.resolve(__dirname, 'src/features'),
+        //     'pages': path.resolve(__dirname, 'src/pages'),
+        //     'shared': path.resolve(__dirname, 'src/shared'),
+        //     'widgets': path.resolve(__dirname, 'src/widgets'),
+        //     'components': path.resolve(__dirname, 'src/components'),
+        // },
     },
     devServer: {
         static: {
