@@ -1,8 +1,10 @@
-import {
-    v2 as cloudinary,
-    UploadApiResponse,
-    UploadApiErrorResponse,
-} from 'cloudinary';
+// import {
+//     v2 as cloudinary,
+//     UploadApiResponse,
+//     UploadApiErrorResponse,
+// } from 'cloudinary';
+import { v2 as cloudinary } from 'cloudinary';
+import type { UploadApiResponse, UploadApiErrorResponse } from 'cloudinary';
 import 'dotenv/config';
 import path from 'path';
 import streamfier from 'streamifier';

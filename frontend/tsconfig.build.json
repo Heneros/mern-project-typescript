@@ -19,7 +19,8 @@
         "declarationMap": false,
         "sourceMap": false,
         "removeComments": true,
-        "baseUrl": "./src",
+        "baseUrl": "src",
+        "rootDir": ".",
         "paths": {
             "app/*": [
                 "app/*"
@@ -45,7 +46,8 @@
         },
     },
     "include": [
-        "src"
+        "src/**/*",
+        "src/declarations.d.ts"
     ],
     "exclude": [
         "node_modules",

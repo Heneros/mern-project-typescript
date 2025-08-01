@@ -115,7 +115,7 @@ if (process.env.NODE_ENV !== 'test') {
         try {
             server.listen(port, () =>
                 console.log(
-                    `Server on ${port} running. NodeENV: ${process.env.NODE_ENV} `,
+                    `Server on ${port} running. 123 NodeENV: ${process.env.NODE_ENV} `,
                 ),
             );
             if (MONGO_URI) {

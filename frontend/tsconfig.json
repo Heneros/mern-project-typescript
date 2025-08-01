@@ -22,6 +22,9 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
+      "@/*": [
+        "src/*"
+      ],
       "app/*": [
         "app/*"
       ],
@@ -54,7 +57,5 @@
     "src",
     "declarations.d.ts"
   ],
-  "ts-node": {
-    "compiler": "ttsc"
-  }
+
 }

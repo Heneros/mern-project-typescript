@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const { TsconfigPathsPlugin } = require("tsconfig-paths-webpack-plugin");
 
 const mode = process.env.NODE_ENV || 'development';
 const isProd = mode === 'production';
@@ -35,7 +35,7 @@ module.exports = {
                     {
                         loader: 'ts-loader',
                         options: {
-                            compiler: 'ttsc',
+            
                             transpileOnly: true,
                             configFile: path.resolve(__dirname, 'tsconfig.json')
                         },
@@ -57,11 +57,11 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
-            plugins: [
+       plugins: [
       new TsconfigPathsPlugin({
-        configFile: "./tsconfig.json", 
-      }),
-    ],
+        configFile: path.resolve(__dirname, "tsconfig.json")
+      })
+    ]
         // alias: {
         //     'app': path.resolve(__dirname, 'src/app'),
         //     'entities': path.resolve(__dirname, 'src/entities'),
@@ -70,7 +70,7 @@ module.exports = {
         //     'shared': path.resolve(__dirname, 'src/shared'),
         //     'widgets': path.resolve(__dirname, 'src/widgets'),
         //     'components': path.resolve(__dirname, 'src/components'),
-        // },
+    
     },
     devServer: {
         static: {
