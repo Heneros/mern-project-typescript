@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "npm ci",
+  "installCommand": "npm install",
   "buildCommand": "npm run vercel-build",
   "devCommand": "npm run server:dev",
   "builds": [
@@ -10,6 +10,7 @@
       "config": {
         "includeFiles": [
           "dist/backend/**",
+          "tsconfig.build.json",
           ".env"
         ]
       }

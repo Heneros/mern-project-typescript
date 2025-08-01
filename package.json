@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "server:build": "tsc --project tsconfig.build.json",
-    "server:build:clean": "rm -rf dist/backend && tsc --project tsconfig.build.json",
     "client:build": "npm install --prefix frontend && npm run build --prefix frontend",
     "build": "npm run server:build && npm run client:build",
     "docker:dev": "docker compose -f docker-compose.dev.yml up -d ",
@@ -19,7 +17,9 @@
     "seed": "ts-node seed/seed.ts",
     "lint:ts": "eslint \"./**/*.ts\"",
     "lint:ts:fix": "eslint \"**/*.ts\" --fix",
-    "vercel-build": "npm run server:build && cp package.json dist/backend/ && cd dist/backend && npm install --omit=dev --omit=optional --no-package-lock --no-audit"
+    "vercel-build": "npm run server:build && cp package.json dist/backend/ && cd dist/backend && npm install --omit=dev --omit=optional --no-package-lock --no-audit --no-fund",
+    "server:build": "tsc --project ./tsconfig.build.json",
+    "server:build:clean": "rm -rf dist && npm run server:build"
   },
   "_moduleAliases": {
     "@": "dist/backend",
