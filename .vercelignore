@@ -1,4 +1,5 @@
 frontend/**
+
 **/*.md
 **/*.test.ts
 **/*.spec.ts
@@ -11,15 +12,11 @@ frontend/**
 **/public/images
 **/public/videos
 **/*.map
+**/node_modules/**
+**/logs/**
+**/docker/**
+**/coverage/**
+**/*.txt
 
-node_modules/
-logs/
-docker/
-IT-Bookstore-main/
-templatemo_591_villa_agency/
-coverage
+!dist/frontend/
 
-*.txt
-
-
-!dist/frontend/**

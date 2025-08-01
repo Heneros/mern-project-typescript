@@ -1,26 +1,23 @@
 {
   "version": 2,
-  "installCommand": "npm install",
+  "installCommand": "npm install --production=false",
   "buildCommand": "npm run vercel-build",
-  "devCommand": "npm run server:dev",
+  "devCommand": "npm run start:prod",
   "builds": [
     {
       "src": "dist/backend/server.js",
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
-          "dist/backend/**",
-          "tsconfig.build.json",
-          ".env"
+          "dist/**",
+          "backend/**/*.ts",
+          "package.json",
+          "tsconfig.json"
         ]
       }
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "dist/backend/server.js"
-    },
     {
       "src": "/(.*)",
       "dest": "dist/backend/server.js"

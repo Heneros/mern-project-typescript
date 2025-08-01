@@ -6,7 +6,7 @@
       "es2020"
     ],
     "outDir": "./dist/backend",
-    "rootDir": "./backend",
+    
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -55,7 +55,7 @@
     }
   },
   "include": [
-    "backend/**/*.ts"
+    "backend/**/*"
   ],
   "exclude": [
     "node_modules",
