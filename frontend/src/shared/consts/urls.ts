@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://mern-project-typescript.vercel.app';
+export const BASE_URL = 'https://mern-project-typescript-six.vercel.app';
 // export const AUTH_GOOGLE = 'http://localhost:4000/api/v1/users/google';
 
 export const UPLOAD_URL = '/upload';

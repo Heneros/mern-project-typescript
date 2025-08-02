@@ -23,37 +23,37 @@
       "./node_modules/@types",
       "./backend/types"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./backend",
     "paths": {
       "@/*": [
-        "backend/*"
-      ],
-      "config/*": [
-        "backend/config/*"
-      ],
-      "constants/*": [
-        "backend/constants/*"
-      ],
-      "controllers/*": [
-        "backend/controllers/*"
-      ],
-      "helpers/*": [
-        "backend/helpers/*"
-      ],
-      "middleware/*": [
-        "backend/middleware/*"
+        "*"
       ],
       "models/*": [
-        "backend/models/*"
+        "models/*"
+      ],
+      "config/*": [
+        "config/*"
+      ],
+      "constants/*": [
+        "constants/*"
+      ],
+      "controllers/*": [
+        "controllers/*"
+      ],
+      "helpers/*": [
+        "helpers/*"
+      ],
+      "middleware/*": [
+        "middleware/*"
       ],
       "routes/*": [
-        "backend/routes/*"
+        "routes/*"
       ],
       "types/*": [
-        "backend/types/*"
+        "types/*"
       ],
       "utils/*": [
-        "backend/utils/*"
+        "utils/*"
       ]
     }
   },

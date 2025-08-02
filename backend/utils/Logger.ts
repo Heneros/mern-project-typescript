@@ -6,7 +6,7 @@ import TransportStream from 'winston-transport';
 const { combine, timestamp, prettyPrint, json } = format;
 const isProd = process.env.NODE_ENV === 'production';
 
-// Базовые транспорты — всегда
+
 const loggerTransports: TransportStream[] = [
   new transports.Console({
     level: isProd ? 'info' : 'http',
@@ -17,10 +17,9 @@ const loggerTransports: TransportStream[] = [
   })
 ];
 
-// Только в development добавляем файловую ротацию
+
 if (process.env.NODE_ENV === 'development') {
-  // Динамически подключаем winston-daily-rotate-file
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
+
   const { DailyRotateFile } = require('winston-daily-rotate-file');
 
   loggerTransports.push(

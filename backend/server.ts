@@ -1,4 +1,4 @@
-import 'module-alias/register';
+// import 'module-alias/register';
 
 import 'dotenv/config';
 
@@ -110,7 +110,7 @@ if (process.env.NODE_ENV === 'production') {
 app.use(notFound);
 app.use(errorHandler);
 
-if (process.env.NODE_ENV !== 'test') {
+
     const startServer = async () => {
         try {
             server.listen(port, () =>
@@ -129,6 +129,14 @@ if (process.env.NODE_ENV !== 'test') {
             systemLogs.error(`Error happened ${error}  `);
         }
     };
-    startServer();
+
+
+if (process.env.NODE_ENV !== 'test') {
+  startServer();
 }
-export { app };
+
+// if (process.env.NODE_ENV !== 'test') {
+//   startServer();
+// }
+
+export default  app ;
