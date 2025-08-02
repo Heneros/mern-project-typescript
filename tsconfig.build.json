@@ -54,9 +54,6 @@
       ]
     }
   },
-  "include": [
-    "backend/**/*"
-  ],
   "exclude": [
     "node_modules",
     "frontend",
