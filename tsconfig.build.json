@@ -5,8 +5,11 @@
     "lib": [
       "es2020"
     ],
+    "rootDir": "backend",
     "outDir": "./dist/backend",
-    
+    "include": [
+      "backend/**/*.ts"
+    ],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

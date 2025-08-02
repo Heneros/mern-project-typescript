@@ -17,8 +17,8 @@
     "seed": "ts-node seed/seed.ts",
     "lint:ts": "eslint \"./**/*.ts\"",
     "lint:ts:fix": "eslint \"**/*.ts\" --fix",
-    "vercel-build": "rm -rf dist/backend && npm run server:build && cp package.json dist/backend &&  npm install --prefix dist/backend  --production=false --no-package-lock --no-audit",
-    "server:build": "tsc -p tsconfig.build.json; exit 0",
+    "vercel-build": "echo 'hello world' && rm -rf dist/backend && npm run server:build && cp package.json dist/backend && cd dist/backend &&   npm install  --production=false --no-package-lock --no-audit",
+    "server:build": "rm -rf dist/backend && tsc -p tsconfig.build.json",
     "server:build:clean": "rm -rf dist && mkdir -p dist/backend && npm run server:build"
   },
   "_moduleAliases": {
