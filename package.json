@@ -17,8 +17,8 @@
     "seed": "ts-node seed/seed.ts",
     "lint:ts": "eslint \"./**/*.ts\"",
     "lint:ts:fix": "eslint \"**/*.ts\" --fix",
-    "vercel-build": "echo 'hello world' && rm -rf dist/backend && npm run server:build && cp package.json dist/backend && cd dist/backend &&   npm install  --production=false --no-package-lock --no-audit",
-    "server:build": "rm -rf dist/backend && tsc -p tsconfig.build.json",
+    "vercel-build": "rm -rf dist && npm run server:build && cp package.json dist/backend && cd dist/backend && npm install --production=false --no-package-lock --no-audit",
+    "server:build": "npx tsc backend/**/*.ts --outDir dist/backend --target es2020 --module commonjs --esModuleInterop --skipLibCheck",
     "server:build:clean": "rm -rf dist && mkdir -p dist/backend && npm run server:build"
   },
   "_moduleAliases": {

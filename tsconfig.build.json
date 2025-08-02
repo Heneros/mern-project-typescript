@@ -1,15 +1,13 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "target": "es2020",
     "module": "commonjs",
     "lib": [
       "es2020"
     ],
-    "rootDir": "backend",
     "outDir": "./dist/backend",
-    "include": [
-      "backend/**/*.ts"
-    ],
+    "rootDir": "./backend",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -19,6 +17,8 @@
     "resolveJsonModule": true,
     "sourceMap": false,
     "inlineSources": false,
+    "declaration": false,
+    "removeComments": true,
     "typeRoots": [
       "./node_modules/@types",
       "./backend/types"
@@ -57,10 +57,14 @@
       ]
     }
   },
+  "include": [
+    "./backend/**/*"
+  ],
   "exclude": [
     "node_modules",
     "frontend",
     "test",
+    "dist",
     "**/*.test.ts",
     "**/*.spec.ts"
   ]
