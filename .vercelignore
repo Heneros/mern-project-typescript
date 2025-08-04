@@ -1,4 +1,3 @@
-frontend/**
 
 **/*.md
 **/*.test.ts
@@ -17,6 +16,4 @@ frontend/**
 **/docker/**
 **/coverage/**
 **/*.txt
-
-!dist/frontend/
 

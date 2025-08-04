@@ -76,20 +76,32 @@ app.use('/api/v1/upload', uploadRoutes);
 app.use('/api/v1/property', propertyRoutes);
 app.use('/api/v1/messages', messageRoutes);
 app.use('/api/v1/order', orderRoutes);
-
 app.get('/api/v1/config/paypal', (req, res) => {
     res.send({ clientId: process.env.PAYPAL_CLIENT_ID });
 });
 
+
+app.get('/api/v1/docs/swagger.json', (_req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.json(swaggerSpec);
+});
+
+
 app.use(
-    '/docs',
-    swaggerUi.serve,
-    swaggerUi.setup(swaggerSpec, {
-        swaggerOptions: {
-            persistAuthorization: true,
-        },
-    }),
+  '/api/v1/docs',
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerSpec, {
+    swaggerOptions: {
+      persistAuthorization: true,
+    },
+    customCssUrl: 'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.min.css',
+    customJs: [
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-bundle.min.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.min.js'
+    ]
+  })
 );
+
 
 const port = process.env.PORT || 3005;
 const MONGO_URI = process.env.MONGO_URI;

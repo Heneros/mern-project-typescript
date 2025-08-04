@@ -11,6 +11,10 @@
   ],
   "routes": [
     {
+      "src": "/api/v1/(.*)",
+      "dest": "dist/backend/server.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "dist/backend/server.js"
     }

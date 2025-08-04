@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "client:build": "npm install --prefix frontend && npm run build --prefix frontend",
     "build": "npm run server:build && npm run client:build",
     "docker:dev": "docker compose -f docker-compose.dev.yml up -d ",
     "docker:dev:build": "docker compose -f docker-compose.dev.yml up -d --build",
@@ -17,9 +16,11 @@
     "seed": "ts-node seed/seed.ts",
     "lint:ts": "eslint \"./**/*.ts\"",
     "lint:ts:fix": "eslint \"**/*.ts\" --fix",
-    "vercel-build": "rm -rf dist/backend && npm run server:build && cp package.json dist/backend && cd dist/backend && npm install --production=false --no-package-lock --no-audit",
-    "server:build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
-    "server:build:clean": "rm -rf dist/backend && mkdir -p dist/backend && npm run server:build"
+  
+    "client:build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "server:build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "vercel-build": "rm -rf dist && npm run build"
+
   },
   "_moduleAliases": {
     "@": ".",

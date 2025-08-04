@@ -7,69 +7,64 @@ import { propertiesSwagger } from './swagger/properties.swagger';
 const domain = process.env.DOMAIN;
 
 
-
-const swaggerDefinition = {
+const options = {
+  definition: {
     openapi: '3.0.0',
     info: {
-        title: 'MERN villa API',
-        version: '1.0.0',
-        description: 'REST API app made with Express. ',
-        license: {
-            name: 'Licensed Under MIT',
-            url: 'https://spdx.org/licenses/MIT.html',
-        },
+      title: 'MERN villa API',
+      version: '1.0.0',
+      description: 'REST API app made with Express.',
+      license: {
+        name: 'Licensed Under MIT',
+        url: 'https://spdx.org/licenses/MIT.html',
+      },
     },
     servers: [
-        {
-            url: `${domain}/api/v1`,
-            description: 'Development server',
-        },
+      {
+        url: `${domain}/api/v1`,
+        description: process.env.NODE_ENV === 'production' ? 'Production server' : 'Development server',
+      },
     ],
     paths: {
-        ...authSwagger,
-        ...userSwagger,
-        ...ordersSwagger,
-        ...propertiesSwagger,
+      ...authSwagger,
+      ...userSwagger,
+      ...ordersSwagger,
+      ...propertiesSwagger,
     },
     tags: [
-        {
-            name: 'Authentication',
-            description:
-                'Endpoints for authentication(login, logout, register...)',
-        },
-        {
-            name: 'User',
-            description:
-                'Endpoints for user(profile, updateAccount, deleteAccount, deactivate...)',
-        },
-        {
-            name: 'Properties',
-            description: 'Endpoints for user(CRUD operations)',
-        },
-        {
-            name: 'Order',
-            description: 'Endpoints for order(CRUD operations)',
-        },
+      {
+        name: 'Authentication',
+        description: 'Endpoints for authentication(login, logout, register...)',
+      },
+      {
+        name: 'User',
+        description: 'Endpoints for user(profile, updateAccount, deleteAccount, deactivate...)',
+      },
+      {
+        name: 'Properties',
+        description: 'Endpoints for properties(CRUD operations)',
+      },
+      {
+        name: 'Order',
+        description: 'Endpoints for order(CRUD operations)',
+      },
     ],
     components: {
-        securitySchemes: {
-            bearerAuth: {
-                type: 'http',
-                scheme: 'bearer',
-                bearerFormat: 'JWT',
-            },
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
         },
+      },
     },
     security: [
-        {
-            bearerAuth: [],
-        },
+      {
+        bearerAuth: [],
+      },
     ],
-};
-
-const options = {
-    swaggerDefinition,
-    apis: ['./backend/routes/*.ts', './backend/controllers/*.ts'],
+  },
+  apis: ['./backend/routes/*.ts', './backend/controllers/*.ts'],
 };
 
 export const swaggerSpec = swaggerJSDoc(options);
