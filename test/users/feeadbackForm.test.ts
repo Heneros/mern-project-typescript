@@ -6,8 +6,8 @@ import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import User from '@/models/userModel';
 import VerifyResetToken from '@/models/verifyResetTokenModel';
 
-jest.mock('@/utils/sendEmail', () => ({
-    receiverEmailFunction: jest.fn().mockResolvedValue(true),
+jest.mock('../../backend/utils/sendEmail', () => ({
+  receiverEmailFunction: jest.fn().mockResolvedValue(true),
 }));
 
 describe('Feedback form ', () => {
