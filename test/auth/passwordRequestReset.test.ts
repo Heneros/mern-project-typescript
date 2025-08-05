@@ -3,7 +3,7 @@ import * as bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import * as emailService from '../../backend/utils/sendEmail';
 
-import { app } from '@/server';
+import  app  from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
 

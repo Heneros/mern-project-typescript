@@ -46,19 +46,29 @@ app.use(
         allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
     }),
 );
-app.use(
+if (process.env.NODE_ENV !== 'test') {
+  app.use(
     session({
-        secret: process.env.SESSION_SECRET!,
-        resave: false,
-        saveUninitialized: true,
-        store: MongoStore.create({
-            mongoUrl: process.env.MONGO_URI,
-            ttl: 14 * 24 * 60 * 60,
-        }),
-        cookie: { secure: process.env.NODE_ENV !== 'development' },
-    }),
-);
+      secret: process.env.SESSION_SECRET!,
+      resave: false,
+      saveUninitialized: false, 
+      store: MongoStore.create({
+        mongoUrl: process.env.MONGO_URI!,
+        ttl: 14 * 24 * 60 * 60,
+      }),
+      cookie: { secure: process.env.NODE_ENV !== 'development' },
+    })
+  );
+} else {
 
+  app.use(
+    session({
+      secret: 'test_secret',
+      resave: false,
+      saveUninitialized: true,
+    })
+  );
+}
 app.use(passport.initialize());
 oauthPassport();
 

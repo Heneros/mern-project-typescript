@@ -6,7 +6,7 @@ import {
     registerNotAdmin,
     registerTestUser,
 } from '../helpers/registerTestUser';
-import { app } from '@/server';
+import  app  from '@/server';
 import User from '@/models/userModel';
 import VerifyResetToken from '@/models/verifyResetTokenModel';
 import { IUser } from '@/types/IUser';
