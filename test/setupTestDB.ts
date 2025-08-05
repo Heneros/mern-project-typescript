@@ -4,7 +4,7 @@ import connectDB from '@/config/connectDB';
 export const connectTestDB = async () => {
     try {
         if (mongoose.connection.readyState === 0) {
-            await connectDB(process.env.MONGO_URI_TEST!);
+            await connectDB(process.env.MONGO_URI!);
           //  await connectDB(process.env.MONGO_URI!);
             //   console.log('Connected to TEST database'); 
         }

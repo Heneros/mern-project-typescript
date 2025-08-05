@@ -1,11 +1,8 @@
 import request from 'supertest';
 import jwt from 'jsonwebtoken';
-import bcrypt from 'bcryptjs';
-
-import * as emailService from '@/utils/sendEmail';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import {
-    registerNotAdmin,
+
     registerTestUser,
 } from '../helpers/registerTestUser';
 import  app  from '@/server';
