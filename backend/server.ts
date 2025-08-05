@@ -69,8 +69,12 @@ if (process.env.NODE_ENV !== 'test') {
     })
   );
 }
-app.use(passport.initialize());
-oauthPassport();
+
+if (process.env.NODE_ENV !== 'test') {
+    app.use(passport.initialize());
+    oauthPassport();
+}
+
 
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('tiny'));
