@@ -33,13 +33,7 @@ jobs:
          - name: Install dependencies
            run: npm ci
          
-         - name: Wait for MongoDB
-           run: |
-            until nc -z localhost 27017; do
-              echo "Waiting for MongoDB on localhost:27017…"
-              sleep 5
-            done
-    
+
          - name: Build Project
            run: npm run server:build  
 
