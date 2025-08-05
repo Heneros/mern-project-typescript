@@ -47,42 +47,38 @@ app.use(
     }),
 );
 if (process.env.NODE_ENV !== 'test') {
-  app.use(
-    session({
-      secret: process.env.SESSION_SECRET!,
-      resave: false,
-      saveUninitialized: false, 
-      store: MongoStore.create({
-        mongoUrl: process.env.MONGO_URI!,
-        ttl: 14 * 24 * 60 * 60,
-      }),
-      cookie: { secure: process.env.NODE_ENV !== 'development' },
-    })
-  );
+    app.use(
+        session({
+            secret: process.env.SESSION_SECRET!,
+            resave: false,
+            saveUninitialized: false,
+            store: MongoStore.create({
+                mongoUrl: process.env.MONGO_URI!,
+                ttl: 14 * 24 * 60 * 60,
+            }),
+            cookie: { secure: process.env.NODE_ENV !== 'development' },
+        }),
+    );
 } else {
-
-  app.use(
-    session({
-      secret: 'test_secret',
-      resave: false,
-      saveUninitialized: true,
-    })
-  );
+    app.use(
+        session({
+            secret: 'test_secret',
+            resave: false,
+            saveUninitialized: true,
+        }),
+    );
 }
 
 if (process.env.NODE_ENV !== 'test') {
-   app.use(passport.initialize());
-   oauthPassport();
+    app.use(passport.initialize());
+    oauthPassport();
 }
-
 
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('tiny'));
     app.use(mongoSanitize());
     app.use(morganMiddleware);
-
 }
-
 
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/user', userRoutes);
@@ -94,34 +90,32 @@ app.get('/api/v1/config/paypal', (req, res) => {
     res.send({ clientId: process.env.PAYPAL_CLIENT_ID });
 });
 
-
 app.get('/api/v1/docs/swagger.json', (_req, res) => {
-  res.setHeader('Content-Type', 'application/json');
-  res.json(swaggerSpec);
+    res.setHeader('Content-Type', 'application/json');
+    res.json(swaggerSpec);
 });
 
-
 app.use(
-  '/api/v1/docs',
-  swaggerUi.serve,
-  swaggerUi.setup(swaggerSpec, {
-    swaggerOptions: {
-      persistAuthorization: true,
-    },
-    customCssUrl: 'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.min.css',
-    customJs: [
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-bundle.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.min.js'
-    ]
-  })
+    '/api/v1/docs',
+    swaggerUi.serve,
+    swaggerUi.setup(swaggerSpec, {
+        swaggerOptions: {
+            persistAuthorization: true,
+        },
+        customCssUrl:
+            'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.min.css',
+        customJs: [
+            'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-bundle.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.min.js',
+        ],
+    }),
 );
-
 
 const port = process.env.PORT || 3005;
 const MONGO_URI = process.env.MONGO_URI;
 
 if (process.env.NODE_ENV === 'production') {
-    const frontendPath = path.join(__dirname, '..',  'frontend');
+    const frontendPath = path.join(__dirname, '..', 'frontend');
     ///  console.log('frontendPath', frontendPath);
     app.use(express.static(frontendPath));
     app.get('*', (req, res) => {
@@ -136,33 +130,31 @@ if (process.env.NODE_ENV === 'production') {
 app.use(notFound);
 app.use(errorHandler);
 
-
-    const startServer = async () => {
-        try {
-            server.listen(port, () =>
-                console.log(
-                    `Server on ${port} running. 123 NodeENV: ${process.env.NODE_ENV} `,
-                ),
-            );
-            if (MONGO_URI) {
-                await connectDB(MONGO_URI);
-            }
-            systemLogs.info(
-                `Server on ${port} running. NodeENV: ${process.env.NODE_ENV}  `,
-            );
-        } catch (error) {
-            console.log(`error ${error}`);
-            systemLogs.error(`Error happened ${error}  `);
+const startServer = async () => {
+    try {
+        server.listen(port, () =>
+            console.log(
+                `Server on ${port} running. 123 NodeENV: ${process.env.NODE_ENV} `,
+            ),
+        );
+        if (MONGO_URI) {
+            await connectDB(MONGO_URI);
         }
-    };
-
+        systemLogs.info(
+            `Server on ${port} running. NodeENV: ${process.env.NODE_ENV}  `,
+        );
+    } catch (error) {
+        console.log(`error ${error}`);
+        systemLogs.error(`Error happened ${error}  `);
+    }
+};
 
 if (process.env.NODE_ENV !== 'test') {
-  startServer();
+    startServer();
 }
 
 // if (process.env.NODE_ENV !== 'test') {
 //   startServer();
 // }
 
-export default  app ;
+export default app;
