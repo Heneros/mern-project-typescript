@@ -11,7 +11,7 @@ const connectDB = async (mongoUri: string) => {
    
    
 if (cachedConnection) {
-    console.log('Using cached database connection.');
+  //  console.log('Using cached database connection.');
     return cachedConnection;
   }
 
