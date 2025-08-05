@@ -23,7 +23,7 @@ const oauthPassport = () => {
         }
     });
 
-      if (process.env.NODE_ENV !== 'test') {
+    //   if (process.env.NODE_ENV !== 'test') {
     passport.use(
         new GoogleStrategy(
             {
@@ -122,7 +122,7 @@ const oauthPassport = () => {
             },
         ),
     );
-      }
+    //   }
 
 };
 
