@@ -1,11 +1,4 @@
 
-process.env.NODE_ENV = 'test';
-process.env.GOOGLE_CLIENT_ID = 'test-google-id';
-process.env.GOOGLE_CLIENT_SECRET = 'test-google-secret';
-process.env.GOOGLE_CALLBACK_URL = 'http://test-callback';
-process.env.GITHUB_CLIENT_ID = 'test-github-id';
-process.env.GITHUB_CLIENT_SECRET = 'test-github-secret';
-process.env.GITHUB_CALLBACK_URL = 'http://test-github-callback';
 
 jest.mock('@/config/passportSetup', () => {
 
