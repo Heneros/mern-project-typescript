@@ -12,8 +12,10 @@ jobs:
             mongodb:
                 image:  mongo:5.0.6-focal
                 env:
-                 MONGO_ROOT_USERNAME: admin
-                 MONGO_ROOT_PASSWORD: admin123456    
+                 MONGO_INITDB_ROOT_USERNAME: admin
+                 MONGO_INITDB_ROOT_PASSWORD: admin123456    
+                ports:
+                  - 27017:27017 
             maildev:
               image: maildev/maildev
               ports:
@@ -39,7 +41,7 @@ jobs:
 
          - name: Run tests
            run: |  
-            echo "MONGO_URI=mongodb://admin:admin123456@mongodb:27017/mernVillaTest?authSource=admin" >>  $GITHUB_ENV
+            echo "MONGO_URI=mongodb://admin:admin123456@localhost:27017/mernVillaTest?authSource=admin" >> $GITHUB_ENV
             echo "NODE_ENV=test" >>  $GITHUB_ENV
             echo "PAGINATION=5" >> $GITHUB_ENV
       
