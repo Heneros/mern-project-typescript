@@ -33,11 +33,17 @@ jobs:
          - name: Install dependencies
            run: npm ci
          
-         - name: Set up env variables  
-           run: |  
-            echo "NODE_ENV=test" >>  $GITHUB_ENV
-                 
-
+         - name: Run tests
+           env:
+             NODE_ENV: test
+             MONGO_URI: mongodb://admin:admin123456@localhost:27017/mernVillaTest?authSource=admin
+             GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+             GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+             GOOGLE_CALLBACK_URL: ${{ secrets.GOOGLE_CALLBACK_URL }}
+             GITHUB_CLIENT_ID: ${{ secrets.GITHUB_CLIENT_ID }}
+             GITHUB_CLIENT_SECRET: ${{ secrets.GITHUB_CLIENT_SECRET }}
+           run: npm run test
+        
          - name: Build Project
            run: npm run server:build  
 
