@@ -1,17 +1,12 @@
 import request from 'supertest';
 import * as emailService from '../../backend/utils/sendEmail';
-import app from '@/server';
+import  app  from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
-import {
-    sendEmail as mockedSendEmail,
-    receiverEmailFunction as mockedReceiverEmailFunction,
-} from '../../backend/utils/sendEmail';
 
 import User from '@/models/userModel';
 import VerifyResetToken from '@/models/verifyResetTokenModel';
 
-jest.mock('../../backend/utils/sendEmail', () => ({
-    sendEmail: jest.fn().mockResolvedValue(true),
+jest.mock('@/utils/sendEmail', () => ({
     receiverEmailFunction: jest.fn().mockResolvedValue(true),
 }));
 
@@ -49,7 +44,7 @@ describe('Feedback form ', () => {
                 success: true,
                 message: `Message was sent!`,
             });
-            expect(mockedSendEmail).toHaveBeenCalled();
+            expect(emailService.receiverEmailFunction).toHaveBeenCalled();
         });
     });
 

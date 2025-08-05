@@ -46,6 +46,7 @@ jobs:
             echo "PAGINATION=5" >> $GITHUB_ENV
             echo "JWT_ACCESS_SECRET_KEY=testJwt" >> $GITHUB_ENV
             echo  "JWT_REFRESH_SECRET_KEY=testJwtRefresh" >> $GITHUB_ENV
+            echo "SENDER_EMAIL=testtest@maile.com" >> $GITHUB_ENV
       
             echo "GOOGLE_CLIENT_ID=${{ secrets.GOOGLE_CLIENT_ID }}" >> $GITHUB_ENV
             echo "GOOGLE_CLIENT_SECRET=${{ secrets.GOOGLE_CLIENT_SECRET }}" >> $GITHUB_ENV
