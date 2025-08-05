@@ -23,6 +23,7 @@ const oauthPassport = () => {
         }
     });
 
+      if (process.env.NODE_ENV !== 'test') {
     passport.use(
         new GoogleStrategy(
             {
@@ -121,6 +122,8 @@ const oauthPassport = () => {
             },
         ),
     );
+      }
+
 };
 
 export default oauthPassport;

@@ -1,18 +1,6 @@
 import supertest from 'supertest';
 import mongoose from 'mongoose';
-// import * as emailService from '../backend/utils/sendEmail';\
-
-process.env.NODE_ENV = 'test';
-
-process.env.GOOGLE_CLIENT_ID = 'test-google-id';
-process.env.GOOGLE_CLIENT_SECRET = 'test-google-secret';
-process.env.GOOGLE_CALLBACK_URL = 'http://test-callback';
-
-process.env.GITHUB_CLIENT_ID = 'test-github-id';
-process.env.GITHUB_CLIENT_SECRET = 'test-github-secret';
-process.env.GITHUB_CALLBACK_URL = 'http://test-github-callback';
-
-
+// import * as emailService from '../backend/utils/sendEmail';
 import  app  from '@/server';
 import { connectTestDB, disconnectTestDB } from './setupTestDB';
 
@@ -40,13 +28,6 @@ beforeAll(async () => {
             }),
         };
     });
-   jest.mock('passport-github2', () => ({
-    Strategy: jest.fn().mockImplementation(() => ({
-      name: 'github',
-      authenticate: jest.fn(),
-    })),
-  }));
-    
 });
 
 afterAll(async () => {
