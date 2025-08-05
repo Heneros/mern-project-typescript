@@ -36,17 +36,7 @@ jobs:
          - name: Set up env variables  
            run: |  
             echo "NODE_ENV=test" >>  $GITHUB_ENV
-            echo "PAGINATION=5" >> $GITHUB_ENV
-      
-            echo "GOOGLE_CLIENT_ID=${{ secrets.GOOGLE_CLIENT_ID }}" >> $GITHUB_ENV
-            echo "GOOGLE_CLIENT_SECRET=${{ secrets.GOOGLE_CLIENT_SECRET }}" >> $GITHUB_ENV
-            echo "GOOGLE_CALLBACK_URL=${{ secrets.GOOGLE_CALLBACK_URL }}" >> $GITHUB_ENV
-           
-          
-            echo "GITHUB_CLIENT_ID=${{ secrets.GITHUB_CLIENT_ID }}" >> $GITHUB_ENV
-            echo "GITHUB_CLIENT_SECRET=${{ secrets.GITHUB_CLIENT_SECRET }}" >> $GITHUB_ENV
-
-            
+                 
 
          - name: Build Project
            run: npm run server:build  
