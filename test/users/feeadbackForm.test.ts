@@ -77,7 +77,8 @@ describe('Feedback form ', () => {
             };
             const feedbackReq = [];
 
-            for (let i = 0; i < 12; i += 1) {
+            const RATE_LIMIT = Number(process.env.RATE_LIMIT);
+            for (let i = 0; i < RATE_LIMIT; i += 1) {
                 feedbackReq.push(
                     request(app).post('/api/v1/auth/feedback').send(obj),
                 );

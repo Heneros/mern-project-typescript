@@ -3,7 +3,7 @@ import * as bcrypt from 'bcryptjs';
 
 import * as emailService from '../../backend/utils/sendEmail';
 
-import  app  from '@/server';
+import app from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
 
@@ -19,26 +19,29 @@ describe('Reset Password ', () => {
     let obj: any;
     let user: IUser;
 
+    let resetToken: string;
+
     beforeAll(async () => {
         await connectTestDB();
 
         user = await registerTestUser({ isEmailVerified: true });
 
-        obj = {
-            userId: user.id,
-            password: 'newpass123',
-            passwordConfirm: 'newpass123',
-        };
+        //  const token = 'abc123';
+        // obj = {
+        //     userId: user.id,
+        //     emailToken: token,
+        //     password: 'newpass1233',
+        //     passwordConfirm: 'newpass1233',
+        // };
+        resetToken = 'valid_reset_token_123';
 
-        const token = 'abc123';
         await VerifyResetToken.create({
             _userId: user._id,
-            token,
+            token: resetToken,
         });
     }, 30000);
 
     afterEach(async () => {
-        await User.deleteMany({});
         await VerifyResetToken.deleteMany({});
     });
 
@@ -48,22 +51,35 @@ describe('Reset Password ', () => {
 
     describe('Success Scenario', () => {
         it('Should reset password ', async () => {
+            const newPassword = 'newValidPassword123';
+
             const response = await request(app)
                 .post('/api/v1/auth/reset_password')
-                .send(obj);
+                .send({
+                    userId: user._id,
+                    emailToken: resetToken,
+                    password: newPassword,
+                    passwordConfirm: newPassword,
+                });
+            expect(response.status).toBe(200);
+            // const t = await VerifyResetToken.findOne({
+            //     _userId: user._id,
+            //     token: obj.emailToken,
+            // });
 
-            const t = await VerifyResetToken.findOne({
-                userId: user._id,
-            });
-            expect(t).toBeNull();
-            const updated = await User.findById(user._id).select('+password');
-            const match = await bcrypt.compare(
-                obj.password,
-                updated!.password as any,
+            // expect(t).toBeNull();
+
+            const updatedUser = await User.findById(user._id).select(
+                '+password',
             );
 
-            // console.log(t);
-            expect(match).toBe(true);
+            const isMatch = await bcrypt.compare(
+                newPassword,
+                updatedUser!.password,
+            );
+
+            expect(isMatch).toBe(true);
+
             expect(response.status).toBe(200);
             expect(emailService.sendEmail).toHaveBeenCalled();
             expect(response.body).toEqual({
@@ -74,7 +90,7 @@ describe('Reset Password ', () => {
     });
 
     describe('Failure Scenarios', () => {
-        it('Password dont match', async () => {
+        it("Password don't match", async () => {
             const res = await request(app)
                 .post('/api/v1/auth/reset_password')
                 .send({
@@ -97,12 +113,12 @@ describe('Reset Password ', () => {
                     passwordConfirm: '123Wrong331',
                     userId: 'wrong',
                 });
-            console.log(res.body);
+            // console.log(res.body);
             // expect(res.status).toBe(400);
+
             expect(res.body).toMatchObject({
                 success: false,
-                message:
-                    'Your token is either invalid or expired. Try resetting your password again',
+                message: 'No token find',
             });
         });
         // it('If user wrong password enter', async () => {

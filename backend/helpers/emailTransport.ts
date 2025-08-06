@@ -1,10 +1,9 @@
 import 'dotenv/config';
 import nodemailer, { Transporter } from 'nodemailer';
 
-
 let transporter: Transporter | null = null;
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
     transporter = nodemailer.createTransport({
         host: '127.0.0.1',
         port: 1025,

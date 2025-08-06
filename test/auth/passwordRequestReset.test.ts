@@ -3,7 +3,7 @@ import * as bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import * as emailService from '../../backend/utils/sendEmail';
 
-import  app  from '@/server';
+import app from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
 
@@ -88,10 +88,13 @@ describe('Request reset Password ', () => {
                 message: 'That email is not associated with any account',
             });
         });
+
         it('Check if user exist in model  ', async () => {
             const user = await registerTestUser({ isEmailVerified: true });
             const resetReq = [];
-            for (let i = 0; i < 10; i += 1) {
+
+            const RATE_LIMIT = Number(process.env.RATE_LIMIT);
+            for (let i = 0; i < RATE_LIMIT; i += 1) {
                 resetReq.push(
                     request(app)
                         .post('/api/v1/auth/reset_password_request')

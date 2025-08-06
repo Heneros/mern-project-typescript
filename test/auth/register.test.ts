@@ -26,7 +26,7 @@ describe('Register all scenarios', () => {
             .post('/api/v1/auth/register')
             .send(userData);
 
-        // console.log('userData userData:', userData);
+        // console.log('userData userData:', response.body);
         expect(response.status).toBe(201);
         // userId = response.body.userId;
         // console.log('Response body:', userId);

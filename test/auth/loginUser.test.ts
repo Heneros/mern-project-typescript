@@ -1,6 +1,6 @@
 import request from 'supertest';
 // import * as emailService from '../../backend/utils/sendEmail';
-import  app  from '@/server';
+import app from '@/server';
 import { connectTestDB, disconnectTestDB } from '../setupTestDB';
 import { registerTestUser } from '../helpers/registerTestUser';
 import User from '@/models/userModel';
@@ -81,8 +81,10 @@ describe('Login user ', () => {
         it('should not send email if many requests', async () => {
             const user = await registerTestUser({ isEmailVerified: true });
 
+            const RATE_LIMIT = Number(process.env.RATE_LIMIT);
+
             const feedbackReq = [];
-            for (let i = 0; i < 9; i += 1) {
+            for (let i = 0; i < RATE_LIMIT; i += 1) {
                 feedbackReq.push(
                     request(app).post('/api/v1/auth/login').send({
                         email: user.email,

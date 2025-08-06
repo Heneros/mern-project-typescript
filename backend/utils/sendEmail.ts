@@ -8,22 +8,14 @@ import transporter from '../helpers/emailTransport';
 
 import { systemLogs } from './Logger';
 
-const EMAIL_TEMPLATES_DIR = path.join(
-    process.cwd(),
-    'dist/backend/utils/emails/template',
-);
-
 export const sendEmail = async (
     email: string,
     subject: string,
     payload: object,
-    templateName: string, // "welcome.handlebars" или "accountVerification.handlebars"
+    templateName: string,
 ) => {
     try {
-        const templatePath = path.join(
-            __dirname,
-            templateName,
-        );
+        const templatePath = path.join(__dirname, templateName);
 
         if (!fs.existsSync(templatePath)) {
             throw new Error(`Template file not found: ${templatePath}`);
@@ -69,6 +61,7 @@ export const receiverEmailFunction = async (
             payload,
             html: compiledTemplate(payload),
         };
+        // let transporter;
         if (!transporter) {
             systemLogs.error(
                 'Email transporter is not initialized. Check your configuration.',
