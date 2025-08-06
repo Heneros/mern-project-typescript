@@ -6,7 +6,7 @@ let testConnection: typeof mongoose | null = null;
 export const connectTestDB = async () => {
     try {
         if (testConnection && mongoose.connection.readyState === 1) {
-            //   console.log('Using existing test database connection');
+            console.log('Using existing test database connection');
             return testConnection;
         }
 
@@ -29,7 +29,7 @@ export const connectTestDB = async () => {
 
         testConnection = await mongoose.connect(mongoUri, options);
 
-        //   console.log('Test database connected successfully');
+        console.log('Test database connected successfully');
         return testConnection;
     } catch (error) {
         console.error(' Test DB connection error:', error);
@@ -41,15 +41,16 @@ export const connectTestDB = async () => {
 export const disconnectTestDB = async () => {
     try {
         if (mongoose.connection.readyState !== 0) {
-            const collections = mongoose.connection.collections;
-            for (const key in collections) {
-                await collections[key].deleteMany({});
-            }
+            // Drop the test database to clean up
+            await mongoose.connection.dropDatabase();
             await mongoose.disconnect();
             testConnection = null;
+            console.log('✅ Disconnected from test database and cleaned up');
         }
     } catch (error) {
+        console.error('❌ Test DB disconnection error:', error);
         testConnection = null;
+        // Don't exit process in tests - just log the error
         throw error;
     }
 };
@@ -59,6 +60,7 @@ export const clearTestDB = async () => {
     await mongoose.disconnect();
 };
 
+// Helper to ensure clean state before each test
 export const setupTestDB = async () => {
     await connectTestDB();
     await clearTestDB();
