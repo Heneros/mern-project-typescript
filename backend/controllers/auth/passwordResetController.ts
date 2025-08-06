@@ -87,7 +87,15 @@ const resetPassword = asyncHandler(async (req, res) => {
         throw new Error('Passwords must be at least 8 characters long');
     }
 
-    const passwordResetToken = await VerifyResetToken.findOne({ userId });
+    if (!emailToken) {
+        res.status(404);
+        throw new Error('No token find');
+    }
+
+    const passwordResetToken = await VerifyResetToken.findOne({
+        _userId: userId,
+        token: emailToken,
+    });
 
     if (!passwordResetToken) {
         res.status(400);
@@ -96,30 +104,33 @@ const resetPassword = asyncHandler(async (req, res) => {
         );
     }
 
-    const user = await User.findById({
-        _id: passwordResetToken._userId,
-    }).select('-passwordConfirm');
-
-    if (user && passwordResetToken) {
-        user.password = password;
-        await user.save();
-
-        const payload = {
-            name: user.firstName,
-        };
-
-        await sendEmail(
-            user.email,
-            'Password Reset Success',
-            payload,
-            './emails/template/resetPassword.handlebars',
-        );
-
-        res.json({
-            success: true,
-            message: `Hey ${user.firstName},Your password reset was successful. An email has been sent to confirm the same`,
-        });
+    const user = await User.findById(passwordResetToken._userId).select(
+        '-passwordConfirm',
+    );
+    if (!user) {
+        res.status(400);
+        throw new Error('User no longer exists');
     }
+    // if (user && passwordResetToken) {
+    user.password = password;
+    await user.save();
+    await passwordResetToken.deleteOne();
+    const payload = {
+        name: user.firstName,
+    };
+
+    await sendEmail(
+        user.email,
+        'Password Reset Success',
+        payload,
+        './emails/template/resetPassword.handlebars',
+    );
+
+    res.json({
+        success: true,
+        message: `Hey ${user.firstName},Your password reset was successful. An email has been sent to confirm the same`,
+    });
+    // }
 });
 
 export { resetPassword, resetPasswordRequest };

@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import nodemailer, { Transporter } from 'nodemailer';
-import mg from 'nodemailer-mailgun-transport';
+
 
 let transporter: Transporter | null = null;
 
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'development') {
             user: process.env.SMTP_NAME,
             pass: process.env.SMTP_PASS,
         },
-        debug: true,
+        debug: false,
     });
 }
 

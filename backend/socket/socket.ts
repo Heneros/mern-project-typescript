@@ -12,10 +12,16 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: process.env.DOMAINCORS,
+        origin:
+            process.env.NODE_ENV === 'production'
+                ? ['https://mern-project-typescript.vercel.app']
+                : process.env.DOMAINCORS,
         credentials: true,
         methods: ['GET', 'POST', 'PUT'],
     },
+    transports: ['websocket', 'polling'],
+    pingTimeout: 60000,
+    pingInterval: 25000,
 });
 
 const userSocketMap: UserSocketMap = {};

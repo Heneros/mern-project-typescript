@@ -31,6 +31,7 @@ import { swaggerSpec } from './swagger';
 
 // export const app = express();
 // app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+app.set('trust proxy', 1);
 
 app.use(express.json());
 app.use(cookieParser());
@@ -43,7 +44,7 @@ app.use(
                 : process.env.DOMAINCORS!,
         //  methods: 'GET,POST,PUT,PATCH, DELETE',
         credentials: true,
-        allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+        //   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
     }),
 );
 if (process.env.NODE_ENV !== 'test') {

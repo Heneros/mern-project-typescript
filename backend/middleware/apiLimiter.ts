@@ -1,9 +1,10 @@
 import rateLimit from 'express-rate-limit';
 import { systemLogs } from '../utils/Logger';
 
+const limit = Number(process.env.RATE_LIMIT);
 export const apiLimiter = rateLimit({
     windowMs: 17 * 600 * 1000,
-    max: 10,
+    max: limit,
     message: {
         message: 'Too many requests from this IP address',
     },
@@ -19,7 +20,7 @@ export const apiLimiter = rateLimit({
 
 export const loginLimiter = rateLimit({
     windowMs: 17 * 600 * 1000,
-    max: 10,
+    max: limit,
     message: {
         message: 'Too many requests from this IP address',
     },

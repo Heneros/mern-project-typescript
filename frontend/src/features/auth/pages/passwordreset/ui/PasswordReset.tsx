@@ -11,7 +11,7 @@ import {
     FormControl,
 } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import * as Yup from 'yup';
 import { PasswordResetType, PasswordStrength } from 'shared/types';
@@ -31,6 +31,10 @@ export const PasswordReset = () => {
         password: '',
         passwordConfirm: '',
     };
+
+    const [searchParams] = useSearchParams();
+    const emailToken = searchParams.get('emailToken') ?? '';
+    const userId = searchParams.get('userId') ?? '';
 
     const navigate = useNavigate();
     const [level, setLevel] = useState<PasswordStrength>();
@@ -79,7 +83,11 @@ export const PasswordReset = () => {
             })}
             onSubmit={async (value, { setStatus, setSubmitting }) => {
                 try {
-                    await resetPassword(value).unwrap();
+                    await resetPassword({
+                        ...value,
+                        emailToken,
+                        userId,
+                    }).unwrap();
                     setStatus({ success: true });
                     setSubmitting(false);
                 } catch (err: any) {

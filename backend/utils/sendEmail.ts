@@ -8,39 +8,43 @@ import transporter from '../helpers/emailTransport';
 
 import { systemLogs } from './Logger';
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
+const EMAIL_TEMPLATES_DIR = path.join(
+    process.cwd(),
+    'dist/backend/utils/emails/template',
+);
 
 export const sendEmail = async (
     email: string,
     subject: string,
     payload: object,
-    template: string,
+    templateName: string, // "welcome.handlebars" или "accountVerification.handlebars"
 ) => {
     try {
-        const templatePath = path.join(__dirname, template);
-        const sourceDirectory = fs.readFileSync(templatePath, 'utf8');
+        const templatePath = path.join(
+            __dirname,
+            templateName,
+        );
 
-        const compiledTemplate = handlebars.compile(sourceDirectory);
+        if (!fs.existsSync(templatePath)) {
+            throw new Error(`Template file not found: ${templatePath}`);
+        }
 
-        const emailOptions = {
+        const source = fs.readFileSync(templatePath, 'utf8');
+        const compiled = handlebars.compile(source);
+
+        if (!transporter) {
+            systemLogs.error('Email transporter is not initialized');
+            throw new Error('Email transporter is not initialized');
+        }
+        await transporter.sendMail({
             from: process.env.SENDER_EMAIL,
             to: email,
             subject,
-            html: compiledTemplate(payload),
-        };
-        if (!transporter) {
-            systemLogs.error(
-                'Email transporter is not initialized. Check your configuration.',
-            );
-            throw new Error(
-                'Email transporter is not initialized. Check your configuration.',
-            );
-        }
-
-        await transporter.sendMail(emailOptions);
-    } catch (error) {
-        systemLogs.error(`email not sent: ${error}`);
+            html: compiled(payload),
+        });
+    } catch (err) {
+        systemLogs.error(`email not sent: ${err}`);
+        throw err;
     }
 };
 

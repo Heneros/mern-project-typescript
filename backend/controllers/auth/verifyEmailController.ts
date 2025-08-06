@@ -7,8 +7,6 @@ import { systemLogs } from '@/utils/Logger';
 
 const domainURL = process.env.DOMAIN;
 
-
-
 const verifyUserEmail = asyncHandler(async (req, res) => {
     const user = await User.findOne({ _id: req.params.userId }).select(
         '-passwordConfirm',
