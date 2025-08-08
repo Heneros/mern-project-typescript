@@ -63,6 +63,8 @@
   max-width: 30%;
   width: 30%;
   border-right: 1px solid #000;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .rightSide{
