@@ -70,6 +70,7 @@
     "test",
     "dist",
     "**/*.test.ts",
+    "jest.config.ts",
     "**/*.spec.ts"
   ]
 }
