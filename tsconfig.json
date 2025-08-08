@@ -21,6 +21,10 @@
       "./backend/types",
       "./node_modules/@types"
     ],
+    "types": [
+      "node",
+      "express"
+    ],
     "composite": false,
     "noEmit": false,
     "paths": {
