@@ -18,8 +18,8 @@
     "skipLibCheck": true,
     "strictNullChecks": true,
     "typeRoots": [
+      "./node_modules/@types",
       "./backend/types",
-      "./node_modules/@types"
     ],
     "types": [
       "node",
