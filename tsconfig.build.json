@@ -23,6 +23,10 @@
       "./node_modules/@types",
       "./backend/types"
     ],
+    "types": [
+      "node",
+      "express"
+    ],
     "baseUrl": "./backend",
     "paths": {
       "@/*": [

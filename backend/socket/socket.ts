@@ -10,11 +10,13 @@ const app = express();
 
 const server = http.createServer(app);
 
+const domain = process.env.DOMAIN;
+
 const io = new Server(server, {
     cors: {
         origin:
             process.env.NODE_ENV === 'production'
-                ? ['https://mern-project-typescript.vercel.app']
+                ? domain
                 : process.env.DOMAINCORS,
         credentials: true,
         methods: ['GET', 'POST', 'PUT'],
@@ -33,7 +35,10 @@ export function getReceiverSocketId(userId: string): string | undefined {
 io.on('connection', async (socket) => {
     console.log('A user connected', socket.id);
 
-    const userId = socket.handshake.query.userId as string | undefined;
+    //   const userId = socket.handshake.query.userId as string | undefined;
+    const userId =
+        (socket.handshake.auth && socket.handshake.auth.userId) ||
+        (socket.handshake.query && socket.handshake.query.userId);
 
     io.emit('getOnlineUsers', Object.keys(userSocketMap));
 

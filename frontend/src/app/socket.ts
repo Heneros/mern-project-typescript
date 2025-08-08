@@ -7,15 +7,9 @@ const socket = io(BASE_URL, {
     },
     reconnection: true,
     reconnectionAttempts: 5,
+
     // // reconnectionDelay: 1000,
-    // transports: ['websocket'],
+    transports: ['websocket'],
 });
 
-// socket.on('connection', () => {
-//     console.log('Socket connected');
-// });
-
-// socket.on('connect_error', (error) => {
-//     console.error('Socket connection error:', error);
-// });
 export default socket;
