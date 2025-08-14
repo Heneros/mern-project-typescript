@@ -4,7 +4,7 @@
     "target": "es2020",
     "module": "commonjs",
     "lib": [
-      "es2020"
+      "es2020",
     ],
     "outDir": "./dist/backend",
     "rootDir": "./backend",
@@ -24,6 +24,10 @@
       "./backend/types"
     ],
     "baseUrl": "./backend",
+    "types": [
+      "express",
+      "jest"
+    ],
     "paths": {
       "@/*": [
         "*"

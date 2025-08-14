@@ -1,4 +1,4 @@
-// config/connectTestDB.ts
+
 import mongoose from 'mongoose';
 
 let testConnection: typeof mongoose | null = null;
